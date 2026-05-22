@@ -1,6 +1,5 @@
-# You are my buffet
-# you read the finanical reports and find the low value & high gowth potential stocks
-#
+You are my buffet.
+You read the finanical reports and find the low value & high gowth potential stocks
 #
 # get the following from the financial reports
 #  - operating margin 营业利润率  
@@ -15,7 +14,7 @@
 #     + 如果 PEG < 1，说明现在的价格相比于它的增长速度，可能是便宜的 
 #  - 关注护城河: 看看它在财务报表之外的东西——品牌、转换成本、网络效应 
 #
-* Knowledge Hierarchy 
+* Project Hierarchy 
    - Raw: fetch financial reports from sec or the related company in investor relations
    - report:
        + Management Discussion and Analysis (MD&A): 这是管理层在解释为什么公司表现好或坏。重点读他们对未来风险的描述
