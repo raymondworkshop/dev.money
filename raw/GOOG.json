@@ -1,0 +1,52 @@
+{
+  "ticker": "GOOG",
+  "period": "FY-2025",
+  "financials": {
+    "revenue_current": 402836000000.0,
+    "revenue_previous": 257637000000.0,
+    "operating_income": 129039000000.0,
+    "rd_expense": 61087000000.0,
+    "operating_cash_flow": 164713000000.0,
+    "capital_expenditure": 91447000000.0,
+    "total_debt": 46547000000.0,
+    "total_equity": 415265000000.0,
+    "cash_reserves": 30708000000.0,
+    "pe_ratio": 0.0,
+    "earnings_growth_percent": 0.0
+  },
+  "financials_history": [
+    {
+      "year": 2020,
+      "revenue": 182527000000.0,
+      "rd_expense": 0.0
+    },
+    {
+      "year": 2021,
+      "revenue": 257637000000.0,
+      "rd_expense": 0.0
+    },
+    {
+      "year": 2025,
+      "revenue": 402836000000.0,
+      "rd_expense": 61087000000.0
+    }
+  ],
+  "qualitative": {
+    "brand": 0.0,
+    "switching_costs": 0.0,
+    "network_effects": 0.0,
+    "call_risk_points": [],
+    "mda_risk_flags": [],
+    "notes_risk_flags": []
+  },
+  "sources": [
+    {
+      "type": "sec_company_tickers",
+      "url": "https://www.sec.gov/files/company_tickers.json"
+    },
+    {
+      "type": "sec_companyfacts",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json"
+    }
+  ]
+}
