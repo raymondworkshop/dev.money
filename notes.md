@@ -1,6 +1,8 @@
 #### notes on money  
 
 * ideas  
-    - stocks ?  
+    - some applications on finance
+    -  stocks ?  
+     
 
 #### references
