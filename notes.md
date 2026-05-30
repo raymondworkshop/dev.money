@@ -22,7 +22,9 @@
 * audit-wiki SKILL  
     - "Use audit-wiki. Start with dry-run, then save the audit report if it looks useful."
 
-
+* site  
+    - make site-deploy 
+    > https://dev-business-wiki.pages.dev/ 
 
     
 #### references
