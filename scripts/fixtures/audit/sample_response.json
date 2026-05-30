@@ -1,0 +1,47 @@
+{
+  "summary": "The wiki has two broken cross-reference links and one topic with thin coverage.",
+  "findings": [
+    {
+      "title": "Broken link to Intel in NVDA article",
+      "severity": "warning",
+      "category": "broken_link",
+      "description": "The NVDA undervalued article links to [[Intel]] but no matching wiki page exists.",
+      "evidence": [
+        {
+          "type": "wiki",
+          "path": "business/wiki/nvda/2026-05-21-nvda-undervalued.md",
+          "link": "[[nvda/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]]",
+          "note": "Article contains unresolved [[Intel]] link."
+        }
+      ],
+      "recommendation": "Create an Intel stub page or replace with an existing semiconductor topic link."
+    },
+    {
+      "title": "Missing philosophy pages referenced from root INDEX",
+      "severity": "info",
+      "category": "missing_reference",
+      "description": "Root INDEX links to [[moats]], [[valuation-metrics]], and [[risk-analysis]] but those pages are absent.",
+      "evidence": [
+        {
+          "type": "wiki",
+          "path": "business/wiki/INDEX.md",
+          "link": "[[INDEX|Investment Wiki]]",
+          "note": "Root index lists philosophy framework links that do not resolve."
+        }
+      ],
+      "recommendation": "Add philosophy framework pages or remove placeholder links from INDEX.md."
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "topic": "defense-tech",
+      "description": "Only one archived article; no follow-up coverage on drone funding outcomes.",
+      "suggested_action": "Sync additional raw sources on defense-tech when available."
+    }
+  ],
+  "output": {
+    "should_save": true,
+    "filename_slug": "wiki-audit"
+  },
+  "review_notes": []
+}

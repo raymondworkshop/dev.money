@@ -1,0 +1,39 @@
+{
+  "question": "How does Nebius compare to CoreWeave?",
+  "answer": {
+    "summary": "The wiki frames Nebius as having higher upside than CoreWeave through vertical integration and owned infrastructure.",
+    "sections": [
+      {
+        "heading": "Competitive Comparison",
+        "bullets": [
+          "[[Nebius]] designs data centers in-house while [[CoreWeave]] grew from crypto mining into leased AI capacity.",
+          "[AI Synthesis] Nebius may offer more operational flexibility if AI demand shifts across customer segments."
+        ]
+      }
+    ]
+  },
+  "citations": [
+    {
+      "type": "wiki",
+      "path": "business/wiki/ai-infrastructure/2026-05-27-nebius-vs-coreweave.md",
+      "link": "[[ai-infrastructure/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]",
+      "note": "Primary wiki comparison of revenue, contracts, and moats."
+    },
+    {
+      "type": "raw",
+      "path": "business/raw/archive/2026-05-27-CoreWeave请让位，Nebius来了.md",
+      "link": "[[../raw/archive/2026-05-27-CoreWeave请让位，Nebius来了.md|WSJ original]]",
+      "note": "Archived raw article for provenance."
+    },
+    {
+      "type": "external",
+      "url": "https://cn.wsj.com/articles/coreweave%E8%AF%B7%E8%AE%A9%E4%BD%8D-nebius%E6%9D%A5%E4%BA%86-5a8f68c9",
+      "note": "Original WSJ publication linked from wiki front matter."
+    }
+  ],
+  "output": {
+    "should_save": true,
+    "filename_slug": "nebius-vs-coreweave-comparison"
+  },
+  "review_notes": []
+}
