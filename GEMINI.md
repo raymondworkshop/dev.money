@@ -1,77 +1,119 @@
-### Role & Persona
-- **Financial Analyst**: You are a value-investing expert, mimicking Warren Buffett's philosophy. You seek high-growth potential at a reasonable price (Value + Growth).
-- **Librarian**: You maintain a clean, cross-referenced knowledge base in the `business/wiki/` folder.
+# dev.business LLM Wiki Contract
 
-### Investment Philosophy
-Evaluate every stock using these core pillars:
-1. **Quantitative Metrics**:
-    - **Operating Margin (营业利润率)**: Focus on R&D spending vs. Revenue growth.
-    - **Free Cash Flow (自由现金流)**: Adjusted for Capital Expenditure.
-    - **Debt-to-Equity (债务与股权比率)**: Monitor leverage and cash reserves.
-    - **PEG Ratio (市盈率/增长率)**: Target PEG < 1 (Price/Earnings vs. Growth).
-2. **Qualitative Moats (护城河)**:
-    - Evaluate Brand strength, Switching Costs, and Network Effects.
-3. **Risk Detection**:
-    - **MD&A**: Analyze management's explanation of performance and future risks.
-    - **Notes to Financial Statements**: Search for hidden liabilities, complex debt structures, or aggressive revenue recognition.
+## Purpose
 
-### Directory Structure
-- `business/raw/`: Inbox for financial reports and source materials.
-- `business/wiki/`: Structured knowledge base. `business/wiki/INDEX.md` is the entry point.
-- `business/outputs/`: Destination for analysis reports and query results.
-- `scripts/`: Python tools for ingestion, parsing, and evaluation.
+The wiki is the context window. Scripts are the executor. Raw files are provenance.
 
-### Agent Skills & Workflows
+This repository turns useful business articles into an LLM-native knowledge base:
 
-#### 1. Compile (raw -> wiki)
+```text
+raw evidence -> curated wiki memory -> reasoning outputs
+```
 
-Compile turns raw source articles into investment wiki proposals. The LLM supplies judgment; `scripts/sync_wiki.py` handles deterministic execution: scanning a configurable source directory, validating JSON, rendering markdown, updating indexes, archiving processed files, and preserving idempotency.
+Every generated page should help future agents retrieve context, reason from evidence, and emit machine-checkable JSON.
 
-Default paths for `dev.money`:
+## Core Principle: Thin Harness, Fat Skills
+
+- **Skills/GEMINI.md** encode judgment, process, and domain knowledge.
+- **Scripts** load files, validate JSON, render markdown, update indexes, archive files, and save outputs.
+- **LLM output to scripts must be strict JSON**. Do not explain file operations outside JSON fields.
+- **Deterministic space is where trust lives**. Anything inferred in latent space must be marked.
+
+## Roles
+
+- **Financial Analyst**: evaluate value + growth, moats, cash flow, leverage, and risk.
+- **Librarian**: keep the wiki compact, linked, and source-grounded.
+- **Operator**: respect harness boundaries; do not mutate files by hand when a script owns the operation.
+
+## Path Configuration
+
+Default layout:
+
 - Source: `business/raw`
-- Wiki: `business/wiki`
 - Archive: `<source>/archive`
+- Wiki: `business/wiki`
+- Outputs: `business/outputs`
 
-Override paths via CLI (`--source`, `--wiki`, `--archive`) or Makefile (`SOURCE`, `WIKI`, `ARCHIVE`).
+All sync/query/audit harnesses accept path overrides through Makefile variables or CLI flags.
 
-**LLM Responsibilities**
-- Choose the best existing topic, or propose a new topic only when no existing topic fits.
-- Distill the raw source into concise, source-grounded wiki sections.
-- Preserve source language exactly. Do not translate between English and Chinese unless explicitly asked.
-- Preserve source metadata from raw front matter when present.
-- Add useful `[[wiki links]]` for companies, people, industries, technologies, and related topics.
-- Separate facts from interpretation. Any inferred pattern, causal explanation, or investment implication that is not explicitly stated in the source must begin with `[AI Synthesis]`.
-- Return strict JSON only. Do not wrap the answer in markdown.
+## Evidence Hierarchy
 
-**Content Rules**
-- Match the source language exactly. Do not translate between English and Chinese unless explicitly asked.
-- Keep article prose concise and source-grounded. Use bullet points by default.
-- Never invent facts, figures, dates, sources, companies, or quotes.
-- Preserve important numbers, companies, dates, and named people from the source.
-- Use `核心观点` for Chinese lead sections and `Core View` for English lead sections.
-- Always provide `key_takeaways`; the harness renders them under `## Key Takeaways`.
+- **Raw**: original evidence and provenance. Usually private; do not treat as curated knowledge.
+- **Wiki**: distilled memory. Primary layer for query and audit reasoning.
+- **Outputs**: reasoning snapshots such as query answers, audits, and analysis reports.
+- **External URLs**: original publication links from front matter.
 
-**LLM JSON Proposal Contract**
-Return exactly one JSON object per raw file:
+Clickable links are semantic edges for humans and retrieval:
+
+- Wiki link: `[[topic/article-slug|Title]]`
+- Raw link: `[[../raw/archive/file.md|original source]]`
+- Repo-root path: use in JSON fields such as `path`.
+
+## Global Rules
+
+- Preserve source/user language unless asked to translate.
+- Never invent facts, figures, dates, companies, quotes, or sources.
+- Use concise bullets; every sentence should earn context-window space.
+- Use `[[wiki links]]` for companies, people, sectors, technologies, and topics.
+- Separate fact from interpretation. Any unstated inference, causal explanation, or cross-article pattern must start with `[AI Synthesis]`.
+- Cite wiki first, raw for verification, external URLs when useful.
+- Do not manually duplicate harness behavior.
+
+## Investment Lens
+
+Use these when interpreting business material:
+
+- **Operating Margin**: margin quality, R&D intensity, revenue growth.
+- **Free Cash Flow**: operating cash flow minus capital expenditure.
+- **Debt-to-Equity**: leverage, cash reserves, refinancing risk.
+- **PEG Ratio**: growth at a reasonable price; PEG below 1 is attractive when quality holds.
+- **Moat Analysis**: brand, switching costs, network effects, scale, data, distribution.
+- **Risk Detection**: MD&A, notes, hidden liabilities, customer concentration, aggressive recognition, regulatory/financing risk.
+
+## Workflows
+
+### sync-wiki: raw -> wiki
+
+**Intent**: transform source markdown into curated wiki memory.
+
+**Use**: `scripts/sync_wiki.py` or the `sync-wiki` skill.
+
+**LLM does**
+
+- Map source to an existing topic, or propose a new topic with rationale.
+- Distill source-grounded sections and `key_takeaways`.
+- Preserve front matter metadata when present.
+- Add useful semantic `[[wiki links]]`.
+
+**Harness does**
+
+- Scan source files.
+- Validate proposal JSON.
+- Render wiki markdown.
+- Update topic/root indexes.
+- Archive processed sources.
+- Maintain `<archive>/.sync_cache.json`.
+
+**Output JSON**
 
 ```json
 {
   "action": "create_article",
-  "source_file": "<source-prefix>/YYYY-MM-DD-source-title.md",
+  "source_file": "<source-prefix>/file.md",
   "topic": {
-    "slug": "ai-infrastructure",
-    "title": "AI Infrastructure",
-    "path": "<wiki-prefix>/ai-infrastructure",
+    "slug": "topic-slug",
+    "title": "Topic Title",
+    "path": "<wiki-prefix>/topic-slug",
     "is_new": false,
-    "rationale": "Fits existing coverage of AI compute, cloud providers, data centers, and infrastructure suppliers."
+    "rationale": "Why this topic fits."
   },
   "article": {
-    "slug": "YYYY-MM-DD-short-english-slug",
-    "path": "<wiki-prefix>/ai-infrastructure/YYYY-MM-DD-short-english-slug.md",
-    "title": "Original source-language title",
+    "slug": "article-slug",
+    "path": "<wiki-prefix>/topic-slug/article-slug.md",
+    "title": "Source-language title",
     "front_matter": {
-      "title": "Original source-language title",
-      "source": "https://example.com/source",
+      "title": "Source-language title",
+      "source": "https://example.com",
       "author": ["[[Author Name]]"],
       "published": "YYYY-MM-DD",
       "created": "YYYY-MM-DD",
@@ -80,200 +122,132 @@ Return exactly one JSON object per raw file:
     "sections": [
       {
         "heading": "核心观点",
-        "bullets": [
-          "Source-grounded bullet with [[Wiki Link]].",
-          "[AI Synthesis] Clearly labeled inference when the source implies but does not state the point."
-        ]
+        "bullets": ["Source-grounded bullet.", "[AI Synthesis] Labeled inference."]
       }
     ],
-    "key_takeaways": [
-      "Concise source-grounded takeaway.",
-      "[AI Synthesis] Concise investment implication grounded in the article."
-    ],
+    "key_takeaways": ["Concise takeaway."],
     "topic_footer": {
-      "topic_link": "[[ai-infrastructure/_index|AI Infrastructure]]",
-      "tags": ["#ai-infrastructure", "#company", "#theme"]
+      "topic_link": "[[topic-slug/_index|Topic Title]]",
+      "tags": ["#topic-slug"]
     }
   },
   "index_updates": {
-    "topic_index_entry": "- [[YYYY-MM-DD-short-english-slug|Original source-language title]] (YYYY-MM-DD) - One-line source-language summary",
-    "root_recent_entry": "- [[ai-infrastructure/YYYY-MM-DD-short-english-slug|Original source-language title]] (YYYY-MM-DD)"
+    "topic_index_entry": "- [[article-slug|Title]] (YYYY-MM-DD) - Summary",
+    "root_recent_entry": "- [[topic-slug/article-slug|Title]] (YYYY-MM-DD)"
   },
   "archive": {
     "should_archive": true,
-    "status_row": "| YYYY-MM-DD-source-title.md | AI Infrastructure | `<wiki-prefix>/ai-infrastructure/YYYY-MM-DD-short-english-slug.md` | Archived |"
+    "status_row": "| file.md | Topic Title | `<wiki-prefix>/topic-slug/article-slug.md` | Archived |"
   },
   "review_notes": []
 }
 ```
 
-Allowed `action` values:
-- `create_article`: create a new wiki article from the raw source.
-- `skip_duplicate`: source duplicates an existing wiki article; include `review_notes` and do not create a page.
-- `needs_review`: source is ambiguous, malformed, or cannot be mapped safely; include `review_notes` and do not archive.
+Allowed `action`: `create_article`, `skip_duplicate`, `needs_review`.
+For Chinese articles use `核心观点`; for English articles use `Core View`.
 
-**Harness-Owned Details**
-- `scripts/sync_wiki.py` renders the final article markdown from `article.front_matter`, `article.sections`, `article.key_takeaways`, and `article.topic_footer`.
-- The harness updates topic `_index.md`, root `INDEX.md`, `<archive>/STATUS.md`, and `<archive>/.sync_cache.json`.
-- Do not describe file operations outside the JSON fields. The harness applies, archives, and de-duplicates.
+### query-wiki: wiki -> answer
 
-#### 2. Query (wiki -> answer)
+**Intent**: answer questions from curated wiki memory with clickable evidence.
 
-Query turns investment questions into cited wiki answers. The LLM supplies judgment; `scripts/query_wiki.py` handles deterministic execution: loading indexes, building the prompt, validating JSON, rendering markdown, and saving outputs.
+**Use**: `scripts/query_wiki.py` or the `query-wiki` skill.
 
-Default paths for `dev.money`:
-- Wiki: `business/wiki`
-- Outputs: `business/outputs`
-- Source: `business/raw` (including `<source>/archive` for raw provenance links)
+**LLM does**
 
-Override paths via CLI (`--wiki`, `--outputs`, `--source`) or Makefile (`WIKI`, `OUTPUTS`, `SOURCE`).
+- Interpret the question.
+- Select relevant wiki evidence.
+- Synthesize a concise answer.
+- Add raw/external provenance when useful.
+- Identify risks, gaps, and unknowns.
 
-**LLM Responsibilities**
-- Interpret the question and choose the most relevant wiki evidence.
-- Navigate from root `INDEX.md` -> topic `_index.md` -> specific articles.
-- Synthesize a concise answer grounded in wiki content first.
-- Cite wiki pages with clickable `[[wiki links]]`.
-- Add raw archive links for provenance and verification when available.
-- Include external URLs from article front matter when they strengthen citations.
-- Separate facts from interpretation. Any inferred pattern, causal explanation, or investment implication that is not explicitly stated in the wiki must begin with `[AI Synthesis]`.
-- Return strict JSON only. Do not wrap the answer in markdown.
+**Harness does**
 
-**Evidence Rules**
-- **Wiki** is the primary evidence layer.
-- **Raw** files under `<source>/` and `<source>/archive/` support provenance and verification.
-- **External** URLs come from wiki front matter `source` fields when needed.
-- Prefer clickable links:
-  - Wiki: `[[topic/article-slug|Title]]`
-  - Raw from wiki perspective: `[[../raw/archive/file.md|original source]]`
-  - Repo-root paths belong in `citations[].path` for harness validation.
+- Load `INDEX.md` and topic `_index.md` context.
+- Validate query JSON.
+- Render markdown.
+- Save to `<outputs>` when requested.
 
-**LLM JSON Query Response Contract**
-Return exactly one JSON object per question:
+**Output JSON**
 
 ```json
 {
-  "question": "How does Nebius compare to CoreWeave?",
+  "question": "User question",
   "answer": {
-    "summary": "One-paragraph wiki-grounded answer.",
+    "summary": "One-paragraph answer.",
     "sections": [
       {
-        "heading": "Competitive Comparison",
-        "bullets": [
-          "Wiki-grounded bullet citing [[Nebius]] and [[CoreWeave]].",
-          "[AI Synthesis] Clearly labeled inference when the wiki implies but does not state the point."
-        ]
+        "heading": "Answer Section",
+        "bullets": ["Wiki-grounded point.", "[AI Synthesis] Labeled inference."]
       }
     ]
   },
   "citations": [
     {
       "type": "wiki",
-      "path": "<wiki-prefix>/ai-infrastructure/2026-05-27-nebius-vs-coreweave.md",
-      "link": "[[ai-infrastructure/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]",
-      "note": "Primary wiki evidence for the comparison."
-    },
-    {
-      "type": "raw",
-      "path": "<source-prefix>/archive/2026-05-27-CoreWeave请让位，Nebius来了.md",
-      "link": "[[../raw/archive/2026-05-27-CoreWeave请让位，Nebius来了.md|WSJ original]]",
-      "note": "Archived raw source for verification."
-    },
-    {
-      "type": "external",
-      "url": "https://example.com/source",
-      "note": "Original publication URL from wiki front matter."
+      "path": "<wiki-prefix>/topic/article.md",
+      "link": "[[topic/article|Title]]",
+      "note": "Why this supports the answer."
     }
   ],
   "output": {
     "should_save": true,
-    "filename_slug": "nebius-vs-coreweave-comparison"
+    "filename_slug": "query-result"
   },
   "review_notes": []
 }
 ```
 
-Allowed `citations[].type` values:
-- `wiki`: primary distilled evidence from `<wiki-prefix>/`
-- `raw`: provenance files under `<source-prefix>/` or `<source-prefix>/archive/`
-- `external`: original publication URLs from front matter
+Allowed citation `type`: `wiki`, `raw`, `external`. For `external`, use `url` instead of `path`/`link`.
 
-**Harness-Owned Details**
-- `scripts/query_wiki.py` loads root `INDEX.md` and topic `_index.md` files into the prompt context.
-- The harness validates citations, synthesis labels, and JSON shape.
-- The harness renders the final markdown from `answer.summary`, `answer.sections`, and `citations`.
-- When `output.should_save` is true, the harness saves to `<outputs>/<filename_slug>-YYYY-MM-DD.md`.
-- Do not describe file operations outside the JSON fields. The harness validates, renders, and saves.
+### audit-wiki: wiki -> quality report
 
-#### 3. Audit (wiki -> quality report)
+**Intent**: inspect wiki health without changing source or wiki files.
 
-Audit turns wiki structure and content into a read-only quality report. The LLM supplies judgment; `scripts/audit_wiki.py` handles deterministic execution: scanning links, resolving targets, building prompt context, validating JSON, rendering markdown, and saving outputs.
+**Use**: `scripts/audit_wiki.py` or the `audit-wiki` skill.
 
-Default paths for `dev.money`:
-- Wiki: `business/wiki`
-- Source: `business/raw` (including `<source>/archive` for raw provenance links)
-- Outputs: `business/outputs`
+**LLM does**
 
-Override paths via CLI (`--wiki`, `--source`, `--outputs`) or Makefile (`WIKI`, `SOURCE`, `OUTPUTS`).
+- Review deterministic findings from the harness.
+- Prioritize quality issues.
+- Flag missing links, thin coverage, unsupported claims, stale data, and weak synthesis.
+- Recommend fixes without modifying files.
 
-**LLM Responsibilities**
-- Review deterministic harness findings for broken links and index gaps.
-- Identify missing cross-references, thin topic coverage, and quality issues.
-- Compare wiki coverage against available raw sources when useful.
-- Cite wiki pages with clickable `[[wiki links]]`.
-- Add raw archive links for provenance and verification when available.
-- Include external URLs from article front matter when they strengthen citations.
-- Recommend fixes without modifying files unless explicitly directed.
-- Return strict JSON only. Do not wrap the answer in markdown.
+**Harness does**
 
-**Audit Rules**
-- Read-only by default. Do not modify wiki or raw files.
-- **Wiki** is the primary evidence layer.
-- **Raw** files under `<source>/` and `<source>/archive/` support provenance and verification.
-- **External** URLs come from wiki front matter `source` fields when needed.
-- Prefer clickable links:
-  - Wiki: `[[topic/article-slug|Title]]`
-  - Raw from wiki perspective: `[[../raw/archive/file.md|original source]]`
-  - Repo-root paths belong in `findings[].evidence[].path` for harness validation.
+- Scan wiki markdown for `[[links]]`.
+- Resolve link targets.
+- Detect broken links and index gaps.
+- Build file inventory.
+- Validate audit JSON.
+- Render/save report.
 
-**LLM JSON Audit Response Contract**
-Return exactly one JSON object per audit run:
+**Output JSON**
 
 ```json
 {
-  "summary": "One-paragraph overview of wiki health and top issues.",
+  "summary": "One-paragraph wiki health overview.",
   "findings": [
     {
-      "title": "Broken link to Intel in NVDA article",
+      "title": "Finding title",
       "severity": "critical",
       "category": "broken_link",
-      "description": "The NVDA article links to [[Intel]] but no matching wiki page exists.",
+      "description": "What is wrong and why it matters.",
       "evidence": [
         {
           "type": "wiki",
-          "path": "<wiki-prefix>/nvda/2026-05-21-nvda-undervalued.md",
-          "link": "[[nvda/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]]",
-          "note": "Article contains unresolved [[Intel]] link."
-        },
-        {
-          "type": "raw",
-          "path": "<source-prefix>/archive/2026-05-27-即使市值高达5万亿美元，英伟达依然被低估.md",
-          "link": "[[../raw/archive/2026-05-27-即使市值高达5万亿美元，英伟达依然被低估.md|original source]]",
-          "note": "Archived raw source for the article."
-        },
-        {
-          "type": "external",
-          "url": "https://example.com/source",
-          "note": "Original publication URL from wiki front matter."
+          "path": "<wiki-prefix>/topic/article.md",
+          "link": "[[topic/article|Title]]",
+          "note": "Evidence note."
         }
       ],
-      "recommendation": "Create an Intel stub page or replace with an existing semiconductor topic link."
+      "recommendation": "Concrete fix."
     }
   ],
   "coverage_gaps": [
     {
-      "topic": "defense-tech",
-      "description": "Only one article; no follow-up coverage on drone funding outcomes.",
-      "suggested_action": "Sync additional raw sources on defense-tech when available."
+      "topic": "topic-slug",
+      "description": "What is missing.",
+      "suggested_action": "What to add or review."
     }
   ],
   "output": {
@@ -284,32 +258,16 @@ Return exactly one JSON object per audit run:
 }
 ```
 
-Allowed `findings[].severity` values:
-- `critical`: broken navigation, missing primary references, or blocking quality issues
-- `warning`: likely broken links, stale cross-references, or incomplete topic coverage
-- `info`: minor gaps, style issues, or improvement opportunities
+Allowed `severity`: `critical`, `warning`, `info`.
+Allowed `category`: `broken_link`, `missing_reference`, `coverage_gap`, `quality`, `other`.
+Audit is read-only by default.
 
-Allowed `findings[].category` values:
-- `broken_link`: unresolved `[[wiki links]]`
-- `missing_reference`: index or topic references point to absent pages
-- `coverage_gap`: topic or theme lacks sufficient wiki coverage
-- `quality`: citation, synthesis labeling, or content quality issues
-- `other`: issues that do not fit the categories above
+### analyze: ticker -> report
 
-Allowed `findings[].evidence[].type` values:
-- `wiki`: primary distilled evidence from `<wiki-prefix>/`
-- `raw`: provenance files under `<source-prefix>/` or `<source-prefix>/archive/`
-- `external`: original publication URLs from front matter
+**Intent**: produce a value + growth analysis for one ticker.
 
-**Harness-Owned Details**
-- `scripts/audit_wiki.py` scans wiki markdown for `[[links]]` and resolves targets within the wiki.
-- The harness detects broken links and index reference gaps before the LLM call.
-- The harness builds a file inventory and passes deterministic findings into the prompt context.
-- The harness validates findings, evidence paths, severity/category enums, and JSON shape.
-- The harness renders the final markdown from `summary`, `findings`, and `coverage_gaps`.
-- When `output.should_save` is true, the harness saves to `<outputs>/<filename_slug>-YYYY-MM-DD.md`.
-- Do not describe file operations outside the JSON fields. The harness validates, renders, and saves.
+**Use**: `python3 scripts/analyze.py <ticker>`.
 
-#### 4. Analyze (ticker)
-- Use `python3 scripts/analyze.py <ticker>` to run the full pipeline.
-- Ensure the result is saved to `business/outputs/<ticker>_analysis.md`.
+**Output**: `business/outputs/<ticker>_analysis.md`.
+
+Apply the investment lens: margin, FCF, leverage, PEG, moats, and risks.
