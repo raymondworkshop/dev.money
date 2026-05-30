@@ -1,0 +1,47 @@
+{
+  "action": "create_article",
+  "source_file": "business/raw/2026-05-30-sample.md",
+  "topic": {
+    "slug": "ai-infrastructure",
+    "title": "AI Infrastructure",
+    "path": "business/wiki/ai-infrastructure",
+    "is_new": false,
+    "rationale": "Covers cloud infrastructure."
+  },
+  "article": {
+    "slug": "2026-05-30-sample-article",
+    "path": "business/wiki/ai-infrastructure/2026-05-30-sample-article.md",
+    "title": "Sample Article",
+    "front_matter": {
+      "title": "Sample Article",
+      "source": "https://example.com/sample",
+      "author": ["[[Author Name]]"],
+      "published": "2026-05-30",
+      "created": "2026-05-30",
+      "description": "Sample description"
+    },
+    "sections": [
+      {
+        "heading": "Core View",
+        "bullets": [
+          "Grounded bullet with [[Company]].",
+          "[AI Synthesis] Labeled inference."
+        ]
+      }
+    ],
+    "key_takeaways": ["Grounded takeaway."],
+    "topic_footer": {
+      "topic_link": "[[ai-infrastructure/_index|AI Infrastructure]]",
+      "tags": ["#ai-infrastructure", "#sample"]
+    }
+  },
+  "index_updates": {
+    "topic_index_entry": "- [[2026-05-30-sample-article|Sample Article]] (2026-05-30) - Summary",
+    "root_recent_entry": "- [[ai-infrastructure/2026-05-30-sample-article|Sample Article]] (2026-05-30)"
+  },
+  "archive": {
+    "should_archive": true,
+    "status_row": "| 2026-05-30-sample.md | AI Infrastructure | `business/wiki/ai-infrastructure/2026-05-30-sample-article.md` | Archived |"
+  },
+  "review_notes": []
+}
