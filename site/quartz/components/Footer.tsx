@@ -12,7 +12,7 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <p>
-          Created with Bean Workshop Limited © {year}
+          Created with Bean Workshop Ltd. © {year}
         </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (

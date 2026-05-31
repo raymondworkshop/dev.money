@@ -5,7 +5,7 @@ created: "2026-05-30"
 
 # Business Wiki
 
-Welcome to the business knowledge base. This wiki is structured by topics and tickers following a value-investing philosophy.
+Welcome to AI-generated business knowledge base. This wiki is structured by topics and tickers following a value-based philosophy.
 
 ## Topics
 
