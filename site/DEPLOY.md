@@ -30,7 +30,7 @@ If Wrangler asks you to authenticate:
 npx wrangler login
 ```
 
-The default Cloudflare Pages project name is `dev-business-wiki`. Override it with:
+The default Cloudflare Pages project name is `business`. Override it with:
 
 ```bash
 make site-deploy PAGES_PROJECT=your-project-name
