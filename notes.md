@@ -24,7 +24,7 @@
 
 * site  
     - make site-deploy 
-    > https://business.pages.dev/
+    > https://dev-money.pages.dev/
 
     
 #### references
