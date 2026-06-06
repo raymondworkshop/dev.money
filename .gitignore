@@ -1,7 +1,10 @@
 .playwright-cli
+.cursor
+.obsidian
 scripts/__pycache__
 site/node_modules/
 site/public/
 site/.quartz/
 site/.quartz-cache
 site/tsconfig.tsbuildinfo
+.env
