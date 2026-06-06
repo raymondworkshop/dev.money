@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "description": "dev.business repo tooling (Cloudflare Pages deploy)",
+  "devDependencies": {
+    "wrangler": "^4.95.0"
+  }
+}
