@@ -17,8 +17,8 @@ from llm_provider import LLMProvider, LLMRequest, build_provider, proposal_from_
 
 ROOT = Path(__file__).resolve().parent.parent
 GEMINI_CONF = ROOT / "GEMINI.md"
-DEFAULT_SOURCE = "business/raw"
-DEFAULT_WIKI = "business/wiki"
+DEFAULT_SOURCE = "newswiki/raw"
+DEFAULT_WIKI = "newswiki/wiki"
 
 
 def _resolve_path(base: Path, value: Path | str) -> Path:

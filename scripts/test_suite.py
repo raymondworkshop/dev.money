@@ -77,8 +77,8 @@ def load_audit_fixture(name: str) -> dict:
 @contextmanager
 def sync_workspace(
     *,
-    source: str = "business/raw",
-    wiki: str = "business/wiki",
+    source: str = "newswiki/raw",
+    wiki: str = "newswiki/wiki",
     archive: str | None = None,
 ):
     """Patch sync_wiki paths to an isolated temp workspace."""
@@ -120,9 +120,9 @@ def sync_workspace(
 @contextmanager
 def query_workspace(
     *,
-    wiki: str = "business/wiki",
-    outputs: str = "business/outputs",
-    source: str = "business/raw",
+    wiki: str = "newswiki/wiki",
+    outputs: str = "newswiki/outputs",
+    source: str = "newswiki/raw",
 ):
     """Patch query_wiki paths to an isolated temp workspace."""
 
@@ -162,9 +162,9 @@ def query_workspace(
 @contextmanager
 def audit_workspace(
     *,
-    wiki: str = "business/wiki",
-    outputs: str = "business/outputs",
-    source: str = "business/raw",
+    wiki: str = "newswiki/wiki",
+    outputs: str = "newswiki/outputs",
+    source: str = "newswiki/raw",
 ):
     """Patch audit_wiki paths to an isolated temp workspace."""
 
@@ -275,7 +275,7 @@ class SyncWikiTests(unittest.TestCase):
 
     def test_validate_rejects_bad_source_file(self) -> None:
         proposal = copy.deepcopy(self.sample_proposal)
-        proposal["source_file"] = "business/raw/wrong.md"
+        proposal["source_file"] = "newswiki/raw/wrong.md"
         with self.assertRaisesRegex(ValueError, "source_file"):
             validate_proposal(proposal, Path("2026-05-30-sample.md"))
 
@@ -288,7 +288,7 @@ class SyncWikiTests(unittest.TestCase):
     def test_validate_allows_skip_duplicate_without_article_fields(self) -> None:
         proposal = {
             "action": "skip_duplicate",
-            "source_file": "business/raw/2026-05-30-sample.md",
+            "source_file": "newswiki/raw/2026-05-30-sample.md",
             "review_notes": ["Duplicate of existing wiki article."],
         }
         validate_proposal(proposal, Path("2026-05-30-sample.md"))
@@ -400,7 +400,7 @@ class SyncWikiTests(unittest.TestCase):
             proposal["topic"]["path"] = "research/wiki/ai-infrastructure"
             proposal["article"]["path"] = "research/wiki/ai-infrastructure/2026-05-30-sample-article.md"
             proposal["archive"]["status_row"] = proposal["archive"]["status_row"].replace(
-                "business/wiki", "research/wiki"
+                "newswiki/wiki", "research/wiki"
             )
             validate_proposal(proposal, Path("2026-05-30-sample.md"))
 
@@ -638,7 +638,7 @@ class LLMProviderTests(unittest.TestCase):
     def test_fixture_provider_returns_json_proposal(self) -> None:
         fixture = {
             "action": "create_article",
-            "source_file": "business/raw/example.md",
+            "source_file": "newswiki/raw/example.md",
             "review_notes": [],
         }
         provider = FixtureProvider(fixture)

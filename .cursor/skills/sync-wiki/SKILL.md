@@ -1,6 +1,6 @@
 ---
 name: sync-wiki
-description: Sync markdown from a configurable source directory into a structured wiki directory. Use when processing business/raw or another source directory into business/wiki, updating wiki indexes, archiving processed files, or running scripts/sync_wiki.py.
+description: Sync markdown from a configurable source directory into a structured wiki directory. Use when processing newswiki/raw or another source directory into newswiki/wiki, updating wiki indexes, archiving processed files, or running scripts/sync_wiki.py.
 ---
 
 # Sync Wiki
@@ -27,8 +27,8 @@ The harness supplies deterministic execution:
 
 For `dev.money`, the default layout is:
 
-- Source: `business/raw`
-- Wiki: `business/wiki`
+- Source: `newswiki/raw`
+- Wiki: `newswiki/wiki`
 - Archive: `<source>/archive`
 
 Other layouts are valid. Treat `SOURCE`, `WIKI`, and `ARCHIVE` as execution parameters.
@@ -72,17 +72,17 @@ Use the Makefile by default. If direct script usage is needed:
 
 ```bash
 python3 scripts/sync_wiki.py \
-  --source business/raw \
-  --wiki business/wiki \
-  --archive business/raw/archive
+  --source newswiki/raw \
+  --wiki newswiki/wiki \
+  --archive newswiki/raw/archive
 ```
 
 Dry run:
 
 ```bash
 python3 scripts/sync_wiki.py \
-  --source business/raw \
-  --wiki business/wiki \
+  --source newswiki/raw \
+  --wiki newswiki/wiki \
   --dry-run
 ```
 

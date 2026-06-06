@@ -29,10 +29,10 @@ Every generated page should help future agents retrieve context, reason from evi
 
 Default layout:
 
-- Source: `business/raw`
+- Source: `newswiki/raw`
 - Archive: `<source>/archive`
-- Wiki: `business/wiki`
-- Outputs: `business/outputs`
+- Wiki: `newswiki/wiki`
+- Outputs: `newswiki/outputs`
 
 All sync/query/audit harnesses accept path overrides through Makefile variables or CLI flags.
 
@@ -268,6 +268,6 @@ Audit is read-only by default.
 
 **Use**: `python3 scripts/analyze.py <ticker>`.
 
-**Output**: `business/outputs/<ticker>_analysis.md`.
+**Output**: `newswiki/outputs/<ticker>_analysis.md`.
 
 Apply the investment lens: margin, FCF, leverage, PEG, moats, and risks.

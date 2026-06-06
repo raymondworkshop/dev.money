@@ -15,13 +15,13 @@
   "citations": [
     {
       "type": "wiki",
-      "path": "business/wiki/ai-infrastructure/2026-05-27-nebius-vs-coreweave.md",
+      "path": "newswiki/wiki/ai-infrastructure/2026-05-27-nebius-vs-coreweave.md",
       "link": "[[ai-infrastructure/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]",
       "note": "Primary wiki comparison of revenue, contracts, and moats."
     },
     {
       "type": "raw",
-      "path": "business/raw/archive/2026-05-27-CoreWeave请让位，Nebius来了.md",
+      "path": "newswiki/raw/archive/2026-05-27-CoreWeave请让位，Nebius来了.md",
       "link": "[[../raw/archive/2026-05-27-CoreWeave请让位，Nebius来了.md|WSJ original]]",
       "note": "Archived raw article for provenance."
     },

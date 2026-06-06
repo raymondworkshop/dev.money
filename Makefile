@@ -1,15 +1,15 @@
 # dev.business automation
 
 PYTHON = python3
-SOURCE ?= business/raw
-WIKI ?= business/wiki
+SOURCE ?= newswiki/raw
+WIKI ?= newswiki/wiki
 ARCHIVE ?= $(SOURCE)/archive
-OUTPUTS ?= business/outputs
+OUTPUTS ?= newswiki/outputs
 SITE_DIR ?= site
 SITE_CONTENT ?= $(SITE_DIR)/content
 SITE_OUTPUT ?= $(SITE_DIR)/public
 SITE_PORT ?= 8080
-PAGES_PROJECT ?= business
+PAGES_PROJECT ?= news-wiki
 SYNC_FLAGS = --source "$(SOURCE)" --wiki "$(WIKI)" --archive "$(ARCHIVE)"
 QUERY_FLAGS = --wiki "$(WIKI)" --outputs "$(OUTPUTS)" --source "$(SOURCE)"
 AUDIT_FLAGS = --wiki "$(WIKI)" --source "$(SOURCE)" --outputs "$(OUTPUTS)"
@@ -30,7 +30,7 @@ help:
 	@echo "  make query QUESTION=\"...\" - Query wiki and save answer to outputs"
 	@echo "  make audit             - Audit wiki quality and save report to outputs"
 	@echo "  make analyze TICKER=MSFT - Run stock analysis pipeline"
-	@echo "  make site-build        - Build Quartz website from business/wiki"
+	@echo "  make site-build        - Build Quartz website from newswiki/wiki"
 	@echo "  make site-serve        - Preview Quartz website locally"
 	@echo "  make site-deploy       - Deploy site/public to Cloudflare Pages"
 	@echo ""

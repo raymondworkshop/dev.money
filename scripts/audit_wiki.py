@@ -15,9 +15,9 @@ from llm_provider import LLMProvider, LLMRequest, build_provider, proposal_from_
 
 ROOT = Path(__file__).resolve().parent.parent
 GEMINI_CONF = ROOT / "GEMINI.md"
-DEFAULT_WIKI = "business/wiki"
-DEFAULT_OUTPUTS = "business/outputs"
-DEFAULT_SOURCE = "business/raw"
+DEFAULT_WIKI = "newswiki/wiki"
+DEFAULT_OUTPUTS = "newswiki/outputs"
+DEFAULT_SOURCE = "newswiki/raw"
 
 WIKI_LINK_RE = re.compile(r"\[\[([^\]|]+)(?:\|[^\]]+)?\]\]")
 SEVERITIES = {"critical", "warning", "info"}
@@ -123,7 +123,7 @@ def extract_wiki_links(content: str) -> list[str]:
 
 def _wiki_candidates(target: str, source_file: Path) -> list[Path]:
     candidates: list[Path] = []
-    if target.startswith("../") or target.startswith("business/raw"):
+    if target.startswith("../") or target.startswith("newswiki/raw"):
         return candidates
 
     if "/" in target:

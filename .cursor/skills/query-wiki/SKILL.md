@@ -1,6 +1,6 @@
 ---
 name: query-wiki
-description: Answer investment questions from the structured wiki with cited evidence. Use when querying business/wiki, searching knowledge base topics, synthesizing wiki articles, running scripts/query_wiki.py, or make query.
+description: Answer investment questions from the structured wiki with cited evidence. Use when querying newswiki/wiki, searching knowledge base topics, synthesizing wiki articles, running scripts/query_wiki.py, or make query.
 ---
 
 # Query Wiki
@@ -26,9 +26,9 @@ The harness supplies deterministic execution:
 
 For `dev.money`, the default layout is:
 
-- Wiki: `business/wiki`
-- Outputs: `business/outputs`
-- Source: `business/raw` (including `business/raw/archive` for provenance links)
+- Wiki: `newswiki/wiki`
+- Outputs: `newswiki/outputs`
+- Source: `newswiki/raw` (including `newswiki/raw/archive` for provenance links)
 
 Other layouts are valid. Treat `WIKI`, `OUTPUTS`, and `SOURCE` as execution parameters.
 
@@ -65,9 +65,9 @@ Use the Makefile by default. If direct script usage is needed:
 
 ```bash
 python3 scripts/query_wiki.py \
-  --wiki business/wiki \
-  --outputs business/outputs \
-  --source business/raw \
+  --wiki newswiki/wiki \
+  --outputs newswiki/outputs \
+  --source newswiki/raw \
   --question "How does Nebius compare to CoreWeave?"
 ```
 
@@ -75,9 +75,9 @@ Dry run:
 
 ```bash
 python3 scripts/query_wiki.py \
-  --wiki business/wiki \
-  --outputs business/outputs \
-  --source business/raw \
+  --wiki newswiki/wiki \
+  --outputs newswiki/outputs \
+  --source newswiki/raw \
   --question "What stablecoin risks are documented?" \
   --dry-run
 ```

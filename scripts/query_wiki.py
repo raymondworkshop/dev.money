@@ -15,9 +15,9 @@ from llm_provider import LLMProvider, LLMRequest, build_provider, proposal_from_
 
 ROOT = Path(__file__).resolve().parent.parent
 GEMINI_CONF = ROOT / "GEMINI.md"
-DEFAULT_WIKI = "business/wiki"
-DEFAULT_OUTPUTS = "business/outputs"
-DEFAULT_SOURCE = "business/raw"
+DEFAULT_WIKI = "newswiki/wiki"
+DEFAULT_OUTPUTS = "newswiki/outputs"
+DEFAULT_SOURCE = "newswiki/raw"
 
 AI_SYNTHESIS_PREFIX = "[AI Synthesis]"
 CITATION_TYPES = {"wiki", "raw", "external"}

@@ -1,6 +1,6 @@
 ---
 name: audit-wiki
-description: Audit the investment wiki for broken links, missing references, and coverage gaps. Use when reviewing business/wiki quality, running scripts/audit_wiki.py, or make audit.
+description: Audit the investment wiki for broken links, missing references, and coverage gaps. Use when reviewing newswiki/wiki quality, running scripts/audit_wiki.py, or make audit.
 ---
 
 # Audit Wiki
@@ -28,9 +28,9 @@ The harness supplies deterministic execution:
 
 For `dev.money`, the default layout is:
 
-- Wiki: `business/wiki`
-- Source: `business/raw` (including `business/raw/archive` for provenance links)
-- Outputs: `business/outputs`
+- Wiki: `newswiki/wiki`
+- Source: `newswiki/raw` (including `newswiki/raw/archive` for provenance links)
+- Outputs: `newswiki/outputs`
 
 Other layouts are valid. Treat `WIKI`, `SOURCE`, and `OUTPUTS` as execution parameters.
 
@@ -67,18 +67,18 @@ Use the Makefile by default. If direct script usage is needed:
 
 ```bash
 python3 scripts/audit_wiki.py \
-  --wiki business/wiki \
-  --source business/raw \
-  --outputs business/outputs
+  --wiki newswiki/wiki \
+  --source newswiki/raw \
+  --outputs newswiki/outputs
 ```
 
 Dry run:
 
 ```bash
 python3 scripts/audit_wiki.py \
-  --wiki business/wiki \
-  --source business/raw \
-  --outputs business/outputs \
+  --wiki newswiki/wiki \
+  --source newswiki/raw \
+  --outputs newswiki/outputs \
   --dry-run
 ```
 

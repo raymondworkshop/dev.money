@@ -60,7 +60,7 @@ def prepare_content(wiki_dir: Path, content_dir: Path) -> None:
                 content = add_front_matter(
                     content,
                     {
-                        "title": "Business Wiki",
+                        "title": "News Wiki",
                         "created": "2026-05-30",
                     },
                 )
@@ -73,7 +73,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Copy curated business wiki content into the Quartz content folder."
     )
-    parser.add_argument("--wiki", default="business/wiki", help="Source wiki directory")
+    parser.add_argument("--wiki", default="newswiki/wiki", help="Source wiki directory")
     parser.add_argument(
         "--content", default="site/content", help="Destination Quartz content directory"
     )

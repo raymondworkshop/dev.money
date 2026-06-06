@@ -4,7 +4,7 @@ This Quartz scaffold renders the curated business wiki as a static website.
 
 Source of truth:
 
-- `../business/wiki`
+- `../newswiki/wiki`
 
 Generated and unpublished:
 
@@ -20,5 +20,5 @@ make site-build
 make site-serve
 ```
 
-Deploy only the generated `site/public` directory. Do not publish `business/raw`,
-`business/raw/archive`, API keys, or local output files unless intentionally reviewed.
+Deploy only the generated `site/public` directory. Do not publish `newswiki/raw`,
+`newswiki/raw/archive`, API keys, or local output files unless intentionally reviewed.
