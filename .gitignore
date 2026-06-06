@@ -1,6 +1,7 @@
 .playwright-cli
 .cursor
 .obsidian
+node_modules/
 scripts/__pycache__
 site/node_modules/
 site/public/
