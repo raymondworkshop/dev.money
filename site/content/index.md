@@ -5,7 +5,9 @@ created: "2026-05-30"
 
 # News Wiki
 
-Welcome to AI-powered wiki. Consider this a warm, rational, and objective hub for understanding the trends shaping our markets. This wiki is structured by topics and tickers following a value-based philosophy.
+Welcome to AI-generated wiki of interconnected news.  
+
+Designed as a warm, professional, and rational guide to current trends, this platform organizes insights by topic and ticker according to a value-based philosophy.  
 
 ## Topics
 
@@ -53,8 +55,6 @@ Welcome to AI-powered wiki. Consider this a warm, rational, and objective hub fo
 - [[ai-infrastructure/2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]] (2026-02-23)
 
 - [[real-estate/2026-05-26-office-residential-conversion-denver|抄底全美最空荡市中心：他能说服人们住进写字楼吗？]] (2026-05-26)
-
-- [[personal-finance/2026-05-11-divorce-financial-infidelity|婚姻破裂的关键导火索：“财务出轨”]] (2026-05-11)
 
 - [[talent-careers/2026-04-30-highest-earning-women-lessons|与美国最高收入女性交谈带来的意外启示]] (2026-04-30)
 

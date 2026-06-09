@@ -1,9 +1,10 @@
 
 #### news-wiki  
 
-Welcome to AI-generated wiki platform with interconnected news.  
-This wiki is structured by topics and tickers following a value-based philosophy.  
+Welcome to AI-generated wiki of interconnected news.  
 
-See the [news-wiki](https://news-wiki.pages.dev/)
+Designed as a warm, professional, and rational guide to current trends, this platform organizes insights by topic and ticker according to a value-based philosophy.  
+
+See the [dev.news-wiki](https://news-wiki.pages.dev/)
 
 Copyright &copy; 2026 Bean Workshop Ltd.
