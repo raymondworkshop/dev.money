@@ -8,7 +8,7 @@ created: 2026-05-27
 description: "AI热潮各项押注的风险程度不尽相同，其中知名度不及竞争对手CoreWeave的AI云服务提供商Nebius蕴含着引人瞩目的上行潜力。"
 ---
 
-# CoreWeave请让位，Nebius来了
+# [CoreWeave请让位，Nebius来了](https://cn.wsj.com/articles/coreweave%E8%AF%B7%E8%AE%A9%E4%BD%8D-nebius%E6%9D%A5%E4%BA%86-5a8f68c9?mod=cn_markets)
 
 ## 核心观点
 - AI云服务的竞争格局中，[[Nebius]] 相比 [[CoreWeave]] 具有更高的上行潜力

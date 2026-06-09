@@ -8,7 +8,7 @@ author:
   - "[[Jamie Waters]]"
 ---
 
-# AI时代的软技能：“科技男”开始上礼仪课了
+# [AI时代的软技能：“科技男”开始上礼仪课了](https://cn.wsj.com/articles/ai%E6%97%B6%E4%BB%A3%E7%9A%84%E8%BD%AF%E6%8A%80%E8%83%BD-%E7%A7%91%E6%8A%80%E7%94%B7-%E5%BC%80%E5%A7%8B%E4%B8%8A%E7%A4%BC%E4%BB%AA%E8%AF%BE%E4%BA%86-d14bca13?mod=cn_hp_life_pos1)
 
 ## 核心观点
 - 随着人工智能将写代码和技术开发高度商品化，科技创业圈正兴起一阵‘礼仪热’，旨在培养人际交往、红酒搭配和做东款待等软技能。

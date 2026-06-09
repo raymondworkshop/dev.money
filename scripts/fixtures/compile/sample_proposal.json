@@ -40,8 +40,7 @@
     "root_recent_entry": "- [[ai-infrastructure/2026-05-30-sample-article|Sample Article]] (2026-05-30)"
   },
   "archive": {
-    "should_archive": true,
-    "status_row": "| 2026-05-30-sample.md | AI Infrastructure | `newswiki/wiki/ai-infrastructure/2026-05-30-sample-article.md` | Archived |"
+    "should_archive": true
   },
   "review_notes": []
 }

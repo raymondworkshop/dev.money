@@ -8,7 +8,7 @@ created: 2026-05-27
 description: "菲尼克斯是美国的客服中心之都。如今，AI与外包正加快白领岗位流失，摧毁通往中产阶级的职业道路。"
 ---
 
-# AI冲击波席卷菲尼克斯：\"格子间\"产业帝国濒临瓦解
+# [AI冲击波席卷菲尼克斯：\"格子间\"产业帝国濒临瓦解](https://cn.wsj.com/articles/phoenix-built-an-empire-of-cubicle-jobs-ai-is-coming-...)
 
 ## 核心观点
 - 菲尼克斯的"格子间"产业（客服、数据录入、薪酬处理）面临根本性冲击

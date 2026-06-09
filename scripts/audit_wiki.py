@@ -14,7 +14,7 @@ from llm_provider import LLMProvider, LLMRequest, build_provider, proposal_from_
 
 
 ROOT = Path(__file__).resolve().parent.parent
-GEMINI_CONF = ROOT / "GEMINI.md"
+GEMINI_CONF = ROOT / "AGENTS.md"
 DEFAULT_WIKI = "newswiki/wiki"
 DEFAULT_OUTPUTS = "newswiki/outputs"
 DEFAULT_SOURCE = "newswiki/raw"
@@ -123,7 +123,7 @@ def extract_wiki_links(content: str) -> list[str]:
 
 def _wiki_candidates(target: str, source_file: Path) -> list[Path]:
     candidates: list[Path] = []
-    if target.startswith("../") or target.startswith(f"{SOURCE_PREFIX}/"):
+    if target.startswith("../") or target.startswith("newswiki/raw"):
         return candidates
 
     if "/" in target:
@@ -263,8 +263,8 @@ def _format_deterministic_context(findings: DeterministicFindings) -> str:
 
 def build_audit_prompt(findings: DeterministicFindings | None = None) -> LLMRequest:
     resolved = findings or run_deterministic_checks()
-    system = GEMINI_CONF.read_text(encoding="utf-8")
-    prompt = f"""Audit the investment wiki following the Audit contract in GEMINI.md.
+    system = AGENTS_CONF.read_text(encoding="utf-8")
+    prompt = f"""Audit the investment wiki following the Audit contract in AGENTS.md.
 
 Configured paths:
 - Wiki prefix: {WIKI_PREFIX}/
@@ -588,7 +588,12 @@ def main() -> int:
     parser.add_argument("--outputs", default=DEFAULT_OUTPUTS, help="Directory for saved audit reports.")
     parser.add_argument("--source", default=DEFAULT_SOURCE, help="Raw source directory for evidence links.")
     parser.add_argument("--dry-run", action="store_true", help="Validate and render without saving output.")
-    parser.add_argument("--provider", default="openai", choices=["openai", "fixture"], help="LLM provider backend.")
+    parser.add_argument(
+        "--provider",
+        default=None,
+        choices=["mlx", "openai", "fixture"],
+        help="LLM provider backend (default: LLM_PROVIDER from .env, usually mlx).",
+    )
     args = parser.parse_args()
 
     configure_paths(wiki=args.wiki, outputs=args.outputs, source=args.source)

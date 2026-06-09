@@ -12,11 +12,11 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from llm_provider import LLMProvider, LLMRequest, build_provider, proposal_from_provider
+from llm_provider import LLMProvider, LLMRequest, build_provider, default_provider, proposal_from_provider
 
 
 ROOT = Path(__file__).resolve().parent.parent
-GEMINI_CONF = ROOT / "GEMINI.md"
+AGENTS_CONF = ROOT / "AGENTS.md"
 DEFAULT_SOURCE = "newswiki/raw"
 DEFAULT_WIKI = "newswiki/wiki"
 
@@ -34,10 +34,11 @@ def configure_paths(
     source: Path | str | None = None,
     wiki: Path | str | None = None,
     archive: Path | str | None = None,
+    resources: Path | str | None = None,
 ) -> None:
-    """Configure source, wiki, and archive directories for the sync harness."""
+    """Configure source, wiki, archive, and resources directories for the sync harness."""
 
-    global ROOT, RAW_DIR, ARCHIVE_DIR, WIKI_DIR, CACHE_PATH, STATUS_PATH, ROOT_INDEX
+    global ROOT, RAW_DIR, ARCHIVE_DIR, WIKI_DIR, RESOURCES_DIR, CACHE_PATH, STATUS_PATH, ROOT_INDEX
     global SOURCE_PREFIX, WIKI_PREFIX
 
     if root is not None:
@@ -52,6 +53,11 @@ def configure_paths(
     elif source is not None:
         ARCHIVE_DIR = RAW_DIR / "archive"
 
+    if resources is not None:
+        RESOURCES_DIR = _resolve_path(ROOT, resources)
+    elif source is not None:
+        RESOURCES_DIR = RAW_DIR.parent / "_resources"
+
     CACHE_PATH = ARCHIVE_DIR / ".sync_cache.json"
     STATUS_PATH = ARCHIVE_DIR / "STATUS.md"
     ROOT_INDEX = WIKI_DIR / "INDEX.md"
@@ -62,6 +68,7 @@ def configure_paths(
 RAW_DIR = ROOT / DEFAULT_SOURCE
 ARCHIVE_DIR = RAW_DIR / "archive"
 WIKI_DIR = ROOT / DEFAULT_WIKI
+RESOURCES_DIR = RAW_DIR.parent / "_resources"
 CACHE_PATH = ARCHIVE_DIR / ".sync_cache.json"
 STATUS_PATH = ARCHIVE_DIR / "STATUS.md"
 ROOT_INDEX = WIKI_DIR / "INDEX.md"
@@ -71,6 +78,7 @@ WIKI_PREFIX = DEFAULT_WIKI
 ALLOWED_ACTIONS = {"create_article", "skip_duplicate", "needs_review"}
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 AI_SYNTHESIS_PREFIX = "[AI Synthesis]"
+RESOURCE_DIR_RE = re.compile(r"_resources/([^/\]\s]+)")
 
 
 @dataclass
@@ -163,8 +171,8 @@ def build_compile_prompt(raw_path: Path) -> LLMRequest:
     content = raw_path.read_text(encoding="utf-8")
     front_matter, body = parse_raw_front_matter(content)
     rel = f"{SOURCE_PREFIX}/{raw_path.name}"
-    system = GEMINI_CONF.read_text(encoding="utf-8")
-    prompt = f"""Compile this raw source into one JSON proposal following the contract in GEMINI.md.
+    system = AGENTS_CONF.read_text(encoding="utf-8")
+    prompt = f"""Compile this raw source into one JSON proposal following the contract in AGENTS.md.
 
 Source file: {rel}
 Existing topics:
@@ -259,13 +267,20 @@ def validate_proposal(proposal: dict[str, Any], raw_path: Path) -> None:
 
     if archive.get("should_archive") is not True:
         raise ValueError("archive.should_archive must be true for create_article.")
-    if not str(archive.get("status_row", "")).strip():
-        raise ValueError("archive.status_row is required.")
+    if not str(front_matter.get("source", "")).strip():
+        raise ValueError("article.front_matter.source is required for create_article.")
 
 
 def _yaml_quote(value: str) -> str:
     escaped = value.replace("\\", "\\\\").replace('"', '\\"')
     return f'"{escaped}"'
+
+
+def _markdown_external_link(label: str, url: str) -> str:
+    """Render an external citation as a markdown link."""
+
+    safe_label = label.replace("[", "\\[").replace("]", "\\]")
+    return f"[{safe_label}]({url})"
 
 
 def _format_front_matter(front_matter: dict[str, Any]) -> str:
@@ -293,7 +308,9 @@ def render_article_markdown(proposal: dict[str, Any]) -> str:
     article = _require_mapping(proposal, "article")
     front_matter = article["front_matter"]
     title = str(article.get("title") or front_matter.get("title", "")).strip()
-    parts = [_format_front_matter(front_matter), "", f"# {title}", ""]
+    source = str(front_matter.get("source", "")).strip()
+    heading = f"# {_markdown_external_link(title, source)}" if source else f"# {title}"
+    parts = [_format_front_matter(front_matter), "", heading, ""]
 
     for section in article["sections"]:
         heading = str(section["heading"]).strip()
@@ -385,6 +402,60 @@ def update_indexes(proposal: dict[str, Any]) -> None:
     _prepend_recent_article(str(index_updates["root_recent_entry"]).strip())
 
 
+def article_source_url(proposal: dict[str, Any], raw_path: Path) -> str:
+    """Return the external source URL from the proposal or raw front matter."""
+
+    article = _require_mapping(proposal, "article")
+    front_matter = article.get("front_matter", {})
+    source = str(front_matter.get("source", "")).strip()
+    if source:
+        return source
+
+    raw_front, _ = parse_raw_front_matter(raw_path.read_text(encoding="utf-8"))
+    return str(raw_front.get("source", "")).strip()
+
+
+def build_status_row(proposal: dict[str, Any], raw_path: Path) -> str:
+    """Build a STATUS.md row using the wiki article path as Wiki Location."""
+
+    topic = _require_mapping(proposal, "topic")
+    article = _require_mapping(proposal, "article")
+    topic_title = str(topic.get("title", topic["slug"])).strip()
+    article_path = str(article.get("path", "")).strip()
+    if not article_path:
+        raise ValueError("article.path is required for archive status.")
+    return f"| {raw_path.name} | {topic_title} | `{article_path}` | Archived |"
+
+
+def render_archive_stub(proposal: dict[str, Any], raw_path: Path) -> str:
+    """Write a provenance stub with source link instead of full raw text."""
+
+    article = _require_mapping(proposal, "article")
+    front_matter = article.get("front_matter", {})
+    source = article_source_url(proposal, raw_path)
+    if not source:
+        raise ValueError("article.front_matter.source is required for archive stub.")
+
+    title = str(article.get("title") or front_matter.get("title", raw_path.stem)).strip()
+    lines = [
+        "---",
+        f"title: {_yaml_quote(title)}",
+        f"source: {_yaml_quote(source)}",
+    ]
+    for key in ("published", "created"):
+        if front_matter.get(key):
+            lines.append(f"{key}: {_yaml_quote(str(front_matter[key]))}")
+    lines.extend(
+        [
+            "---",
+            "",
+            "Provenance stub. Synced to wiki; full article at `source` above.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
 def append_status_row(status_row: str) -> None:
     row = status_row.strip()
     if STATUS_PATH.exists() and row in STATUS_PATH.read_text(encoding="utf-8"):
@@ -414,12 +485,46 @@ def append_status_row(status_row: str) -> None:
     STATUS_PATH.write_text(updated, encoding="utf-8")
 
 
-def archive_source(raw_path: Path) -> None:
+def resource_dirs_for_raw(raw_path: Path) -> list[Path]:
+    """Return `_resources/<folder>` directories referenced by a raw source file."""
+
+    dirs: set[Path] = set()
+    if raw_path.exists():
+        for match in RESOURCE_DIR_RE.finditer(raw_path.read_text(encoding="utf-8")):
+            dirs.add(RESOURCES_DIR / match.group(1))
+
+    default_dir = RESOURCES_DIR / raw_path.stem
+    if default_dir.exists():
+        dirs.add(default_dir)
+
+    return sorted(dirs)
+
+
+def remove_raw_resources(raw_path: Path) -> list[Path]:
+    """Delete `_resources` folders tied to a processed raw source file."""
+
+    removed: list[Path] = []
+    for resource_dir in resource_dirs_for_raw(raw_path):
+        if resource_dir.is_dir():
+            shutil.rmtree(resource_dir)
+            removed.append(resource_dir)
+    return removed
+
+
+def remove_raw_source(raw_path: Path) -> None:
+    """Delete a processed raw inbox file and its related `_resources` folders."""
+
+    remove_raw_resources(raw_path)
+    if raw_path.exists():
+        raw_path.unlink()
+
+
+def archive_source(raw_path: Path, proposal: dict[str, Any]) -> None:
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
     target = ARCHIVE_DIR / raw_path.name
     if target.exists():
         return
-    shutil.move(str(raw_path), str(target))
+    target.write_text(render_archive_stub(proposal, raw_path), encoding="utf-8")
 
 
 def apply_proposal(
@@ -454,12 +559,17 @@ def apply_proposal(
 
     archive = _require_mapping(proposal, "archive")
     if archive.get("should_archive") and not no_archive:
-        append_status_row(str(archive["status_row"]))
-        archive_source(raw_path)
+        append_status_row(build_status_row(proposal, raw_path))
+        archive_source(raw_path, proposal)
         result.archived = True
 
+    remove_raw_source(raw_path)
+
     cache = load_cache()
-    cache[raw_path.name] = _file_hash(ARCHIVE_DIR / raw_path.name) if result.archived else _file_hash(raw_path)
+    if result.archived:
+        cache[raw_path.name] = _file_hash(ARCHIVE_DIR / raw_path.name)
+    else:
+        cache[raw_path.name] = _file_hash(article_path)
     save_cache(cache)
     return result
 
@@ -496,7 +606,7 @@ def run_sync(
     if not targets:
         return []
 
-    llm = provider or build_provider("openai")
+    llm = provider or build_provider(default_provider())
     results: list[CompileResult] = []
     for raw_path in targets:
         results.append(
@@ -507,6 +617,38 @@ def run_sync(
 
 compile_file = sync_file
 run_compile = run_sync
+
+
+def backfill_wiki_source_titles(*, wiki_dir: Path | None = None) -> list[str]:
+    """Update existing wiki article H1s to linked titles when source is in front matter."""
+
+    root = wiki_dir or WIKI_DIR
+    updated: list[str] = []
+    for path in sorted(root.rglob("*.md")):
+        if path.name in {"_index.md", "INDEX.md"}:
+            continue
+
+        content = path.read_text(encoding="utf-8")
+        front_matter, body = parse_raw_front_matter(content)
+        title = str(front_matter.get("title", "")).strip()
+        source = str(front_matter.get("source", "")).strip()
+        if not title or not source:
+            continue
+
+        linked_heading = f"# {_markdown_external_link(title, source)}"
+        plain_heading = f"# {title}"
+        if plain_heading not in body or linked_heading in body:
+            continue
+
+        match = re.match(r"^---\n.*?\n---\n?", content, re.DOTALL)
+        if not match:
+            continue
+
+        new_body = body.replace(plain_heading, linked_heading, 1)
+        path.write_text(content[: match.end()] + new_body, encoding="utf-8")
+        updated.append(str(path.relative_to(ROOT)))
+
+    return updated
 
 
 def _format_result(result: CompileResult) -> str:
@@ -533,7 +675,17 @@ def main() -> int:
     parser.add_argument("--all", action="store_true", help="Include files already present in sync cache.")
     parser.add_argument("--dry-run", action="store_true", help="Validate and render plan without writing files.")
     parser.add_argument("--no-archive", action="store_true", help="Write wiki output but keep raw files in place.")
-    parser.add_argument("--provider", default="openai", choices=["openai", "fixture"], help="LLM provider backend.")
+    parser.add_argument(
+        "--provider",
+        default=None,
+        choices=["mlx", "openai", "fixture"],
+        help="LLM provider backend (default: LLM_PROVIDER from .env, usually mlx).",
+    )
+    parser.add_argument(
+        "--backfill-titles",
+        action="store_true",
+        help="Update existing wiki article titles to markdown links using front matter source URLs.",
+    )
     args = parser.parse_args()
 
     configure_paths(
@@ -541,6 +693,15 @@ def main() -> int:
         wiki=args.wiki,
         archive=args.archive or str(Path(args.source) / "archive"),
     )
+
+    if args.backfill_titles:
+        updated = backfill_wiki_source_titles()
+        if not updated:
+            print("[sync_wiki] no wiki titles to backfill.")
+            return 0
+        for rel_path in updated:
+            print(f"[sync_wiki] backfilled title: {rel_path}")
+        return 0
 
     selected: list[Path] | None = None
     if args.files:
@@ -551,7 +712,7 @@ def main() -> int:
                 path = RAW_DIR / path.name if path.parent == Path(".") else ROOT / path
             selected.append(path)
 
-    provider = build_provider(args.provider) if args.provider != "fixture" else None
+    provider = None if args.provider == "fixture" else build_provider(args.provider)
     if args.provider == "fixture":
         print("[sync_wiki] fixture provider requires injecting proposals in tests or API calls.")
         return 1

@@ -25,7 +25,11 @@ The harness supplies deterministic execution:
 
 ## Default Paths
 
+<<<<<<< HEAD
 For `dev.news-wiki`, the default layout is:
+=======
+For `dev.money`, the default layout is:
+>>>>>>> 5aebb7ac6aa114fc313bf33f93ffb12cb9425862
 
 - Source: `newswiki/raw`
 - Wiki: `newswiki/wiki`
@@ -35,7 +39,11 @@ Other layouts are valid. Treat `SOURCE`, `WIKI`, and `ARCHIVE` as execution para
 
 ## Workflow
 
+<<<<<<< HEAD
 1. Read `GEMINI.md`, especially `Compile (raw -> wiki)`.
+=======
+1. Read `AGENTS.md`, especially `sync-wiki: raw -> wiki`.
+>>>>>>> 5aebb7ac6aa114fc313bf33f93ffb12cb9425862
 2. Run a dry sync first:
 
 ```bash

@@ -26,10 +26,36 @@
 
 * Diarization is the step that makes AI useful for real knowledge work
 
+## the architecture philosophy - Thin Harness, Fat Skills  
+* Push intelligence up into skills, and push execution down into deterministic tooling. keep the harness thin.  
+    - Fast skills sit on top
+        + markdown procedures that **encode judgement, process, and domain knowledge** 
+    - thin cli harness sits in the middle.
+        + JSON in, text out. Read-only by default.
+    - deterministic is where trust lives. 
+        + Same input, same output. Every time. SQL queris. Compiled code. ARITHMETIC.
+
+* a skill file tell the model how
+    - works like a method call 
+
+* the harness is the program that runs the LLM  
+    - runs the model in a loop,
+    reads and writes your files, manages context, and enforces safety.
+
+* Resolvers tell it what to load and when  
+    - The description is the resolver.
+    Every skill has a description field, and the model matches user intent to skill descriptions automatically.
+
+* latent space vs deterministic space  
+    - latent spcae is where intelligence lives
+    - deterministic is where trust lives  
+
+* Diarization is the step that makes AI useful for real knowledge work
+
 ## 1. Project Summary
 `dev.money` is an automated financial analysis tool designed to identify undervalued stocks with high growth potential, mimicking Warren Buffett's investment philosophy. The system fetches financial reports (10-K/10-Q), extracts key metrics, and uses LLM-backed analysis to evaluate qualitative factors like "Moats" and management risks.
 
-## 2. Investment Logic (from GEMINI.md)
+## 2. Investment Logic (from AGENTS.md)
 *   **Operating Margin**: Analyze R&D spending vs. Revenue growth.
 *   **Free Cash Flow (FCF)**: Adjusted for Capital Expenditure.
 *   **Debt-to-Equity**: Monitor leverage and cash reserves.
@@ -42,7 +68,7 @@ A flat structure is used for simplicity and ease of access.
 
 ```text
 dev.money/
-├── GEMINI.md              # Project requirements and investment philosophy
+├── AGENTS.md              # Project requirements and investment philosophy
 ├── design.md              # This design and layout document
 ├── raw/                   # Local storage for downloaded financial reports (JSON/XBRL)
 ├── outputs/               # Generated analysis reports and scoring data (MD/JSON)

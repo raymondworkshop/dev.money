@@ -15,7 +15,9 @@ import sync_wiki as sync_module
 from sync_wiki import (
     apply_proposal,
     append_status_row,
+    build_status_row,
     archive_source,
+    remove_raw_source,
     configure_paths,
     parse_raw_front_matter,
     render_article_markdown,
@@ -24,7 +26,14 @@ from sync_wiki import (
     update_indexes,
     validate_proposal,
 )
-from llm_provider import FixtureProvider, LLMRequest, build_provider, proposal_from_provider
+from llm_provider import (
+    FixtureProvider,
+    LLMRequest,
+    build_provider,
+    default_provider,
+    extract_json_object,
+    proposal_from_provider,
+)
 from metrics import free_cash_flow, operating_margin, peg_ratio, revenue_growth
 from parser import parse_report
 import query_wiki as query_module
@@ -90,6 +99,7 @@ def sync_workspace(
             "RAW_DIR": sync_module.RAW_DIR,
             "ARCHIVE_DIR": sync_module.ARCHIVE_DIR,
             "WIKI_DIR": sync_module.WIKI_DIR,
+            "RESOURCES_DIR": sync_module.RESOURCES_DIR,
             "ROOT_INDEX": sync_module.ROOT_INDEX,
             "CACHE_PATH": sync_module.CACHE_PATH,
             "STATUS_PATH": sync_module.STATUS_PATH,
@@ -108,6 +118,7 @@ def sync_workspace(
         sync_module.RAW_DIR.mkdir(parents=True, exist_ok=True)
         sync_module.ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
         sync_module.WIKI_DIR.mkdir(parents=True, exist_ok=True)
+        sync_module.RESOURCES_DIR.mkdir(parents=True, exist_ok=True)
         sync_module.ROOT_INDEX.write_text("## Recent Articles\n", encoding="utf-8")
 
         try:
@@ -296,7 +307,8 @@ class SyncWikiTests(unittest.TestCase):
     def test_render_fixture_article_markdown(self) -> None:
         rendered = render_article_markdown(self.sample_proposal)
         self.assertIn('title: "Sample Article"', rendered)
-        self.assertIn("# Sample Article", rendered)
+        self.assertIn("# [Sample Article](https://example.com/sample)", rendered)
+        self.assertNotIn("**Source**:", rendered)
         self.assertIn("## Core View", rendered)
         self.assertIn("## Key Takeaways", rendered)
         self.assertIn("**Topic**: [[ai-infrastructure/_index|AI Infrastructure]]", rendered)
@@ -315,13 +327,24 @@ class SyncWikiTests(unittest.TestCase):
             self.assertIn("## 相关文章", topic_index)
             self.assertIn("[[ai-infrastructure/2026-05-30-sample-article|Sample Article]]", root_index)
 
+    def test_build_status_row_uses_wiki_path(self) -> None:
+        with sync_workspace():
+            raw_file = self._raw_file()
+            row = build_status_row(self.sample_proposal, raw_file)
+            self.assertIn("2026-05-30-sample.md", row)
+            self.assertIn("AI Infrastructure", row)
+            self.assertIn("`newswiki/wiki/ai-infrastructure/2026-05-30-sample-article.md`", row)
+            self.assertNotIn("https://example.com/sample", row)
+
     def test_append_status_row_from_fixture(self) -> None:
         with sync_workspace():
-            row = self.sample_proposal["archive"]["status_row"]
+            raw_file = self._raw_file()
+            row = build_status_row(self.sample_proposal, raw_file)
             append_status_row(row)
             status = sync_module.STATUS_PATH.read_text(encoding="utf-8")
             self.assertIn("2026-05-30-sample.md", status)
             self.assertIn("AI Infrastructure", status)
+            self.assertIn("`newswiki/wiki/ai-infrastructure/2026-05-30-sample-article.md`", status)
 
     def test_apply_fixture_archives_raw_and_writes_article(self) -> None:
         with sync_workspace():
@@ -336,6 +359,9 @@ class SyncWikiTests(unittest.TestCase):
             self.assertTrue(article_path.exists())
             self.assertFalse(raw_file.exists())
             self.assertTrue(archived_path.exists())
+            archived_text = archived_path.read_text(encoding="utf-8")
+            self.assertIn('source: "https://example.com/sample"', archived_text)
+            self.assertNotIn("[[Company]]", archived_text)
 
     def test_apply_fixture_is_idempotent_for_indexes_and_status(self) -> None:
         with sync_workspace():
@@ -349,7 +375,7 @@ class SyncWikiTests(unittest.TestCase):
             root_index_after_first = sync_module.ROOT_INDEX.read_text(encoding="utf-8")
             status_after_first = sync_module.STATUS_PATH.read_text(encoding="utf-8")
 
-            append_status_row(self.sample_proposal["archive"]["status_row"])
+            append_status_row(build_status_row(self.sample_proposal, raw_file))
             update_indexes(self.sample_proposal)
 
             topic_index_after_second = (
@@ -366,10 +392,42 @@ class SyncWikiTests(unittest.TestCase):
     def test_archive_source_is_idempotent(self) -> None:
         with sync_workspace():
             raw_file = self._raw_file()
-            archive_source(raw_file)
-            archive_source(sync_module.ARCHIVE_DIR / raw_file.name)
+            archive_source(raw_file, self.sample_proposal)
+            archive_source(raw_file, self.sample_proposal)
+            archived_path = sync_module.ARCHIVE_DIR / raw_file.name
+            self.assertTrue(archived_path.exists())
+            self.assertIn("https://example.com/sample", archived_path.read_text(encoding="utf-8"))
+
+    def test_remove_raw_source_deletes_inbox_file(self) -> None:
+        with sync_workspace():
+            raw_file = self._raw_file()
+            remove_raw_source(raw_file)
             self.assertFalse(raw_file.exists())
-            self.assertTrue((sync_module.ARCHIVE_DIR / raw_file.name).exists())
+
+    def test_remove_raw_source_deletes_related_resources(self) -> None:
+        with sync_workspace():
+            resource_dir = sync_module.RESOURCES_DIR / "2026-05-30-sample"
+            resource_dir.mkdir(parents=True)
+            (resource_dir / "image_MD5.jpg").write_text("img", encoding="utf-8")
+            raw_file = self._raw_file(
+                content=self.sample_raw.replace(
+                    "Raw article body",
+                    "Raw article body\n\n![[_resources/2026-05-30-sample/image_MD5.jpg]]",
+                )
+            )
+            remove_raw_source(raw_file)
+            self.assertFalse(raw_file.exists())
+            self.assertFalse(resource_dir.exists())
+
+    def test_apply_proposal_no_archive_still_deletes_raw(self) -> None:
+        with sync_workspace():
+            self._seed_topic_index()
+            raw_file = self._raw_file()
+            result = apply_proposal(self.sample_proposal, raw_file, no_archive=True)
+            self.assertEqual(result.action, "create_article")
+            self.assertFalse(result.archived)
+            self.assertFalse(raw_file.exists())
+            self.assertFalse((sync_module.ARCHIVE_DIR / raw_file.name).exists())
 
     def test_apply_proposal_dry_run(self) -> None:
         with sync_workspace():
@@ -399,9 +457,6 @@ class SyncWikiTests(unittest.TestCase):
             proposal["source_file"] = "research/raw/2026-05-30-sample.md"
             proposal["topic"]["path"] = "research/wiki/ai-infrastructure"
             proposal["article"]["path"] = "research/wiki/ai-infrastructure/2026-05-30-sample-article.md"
-            proposal["archive"]["status_row"] = proposal["archive"]["status_row"].replace(
-                "newswiki/wiki", "research/wiki"
-            )
             validate_proposal(proposal, Path("2026-05-30-sample.md"))
 
     def test_sync_file_uses_injected_fixture_proposal(self) -> None:
@@ -661,6 +716,19 @@ class LLMProviderTests(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             proposal_from_provider(provider, LLMRequest(system="", prompt=""))
+
+    def test_extract_json_object_accepts_fenced_json(self) -> None:
+        payload = extract_json_object(
+            '```json\n{"action": "needs_review", "review_notes": []}\n```'
+        )
+        self.assertEqual(payload["action"], "needs_review")
+
+    def test_provider_factory_accepts_mlx(self) -> None:
+        provider = build_provider("mlx")
+        self.assertEqual(provider.provider, "mlx")
+
+    def test_default_provider_prefers_mlx(self) -> None:
+        self.assertEqual(default_provider(), "mlx")
 
 
 if __name__ == "__main__":

@@ -8,7 +8,7 @@ author:
   - "[[Alexandra Samuel]]"
 ---
 
-# AI会犯错，但AI也能揪出错误
+# [AI会犯错，但AI也能揪出错误](https://cn.wsj.com/articles/ai-fact-checking-7c853bd8?mod=cn_hp_tech_pos1)
 
 ## 核心观点
 - 面对AI聊天机器人容易编造事实的“幻觉”（hallucination）风险，最有效的第一道防线是“用更多的AI”进行互审事实核查。

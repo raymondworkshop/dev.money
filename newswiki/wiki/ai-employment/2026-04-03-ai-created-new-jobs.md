@@ -8,7 +8,7 @@ author:
   - "[[Te-Ping Chen]]"
 ---
 
-# 诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？
+# [诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？](https://cn.wsj.com/articles/wanted-head-of-human-ai-solutions-the-new-jobs-being-created-by-ai-ab2b8530?mod=cn_hp_lead_pos11)
 
 ## 核心观点
 - 在AI冲击白领就业引起广泛恐慌（如高盛预测AI可将美国四分之一工时自动化、[[Oracle|甲骨文]]在投资算力的同时大规模裁员）的背景下，AI也正在催生大量全新的工作岗位。

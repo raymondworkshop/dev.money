@@ -8,7 +8,7 @@ author:
   - "[[Tanner Brown]]"
 ---
 
-# 下一波中国冲击：比二手车还便宜的人形机器人
+# [下一波中国冲击：比二手车还便宜的人形机器人](https://cn.wsj.com/articles/%E4%B8%8B%E4%B8%80%E8%BD%AE%E4%B8%AD%E5%9B%BD%E5%86%B2%E5%87%BB-%E6%AF%94%E4%BA%8C%E6%89%8B%E8%BD%A6%E8%BF%98%E4%BE%BF%E5%AE%9C%E7%9A%84%E4%BA%BA%E5%BD%A2%E6%9C%BA%E5%99%A8%E4%BA%BA-126981c3?mod=cn_hp_lead_pos1)
 
 ## 核心观点
 - 中国正投入数百亿美元推进[[具身智能|人形机器人]]领域的雄心，借助国家补贴与市场准入推动本土制造商发展壮大。

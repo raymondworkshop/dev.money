@@ -8,7 +8,7 @@ author:
   - "[[Angel Au-Yeung]]"
 ---
 
-# 揭秘让AI初创公司一夜变身“独角兽”的融资策略
+# [揭秘让AI初创公司一夜变身“独角兽”的融资策略](https://cn.wsj.com/articles/%E6%8F%AD%E7%A7%98%E8%AE%A9ai%E5%88%9D%E5%88%9B%E5%85%AC%E5%8F%B8%E4%B8%80%E5%A4%9C%E5%8F%98%E8%BA%AB-%E7%8B%AC%E8%A7%92%E5%85%BD-%E7%9A%84%E8%9E%8D%E8%B5%84%E7%AD%96%E7%95%A5-6ccb6a2e?mod=cn_hp_featst_pos1)
 
 ## 核心观点
 - 人工智能投资狂热时代催生了极其新奇且多层级的‘背靠背融资’（Back-to-back/multi-tiered financing）交易模式。

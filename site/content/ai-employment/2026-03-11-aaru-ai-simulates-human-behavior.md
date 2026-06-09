@@ -8,7 +8,7 @@ author:
   - "[[Suzanne Vranica / 摄影：Lanna Apisukh for WSJ]]"
 ---
 
-# 靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后
+# [靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后](https://cn.wsj.com/articles/%E9%9D%A0-%E9%A2%84%E6%B5%8B%E4%BA%BA%E7%B1%BB-%E4%BC%B0%E5%80%BC10%E4%BA%BF-%E8%BF%99%E5%AE%B6%E6%96%B0%E6%99%8Bai%E7%8B%AC%E8%A7%92%E5%85%BD%E8%83%8C%E5%90%8E%E6%98%AF%E4%B8%80%E7%BE%A400%E5%90%8E-84e9f4ae?mod=cn_hp_lead_pos9)
 
 ## 核心观点
 - 由几位00后（包含18岁、19岁以及当时15岁的高智商MIT少年CTO [[John Kessler]]）创立的AI仿真初创公司[[Aaru]]，估值迅速飙升至10亿美元。

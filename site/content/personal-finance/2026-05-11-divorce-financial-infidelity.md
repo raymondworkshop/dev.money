@@ -8,7 +8,7 @@ author:
   - "[[Gunjan Banerji]]"
 ---
 
-# 婚姻破裂的关键导火索：“财务出轨”
+# [婚姻破裂的关键导火索：“财务出轨”](https://cn.wsj.com/articles/divorce-financial-infidelity-a252d544?mod=cn_hp_life_pos2)
 
 ## 核心观点
 - ‘财务出轨’（财务隐瞒或不忠）正在成为已婚夫妇感情破裂的核心原因，其表现为瞒着伴侣隐瞒收入、私设账户，或者在体育博彩（如[[DraftKings]]）、高风险交易、网购应用中不当支出婚姻共同财产。

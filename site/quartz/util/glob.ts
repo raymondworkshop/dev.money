@@ -15,7 +15,8 @@ export async function glob(
     await globby(pattern, {
       cwd,
       ignore: ignorePatterns,
-      gitignore: true,
+      // Repo root gitignores `site/`; still read generated content for local builds.
+      gitignore: false,
     })
   ).map(toPosixPath)
   return fps as FilePath[]

@@ -8,7 +8,7 @@ author:
   - "[[Callum Borchers]]"
 ---
 
-# 与美国最高收入女性交谈带来的意外启示
+# [与美国最高收入女性交谈带来的意外启示](https://cn.wsj.com/articles/surprising-lessons-from-talking-with-americas-highest-earning-women-338a7a11?mod=cn_hp_lead_pos11)
 
 ## 核心观点
 - 高管[[Emily Riley]]对进入美国收入排名前1%（年收入门槛不低于77.5万美元，每20位高收入者中仅1位女性）的145位女性开展调查研究，得出了一些有关成功的反直觉结论。

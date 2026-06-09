@@ -8,7 +8,7 @@ author:
   - "[[Isabelle Bousquette]]"
 ---
 
-# AI长片在戛纳首映：50万美元制作成本，算力支出占40万
+# [AI长片在戛纳首映：50万美元制作成本，算力支出占40万](https://cn.wsj.com/articles/this-cannes-film-cost-500-000-to-make-400-000-was-ai-compute-costs-b4d21c54?mod=cn_hp_lead_pos11)
 
 ## 核心观点
 - 在2026年戛纳电影节上，初创公司[[Higgsfield AI]]首映了全由AI生成的95分钟电影《Hell Grind》，耗资50万美元，仅用两周完成，其中40万美元（占比80%）为算力成本。

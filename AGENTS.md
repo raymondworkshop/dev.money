@@ -1,10 +1,10 @@
-# dev.news-wiki LLM Wiki Contract
+# dev.business LLM Wiki Contract
 
 ## Purpose
 
 The wiki is the context window. Scripts are the executor. Raw files are provenance.
 
-This repository turns useful news articles into an LLM-native knowledge base:
+This repository turns useful business articles into an LLM-native knowledge base:
 
 ```text
 raw evidence -> curated wiki memory -> reasoning outputs
@@ -14,7 +14,7 @@ Every generated page should help future agents retrieve context, reason from evi
 
 ## Core Principle: Thin Harness, Fat Skills
 
-- **Skills/GEMINI.md** encode judgment, process, and domain knowledge.
+- **Skills/AGENTS.md** encode judgment, process, and domain knowledge.
 - **Scripts** load files, validate JSON, render markdown, update indexes, archive files, and save outputs.
 - **LLM output to scripts must be strict JSON**. Do not explain file operations outside JSON fields.
 - **Deterministic space is where trust lives**. Anything inferred in latent space must be marked.
@@ -35,6 +35,42 @@ Default layout:
 - Outputs: `newswiki/outputs`
 
 All sync/query/audit harnesses accept path overrides through Makefile variables or CLI flags.
+
+## LLM Providers
+
+Default provider is local **MLX** (OpenAI-compatible server on Apple Silicon).
+
+Configure in `.env`:
+
+- `LLM_PROVIDER=mlx` — local default; no API key
+- `LLM_URL=http://127.0.0.1:8080/v1/chat/completions`
+- `LLM_MODEL=mlx-community/gemma-4-e4b-it-4bit`
+- `LLM_PROVIDER=openai` — cloud; requires `OPENAI_API_KEY`
+
+Harnesses (`sync_wiki.py`, `query_wiki.py`, `audit_wiki.py`) load `AGENTS.md` as the system prompt and call the configured provider. Override per run:
+
+```bash
+make sync LLM_PROVIDER=mlx
+make query LLM_PROVIDER=openai QUESTION="..."
+```
+
+MLX must be running before sync (for example `com.user.mlxserver` LaunchAgent).
+
+## Publish (sync -> site)
+
+After wiki sync, the Quartz site can be built and deployed automatically:
+
+```bash
+make publish              # sync (MLX) + site-build + Cloudflare Pages deploy
+make publish DEPLOY=0     # sync only
+make publish-dry-run      # validate sync plan, no deploy
+```
+
+Scheduled macOS automation: install `launchd/com.zhaowenlong.dev-business.publish.plist` into `~/Library/LaunchAgents/`, ensure MLX and Wrangler auth are configured, then:
+
+```bash
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.zhaowenlong.dev-business.publish.plist
+```
 
 ## Evidence Hierarchy
 
@@ -61,7 +97,7 @@ Clickable links are semantic edges for humans and retrieval:
 
 ## Investment Lens
 
-Use these when interpreting news wiki material:
+Use these when interpreting business material:
 
 - **Operating Margin**: margin quality, R&D intensity, revenue growth.
 - **Free Cash Flow**: operating cash flow minus capital expenditure.
@@ -89,9 +125,11 @@ Use these when interpreting news wiki material:
 
 - Scan source files.
 - Validate proposal JSON.
-- Render wiki markdown.
+- Render wiki markdown with the H1 title as `[Title](source)` when `front_matter.source` is set.
 - Update topic/root indexes.
-- Archive processed sources.
+- Archive provenance stubs (source URL + metadata only, not full raw text).
+- Delete the processed raw inbox file and its related `_resources/` folders after a successful `create_article`.
+- Append `STATUS.md` rows with `article.path` as Wiki Location.
 - Maintain `<archive>/.sync_cache.json`.
 
 **Output JSON**
@@ -136,8 +174,7 @@ Use these when interpreting news wiki material:
     "root_recent_entry": "- [[topic-slug/article-slug|Title]] (YYYY-MM-DD)"
   },
   "archive": {
-    "should_archive": true,
-    "status_row": "| file.md | Topic Title | `<wiki-prefix>/topic-slug/article-slug.md` | Archived |"
+    "should_archive": true
   },
   "review_notes": []
 }

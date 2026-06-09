@@ -8,7 +8,7 @@ author:
   - "[[Callum Borchers]]"
 ---
 
-# 首份工作到手，你该如何避免开局就“翻车”
+# [首份工作到手，你该如何避免开局就“翻车”](https://cn.wsj.com/articles/youve-landed-your-first-job-now-dont-sink-your-career-before-it-starts-80a53921?mod=cn_hp_life_pos3)
 
 ## 核心观点
 - 职业生涯起点的第一份办公室工作决定着未来的成就天花板，必须及早谋划，在技能、职场政治和环境适应上做足准备。

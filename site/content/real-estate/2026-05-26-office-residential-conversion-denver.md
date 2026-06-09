@@ -8,7 +8,7 @@ author:
   - "[[Peter Grant / 摄影：Theo Stroomer for WSJ]]"
 ---
 
-# 抄底全美最空荡市中心：他能说服人们住进写字楼吗？
+# [抄底全美最空荡市中心：他能说服人们住进写字楼吗？](https://cn.wsj.com/articles/%E6%8A%84%E5%BA%95%E5%85%A8%E7%BE%8E%E6%9C%80%E7%A9%BA%E8%8D%A1%E5%B8%82%E4%B8%AD%E5%BF%83-%E4%BB%96%E8%83%BD%E8%AF%B4%E6%9C%8D%E4%BA%BA%E4%BB%AC%E4%BD%8F%E8%BF%9B%E5%86%99%E5%AD%97%E6%A5%BC%E5%90%97-42a7abe9?mod=cn_hp_lead_pos11)
 
 ## 核心观点
 - 面对远程办公兴起导致的美国商业办公楼海量闲置，地产开发商阿舍·卢扎托（[[Asher Luzzatto]]）在丹佛发起了极其激进的‘商改住’（Office-to-Residential conversion）实验。

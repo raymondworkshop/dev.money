@@ -8,7 +8,7 @@ author:
   - "[[Theo Francis]]"
 ---
 
-# 这些公司更能成就人才，它们是这样做的
+# [这些公司更能成就人才，它们是这样做的](https://cn.wsj.com/articles/%E8%BF%99%E4%BA%9B%E5%85%AC%E5%8F%B8%E6%9B%B4%E8%83%BD%E6%88%90%E5%B0%B1%E4%BA%BA%E6%89%8D-%E5%AE%83%E4%BB%AC%E6%98%AF%E8%BF%99%E6%A0%B7%E5%81%9A%E7%9A%84-d6dbb14d?mod=cn_hp_lead_pos10)
 
 ## 核心观点
 - 基于Burning Glass Institute和舒尔茨家族基金会的‘职场坐标榜’（Where You Work Matters List）分析，表现优异的巨头公司在促成青年职业机遇、晋升和工作稳定性上具备系统的共性机制。
