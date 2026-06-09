@@ -1,12 +1,9 @@
 .playwright-cli
 .cursor
+.wrangler/
 .obsidian
 node_modules/
 scripts/__pycache__
-site/node_modules/
-site/public/
-site/.quartz/
-site/.quartz-cache
-site/tsconfig.tsbuildinfo
+site/
 .env
 logs/
