@@ -5,7 +5,7 @@ created: "2026-05-30"
 
 # News Wiki
 
-Welcome to AI-generated news wiki knowledge base. This wiki is structured by topics and tickers following a value-based philosophy.
+Welcome to AI-powered wiki. Consider this a warm, rational, and objective hub for understanding the trends shaping our markets. This wiki is structured by topics and tickers following a value-based philosophy.
 
 ## Topics
 

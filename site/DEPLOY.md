@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Deploy dev.news-wiki
-=======
 # Deploy dev.business Wiki
->>>>>>> 5aebb7ac6aa114fc313bf33f93ffb12cb9425862
 
 This site publishes the curated wiki in `newswiki/wiki` through Quartz.
 
