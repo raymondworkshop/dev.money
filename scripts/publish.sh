@@ -46,10 +46,14 @@ wait_for_mlx() {
 
 echo "[publish] sync wiki (LLM_PROVIDER=${LLM_PROVIDER})"
 wait_for_mlx
+SYNC_EXIT=0
 if [[ -n "$DRY_RUN" ]]; then
-  make sync LLM_PROVIDER="$LLM_PROVIDER" DRY_RUN=1
+  make sync LLM_PROVIDER="$LLM_PROVIDER" DRY_RUN=1 || SYNC_EXIT=$?
 else
-  make sync LLM_PROVIDER="$LLM_PROVIDER"
+  make sync LLM_PROVIDER="$LLM_PROVIDER" || SYNC_EXIT=$?
+fi
+if (( SYNC_EXIT != 0 )); then
+  echo "[publish] sync finished with failures (exit=${SYNC_EXIT}); continuing with deploy=${DEPLOY}"
 fi
 
 if [[ "$DEPLOY" == "1" ]]; then

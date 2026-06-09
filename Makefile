@@ -13,52 +13,49 @@ SITE_PORT ?= 8080
 PAGES_PROJECT ?= news-wiki
 PAGES_BRANCH ?= master
 PAGES_URL ?= https://news-wiki.pages.dev/
-SYNC_FLAGS = --source "$(SOURCE)" --wiki "$(WIKI)" --archive "$(ARCHIVE)"
-QUERY_FLAGS = --wiki "$(WIKI)" --outputs "$(OUTPUTS)" --source "$(SOURCE)"
-AUDIT_FLAGS = --wiki "$(WIKI)" --source "$(SOURCE)" --outputs "$(OUTPUTS)"
 DRY_RUN ?=
 ALL ?=
 NO_ARCHIVE ?=
 FILE ?=
-DEPLOY ?= 1
-SYNC_EXTRA_FLAGS = $(if $(DRY_RUN),--dry-run) $(if $(ALL),--all) $(if $(NO_ARCHIVE),--no-archive) $(if $(FILE),--file "$(FILE)") --provider "$(LLM_PROVIDER)"
-QUERY_EXTRA_FLAGS = $(if $(DRY_RUN),--dry-run) --provider "$(LLM_PROVIDER)"
-AUDIT_EXTRA_FLAGS = $(if $(DRY_RUN),--dry-run) --provider "$(LLM_PROVIDER)"
+QUESTION ?=
+TICKER ?=
+DEPLOY ?=
+ACTION ?= install
 
-.PHONY: help test sync sync-dry-run sync-all sync-no-archive sync-file compile compile-dry-run compile-all compile-no-archive compile-file query query-dry-run audit audit-dry-run analyze publish publish-dry-run launchd-install launchd-unload launchd-test site-prepare site-install site-build site-serve site-deploy
+SYNC_FLAGS = --source "$(SOURCE)" --wiki "$(WIKI)" --archive "$(ARCHIVE)"
+QUERY_FLAGS = --wiki "$(WIKI)" --outputs "$(OUTPUTS)" --source "$(SOURCE)"
+AUDIT_FLAGS = --wiki "$(WIKI)" --source "$(SOURCE)" --outputs "$(OUTPUTS)"
+SYNC_EXTRA = $(if $(DRY_RUN),--dry-run) $(if $(ALL),--all) $(if $(NO_ARCHIVE),--no-archive) $(if $(FILE),--file "$(FILE)") --provider "$(LLM_PROVIDER)"
+LLM_EXTRA = $(if $(DRY_RUN),--dry-run) --provider "$(LLM_PROVIDER)"
+
+.DEFAULT_GOAL := help
+.PHONY: help test sync query audit analyze publish site launchd
 
 help:
-	@echo "dev.business Commands:"
-	@echo "  make test              - Run unit and pipeline tests"
-	@echo "  make sync              - Sync source files into wiki"
-	@echo "  make query QUESTION=\"...\" - Query wiki and save answer to outputs"
-	@echo "  make audit             - Audit wiki quality and save report to outputs"
-	@echo "  make analyze TICKER=MSFT - Run stock analysis pipeline"
-	@echo "  make site-build        - Build Quartz website from newswiki/wiki"
-	@echo "  make site-serve        - Preview Quartz website locally"
-	@echo "  make site-deploy       - Deploy site/public to Cloudflare Pages"
-	@echo "  make publish           - Sync wiki (MLX) then build + deploy site"
-	@echo "  make publish-dry-run   - Sync dry-run only (no deploy)"
-	@echo "  make launchd-install   - Install weekly sync+deploy LaunchAgent"
-	@echo "  make launchd-test      - Run LaunchAgent publish job now"
+	@echo "dev.business"
 	@echo ""
-	@echo "Common options:"
-	@echo "  DRY_RUN=1, ALL=1, NO_ARCHIVE=1, FILE=name.md"
-	@echo "  Example: make sync DRY_RUN=1"
+	@echo "Core:"
+	@echo "  make test"
+	@echo "  make sync              raw -> wiki"
+	@echo "  make query QUESTION=\"...\""
+	@echo "  make audit"
+	@echo "  make analyze TICKER=MSFT"
+	@echo "  make publish           sync + build + deploy (MLX)"
+	@echo "  make site              build Quartz site"
+	@echo "  make launchd           install weekly publish LaunchAgent"
 	@echo ""
-	@echo "  LLM_PROVIDER=mlx       - Local MLX server (default); use openai for cloud"
-	@echo "  DEPLOY=0               - Skip site deploy in make publish"
+	@echo "Options (append to any command above):"
+	@echo "  DRY_RUN=1              validate without writing"
+	@echo "  ALL=1                  include cached sync files"
+	@echo "  NO_ARCHIVE=1           sync without archiving raw"
+	@echo "  FILE=name.md           sync one raw file"
+	@echo "  DEPLOY=0               publish: sync only, skip site deploy"
+	@echo "  SERVE=1                site: local preview on SITE_PORT"
+	@echo "  DEPLOY=1               site: build + deploy to Cloudflare"
+	@echo "  ACTION=unload|test     launchd: remove agent or run job now"
+	@echo "  LLM_PROVIDER=openai    cloud LLM instead of local MLX"
 	@echo ""
-	@echo "Path overrides:"
-	@echo "  make sync SOURCE=research/raw WIKI=research/wiki"
-	@echo "  make query WIKI=research/wiki OUTPUTS=research/outputs SOURCE=research/raw QUESTION=\"...\""
-	@echo "  make audit WIKI=research/wiki SOURCE=research/raw OUTPUTS=research/outputs"
-	@echo "  make site-build WIKI=research/wiki SITE_DIR=site"
-	@echo ""
-	@echo "Compatibility aliases (still supported):"
-	@echo "  make sync-dry-run | sync-all | sync-no-archive | sync-file FILE=..."
-	@echo "  make compile | compile-dry-run | compile-all | compile-no-archive | compile-file FILE=..."
-	@echo "  make query-dry-run QUESTION=\"...\" | audit-dry-run"
+	@echo "Paths: SOURCE= WIKI= ARCHIVE= OUTPUTS= SITE_DIR="
 
 test:
 	$(PYTHON) scripts/test_suite.py
@@ -66,67 +63,21 @@ test:
 sync:
 	@mkdir -p logs
 	@echo "=== sync $$(date -Iseconds) LLM_PROVIDER=$(LLM_PROVIDER) ===" | tee -a logs/sync.log
-	@$(PYTHON) scripts/sync_wiki.py $(SYNC_FLAGS) $(SYNC_EXTRA_FLAGS) 2>&1 | tee -a logs/sync.log; exit $${PIPESTATUS[0]}
-
-sync-dry-run:
-	@$(MAKE) sync DRY_RUN=1
-
-sync-all:
-	@$(MAKE) sync ALL=1
-
-sync-no-archive:
-	@$(MAKE) sync NO_ARCHIVE=1
-
-sync-file:
-	@test -n "$(FILE)" || (echo "Usage: make sync-file FILE=2026-05-30-sample.md"; exit 1)
-	@$(MAKE) sync FILE="$(FILE)"
-
-compile: sync
-compile-dry-run: sync-dry-run
-compile-all: sync-all
-compile-no-archive: sync-no-archive
-compile-file: sync-file
+	@$(PYTHON) scripts/sync_wiki.py $(SYNC_FLAGS) $(SYNC_EXTRA) 2>&1 | tee -a logs/sync.log; exit $${PIPESTATUS[0]}
 
 query:
-	@test -n "$(QUESTION)" || (echo 'Usage: make query QUESTION="How does Nebius compare to CoreWeave?"'; exit 1)
-	$(PYTHON) scripts/query_wiki.py $(QUERY_FLAGS) --question "$(QUESTION)" $(QUERY_EXTRA_FLAGS)
-
-query-dry-run:
-	@test -n "$(QUESTION)" || (echo 'Usage: make query-dry-run QUESTION="How does Nebius compare to CoreWeave?"'; exit 1)
-	@$(MAKE) query QUESTION="$(QUESTION)" DRY_RUN=1
+	@test -n "$(QUESTION)" || (echo 'Usage: make query QUESTION="..."'; exit 1)
+	$(PYTHON) scripts/query_wiki.py $(QUERY_FLAGS) --question "$(QUESTION)" $(LLM_EXTRA)
 
 audit:
-	$(PYTHON) scripts/audit_wiki.py $(AUDIT_FLAGS) $(AUDIT_EXTRA_FLAGS)
-
-audit-dry-run:
-	@$(MAKE) audit DRY_RUN=1
+	$(PYTHON) scripts/audit_wiki.py $(AUDIT_FLAGS) $(LLM_EXTRA)
 
 analyze:
 	@test -n "$(TICKER)" || (echo "Usage: make analyze TICKER=MSFT"; exit 1)
 	$(PYTHON) scripts/analyze.py "$(TICKER)"
 
 publish:
-	DEPLOY="$(DEPLOY)" LLM_PROVIDER="$(LLM_PROVIDER)" scripts/publish.sh
-
-publish-dry-run:
-	@DEPLOY=0 DRY_RUN=1 LLM_PROVIDER="$(LLM_PROVIDER)" scripts/publish.sh
-
-launchd-install:
-	@mkdir -p logs
-	cp launchd/com.zhaowenlong.dev-business.publish.plist ~/Library/LaunchAgents/
-	-launchctl bootout "gui/$$(id -u)/com.zhaowenlong.dev-business.publish" 2>/dev/null || true
-	launchctl bootstrap "gui/$$(id -u)" ~/Library/LaunchAgents/com.zhaowenlong.dev-business.publish.plist
-	@echo "Installed com.zhaowenlong.dev-business.publish (Sunday 24:00 / Mon 00:00)"
-
-launchd-unload:
-	launchctl bootout "gui/$$(id -u)/com.zhaowenlong.dev-business.publish"
-	@echo "Unloaded com.zhaowenlong.dev-business.publish"
-
-launchd-test:
-	launchctl kickstart -kp "gui/$$(id -u)/com.zhaowenlong.dev-business.publish"
-
-wiki-backfill-titles:
-	$(PYTHON) scripts/sync_wiki.py --wiki "$(WIKI)" --backfill-titles
+	DEPLOY="$(DEPLOY)" DRY_RUN="$(DRY_RUN)" LLM_PROVIDER="$(LLM_PROVIDER)" scripts/publish.sh
 
 site-prepare:
 	$(PYTHON) scripts/prepare_quartz_content.py --wiki "$(WIKI)" --content "$(SITE_CONTENT)"
@@ -140,6 +91,29 @@ site-build: site-prepare
 site-serve: site-prepare
 	cd "$(SITE_DIR)" && npm run quartz -- build --serve --port "$(SITE_PORT)" --output "$(abspath $(SITE_OUTPUT))"
 
-site-deploy: wiki-backfill-titles site-build
+site-deploy: site-build
 	npx wrangler pages deploy "$(SITE_OUTPUT)" --project-name "$(PAGES_PROJECT)" --branch "$(PAGES_BRANCH)" --commit-dirty=true
 	@echo "Production site: $(PAGES_URL)"
+
+site:
+ifeq ($(SERVE),1)
+	@$(MAKE) site-serve
+else ifeq ($(DEPLOY),1)
+	@$(MAKE) site-deploy
+else
+	@$(MAKE) site-build
+endif
+
+launchd:
+ifeq ($(ACTION),unload)
+	launchctl bootout "gui/$$(id -u)/com.zhaowenlong.dev-business.publish"
+	@echo "Unloaded com.zhaowenlong.dev-business.publish"
+else ifeq ($(ACTION),test)
+	launchctl kickstart -kp "gui/$$(id -u)/com.zhaowenlong.dev-business.publish"
+else
+	@mkdir -p logs
+	cp launchd/com.zhaowenlong.dev-business.publish.plist ~/Library/LaunchAgents/
+	-launchctl bootout "gui/$$(id -u)/com.zhaowenlong.dev-business.publish" 2>/dev/null || true
+	launchctl bootstrap "gui/$$(id -u)" ~/Library/LaunchAgents/com.zhaowenlong.dev-business.publish.plist
+	@echo "Installed com.zhaowenlong.dev-business.publish (Sunday 24:00 / Mon 00:00)"
+endif

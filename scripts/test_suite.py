@@ -8,6 +8,7 @@ import tempfile
 import unittest
 from contextlib import contextmanager
 from pathlib import Path
+from unittest.mock import patch
 
 from evaluator import evaluate
 from ingestion import fetch_financial_report, read_raw_report
@@ -19,20 +20,29 @@ from sync_wiki import (
     archive_source,
     remove_raw_source,
     configure_paths,
+    normalize_proposal_paths,
+    normalize_wiki_path,
     parse_raw_front_matter,
     render_article_markdown,
+    run_sync,
     scan_pending_files,
+    summarize_sync_results,
     sync_file,
     update_indexes,
     validate_proposal,
 )
+from sync_wiki import CompileResult
 from llm_provider import (
+    JSON_RETRY_PROMPT,
     FixtureProvider,
     LLMRequest,
+    OpenAICompatibleProvider,
     build_provider,
     default_provider,
     extract_json_object,
     proposal_from_provider,
+    resolve_max_tokens,
+    resolve_temperature,
 )
 from metrics import free_cash_flow, operating_margin, peg_ratio, revenue_growth
 from parser import parse_report
@@ -304,6 +314,50 @@ class SyncWikiTests(unittest.TestCase):
         }
         validate_proposal(proposal, Path("2026-05-30-sample.md"))
 
+    def test_normalize_wiki_path_prefixes_relative_paths(self) -> None:
+        with sync_workspace():
+            self.assertEqual(
+                normalize_wiki_path("ai-infrastructure/sample.md"),
+                "newswiki/wiki/ai-infrastructure/sample.md",
+            )
+            self.assertEqual(
+                normalize_wiki_path("newswiki/wiki/ai-infrastructure/sample.md"),
+                "newswiki/wiki/ai-infrastructure/sample.md",
+            )
+            self.assertEqual(
+                normalize_wiki_path("sample.md", topic_slug="parenting"),
+                "newswiki/wiki/parenting/sample.md",
+            )
+
+    def test_apply_proposal_prefixes_relative_article_path(self) -> None:
+        with sync_workspace():
+            self._seed_topic_index()
+            raw_file = self._raw_file()
+            proposal = copy.deepcopy(self.sample_proposal)
+            proposal["article"]["path"] = "ai-infrastructure/2026-05-30-sample-article.md"
+            proposal["topic"]["path"] = "ai-infrastructure"
+            apply_proposal(proposal, raw_file, no_archive=True)
+
+            article_path = sync_module.ROOT / proposal["article"]["path"]
+            self.assertEqual(
+                str(article_path.relative_to(sync_module.ROOT)),
+                "newswiki/wiki/ai-infrastructure/2026-05-30-sample-article.md",
+            )
+
+    def test_apply_proposal_uses_raw_source_over_truncated_llm_url(self) -> None:
+        with sync_workspace():
+            self._seed_topic_index()
+            raw_file = self._raw_file()
+            proposal = copy.deepcopy(self.sample_proposal)
+            proposal["article"]["front_matter"]["source"] = "https://cn.wsj.com/articles/..."
+            apply_proposal(proposal, raw_file)
+
+            article_path = sync_module.ROOT / proposal["article"]["path"]
+            rendered = article_path.read_text(encoding="utf-8")
+            self.assertIn('source: "https://example.com/sample"', rendered)
+            self.assertIn("# [Sample Article](https://example.com/sample)", rendered)
+            self.assertNotIn("articles/...", rendered)
+
     def test_render_fixture_article_markdown(self) -> None:
         rendered = render_article_markdown(self.sample_proposal)
         self.assertIn('title: "Sample Article"', rendered)
@@ -458,6 +512,40 @@ class SyncWikiTests(unittest.TestCase):
             proposal["topic"]["path"] = "research/wiki/ai-infrastructure"
             proposal["article"]["path"] = "research/wiki/ai-infrastructure/2026-05-30-sample-article.md"
             validate_proposal(proposal, Path("2026-05-30-sample.md"))
+
+    def test_run_sync_continues_after_file_error(self) -> None:
+        with sync_workspace():
+            results = [
+                CompileResult(source_file="bad.md", action="error", errors=["boom"]),
+                CompileResult(
+                    source_file="good.md",
+                    action="create_article",
+                    article_path="newswiki/wiki/ai-infrastructure/good.md",
+                ),
+            ]
+
+            with patch.object(sync_module, "sync_file", side_effect=results) as mock_sync:
+                output = run_sync(
+                    files=[Path("bad.md"), Path("good.md")],
+                    provider=FixtureProvider({"action": "needs_review"}),
+                )
+
+            self.assertEqual(mock_sync.call_count, 2)
+            self.assertEqual(len(output), 2)
+            self.assertEqual(output[0].errors, ["boom"])
+            self.assertEqual(output[1].action, "create_article")
+
+    def test_summarize_sync_results_reports_failures(self) -> None:
+        results = [
+            CompileResult(source_file="bad.md", action="error", errors=["invalid JSON"]),
+            CompileResult(source_file="good.md", action="create_article"),
+        ]
+        with sync_workspace():
+            exit_code = summarize_sync_results(results)
+            log_text = sync_module.SYNC_LOG_PATH.read_text(encoding="utf-8")
+        self.assertEqual(exit_code, 1)
+        self.assertIn("FAILED: bad.md: invalid JSON", log_text)
+        self.assertIn("processed=2 created=1", log_text)
 
     def test_sync_file_uses_injected_fixture_proposal(self) -> None:
         with sync_workspace():
@@ -714,8 +802,36 @@ class LLMProviderTests(unittest.TestCase):
     def test_invalid_fixture_json_is_rejected(self) -> None:
         provider = FixtureProvider("not json")
 
-        with self.assertRaises(ValueError):
+        with self.assertRaisesRegex(ValueError, "invalid JSON after"):
             proposal_from_provider(provider, LLMRequest(system="", prompt=""))
+        self.assertEqual(len(provider.requests), 2)
+
+    def test_proposal_from_provider_retries_invalid_json(self) -> None:
+        class FlakyProvider:
+            def __init__(self) -> None:
+                self.requests: list[LLMRequest] = []
+
+            def complete(self, request: LLMRequest) -> str:
+                self.requests.append(request)
+                if len(self.requests) == 1:
+                    return "not json"
+                return '{"action": "needs_review", "review_notes": []}'
+
+        provider = FlakyProvider()
+        request = LLMRequest(system="rules", prompt="compile this")
+
+        proposal = proposal_from_provider(provider, request)
+
+        self.assertEqual(proposal["action"], "needs_review")
+        self.assertEqual(len(provider.requests), 2)
+        self.assertIn(JSON_RETRY_PROMPT, provider.requests[1].prompt)
+
+    def test_openai_compatible_provider_defaults(self) -> None:
+        provider = OpenAICompatibleProvider(provider="mlx")
+        self.assertEqual(provider.temperature, resolve_temperature())
+        self.assertEqual(provider.max_tokens, resolve_max_tokens())
+        self.assertEqual(resolve_temperature(), 0.0)
+        self.assertEqual(resolve_max_tokens(), 4096)
 
     def test_extract_json_object_accepts_fenced_json(self) -> None:
         payload = extract_json_object(

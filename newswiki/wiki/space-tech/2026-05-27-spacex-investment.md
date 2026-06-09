@@ -1,6 +1,6 @@
 ---
 title: "这位明星选股人在SpaceX实现火箭着陆之前就大举押注"
-source: "https://cn.wsj.com/articles/..."
+source: "https://cn.wsj.com/articles/the-star-stock-picker-who-bet-big-on-spacex-before-it-even-landed-a-rocket-8d676f4d?mod=cn_markets"
 author:
   - "WSJ"
 published: 2026-05-27
@@ -8,7 +8,7 @@ created: 2026-05-27
 description: "知名选股人Gavin Baker在SpaceX火箭着陆成功之前就做出大额投资，展现了对航天产业长期潜力的信心。"
 ---
 
-# [这位明星选股人在SpaceX实现火箭着陆之前就大举押注](https://cn.wsj.com/articles/...)
+# [这位明星选股人在SpaceX实现火箭着陆之前就大举押注](https://cn.wsj.com/articles/the-star-stock-picker-who-bet-big-on-spacex-before-it-even-landed-a-rocket-8d676f4d?mod=cn_markets)
 
 ## 核心观点
 - [[Gavin Baker]] 等专业投资者已将航天产业视为长期成长机会

@@ -6,4 +6,4 @@ This wiki is structured by topics and tickers following a value-based philosophy
 
 See the [news-wiki](https://news-wiki.pages.dev/)
 
-&copy; 2026 Bean Workshop Ltd.
+Copyright &copy; 2026 Bean Workshop Ltd.

@@ -28,6 +28,14 @@ Welcome to AI-generated news wiki knowledge base. This wiki is structured by top
 
 ## Recent Articles
 
+- [[parenting-philosophy/navy-seal-parenting-webb|前海豹突击队员谈如何培养自信、具有冒险精神的孩子]] (2026-06-03)
+
+- [[ai-education/science-communication-actor-method|科学公信力断崖式下跌，一位演员给出了解法]] (2026-06-05)
+
+- [[personal-finance/us-elderly-generosity-support|美国老年人的慷慨：财富的涓滴效应]] (2026-06-05)
+
+- [[talent-careers/67-age-entrepreneurship|67岁开始创业，这比退休好太多了]] (2026-06-03)
+
 - [[talent-careers/us-whitecollar-midcareer-stagnation-20260602|四分之一的美国白领遭遇职业中期停滞]] (2026-06-02)
 - [[ai-education/estonia-ai-education-experiment|爱沙尼亚的AI教育实验]] (2026-06-02)
 - [[ai-infrastructure/llm-mechanics-walkthrough|LLM Mechanics]] (2026-06-07)

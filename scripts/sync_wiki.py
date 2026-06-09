@@ -39,7 +39,7 @@ def configure_paths(
     """Configure source, wiki, archive, and resources directories for the sync harness."""
 
     global ROOT, RAW_DIR, ARCHIVE_DIR, WIKI_DIR, RESOURCES_DIR, CACHE_PATH, STATUS_PATH, ROOT_INDEX
-    global SOURCE_PREFIX, WIKI_PREFIX
+    global SOURCE_PREFIX, WIKI_PREFIX, SYNC_LOG_PATH
 
     if root is not None:
         ROOT = root.resolve()
@@ -63,6 +63,7 @@ def configure_paths(
     ROOT_INDEX = WIKI_DIR / "INDEX.md"
     SOURCE_PREFIX = str(RAW_DIR.relative_to(ROOT)).replace("\\", "/")
     WIKI_PREFIX = str(WIKI_DIR.relative_to(ROOT)).replace("\\", "/")
+    SYNC_LOG_PATH = ROOT / "logs" / "sync.log"
 
 
 RAW_DIR = ROOT / DEFAULT_SOURCE
@@ -74,11 +75,14 @@ STATUS_PATH = ARCHIVE_DIR / "STATUS.md"
 ROOT_INDEX = WIKI_DIR / "INDEX.md"
 SOURCE_PREFIX = DEFAULT_SOURCE
 WIKI_PREFIX = DEFAULT_WIKI
+SYNC_LOG_PATH = ROOT / "logs" / "sync.log"
 
 ALLOWED_ACTIONS = {"create_article", "skip_duplicate", "needs_review"}
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 AI_SYNTHESIS_PREFIX = "[AI Synthesis]"
 RESOURCE_DIR_RE = re.compile(r"_resources/([^/\]\s]+)")
+TRUNCATED_URL_RE = re.compile(r"\.\.\.")
+WIKI_PATH_RE = re.compile(r"`([^`]+\.md)`")
 
 
 @dataclass
@@ -402,17 +406,89 @@ def update_indexes(proposal: dict[str, Any]) -> None:
     _prepend_recent_article(str(index_updates["root_recent_entry"]).strip())
 
 
-def article_source_url(proposal: dict[str, Any], raw_path: Path) -> str:
-    """Return the external source URL from the proposal or raw front matter."""
+def is_truncated_url(url: str) -> bool:
+    """Return True when a URL was shortened with ellipsis."""
+
+    return bool(TRUNCATED_URL_RE.search(url.strip()))
+
+
+def raw_source_url(raw_path: Path) -> str:
+    """Read the provenance source URL from a raw markdown file."""
+
+    if not raw_path.exists():
+        return ""
+    raw_front, _ = parse_raw_front_matter(raw_path.read_text(encoding="utf-8"))
+    return str(raw_front.get("source", "")).strip()
+
+
+def article_source_url(proposal: dict[str, Any], raw_path: Path | None = None) -> str:
+    """Return the external source URL, preferring raw provenance over LLM output."""
 
     article = _require_mapping(proposal, "article")
     front_matter = article.get("front_matter", {})
-    source = str(front_matter.get("source", "")).strip()
-    if source:
-        return source
+    proposal_source = str(front_matter.get("source", "")).strip()
 
-    raw_front, _ = parse_raw_front_matter(raw_path.read_text(encoding="utf-8"))
-    return str(raw_front.get("source", "")).strip()
+    if raw_path is not None:
+        raw_source = raw_source_url(raw_path)
+        if raw_source:
+            return raw_source
+
+    return proposal_source
+
+
+def normalize_wiki_path(path: str, *, topic_slug: str = "") -> str:
+    """Ensure a wiki path includes the configured wiki prefix."""
+
+    normalized = path.strip().replace("\\", "/").lstrip("/")
+    wiki_prefix = WIKI_PREFIX.replace("\\", "/")
+    full_prefix = f"{wiki_prefix}/"
+    if normalized.startswith(full_prefix):
+        return normalized
+    if normalized.startswith("wiki/"):
+        normalized = normalized[len("wiki/") :]
+        if normalized.startswith(full_prefix):
+            return normalized
+    if "/" not in normalized and topic_slug:
+        return f"{full_prefix}{topic_slug}/{normalized}"
+    return f"{full_prefix}{normalized}"
+
+
+def normalize_proposal_paths(proposal: dict[str, Any]) -> None:
+    """Repair topic/article paths when the LLM omits the wiki directory prefix."""
+
+    if proposal.get("action") != "create_article":
+        return
+
+    topic = _require_mapping(proposal, "topic")
+    article = _require_mapping(proposal, "article")
+    topic_slug = str(topic.get("slug", "")).strip()
+    article_slug = str(article.get("slug", "")).strip()
+
+    topic_path = str(topic.get("path", "")).strip()
+    if topic_path:
+        topic["path"] = normalize_wiki_path(topic_path, topic_slug=topic_slug)
+    elif topic_slug:
+        topic["path"] = normalize_wiki_path(topic_slug, topic_slug=topic_slug)
+
+    article_path = str(article.get("path", "")).strip()
+    if article_path:
+        article["path"] = normalize_wiki_path(article_path, topic_slug=topic_slug)
+    elif topic_slug and article_slug:
+        article["path"] = normalize_wiki_path(
+            f"{topic_slug}/{article_slug}.md",
+            topic_slug=topic_slug,
+        )
+
+
+def normalize_proposal_source(proposal: dict[str, Any], raw_path: Path) -> None:
+    """Overwrite proposal source with raw provenance before rendering."""
+
+    source = article_source_url(proposal, raw_path)
+    if not source:
+        return
+    article = _require_mapping(proposal, "article")
+    front_matter = article.setdefault("front_matter", {})
+    front_matter["source"] = source
 
 
 def build_status_row(proposal: dict[str, Any], raw_path: Path) -> str:
@@ -534,6 +610,7 @@ def apply_proposal(
     dry_run: bool = False,
     no_archive: bool = False,
 ) -> CompileResult:
+    normalize_proposal_paths(proposal)
     validate_proposal(proposal, raw_path)
     action = str(proposal["action"])
     result = CompileResult(
@@ -545,6 +622,8 @@ def apply_proposal(
 
     if action in {"skip_duplicate", "needs_review"}:
         return result
+
+    normalize_proposal_source(proposal, raw_path)
 
     article = _require_mapping(proposal, "article")
     article_path = ROOT / str(article["path"])
@@ -609,14 +688,136 @@ def run_sync(
     llm = provider or build_provider(default_provider())
     results: list[CompileResult] = []
     for raw_path in targets:
-        results.append(
-            sync_file(raw_path, llm, dry_run=dry_run, no_archive=no_archive)
-        )
+        log_sync_event("START", raw_path.name)
+        result = sync_file(raw_path, llm, dry_run=dry_run, no_archive=no_archive)
+        results.append(result)
+        if result.errors:
+            log_sync_event(
+                "ERROR",
+                f"{raw_path.name}: {'; '.join(result.errors)} (continuing)",
+            )
+        else:
+            print(f"[sync_wiki] {_format_result(result)}", flush=True)
+            append_sync_log(f"[sync_wiki] {_format_result(result)}")
     return results
 
 
 compile_file = sync_file
 run_compile = run_sync
+
+
+def _normalize_archive_filename(name: str) -> str:
+    """Normalize quote variants so STATUS rows match archive filenames."""
+
+    return (
+        name.replace("\u201c", '"')
+        .replace("\u201d", '"')
+        .replace("\u2018", "'")
+        .replace("\u2019", "'")
+    )
+
+
+def resolve_archive_path(archive_name: str) -> Path | None:
+    """Resolve an archive markdown path, tolerating quote mismatches in STATUS.md."""
+
+    direct = ARCHIVE_DIR / archive_name
+    if direct.exists():
+        return direct
+
+    normalized = _normalize_archive_filename(archive_name)
+    for candidate in ARCHIVE_DIR.glob("*.md"):
+        if candidate.name == normalized or _normalize_archive_filename(candidate.name) == normalized:
+            return candidate
+    return None
+
+
+def parse_status_wiki_archive_map() -> dict[Path, Path]:
+    """Map wiki article paths to archive files using STATUS.md rows."""
+
+    if not STATUS_PATH.exists():
+        return {}
+
+    mapping: dict[Path, Path] = {}
+    for line in STATUS_PATH.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("|") or "Wiki Location" in line or line.startswith("|------"):
+            continue
+        parts = [part.strip() for part in line.strip("|").split("|")]
+        if len(parts) < 3:
+            continue
+
+        archive_name = parts[0]
+        wiki_match = WIKI_PATH_RE.search(parts[2])
+        if not wiki_match:
+            continue
+
+        wiki_path = ROOT / wiki_match.group(1)
+        archive_path = resolve_archive_path(archive_name)
+        if wiki_path.exists() and archive_path is not None:
+            mapping[wiki_path] = archive_path
+    return mapping
+
+
+def update_wiki_source(path: Path, source: str) -> bool:
+    """Replace front matter and H1 source links in one wiki article."""
+
+    content = path.read_text(encoding="utf-8")
+    front_matter, body = parse_raw_front_matter(content)
+    title = str(front_matter.get("title", "")).strip()
+    old_source = str(front_matter.get("source", "")).strip()
+    if not title or old_source == source:
+        return False
+
+    match = re.match(r"^---\n.*?\n---\n?", content, re.DOTALL)
+    if not match:
+        return False
+
+    front_block = match.group(0)
+    new_front_block = re.sub(
+        r'^source:\s*".*"$',
+        f"source: {_yaml_quote(source)}",
+        front_block,
+        count=1,
+        flags=re.MULTILINE,
+    )
+
+    new_linked_heading = f"# {_markdown_external_link(title, source)}"
+    new_body = body
+    if old_source:
+        old_linked_heading = f"# {_markdown_external_link(title, old_source)}"
+        if old_linked_heading in new_body:
+            new_body = new_body.replace(old_linked_heading, new_linked_heading, 1)
+        else:
+            plain_heading = f"# {title}"
+            if plain_heading in new_body:
+                new_body = new_body.replace(plain_heading, new_linked_heading, 1)
+
+    path.write_text(new_front_block + new_body, encoding="utf-8")
+    return True
+
+
+def backfill_wiki_sources(*, wiki_dir: Path | None = None) -> list[str]:
+    """Repair wiki articles whose source URLs were truncated during sync."""
+
+    root = wiki_dir or WIKI_DIR
+    updated: list[str] = []
+    for wiki_path, archive_path in parse_status_wiki_archive_map().items():
+        if wiki_dir is not None and not str(wiki_path).startswith(str(root)):
+            continue
+
+        front_matter, _ = parse_raw_front_matter(wiki_path.read_text(encoding="utf-8"))
+        current_source = str(front_matter.get("source", "")).strip()
+        if not is_truncated_url(current_source):
+            continue
+
+        archive_front, _ = parse_raw_front_matter(archive_path.read_text(encoding="utf-8"))
+        archive_source = str(archive_front.get("source", "")).strip()
+        if not archive_source or is_truncated_url(archive_source):
+            continue
+
+        if update_wiki_source(wiki_path, archive_source):
+            updated.append(str(wiki_path.relative_to(ROOT)))
+
+    return updated
 
 
 def backfill_wiki_source_titles(*, wiki_dir: Path | None = None) -> list[str]:
@@ -649,6 +850,48 @@ def backfill_wiki_source_titles(*, wiki_dir: Path | None = None) -> list[str]:
         updated.append(str(path.relative_to(ROOT)))
 
     return updated
+
+
+def append_sync_log(message: str) -> None:
+    """Append one sync log line to logs/sync.log."""
+
+    SYNC_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with SYNC_LOG_PATH.open("a", encoding="utf-8") as handle:
+        handle.write(message.rstrip() + "\n")
+
+
+def log_sync_event(level: str, message: str) -> None:
+    """Print and persist a sync log event."""
+
+    line = f"[sync_wiki] {level}: {message}"
+    print(line, flush=True)
+    append_sync_log(line)
+
+
+def summarize_sync_results(results: list[CompileResult]) -> int:
+    """Print a batch summary and return a non-zero exit code when any file failed."""
+
+    failed = [result for result in results if result.errors]
+    created = [result for result in results if result.action == "create_article" and not result.errors]
+    skipped = [
+        result
+        for result in results
+        if result.action in {"skip_duplicate", "needs_review"} and not result.errors
+    ]
+
+    log_sync_event(
+        "SUMMARY",
+        (
+            f"processed={len(results)} created={len(created)} "
+            f"skipped={len(skipped)} failed={len(failed)}"
+        ),
+    )
+    for result in failed:
+        log_sync_event(
+            "FAILED",
+            f"{result.source_file}: {'; '.join(result.errors)}",
+        )
+    return 1 if failed else 0
 
 
 def _format_result(result: CompileResult) -> str:
@@ -686,6 +929,11 @@ def main() -> int:
         action="store_true",
         help="Update existing wiki article titles to markdown links using front matter source URLs.",
     )
+    parser.add_argument(
+        "--backfill-sources",
+        action="store_true",
+        help="Repair wiki articles whose source URLs were truncated during sync.",
+    )
     args = parser.parse_args()
 
     configure_paths(
@@ -701,6 +949,15 @@ def main() -> int:
             return 0
         for rel_path in updated:
             print(f"[sync_wiki] backfilled title: {rel_path}")
+        return 0
+
+    if args.backfill_sources:
+        updated = backfill_wiki_sources()
+        if not updated:
+            print("[sync_wiki] no wiki sources to backfill.")
+            return 0
+        for rel_path in updated:
+            print(f"[sync_wiki] backfilled source: {rel_path}")
         return 0
 
     selected: list[Path] | None = None
@@ -728,12 +985,7 @@ def main() -> int:
         print("[sync_wiki] nothing to sync.")
         return 0
 
-    exit_code = 0
-    for result in results:
-        print(f"[sync_wiki] {_format_result(result)}")
-        if result.errors:
-            exit_code = 1
-    return exit_code
+    return summarize_sync_results(results)
 
 
 if __name__ == "__main__":

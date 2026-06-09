@@ -1,6 +1,6 @@
 ---
 title: "稳定币为何会给经济带来风险"
-source: "https://cn.wsj.com/articles/..."
+source: "https://cn.wsj.com/articles/stablecoins-are-private-money-thats-why-theyre-a-risk-to-the-economy-619664c8?mod=cn_markets"
 author:
   - "WSJ"
 published: 2026-05-27
@@ -8,7 +8,7 @@ created: 2026-05-27
 description: "稳定币（Stablecoin）被视为加密货币私人货币实验，但其无限增长与监管缺失构成系统性风险。"
 ---
 
-# [稳定币为何会给经济带来风险](https://cn.wsj.com/articles/...)
+# [稳定币为何会给经济带来风险](https://cn.wsj.com/articles/stablecoins-are-private-money-thats-why-theyre-a-risk-to-the-economy-619664c8?mod=cn_markets)
 
 ## 核心观点
 - 稳定币已成为加密货币生态的关键工具，但监管框架滞后

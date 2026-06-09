@@ -1,6 +1,6 @@
 # Archive Status
 
-**Last Updated:** 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
+**Last Updated:** 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -10,6 +10,10 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-06-03-前海豹突击队员谈如何培养自信、具有冒险精神的孩子.md | 育儿哲学与高成就父母的挑战 | `newswiki/wiki/parenting-philosophy/navy-seal-parenting-webb.md` | Archived |
+| 2026-06-05-科学公信力断崖式下跌，一位演员给出了解法.md | AI时代的教育革新与认知挑战 | `newswiki/wiki/ai-education/science-communication-actor-method.md` | Archived |
+| 2026-06-05-别等遗产了：这些美国老人已在为儿孙慷慨解囊.md | 个人财务 | `newswiki/wiki/personal-finance/us-elderly-generosity-support.md` | Archived |
+| 2026-06-03-我67岁开始创业，这比退休好太多了.md | 人才与职业生涯 | `newswiki/wiki/talent-careers/67-age-entrepreneurship.md` | Archived |
 | 2026-05-29-首份工作到手，你该如何避免开局就“翻车”.md | Talent & Careers | `newswiki/wiki/talent-careers/2026-05-21-first-job-career-guidelines.md` | Archived |
 | 2026-05-29-靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后.md | AI & Employment | `newswiki/wiki/ai-employment/2026-03-11-aaru-ai-simulates-human-behavior.md` | Archived |
 | 2026-05-29-这些公司更能成就人才，它们是这样做的.md | Talent & Careers | `newswiki/wiki/talent-careers/2026-03-25-how-top-companies-develop-talent.md` | Archived |

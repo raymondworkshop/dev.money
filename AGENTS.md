@@ -63,7 +63,7 @@ After wiki sync, the Quartz site can be built and deployed automatically:
 ```bash
 make publish              # sync (MLX) + site-build + Cloudflare Pages deploy
 make publish DEPLOY=0     # sync only
-make publish-dry-run      # validate sync plan, no deploy
+make publish DRY_RUN=1    # validate sync plan, no deploy
 ```
 
 Scheduled macOS automation: install `launchd/com.zhaowenlong.dev-business.publish.plist` into `~/Library/LaunchAgents/`, ensure MLX and Wrangler auth are configured, then:

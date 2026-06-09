@@ -16,6 +16,14 @@ DEFAULT_MLX_URL = "http://127.0.0.1:8080/v1/chat/completions"
 DEFAULT_MLX_MODEL = "mlx-community/gemma-4-e4b-it-4bit"
 DEFAULT_OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 DEFAULT_OPENAI_MODEL = "gpt-4o-mini"
+DEFAULT_TEMPERATURE = 0.0
+DEFAULT_MAX_TOKENS = 4096
+DEFAULT_JSON_RETRY_ATTEMPTS = 2
+JSON_RETRY_PROMPT = (
+    "Your previous response was invalid or incomplete JSON. "
+    "Return ONLY one valid JSON object matching the requested contract. "
+    "No markdown fences, no commentary."
+)
 PLACEHOLDER_MODELS = {"", "mlx-model", "local-model"}
 VALID_PROVIDERS = frozenset({"mlx", "openai", "fixture"})
 
@@ -83,6 +91,21 @@ def resolve_model(provider: str) -> str:
     return DEFAULT_MLX_MODEL
 
 
+def resolve_temperature() -> float:
+    load_env()
+    return float(os.environ.get("LLM_TEMPERATURE", str(DEFAULT_TEMPERATURE)))
+
+
+def resolve_max_tokens() -> int:
+    load_env()
+    return int(os.environ.get("LLM_MAX_TOKENS", str(DEFAULT_MAX_TOKENS)))
+
+
+def resolve_json_retry_attempts() -> int:
+    load_env()
+    return max(1, int(os.environ.get("LLM_JSON_RETRY_ATTEMPTS", str(DEFAULT_JSON_RETRY_ATTEMPTS))))
+
+
 def extract_json_object(text: str) -> dict[str, Any]:
     """Parse a JSON object from raw model text, including fenced blocks."""
 
@@ -110,7 +133,7 @@ class LLMRequest:
 
     system: str
     prompt: str
-    temperature: float = 0.1
+    temperature: float = DEFAULT_TEMPERATURE
 
 
 class LLMProvider(Protocol):
@@ -158,6 +181,8 @@ class OpenAICompatibleProvider:
         self.timeout = timeout or int(os.environ.get("LLM_TIMEOUT_SECONDS", "360"))
         self.retry_attempts = max(1, int(os.environ.get("LLM_RETRY_ATTEMPTS", "2")))
         self.retry_backoff = max(1, int(os.environ.get("LLM_RETRY_BACKOFF_SECONDS", "5")))
+        self.temperature = resolve_temperature()
+        self.max_tokens = resolve_max_tokens()
 
     def complete(self, request: LLMRequest) -> str:
         if self.provider == "openai" and not self.api_key:
@@ -170,6 +195,7 @@ class OpenAICompatibleProvider:
                 {"role": "user", "content": request.prompt},
             ],
             "temperature": request.temperature,
+            "max_tokens": self.max_tokens,
         }
         body = json.dumps(payload).encode("utf-8")
         headers = {
@@ -203,8 +229,27 @@ class OpenAICompatibleProvider:
 def proposal_from_provider(provider: LLMProvider, request: LLMRequest) -> dict[str, Any]:
     """Ask a provider for a compile proposal and parse the strict JSON response."""
 
-    text = provider.complete(request).strip()
-    return extract_json_object(text)
+    attempts = resolve_json_retry_attempts()
+    current_request = request
+    last_error: Exception | None = None
+
+    for attempt in range(1, attempts + 1):
+        try:
+            text = provider.complete(current_request).strip()
+            return extract_json_object(text)
+        except (ValueError, json.JSONDecodeError) as exc:
+            last_error = exc
+            if attempt >= attempts:
+                break
+            current_request = LLMRequest(
+                system=current_request.system,
+                prompt=f"{current_request.prompt}\n\n{JSON_RETRY_PROMPT}",
+                temperature=current_request.temperature,
+            )
+
+    raise ValueError(
+        f"LLM provider returned invalid JSON after {attempts} attempt(s)."
+    ) from last_error
 
 
 def build_provider(name: str | None = None, *, fixture: str | dict[str, Any] | None = None) -> LLMProvider:

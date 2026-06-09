@@ -39,7 +39,7 @@ Other layouts are valid. Treat `SOURCE`, `WIKI`, and `ARCHIVE` as execution para
 2. Run a dry sync first:
 
 ```bash
-make sync-dry-run
+make sync DRY_RUN=1
 ```
 
 3. Sync the default directories:
@@ -57,7 +57,7 @@ make sync SOURCE=research/raw WIKI=research/wiki
 5. Sync one file:
 
 ```bash
-make sync-file FILE=2026-05-30-example.md
+make sync FILE=2026-05-30-example.md
 ```
 
 6. Verify after changes:
