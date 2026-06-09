@@ -11,3 +11,6 @@
 ## Related Topics
 - [[semiconductors]]
 - [[ai-agents]]
+
+## 相关文章
+- [[nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] (2026-06-02) - AI Agent时代的硬件落地。

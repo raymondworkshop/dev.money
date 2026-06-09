@@ -9,3 +9,4 @@ site/.quartz/
 site/.quartz-cache
 site/tsconfig.tsbuildinfo
 .env
+logs/

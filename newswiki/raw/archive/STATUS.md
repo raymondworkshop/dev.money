@@ -1,6 +1,6 @@
 # Archive Status
 
-**Last Updated:** 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
+**Last Updated:** 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -10,6 +10,11 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-06-02-四分之一的美国白领遭遇职业中期停滞.md | 四分之一的美国白领遭遇职业中期停滞 | newswiki/wiki/talent-careers/us-whitecollar-midcareer-stagnation-20260602.md | Archived |
+| 2026-06-02-如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT.md | 爱沙尼亚的AI教育实验 | newswiki/wiki/ai-education/estonia-ai-education-experiment.md | Archived |
+| 2026-06-07-How LLMs Actually Work.md | AI Infrastructure | newswiki/wiki/ai-infrastructure/llm-mechanics-walkthrough.md | Archived |
+| 2026-06-02-工作太多？讓你的AI替身來代勞吧.md | AI & Employment | newswiki/wiki/ai-employment/ai-digital-doubles-workforce-20260602.md | Archived |
+| 2026-06-02-英伟达推出首批专为AI智能体设计的个人电脑.md | NVDA - 英伟达 | newswiki/wiki/nvda/nvidia-ai-agent-pcs-launch.md | Archived |
 | 2026-05-29-首份工作到手，你该如何避免开局就“翻车”.md | Talent & Careers | `newswiki/wiki/talent-careers/2026-05-21-first-job-career-guidelines.md` | Archived |
 | 2026-05-29-靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后.md | AI & Employment | `newswiki/wiki/ai-employment/2026-03-11-aaru-ai-simulates-human-behavior.md` | Archived |
 | 2026-05-29-这些公司更能成就人才，它们是这样做的.md | Talent & Careers | `newswiki/wiki/talent-careers/2026-03-25-how-top-companies-develop-talent.md` | Archived |

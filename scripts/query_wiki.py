@@ -14,7 +14,7 @@ from llm_provider import LLMProvider, LLMRequest, build_provider, proposal_from_
 
 
 ROOT = Path(__file__).resolve().parent.parent
-GEMINI_CONF = ROOT / "GEMINI.md"
+AGENTS_CONF = ROOT / "AGENTS.md"
 DEFAULT_WIKI = "newswiki/wiki"
 DEFAULT_OUTPUTS = "newswiki/outputs"
 DEFAULT_SOURCE = "newswiki/raw"
@@ -98,8 +98,8 @@ def build_wiki_context() -> str:
 
 
 def build_query_prompt(question: str) -> LLMRequest:
-    system = GEMINI_CONF.read_text(encoding="utf-8")
-    prompt = f"""Answer this investment wiki question following the Query contract in GEMINI.md.
+    system = AGENTS_CONF.read_text(encoding="utf-8")
+    prompt = f"""Answer this investment wiki question following the Query contract in AGENTS.md.
 
 Question: {question}
 
@@ -346,7 +346,12 @@ def main() -> int:
     parser.add_argument("--source", default=DEFAULT_SOURCE, help="Raw source directory for evidence links.")
     parser.add_argument("--question", required=True, help="Question to answer from wiki evidence.")
     parser.add_argument("--dry-run", action="store_true", help="Validate and render without saving output.")
-    parser.add_argument("--provider", default="openai", choices=["openai", "fixture"], help="LLM provider backend.")
+    parser.add_argument(
+        "--provider",
+        default=None,
+        choices=["mlx", "openai", "fixture"],
+        help="LLM provider backend (default: LLM_PROVIDER from .env, usually mlx).",
+    )
     args = parser.parse_args()
 
     configure_paths(wiki=args.wiki, outputs=args.outputs, source=args.source)

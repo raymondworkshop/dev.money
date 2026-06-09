@@ -24,7 +24,14 @@ from sync_wiki import (
     update_indexes,
     validate_proposal,
 )
-from llm_provider import FixtureProvider, LLMRequest, build_provider, proposal_from_provider
+from llm_provider import (
+    FixtureProvider,
+    LLMRequest,
+    build_provider,
+    default_provider,
+    extract_json_object,
+    proposal_from_provider,
+)
 from metrics import free_cash_flow, operating_margin, peg_ratio, revenue_growth
 from parser import parse_report
 import query_wiki as query_module
@@ -661,6 +668,19 @@ class LLMProviderTests(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             proposal_from_provider(provider, LLMRequest(system="", prompt=""))
+
+    def test_extract_json_object_accepts_fenced_json(self) -> None:
+        payload = extract_json_object(
+            '```json\n{"action": "needs_review", "review_notes": []}\n```'
+        )
+        self.assertEqual(payload["action"], "needs_review")
+
+    def test_provider_factory_accepts_mlx(self) -> None:
+        provider = build_provider("mlx")
+        self.assertEqual(provider.provider, "mlx")
+
+    def test_default_provider_prefers_mlx(self) -> None:
+        self.assertEqual(default_provider(), "mlx")
 
 
 if __name__ == "__main__":

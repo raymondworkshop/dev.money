@@ -12,11 +12,11 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from llm_provider import LLMProvider, LLMRequest, build_provider, proposal_from_provider
+from llm_provider import LLMProvider, LLMRequest, build_provider, default_provider, proposal_from_provider
 
 
 ROOT = Path(__file__).resolve().parent.parent
-GEMINI_CONF = ROOT / "GEMINI.md"
+AGENTS_CONF = ROOT / "AGENTS.md"
 DEFAULT_SOURCE = "newswiki/raw"
 DEFAULT_WIKI = "newswiki/wiki"
 
@@ -163,8 +163,8 @@ def build_compile_prompt(raw_path: Path) -> LLMRequest:
     content = raw_path.read_text(encoding="utf-8")
     front_matter, body = parse_raw_front_matter(content)
     rel = f"{SOURCE_PREFIX}/{raw_path.name}"
-    system = GEMINI_CONF.read_text(encoding="utf-8")
-    prompt = f"""Compile this raw source into one JSON proposal following the contract in GEMINI.md.
+    system = AGENTS_CONF.read_text(encoding="utf-8")
+    prompt = f"""Compile this raw source into one JSON proposal following the contract in AGENTS.md.
 
 Source file: {rel}
 Existing topics:
@@ -496,7 +496,7 @@ def run_sync(
     if not targets:
         return []
 
-    llm = provider or build_provider("openai")
+    llm = provider or build_provider(default_provider())
     results: list[CompileResult] = []
     for raw_path in targets:
         results.append(
@@ -533,7 +533,12 @@ def main() -> int:
     parser.add_argument("--all", action="store_true", help="Include files already present in sync cache.")
     parser.add_argument("--dry-run", action="store_true", help="Validate and render plan without writing files.")
     parser.add_argument("--no-archive", action="store_true", help="Write wiki output but keep raw files in place.")
-    parser.add_argument("--provider", default="openai", choices=["openai", "fixture"], help="LLM provider backend.")
+    parser.add_argument(
+        "--provider",
+        default=None,
+        choices=["mlx", "openai", "fixture"],
+        help="LLM provider backend (default: LLM_PROVIDER from .env, usually mlx).",
+    )
     args = parser.parse_args()
 
     configure_paths(
@@ -551,7 +556,7 @@ def main() -> int:
                 path = RAW_DIR / path.name if path.parent == Path(".") else ROOT / path
             selected.append(path)
 
-    provider = build_provider(args.provider) if args.provider != "fixture" else None
+    provider = None if args.provider == "fixture" else build_provider(args.provider)
     if args.provider == "fixture":
         print("[sync_wiki] fixture provider requires injecting proposals in tests or API calls.")
         return 1

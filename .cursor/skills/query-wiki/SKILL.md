@@ -17,7 +17,7 @@ The model supplies judgment:
 
 The harness supplies deterministic execution:
 - load wiki indexes
-- build the LLM prompt from `GEMINI.md`
+- build the LLM prompt from `AGENTS.md`
 - validate JSON responses
 - render markdown output
 - save results to the outputs directory
@@ -34,7 +34,7 @@ Other layouts are valid. Treat `WIKI`, `OUTPUTS`, and `SOURCE` as execution para
 
 ## Workflow
 
-1. Read `GEMINI.md`, especially `Query (wiki -> answer)`.
+1. Read `AGENTS.md`, especially `query-wiki: wiki -> answer`.
 2. Run a dry query first:
 
 ```bash

@@ -14,7 +14,7 @@ Every generated page should help future agents retrieve context, reason from evi
 
 ## Core Principle: Thin Harness, Fat Skills
 
-- **Skills/GEMINI.md** encode judgment, process, and domain knowledge.
+- **Skills/AGENTS.md** encode judgment, process, and domain knowledge.
 - **Scripts** load files, validate JSON, render markdown, update indexes, archive files, and save outputs.
 - **LLM output to scripts must be strict JSON**. Do not explain file operations outside JSON fields.
 - **Deterministic space is where trust lives**. Anything inferred in latent space must be marked.
@@ -35,6 +35,42 @@ Default layout:
 - Outputs: `newswiki/outputs`
 
 All sync/query/audit harnesses accept path overrides through Makefile variables or CLI flags.
+
+## LLM Providers
+
+Default provider is local **MLX** (OpenAI-compatible server on Apple Silicon).
+
+Configure in `.env`:
+
+- `LLM_PROVIDER=mlx` — local default; no API key
+- `LLM_URL=http://127.0.0.1:8080/v1/chat/completions`
+- `LLM_MODEL=mlx-community/gemma-4-e4b-it-4bit`
+- `LLM_PROVIDER=openai` — cloud; requires `OPENAI_API_KEY`
+
+Harnesses (`sync_wiki.py`, `query_wiki.py`, `audit_wiki.py`) load `AGENTS.md` as the system prompt and call the configured provider. Override per run:
+
+```bash
+make sync LLM_PROVIDER=mlx
+make query LLM_PROVIDER=openai QUESTION="..."
+```
+
+MLX must be running before sync (for example `com.user.mlxserver` LaunchAgent).
+
+## Publish (sync -> site)
+
+After wiki sync, the Quartz site can be built and deployed automatically:
+
+```bash
+make publish              # sync (MLX) + site-build + Cloudflare Pages deploy
+make publish DEPLOY=0     # sync only
+make publish-dry-run      # validate sync plan, no deploy
+```
+
+Scheduled macOS automation: install `launchd/com.zhaowenlong.dev-business.publish.plist` into `~/Library/LaunchAgents/`, ensure MLX and Wrangler auth are configured, then:
+
+```bash
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.zhaowenlong.dev-business.publish.plist
+```
 
 ## Evidence Hierarchy
 

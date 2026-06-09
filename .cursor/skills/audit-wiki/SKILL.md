@@ -36,7 +36,7 @@ Other layouts are valid. Treat `WIKI`, `SOURCE`, and `OUTPUTS` as execution para
 
 ## Workflow
 
-1. Read `GEMINI.md`, especially `Audit (wiki -> quality report)`.
+1. Read `AGENTS.md`, especially `audit-wiki: wiki -> quality report`.
 2. Run a dry audit first:
 
 ```bash

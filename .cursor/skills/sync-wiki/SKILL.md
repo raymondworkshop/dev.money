@@ -35,7 +35,7 @@ Other layouts are valid. Treat `SOURCE`, `WIKI`, and `ARCHIVE` as execution para
 
 ## Workflow
 
-1. Read `GEMINI.md`, especially `Compile (raw -> wiki)`.
+1. Read `AGENTS.md`, especially `sync-wiki: raw -> wiki`.
 2. Run a dry sync first:
 
 ```bash

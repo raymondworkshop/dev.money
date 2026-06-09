@@ -29,7 +29,7 @@
 ## 1. Project Summary
 `dev.money` is an automated financial analysis tool designed to identify undervalued stocks with high growth potential, mimicking Warren Buffett's investment philosophy. The system fetches financial reports (10-K/10-Q), extracts key metrics, and uses LLM-backed analysis to evaluate qualitative factors like "Moats" and management risks.
 
-## 2. Investment Logic (from GEMINI.md)
+## 2. Investment Logic (from AGENTS.md)
 *   **Operating Margin**: Analyze R&D spending vs. Revenue growth.
 *   **Free Cash Flow (FCF)**: Adjusted for Capital Expenditure.
 *   **Debt-to-Equity**: Monitor leverage and cash reserves.
@@ -42,7 +42,7 @@ A flat structure is used for simplicity and ease of access.
 
 ```text
 dev.money/
-├── GEMINI.md              # Project requirements and investment philosophy
+├── AGENTS.md              # Project requirements and investment philosophy
 ├── design.md              # This design and layout document
 ├── raw/                   # Local storage for downloaded financial reports (JSON/XBRL)
 ├── outputs/               # Generated analysis reports and scoring data (MD/JSON)

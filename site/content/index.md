@@ -1,9 +1,9 @@
 ---
-title: "Business Wiki"
+title: "News Wiki"
 created: "2026-05-30"
 ---
 
-# Business Wiki
+# News Wiki
 
 Welcome to AI-generated business knowledge base. This wiki is structured by topics and tickers following a value-based philosophy.
 
@@ -27,6 +27,16 @@ Welcome to AI-generated business knowledge base. This wiki is structured by topi
 - [[talent-careers|Talent & Careers]]: 人才培养、职场轮岗晋升与职业规划指引。
 
 ## Recent Articles
+
+- [[talent-careers/us-whitecollar-midcareer-stagnation-20260602|四分之一的美国白领遭遇职业中期停滞]] (2026-06-02)
+
+- [[ai-education/estonia-ai-education-experiment|爱沙尼亚的AI教育实验]] (2026-06-02)
+
+- [[ai-infrastructure/llm-mechanics-walkthrough|LLM Mechanics]] (2026-06-07)
+
+- [[ai-digital-doubles-workforce-20260602|工作太多？讓你的AI替身來代勞吧]] (2026-06-02)
+
+- [[nvda/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] (2026-06-02)
 
 - [[talent-careers/2026-05-21-first-job-career-guidelines|首份工作到手，你该如何避免开局就“翻车”]] (2026-05-21)
 
