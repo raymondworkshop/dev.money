@@ -8,13 +8,13 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "dev.business",
-    pageTitleSuffix: " - dev.business",
+    pageTitle: "dev.news-wiki",
+    pageTitleSuffix: " - dev.news-wiki",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
     locale: "zh-CN",
-    baseUrl: "business.pages.dev",
+    baseUrl: "news-wiki.pages.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {

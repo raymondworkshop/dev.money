@@ -1,4 +1,4 @@
-# dev.money - Project Design & Layout
+# dev.news - Project Design & Layout
 
 ## the architecture philosophy - Thin Harness, Fat Skills  
 * Push intelligence up into skills, and push execution down into deterministic tooling. keep the harness thin.  

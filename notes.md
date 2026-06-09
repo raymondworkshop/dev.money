@@ -13,7 +13,7 @@
     - Harness supplies deterministic execution: load indexes/files, collect citations, save outputs, avoid path guessing  
 
 * sync-wiki SKILL  
-    - "Use sync-wiki to sync business/raw into business/wiki"
+    - "Use sync-wiki to sync newswiki/raw into newswiki/wiki"
 
 * query-wiki SKILL    
     - "Use query-wiki to answer: How does Nebius compare to CoreWeave?"
@@ -24,7 +24,7 @@
 
 * site  
     - make site-deploy 
-    > https://dev-money.pages.dev/
+    > https://news-wiki.pages.dev/
 
     
 #### references

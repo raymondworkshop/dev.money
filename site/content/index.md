@@ -3,9 +3,9 @@ title: "Business Wiki"
 created: "2026-05-30"
 ---
 
-# Business Wiki
+# News Wiki
 
-Welcome to AI-generated business knowledge base. This wiki is structured by topics and tickers following a value-based philosophy.
+Welcome to AI-generated news wiki knowledge base. This wiki is structured by topics and tickers following a value-based philosophy.
 
 ## Topics
 

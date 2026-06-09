@@ -9,7 +9,7 @@
       "evidence": [
         {
           "type": "wiki",
-          "path": "business/wiki/nvda/2026-05-21-nvda-undervalued.md",
+          "path": "newswiki/wiki/nvda/2026-05-21-nvda-undervalued.md",
           "link": "[[nvda/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]]",
           "note": "Article contains unresolved [[Intel]] link."
         }
@@ -24,7 +24,7 @@
       "evidence": [
         {
           "type": "wiki",
-          "path": "business/wiki/INDEX.md",
+          "path": "newswiki/wiki/INDEX.md",
           "link": "[[INDEX|Investment Wiki]]",
           "note": "Root index lists philosophy framework links that do not resolve."
         }

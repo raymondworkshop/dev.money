@@ -1,6 +1,6 @@
-# Deploy dev.business Wiki
+# Deploy dev.news-wiki
 
-This site publishes the curated wiki in `business/wiki` through Quartz.
+This site publishes the curated wiki in `newswiki/wiki` through Quartz.
 
 ## Cloudflare Pages Git Integration
 
@@ -12,8 +12,8 @@ Use these settings in Cloudflare Pages:
 - Root directory: `/`
 - Environment variable: `NODE_VERSION=22`
 
-Only the generated static site is published. Do not publish `business/raw`,
-`business/raw/archive`, `.env`, or local LLM outputs unless intentionally reviewed.
+Only the generated static site is published. Do not publish `newswiki/raw`,
+`newswiki/raw/archive`, `.env`, or local LLM outputs unless intentionally reviewed.
 
 ## Manual Deploy
 
@@ -30,7 +30,7 @@ If Wrangler asks you to authenticate:
 npx wrangler login
 ```
 
-The default Cloudflare Pages project name is `business`. Override it with:
+The default Cloudflare Pages project name is `news-wiki`. Override it with:
 
 ```bash
 make site-deploy PAGES_PROJECT=your-project-name
