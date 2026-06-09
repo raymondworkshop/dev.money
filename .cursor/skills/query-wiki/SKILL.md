@@ -17,22 +17,14 @@ The model supplies judgment:
 
 The harness supplies deterministic execution:
 - load wiki indexes
-<<<<<<< HEAD
-- build the LLM prompt from `GEMINI.md`
-=======
 - build the LLM prompt from `AGENTS.md`
->>>>>>> 5aebb7ac6aa114fc313bf33f93ffb12cb9425862
 - validate JSON responses
 - render markdown output
 - save results to the outputs directory
 
 ## Default Paths
 
-<<<<<<< HEAD
-For `dev.news-wiki`, the default layout is:
-=======
 For `dev.money`, the default layout is:
->>>>>>> 5aebb7ac6aa114fc313bf33f93ffb12cb9425862
 
 - Wiki: `newswiki/wiki`
 - Outputs: `newswiki/outputs`
@@ -42,11 +34,7 @@ Other layouts are valid. Treat `WIKI`, `OUTPUTS`, and `SOURCE` as execution para
 
 ## Workflow
 
-<<<<<<< HEAD
-1. Read `GEMINI.md`, especially `Query (wiki -> answer)`.
-=======
 1. Read `AGENTS.md`, especially `query-wiki: wiki -> answer`.
->>>>>>> 5aebb7ac6aa114fc313bf33f93ffb12cb9425862
 2. Run a dry query first:
 
 ```bash
