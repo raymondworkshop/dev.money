@@ -1,16 +1,8 @@
 # News Wiki
 
-<<<<<<< HEAD
-Welcome to AI-powered wiki.  
-
-Consider this a warm, rational, and objective hub for understanding the trends shaping our markets.  
-
-This wiki is structured by topics and tickers following a value-based philosophy.
-=======
 Welcome to AI-generated wiki of interconnected news.  
 
 Designed as a warm, professional, and rational guide to current trends, this platform organizes insights by topic and ticker according to a value-based philosophy.  
->>>>>>> 79e64ff3609e3a35b047430a432c76e0fa347827
 
 ## Topics
 
