@@ -1,6 +1,6 @@
 # dev.business automation
 
-PYTHON = python3
+PYTHON = $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 LLM_PROVIDER ?= mlx
 SOURCE ?= newswiki/raw
 WIKI ?= newswiki/wiki
@@ -29,7 +29,7 @@ SYNC_EXTRA = $(if $(DRY_RUN),--dry-run) $(if $(ALL),--all) $(if $(NO_ARCHIVE),--
 LLM_EXTRA = $(if $(DRY_RUN),--dry-run) --provider "$(LLM_PROVIDER)"
 
 .DEFAULT_GOAL := help
-.PHONY: help test sync query audit analyze publish site launchd
+.PHONY: help test sync query audit analyze publish site launchd venv
 
 help:
 	@echo "dev.business"
@@ -79,7 +79,11 @@ analyze:
 publish:
 	DEPLOY="$(DEPLOY)" DRY_RUN="$(DRY_RUN)" LLM_PROVIDER="$(LLM_PROVIDER)" scripts/publish.sh
 
-site-prepare:
+venv:
+	@test -x .venv/bin/python || python3 -m venv .venv
+	.venv/bin/pip install -r requirements.txt
+
+site-prepare: venv
 	$(PYTHON) scripts/prepare_quartz_content.py --wiki "$(WIKI)" --content "$(SITE_CONTENT)"
 
 site-install:

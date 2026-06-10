@@ -1,20 +1,21 @@
 # AI Infrastructure
 
 ## 概述
-AI时代的计算基础设施竞争。重点关注云服务提供商、数据中心运营、芯片供应链、和技术自主性。
+AI時代的計算基礎設施競爭。重點關注雲服務提供商、數據中心運營、芯片供應鏈、和技術自主性。
 
-## 核心指标
-- **关键公司**: [[Nebius]], [[CoreWeave]], [[Nvidia]], [[Microsoft]], [[Meta]]
-- **关键技术**: 数据中心设计、GPU/CPU 聚合、能源效率、冷却系统
-- **投资视角**: 技术护城河、规模经济、客户粘性、资产轻重权衡
+## 核心指標
+- **關鍵公司**: [[Nebius]], [[CoreWeave]], [[Nvidia]], [[Microsoft]], [[Meta]]
+- **關鍵技術**: 數據中心設計、GPU/CPU 聚合、能源效率、冷卻系統
+- **投資視角**: 技術護城河、規模經濟、客戶粘性、資產輕重權衡
 
-## 相关文章
+## 相關文章
+
 - [[llm-mechanics-walkthrough|How LLMs Actually Work]] (2026-06-07) - Detailed technical breakdown of transformer architecture.
-- [[2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]] (2026-02-23) - 剖析AI初创公司通过在一周内甚至同时向不同VC提供巨大折扣和10亿美元高阶估值的背靠背多层级融资，以此进行估值炒作与人才争夺的资本运作游戏。
-- [[2026-05-29-ai-film-cannes-compute-costs|AI长片在戛纳首映：50万美元制作成本，算力支出占40万]] (2026-05-29) - 戛纳首部全AI长片《Hell Grind》中80%的成本直接转化为AI算力开销，彰显新型算力云服务商（Neocloud）对高频视频生成业务的核心价值。
-- [[2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] (2026-05-27) - Nebius 相比 CoreWeave 的竞争优势分析
+- [[2026-02-23-ai-valuation-back-to-back-financing|揭祕讓AI初創公司一夜變身“獨角獸”的融資策略]] (2026-02-23) - 剖析AI初創公司通過在一週內甚至同時向不同VC提供巨大折扣和10億美元高階估值的背靠背多層級融資，以此進行估值炒作與人才爭奪的資本運作遊戲。
+- [[2026-05-29-ai-film-cannes-compute-costs|AI長片在戛納首映：50萬美元製作成本，算力支出佔40萬]] (2026-05-29) - 戛納首部全AI長片《Hell Grind》中80%的成本直接轉化爲AI算力開銷，彰顯新型算力雲服務商（Neocloud）對高頻視頻生成業務的核心價值。
+- [[2026-05-27-nebius-vs-coreweave|CoreWeave請讓位，Nebius來了]] (2026-05-27) - Nebius 相比 CoreWeave 的競爭優勢分析
 
-## 相关主题
+## 相關主題
 - [[semiconductors|芯片]]
-- [[ai-agents|AI 应用]]
-- [[defense-tech|防卫技术]]
+- [[ai-agents|AI 應用]]
+- [[defense-tech|防衛技術]]

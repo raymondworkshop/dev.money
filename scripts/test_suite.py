@@ -46,6 +46,14 @@ from llm_provider import (
 )
 from metrics import free_cash_flow, operating_margin, peg_ratio, revenue_growth
 from parser import parse_report
+import prepare_quartz_content as prepare_module
+from prepare_quartz_content import (
+    prepare_content,
+    trim_recent_articles_for_site,
+    trim_related_articles_for_site,
+    trim_topics_groups_for_site,
+)
+from zh_convert import convert_markdown, convert_visible_text
 import query_wiki as query_module
 from query_wiki import (
     build_query_prompt,
@@ -845,6 +853,123 @@ class LLMProviderTests(unittest.TestCase):
 
     def test_default_provider_prefers_mlx(self) -> None:
         self.assertEqual(default_provider(), "mlx")
+
+
+class ZhConvertTests(unittest.TestCase):
+    def test_convert_visible_text_to_traditional(self) -> None:
+        converted = convert_visible_text("简体中文与芯片投资")
+        self.assertIn("簡體中文", converted)
+        self.assertIn("芯片", converted)
+
+    def test_convert_markdown_preserves_wiki_paths(self) -> None:
+        source = "# [[personal-finance/article|个人理财]]\n\n投资与传承。"
+        converted = convert_markdown(source)
+        self.assertIn("[[personal-finance/article|", converted)
+        self.assertIn("個人理財", converted)
+        self.assertIn("投資", converted)
+
+    def test_convert_markdown_preserves_source_url(self) -> None:
+        source = (
+            '---\ntitle: "示例文章"\nsource: "https://example.com/sample"\n---\n\n'
+            "正文内容。"
+        )
+        converted = convert_markdown(source)
+        self.assertIn('source: "https://example.com/sample"', converted)
+        self.assertIn("正文內容", converted)
+
+
+class PrepareQuartzContentTests(unittest.TestCase):
+    def test_trim_recent_articles_for_site_limits_homepage(self) -> None:
+        entries = [
+            f"- [[topic/article-{index}|Article {index}]] (2026-06-{index:02d})"
+            for index in range(1, 8)
+        ]
+        index_content = "# News Wiki\n\n## Recent Articles\n\n" + "\n".join(entries) + "\n\n## Philosophy\n"
+        trimmed, all_entries = trim_recent_articles_for_site(index_content)
+
+        self.assertEqual(len(all_entries), 7)
+        visible_entries = prepare_module._collect_recent_article_entries(trimmed)
+        self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
+        self.assertIn("[[articles|More]]", trimmed)
+
+    def test_prepare_content_writes_articles_page(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            wiki_dir = tmp_path / "wiki"
+            content_dir = tmp_path / "content"
+            wiki_dir.mkdir()
+            entries = [
+                f"- [[topic/article-{index}|Article {index}]] (2026-06-{index:02d})"
+                for index in range(1, 8)
+            ]
+            (wiki_dir / "INDEX.md").write_text(
+                "# News Wiki\n\n## Recent Articles\n\n" + "\n".join(entries) + "\n",
+                encoding="utf-8",
+            )
+
+            prepare_content(wiki_dir, content_dir)
+
+            site_index = (content_dir / "index.md").read_text(encoding="utf-8")
+            visible_entries = prepare_module._collect_recent_article_entries(site_index)
+            self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
+            self.assertIn("[[articles|More]]", site_index)
+
+            all_articles = (content_dir / "articles.md").read_text(encoding="utf-8")
+            self.assertEqual(len(prepare_module._collect_article_entries_from_text(all_articles)), 7)
+            self.assertFalse((wiki_dir / "articles.md").exists())
+
+    def test_trim_topics_groups_for_site_limits_each_group(self) -> None:
+        entries = [
+            f"- [[topic-{index}|Topic {index}]]: summary {index}."
+            for index in range(1, 8)
+        ]
+        index_content = (
+            "# News Wiki\n\n## Topics\n\n### Tech & Infrastructure\n\n"
+            + "\n".join(entries)
+            + "\n\n## Recent Articles\n"
+        )
+        trimmed = trim_topics_groups_for_site(index_content)
+        group_section = trimmed.split("### Tech & Infrastructure", 1)[1].split("## Recent Articles", 1)[0]
+        visible_entries = prepare_module._collect_list_entries(group_section.splitlines())
+        self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
+        self.assertIn("[[articles|More]]", group_section)
+
+    def test_trim_related_articles_for_site_limits_topic_index(self) -> None:
+        entries = [
+            f"- [[article-{index}|Article {index}]] (2026-06-{index:02d}) - summary."
+            for index in range(1, 8)
+        ]
+        topic_index = "# Topic\n\n## 相关文章\n\n" + "\n".join(entries) + "\n\n## 相关主题\n"
+        trimmed = trim_related_articles_for_site(topic_index)
+        related_section = trimmed.split("## 相关文章", 1)[1].split("## 相关主题", 1)[0]
+        visible_entries = prepare_module._collect_list_entries(related_section.splitlines())
+        self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
+        self.assertIn("[[articles|More]]", related_section)
+
+    def test_prepare_content_trims_topic_index_articles(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            wiki_dir = tmp_path / "wiki"
+            content_dir = tmp_path / "content"
+            topic_dir = wiki_dir / "ai-employment"
+            topic_dir.mkdir(parents=True)
+            entries = [
+                f"- [[article-{index}|Article {index}]] (2026-06-{index:02d}) - summary."
+                for index in range(1, 8)
+            ]
+            (topic_dir / "_index.md").write_text(
+                "# AI & Employment\n\n## 相关文章\n\n" + "\n".join(entries) + "\n",
+                encoding="utf-8",
+            )
+            (wiki_dir / "INDEX.md").write_text("# News Wiki\n\n## Recent Articles\n", encoding="utf-8")
+
+            prepare_content(wiki_dir, content_dir)
+
+            site_topic_index = (content_dir / "ai-employment" / "index.md").read_text(encoding="utf-8")
+            related_section = site_topic_index.split("## 相關文章", 1)[1]
+            visible_entries = prepare_module._collect_list_entries(related_section.splitlines())
+            self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
+            self.assertIn("[[articles|More]]", related_section)
 
 
 if __name__ == "__main__":
