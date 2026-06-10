@@ -2,6 +2,8 @@
 .cursor
 .wrangler/
 .obsidian
+launchd/
+logs/
 node_modules/
 .venv/
 scripts/__pycache__
