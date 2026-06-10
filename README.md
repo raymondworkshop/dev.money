@@ -2,7 +2,7 @@
 
 Welcome to AI-generated wiki with interconnected news.  
 
-Condider this a warm, rational, and objective hub for understandign the trends shaping out markets. This wiki is structured by topics and tickers following a value-based philosophy.   
+Designed as a warm, professional, and rational guide to current market, tech, and design trends, this platform organizes insights by topic and ticker according to a value-based philosophy.  
 
 See the [news-wiki](https://news-wiki.pages.dev/)
 

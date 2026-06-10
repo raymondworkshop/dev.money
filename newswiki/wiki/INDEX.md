@@ -2,7 +2,7 @@
 
 Welcome to AI-generated wiki of interconnected news.  
 
-Designed as a warm, professional, and rational guide to current trends, this platform organizes insights by topic and ticker according to a value-based philosophy.  
+Designed as a warm, professional, and rational guide to current market, tech, and design trends, this platform organizes insights by topic and ticker according to a value-based philosophy.
 
 ## Topics
 
@@ -40,11 +40,7 @@ Designed as a warm, professional, and rational guide to current trends, this pla
 - [[ai-employment/2026-04-03-ai-created-new-jobs|诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？]] (2026-04-03)
 - [[ai-infrastructure/2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]] (2026-02-23)
 - [[real-estate/2026-05-26-office-residential-conversion-denver|抄底全美最空荡市中心：他能说服人们住进写字楼吗？]] (2026-05-26)
-<<<<<<< HEAD
 - [[personal-finance/2026-05-11-divorce-financial-infidelity|婚姻破裂的关键导火索：“财务出轨”]] (2026-05-11)
-=======
-
->>>>>>> 79e64ff3609e3a35b047430a432c76e0fa347827
 - [[talent-careers/2026-04-30-highest-earning-women-lessons|与美国最高收入女性交谈带来的意外启示]] (2026-04-30)
 - [[ai-infrastructure/2026-05-29-ai-film-cannes-compute-costs|AI长片在戛纳首映：50万美元制作成本，算力支出占40万]] (2026-05-29)
 - [[ai-employment/2026-05-29-ai-era-soft-skills|AI时代的软技能：“科技男”开始上礼仪课了]] (2026-05-29)
