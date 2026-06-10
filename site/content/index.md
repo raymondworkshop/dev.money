@@ -3,11 +3,9 @@ title: "News Wiki"
 created: "2026-05-30"
 ---
 
-# News Wiki
+# AI-powered News Wiki: Connected Stories  
 
-Welcome to AI-generated wiki of interconnected news.  
-
-Designed as a warm, professional, and rational guide to current market, tech, and art trends, this platform organizes insights by topic and label according to a value-based philosophy.
+A warm, professional guide to market, tech, and art trends.
 
 ## Topics
 

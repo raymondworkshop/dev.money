@@ -1,8 +1,6 @@
-#### news-wiki
+#### AI-powered News Wiki: Connected Stories   
 
-Welcome to AI-generated wiki with interconnected news.  
-
-Designed as a warm, professional, and rational guide to current market, tech, and art trends, this platform organizes insights by topic and label according to a value-based philosophy.  
+A warm, professional guide to market, tech, and art trends.  
 
 See the [news-wiki](https://news-wiki.pages.dev/)
 
