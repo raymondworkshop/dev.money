@@ -3,11 +3,13 @@
 ## 概述
 Covers real estate investment, asset repurposing, commercial-to-residential conversions, market cycles, and urban planning.
 
-## 核心指标
-- **关键公司**: Luzzatto Company
-- **关键技术/变量**: 商业地产空置率、高息债务/无杠杆长期股本（Equity）、商改住（Office-to-Residential）转换成本与工程可行性
-- **投资视角**: 远程办公引起的写字楼结构性萎缩、城市核心区去库存、逆周期逆向抄底资产、高息环境下抗波动策略
+## 核心指標
+- **關鍵公司**: Luzzatto Company
+- **關鍵技術/變量**: 商業地產空置率、高息債務/無槓桿長期股本（Equity）、商改住（Office-to-Residential）轉換成本與工程可行性
+- **投資視角**: 遠程辦公引起的寫字樓結構性萎縮、城市核心區去庫存、逆週期逆向抄底資產、高息環境下抗波動策略
 
-## 相关文章
-- [[2026-05-26-office-residential-conversion-denver|抄底全美最空荡市中心：他能说服人们住进写字楼吗？]] (2026-05-26) - 地产开发商阿舍·卢扎托在丹佛实施最激进的商改住实验，试图将闲置商业写字楼转化为住宅单元，实现逆周期资产重定义。
-## 相关主题
+## 相關文章
+
+- [[2026-05-26-office-residential-conversion-denver|抄底全美最空蕩市中心：他能說服人們住進寫字樓嗎？]] (2026-05-26) - 地產開發商阿舍·盧扎託在丹佛實施最激進的商改住實驗，試圖將閒置商業寫字樓轉化爲住宅單元，實現逆週期資產重定義。
+
+## 相關主題

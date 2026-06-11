@@ -5,6 +5,7 @@
 launchd/
 logs/
 node_modules/
+.venv/
 scripts/__pycache__
 site/
 .env
