@@ -53,6 +53,7 @@ help:
 	@echo "  SERVE=1                site: local preview on SITE_PORT"
 	@echo "  DEPLOY=1               site: build + deploy to Cloudflare"
 	@echo "  ACTION=unload|test     launchd: remove agent or run job now"
+	@echo "  LLM_PROVIDER=gemini    cloud LLM (falls back to MLX on failure)"
 	@echo "  LLM_PROVIDER=openai    cloud LLM instead of local MLX"
 	@echo ""
 	@echo "Paths: SOURCE= WIKI= ARCHIVE= OUTPUTS= SITE_DIR="

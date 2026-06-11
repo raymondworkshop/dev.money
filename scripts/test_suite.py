@@ -34,14 +34,18 @@ from sync_wiki import (
 from sync_wiki import CompileResult
 from llm_provider import (
     JSON_RETRY_PROMPT,
+    FallbackProvider,
     FixtureProvider,
+    GeminiProvider,
     LLMRequest,
     OpenAICompatibleProvider,
     build_provider,
     default_provider,
     extract_json_object,
+    fallback_provider_chain,
     proposal_from_provider,
     resolve_max_tokens,
+    resolve_model,
     resolve_temperature,
 )
 from metrics import free_cash_flow, operating_margin, peg_ratio, revenue_growth
@@ -843,8 +847,58 @@ class LLMProviderTests(unittest.TestCase):
         provider = build_provider("mlx")
         self.assertEqual(provider.provider, "mlx")
 
+    def test_provider_factory_accepts_gemini(self) -> None:
+        provider = build_provider("gemini")
+        self.assertIn(provider.provider, {"gemini", "mlx"})
+
     def test_default_provider_prefers_mlx(self) -> None:
         self.assertEqual(default_provider(), "mlx")
+
+    def test_resolve_model_uses_gemini_env(self) -> None:
+        with patch.dict(
+            "os.environ",
+            {"GEMINI_MODEL": "gemini-2.5-flash-lite"},
+            clear=False,
+        ):
+            self.assertEqual(resolve_model("gemini"), "gemini-2.5-flash-lite")
+
+    def test_fallback_chain_gemini_then_mlx(self) -> None:
+        with patch.dict(
+            "os.environ",
+            {
+                "LLM_PROVIDER": "gemini",
+                "GEMINI_API_KEY": "test-key",
+                "LLM_FALLBACK_ENABLED": "1",
+            },
+            clear=False,
+        ):
+            self.assertEqual(fallback_provider_chain("gemini"), ["gemini", "mlx"])
+
+    def test_fallback_provider_uses_secondary_on_primary_failure(self) -> None:
+        class FailingProvider:
+            provider = "gemini"
+
+            def complete(self, request: LLMRequest) -> str:
+                raise RuntimeError("gemini unavailable")
+
+        class SuccessProvider:
+            provider = "mlx"
+
+            def complete(self, request: LLMRequest) -> str:
+                return '{"action": "needs_review", "review_notes": []}'
+
+        provider = FallbackProvider(
+            [FailingProvider(), SuccessProvider()],
+            ["gemini", "mlx"],
+        )
+        proposal = proposal_from_provider(provider, LLMRequest(system="", prompt=""))
+        self.assertEqual(proposal["action"], "needs_review")
+
+    def test_gemini_provider_requires_api_key(self) -> None:
+        with patch.dict("os.environ", {"GEMINI_API_KEY": ""}, clear=False):
+            provider = GeminiProvider()
+            with self.assertRaisesRegex(RuntimeError, "GEMINI_API_KEY"):
+                provider.complete(LLMRequest(system="", prompt="test"))
 
 
 if __name__ == "__main__":

@@ -45,12 +45,15 @@ Configure in `.env`:
 - `LLM_PROVIDER=mlx` — local default; no API key
 - `LLM_URL=http://127.0.0.1:8080/v1/chat/completions`
 - `LLM_MODEL=mlx-community/gemma-4-e4b-it-4bit`
+- `LLM_PROVIDER=gemini` — cloud; requires `GEMINI_API_KEY`; falls back to MLX on failure
+- `GEMINI_MODEL=gemini-2.5-flash-lite`
 - `LLM_PROVIDER=openai` — cloud; requires `OPENAI_API_KEY`
 
 Harnesses (`sync_wiki.py`, `query_wiki.py`, `audit_wiki.py`) load `AGENTS.md` as the system prompt and call the configured provider. Override per run:
 
 ```bash
 make sync LLM_PROVIDER=mlx
+make sync LLM_PROVIDER=gemini
 make query LLM_PROVIDER=openai QUESTION="..."
 ```
 

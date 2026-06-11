@@ -921,7 +921,7 @@ def main() -> int:
     parser.add_argument(
         "--provider",
         default=None,
-        choices=["mlx", "openai", "fixture"],
+        choices=["mlx", "gemini", "openai", "fixture"],
         help="LLM provider backend (default: LLM_PROVIDER from .env, usually mlx).",
     )
     parser.add_argument(
