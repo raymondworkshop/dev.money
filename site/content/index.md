@@ -5,7 +5,7 @@ created: "2026-05-30"
 
 # AI-powered News Wiki: Connected Stories  
 
-A warm, professional guide to market, tech, and art trends.
+A warm, professional guide to market, tech, design, and finance trends.
 
 ## Topics
 
@@ -35,11 +35,11 @@ A warm, professional guide to market, tech, and art trends.
 
 ## Recent Articles
 
-- [[parenting-philosophy/navy-seal-parenting-webb|前海豹突擊隊員談如何培養自信、具有冒險精神的孩子]] (2026-06-03)
-- [[ai-education/science-communication-actor-method|科學公信力斷崖式下跌，一位演員給出瞭解法]] (2026-06-05)
-- [[personal-finance/us-elderly-generosity-support|美國老年人的慷慨：財富的涓滴效應]] (2026-06-05)
-- [[talent-careers/67-age-entrepreneurship|67歲開始創業，這比退休好太多了]] (2026-06-03)
-- [[talent-careers/us-whitecollar-midcareer-stagnation-20260602|四分之一的美國白領遭遇職業中期停滯]] (2026-06-02)
+- [[geopolitics-china-policy/us-soccer-rise-75-years|美國足球的崛起之路]] (2026-06-11)
+- [[health-longevity/men-longevity-glutes|男性長壽的祕訣是緊緻有型的屁股？]] (2026-06-10)
+- [[ai-finance/spacex-ipo-wealth-management|SpaceX IPO財富管理案例]] (2026-06-10)
+- [[talent-careers/new-grad-career-advice-2026|給應屆畢業生的五點具體職場建議]] (2026-06-09)
+- [[ai-finance/leopold-aschenbrenner-situational-awareness|24歲AI奇才的投資之路]] (2026-06-09)
 - [[articles|More]]
 
 ## Philosophy & Framework

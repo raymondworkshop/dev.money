@@ -1,6 +1,6 @@
 # Archive Status
 
-**Last Updated:** 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
+**Last Updated:** 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -10,6 +10,12 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-06-11-75年挣扎与淬炼：美国何以成为真正的足球大国.md | 全球化与文化产业的崛起 | `newswiki/wiki/geopolitics-china-policy/us-soccer-rise-75-years.md` | Archived |
+| 2026-06-10-男性长寿的秘诀是紧致有型的屁股？.md | 健康与长寿 | `newswiki/wiki/health-longevity/men-longevity-glutes.md` | Archived |
+| 2026-06-10-SpaceX员工紧急恶补：暴富后应如何理财.md | AI时代的投资奇才与量化交易 | `newswiki/wiki/ai-finance/spacex-ipo-wealth-management.md` | Archived |
+| 2026-06-09-给应届毕业生的五点具体职场建议.md | 人才与职业发展 | `newswiki/wiki/talent-careers/new-grad-career-advice-2026.md` | Archived |
+| 2026-06-09-将Jane Street纳为投资人的24岁AI奇才.md | AI时代的投资奇才与量化交易 | `newswiki/wiki/ai-finance/leopold-aschenbrenner-situational-awareness.md` | Archived |
+| 2026-06-09-伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇.md | 房地产市场分析 | `newswiki/wiki/real-estate/berkshire-japan-us-housing-opportunity.md` | Archived |
 | 2026-06-03-前海豹突击队员谈如何培养自信、具有冒险精神的孩子.md | 育儿哲学与高成就父母的挑战 | `newswiki/wiki/parenting-philosophy/navy-seal-parenting-webb.md` | Archived |
 | 2026-06-05-科学公信力断崖式下跌，一位演员给出了解法.md | AI时代的教育革新与认知挑战 | `newswiki/wiki/ai-education/science-communication-actor-method.md` | Archived |
 | 2026-06-05-别等遗产了：这些美国老人已在为儿孙慷慨解囊.md | 个人财务 | `newswiki/wiki/personal-finance/us-elderly-generosity-support.md` | Archived |

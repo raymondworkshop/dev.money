@@ -1,6 +1,6 @@
 # AI-powered News Wiki: Connected Stories  
 
-A warm, professional guide to market, tech, and art trends.
+A warm, professional guide to market, tech, design, and finance trends.
 
 
 ## Topics
@@ -23,6 +23,18 @@ A warm, professional guide to market, tech, and art trends.
 - [[talent-careers/_index|Talent & Careers]]: 人才培养、职场轮岗晋升与职业规划指引。
 
 ## Recent Articles
+
+- [[geopolitics-china-policy/us-soccer-rise-75-years|美国足球的崛起之路]] (2026-06-11)
+
+- [[health-longevity/men-longevity-glutes|男性长寿的秘诀是紧致有型的屁股？]] (2026-06-10)
+
+- [[ai-finance/spacex-ipo-wealth-management|SpaceX IPO财富管理案例]] (2026-06-10)
+
+- [[talent-careers/new-grad-career-advice-2026|给应届毕业生的五点具体职场建议]] (2026-06-09)
+
+- [[ai-finance/leopold-aschenbrenner-situational-awareness|24岁AI奇才的投资之路]] (2026-06-09)
+
+- [[real-estate/berkshire-japan-us-housing-opportunity|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]] (2026-06-09)
 
 - [[parenting-philosophy/navy-seal-parenting-webb|前海豹突击队员谈如何培养自信、具有冒险精神的孩子]] (2026-06-03)
 - [[ai-education/science-communication-actor-method|科学公信力断崖式下跌，一位演员给出了解法]] (2026-06-05)

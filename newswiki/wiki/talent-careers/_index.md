@@ -9,6 +9,7 @@ Covers elite career strategies, female high earners, psychology of leadership, a
 - **投资视角**: 组织柔性与自主化人才梯队护城河、个人职业生涯早期技能杠杆与经验期权投资、负面敏感情绪升华为内驱力的转化效率
 
 ## 相关文章
+- [[new-grad-career-advice-2026|给应届毕业生的五点具体职场建议]] (2026-06-09) - 职业生涯的现实化认知与突围之道。
 - [[67-age-entrepreneurship|67岁开始创业，这比退休好太多了]] (2026-06-03) - 高龄创业的心态与实践。
 - [[us-whitecollar-midcareer-stagnation-20260602|四分之一的美国白领遭遇职业中期停滞]] (2026-06-02) - 职业生涯停滞的风险与应对策略。
 - [[2026-05-21-first-job-career-guidelines|首份工作到手，你该如何避免开局就“翻车”]] (2026-05-21) - 为职场新人提供关键战略指引：抛弃品牌执念，聚焦全流程实际技能，寻找严苛导师，并系统防范因早期负面口碑导致的长期黑箱背景调查风险。

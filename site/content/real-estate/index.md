@@ -10,6 +10,7 @@ Covers real estate investment, asset repurposing, commercial-to-residential conv
 
 ## 相關文章
 
+- [[berkshire-japan-us-housing-opportunity|伯克希爾哈撒韋和日本建築商都在美國住宅市場看到機遇]] (2026-06-09) - 市場收購、技術瓶頸與投資機會。
 - [[2026-05-26-office-residential-conversion-denver|抄底全美最空蕩市中心：他能說服人們住進寫字樓嗎？]] (2026-05-26) - 地產開發商阿舍·盧扎託在丹佛實施最激進的商改住實驗，試圖將閒置商業寫字樓轉化爲住宅單元，實現逆週期資產重定義。
 
 ## 相關主題
