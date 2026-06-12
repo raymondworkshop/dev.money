@@ -1,6 +1,6 @@
 # Archive Status
 
-**Last Updated:** 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
+**Last Updated:** 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -10,6 +10,13 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-06-12-马斯克密友格拉西亚斯有望因SpaceX斩获680亿美元收益.md | Space Technology | `newswiki/wiki/space-tech/gracias-spacex-ipo-68b.md` | Archived |
+| 2026-06-12-Self-Host & Tech Independence The Joy of Building Your Own.md | Technology Independence & Self-Hosting | `newswiki/wiki/tech-independence/self-host-tech-independence.md` | Archived |
+| 2026-06-12-领英高管揭示职场AI应用的最大误区.md | AI时代的职业发展与技能重塑 | `newswiki/wiki/ai-employment/linkedin-ai-pitfalls-20260612.md` | Archived |
+| 2026-06-12-这位对冲基金老将正试图用AI“淘汰”过去的自己.md | AI时代的投资奇才与量化交易 | `newswiki/wiki/ai-finance/joe-odonnell-canary-data-ai.md` | Archived |
+| 2026-06-12-贝佐斯创办AI新企业，驳斥AI导致失业的担忧.md | AI与就业市场 | `newswiki/wiki/ai-employment/bezos-prometheus-ai-venture-20260612.md` | Archived |
+| 2026-06-12-关于阿帕奇飞行员救援行动背后的无人艇制造商，你需要了解什么.md | Defense Technology | `newswiki/wiki/defense-tech/saronic-corsair-rescue-20260612.md` | Archived |
+| 2026-06-12-企业在招聘中更加倚重“后门”背调以应对AI.md | 人才与职业发展 | `newswiki/wiki/talent-careers/backdoor-vetting-ai-era.md` | Archived |
 | 2026-06-11-75年挣扎与淬炼：美国何以成为真正的足球大国.md | 全球化与文化产业的崛起 | `newswiki/wiki/geopolitics-china-policy/us-soccer-rise-75-years.md` | Archived |
 | 2026-06-10-男性长寿的秘诀是紧致有型的屁股？.md | 健康与长寿 | `newswiki/wiki/health-longevity/men-longevity-glutes.md` | Archived |
 | 2026-06-10-SpaceX员工紧急恶补：暴富后应如何理财.md | AI时代的投资奇才与量化交易 | `newswiki/wiki/ai-finance/spacex-ipo-wealth-management.md` | Archived |

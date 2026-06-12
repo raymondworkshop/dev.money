@@ -4,10 +4,8 @@ from __future__ import annotations
 
 import argparse
 
-from evaluator import evaluate
-from ingestion import fetch_financial_report, read_raw_report
-from parser import parse_report
-from reporter import answer_question, write_report
+from analyze_lib import evaluate, fetch_financial_report, parse_report, read_raw_report, write_report
+from analyze_lib import answer_question
 
 
 def run(

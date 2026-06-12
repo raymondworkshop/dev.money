@@ -119,7 +119,11 @@ Use these when interpreting business material:
 
 **LLM does**
 
-- Map source to an existing topic, or propose a new topic with rationale.
+- Map source to one **canonical** primary topic slug: `business`, `tech`, `design`, `finance`, `career`, or `lifestyle`.
+- Do not invent new topic slugs. If none fit, return `action: needs_review` with rationale.
+- Harness labels raw inbox files with `sync_status: needs_review`, `review_labels`, and `review_notes`; see `newswiki/raw/REVIEW.md`.
+- When an article clearly spans multiple editorial fields, set `article.topics` with the canonical primary slug first and optional canonical secondaries; the harness lists it under every topic index but stores one canonical file path.
+- Respect `topics` in raw front matter as an operator hint when present.
 - Distill source-grounded sections and `key_takeaways`.
 - Preserve front matter metadata when present.
 - Add useful semantic `[[wiki links]]`.
@@ -167,14 +171,18 @@ Use these when interpreting business material:
       }
     ],
     "key_takeaways": ["Concise takeaway."],
+    "topics": ["primary-topic-slug", "secondary-topic-slug"],
     "topic_footer": {
-      "topic_link": "[[topic-slug/_index|Topic Title]]",
+      "topic_links": [
+        "[[primary-topic-slug/_index|Primary Topic]]",
+        "[[secondary-topic-slug/_index|Secondary Topic]]"
+      ],
       "tags": ["#topic-slug"]
     }
   },
   "index_updates": {
     "topic_index_entry": "- [[article-slug|Title]] (YYYY-MM-DD) - Summary",
-    "root_recent_entry": "- [[topic-slug/article-slug|Title]] (YYYY-MM-DD)"
+    "root_recent_entry": "- [[primary-topic-slug/article-slug|Title]] (YYYY-MM-DD)"
   },
   "archive": {
     "should_archive": true

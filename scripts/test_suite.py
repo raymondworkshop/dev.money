@@ -10,19 +10,31 @@ from contextlib import contextmanager
 from pathlib import Path
 from unittest.mock import patch
 
-from evaluator import evaluate
-from ingestion import fetch_financial_report, read_raw_report
-import sync_wiki as sync_module
-from sync_wiki import (
+from analyze_lib import (
+    build_markdown,
+    evaluate,
+    fetch_financial_report,
+    free_cash_flow,
+    operating_margin,
+    parse_report,
+    peg_ratio,
+    read_raw_report,
+    revenue_growth,
+    write_report,
+)
+import wiki.sync as sync_module
+from wiki.review import mark_raw_needs_review
+from wiki.sync import (
+    CompileResult,
     apply_proposal,
     append_status_row,
-    build_status_row,
     archive_source,
-    remove_raw_source,
+    build_status_row,
     configure_paths,
     normalize_proposal_paths,
     normalize_wiki_path,
     parse_raw_front_matter,
+    remove_raw_source,
     render_article_markdown,
     run_sync,
     scan_pending_files,
@@ -31,7 +43,6 @@ from sync_wiki import (
     update_indexes,
     validate_proposal,
 )
-from sync_wiki import CompileResult
 from llm_provider import (
     JSON_RETRY_PROMPT,
     FallbackProvider,
@@ -48,18 +59,17 @@ from llm_provider import (
     resolve_model,
     resolve_temperature,
 )
-from metrics import free_cash_flow, operating_margin, peg_ratio, revenue_growth
-from parser import parse_report
-import prepare_quartz_content as prepare_module
-from prepare_quartz_content import (
+import wiki.site as prepare_module
+from wiki.site import (
+    convert_markdown,
+    convert_visible_text,
     prepare_content,
     trim_recent_articles_for_site,
     trim_related_articles_for_site,
     trim_topics_groups_for_site,
 )
-from zh_convert import convert_markdown, convert_visible_text
-import query_wiki as query_module
-from query_wiki import (
+import wiki.query as query_module
+from wiki.query import (
     build_query_prompt,
     build_wiki_context,
     configure_paths,
@@ -68,8 +78,8 @@ from query_wiki import (
     save_query_output,
     validate_query_response,
 )
-import audit_wiki as audit_module
-from audit_wiki import (
+import wiki.audit as audit_module
+from wiki.audit import (
     build_audit_prompt,
     configure_paths,
     extract_wiki_links,
@@ -81,7 +91,6 @@ from audit_wiki import (
     scan_broken_links,
     validate_audit_response,
 )
-from reporter import build_markdown, write_report
 
 
 FIXTURES_DIR = Path(__file__).resolve().parent / "fixtures" / "compile"
@@ -112,7 +121,7 @@ def sync_workspace(
     wiki: str = "newswiki/wiki",
     archive: str | None = None,
 ):
-    """Patch sync_wiki paths to an isolated temp workspace."""
+    """Patch wiki.sync paths to an isolated temp workspace."""
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
@@ -157,7 +166,7 @@ def query_workspace(
     outputs: str = "newswiki/outputs",
     source: str = "newswiki/raw",
 ):
-    """Patch query_wiki paths to an isolated temp workspace."""
+    """Patch wiki.query paths to an isolated temp workspace."""
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
@@ -199,7 +208,7 @@ def audit_workspace(
     outputs: str = "newswiki/outputs",
     source: str = "newswiki/raw",
 ):
-    """Patch audit_wiki paths to an isolated temp workspace."""
+    """Patch wiki.audit paths to an isolated temp workspace."""
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
@@ -275,10 +284,10 @@ class SyncWikiTests(unittest.TestCase):
         cls.chinese_raw = load_text_fixture("chinese_raw.md")
 
     def _seed_topic_index(self) -> None:
-        topic_dir = sync_module.WIKI_DIR / "ai-infrastructure"
+        topic_dir = sync_module.WIKI_DIR / "tech"
         topic_dir.mkdir(parents=True, exist_ok=True)
         (topic_dir / "_index.md").write_text(
-            "# AI Infrastructure\n\n## 相关文章\n",
+            "# Tech\n\n## 相关文章\n",
             encoding="utf-8",
         )
 
@@ -318,6 +327,67 @@ class SyncWikiTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "AI Synthesis"):
             validate_proposal(proposal, Path("2026-05-30-sample.md"))
 
+    def test_enforce_canonical_topics_remaps_alias_slug(self) -> None:
+        proposal = copy.deepcopy(self.sample_proposal)
+        proposal["topic"]["slug"] = "ai-infrastructure"
+        proposal["topic"]["path"] = "newswiki/wiki/ai-infrastructure"
+        proposal["article"]["path"] = "newswiki/wiki/ai-infrastructure/2026-05-30-sample-article.md"
+        proposal["article"]["topics"] = ["ai-infrastructure", "tech"]
+        proposal["index_updates"]["root_recent_entry"] = (
+            "- [[ai-infrastructure/2026-05-30-sample-article|Sample Article]] (2026-05-30)"
+        )
+
+        with sync_workspace():
+            self._seed_topic_index()
+            raw_file = self._raw_file()
+            result = apply_proposal(proposal, raw_file, no_archive=True)
+
+            self.assertEqual(result.action, "create_article")
+            article_path = sync_module.ROOT / "newswiki/wiki/tech/2026-05-30-sample-article.md"
+            self.assertTrue(article_path.exists())
+
+    def test_enforce_canonical_topics_needs_review_for_unknown_slug(self) -> None:
+        proposal = copy.deepcopy(self.sample_proposal)
+        proposal["topic"]["slug"] = "quantum-computing"
+        proposal["topic"]["path"] = "newswiki/wiki/quantum-computing"
+        proposal["article"]["path"] = "newswiki/wiki/quantum-computing/2026-05-30-sample-article.md"
+
+        with sync_workspace():
+            self._seed_topic_index()
+            raw_file = self._raw_file()
+            result = apply_proposal(proposal, raw_file, no_archive=True)
+
+            self.assertEqual(result.action, "needs_review")
+            self.assertTrue(raw_file.exists())
+            self.assertFalse(
+                (sync_module.ROOT / "newswiki/wiki/quantum-computing/2026-05-30-sample-article.md").exists()
+            )
+
+            labeled = raw_file.read_text(encoding="utf-8")
+            self.assertIn("sync_status:", labeled)
+            self.assertIn("needs_review", labeled)
+            self.assertIn("topic-not-canonical", labeled)
+            self.assertIn('proposed_topic: "quantum-computing"', labeled)
+
+            queue_path = sync_module.RAW_DIR / "REVIEW.md"
+            self.assertTrue(queue_path.exists())
+            queue_text = queue_path.read_text(encoding="utf-8")
+            self.assertIn(raw_file.name, queue_text)
+            self.assertIn("`topic-not-canonical`", queue_text)
+
+    def test_scan_pending_files_skips_review_labeled_raw(self) -> None:
+        with sync_workspace():
+            raw_file = self._raw_file("review-me.md", content="# pending review")
+            mark_raw_needs_review(
+                raw_file,
+                labels=["topic-not-canonical"],
+                notes=["Topic 'quantum-computing' is not canonical."],
+                proposed_topic="quantum-computing",
+            )
+
+            self.assertEqual(scan_pending_files(), [])
+            self.assertEqual(scan_pending_files(include_review=True), [raw_file])
+
     def test_validate_allows_skip_duplicate_without_article_fields(self) -> None:
         proposal = {
             "action": "skip_duplicate",
@@ -346,14 +416,14 @@ class SyncWikiTests(unittest.TestCase):
             self._seed_topic_index()
             raw_file = self._raw_file()
             proposal = copy.deepcopy(self.sample_proposal)
-            proposal["article"]["path"] = "ai-infrastructure/2026-05-30-sample-article.md"
-            proposal["topic"]["path"] = "ai-infrastructure"
+            proposal["article"]["path"] = "tech/2026-05-30-sample-article.md"
+            proposal["topic"]["path"] = "tech"
             apply_proposal(proposal, raw_file, no_archive=True)
 
             article_path = sync_module.ROOT / proposal["article"]["path"]
             self.assertEqual(
                 str(article_path.relative_to(sync_module.ROOT)),
-                "newswiki/wiki/ai-infrastructure/2026-05-30-sample-article.md",
+                "newswiki/wiki/tech/2026-05-30-sample-article.md",
             )
 
     def test_apply_proposal_uses_raw_source_over_truncated_llm_url(self) -> None:
@@ -377,29 +447,37 @@ class SyncWikiTests(unittest.TestCase):
         self.assertNotIn("**Source**:", rendered)
         self.assertIn("## Core View", rendered)
         self.assertIn("## Key Takeaways", rendered)
-        self.assertIn("**Topic**: [[ai-infrastructure/_index|AI Infrastructure]]", rendered)
-        self.assertIn("**Tags**: #ai-infrastructure #sample", rendered)
+        self.assertIn("topics:", rendered)
+        self.assertIn("**Topics**:", rendered)
+        self.assertIn("[[tech/_index|Tech]]", rendered)
+        self.assertIn("**Tags**: #tech #sample", rendered)
 
     def test_update_indexes_from_fixture(self) -> None:
         with sync_workspace():
             self._seed_topic_index()
-            update_indexes(self.sample_proposal)
-
-            topic_index = (sync_module.WIKI_DIR / "ai-infrastructure" / "_index.md").read_text(
-                encoding="utf-8"
+            (sync_module.WIKI_DIR / "business").mkdir(parents=True, exist_ok=True)
+            (sync_module.WIKI_DIR / "business" / "_index.md").write_text(
+                "# Business\n\n## 相关文章\n\n## 相关主题\n",
+                encoding="utf-8",
             )
+            proposal = copy.deepcopy(self.sample_proposal)
+            proposal["article"]["topics"] = ["tech", "business"]
+            update_indexes(proposal)
+
+            tech_index = (sync_module.WIKI_DIR / "tech" / "_index.md").read_text(encoding="utf-8")
+            business_index = (sync_module.WIKI_DIR / "business" / "_index.md").read_text(encoding="utf-8")
             root_index = sync_module.ROOT_INDEX.read_text(encoding="utf-8")
-            self.assertIn("[[2026-05-30-sample-article|Sample Article]]", topic_index)
-            self.assertIn("## 相关文章", topic_index)
-            self.assertIn("[[ai-infrastructure/2026-05-30-sample-article|Sample Article]]", root_index)
+            self.assertIn("[[2026-05-30-sample-article|Sample Article]]", tech_index)
+            self.assertIn("[[2026-05-30-sample-article|Sample Article]]", business_index)
+            self.assertIn("[[tech/2026-05-30-sample-article|Sample Article]]", root_index)
 
     def test_build_status_row_uses_wiki_path(self) -> None:
         with sync_workspace():
             raw_file = self._raw_file()
             row = build_status_row(self.sample_proposal, raw_file)
             self.assertIn("2026-05-30-sample.md", row)
-            self.assertIn("AI Infrastructure", row)
-            self.assertIn("`newswiki/wiki/ai-infrastructure/2026-05-30-sample-article.md`", row)
+            self.assertIn("Tech", row)
+            self.assertIn("`newswiki/wiki/tech/2026-05-30-sample-article.md`", row)
             self.assertNotIn("https://example.com/sample", row)
 
     def test_append_status_row_from_fixture(self) -> None:
@@ -409,8 +487,8 @@ class SyncWikiTests(unittest.TestCase):
             append_status_row(row)
             status = sync_module.STATUS_PATH.read_text(encoding="utf-8")
             self.assertIn("2026-05-30-sample.md", status)
-            self.assertIn("AI Infrastructure", status)
-            self.assertIn("`newswiki/wiki/ai-infrastructure/2026-05-30-sample-article.md`", status)
+            self.assertIn("Tech", status)
+            self.assertIn("`newswiki/wiki/tech/2026-05-30-sample-article.md`", status)
 
     def test_apply_fixture_archives_raw_and_writes_article(self) -> None:
         with sync_workspace():
@@ -436,7 +514,7 @@ class SyncWikiTests(unittest.TestCase):
             apply_proposal(self.sample_proposal, raw_file)
 
             topic_index_after_first = (
-                sync_module.WIKI_DIR / "ai-infrastructure" / "_index.md"
+                sync_module.WIKI_DIR / "tech" / "_index.md"
             ).read_text(encoding="utf-8")
             root_index_after_first = sync_module.ROOT_INDEX.read_text(encoding="utf-8")
             status_after_first = sync_module.STATUS_PATH.read_text(encoding="utf-8")
@@ -445,7 +523,7 @@ class SyncWikiTests(unittest.TestCase):
             update_indexes(self.sample_proposal)
 
             topic_index_after_second = (
-                sync_module.WIKI_DIR / "ai-infrastructure" / "_index.md"
+                sync_module.WIKI_DIR / "tech" / "_index.md"
             ).read_text(encoding="utf-8")
             root_index_after_second = sync_module.ROOT_INDEX.read_text(encoding="utf-8")
             status_after_second = sync_module.STATUS_PATH.read_text(encoding="utf-8")
@@ -532,7 +610,7 @@ class SyncWikiTests(unittest.TestCase):
                 CompileResult(
                     source_file="good.md",
                     action="create_article",
-                    article_path="newswiki/wiki/ai-infrastructure/good.md",
+                    article_path="newswiki/wiki/tech/good.md",
                 ),
             ]
 
@@ -985,7 +1063,7 @@ class PrepareQuartzContentTests(unittest.TestCase):
         trimmed = trim_topics_groups_for_site(index_content)
         group_section = trimmed.split("### Tech & Infrastructure", 1)[1].split("## Recent Articles", 1)[0]
         visible_entries = prepare_module._collect_list_entries(group_section.splitlines())
-        self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
+        self.assertEqual(len(visible_entries), prepare_module.TOPICS_DISPLAY_LIMIT)
         self.assertIn("[[articles|More]]", group_section)
 
     def test_trim_related_articles_for_site_limits_topic_index(self) -> None:
