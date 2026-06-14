@@ -2,15 +2,15 @@
   "action": "create_article",
   "source_file": "newswiki/raw/2026-05-30-sample.md",
   "topic": {
-    "slug": "ai-infrastructure",
-    "title": "AI Infrastructure",
-    "path": "newswiki/wiki/ai-infrastructure",
+    "slug": "tech",
+    "title": "Tech",
+    "path": "newswiki/wiki/tech",
     "is_new": false,
     "rationale": "Covers cloud infrastructure."
   },
   "article": {
     "slug": "2026-05-30-sample-article",
-    "path": "newswiki/wiki/ai-infrastructure/2026-05-30-sample-article.md",
+    "path": "newswiki/wiki/tech/2026-05-30-sample-article.md",
     "title": "Sample Article",
     "front_matter": {
       "title": "Sample Article",
@@ -30,14 +30,17 @@
       }
     ],
     "key_takeaways": ["Grounded takeaway."],
+    "topics": ["tech"],
     "topic_footer": {
-      "topic_link": "[[ai-infrastructure/_index|AI Infrastructure]]",
-      "tags": ["#ai-infrastructure", "#sample"]
+      "topic_links": [
+        "[[tech/_index|Tech]]"
+      ],
+      "tags": ["#tech", "#sample"]
     }
   },
   "index_updates": {
     "topic_index_entry": "- [[2026-05-30-sample-article|Sample Article]] (2026-05-30) - Summary",
-    "root_recent_entry": "- [[ai-infrastructure/2026-05-30-sample-article|Sample Article]] (2026-05-30)"
+    "root_recent_entry": "- [[tech/2026-05-30-sample-article|Sample Article]] (2026-05-30)"
   },
   "archive": {
     "should_archive": true

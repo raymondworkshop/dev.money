@@ -5,11 +5,18 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
+# Preserve Make/CLI overrides before .env (which may set LLM_PROVIDER=mlx).
+CLI_LLM_PROVIDER="${LLM_PROVIDER-}"
+
 if [[ -f "${ROOT}/.env" ]]; then
   set -a
   # shellcheck disable=SC1091
   source "${ROOT}/.env"
   set +a
+fi
+
+if [[ -n "${CLI_LLM_PROVIDER}" ]]; then
+  LLM_PROVIDER="$CLI_LLM_PROVIDER"
 fi
 
 LOG_DIR="${ROOT}/logs"

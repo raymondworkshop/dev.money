@@ -3,46 +3,30 @@ title: "News Wiki"
 created: "2026-05-30"
 ---
 
-# AI-powered News Wiki: Connected Stories  
+# AI-powered News Wiki: Connected Stories
 
-A warm, professional guide to market, tech, and art trends.
+A warm, professional guide to business & finance, tech & design, career & lifestyle trends.
 
 ## Topics
 
-
-
-
-### Tech & Infrastructure
-
-- [[nvda|NVDA - 英偉達]]: AI 芯片領軍者，數據中心基建核心。
-- [[ai-infrastructure|AI Infrastructure]]: AI 時代的計算基礎設施競爭與雲服務提供商分析。
-
-### Finance & Crypto
-
-- [[crypto-finance|Crypto & Finance]]: 加密資產與金融創新，穩定幣風險與監管前景。
-- [[personal-finance|Personal Finance]]: 個人理財與財富管理、家庭財務治理。
-- [[real-estate|Real Estate]]: 房地產投資、逆週期抄底與寫字樓商改住實驗。
-
-### Innovation & Defense
-
-- [[space-tech|Space Technology]]: 商業航天與火箭重複利用技術的投資機遇。
-- [[defense-tech|Defense Technology]]: 無人機與國防產業鏈的現代化。
-
-### Labor & Society
-
-- [[ai-employment|AI & Employment]]: AI 對勞動力市場的衝擊與社會轉型。
-- [[talent-careers|Talent & Careers]]: 人才培養、職場輪崗晉升與職業規劃指引。
+- [[tech|Tech]]: AI 算力、模型、機器人與教育科技。
+- [[design|Design]]: 產品設計、科學傳播與體驗設計、人機交互。
+- [[business|Business]]: 公司戰略、創業風投、產業政策與商業航天。
+- [[finance|Finance]]: 投資、房地產與財富管理、加密資產。
+- [[career|Career]]: AI 對就業的衝擊、職業發展與人事實踐。
+- [[lifestyle|Lifestyle]]: 健康、育兒、文化趨勢與生活方式。
 
 ## Recent Articles
 
-- [[parenting-philosophy/navy-seal-parenting-webb|前海豹突擊隊員談如何培養自信、具有冒險精神的孩子]] (2026-06-03)
-- [[ai-education/science-communication-actor-method|科學公信力斷崖式下跌，一位演員給出瞭解法]] (2026-06-05)
-- [[personal-finance/us-elderly-generosity-support|美國老年人的慷慨：財富的涓滴效應]] (2026-06-05)
-- [[talent-careers/67-age-entrepreneurship|67歲開始創業，這比退休好太多了]] (2026-06-03)
-- [[talent-careers/us-whitecollar-midcareer-stagnation-20260602|四分之一的美國白領遭遇職業中期停滯]] (2026-06-02)
+- [[lifestyle/us-soccer-rise-75-years|美國足球的崛起之路]] (2026-06-11)
+- [[lifestyle/men-longevity-glutes|男性長壽的祕訣是緊緻有型的屁股？]] (2026-06-10)
+- [[finance/spacex-ipo-wealth-management|SpaceX IPO財富管理案例]] (2026-06-10)
+- [[career/new-grad-career-advice-2026|給應屆畢業生的五點具體職場建議]] (2026-06-09)
+- [[finance/leopold-aschenbrenner-situational-awareness|24歲AI奇才的投資之路]] (2026-06-09)
 - [[articles|More]]
 
 ## Philosophy & Framework
+
 - [[moats|護城河理論]]: 競爭優勢的本質與評估方法
 - [[valuation-metrics|估值指標]]: 核心財務指標與估值框架
 - [[risk-analysis|風險分析]]: 系統性與個體風險識別
