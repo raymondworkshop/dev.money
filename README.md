@@ -1,6 +1,6 @@
 #### AI-powered News Wiki: Connected Stories   
 
-A warm, professional guide to market, tech, and art trends.  
+A warm, professional guide to business & finance, tech & design, and career & lifestyle trends.  
 
 See the [news-wiki](https://news-wiki.pages.dev/)
 

@@ -1,96 +1,153 @@
-# dev.news - Project Design & Layout
+# dev.business — Project Design & Layout
 
-## the architecture philosophy - Thin Harness, Fat Skills  
-* Push intelligence up into skills, and push execution down into deterministic tooling. keep the harness thin.  
-    - Fast skills sit on top
-        + markdown procedures that **encode judgement, process, and domain knowledge** 
-    - thin cli harness sits in the middle.
-        + JSON in, text out. Read-only by default.
-    - deterministic is where trust lives. 
-        + Same input, same output. Every time. SQL queris. Compiled code. ARITHMETIC.
+## Architecture: Thin Harness, Fat Skills
 
-* a skill file tell the model how
-    - works like a method call 
+Push intelligence up into skills; push execution down into deterministic tooling.
 
-* the harness is the program that runs the LLM  
-    - runs the model in a loop,
-    reads and writes your files, manages context, and enforces safety.
+- **Skills** (`.cursor/skills/`) — markdown procedures that encode judgment, process, and domain knowledge. The description field is the resolver; the model matches user intent to skill descriptions.
+- **Harness** (`scripts/*.py`) — thin CLI that runs the LLM, loads context, validates strict JSON, renders markdown, and enforces file boundaries.
+- **AGENTS.md** — system prompt and JSON contracts for sync, query, and audit harnesses.
 
-* Resolvers tell it what to load and when  
-    - The description is the resolver.
-    Every skill has a description field, and the model matches user intent to skill descriptions automatically.
-
-* latent space vs deterministic space  
-    - latent spcae is where intelligence lives
-    - deterministic is where trust lives  
-
-* Diarization is the step that makes AI useful for real knowledge work
-
-## the architecture philosophy - Thin Harness, Fat Skills  
-* Push intelligence up into skills, and push execution down into deterministic tooling. keep the harness thin.  
-    - Fast skills sit on top
-        + markdown procedures that **encode judgement, process, and domain knowledge** 
-    - thin cli harness sits in the middle.
-        + JSON in, text out. Read-only by default.
-    - deterministic is where trust lives. 
-        + Same input, same output. Every time. SQL queris. Compiled code. ARITHMETIC.
-
-* a skill file tell the model how
-    - works like a method call 
-
-* the harness is the program that runs the LLM  
-    - runs the model in a loop,
-    reads and writes your files, manages context, and enforces safety.
-
-* Resolvers tell it what to load and when  
-    - The description is the resolver.
-    Every skill has a description field, and the model matches user intent to skill descriptions automatically.
-
-* latent space vs deterministic space  
-    - latent spcae is where intelligence lives
-    - deterministic is where trust lives  
-
-* Diarization is the step that makes AI useful for real knowledge work
-
-## 1. Project Summary
-`dev.money` is an automated financial analysis tool designed to identify undervalued stocks with high growth potential, mimicking Warren Buffett's investment philosophy. The system fetches financial reports (10-K/10-Q), extracts key metrics, and uses LLM-backed analysis to evaluate qualitative factors like "Moats" and management risks.
-
-## 2. Investment Logic (from AGENTS.md)
-*   **Operating Margin**: Analyze R&D spending vs. Revenue growth.
-*   **Free Cash Flow (FCF)**: Adjusted for Capital Expenditure.
-*   **Debt-to-Equity**: Monitor leverage and cash reserves.
-*   **PEG Ratio**: Filter for stocks where PEG < 1 (Price/Earnings vs. Growth).
-*   **Moat Analysis**: Evaluate Brand, Switching Costs, and Network Effects.
-*   **Risk Detection**: Analyze MD&A and Financial Statement Notes for "hidden" issues.
-
-## 3. Directory Layout
-A flat structure is used for simplicity and ease of access.
+Latent space is where intelligence lives; deterministic space is where trust lives. Anything inferred in latent space must be marked `[AI Synthesis]` in wiki content.
 
 ```text
-dev.money/
-├── AGENTS.md              # Project requirements and investment philosophy
-├── design.md              # This design and layout document
-├── raw/                   # Local storage for downloaded financial reports (JSON/XBRL)
-├── outputs/               # Generated analysis reports and scoring data (MD/JSON)
-└── scripts/               # Consolidated source code and tests
-    ├── ingestion.py       # Data fetching logic (SEC EDGAR API, IR sites)
-    ├── parser.py          # Statement extraction and LLM text analysis
-    ├── metrics.py         # Financial calculation logic (PEG, FCF, etc.)
-    ├── evaluator.py       # Investment scoring and valuation filters
-    ├── analyze.py         # Main CLI entry point (analyze <ticker>)
-    ├── reporter.py        # Report formatting and output generation
-    └── test_suite.py      # Integrated unit and integration tests
+raw evidence -> curated wiki memory -> reasoning outputs
 ```
 
-## 4. Component Architecture
+## Project Summary
 
-### A. Core Modules
-*   **ingestion.py**: Automates retrieval of filings and stores them in `raw/`.
-*   **parser.py**: Maps XBRL/JSON fields to a unified data model; invokes LLMs for qualitative summaries.
-*   **metrics.py**: Pure functions for financial ratio calculations.
-*   **evaluator.py**: Applies the "Value + Growth" scoring model based on parsed data and metrics.
+`dev.business` is an LLM-native business knowledge base. The primary workflow ingests news articles from `newswiki/raw`, distills them into a structured wiki at `newswiki/wiki`, answers questions with citations, audits wiki health, and publishes a Quartz static site.
 
-### B. Interface & Verification
-*   **analyze.py**: The user interface. Orchestrates the flow from ingestion -> parsing -> analysis -> reporting.
-*   **reporter.py**: Takes the evaluator's output and generates a readable Markdown report in `outputs/`.
-*   **test_suite.py**: Contains all validation logic for both mathematical accuracy and pipeline integrity.
+A secondary workflow (`make analyze TICKER=...`) evaluates individual stocks using SEC filings and the investment lens in `AGENTS.md`.
+
+## Directory Layout
+
+```text
+dev.business/
+├── AGENTS.md                 # LLM wiki contract, JSON schemas, investment lens
+├── design.md                 # This document
+├── Makefile                  # sync, query, audit, analyze, publish, site
+├── .env / .env.example       # LLM provider configuration
+├── .cursor/skills/           # sync-wiki, query-wiki, audit-wiki
+├── launchd/                  # macOS scheduled publish plist
+├── logs/                     # sync.log, publish.log
+├── newswiki/
+│   ├── raw/                  # Inbox: unprocessed articles (+ archive/)
+│   ├── wiki/                 # Curated knowledge base (topics, INDEX.md)
+│   ├── outputs/              # Query and audit report snapshots
+│   └── _resources/           # Article images (synced with raw)
+├── site/                     # Quartz static site (content/, public/)
+├── raw/                      # (created on demand) SEC filing cache for analyze
+├── outputs/                  # (created on demand) Ticker analysis reports
+└── scripts/                  # All Python harnesses and tests
+```
+
+Path overrides: `SOURCE`, `WIKI`, `ARCHIVE`, `OUTPUTS` via Makefile or CLI flags.
+
+## Makefile Entry Points
+
+| Target | Script | Purpose |
+|--------|--------|---------|
+| `make sync` | `sync_wiki.py` | raw → wiki |
+| `make query QUESTION="..."` | `query_wiki.py` | wiki → cited answer |
+| `make audit` | `audit_wiki.py` | wiki health report (read-only) |
+| `make analyze TICKER=MSFT` | `analyze.py` | ticker value + growth report |
+| `make publish` | `publish.sh` | sync + site build + Cloudflare deploy |
+| `make site` | `prepare_quartz_content.py` + Quartz | build or serve static site |
+| `make test` | `test_suite.py` | unit and pipeline tests |
+
+## Scripts Layout
+
+### Wiki harness (primary)
+
+| Script | Role |
+|--------|------|
+| `sync_wiki.py` | Scan raw inbox, call LLM, validate proposal JSON, render wiki markdown, update indexes, archive provenance |
+| `query_wiki.py` | Load wiki context, synthesize cited answer, save to `newswiki/outputs` |
+| `audit_wiki.py` | Deterministic link/index checks + LLM quality report |
+| `llm_provider.py` | Shared MLX / Gemini / OpenAI provider with JSON extraction and fallback |
+| `zh_convert.py` | Chinese text normalization for sync |
+| `prepare_quartz_content.py` | Copy and trim wiki content into `site/content/` |
+| `publish.sh` | Wait for MLX, run sync, build and deploy site |
+
+### Ticker analysis (secondary)
+
+| Script | Role |
+|--------|------|
+| `analyze.py` | CLI: ingestion → parse → evaluate → report |
+| `ingestion.py` | Fetch SEC EDGAR filings; store JSON in `raw/` |
+| `parser.py` | Map filing fields to unified model; LLM qualitative summaries |
+| `metrics.py` | Pure functions: PEG, FCF, operating margin, revenue growth |
+| `evaluator.py` | Value + growth scoring from parsed data |
+| `reporter.py` | Render Markdown report to `outputs/` |
+
+### Verification
+
+| Script | Role |
+|--------|------|
+| `test_suite.py` | Tests for wiki harness, LLM provider, site prep, and analyze pipeline |
+| `fixtures/` | Sample raw markdown, proposal JSON, query/audit responses |
+
+## Component Flows
+
+### A. Sync (raw → wiki)
+
+```text
+newswiki/raw/*.md
+  → sync_wiki.py (LLM proposes JSON via AGENTS.md)
+  → validate + render
+  → newswiki/wiki/<topic>/<article>.md
+  → update INDEX.md, archive stub, delete inbox file
+```
+
+### B. Query (wiki → answer)
+
+```text
+newswiki/wiki + INDEX.md
+  → query_wiki.py (LLM cites evidence)
+  → newswiki/outputs/<slug>.md
+```
+
+### C. Publish (wiki → site)
+
+```text
+make publish
+  → sync_wiki.py
+  → prepare_quartz_content.py → site/content/
+  → Quartz build → site/public/
+  → wrangler pages deploy
+```
+
+### D. Analyze (ticker → report)
+
+```text
+make analyze TICKER=MSFT
+  → ingestion.py → raw/<ticker>.json
+  → parser.py → metrics.py → evaluator.py
+  → reporter.py → outputs/<ticker>_analysis.md
+```
+
+## Investment Logic (analyze workflow)
+
+From `AGENTS.md`:
+
+- **Operating Margin**: margin quality, R&D intensity, revenue growth
+- **Free Cash Flow**: operating cash flow minus capital expenditure
+- **Debt-to-Equity**: leverage, cash reserves, refinancing risk
+- **PEG Ratio**: growth at a reasonable price; PEG below 1 is attractive when quality holds
+- **Moat Analysis**: brand, switching costs, network effects, scale, data, distribution
+- **Risk Detection**: MD&A, notes, hidden liabilities, customer concentration, regulatory risk
+
+## LLM Providers
+
+Configured in `.env`. Default is local MLX (`LLM_PROVIDER=mlx`). Cloud options: `gemini`, `openai` (with MLX fallback on failure). Wiki harnesses load `AGENTS.md` as the system prompt.
+
+## Skills
+
+| Skill | Harness |
+|-------|---------|
+| `.cursor/skills/sync-wiki/` | `scripts/sync_wiki.py` |
+| `.cursor/skills/query-wiki/` | `scripts/query_wiki.py` |
+| `.cursor/skills/audit-wiki/` | `scripts/audit_wiki.py` |
+
+Skills tell the model *how* to reason; scripts own *what* gets written to disk.
