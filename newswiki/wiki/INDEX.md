@@ -16,6 +16,8 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
+- [[ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-06-14)
+
 - [[lifestyle/us-soccer-rise-75-years|美国足球的崛起之路]] (2026-06-11)
 - [[lifestyle/men-longevity-glutes|男性长寿的秘诀是紧致有型的屁股？]] (2026-06-10)
 - [[finance/spacex-ipo-wealth-management|SpaceX IPO财富管理案例]] (2026-06-10)
@@ -55,4 +57,3 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[moats|护城河理论]]: 竞争优势的本质与评估方法
 - [[valuation-metrics|估值指标]]: 核心财务指标与估值框架
 - [[risk-analysis|风险分析]]: 系统性与个体风险识别
-

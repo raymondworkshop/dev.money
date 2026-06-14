@@ -18,11 +18,11 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
+- [[ai-tsunami-john-doerr|專訪風投家約翰·杜爾：AI是史上最大的科技“海嘯”]] (2026-06-14)
 - [[lifestyle/us-soccer-rise-75-years|美國足球的崛起之路]] (2026-06-11)
 - [[lifestyle/men-longevity-glutes|男性長壽的祕訣是緊緻有型的屁股？]] (2026-06-10)
 - [[finance/spacex-ipo-wealth-management|SpaceX IPO財富管理案例]] (2026-06-10)
 - [[career/new-grad-career-advice-2026|給應屆畢業生的五點具體職場建議]] (2026-06-09)
-- [[finance/leopold-aschenbrenner-situational-awareness|24歲AI奇才的投資之路]] (2026-06-09)
 - [[articles|More]]
 
 ## Philosophy & Framework

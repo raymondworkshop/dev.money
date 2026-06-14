@@ -1,6 +1,6 @@
 # dev.business automation
 
-PYTHON := $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
+PYTHON = $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 PYTHONPATH := $(CURDIR)/scripts
 export PYTHONPATH
 
@@ -26,7 +26,7 @@ TICKER ?=
 DEPLOY ?=
 ACTION ?= install
 
-RUN := $(PYTHON) scripts
+RUN = $(PYTHON) scripts
 PATH_FLAGS = --source "$(SOURCE)" --wiki "$(WIKI)"
 SYNC_FLAGS = $(PATH_FLAGS) --archive "$(ARCHIVE)"
 QUERY_FLAGS = $(PATH_FLAGS) --outputs "$(OUTPUTS)"

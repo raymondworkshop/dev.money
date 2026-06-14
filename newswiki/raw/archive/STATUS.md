@@ -1,6 +1,6 @@
 # Archive Status
 
-**Last Updated:** 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
+**Last Updated:** 2026-06-14 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -10,6 +10,7 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-06-14-专访风投家约翰·杜尔：AI是史上最大的科技“海啸”.md | Business | `newswiki/wiki/Business/ai-tsunami-john-doerr.md` | Archived |
 | 2026-06-12-马斯克密友格拉西亚斯有望因SpaceX斩获680亿美元收益.md | Space Technology | `newswiki/wiki/space-tech/gracias-spacex-ipo-68b.md` | Archived |
 | 2026-06-12-Self-Host & Tech Independence The Joy of Building Your Own.md | Technology Independence & Self-Hosting | `newswiki/wiki/tech-independence/self-host-tech-independence.md` | Archived |
 | 2026-06-12-领英高管揭示职场AI应用的最大误区.md | AI时代的职业发展与技能重塑 | `newswiki/wiki/ai-employment/linkedin-ai-pitfalls-20260612.md` | Archived |
