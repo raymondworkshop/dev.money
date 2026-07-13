@@ -6,8 +6,8 @@ launchd/
 logs/
 node_modules/
 .venv/
-scripts/__pycache__
-scripts/wiki/__pycache__
+scripts/__pycache__/
+scripts/wiki/__pycache__/
 site/
 .env
 logs/

@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 # --- constants ---
 
@@ -70,6 +71,28 @@ def validate_synthesis_labels(items: list[str], label: str) -> None:
             raise ValueError(f"{label} contains an empty bullet.")
         if "AI Synthesis" in text and not text.startswith(AI_SYNTHESIS_PREFIX):
             raise ValueError(f"{label} inference must start with '{AI_SYNTHESIS_PREFIX}'.")
+
+
+_FILENAME_PUNCTUATION_MAP = str.maketrans(
+    {
+        "\uff1f": "?",  # fullwidth question mark
+        "\uff01": "!",  # fullwidth exclamation
+        "\uff0c": ",",  # fullwidth comma
+        "\uff1a": ":",  # fullwidth colon
+        "\uff1b": ";",  # fullwidth semicolon
+        "\uff08": "(",  # fullwidth left paren
+        "\uff09": ")",  # fullwidth right paren
+        "\u201c": '"',
+        "\u201d": '"',
+        "\u2018": "'",
+        "\u2019": "'",
+    }
+)
+
+
+def normalize_path_punctuation(path: str) -> str:
+    """Collapse common CJK/ASCII punctuation lookalikes for path comparison."""
+    return path.translate(_FILENAME_PUNCTUATION_MAP)
 
 
 # --- markdown ---
@@ -169,6 +192,31 @@ def sanitize_slug(value: str, *, fallback: str) -> str:
     safe = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
     safe = re.sub(r"-+", "-", safe)
     return safe[:60] or fallback
+
+
+def slug_from_url_path(url: str) -> str:
+    segment = urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
+    return sanitize_slug(segment, fallback="")
+
+
+def derive_article_slug_fallback(article: dict[str, Any], raw_stem: str) -> str:
+    front_matter = article.get("front_matter")
+    if isinstance(front_matter, dict):
+        source = str(front_matter.get("source", "")).strip()
+        if source:
+            url_slug = slug_from_url_path(source)
+            if url_slug and len(url_slug) >= 4:
+                return url_slug
+
+    match = re.match(r"^(\d{4}-\d{2}-\d{2})-(.+)$", raw_stem)
+    if match:
+        date_part, rest = match.groups()
+        rest_slug = sanitize_slug(rest, fallback="")
+        if rest_slug:
+            return f"{date_part}-{rest_slug}"[:60]
+        return f"{date_part}-article"
+
+    return sanitize_slug(raw_stem, fallback="article")
 
 
 def resolve_output_slug(question: str, filename_slug: str, *, fallback: str) -> str:

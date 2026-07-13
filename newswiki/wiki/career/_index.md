@@ -9,6 +9,16 @@ AI 对就业的冲击、职业发展、招聘背调、软技能与组织人才�
 - **投资视角**: 人力资本、生产率、行业变迁
 
 ## 相关文章
+- [[career/llm-burnout-impact|I Think I Have LLM Burnout]] (2026-07-09) - Personal account of cognitive fatigue from repeated exposure to AI output patterns.
+- [[how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-07-08) - 提供了通过精修领英档案来提升求职成功率的实战策略，包括内容优化、人脉利用和技能展示。
+- [[retirement-reentry-experiences|In America, What Is the Experience of Retiring and Starting a Business Later in Life?]] (2026-07-06) - Analysis of 4 real-life cases showing motivations, financial risks, and work-life dynamics of older entrepreneurs.
+- [[retirement-reentry-experiences|In America, What Is the Experience of Retiring and Starting a Business Later in Life?]] (2026-07-06) - Retirees redefining work through entrepreneurship, with case studies from microgreens, print shops, and community nonprofits.
+- [[career/ask-for-help-from-strangers|How to Ask for Help from People Who Don't Know You]] (2026-06-30) - A practical guide to building credibility and reducing friction when requesting help from strangers.
+- [[career/ai-employment-impact|AI会导致就业末日吗？三位经济学家各抒己见]] (2026-06-29) - 三位经济学家对AI影响就业的分歧与预测，涵盖失业率、新工作形态及高风险人群。
+- [[career/ai-employment-impact|AI会导致就业末日吗？三位经济学家各抒己见]] (2026-06-29) - 三位经济学家对AI就业影响的分歧与预测，涵盖失业率、新工作形态及高风险人群。
+- [[career/ai-career-preparedness|Facing AI-Driven Job Disruption]] (2026-06-25) - Initiative to prepare workers for AI labor shifts
+- [[passive-income-new-american-dream|Forget Working: Passive Income Is the New American Dream]] (2026-06-25) - A cultural analysis of the rise of passive income as a lifestyle ideal, featuring real-world case studies and risks.
+- [[principles-for-living-operating-system-for-life|Principles For Living: An Operating System for Life]] (2026-06-25) - Foundational principles for effective living.
 - [[67-age-entrepreneurship|我67岁开始创业，这比退休好太多了]] (2026-06-02) - 探讨了高龄创业的驱动力、优势以及从中获得的经验。
 - [[2026-05-28-cheap-humanoid-robots|下一波中国冲击：比二手车还便宜的人形机器人]] (2026-05-28) - 如果中国制造商能把机器人的价格降得足够低，实用性提得足够高，并实现大规模量产，中国制造业的崛起或将迈入新阶段，整个中国制造体系的成本底线也将被进一步拉低。
 - [[2026-05-29-ai-fact-checking|AI会犯错，但AI也能揪出错误]] (2026-05-20) - 由于聊天机器人会产生“幻觉”并编造事实，一个有效且便捷的方法是用第二个专门挑错的AI来审核结果并纠错。
@@ -19,6 +29,9 @@ AI 对就业的冲击、职业发展、招聘背调、软技能与组织人才�
 - [[2026-05-21-first-job-career-guidelines|首份工作到手，你该如何避免开局就“翻车”]] (2026-05-21) - 你的第一份工作机遇与风险并存。本文给出了一些告诫之语，以免你无意间断送了大好前程。
 - [[2026-05-27-ai-employment-phoenix|AI冲击波席卷菲尼克斯：\"格子间\"产业帝国濒临瓦解]] (2026-05-27) - 菲尼克斯是美国的客服中心之都。如今，AI与外包正加快白领岗位流失，摧毁通往中产阶级的职业道路。
 - [[2026-05-29-ai-era-soft-skills|AI时代的软技能：“科技男”开始上礼仪课了]] (2026-05-19) - 那些凭借编程能力 and 强硬领导力成名的创始人正逐渐意识到，在如今的人工智能时代，社交礼仪与人际沟通等软实力已变得比以往任何时候都更加重要。
+- [[AI时代的职业边界：哪些事情AI不该做？|哪些事AI做不到，也不该做？]] (2026-06-22) - 随着企业加速拥抱AI，一些领域的过度应用可能弊大于利。
+- [[how-to-improve-job-search-success-by-optimizing-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18) - 无论你眼下是否在找工作，及时更新领英运营策略都至关重要。
+- [[how-to-improve-job-search-success-by-refining-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18) - 无论你眼下是否在找工作，及时更新领英运营策略都至关重要。
 - [[new-grad-career-advice-2026|给应届毕业生的五点具体职场建议]] (2026-06-09) - 大学里的“娇生惯养”不会延续到现实社会中。
 - [[us-whitecollar-midcareer-stagnation-20260602|四分之一的美国白领遭遇职业中期停滞]] (2026-06-01) - 一项新研究发现，大约四分之一的美国职场人士经历过职业中期停滞，即至少五年没有获得实质性的加薪或晋升，一道无形的障碍正阻碍许多人向上发展。
 

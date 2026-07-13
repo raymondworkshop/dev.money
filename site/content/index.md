@@ -18,11 +18,11 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
-- [[ai-tsunami-john-doerr|專訪風投家約翰·杜爾：AI是史上最大的科技“海嘯”]] (2026-06-14)
-- [[lifestyle/us-soccer-rise-75-years|美國足球的崛起之路]] (2026-06-11)
-- [[lifestyle/men-longevity-glutes|男性長壽的祕訣是緊緻有型的屁股？]] (2026-06-10)
-- [[finance/spacex-ipo-wealth-management|SpaceX IPO財富管理案例]] (2026-06-10)
-- [[career/new-grad-career-advice-2026|給應屆畢業生的五點具體職場建議]] (2026-06-09)
+- [[career/llm-burnout-impact|I Think I Have LLM Burnout]] (2026-07-09)
+- [[tech/ai-infrastructure/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]] (2026-07-08)
+- [[business/founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison|經營硅谷“處方藥坊”的中國籍商人在美被判六年監禁]] (2026-07-08)
+- [[career/how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求職成功率？或許你需要精修領英檔案]] (2026-07-08)
+- [[tech/ai-spending-war-who-will-blink-first|人工智能領域的支出大戰，最終會有人讓步嗎？]] (2026-07-07)
 - [[articles|More]]
 
 ## Philosophy & Framework

@@ -32,6 +32,8 @@ from wiki.sync import (
     build_status_row,
     configure_paths,
     normalize_proposal_paths,
+    normalize_proposal_slugs,
+    normalize_proposal_source_file,
     normalize_wiki_path,
     parse_raw_front_matter,
     remove_raw_source,
@@ -321,6 +323,15 @@ class SyncWikiTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "source_file"):
             validate_proposal(proposal, Path("2026-05-30-sample.md"))
 
+    def test_normalize_proposal_source_file_repairs_ascii_punctuation(self) -> None:
+        raw_name = "2026-07-09-时薪33美元的开市客收银员，如何攒出百万身家？.md"
+        raw_path = Path(raw_name)
+        proposal = copy.deepcopy(self.sample_proposal)
+        proposal["source_file"] = f"newswiki/raw/{raw_name.replace('？', '?')}"
+        normalize_proposal_source_file(proposal, raw_path)
+        validate_proposal(proposal, raw_path)
+        self.assertEqual(proposal["source_file"], f"newswiki/raw/{raw_name}")
+
     def test_validate_rejects_unlabeled_ai_synthesis(self) -> None:
         proposal = copy.deepcopy(self.sample_proposal)
         proposal["article"]["sections"][0]["bullets"].append("AI Synthesis without label.")
@@ -410,6 +421,36 @@ class SyncWikiTests(unittest.TestCase):
                 normalize_wiki_path("sample.md", topic_slug="parenting"),
                 "newswiki/wiki/parenting/sample.md",
             )
+
+    def test_normalize_proposal_slugs_repairs_chinese_slug_from_source_url(self) -> None:
+        proposal = copy.deepcopy(self.sample_proposal)
+        chinese_slug = "巨额资金涌入AI，这是一个巨大的危险信号"
+        expected_slug = "all-the-money-flooding-into-ai-is-a-giant-warning-sign-d71df439"
+        proposal["article"]["slug"] = chinese_slug
+        proposal["article"]["front_matter"]["source"] = (
+            "https://cn.wsj.com/articles/all-the-money-flooding-into-ai-is-a-giant-warning-sign-d71df439"
+        )
+        proposal["article"]["path"] = f"newswiki/wiki/finance/{chinese_slug}.md"
+        proposal["topic"]["slug"] = "finance"
+        proposal["topic"]["path"] = "newswiki/wiki/finance"
+        proposal["article"]["topics"] = ["finance"]
+        proposal["index_updates"]["topic_index_entry"] = (
+            f"- [[{chinese_slug}|巨额资金涌入AI]] (2026-06-24) - Summary"
+        )
+        proposal["index_updates"]["root_recent_entry"] = (
+            f"- [[finance/{chinese_slug}|巨额资金涌入AI]] (2026-06-24)"
+        )
+
+        raw_path = Path("2026-06-24-巨额资金涌入AI，这是一个巨大的危险信号.md")
+        proposal["source_file"] = f"newswiki/raw/{raw_path.name}"
+        normalize_proposal_slugs(proposal, raw_path)
+        normalize_proposal_paths(proposal)
+
+        self.assertEqual(proposal["article"]["slug"], expected_slug)
+        self.assertTrue(proposal["article"]["path"].endswith(f"{expected_slug}.md"))
+        self.assertIn(f"[[{expected_slug}|", proposal["index_updates"]["topic_index_entry"])
+        self.assertIn(f"finance/{expected_slug}|", proposal["index_updates"]["root_recent_entry"])
+        validate_proposal(proposal, raw_path)
 
     def test_apply_proposal_prefixes_relative_article_path(self) -> None:
         with sync_workspace():

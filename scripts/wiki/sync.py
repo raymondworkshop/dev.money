@@ -19,16 +19,20 @@ from topic_config import (
     topic_hint_from_front_matter,
 )
 from wiki.common import (
+    SLUG_RE,
     add_dry_run_arg,
     add_llm_provider_arg,
+    derive_article_slug_fallback,
     load_agents_contract,
     markdown_external_link,
+    normalize_path_punctuation,
     parse_raw_front_matter,
     relative_prefix,
     reject_fixture_provider,
     repo_root,
     require_mapping,
     resolve_path,
+    sanitize_slug,
     validate_slug,
     validate_synthesis_labels,
     yaml_quote,
@@ -191,6 +195,8 @@ Canonical topics (pick exactly one as primary; add canonical secondaries only wh
 
 Do not invent new topic slugs. If none fit well, return action "needs_review" with rationale.
 
+article.slug must be lowercase ASCII only (a-z, 0-9, hyphens). For Chinese titles, derive an English slug from the source URL path or article topic — never use CJK characters in slugs.
+
 Wiki topic folders on disk:
 {list_topic_context(WIKI_DIR) or "- none"}
 {hint_block}
@@ -301,6 +307,43 @@ def normalize_wiki_path(path: str, *, topic_slug: str = "") -> str:
     return f"{full_prefix}{normalized}"
 
 
+def normalize_proposal_slugs(proposal: dict[str, Any], raw_path: Path) -> None:
+    if proposal.get("action") != "create_article":
+        return
+
+    article = require_mapping(proposal, "article")
+    slug = str(article.get("slug", "")).strip()
+    if slug and SLUG_RE.fullmatch(slug):
+        return
+
+    old_slug = slug
+    fallback = derive_article_slug_fallback(article, raw_path.stem)
+    if slug and all(ord(char) < 128 for char in slug):
+        new_slug = sanitize_slug(slug, fallback=fallback)
+    else:
+        new_slug = fallback
+    if not new_slug or not SLUG_RE.fullmatch(new_slug):
+        new_slug = fallback
+    article["slug"] = new_slug
+
+    if not old_slug or old_slug == new_slug:
+        return
+
+    article["path"] = ""
+
+    index_updates = proposal.get("index_updates")
+    if not isinstance(index_updates, dict):
+        return
+    for key in ("topic_index_entry", "root_recent_entry"):
+        entry = str(index_updates.get(key, ""))
+        if old_slug not in entry:
+            continue
+        index_updates[key] = (
+            entry.replace(f"[[{old_slug}|", f"[[{new_slug}|")
+            .replace(f"/{old_slug}|", f"/{new_slug}|")
+        )
+
+
 def normalize_proposal_paths(proposal: dict[str, Any]) -> None:
     if proposal.get("action") != "create_article":
         return
@@ -321,6 +364,15 @@ def normalize_proposal_paths(proposal: dict[str, Any]) -> None:
         article["path"] = normalize_wiki_path(article_path, topic_slug=topic_slug)
     elif topic_slug and article_slug:
         article["path"] = normalize_wiki_path(f"{topic_slug}/{article_slug}.md", topic_slug=topic_slug)
+
+
+def normalize_proposal_source_file(proposal: dict[str, Any], raw_path: Path) -> None:
+    expected = f"{SOURCE_PREFIX}/{raw_path.name}"
+    source_file = str(proposal.get("source_file", "")).strip()
+    if source_file != expected and normalize_path_punctuation(source_file) == normalize_path_punctuation(
+        expected
+    ):
+        proposal["source_file"] = expected
 
 
 def normalize_proposal_source(proposal: dict[str, Any], raw_path: Path) -> None:
@@ -348,7 +400,9 @@ def apply_proposal(
     no_archive: bool = False,
 ) -> CompileResult:
     proposal = enforce_canonical_topics(proposal)
+    normalize_proposal_slugs(proposal, raw_path)
     normalize_proposal_paths(proposal)
+    normalize_proposal_source_file(proposal, raw_path)
     validate_proposal(proposal, raw_path)
     action = str(proposal["action"])
     result = CompileResult(

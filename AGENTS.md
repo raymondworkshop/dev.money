@@ -127,6 +127,7 @@ Use these when interpreting business material:
 - Distill source-grounded sections and `key_takeaways`.
 - Preserve front matter metadata when present.
 - Add useful semantic `[[wiki links]]`.
+- Set `article.slug` to lowercase ASCII only (`a-z`, `0-9`, hyphens). For Chinese titles, derive an English slug from the source URL path or article topic — never use CJK characters in slugs.
 
 **Harness does**
 

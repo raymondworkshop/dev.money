@@ -61,6 +61,8 @@ TOPIC_ALIASES: dict[str, str] = {
     "health-longevity": "lifestyle",
     "parenting-philosophy": "lifestyle",
     "society": "lifestyle",
+    "lifestyle-trends": "lifestyle",
+    "Lifestyle Trends": "lifestyle",
 }
 
 
