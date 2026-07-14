@@ -29,6 +29,10 @@ from wiki.common import (
     repo_root,
     require_mapping,
     resolve_path,
+    sanitize_slug,
+    slug_fallback_from_raw,
+    SLUG_RE,
+    normalize_wiki_link_label,
     validate_slug,
     validate_synthesis_labels,
     yaml_quote,
@@ -191,6 +195,9 @@ Canonical topics (pick exactly one as primary; add canonical secondaries only wh
 
 Do not invent new topic slugs. If none fit well, return action "needs_review" with rationale.
 
+article.slug must be lowercase ASCII only (a-z, 0-9, hyphens). Use a descriptive English slug even when the title is Chinese or mixed script.
+Preserve the source article language throughout: article.title, front_matter, section headings, bullets, and key_takeaways must match the raw language. Do not translate or rename titles.
+
 Wiki topic folders on disk:
 {list_topic_context(WIKI_DIR) or "- none"}
 {hint_block}
@@ -286,6 +293,88 @@ def validate_proposal(proposal: dict[str, Any], raw_path: Path) -> None:
         raise ValueError("article.front_matter.source is required for create_article.")
 
 
+def normalize_proposal_language(proposal: dict[str, Any], raw_path: Path) -> list[str]:
+    if proposal.get("action") != "create_article":
+        return []
+
+    content = raw_path.read_text(encoding="utf-8")
+    raw_front_matter, _ = parse_raw_front_matter(content)
+    raw_title = str(raw_front_matter.get("title", "")).strip()
+    if not raw_title:
+        return []
+
+    article = require_mapping(proposal, "article")
+    front_matter = article.setdefault("front_matter", {})
+    notes: list[str] = []
+
+    current_title = str(article.get("title", "")).strip()
+    if current_title and current_title != raw_title:
+        notes.append(f"Reset article.title to source title: {raw_title!r}.")
+    article["title"] = raw_title
+    if str(front_matter.get("title", "")).strip() != raw_title:
+        front_matter["title"] = raw_title
+
+    raw_description = str(raw_front_matter.get("description", "")).strip()
+    if raw_description:
+        front_matter["description"] = raw_description
+
+    index_updates = proposal.get("index_updates")
+    if isinstance(index_updates, dict):
+        for key in ("topic_index_entry", "root_recent_entry"):
+            entry = str(index_updates.get(key, "")).strip()
+            if not entry:
+                continue
+            fixed = normalize_wiki_link_label(entry, raw_title)
+            if fixed != entry:
+                notes.append(f"Reset index_updates.{key} display to source title.")
+                index_updates[key] = fixed
+
+    if notes:
+        review_notes = proposal.setdefault("review_notes", [])
+        if isinstance(review_notes, list):
+            review_notes.extend(notes)
+    return notes
+
+
+def normalize_proposal_slugs(proposal: dict[str, Any], raw_path: Path) -> list[str]:
+    if proposal.get("action") != "create_article":
+        return []
+
+    article = require_mapping(proposal, "article")
+    topic = require_mapping(proposal, "topic")
+    raw_slug = str(article.get("slug", "")).strip()
+    if raw_slug and SLUG_RE.fullmatch(raw_slug):
+        return []
+
+    fallback = slug_fallback_from_raw(raw_path)
+    new_slug = sanitize_slug(raw_slug, fallback=fallback)
+    if not new_slug:
+        new_slug = fallback
+
+    notes = [f"Normalized invalid article slug '{raw_slug}' -> '{new_slug}'."]
+    old_slug = raw_slug
+    article["slug"] = new_slug
+
+    topic_slug = str(topic.get("slug", "")).strip()
+    article_path = str(article.get("path", "")).strip()
+    if article_path and old_slug in article_path:
+        article["path"] = article_path.replace(old_slug, new_slug)
+    elif topic_slug:
+        article["path"] = f"{WIKI_PREFIX}/{topic_slug}/{new_slug}.md"
+
+    index_updates = proposal.get("index_updates")
+    if isinstance(index_updates, dict):
+        for key in ("topic_index_entry", "root_recent_entry"):
+            entry = str(index_updates.get(key, ""))
+            if old_slug and old_slug in entry:
+                index_updates[key] = entry.replace(old_slug, new_slug)
+
+    review_notes = proposal.setdefault("review_notes", [])
+    if isinstance(review_notes, list):
+        review_notes.extend(notes)
+    return notes
+
+
 def normalize_wiki_path(path: str, *, topic_slug: str = "") -> str:
     normalized = path.strip().replace("\\", "/").lstrip("/")
     wiki_prefix = WIKI_PREFIX.replace("\\", "/")
@@ -348,6 +437,8 @@ def apply_proposal(
     no_archive: bool = False,
 ) -> CompileResult:
     proposal = enforce_canonical_topics(proposal)
+    normalize_proposal_language(proposal, raw_path)
+    normalize_proposal_slugs(proposal, raw_path)
     normalize_proposal_paths(proposal)
     validate_proposal(proposal, raw_path)
     action = str(proposal["action"])

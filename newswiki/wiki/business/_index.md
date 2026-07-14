@@ -9,14 +9,19 @@
 - **投资视角**: 护城河、市占、资本效率
 
 ## 相关文章
-- [[ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-06-14) - AI时代的颠覆性浪潮与投资哲学
+- [[us-biotech-boosts-secrity-to-fight-china-pharma-competition|为防范中国药企跟风，美国生物技术公司加强保密]] (2026-07-10) - U.S. biotech firms are implementing stricter confidentiality to counter Chinese drug development replication.
 - [[2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]] (2026-02-23) - 对热门AI初创公司的投资争夺战已导致投资者之间的交易条款出现差异，从而引发了外界对这些公司真实价值的质疑。
 - [[2026-03-11-aaru-ai-simulates-human-behavior|靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后]] (2026-03-11) - Aaru背后的团队正吸引包括麦当劳和安永在内的品牌客户，该公司押注AI机器人能够比人类更准确地预测人类行为。
 - [[2026-05-28-drone-investment|特朗普政府正就注资国内无人机公司进行谈判]] (2026-05-28) - 美国政府计划投资国内无人机制造企业，以加强国内防卫产业链与技术自主性。
 - [[67-age-entrepreneurship|我67岁开始创业，这比退休好太多了]] (2026-06-02) - 探讨了高龄创业的驱动力、优势以及从中获得的经验。
+- [[ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-05-25) - 凯鹏华盈董事长约翰·杜尔曾精准押注谷歌，在他看来，AI革命非但没有过度炒作，反而被低估了。
 - [[berkshire-japan-us-housing-opportunity|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]] (2026-06-04) - 伯克希尔哈撒韦公司在美国住宅建筑商身上看到了什么公开市场投资者没有注意到的东西？或许与关注该行业的日本企业所见略同。
+- [[blue-origin-trump-contract-surge|How Bezos Learned to Win Over Trump and Secured a Surge of Contracts for Blue Origin]] (2026-07-03) - Bezos transitioned from being a political adversary of Trump to a key ally, with Blue Origin securing a dramatic increase in federal contracts during Trump's second term.
 - [[china-all-encompassing-policy|中国“全方位产业政策”令世界其他地区望尘莫及]] (2026-05-15) - 从传统行业到新兴领域，从商品到服务，从微观干预到宏观调控，中国政府的支持无处不在。
 - [[doerr-ai-tsunami|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-05-25) - 凯鹏华盈董事长约翰·杜尔曾精准押注谷歌，在他看来，AI革命非但没有过度炒作，反而被低估了。
+- [[how-to-earn-a-billion-dollars|How to Earn a Billion Dollars]] (2026-07-07) - A talk by Paul Graham on how exponential growth through user-driven innovation can lead to billionaire success without exploitation.
+- [[industrial-defense-legacy|美国工业与国防的联系可追溯至建国之初]] (2026-06-30) - 以乔治·华盛顿创建斯普林菲尔德兵工厂为起点，美国以前所未有的方式将战争与商业融合在了一起。
+- [[korean-oil-tanker-magnate-irans-war-profit|Korean Oil Tanker Magnate Makes a Fortune from Iran War]] (2026-07-03) - Ga-Hyun Chung斥资约70亿美元大举买入油轮，组建起全球最大的油轮船队，当时正值市场陷入混乱前夕。
 - [[2026-05-27-spacex-investment|这位明星选股人在SpaceX实现火箭着陆之前就大举押注]] (2026-05-27) - 知名选股人Gavin Baker在SpaceX火箭着陆成功之前就做出大额投资，展现了对航天产业长期潜力的信心。
 - [[leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]] (2026-06-09) - 凭借对AI未来的预测，莱奥波德·阿申布伦纳在互联网上吸引了大批狂热追随者，其投资公司常规的监管公告被人们像研究圣经一样仔细研读。
 - [[spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]] (2026-06-10) - 面对足以改变命运的巨额财富，SpaceX员工们需要盘算是否该卖出股票、何时套现，并权衡其他理财策略。

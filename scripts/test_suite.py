@@ -31,7 +31,9 @@ from wiki.sync import (
     archive_source,
     build_status_row,
     configure_paths,
+    normalize_proposal_language,
     normalize_proposal_paths,
+    normalize_proposal_slugs,
     normalize_wiki_path,
     parse_raw_front_matter,
     remove_raw_source,
@@ -43,6 +45,7 @@ from wiki.sync import (
     update_indexes,
     validate_proposal,
 )
+from wiki.common import article_language, slug_fallback_from_raw, takeaways_heading
 from llm_provider import (
     JSON_RETRY_PROMPT,
     FallbackProvider,
@@ -327,6 +330,37 @@ class SyncWikiTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "AI Synthesis"):
             validate_proposal(proposal, Path("2026-05-30-sample.md"))
 
+    def test_slug_fallback_from_raw_uses_ascii_fragments(self) -> None:
+        slug = slug_fallback_from_raw(Path("2026-07-05-上斜哑铃卧推_Keep.md"))
+        self.assertRegex(slug, r"^2026-07-05-keep$")
+
+    def test_slug_fallback_from_raw_hashes_pure_non_ascii(self) -> None:
+        raw_path = Path("2026-07-04-贝佐斯如何学会拉拢特朗普并为蓝色起源狂揽合约.md")
+        slug = slug_fallback_from_raw(raw_path)
+        self.assertRegex(slug, r"^2026-07-04-article-[a-f0-9]{8}$")
+
+    def test_normalize_proposal_slugs_fixes_chinese_article_slug(self) -> None:
+        proposal = copy.deepcopy(self.sample_proposal)
+        chinese_slug = "贝佐斯如何学会拉拢特朗普并为蓝色起源狂揽合约"
+        proposal["article"]["slug"] = chinese_slug
+        proposal["article"]["path"] = f"newswiki/wiki/business/{chinese_slug}.md"
+        proposal["index_updates"]["topic_index_entry"] = (
+            f"- [[{chinese_slug}|贝佐斯如何学会拉拢特朗普并为蓝色起源狂揽合约]] (2026-07-04) - Summary"
+        )
+        proposal["index_updates"]["root_recent_entry"] = (
+            f"- [[business/{chinese_slug}|贝佐斯如何学会拉拢特朗普并为蓝色起源狂揽合约]] (2026-07-04)"
+        )
+        raw_path = Path("2026-07-04-贝佐斯如何学会拉拢特朗普并为蓝色起源狂揽合约.md")
+        proposal["source_file"] = f"newswiki/raw/{raw_path.name}"
+
+        notes = normalize_proposal_slugs(proposal, raw_path)
+
+        self.assertTrue(notes)
+        self.assertRegex(proposal["article"]["slug"], r"^2026-07-04-article-[a-f0-9]{8}$")
+        self.assertIn(proposal["article"]["slug"], proposal["article"]["path"])
+        self.assertIn(proposal["article"]["slug"], proposal["index_updates"]["topic_index_entry"])
+        self.assertNotIn(chinese_slug, proposal["article"]["path"])
+
     def test_enforce_canonical_topics_remaps_alias_slug(self) -> None:
         proposal = copy.deepcopy(self.sample_proposal)
         proposal["topic"]["slug"] = "ai-infrastructure"
@@ -451,6 +485,39 @@ class SyncWikiTests(unittest.TestCase):
         self.assertIn("**Topics**:", rendered)
         self.assertIn("[[tech/_index|Tech]]", rendered)
         self.assertIn("**Tags**: #tech #sample", rendered)
+
+    def test_render_chinese_article_uses_chinese_labels(self) -> None:
+        proposal = copy.deepcopy(self.sample_proposal)
+        proposal["article"]["title"] = "示例文章"
+        proposal["article"]["front_matter"]["title"] = "示例文章"
+        proposal["article"]["front_matter"]["description"] = "中文描述"
+        proposal["article"]["sections"][0]["heading"] = "核心观点"
+        rendered = render_article_markdown(proposal)
+        self.assertEqual(article_language(proposal["article"]), "zh")
+        self.assertEqual(takeaways_heading("zh"), "核心要点")
+        self.assertIn("## 核心要点", rendered)
+        self.assertIn("**主题**:", rendered)
+        self.assertIn("**标签**:", rendered)
+        self.assertNotIn("## Key Takeaways", rendered)
+
+    def test_normalize_proposal_language_resets_title_to_raw(self) -> None:
+        with sync_workspace():
+            raw_file = self._raw_file("2026-06-02-sample-zh.md", content=self.chinese_raw)
+            proposal = copy.deepcopy(self.sample_proposal)
+            proposal["article"]["title"] = "Rewritten English Title"
+            proposal["article"]["front_matter"]["title"] = "Rewritten English Title"
+            proposal["index_updates"]["topic_index_entry"] = (
+                "- [[2026-05-30-sample-article|Rewritten English Title]] (2026-05-30) - Summary"
+            )
+            proposal["index_updates"]["root_recent_entry"] = (
+                "- [[tech/2026-05-30-sample-article|Rewritten English Title]] (2026-05-30)"
+            )
+            notes = normalize_proposal_language(proposal, raw_file)
+            self.assertTrue(notes)
+            self.assertEqual(proposal["article"]["title"], "示例文章")
+            self.assertEqual(proposal["article"]["front_matter"]["title"], "示例文章")
+            self.assertIn("示例文章", proposal["index_updates"]["topic_index_entry"])
+            self.assertIn("示例文章", proposal["index_updates"]["root_recent_entry"])
 
     def test_update_indexes_from_fixture(self) -> None:
         with sync_workspace():

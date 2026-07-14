@@ -90,7 +90,7 @@ Clickable links are semantic edges for humans and retrieval:
 
 ## Global Rules
 
-- Preserve source/user language unless asked to translate.
+- Preserve source/user language unless asked to translate. Chinese sources stay Chinese; English sources stay English.
 - Never invent facts, figures, dates, companies, quotes, or sources.
 - Use concise bullets; every sentence should earn context-window space.
 - Use `[[wiki links]]` for companies, people, sectors, technologies, and topics.
@@ -127,6 +127,9 @@ Use these when interpreting business material:
 - Distill source-grounded sections and `key_takeaways`.
 - Preserve front matter metadata when present.
 - Add useful semantic `[[wiki links]]`.
+- Set `article.slug` to lowercase ASCII only (`a-z`, `0-9`, hyphens). Use a descriptive English slug even for non-English titles.
+- Keep `article.title`, `front_matter.title`, section headings, bullets, and `key_takeaways` in the raw article language. Do not translate titles or body text.
+- For Chinese articles use section heading `核心观点` and Chinese bullets; for English articles use `Core View`.
 
 **Harness does**
 

@@ -14,9 +14,12 @@ from wiki.common import (
     RESOURCE_DIR_RE,
     TRUNCATED_URL_RE,
     WIKI_PATH_RE,
+    article_language,
     markdown_external_link,
     parse_raw_front_matter,
     require_mapping,
+    takeaways_heading,
+    topic_footer_labels,
     yaml_quote,
 )
 
@@ -352,7 +355,8 @@ def render_article_markdown(proposal: dict[str, Any]) -> str:
             parts.append(f"- {str(bullet).strip()}")
         parts.append("")
 
-    parts.append("## Key Takeaways")
+    lang = article_language(article)
+    parts.append(f"## {takeaways_heading(lang)}")
     for takeaway in article["key_takeaways"]:
         parts.append(f"- {str(takeaway).strip()}")
     parts.append("")
@@ -365,5 +369,6 @@ def render_article_markdown(proposal: dict[str, Any]) -> str:
         links = ", ".join(topic_link(slug) for slug in front_matter["topics"])
     tags = footer.get("tags", [])
     tag_line = " ".join(str(tag).strip() for tag in tags if str(tag).strip())
-    parts.extend(["---", f"**Topics**: {links}  ", f"**Tags**: {tag_line}"])
+    topics_label, tags_label = topic_footer_labels(lang)
+    parts.extend(["---", f"**{topics_label}**: {links}  ", f"**{tags_label}**: {tag_line}"])
     return "\n".join(parts).strip() + "\n"

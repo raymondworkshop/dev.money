@@ -19,8 +19,10 @@ AI 对就业的冲击、职业发展、招聘背调、软技能与组织人才�
 - [[2026-05-21-first-job-career-guidelines|首份工作到手，你该如何避免开局就“翻车”]] (2026-05-21) - 你的第一份工作机遇与风险并存。本文给出了一些告诫之语，以免你无意间断送了大好前程。
 - [[2026-05-27-ai-employment-phoenix|AI冲击波席卷菲尼克斯：\"格子间\"产业帝国濒临瓦解]] (2026-05-27) - 菲尼克斯是美国的客服中心之都。如今，AI与外包正加快白领岗位流失，摧毁通往中产阶级的职业道路。
 - [[2026-05-29-ai-era-soft-skills|AI时代的软技能：“科技男”开始上礼仪课了]] (2026-05-19) - 那些凭借编程能力 and 强硬领导力成名的创始人正逐渐意识到，在如今的人工智能时代，社交礼仪与人际沟通等软实力已变得比以往任何时候都更加重要。
+- [[career-life-balance|How to Plan Your Life Successfully]] (2026-06-05) - Watch the full video - https://www.youtube.com/watch?v=nsZ8XqHPjI4 Explore the full collection of premium Jordan B. Peterson content on DailyWire+: http://dwpluspeterson.com/yt
 - [[new-grad-career-advice-2026|给应届毕业生的五点具体职场建议]] (2026-06-09) - 大学里的“娇生惯养”不会延续到现实社会中。
 - [[us-whitecollar-midcareer-stagnation-20260602|四分之一的美国白领遭遇职业中期停滞]] (2026-06-01) - 一项新研究发现，大约四分之一的美国职场人士经历过职业中期停滞，即至少五年没有获得实质性的加薪或晋升，一道无形的障碍正阻碍许多人向上发展。
+- [[xi-jinping-political-control-strategy|Xi Jinping's Use of Stalin and Mao's Strategies to Suppress Dissent]] (2026-07-06) - Xi Jinping is leveraging authoritarian strategies reminiscent of Stalin and Mao to consolidate power, purge dissent, and establish a long-term political legacy.
 
 ## 相关主题
 - [[business/_index|Business]]

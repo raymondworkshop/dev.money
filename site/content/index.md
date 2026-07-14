@@ -12,17 +12,17 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[tech|Tech]]: AI 算力、模型、機器人與教育科技。
 - [[design|Design]]: 產品設計、科學傳播與體驗設計、人機交互。
 - [[business|Business]]: 公司戰略、創業風投、產業政策與商業航天。
-- [[finance|Finance]]: 投資、房地產與財富管理、加密資產。
-- [[career|Career]]: AI 對就業的衝擊、職業發展與人事實踐。
-- [[lifestyle|Lifestyle]]: 健康、育兒、文化趨勢與生活方式。
+- [[finance|Finance]]: 投資與財富管理。
+- [[career|Career]]: 職業發展與人事實踐。
+- [[lifestyle|Lifestyle]]: 健康、教育、文化趨勢與生活方式。
 
 ## Recent Articles
 
-- [[ai-tsunami-john-doerr|專訪風投家約翰·杜爾：AI是史上最大的科技“海嘯”]] (2026-06-14)
-- [[lifestyle/us-soccer-rise-75-years|美國足球的崛起之路]] (2026-06-11)
-- [[lifestyle/men-longevity-glutes|男性長壽的祕訣是緊緻有型的屁股？]] (2026-06-10)
-- [[finance/spacex-ipo-wealth-management|SpaceX IPO財富管理案例]] (2026-06-10)
-- [[career/new-grad-career-advice-2026|給應屆畢業生的五點具體職場建議]] (2026-06-09)
+- [[business/us-biotech-boosts-secrity-to-fight-china-pharma-competition|爲防範中國藥企跟風，美國生物技術公司加強保密]] (2026-07-10)
+- [[tech/best-books-for-software-engineers|The Best Books I ever read: Suggestions for a software engineer.]] (2026-07-12)
+- [[lifestyle/Tech-Workout-Exercise-Keep|啞鈴平板臥推_Keep]] (2026-07-07)
+- [[career/career-life-balance|How to Plan Your Life Successfully]] (2026-06-05)
+- [[business/how-to-earn-a-billion-dollars|How to Earn a Billion Dollars]] (2026-07-07)
 - [[articles|More]]
 
 ## Philosophy & Framework

@@ -37,7 +37,7 @@ LLM_EXTRA = $(if $(DRY_RUN),--dry-run) --provider "$(LLM_PROVIDER)"
 .DEFAULT_GOAL := help
 .PHONY: help test venv sync query audit analyze publish \
 	site site-prepare site-install site-build site-serve site-deploy \
-	rebuild-indexes backfill-sources backfill-titles launchd
+	rebuild-indexes repair-index-labels backfill-sources backfill-titles launchd
 
 help:
 	@echo "dev.business"
@@ -53,6 +53,7 @@ help:
 	@echo ""
 	@echo "Wiki maintenance:"
 	@echo "  make rebuild-indexes   rebuild topic _index.md from article front matter"
+	@echo "  make repair-index-labels  fix INDEX/_index wiki-link display labels"
 	@echo "  make backfill-sources  repair truncated wiki source URLs"
 	@echo "  make backfill-titles   link wiki H1 titles to source URLs"
 	@echo ""
@@ -102,6 +103,9 @@ analyze:
 
 rebuild-indexes:
 	$(RUN)/wiki.py rebuild-indexes --wiki "$(WIKI)"
+
+repair-index-labels:
+	$(RUN)/wiki.py rebuild-indexes --wiki "$(WIKI)" --repair-index-labels
 
 backfill-sources:
 	$(RUN)/wiki.py backfill-sources $(SYNC_FLAGS)

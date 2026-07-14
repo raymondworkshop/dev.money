@@ -5,11 +5,16 @@ from __future__ import annotations
 
 import argparse
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
-from wiki.common import parse_raw_front_matter
-from wiki.sync import WIKI_DIR, configure_paths
+_SCRIPTS_DIR = Path(__file__).resolve().parent.parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
+
+from wiki.common import parse_raw_front_matter, WIKI_LINK_LABEL_RE
+from wiki.sync import WIKI_DIR, configure_paths, repo_root
 from topic_config import CANONICAL_TOPICS, article_topics_for_path, topic_link
 
 
@@ -90,6 +95,67 @@ def replace_section(content: str, heading: str, lines: list[str]) -> str:
     rest = after.split("\n## ", 1)
     tail = f"\n## {rest[1]}" if len(rest) > 1 else ""
     return before.rstrip() + f"\n\n{marker}\n{block}" + tail
+
+
+def article_titles_by_link_target(wiki_dir: Path) -> dict[str, tuple[str, str]]:
+    """Map wiki link targets to (canonical_target, title)."""
+
+    mapping: dict[str, tuple[str, str]] = {}
+    for path in sorted(wiki_dir.rglob("*.md")):
+        if path.name in {"_index.md", "INDEX.md"}:
+            continue
+        rel = path.relative_to(wiki_dir).with_suffix("").as_posix()
+        front_matter, _ = parse_raw_front_matter(path.read_text(encoding="utf-8"))
+        title = str(front_matter.get("title", "")).strip()
+        if not title:
+            continue
+        mapping[rel] = (rel, title)
+        mapping[path.stem] = (rel, title)
+    return mapping
+
+
+def repair_index_line(line: str, titles: dict[str, tuple[str, str]]) -> str:
+    match = WIKI_LINK_LABEL_RE.search(line)
+    if not match:
+        return line
+
+    target = match.group(1).strip()
+    resolved = titles.get(target) or titles.get(Path(target).name)
+    if not resolved:
+        return line
+
+    canonical_target, title = resolved
+    fixed_link = f"[[{canonical_target}|{title}]]"
+    if match.group(0) == fixed_link:
+        return line
+    return line.replace(match.group(0), fixed_link, 1)
+
+
+def repair_recent_articles(root_index: Path, wiki_dir: Path) -> int:
+    if not root_index.exists():
+        return 0
+
+    titles = article_titles_by_link_target(wiki_dir)
+    marker = "## Recent Articles"
+    content = root_index.read_text(encoding="utf-8")
+    if marker not in content:
+        return 0
+
+    before, after = content.split(marker, 1)
+    section, tail = (after.split("\n## ", 1) + [""])[:2]
+    lines = section.splitlines()
+    repaired = 0
+    updated_lines: list[str] = []
+    for line in lines:
+        fixed = repair_index_line(line, titles)
+        if fixed != line:
+            repaired += 1
+        updated_lines.append(fixed)
+
+    new_section = "\n".join(updated_lines)
+    new_tail = f"\n## {tail}" if tail else ""
+    root_index.write_text(before + marker + new_section + new_tail, encoding="utf-8")
+    return repaired
 
 
 def rebuild_indexes(wiki_dir: Path) -> None:
@@ -195,13 +261,23 @@ def main() -> None:
     parser.add_argument("--wiki", default="newswiki/wiki")
     parser.add_argument("--annotate", action="store_true", help="Write topics front matter before rebuild")
     parser.add_argument("--repair", action="store_true", help="Fix corrupted YAML front matter")
+    parser.add_argument(
+        "--repair-index-labels",
+        action="store_true",
+        help="Align index wiki-link display labels with article titles",
+    )
     args = parser.parse_args()
 
     configure_paths(wiki=args.wiki)
     wiki_dir = WIKI_DIR
+    root = repo_root()
     if args.repair:
         count = repair_all_front_matter(wiki_dir)
         print(f"Repaired front matter in {count} article(s)")
+    if args.repair_index_labels:
+        root_index = wiki_dir / "INDEX.md"
+        repaired_recent = repair_recent_articles(root_index, wiki_dir)
+        print(f"Repaired {repaired_recent} recent-entry label(s) in {root_index}")
     if args.annotate:
         annotate_article_topics(wiki_dir)
     rebuild_indexes(wiki_dir)
