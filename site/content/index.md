@@ -12,17 +12,17 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[tech|Tech]]: AI 算力、模型、機器人與教育科技。
 - [[design|Design]]: 產品設計、科學傳播與體驗設計、人機交互。
 - [[business|Business]]: 公司戰略、創業風投、產業政策與商業航天。
-- [[finance|Finance]]: 投資、房地產與財富管理、加密資產。
-- [[career|Career]]: AI 對就業的衝擊、職業發展與人事實踐。
-- [[lifestyle|Lifestyle]]: 健康、育兒、文化趨勢與生活方式。
+- [[finance|Finance]]: 投資、房地產與財富管理。
+- [[career|Career]]: 職業發展與人事實踐。
+- [[lifestyle|Lifestyle]]: 健康、家庭、教育、文化體育趨勢、生活方式。
 
 ## Recent Articles
 
-- [[career/llm-burnout-impact|I Think I Have LLM Burnout]] (2026-07-09)
-- [[tech/ai-infrastructure/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]] (2026-07-08)
-- [[business/founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison|經營硅谷“處方藥坊”的中國籍商人在美被判六年監禁]] (2026-07-08)
-- [[career/how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求職成功率？或許你需要精修領英檔案]] (2026-07-08)
-- [[tech/ai-spending-war-who-will-blink-first|人工智能領域的支出大戰，最終會有人讓步嗎？]] (2026-07-07)
+- [[tech/ai-infrastructure-transaction|美國數據中心開發商計劃出售價值數百億美元的股權]] (2026-07-14)
+- [[lifestyle/costco-american-consensus|美國人唯一能達成共識的事物？開市客]] (2026-07-14)
+- [[finance/investment-global-crises|如何在全球危機不斷的環境下投資]] (2026-07-13)
+- [[tech/ai-drug-discovery-2026|AI能否研發出更佳藥物？華爾街等不了那麼久]] (2026-07-13)
+- [[design/Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]] (2026-07-10)
 - [[articles|More]]
 
 ## Philosophy & Framework

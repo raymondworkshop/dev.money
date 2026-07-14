@@ -76,6 +76,26 @@ SYNC_LOG_PATH = ROOT / "logs" / "sync.log"
 
 ALLOWED_ACTIONS = {"create_article", "skip_duplicate", "needs_review"}
 
+# Scraped marketing/chart SVG + HTML often balloon prompts past MLX context limits.
+_SVG_BLOCK_RE = re.compile(r"<svg\b[^>]*>.*?</svg>", re.IGNORECASE | re.DOTALL)
+_HTML_TAG_RE = re.compile(r"</?[a-zA-Z][^>]*>")
+_MULTI_BLANK_RE = re.compile(r"\n{3,}")
+# Soft cap so a single raw file cannot still OOM the local endpoint after cleanup.
+_PROMPT_BODY_MAX_CHARS = 60_000
+
+
+def strip_raw_body_for_prompt(body: str) -> str:
+    """Remove decorative SVG/HTML from raw body before sending to the LLM."""
+    text = _SVG_BLOCK_RE.sub("", body)
+    text = _HTML_TAG_RE.sub("", text)
+    text = _MULTI_BLANK_RE.sub("\n\n", text).strip()
+    if len(text) > _PROMPT_BODY_MAX_CHARS:
+        text = (
+            text[:_PROMPT_BODY_MAX_CHARS].rstrip()
+            + "\n\n[truncated for LLM context; compile from the retained portion only]"
+        )
+    return text
+
 
 def append_status_row(status_row: str) -> None:
     _append_status_row(STATUS_PATH, status_row)
@@ -180,12 +200,35 @@ def scan_pending_files(
     return pending
 
 
+def _source_language_hint(front_matter: dict[str, Any], body: str) -> str:
+    sample = " ".join(
+        [
+            str(front_matter.get("title", "")),
+            str(front_matter.get("description", "")),
+            body[:2000],
+        ]
+    )
+    cjk = sum(1 for ch in sample if "\u4e00" <= ch <= "\u9fff")
+    if cjk < 20:
+        return (
+            "Source language: English. Write article.title, front_matter fields meant for "
+            "display, section headings (use Core View), bullets, and key_takeaways in English."
+        )
+    return (
+        "Source language: Chinese. Preserve Chinese for article.title, front_matter.title, "
+        "front_matter.description, section headings (use 核心观点), bullets, and key_takeaways. "
+        "Do not translate the article into English. article.slug remains ASCII-only."
+    )
+
+
 def build_compile_prompt(raw_path: Path) -> LLMRequest:
     content = raw_path.read_text(encoding="utf-8")
     front_matter, body = parse_raw_front_matter(content)
     rel = f"{SOURCE_PREFIX}/{raw_path.name}"
     hint = topic_hint_from_front_matter(front_matter)
     hint_block = f"\n{hint}\n" if hint else ""
+    cleaned_body = strip_raw_body_for_prompt(body)
+    language_hint = _source_language_hint(front_matter, cleaned_body)
     prompt = f"""Compile this raw source into one JSON proposal following the contract in AGENTS.md.
 
 Source file: {rel}
@@ -197,6 +240,8 @@ Do not invent new topic slugs. If none fit well, return action "needs_review" wi
 
 article.slug must be lowercase ASCII only (a-z, 0-9, hyphens). For Chinese titles, derive an English slug from the source URL path or article topic — never use CJK characters in slugs.
 
+{language_hint}
+
 Wiki topic folders on disk:
 {list_topic_context(WIKI_DIR) or "- none"}
 {hint_block}
@@ -205,7 +250,7 @@ Raw front matter:
 
 Raw body:
 ---
-{body.strip()}
+{cleaned_body}
 ---
 """
     return LLMRequest(system=load_agents_contract(), prompt=prompt)

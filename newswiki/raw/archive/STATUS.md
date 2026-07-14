@@ -1,6 +1,6 @@
 # Archive Status
 
-**Last Updated:** 2026-07-13 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-02 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-24 2026-06-24 2026-06-24 2026-06-24 2026-06-23 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-14 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
+**Last Updated:** 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-02 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-24 2026-06-24 2026-06-24 2026-06-24 2026-06-23 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-14 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -83,6 +83,21 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-07-14-美国数据中心开发商计划出售价值数百亿美元的股权.md | AI算力基础设施投资与数据中心股权出售 | `newswiki/wiki/tech/ai-infrastructure-transaction.md` | Archived |
+| 2026-07-14-美国人唯一能达成共识的事物？开市客.md | lifestyle | `newswiki/wiki/lifestyle/costco-american-consensus.md` | Archived |
+| 2026-07-14-如何在全球危机不断的环境下投资.md | Investment in a World of Increasing Global Crises | `newswiki/wiki/finance/investment-global-crises.md` | Archived |
+| 2026-07-13-AI能否研发出更佳药物？华尔街等不了那么久.md | tech | `newswiki/wiki/tech/ai-drug-discovery-2026.md` | Archived |
+| 2026-07-10-Ello Listens, Adapts & Responds in Real Time.md | Product Design | `newswiki/wiki/design/Product-Design-Ello-Real-Time-Response.md` | Archived |
+| 2026-07-14-Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI.md | AI and Multimodal Systems | `newswiki/wiki/tech/ai-multimodal-ai/ai-food-metadata.md` | Archived |
+| 2026-07-13-苹果祭出“热核”反击，迎战OpenAI威胁.md | AI 算力、模型、机器人与教育科技 | `newswiki/wiki/tech/apple-thermonuclear-response-to-openai.md` | Archived |
+| 2026-07-13-炎热、拥挤且物价高昂，欧洲之旅如何玩得尽兴？.md | lifestyle | `newswiki/wiki/lifestyle/europe-travel-tips-2026.md` | Archived |
+| 2026-07-13-Science of Reading & Evidence-Based Math.md | Education Technology | `newswiki/wiki/tech/education-tech/science-of-reading-and-evidence-based-math.md` | Archived |
+| 2026-07-11-Coding Agent Harness.md | Coding Agent Harness | `newswiki/wiki/tech/coding-agent-harness.md` | Archived |
+| 2026-07-10-动量交易如何防“崩盘”：盘点10只可买入与10只应避开的股票.md | Investment Strategy and Risk Management | `newswiki/wiki/finance/momentum-trading-risk-prevention.md` | Archived |
+| 2026-07-10-伊朗战争中出现了一位大赢家：非洲首富.md | Business | `newswiki/wiki/business/iran-war-winner-african-billionaire.md` | Archived |
+| 2026-07-10-Netflix探索电视直播及捆绑服务，正值用户参与度显现下滑迹象.md | Netflix Business Strategy and Subscriber Engagement Trends | `newswiki/wiki/business/Netflix-Strategy-Engagement-2026.md` | Archived |
+| 2026-07-10-How to Start a Ruby Meetup.md | Tech: AI 算力、模型、机器人与教育科技 | `newswiki/wiki/tech/how-to-start-a-ruby-meetup.md` | Archived |
+| 2026-07-09-时薪33美元的开市客收银员，如何攒出百万身家？.md | Career: Employee Retention and Workplace Culture | `newswiki/wiki/career/employee-retention-case-study.md` | Archived |
 | 2026-07-10-A road to Lisp Why Lisp.md | AI 算力、模型、机器人与教育科技 | `newswiki/wiki/tech/a-road-to-lisp-why-lisp.md` | Archived |
 | 2026-07-09-I Think I Have LLM Burnout.md | Career: AI and Workforce Impact | `newswiki/wiki/career/llm-burnout-impact.md` | Archived |
 | 2026-07-08-诺基亚的新篇章：成为AI数据中心的供应商.md | AI Infrastructure and Data Center Solutions | `newswiki/wiki/tech/ai-infrastructure/nokia-ai-datacenter-infrastructure.md` | Archived |

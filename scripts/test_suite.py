@@ -29,6 +29,7 @@ from wiki.sync import (
     apply_proposal,
     append_status_row,
     archive_source,
+    build_compile_prompt,
     build_status_row,
     configure_paths,
     normalize_proposal_paths,
@@ -40,6 +41,7 @@ from wiki.sync import (
     render_article_markdown,
     run_sync,
     scan_pending_files,
+    strip_raw_body_for_prompt,
     summarize_sync_results,
     sync_file,
     update_indexes,
@@ -297,6 +299,49 @@ class SyncWikiTests(unittest.TestCase):
         raw_file = sync_module.RAW_DIR / name
         raw_file.write_text(content or self.sample_raw, encoding="utf-8")
         return raw_file
+
+    def test_build_compile_prompt_requires_chinese_output_for_chinese_source(self) -> None:
+        with sync_workspace():
+            raw = (
+                "---\ntitle: \"示例中文标题\"\nsource: https://example.com/zh\n"
+                "created: 2026-07-13\ndescription: \"这是中文摘要说明文字。\"\n---\n"
+                "正文讨论人工智能如何影响药物研发与投资回报。\n"
+            )
+            path = self._raw_file("2026-07-13-chinese.md", content=raw)
+            request = build_compile_prompt(path)
+            self.assertIn("Source language: Chinese", request.prompt)
+            self.assertIn("Do not translate the article into English", request.prompt)
+            self.assertIn("核心观点", request.prompt)
+
+    def test_strip_raw_body_for_prompt_removes_svg_and_html(self) -> None:
+        noisy = (
+            "Lead paragraph.\n"
+            '<svg aria-hidden="true" viewBox="0 0 10 10"><path d="M0 0h10v10z"/></svg>\n'
+            "<div>Keep this text</div>\n"
+            "Tail paragraph."
+        )
+        cleaned = strip_raw_body_for_prompt(noisy)
+        self.assertNotIn("<svg", cleaned)
+        self.assertNotIn("<div>", cleaned)
+        self.assertIn("Lead paragraph.", cleaned)
+        self.assertIn("Keep this text", cleaned)
+        self.assertIn("Tail paragraph.", cleaned)
+
+    def test_build_compile_prompt_strips_svg_from_body(self) -> None:
+        with sync_workspace():
+            body = (
+                "Visible prose about Ello.\n"
+                '<svg viewBox="0 0 100 100">' + ("M1 1 " * 500) + "</svg>\n"
+            )
+            raw = (
+                "---\ntitle: Ello\nsource: https://example.com\n"
+                "created: 2026-07-10\n---\n" + body
+            )
+            path = self._raw_file("2026-07-10-ello.md", content=raw)
+            request = build_compile_prompt(path)
+            self.assertIn("Visible prose about Ello.", request.prompt)
+            self.assertNotIn("<svg", request.prompt)
+            self.assertNotIn("M1 1 M1 1", request.prompt)
 
     def test_parse_fixture_raw_front_matter(self) -> None:
         front_matter, body = parse_raw_front_matter(self.sample_raw)

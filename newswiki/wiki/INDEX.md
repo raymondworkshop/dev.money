@@ -9,12 +9,42 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[design/_index|Design]]: 产品设计、科學傳播與體驗設計、人機交互。
 
 - [[business/_index|Business]]: 公司战略、创业风投、产业政策与商业航天。
-- [[finance/_index|Finance]]: 投资、房地产与财富管理、加密资产。
+- [[finance/_index|Finance]]: 投资、房地产与财富管理。
 
-- [[career/_index|Career]]: AI 对就业的冲击、职业发展与人事实践。
-- [[lifestyle/_index|Lifestyle]]: 健康、育儿、文化趋势与生活方式。
+- [[career/_index|Career]]: 职业发展与人事实践。
+- [[lifestyle/_index|Lifestyle]]: 健康、家庭、教育、文化体育趋势、生活方式。
 
 ## Recent Articles
+
+- [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]] (2026-07-14)
+
+- [[lifestyle/costco-american-consensus|美国人唯一能达成共识的事物？开市客]] (2026-07-14)
+
+- [[finance/investment-global-crises|如何在全球危机不断的环境下投资]] (2026-07-13)
+
+- [[tech/ai-drug-discovery-2026|AI能否研发出更佳药物？华尔街等不了那么久]] (2026-07-13)
+
+- [[design/Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]] (2026-07-10)
+
+- [[tech/ai-multimodal-ai/ai-food-metadata|Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI]] (2026-07-03)
+
+- [[tech/apple-thermonuclear-response-to-openai|Apple's 'Thermocore' Response to OpenAI Threat]] (2026-07-13)
+
+- [[lifestyle/europe-travel-tips-2026|炎热、拥挤且物价高昂，欧洲之旅如何玩得尽兴？]] (2026-07-13)
+
+- [[tech/education-tech/science-of-reading-and-evidence-based-math|Science of Reading & Evidence-Based Math]] (2026-07-13)
+
+- [[tech/coding-agent-harness|Coding Agent Harness]] (2026-06-30)
+
+- [[finance/momentum-trading-risk-prevention|How Momentum Traders Can Prevent 'Crashes']](2026-07-10)
+
+- [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]] (2026-07-10)
+
+- [[business/netflix-strategy-engagement-2026|Netflix Exploring Live TV and Bundled Services as User Engagement Declines]] (2026-07-10)
+
+- [[tech/how-to-start-a-ruby-meetup|How to Start a Ruby Meetup]] (2026-07-10)
+
+- [[career/employee-retention-and-workplace-culture|How a $33/Hour Costco Cashier Built a Million-Dollar Retirement]] (2026-07-09)
 
 - [[tech/a-road-to-lisp-why-lisp|A road to Lisp: Why Lisp]] (2026-07-09)
 

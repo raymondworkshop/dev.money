@@ -34,5 +34,5 @@ topics:
 - 教师的角色正从知识传授者转变为引导者，确保学生在课堂上进行高强度的思维探索。
 
 ---
-**Topics**: [[tech/AI_in_education/_index|AI教育应用]], [[lifestyle/Lifestyle_Trends/_index|文化趋势]]  
+**Topics**: [[tech/AI_in_education/_index|AI教育应用]], [[lifestyle/_index|Lifestyle]]  
 **Tags**: #AI #EdTech #CognitiveScience
