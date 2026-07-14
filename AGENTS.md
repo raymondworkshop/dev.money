@@ -127,7 +127,7 @@ Use these when interpreting business material:
 - Distill source-grounded sections and `key_takeaways`.
 - Preserve front matter metadata when present.
 - Add useful semantic `[[wiki links]]`.
-- Set `article.slug` to lowercase ASCII only (`a-z`, `0-9`, hyphens). Use a descriptive English slug even for non-English titles.
+- Set `article.slug` to lowercase ASCII only (`a-z`, `0-9`, hyphens). For Chinese titles, derive an English slug from the source URL path or article topic — never use CJK characters in slugs.
 - Keep `article.title`, `front_matter.title`, section headings, bullets, and `key_takeaways` in the raw article language. Do not translate titles or body text.
 - For Chinese articles use section heading `核心观点` and Chinese bullets; for English articles use `Core View`.
 

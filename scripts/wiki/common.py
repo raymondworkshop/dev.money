@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 # --- constants ---
 
@@ -115,6 +116,28 @@ def normalize_wiki_link_label(text: str, title: str) -> str:
         return f"[[{target}|{title}]]"
 
     return WIKI_LINK_LABEL_RE.sub(repl, text, count=1)
+
+
+_FILENAME_PUNCTUATION_MAP = str.maketrans(
+    {
+        "\uff1f": "?",  # fullwidth question mark
+        "\uff01": "!",  # fullwidth exclamation
+        "\uff0c": ",",  # fullwidth comma
+        "\uff1a": ":",  # fullwidth colon
+        "\uff1b": ";",  # fullwidth semicolon
+        "\uff08": "(",  # fullwidth left paren
+        "\uff09": ")",  # fullwidth right paren
+        "\u201c": '"',
+        "\u201d": '"',
+        "\u2018": "'",
+        "\u2019": "'",
+    }
+)
+
+
+def normalize_path_punctuation(path: str) -> str:
+    """Collapse common CJK/ASCII punctuation lookalikes for path comparison."""
+    return path.translate(_FILENAME_PUNCTUATION_MAP)
 
 
 # --- markdown ---
@@ -227,6 +250,23 @@ def slug_fallback_from_raw(raw_path: Path) -> str:
         return f"{date_part}-{slug}"[:60]
     digest = hashlib.md5(raw_path.stem.encode()).hexdigest()[:8]
     return f"{date_part}-article-{digest}"
+
+
+def slug_from_url_path(url: str) -> str:
+    segment = urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
+    return sanitize_slug(segment, fallback="")
+
+
+def derive_article_slug_fallback(article: dict[str, Any], raw_stem: str) -> str:
+    front_matter = article.get("front_matter")
+    if isinstance(front_matter, dict):
+        source = str(front_matter.get("source", "")).strip()
+        if source:
+            url_slug = slug_from_url_path(source)
+            if url_slug and len(url_slug) >= 4:
+                return url_slug
+
+    return slug_fallback_from_raw(Path(f"{raw_stem}.md"))
 
 
 def resolve_output_slug(question: str, filename_slug: str, *, fallback: str) -> str:

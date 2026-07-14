@@ -13,18 +13,37 @@
 - [[2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]] (2026-02-23) - 对热门AI初创公司的投资争夺战已导致投资者之间的交易条款出现差异，从而引发了外界对这些公司真实价值的质疑。
 - [[2026-03-11-aaru-ai-simulates-human-behavior|靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后]] (2026-03-11) - Aaru背后的团队正吸引包括麦当劳和安永在内的品牌客户，该公司押注AI机器人能够比人类更准确地预测人类行为。
 - [[2026-05-28-drone-investment|特朗普政府正就注资国内无人机公司进行谈判]] (2026-05-28) - 美国政府计划投资国内无人机制造企业，以加强国内防卫产业链与技术自主性。
+- [[45-million-donation-larry-ellison-trump-inner-circle|一笔4,500万美元的捐款如何让拉里·埃里森深入特朗普核心圈？]] (2026-06-24) - 这位亿万富豪与特朗普的私人友谊，为甲骨文公司的业务及其子的媒体集团带来了助力。
 - [[67-age-entrepreneurship|我67岁开始创业，这比退休好太多了]] (2026-06-02) - 探讨了高龄创业的驱动力、优势以及从中获得的经验。
+- [[Netflix-Strategy-Engagement-2026|Netflix Exploring Live TV and Bundled Services as User Engagement Declines]] (2026-07-10) - Netflix is discussing adding live TV channels and potential bundled streaming services, indicating a shift from its early focus on simplicity and on-demand content.
+- [[ai-giants-office-ai-application|一览AI巨头如何在自家办公室应用AI]] (2026-06-25) - A look into how internal AI agents at OpenAI, Google, and Anthropic are handling complex tasks, offering a glimpse into the future of white-collar work.
 - [[ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-05-25) - 凯鹏华盈董事长约翰·杜尔曾精准押注谷歌，在他看来，AI革命非但没有过度炒作，反而被低估了。
 - [[berkshire-japan-us-housing-opportunity|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]] (2026-06-04) - 伯克希尔哈撒韦公司在美国住宅建筑商身上看到了什么公开市场投资者没有注意到的东西？或许与关注该行业的日本企业所见略同。
 - [[blue-origin-trump-contract-surge|How Bezos Learned to Win Over Trump and Secured a Surge of Contracts for Blue Origin]] (2026-07-03) - Bezos transitioned from being a political adversary of Trump to a key ally, with Blue Origin securing a dramatic increase in federal contracts during Trump's second term.
 - [[china-all-encompassing-policy|中国“全方位产业政策”令世界其他地区望尘莫及]] (2026-05-15) - 从传统行业到新兴领域，从商品到服务，从微观干预到宏观调控，中国政府的支持无处不在。
 - [[doerr-ai-tsunami|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-05-25) - 凯鹏华盈董事长约翰·杜尔曾精准押注谷歌，在他看来，AI革命非但没有过度炒作，反而被低估了。
+- [[elite-students-ai-startups-silicon-valley|Elite Students Abandon Wall Street to Chase AI Startup Dreams]] (2026-07-06) - As AI disrupts traditional career paths, elite students are skipping corporate internships and instead joining startup incubators in Silicon Valley.
+- [[founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison|经营硅谷“处方药坊”的中国籍商人在美被判六年监禁]] (2026-07-08) - 周二，初创公司Done Global创始人何如佳被判处六年监禁。检方指控她一手打造的这家初创公司是一个滥开阿德拉的“处方药坊”。
+- [[hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]] (2026-06-18) - 中东最关键的能源通道关闭了数月之久，但全球经济为何并未遭到更严重的冲击？
+- [[iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]] (2026-07-10) - Nigerian entrepreneur Aliko Dangote's refinery has seen a surge in output amid the Iran conflict, boosting his wealth and positioning him as a key beneficiary of regional energy disruptions.
+- [[jpmorgan-chase-outrageous-succession-puzzle|摩根大通任命联席总裁，戴蒙接班人角逐大洗牌]] (2026-06-26) - 摩根大通宣布提拔道格·佩特诺和特洛伊·罗尔博为公司联席总裁，标志着该行旷日持久的下任首席执行官角逐进入了新阶段。
+- [[musk-confidant-gracias-set-for-spacex-windfall|马斯克密友格拉西亚斯有望因SpaceX斩获680亿美元收益]] (2026-06-12) - 当SpaceX于周五上市时，格拉西亚斯及其公司Valor Equity Partners将持有其6.7%的A类股票，折合股份价值达680亿美元。这将使格拉西亚斯成为仅次于马斯克的SpaceX第二大股东。
+- [[silver-prices-fall-to-60-dollars-why-130-expected|Silver Prices Fall to 60 Dollars, Why 130 Expected Next Year?]] (2026-07-07) - Silver prices have dropped by nearly 50% from their January peak to 60 USD, yet industrial demand remains strong, suggesting potential for a rise to 130 USD by next year.
+- [[spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]] (2026-06-15) - SpaceX或许永远无法兑现对投资者的所有承诺，但它已经实现了最初的目标：重燃人类对太空探索的兴趣。
+- [[starlink-ground-market-challenge|星链已称霸卫星互联网，它能否在地面市场颠覆AT&T和Verizon？]] (2026-07-03) - 作为一家卫星服务提供商，星链在支持手机连接方面仍面临局限。目前，手机端的卫星连接速度较慢，性能也相对有限。
+- [[western-automakers-losing-grip-on-chinese-market|Western Automakers Are Losing Their Grip on the Chinese Auto Market]] (2026-07-01) - With faster, more technology-focused approaches, Chinese EVs have nearly driven foreign brands out of the market.
+- [[white-house-intervention-against-fifa-red-card|White House Intervenes Behind the Scenes to Overturn FIFA Red Card Decision]] (2026-07-06) - The U.S. government, led by President Trump, pressured FIFA to overturn a red card issued to American forward Folarin Balogun during the World Cup, citing unfairness and invoking administrative review under FIFA's Article 27.
+- [[ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]] (2026-07-07) - 如果Meta真的开始出租闲置算力，这恐怕将成为一个危险信号，预示着大型科技巨头已经陷入了基础设施建设过剩的泥潭。
+- [[residential-proxy-attack-2026|美国家庭网络如何沦为黑客隐身衣？]] (2026-06-18) - 具有国家背景的网络攻击者正日益频繁地利用住宅代理网络来隐藏其网络流量，将日常电子设备变成了巨大的全球性威胁。
+- [[2025-global-ultra-high-net-worth-surge|2025年全球超级富豪人数激增]] (2026-06-24) - 去年，全球这一群体的人数激增14.4%，创下2017年以来的最快增速。Altrata将超高净值人群定义为净资产超过3,000万美元的个人。
 - [[how-to-earn-a-billion-dollars|How to Earn a Billion Dollars]] (2026-07-07) - A talk by Paul Graham on how exponential growth through user-driven innovation can lead to billionaire success without exploitation.
 - [[industrial-defense-legacy|美国工业与国防的联系可追溯至建国之初]] (2026-06-30) - 以乔治·华盛顿创建斯普林菲尔德兵工厂为起点，美国以前所未有的方式将战争与商业融合在了一起。
 - [[korean-oil-tanker-magnate-irans-war-profit|Korean Oil Tanker Magnate Makes a Fortune from Iran War]] (2026-07-03) - Ga-Hyun Chung斥资约70亿美元大举买入油轮，组建起全球最大的油轮船队，当时正值市场陷入混乱前夕。
 - [[2026-05-27-spacex-investment|这位明星选股人在SpaceX实现火箭着陆之前就大举押注]] (2026-05-27) - 知名选股人Gavin Baker在SpaceX火箭着陆成功之前就做出大额投资，展现了对航天产业长期潜力的信心。
+- [[berkshire-and-japanese-builders-see-opportunity-in-us-housing|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]] (2026-06-04) - 伯克希尔哈撒韦公司在美国住宅建筑商身上看到了什么公开市场投资者没有注意到的东西？或许与关注该行业的日本企业所见略同。
 - [[leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]] (2026-06-09) - 凭借对AI未来的预测，莱奥波德·阿申布伦纳在互联网上吸引了大批狂热追随者，其投资公司常规的监管公告被人们像研究圣经一样仔细研读。
 - [[spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]] (2026-06-10) - 面对足以改变命运的巨额财富，SpaceX员工们需要盘算是否该卖出股票、何时套现，并权衡其他理财策略。
+- [[AI时代的职业边界：哪些事情AI不该做？|哪些事AI做不到，也不该做？]] (2026-06-22) - 随着企业加速拥抱AI，一些领域的过度应用可能弊大于利。
 
 ## 相关主题
 - [[tech/_index|Tech]]

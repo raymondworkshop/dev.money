@@ -7,6 +7,7 @@ import os
 import re
 import sys
 import time
+from http.client import RemoteDisconnected
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
@@ -14,7 +15,7 @@ from pathlib import Path
 from typing import Any, Protocol
 
 DEFAULT_MLX_URL = "http://127.0.0.1:8080/v1/chat/completions"
-DEFAULT_MLX_MODEL = "mlx-community/gemma-4-e4b-it-4bit"
+DEFAULT_MLX_MODEL = "mlx-community/Qwen3-4B-Instruct-2507-4bit"
 DEFAULT_OPENAI_URL = "https://api.openai.com/v1/chat/completions"
 DEFAULT_OPENAI_MODEL = "gpt-4o-mini"
 DEFAULT_GEMINI_MODEL = "gemini-2.5-flash-lite"
@@ -281,7 +282,23 @@ class OpenAICompatibleProvider:
                 with urllib.request.urlopen(http_request, timeout=self.timeout) as response:
                     data = json.loads(response.read().decode("utf-8"))
                 return str(data["choices"][0]["message"]["content"])
-            except (urllib.error.URLError, TimeoutError) as exc:
+            except urllib.error.HTTPError as exc:
+                body = exc.read().decode("utf-8", errors="replace").strip()
+                detail = body
+                try:
+                    payload = json.loads(body)
+                    detail = payload.get("error", body)
+                    if isinstance(detail, dict):
+                        detail = detail.get("message", json.dumps(detail, ensure_ascii=False))
+                except json.JSONDecodeError:
+                    pass
+                last_error = RuntimeError(
+                    f"HTTP {exc.code} for model {self.model!r}: {detail}"
+                )
+                if attempt >= self.retry_attempts:
+                    break
+                time.sleep(self.retry_backoff)
+            except (urllib.error.URLError, TimeoutError, RemoteDisconnected, ConnectionError, OSError) as exc:
                 last_error = exc
                 if attempt >= self.retry_attempts:
                     break
@@ -356,7 +373,14 @@ class GeminiProvider:
                 if candidate.get("finishReason") == "SAFETY":
                     raise RuntimeError("Gemini response blocked by safety filters.")
                 return str(candidate["content"]["parts"][0]["text"])
-            except (urllib.error.URLError, TimeoutError, RuntimeError) as exc:
+            except (
+                urllib.error.URLError,
+                TimeoutError,
+                RuntimeError,
+                RemoteDisconnected,
+                ConnectionError,
+                OSError,
+            ) as exc:
                 last_error = exc
                 if attempt >= self.retry_attempts:
                     break

@@ -19,10 +19,13 @@ from topic_config import (
     topic_hint_from_front_matter,
 )
 from wiki.common import (
+    SLUG_RE,
     add_dry_run_arg,
     add_llm_provider_arg,
+    derive_article_slug_fallback,
     load_agents_contract,
     markdown_external_link,
+    normalize_path_punctuation,
     parse_raw_front_matter,
     relative_prefix,
     reject_fixture_provider,
@@ -31,7 +34,6 @@ from wiki.common import (
     resolve_path,
     sanitize_slug,
     slug_fallback_from_raw,
-    SLUG_RE,
     normalize_wiki_link_label,
     validate_slug,
     validate_synthesis_labels,
@@ -75,6 +77,26 @@ WIKI_PREFIX = DEFAULT_WIKI
 SYNC_LOG_PATH = ROOT / "logs" / "sync.log"
 
 ALLOWED_ACTIONS = {"create_article", "skip_duplicate", "needs_review"}
+
+# Scraped marketing/chart SVG + HTML often balloon prompts past MLX context limits.
+_SVG_BLOCK_RE = re.compile(r"<svg\b[^>]*>.*?</svg>", re.IGNORECASE | re.DOTALL)
+_HTML_TAG_RE = re.compile(r"</?[a-zA-Z][^>]*>")
+_MULTI_BLANK_RE = re.compile(r"\n{3,}")
+# Soft cap so a single raw file cannot still OOM the local endpoint after cleanup.
+_PROMPT_BODY_MAX_CHARS = 60_000
+
+
+def strip_raw_body_for_prompt(body: str) -> str:
+    """Remove decorative SVG/HTML from raw body before sending to the LLM."""
+    text = _SVG_BLOCK_RE.sub("", body)
+    text = _HTML_TAG_RE.sub("", text)
+    text = _MULTI_BLANK_RE.sub("\n\n", text).strip()
+    if len(text) > _PROMPT_BODY_MAX_CHARS:
+        text = (
+            text[:_PROMPT_BODY_MAX_CHARS].rstrip()
+            + "\n\n[truncated for LLM context; compile from the retained portion only]"
+        )
+    return text
 
 
 def append_status_row(status_row: str) -> None:
@@ -180,12 +202,35 @@ def scan_pending_files(
     return pending
 
 
+def _source_language_hint(front_matter: dict[str, Any], body: str) -> str:
+    sample = " ".join(
+        [
+            str(front_matter.get("title", "")),
+            str(front_matter.get("description", "")),
+            body[:2000],
+        ]
+    )
+    cjk = sum(1 for ch in sample if "\u4e00" <= ch <= "\u9fff")
+    if cjk < 20:
+        return (
+            "Source language: English. Write article.title, front_matter fields meant for "
+            "display, section headings (use Core View), bullets, and key_takeaways in English."
+        )
+    return (
+        "Source language: Chinese. Preserve Chinese for article.title, front_matter.title, "
+        "front_matter.description, section headings (use 核心观点), bullets, and key_takeaways. "
+        "Do not translate the article into English. article.slug remains ASCII-only."
+    )
+
+
 def build_compile_prompt(raw_path: Path) -> LLMRequest:
     content = raw_path.read_text(encoding="utf-8")
     front_matter, body = parse_raw_front_matter(content)
     rel = f"{SOURCE_PREFIX}/{raw_path.name}"
     hint = topic_hint_from_front_matter(front_matter)
     hint_block = f"\n{hint}\n" if hint else ""
+    cleaned_body = strip_raw_body_for_prompt(body)
+    language_hint = _source_language_hint(front_matter, cleaned_body)
     prompt = f"""Compile this raw source into one JSON proposal following the contract in AGENTS.md.
 
 Source file: {rel}
@@ -195,8 +240,11 @@ Canonical topics (pick exactly one as primary; add canonical secondaries only wh
 
 Do not invent new topic slugs. If none fit well, return action "needs_review" with rationale.
 
-article.slug must be lowercase ASCII only (a-z, 0-9, hyphens). Use a descriptive English slug even when the title is Chinese or mixed script.
+article.slug must be lowercase ASCII only (a-z, 0-9, hyphens). For Chinese titles, derive an English slug from the source URL path or article topic — never use CJK characters in slugs.
 Preserve the source article language throughout: article.title, front_matter, section headings, bullets, and key_takeaways must match the raw language. Do not translate or rename titles.
+
+{language_hint}
+
 
 Wiki topic folders on disk:
 {list_topic_context(WIKI_DIR) or "- none"}
@@ -206,7 +254,7 @@ Raw front matter:
 
 Raw body:
 ---
-{body.strip()}
+{cleaned_body}
 ---
 """
     return LLMRequest(system=load_agents_contract(), prompt=prompt)
@@ -336,45 +384,6 @@ def normalize_proposal_language(proposal: dict[str, Any], raw_path: Path) -> lis
     return notes
 
 
-def normalize_proposal_slugs(proposal: dict[str, Any], raw_path: Path) -> list[str]:
-    if proposal.get("action") != "create_article":
-        return []
-
-    article = require_mapping(proposal, "article")
-    topic = require_mapping(proposal, "topic")
-    raw_slug = str(article.get("slug", "")).strip()
-    if raw_slug and SLUG_RE.fullmatch(raw_slug):
-        return []
-
-    fallback = slug_fallback_from_raw(raw_path)
-    new_slug = sanitize_slug(raw_slug, fallback=fallback)
-    if not new_slug:
-        new_slug = fallback
-
-    notes = [f"Normalized invalid article slug '{raw_slug}' -> '{new_slug}'."]
-    old_slug = raw_slug
-    article["slug"] = new_slug
-
-    topic_slug = str(topic.get("slug", "")).strip()
-    article_path = str(article.get("path", "")).strip()
-    if article_path and old_slug in article_path:
-        article["path"] = article_path.replace(old_slug, new_slug)
-    elif topic_slug:
-        article["path"] = f"{WIKI_PREFIX}/{topic_slug}/{new_slug}.md"
-
-    index_updates = proposal.get("index_updates")
-    if isinstance(index_updates, dict):
-        for key in ("topic_index_entry", "root_recent_entry"):
-            entry = str(index_updates.get(key, ""))
-            if old_slug and old_slug in entry:
-                index_updates[key] = entry.replace(old_slug, new_slug)
-
-    review_notes = proposal.setdefault("review_notes", [])
-    if isinstance(review_notes, list):
-        review_notes.extend(notes)
-    return notes
-
-
 def normalize_wiki_path(path: str, *, topic_slug: str = "") -> str:
     normalized = path.strip().replace("\\", "/").lstrip("/")
     wiki_prefix = WIKI_PREFIX.replace("\\", "/")
@@ -388,6 +397,52 @@ def normalize_wiki_path(path: str, *, topic_slug: str = "") -> str:
     if "/" not in normalized and topic_slug:
         return f"{full_prefix}{topic_slug}/{normalized}"
     return f"{full_prefix}{normalized}"
+
+
+def normalize_proposal_slugs(proposal: dict[str, Any], raw_path: Path) -> list[str]:
+    if proposal.get("action") != "create_article":
+        return []
+
+    article = require_mapping(proposal, "article")
+    topic = require_mapping(proposal, "topic")
+    slug = str(article.get("slug", "")).strip()
+    if slug and SLUG_RE.fullmatch(slug):
+        return []
+
+    old_slug = slug
+    fallback = derive_article_slug_fallback(article, raw_path.stem)
+    if slug and all(ord(char) < 128 for char in slug):
+        new_slug = sanitize_slug(slug, fallback=fallback)
+    else:
+        new_slug = fallback
+    if not new_slug or not SLUG_RE.fullmatch(new_slug):
+        new_slug = fallback or slug_fallback_from_raw(raw_path)
+    article["slug"] = new_slug
+
+    notes = [f"Normalized invalid article slug '{old_slug}' -> '{new_slug}'."]
+    topic_slug = str(topic.get("slug", "")).strip()
+    article_path = str(article.get("path", "")).strip()
+    if article_path and old_slug and old_slug in article_path:
+        article["path"] = article_path.replace(old_slug, new_slug)
+    elif topic_slug:
+        article["path"] = f"{WIKI_PREFIX}/{topic_slug}/{new_slug}.md"
+
+    index_updates = proposal.get("index_updates")
+    if isinstance(index_updates, dict) and old_slug and old_slug != new_slug:
+        for key in ("topic_index_entry", "root_recent_entry"):
+            entry = str(index_updates.get(key, ""))
+            if old_slug not in entry:
+                continue
+            index_updates[key] = (
+                entry.replace(f"[[{old_slug}|", f"[[{new_slug}|")
+                .replace(f"/{old_slug}|", f"/{new_slug}|")
+                .replace(old_slug, new_slug)
+            )
+
+    review_notes = proposal.setdefault("review_notes", [])
+    if isinstance(review_notes, list):
+        review_notes.extend(notes)
+    return notes
 
 
 def normalize_proposal_paths(proposal: dict[str, Any]) -> None:
@@ -410,6 +465,15 @@ def normalize_proposal_paths(proposal: dict[str, Any]) -> None:
         article["path"] = normalize_wiki_path(article_path, topic_slug=topic_slug)
     elif topic_slug and article_slug:
         article["path"] = normalize_wiki_path(f"{topic_slug}/{article_slug}.md", topic_slug=topic_slug)
+
+
+def normalize_proposal_source_file(proposal: dict[str, Any], raw_path: Path) -> None:
+    expected = f"{SOURCE_PREFIX}/{raw_path.name}"
+    source_file = str(proposal.get("source_file", "")).strip()
+    if source_file != expected and normalize_path_punctuation(source_file) == normalize_path_punctuation(
+        expected
+    ):
+        proposal["source_file"] = expected
 
 
 def normalize_proposal_source(proposal: dict[str, Any], raw_path: Path) -> None:
@@ -440,6 +504,7 @@ def apply_proposal(
     normalize_proposal_language(proposal, raw_path)
     normalize_proposal_slugs(proposal, raw_path)
     normalize_proposal_paths(proposal)
+    normalize_proposal_source_file(proposal, raw_path)
     validate_proposal(proposal, raw_path)
     action = str(proposal["action"])
     result = CompileResult(
