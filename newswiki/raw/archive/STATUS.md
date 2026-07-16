@@ -1,6 +1,10 @@
 # Archive Status
 
+<<<<<<< HEAD
 **Last Updated:** 2026-07-16 2026-07-16 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-02 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-24 2026-06-24 2026-06-24 2026-06-24 2026-06-23 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-14 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
+=======
+**Last Updated:** 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
+>>>>>>> b020561d1835ba9679a98313380684ae22d4fea3
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -10,6 +14,26 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File                                                                     | Topic                                               | Wiki Location                                                                                 | Status     |
 | ------------------------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------------------------------------------------- | ---------- |
+| 2026-07-12-为防范中国药企跟风，美国生物技术公司加强保密.md | Business | `newswiki/wiki/business/us-biotech-boosts-secrity-to-fight-china-pharma-competition.md` | Archived |
+| 2026-07-12-The Best Books I ever read Suggestions for a software engineer.md | Tech | `newswiki/wiki/tech/best-books-for-software-engineers.md` | Archived |
+| 2026-07-07-哑铃平板卧推_Keep.md | Lifestyle Trends | `newswiki/wiki/lifestyle/Tech-Workout-Exercise-Keep.md` | Archived |
+| 2026-07-07-How to Plan Your Life Successfully.md | Career and Life Balance | `newswiki/wiki/career/career-life-balance.md` | Archived |
+| 2026-07-07-How to Earn a Billion Dollars.md | How to Earn a Billion Dollars | `newswiki/wiki/business/how-to-earn-a-billion-dollars.md` | Archived |
+| 2026-07-07-Best Simple System for Now.md | Best Simple System for Now | `newswiki/wiki/tech/best-simple-system-for-now.md` | Archived |
+| 2026-07-04-韩国油轮大亨借伊朗战争大赚一笔.md | 韩国油轮大亨Ga-Hyun Chung借伊朗战争获利 | `newswiki/wiki/business/korean-oil-tanker-magnate-irans-war-profit.md` | Archived |
+| 2026-07-04-贝佐斯如何学会拉拢特朗普并为蓝色起源狂揽合约.md | Bezos' Strategic Shift: From Rival to Ally with Trump and Blue Origin's Government Contract Surge | `newswiki/wiki/business/blue-origin-trump-contract-surge.md` | Archived |
+| 2026-07-07-新晋大学橄榄球百万富翁为高中毕业舞会豪掷8万美元.md | Lifestyle Trends: NIL Era Graduation Balls | `newswiki/wiki/lifestyle/NIL-graduation-balls-lifestyle-trend.md` | Archived |
+| 2026-07-07-习近平如何运用斯大林和毛泽东的策略强力压制异见.md | Career: Political Power and Control in China | `newswiki/wiki/career/xi-jinping-political-control-strategy.md` | Archived |
+| 2026-07-05-上斜哑铃卧推_Keep.md | Product Design and Exercise Routines | `newswiki/wiki/design/upper-body-dumbbell-bench-press.md` | Archived |
+| 2026-07-04-邮件揭秘：Anthropic与五角大楼的关系是如何破裂的.md | AI与政府关系：Anthropic与五角大楼的AI护栏争端 | `newswiki/wiki/tech/ai-gov-escalation.md` | Archived |
+| 2026-07-04-Best Simple System for Now.md | Best Simple System for Now | `newswiki/wiki/tech/best-simple-system-for-now.md` | Archived |
+| 2026-07-01-美国工业与国防的联系可追溯至建国之初.md | 美国工业与国防的联系可追溯至建国之初 | `newswiki/wiki/business/industrial-defense-legacy.md` | Archived |
+| 2026-07-01-盘点2026年上半年标普500指数表现最好的20只股票.md | 2026年上半年标普500指数表现最好的20只股票 | `newswiki/wiki/tech/2026-highest-performing-stocks.md` | Archived |
+| 2026-07-01-如何在AI時代保護我們的私隱？.md | AI时代的隐私保护 | `newswiki/wiki/tech/ai-privacy-protection.md` | Archived |
+| 2026-07-01-Token使用量激增，企业如何控制AI成本？.md | AI成本控制与智能体使用趋势 | `newswiki/wiki/tech/ai-cost-control.md` | Archived |
+| 2026-06-25-LangGraph Build Stateful AI Agents in Python.md | AI/ML Engineering | `newswiki/wiki/tech/ai-ml-engineering/langgraph-stateful-ai-agents.md` | Archived |
+| 2026-06-19-从濒临崩盘到西方稀土支柱：Lynas掌门人拉卡兹如何撼动中国主导地位.md | Lynas: 从濒临崩盘到西方稀土支柱 | `newswiki/wiki/business/lynas-revival/lynas-revival-lacaze.md` | Archived |
+| 2026-06-19-犹他州试点“AI医生”，真人医生们坐不住了.md | Lifestyle Trends | `newswiki/wiki/Lifestyle Trends/utah-ai-doctor-pilot.md` | Archived |
 | 2026-06-23-关于40岁以后要孩子，读者们怎么说.md                                          | lifestyle                                           | `newswiki/wiki/lifestyle/readers-on-having-kids-after-40.md`                                  | Archived   |
 | 2026-06-22-新任美联储主席沃什的首场大考：如何判读AI繁荣？.md                                   | Finance                                             | `newswiki/wiki/Finance/warsh-ai-renaissance-diagnosis.md`                                     | Archived   |
 | 2026-06-22-美国家庭网络如何沦为黑客隐身衣？.md                                           | Tech                                                | `newswiki/wiki/Tech/residential-proxy-attack-2026.md`                                         | Archived   |

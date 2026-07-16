@@ -11,10 +11,14 @@
             "id": "fda55432e539fdc7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "raw/2026-07-14-9.99美元，如何成为零售业最具魔力的定价？.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-07-14-9.99美元，如何成为零售业最具魔力的定价？"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 691.5
+    "width": 467.5
   },
   "right": {
     "id": "39f5aa2c8bb1adf8",
@@ -223,7 +227,42 @@
     "_resources/2026-07-14-美国人唯一能达成共识的事物？开市客",
     "wiki/tech/ai-multimodal-ai",
     "wiki/tech/education-tech",
-    "_resources/2026-07-14-Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI/d7de08142d55d2d66b5b5595c54ae872_MD5.gif",
-    "_resources/2026-07-14-Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI"
+    "_resources/2026-07-14-Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI",
+    "wiki/tech/residential-proxy-attack-2026.md",
+    "wiki/tech/my-homelab-ai-dev-platform.md",
+    "wiki/tech/how-to-start-a-ruby-meetup.md",
+    "wiki/tech/education-tech/science-of-reading-and-evidence-based-math.md",
+    "wiki/tech/education-tech",
+    "wiki/tech/coding-agent-harness.md",
+    "wiki/tech/apple-thermonuclear-response-to-openai.md",
+    "wiki/tech/anthropic-accuses-alibaba-of-claude-distillation-attack.md",
+    "wiki/tech/ai-warfare-evolution.md",
+    "wiki/tech/ai-spending-war-who-will-blink-first.md",
+    "wiki/tech/ai-multimodal-ai/ai-food-metadata.md",
+    "wiki/tech/ai-multimodal-ai",
+    "wiki/tech/ai-llm-fine-tuning/local-llm-question-categorization.md",
+    "wiki/tech/ai-llm-fine-tuning",
+    "wiki/tech/ai-infrastructure/nokia-ai-datacenter-infrastructure.md",
+    "wiki/tech/ai-infrastructure",
+    "wiki/tech/ai-infrastructure-transaction.md",
+    "wiki/tech/ai-drug-discovery-2026.md",
+    "wiki/tech/ai-calculation-competition.md",
+    "wiki/tech/ai-autonomous-driving.md",
+    "wiki/tech/a-road-to-lisp-why-lisp.md",
+    "wiki/tech/AI_in_education/estonia-ai-education-cognitive-decline.md",
+    "wiki/tech/AI_in_education",
+    "wiki/lifestyle/us-late-parenthood-financial-reality.md",
+    "wiki/lifestyle/readers-on-having-kids-after-40.md",
+    "wiki/lifestyle/principles-for-living-operating-system-for-life.md",
+    "wiki/lifestyle/principles-for-living-an-operating-system-for-life.md",
+    "wiki/lifestyle/passive-income-new-american-dream.md",
+    "wiki/lifestyle/life-philosophy-collection.md",
+    "wiki/lifestyle/facebook-home-lifestyle-update.md",
+    "wiki/lifestyle/europe-travel-tips-2026.md",
+    "_resources/2026-07-14-9.99美元，如何成为零售业最具魔力的定价？/58ac619b17a7a080c42d53bf4689d0e1_MD5.jpg",
+     "_resources/2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去/a0ec959dda353b23d4d16a54905472b2_MD5.jpg",
+   "_resources/2026-07-12-为防范中国药企跟风，美国生物技术公司加强保密/365c0b6f6402ac04b37f0c8878dfce16_MD5.jpg",
+    "_resources/2026-07-12-The Best Books I ever read Suggestions for a software engineer",
+    "_resources/2026-07-07-哑铃平板卧推_Keep"
   ]
 }

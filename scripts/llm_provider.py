@@ -162,7 +162,15 @@ def resolve_max_tokens() -> int:
 
 def resolve_json_retry_attempts() -> int:
     load_env()
-    return max(1, int(os.environ.get("LLM_JSON_RETRY_ATTEMPTS", str(DEFAULT_JSON_RETRY_ATTEMPTS))))
+    return max(
+        1,
+        int(
+            os.environ.get(
+                "LLM_JSON_RETRY_ATTEMPTS",
+                str(DEFAULT_JSON_RETRY_ATTEMPTS),
+            )
+        ),
+    )
 
 
 def extract_json_object(text: str) -> dict[str, Any]:

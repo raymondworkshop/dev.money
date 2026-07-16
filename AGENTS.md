@@ -90,7 +90,7 @@ Clickable links are semantic edges for humans and retrieval:
 
 ## Global Rules
 
-- Preserve source/user language unless asked to translate.
+- Preserve source/user language unless asked to translate. Chinese sources stay Chinese; English sources stay English.
 - Never invent facts, figures, dates, companies, quotes, or sources.
 - Use concise bullets; every sentence should earn context-window space.
 - Use `[[wiki links]]` for companies, people, sectors, technologies, and topics.

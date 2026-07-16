@@ -29,12 +29,14 @@ AI 对就业的冲击、职业发展、招聘背调、软技能与组织人才�
 - [[how-to-improve-job-search-success-by-optimizing-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18) - 无论你眼下是否在找工作，及时更新领英运营策略都至关重要。
 - [[how-to-improve-job-search-success-by-refining-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18) - 无论你眼下是否在找工作，及时更新领英运营策略都至关重要。
 - [[llm-burnout-impact|I Think I Have LLM Burnout]] (2026-07-09) - The author describes growing fatigue from daily exposure to LLM-generated content, particularly due to repetitive patterns like hallucinations, excessive emojis, and staccato fragments.
+- [[career-life-balance|How to Plan Your Life Successfully]] (2026-06-05) - Watch the full video - https://www.youtube.com/watch?v=nsZ8XqHPjI4 Explore the full collection of premium Jordan B. Peterson content on DailyWire+: http://dwpluspeterson.com/yt
 - [[new-grad-career-advice-2026|给应届毕业生的五点具体职场建议]] (2026-06-09) - 大学里的“娇生惯养”不会延续到现实社会中。
 - [[retirement-reentry-experiences|In America, What Is the Experience of Retiring and Starting a Business Later in Life?]] (2026-07-06) - A look at how individuals in their 50s and 60s are redefining retirement by launching new ventures, discussing financial implications, work-life balance, and personal motivations.
 - [[us-whitecollar-midcareer-stagnation-20260602|四分之一的美国白领遭遇职业中期停滞]] (2026-06-01) - 一项新研究发现，大约四分之一的美国职场人士经历过职业中期停滞，即至少五年没有获得实质性的加薪或晋升，一道无形的障碍正阻碍许多人向上发展。
 - [[passive-income-new-american-dream|Forget Working: Passive Income Is the New American Dream]] (2026-06-25) - As confidence in traditional 9-to-5 jobs wanes, more people are turning to social media for alternative income streams, though many of these ideas are scams or unviable.
 - [[principles-for-living-operating-system-for-life|Principles For Living: An Operating System for Life]] (2018-06-05) - All that we write about, think about, and strive for at Farnam Street draws inspiration from one of these five principles: Direction Over Speed, Live Deliberately, Thoughtful Opinions Held Loosely, Principles Outlive Tactics, and Own Your Actions.
 - [[us-late-parenthood-financial-reality|In the US, what are the financial realities of having children after age 40?]] (2026-06-16) - Four families shared their experiences with later parenthood and the resulting financial impacts.
+- [[xi-jinping-political-control-strategy|Xi Jinping's Use of Stalin and Mao's Strategies to Suppress Dissent]] (2026-07-06) - Xi Jinping is leveraging authoritarian strategies reminiscent of Stalin and Mao to consolidate power, purge dissent, and establish a long-term political legacy.
 
 ## 相关主题
 - [[business/_index|Business]]

@@ -19,6 +19,7 @@
 - [[ai-giants-office-ai-application|一览AI巨头如何在自家办公室应用AI]] (2026-06-25) - A look into how internal AI agents at OpenAI, Google, and Anthropic are handling complex tasks, offering a glimpse into the future of white-collar work.
 - [[ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-05-25) - 凯鹏华盈董事长约翰·杜尔曾精准押注谷歌，在他看来，AI革命非但没有过度炒作，反而被低估了。
 - [[berkshire-japan-us-housing-opportunity|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]] (2026-06-04) - 伯克希尔哈撒韦公司在美国住宅建筑商身上看到了什么公开市场投资者没有注意到的东西？或许与关注该行业的日本企业所见略同。
+- [[blue-origin-trump-contract-surge|How Bezos Learned to Win Over Trump and Secured a Surge of Contracts for Blue Origin]] (2026-07-03) - Bezos transitioned from being a political adversary of Trump to a key ally, with Blue Origin securing a dramatic increase in federal contracts during Trump's second term.
 - [[china-all-encompassing-policy|中国“全方位产业政策”令世界其他地区望尘莫及]] (2026-05-15) - 从传统行业到新兴领域，从商品到服务，从微观干预到宏观调控，中国政府的支持无处不在。
 - [[doerr-ai-tsunami|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-05-25) - 凯鹏华盈董事长约翰·杜尔曾精准押注谷歌，在他看来，AI革命非但没有过度炒作，反而被低估了。
 - [[elite-students-ai-startups-silicon-valley|Elite Students Abandon Wall Street to Chase AI Startup Dreams]] (2026-07-06) - As AI disrupts traditional career paths, elite students are skipping corporate internships and instead joining startup incubators in Silicon Valley.
@@ -35,6 +36,9 @@
 - [[ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]] (2026-07-07) - 如果Meta真的开始出租闲置算力，这恐怕将成为一个危险信号，预示着大型科技巨头已经陷入了基础设施建设过剩的泥潭。
 - [[residential-proxy-attack-2026|美国家庭网络如何沦为黑客隐身衣？]] (2026-06-18) - 具有国家背景的网络攻击者正日益频繁地利用住宅代理网络来隐藏其网络流量，将日常电子设备变成了巨大的全球性威胁。
 - [[2025-global-ultra-high-net-worth-surge|2025年全球超级富豪人数激增]] (2026-06-24) - 去年，全球这一群体的人数激增14.4%，创下2017年以来的最快增速。Altrata将超高净值人群定义为净资产超过3,000万美元的个人。
+- [[how-to-earn-a-billion-dollars|How to Earn a Billion Dollars]] (2026-07-07) - A talk by Paul Graham on how exponential growth through user-driven innovation can lead to billionaire success without exploitation.
+- [[industrial-defense-legacy|美国工业与国防的联系可追溯至建国之初]] (2026-06-30) - 以乔治·华盛顿创建斯普林菲尔德兵工厂为起点，美国以前所未有的方式将战争与商业融合在了一起。
+- [[korean-oil-tanker-magnate-irans-war-profit|Korean Oil Tanker Magnate Makes a Fortune from Iran War]] (2026-07-03) - Ga-Hyun Chung斥资约70亿美元大举买入油轮，组建起全球最大的油轮船队，当时正值市场陷入混乱前夕。
 - [[2026-05-27-spacex-investment|这位明星选股人在SpaceX实现火箭着陆之前就大举押注]] (2026-05-27) - 知名选股人Gavin Baker在SpaceX火箭着陆成功之前就做出大额投资，展现了对航天产业长期潜力的信心。
 - [[berkshire-and-japanese-builders-see-opportunity-in-us-housing|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]] (2026-06-04) - 伯克希尔哈撒韦公司在美国住宅建筑商身上看到了什么公开市场投资者没有注意到的东西？或许与关注该行业的日本企业所见略同。
 - [[leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]] (2026-06-09) - 凭借对AI未来的预测，莱奥波德·阿申布伦纳在互联网上吸引了大批狂热追随者，其投资公司常规的监管公告被人们像研究圣经一样仔细研读。

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import re
 from dataclasses import dataclass
 from datetime import date
@@ -15,6 +16,7 @@ from urllib.parse import urlparse
 AI_SYNTHESIS_PREFIX = "[AI Synthesis]"
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 WIKI_LINK_RE = re.compile(r"\[\[([^\]|]+)(?:\|[^\]]+)?\]\]")
+WIKI_LINK_LABEL_RE = re.compile(r"\[\[([^\]|]+)\|([^\]]+)\]\]")
 TRUNCATED_URL_RE = re.compile(r"\.\.\.")
 WIKI_PATH_RE = re.compile(r"`([^`]+\.md)`")
 RESOURCE_DIR_RE = re.compile(r"_resources/([^/\]\s]+)")
@@ -71,6 +73,49 @@ def validate_synthesis_labels(items: list[str], label: str) -> None:
             raise ValueError(f"{label} contains an empty bullet.")
         if "AI Synthesis" in text and not text.startswith(AI_SYNTHESIS_PREFIX):
             raise ValueError(f"{label} inference must start with '{AI_SYNTHESIS_PREFIX}'.")
+
+
+def source_language_from_text(text: str) -> str:
+    """Return 'zh' when text is predominantly CJK, else 'en'."""
+
+    stripped = text.strip()
+    if not stripped:
+        return "en"
+    cjk = len(re.findall(r"[\u4e00-\u9fff]", stripped))
+    latin = len(re.findall(r"[A-Za-z]", stripped))
+    return "zh" if cjk > latin else "en"
+
+
+def article_language(article: dict[str, Any]) -> str:
+    front_matter = article.get("front_matter", {})
+    if not isinstance(front_matter, dict):
+        front_matter = {}
+    title = str(article.get("title") or front_matter.get("title", ""))
+    description = str(front_matter.get("description", ""))
+    return source_language_from_text(f"{title}\n{description}")
+
+
+def takeaways_heading(lang: str) -> str:
+    return "核心要点" if lang == "zh" else "Key Takeaways"
+
+
+def topic_footer_labels(lang: str) -> tuple[str, str]:
+    if lang == "zh":
+        return "主题", "标签"
+    return "Topics", "Tags"
+
+
+def normalize_wiki_link_label(text: str, title: str) -> str:
+    """Replace the display label in the first [[target|label]] wiki link."""
+
+    def repl(match: re.Match[str]) -> str:
+        target = match.group(1).strip()
+        display = match.group(2).strip()
+        if display == title:
+            return match.group(0)
+        return f"[[{target}|{title}]]"
+
+    return WIKI_LINK_LABEL_RE.sub(repl, text, count=1)
 
 
 _FILENAME_PUNCTUATION_MAP = str.maketrans(
@@ -194,6 +239,19 @@ def sanitize_slug(value: str, *, fallback: str) -> str:
     return safe[:60] or fallback
 
 
+def slug_fallback_from_raw(raw_path: Path) -> str:
+    """Derive a valid ASCII slug when the LLM returns a non-ASCII title as slug."""
+
+    stem = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", raw_path.stem)
+    slug = sanitize_slug(stem, fallback="")
+    date_match = re.match(r"^(\d{4}-\d{2}-\d{2})", raw_path.stem)
+    date_part = date_match.group(1) if date_match else date.today().isoformat()
+    if slug:
+        return f"{date_part}-{slug}"[:60]
+    digest = hashlib.md5(raw_path.stem.encode()).hexdigest()[:8]
+    return f"{date_part}-article-{digest}"
+
+
 def slug_from_url_path(url: str) -> str:
     segment = urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
     return sanitize_slug(segment, fallback="")
@@ -208,15 +266,7 @@ def derive_article_slug_fallback(article: dict[str, Any], raw_stem: str) -> str:
             if url_slug and len(url_slug) >= 4:
                 return url_slug
 
-    match = re.match(r"^(\d{4}-\d{2}-\d{2})-(.+)$", raw_stem)
-    if match:
-        date_part, rest = match.groups()
-        rest_slug = sanitize_slug(rest, fallback="")
-        if rest_slug:
-            return f"{date_part}-{rest_slug}"[:60]
-        return f"{date_part}-article"
-
-    return sanitize_slug(raw_stem, fallback="article")
+    return slug_fallback_from_raw(Path(f"{raw_stem}.md"))
 
 
 def resolve_output_slug(question: str, filename_slug: str, *, fallback: str) -> str:

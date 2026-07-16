@@ -43,7 +43,7 @@ DENSIFY_FLAGS = --wiki "$(WIKI)" $(if $(DRY_RUN),--dry-run)
 .DEFAULT_GOAL := help
 .PHONY: help test venv sync densify query audit analyze publish \
 	site site-prepare site-install site-build site-serve site-deploy \
-	rebuild-indexes backfill-sources backfill-titles launchd
+	rebuild-indexes repair-index-labels backfill-sources backfill-titles launchd
 
 help:
 	@echo "dev.business"
@@ -98,6 +98,9 @@ analyze:
 
 rebuild-indexes:
 	$(RUN)/wiki.py rebuild-indexes --wiki "$(WIKI)"
+
+repair-index-labels:
+	$(RUN)/wiki.py rebuild-indexes --wiki "$(WIKI)" --repair-index-labels
 
 backfill-sources:
 	$(RUN)/wiki.py backfill-sources $(WIKI_FLAGS) --archive "$(ARCHIVE)"
