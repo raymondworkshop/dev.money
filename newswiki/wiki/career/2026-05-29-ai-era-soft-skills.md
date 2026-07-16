@@ -25,6 +25,13 @@ topics:
 - 风投机构正通过提供非传统培训（如野外徒步、社交扑克、礼仪培训）来深入观察和培育创始人的软性特质。
 - [AI Synthesis] 在人工智能时代，越是高度自动化、虚拟化的产品，其最终的商业闭环越需要依赖线下、高频的人性化互动来锁定长久价值。
 
+## 相关文章
+
+- [[career/ai-employment-impact|AI会导致就业末日吗？三位经济学家各抒己见]]
+- [[career/2026-04-03-ai-created-new-jobs|诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？]]
+- [[business/2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]]
+- [[tech/2026-05-29-ai-fact-checking|AI会犯错，但AI也能揪出错误]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Topic**: [[career/_index|Career]]  

@@ -56,6 +56,13 @@ topics:
 - 通过数据分析和他人反馈来迭代优化领英主页。
 - 保持耐心和持续投入，即使在求职周期较长的情况下也要维护好个人品牌。
 
+## 相关文章
+
+- [[career/how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]]
+- [[career/how-to-improve-job-search-success-by-optimizing-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]]
+- [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Tags**: #linkedin #jobsearch #careerdevelopment #personalbranding

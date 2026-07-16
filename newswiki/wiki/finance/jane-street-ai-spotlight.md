@@ -38,6 +38,13 @@ topics:
 - 从神秘的“极客文化”走向公开的AI投资布局，标志着该公司在适应现代金融市场监管和竞争环境中的关键战略转变。
 - 其业务的成功建立在强大的技术团队、庞大的自有资金池以及对市场效率的深刻理解之上，但同时也伴随着极高的公众风险敞口。
 
+## 相关文章
+
+- [[finance/leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]]
+- [[business/ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]]
+- [[business/doerr-ai-tsunami|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]]
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+
 ---
 **Topics**: [[finance/jane-street-ai-spotlight_index|Jane Street 专题]], [[tech/ai-investment_landscape_index|AI 投资格局]]  
 **Tags**: #HFT #AI #VentureCapital

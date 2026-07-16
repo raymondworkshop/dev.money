@@ -32,6 +32,13 @@ topics:
 - 退出策略应是分阶段、多维度的，结合税务结构（如83(b)条款）进行优化。
 - 任何高增长资产的退出都伴随着巨大的税务和市场风险，需专业顾问全程把控。
 
+## 相关文章
+
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[business/musk-confidant-gracias-set-for-spacex-windfall|马斯克密友格拉西亚斯有望因SpaceX斩获680亿美元收益]]
+- [[business/starlink-ground-market-challenge|星链已称霸卫星互联网，它能否在地面市场颠覆AT&T和Verizon？]]
+- [[finance/ai-funding-warning-sign|巨额资金涌入AI，这是一个巨大的危险信号]]
+
 ---
 **Topics**: [[finance/_index|Finance]], [[business/_index|Business]]  
 **Topic**: [[finance/_index|Finance]]  

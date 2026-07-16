@@ -25,6 +25,13 @@ topics:
 - 高端、垂直领域的专家级标注与行为模拟（RLHF）在推动AI落地复杂业务决策方面正获得极其丰厚的金钱溢价。
 - [AI Synthesis] 职业生涯早期的工作者应该迅速拥抱人机协同的角色定位（如人类AI解决方案主管），利用沟通、同理心与人机翻译等‘软技能’作为大模型自动化浪潮中的立身之本。
 
+## 相关文章
+
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[business/45-million-donation-larry-ellison-trump-inner-circle|一笔4,500万美元的捐款如何让拉里·埃里森深入特朗普核心圈？]]
+- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Topic**: [[career/_index|Career]]  

@@ -9,6 +9,7 @@
 - **投资视角**: 长期主题、品牌与生活方式赛道
 
 ## 相关文章
+- [[lifestyle/amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16) - Prime Video通过粉丝文化与青春剧集联动，打造情感共鸣内容。
 - [[costco-american-consensus|美国人唯一能达成共识的事物？开市客]] (2026-07-14) - A shared cultural ritual at Costco reflects a deeper American value in practicality and community bonding.
 - [[estonia-ai-education-experiment|如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT]] (2026-06-02) - 爱沙尼亚向近两万名学生免费提供ChatGPT，观察AI在教育中大规模引入对学生推理能力、记忆能力和自信心产生的影响。
 - [[residential-proxy-attack-2026|美国家庭网络如何沦为黑客隐身衣？]] (2026-06-18) - 具有国家背景的网络攻击者正日益频繁地利用住宅代理网络来隐藏其网络流量，将日常电子设备变成了巨大的全球性威胁。

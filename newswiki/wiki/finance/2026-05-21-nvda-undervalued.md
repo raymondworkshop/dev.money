@@ -14,7 +14,7 @@ topics:
 - **估值逻辑**：
     - 当前季度预计收入910亿美元，同比翻倍。
     - 在同等规模的公司中，英伟达的增长速度（近100%）远超平均水平（14%）。
-- **主要客户动向**：[[SpaceX]] (xAI) 等公司资本支出巨大，主要投向 Grace Blackwell 系统。
+- **主要客户动向**：[[hubs/spacex|SpaceX]] (xAI) 等公司资本支出巨大，主要投向 Grace Blackwell 系统。
 - **风险/挑战**：市场注意力分散到“第二/第三梯队”AI受益者（如 [[Micron]]），以及 [[OpenAI]]/SpaceX 可能的 IPO 吸引资金。
 
 ## Key Takeaways
@@ -26,3 +26,10 @@ topics:
 **Source**: [[2026-05-27-即使市值高达5万亿美元，英伟达依然被低估]]
 **Topics**: [[finance/_index|Finance]], [[tech/_index|Tech]]  
 **Tags**: #nvda #ai-chips #value-investing
+
+## 相关文章
+
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[design/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]]

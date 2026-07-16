@@ -34,6 +34,10 @@ topics:
 - The success of fine-tuning heavily depends on constraining the output format (e.g., using fixed codes) to minimize ambiguity and improve reliability.
 - The transition from 10% to 92% accuracy highlights the power of targeted fine-tuning over zero-shot prompting for constrained tasks.
 
+## Related Articles
+
+- [[tech/ai-food-metadata|Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI]]
+
 ---
-**Topics**: [[tech/ai-llm-fine-tuning/_index|AI/ML Model Fine-Tuning for Question Categorization]]  
-**Tags**: #LLM #RAG #FineTuning
+**Topics**: [[tech/_index|Tech]]  
+**Tags**: #tech #llm #fine-tuning

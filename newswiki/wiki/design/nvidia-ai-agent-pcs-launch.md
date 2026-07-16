@@ -32,6 +32,13 @@ topics:
 - 公司战略重心已从单纯的AI模型训练转向支持海量AI智能体的实际工作负载执行。
 - 与中国宇树科技的合作展示了在实体机器人制造上的全球化供应链布局。
 
+## 相关文章
+
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+- [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]]
+
 ---
 **Topics**: [[design/_index|Design]], [[tech/_index|Tech]]  
 **Tags**: #AIAgent #EdgeAI #Hardware

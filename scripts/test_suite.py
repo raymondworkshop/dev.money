@@ -377,10 +377,10 @@ class SyncWikiTests(unittest.TestCase):
         validate_proposal(proposal, raw_path)
         self.assertEqual(proposal["source_file"], f"newswiki/raw/{raw_name}")
 
-    def test_validate_rejects_unlabeled_ai_synthesis(self) -> None:
+    def test_validate_rejects_nested_article_path(self) -> None:
         proposal = copy.deepcopy(self.sample_proposal)
-        proposal["article"]["sections"][0]["bullets"].append("AI Synthesis without label.")
-        with self.assertRaisesRegex(ValueError, "AI Synthesis"):
+        proposal["article"]["path"] = "newswiki/wiki/tech/ai-infrastructure/2026-05-30-sample-article.md"
+        with self.assertRaisesRegex(ValueError, "flat under canonical topic"):
             validate_proposal(proposal, Path("2026-05-30-sample.md"))
 
     def test_enforce_canonical_topics_remaps_alias_slug(self) -> None:
@@ -1188,6 +1188,28 @@ class PrepareQuartzContentTests(unittest.TestCase):
             visible_entries = prepare_module._collect_list_entries(related_section.splitlines())
             self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
             self.assertIn("[[articles|More]]", related_section)
+
+
+class DensifyWikiTests(unittest.TestCase):
+    def test_strip_related_preserves_topics_footer(self) -> None:
+        from wiki.densify import _strip_existing_related, upsert_related_section, Article
+        from pathlib import Path
+
+        sample = (
+            "# T\n\n## 核心观点\n- hi\n\n## 相关文章\n\n"
+            "- [[business/a|A]]\n\n---\n**Topics**: [[business/_index|Business]]  \n"
+            "**Tags**: #business\n"
+        )
+        stripped = _strip_existing_related(sample)
+        self.assertIn("**Topics**", stripped)
+        self.assertNotIn("相关文章", stripped)
+
+        related = [
+            Article(Path("x"), "business/c.md", "business/c", "C", ["business"]),
+        ]
+        out = upsert_related_section(sample, related)
+        self.assertIn("**Topics**", out)
+        self.assertIn("[[business/c|C]]", out)
 
 
 if __name__ == "__main__":

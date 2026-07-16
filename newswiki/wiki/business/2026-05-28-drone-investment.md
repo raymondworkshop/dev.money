@@ -108,6 +108,11 @@ topics:
 - 供应链本地化与技术自主是长期趋势，但需要时间积累
 - 投资者应关注企业的技术能力、交付能力、以及与政府的合作稳定性
 
+## 相关文章
+
+- [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
+- [[finance/korean-shipping-magnate-iranian-war-profit|韩国油轮大亨借伊朗战争大赚一笔]]
+
 ---
 **Topics**: [[business/_index|Business]]  
 **Tags**: #defense #drones #无人机 #technology #geopolitics

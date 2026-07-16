@@ -239,6 +239,9 @@ Canonical topics (pick exactly one as primary; add canonical secondaries only wh
 Do not invent new topic slugs. If none fit well, return action "needs_review" with rationale.
 
 article.slug must be lowercase ASCII only (a-z, 0-9, hyphens). For Chinese titles, derive an English slug from the source URL path or article topic — never use CJK characters in slugs.
+article.path must be exactly `{wiki}/{primary-topic}/{article.slug}.md` — flat under one canonical topic. Do not invent nested folders like tech/ai-infrastructure/....
+
+Linking: include at least 2-4 resolvable [[wiki links]] in bullets/takeaways when grounded in the source. Prefer [[topic/existing-article-slug|Title]] or [[hubs/entity|Name]] over bare unresolved names.
 
 {language_hint}
 
@@ -291,6 +294,14 @@ def validate_proposal(proposal: dict[str, Any], raw_path: Path) -> None:
     wiki_prefix = f"{WIKI_PREFIX}/"
     if not str(article_path).startswith(wiki_prefix):
         raise ValueError(f"article.path must live under {wiki_prefix}.")
+
+    # Canonical layout: <wiki>/<topic>/<article-slug>.md — no nested subfolders.
+    expected_path = Path(WIKI_PREFIX) / topic_slug / f"{article['slug']}.md"
+    if article_path != expected_path:
+        raise ValueError(
+            f"article.path must be '{expected_path.as_posix()}' "
+            f"(flat under canonical topic), got '{article_path.as_posix()}'."
+        )
 
     front_matter = article.get("front_matter")
     if not isinstance(front_matter, dict) or not front_matter.get("title"):

@@ -22,6 +22,7 @@ The harness supplies deterministic execution:
 - index updates
 - archive status
 - cache/idempotency
+- densify (related-article links + entity hubs) after a successful sync write path
 
 ## Default Paths
 
@@ -42,10 +43,22 @@ Other layouts are valid. Treat `SOURCE`, `WIKI`, and `ARCHIVE` as execution para
 make sync DRY_RUN=1
 ```
 
-3. Sync the default directories:
+3. Sync the default directories (also densifies related links + hubs):
 
 ```bash
 make sync
+```
+
+Skip densify:
+
+```bash
+make sync DENSIFY=0
+```
+
+Re-densify only:
+
+```bash
+make densify
 ```
 
 4. Sync custom directories:

@@ -34,6 +34,13 @@ topics:
 - 埃里森父子利用与特朗普的亲密关系，在科技（AI数据中心、TikTok）和媒体（收购派拉蒙、华纳兄弟探索）领域获得了关键性的发展机会和监管支持。
 - 文章揭示了政治捐款、私人友谊与商业利益之间复杂的相互作用，以及亿万富豪如何通过非公开渠道影响政治进程并从中获益。
 
+## 相关文章
+
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
+- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[finance/warsh-ai-renaissance-diagnosis|新任美联储主席沃什的首场大考：如何判读AI繁荣？]]
+
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  
 **Tags**: #LarryEllison #DonaldTrump #Oracle #Media #Politics #Donations

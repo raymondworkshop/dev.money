@@ -42,6 +42,13 @@ topics:
 - 标准估值指标可能具有误导性，企业融资决策更能反映市场的昂贵程度。
 - AI 热潮可能面临与互联网泡沫相似的风险，即过度投资和价值毁灭。
 
+## 相关文章
+
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+- [[finance/spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]]
+- [[finance/2026-05-27-spacex-investment|这位明星选股人在SpaceX实现火箭着陆之前就大举押注]]
+- [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]]
+
 ---
 **Topics**: [[finance/_index|Finance]], [[tech/_index|Tech]]  
 **Tags**: #AI #Investment #MarketBubble #Valuation

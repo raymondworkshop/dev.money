@@ -52,6 +52,10 @@ topics:
 - The convergence on specific components (RoPE, RMSNorm, SwiGLU) reflects a mature, optimized design pattern for modern frontier models.
 - The model's function is fundamentally next-token prediction, which enables emergent capabilities like reasoning and coding.
 
+## Related Articles
+
+- [[tech/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]]
+
 ---
 **Topics**: [[tech/_index|Tech]]  
 **Tags**: #LLM #Transformer #DeepLearning #ML

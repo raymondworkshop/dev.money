@@ -38,6 +38,11 @@ topics:
 - 此类操作依赖对市场时机的精准判断，且存在显著的政策与监管风险。
 - 建议在类似情境下，需评估市场透明度、监管框架与长期可持续性，避免‘短期暴利’陷阱。
 
+## 相关文章
+
+- [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
+- [[business/2026-05-28-drone-investment|特朗普政府正就注资国内无人机公司进行谈判]]
+
 ---
 **Topics**: [[finance/_index|Finance]]  
 **Tags**: #finance #shipping #geopolitics #shipping-finance #market-timing

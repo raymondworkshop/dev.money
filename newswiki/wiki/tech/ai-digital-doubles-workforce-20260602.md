@@ -32,6 +32,13 @@ topics:
 - 未來趨勢指向替身將從高管層級擴展到普通員工，但仍需明確的治理機制。
 - 當前應用必須謹慎，應將AI視為輔助工具，而非完全替代人類決策與問責。
 
+## 相关文章
+
+- [[business/ai-giants-office-ai-application|一览AI巨头如何在自家办公室应用AI]]
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+- [[tech/estonia-ai-education-experiment|如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT]]
+- [[tech/my-homelab-ai-dev-platform|My Homelab AI Dev Platform]]
+
 ---
 **Topics**: [[tech/_index|Tech]], [[career/_index|Career]]  
 **Tags**: #AI #DigitalTwin #Productivity #FutureOfWork

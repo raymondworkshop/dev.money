@@ -1,6 +1,14 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+/** Hide helper folders from Explorer; hubs stay linkable via wiki links / graph. */
+const explorerFilter = (node: { slugSegment: string }) =>
+  node.slugSegment !== "tags" && node.slugSegment !== "hubs"
+
+const explorer = Component.Explorer({
+  filterFn: explorerFilter,
+})
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -41,7 +49,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    explorer,
   ],
   right: [
     Component.Graph(),
@@ -65,7 +73,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    explorer,
   ],
   right: [],
 }

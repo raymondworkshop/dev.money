@@ -62,6 +62,13 @@ topics:
 - Context is a projection, not a dump — the harness curates and filters evidence to prevent context flooding and improve model performance.
 - Subagents extend the agent's capabilities through parallel, isolated workspaces, but require careful management to avoid uncontrolled complexity.
 
+## Related Articles
+
+- [[tech/ai-warfare-evolution|Warfare Mode is Changing: Is It Gradual Evolution or a Total Revolution?]]
+- [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
+- [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
+- [[business/elite-students-ai-startups-silicon-valley|Elite Students Abandon Wall Street to Chase AI Startup Dreams]]
+
 ---
 **Topics**: [[tech/coding-agent-harness|Coding Agent Harness]]  
 **Tags**: #ai #agent #coding-agent #ai-robotics #tooling #runtime

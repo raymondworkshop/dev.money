@@ -9,12 +9,16 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[design/_index|Design]]: 产品设计、科學傳播與體驗設計、人機交互。
 
 - [[business/_index|Business]]: 公司战略、创业风投、产业政策与商业航天。
-- [[finance/_index|Finance]]: 投资、房地产与财富管理。
+- [[finance/_index|Finance]]: 投资与量化、股票与債券、财富管理与公司估值。
 
 - [[career/_index|Career]]: 职业发展与人事实践。
 - [[lifestyle/_index|Lifestyle]]: 健康、家庭、教育、文化体育趋势、生活方式。
 
 ## Recent Articles
+
+- [[lifestyle/amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16)
+
+- [[business/spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]] (2026-07-16)
 
 - [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]] (2026-07-14)
 
@@ -26,13 +30,13 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 - [[design/Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]] (2026-07-10)
 
-- [[tech/ai-multimodal-ai/ai-food-metadata|Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI]] (2026-07-03)
+- [[tech/ai-food-metadata|Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI]] (2026-07-03)
 
 - [[tech/apple-thermonuclear-response-to-openai|Apple's 'Thermocore' Response to OpenAI Threat]] (2026-07-13)
 
 - [[lifestyle/europe-travel-tips-2026|炎热、拥挤且物价高昂，欧洲之旅如何玩得尽兴？]] (2026-07-13)
 
-- [[tech/education-tech/science-of-reading-and-evidence-based-math|Science of Reading & Evidence-Based Math]] (2026-07-13)
+- [[tech/science-of-reading-and-evidence-based-math|Science of Reading & Evidence-Based Math]] (2026-07-13)
 
 - [[tech/coding-agent-harness|Coding Agent Harness]] (2026-06-30)
 
@@ -50,7 +54,7 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 - [[career/llm-burnout-impact|I Think I Have LLM Burnout]] (2026-07-09)
 
-- [[tech/ai-infrastructure/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]] (2026-07-08)
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]] (2026-07-08)
 
 - [[business/founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison|经营硅谷“处方药坊”的中国籍商人在美被判六年监禁]] (2026-07-08)
 
@@ -102,7 +106,7 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 - [[finance/gold-silver-bitcoin-plunge-warsh|黄金、白银和比特币大跌]] (2026-06-25)
 
-- [[tech/AI_in_education/estonia-ai-education-cognitive-decline|AI教育实验：爱沙尼亚的ChatGPT实践]] (2026-06-02)
+- [[tech/estonia-ai-education-experiment|AI教育实验：爱沙尼亚的ChatGPT实践]] (2026-06-02)
 
 - [[business/ai-giants-office-ai-application|AI Giants Apply AI in Their Own Offices]] (2026-06-25)
 
@@ -130,7 +134,7 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 
 
-- [[tech/ai-llm-fine-tuning/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]] (2026-06-22)
+- [[tech/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]] (2026-06-22)
 
 - [[lifestyle/us-late-parenthood-financial-reality|US Late Parenthood Financial Realities]] (2026-06-16)
 
@@ -187,7 +191,6 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]] (2026-05-21)
 
 ## Philosophy & Framework
-
 - [[moats|护城河理论]]: 竞争优势的本质与评估方法
 - [[valuation-metrics|估值指标]]: 核心财务指标与估值框架
 - [[risk-analysis|风险分析]]: 系统性与个体风险识别

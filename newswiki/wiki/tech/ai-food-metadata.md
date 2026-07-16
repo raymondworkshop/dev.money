@@ -37,6 +37,10 @@ topics:
 - LLM juries and failure-driven prompt tuning reduce human labor and improve model precision in large-scale production environments.
 - Distributed inference pipelines are essential for handling millions of items with low latency and cost efficiency.
 
+## Related Articles
+
+- [[tech/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]]
+
 ---
-**Topics**: [[tech/ai-multimodal-ai|AI and Multimodal Systems]], [[tech/ai-llm-juries|LLM Jury Systems]], [[tech/ai-context-optimization|Context Optimization]]  
-**Tags**: #ai #multimodal #llm-jury #context-optimization #distributed-inference
+**Topics**: [[tech/_index|Tech]]  
+**Tags**: #tech #multimodal-ai #llm

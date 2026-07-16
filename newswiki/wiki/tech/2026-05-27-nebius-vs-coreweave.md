@@ -13,25 +13,25 @@ topics:
 # [CoreWeave请让位，Nebius来了](https://cn.wsj.com/articles/coreweave%E8%AF%B7%E8%AE%A9%E4%BD%8D-nebius%E6%9D%A5%E4%BA%86-5a8f68c9?mod=cn_markets)
 
 ## 核心观点
-- AI云服务的竞争格局中，[[Nebius]] 相比 [[CoreWeave]] 具有更高的上行潜力
-- [[Nebius]] 凭借独特的技术自主性和资产控制力，在面对市场变化时更具灵活性
+- AI云服务的竞争格局中，[[hubs/nebius|Nebius]] 相比 [[hubs/coreweave|CoreWeave]] 具有更高的上行潜力
+- [[hubs/nebius|Nebius]] 凭借独特的技术自主性和资产控制力，在面对市场变化时更具灵活性
 
 ## 竞争对比：Nebius vs CoreWeave
 
-### [[CoreWeave]]（美国）
+### [[hubs/coreweave|CoreWeave]]（美国）
 - 起源于加密货币挖矿，后转向AI算力服务
-- 成功上市，获 [[Nvidia]] 投资
-- 客户集中于 [[Microsoft]]、[[OpenAI]] 等大型科技公司
+- 成功上市，获 [[hubs/nvidia|Nvidia]] 投资
+- 客户集中于 [[hubs/microsoft|Microsoft]]、[[OpenAI]] 等大型科技公司
 - Q1收入超20亿美元，未履行合同预计1,000亿美元
 
-### [[Nebius]]（欧洲）
+### [[hubs/nebius|Nebius]]（欧洲）
 - 曾为 [[Yandex]] 控股公司，2022年遭俄罗斯制裁
 - 2024年剥离俄罗斯资产，转型为AI基础设施公司
 - Q1收入近4亿美元，预计年底达70-90亿美元
-- 获 [[Microsoft]]/[[Meta]] 巨额合同：174亿美元 + 270亿美元
-- [[Nvidia]] 3月份增资20亿美元
+- 获 [[hubs/microsoft|Microsoft]]/[[Meta]] 巨额合同：174亿美元 + 270亿美元
+- [[hubs/nvidia|Nvidia]] 3月份增资20亿美元
 
-## [[Nebius]] 的核心竞争优势
+## [[hubs/nebius|Nebius]] 的核心竞争优势
 
 ### 1. 技术自主设计能力
 - **从零开始设计数据中心及内部设备**
@@ -46,7 +46,7 @@ topics:
 
 ### 3. 多元化客户基础
 - 不仅限于大科技公司，覆盖欧洲大型AI实验室
-- 与 [[Meta]]、[[Microsoft]] 合作之外，还开拓更广泛的企业级应用
+- 与 [[Meta]]、[[hubs/microsoft|Microsoft]] 合作之外，还开拓更广泛的企业级应用
 - 有望成为未来AI普及化的受益者
 
 ### 4. 成本优势
@@ -59,10 +59,17 @@ topics:
 - **融资方式**：主要依靠股权投资和可转换票据（非高负债）
 
 ## Key Takeaways
-- 尽管 [[CoreWeave]] 目前体量更大，但 [[Nebius]] 的技术自主性和资产控制力给予其更强的适应性
-- 数据中心设计、服务器定制、能源管理的垂直整合是 [[Nebius]] 的关键护城河
+- 尽管 [[hubs/coreweave|CoreWeave]] 目前体量更大，但 [[hubs/nebius|Nebius]] 的技术自主性和资产控制力给予其更强的适应性
+- 数据中心设计、服务器定制、能源管理的垂直整合是 [[hubs/nebius|Nebius]] 的关键护城河
 - AI从业务高速增长向稳定盈利转变时，灵活性和自主能力将成为决胜因素
-- [[Nebius]] 对更广泛企业级应用的聚焦，优于客户集中在头部科技公司的战略
+- [[hubs/nebius|Nebius]] 对更广泛企业级应用的聚焦，优于客户集中在头部科技公司的战略
+
+## 相关文章
+
+- [[tech/2026-05-29-ai-film-cannes-compute-costs|AI长片在戛纳首映：50万美元制作成本，算力支出占40万]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[design/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]]
+- [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
 
 ---
 **Topics**: [[tech/_index|Tech]]  

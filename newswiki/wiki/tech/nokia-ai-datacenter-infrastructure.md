@@ -39,6 +39,13 @@ topics:
 - Despite strong revenue growth, the business faces supply chain risks and investor skepticism about profitability in the AI infrastructure space.
 - Strategic partnerships with Nvidia and a new leadership focused on AI infrastructure are accelerating its market positioning.
 
+## Related Articles
+
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[design/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]]
+- [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+
 ---
-**Topics**: [[tech/ai-infrastructure|AI Infrastructure]], [[tech/ai-infrastructure/ai-networking|AI Networking]]  
-**Tags**: #ai-infrastructure #optical-networking #data-center
+**Topics**: [[tech/_index|Tech]]  
+**Tags**: #tech #ai-infrastructure #nokia

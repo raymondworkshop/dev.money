@@ -49,6 +49,13 @@ topics:
 - 华尔街需要可验证的临床证据，才会重估制药板块。
 - [AI Synthesis] 具备数据深井与运营能力的大药企，比纯模型公司更可能兑现AI红利。
 
+## 相关文章
+
+- [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
+- [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
+- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[tech/ai-warfare-evolution|Warfare Mode is Changing: Is It Gradual Evolution or a Total Revolution?]]
+
 ---
 **Topics**: [[tech/_index|Tech]]  
 **Tags**: #ai #药物发现 #闭环实验室 #反摩尔定律 #基因泰克

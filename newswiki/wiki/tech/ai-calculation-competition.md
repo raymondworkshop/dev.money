@@ -37,6 +37,13 @@ topics:
 - 初创公司对AI工具的依赖程度提升，其产品开发与运营高度依赖AI算力供给。
 - 这种模式存在潜在风险：过度依赖免费额度可能削弱企业对AI服务的长期付费意愿。
 
+## 相关文章
+
+- [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+
 ---
 **Topics**: [[tech/ai-calculation-competition|AI算力竞争与初创企业市场争夺]]  
 **Tags**: #ai #ai-calculation #openai #anthropic #startup-markets

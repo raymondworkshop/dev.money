@@ -32,6 +32,10 @@ topics:
 - One-on-one teaching is central to its design, supported by research showing significant learning gains in 1:1 tutoring environments.
 - The platform uses real-time adaptation to address individual learning gaps, making it a strong example of AI-driven educational technology.
 
+## Related Articles
+
+- [[tech/how-to-start-a-ruby-meetup|How to Start a Ruby Meetup]]
+
 ---
-**Topics**: [[tech/education-tech|Education Technology]], [[design/scientific-communication|Scientific Communication]]  
-**Tags**: #education-tech #adaptive-learning #ai-in-education
+**Topics**: [[tech/_index|Tech]], [[design/_index|Design]]  
+**Tags**: #tech #education-tech #adaptive-learning

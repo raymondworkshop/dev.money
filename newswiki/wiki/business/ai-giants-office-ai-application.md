@@ -39,6 +39,13 @@ topics:
 - The primary human role in advanced AI workflows is shifting to high-level auditing, verification, and prompt engineering.
 - Scaling AI adoption brings significant efficiency gains but also introduces complex governance and bottleneck issues.
 
+## Related Articles
+
+- [[tech/ai-digital-doubles-workforce-20260602|工作太多？讓你的AI替身來代勞吧]]
+- [[finance/2025-global-ultra-high-net-worth-surge|2025年全球超级富豪人数激增]]
+- [[tech/my-homelab-ai-dev-platform|My Homelab AI Dev Platform]]
+- [[tech/estonia-ai-education-experiment|如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT]]
+
 ---
 **Topics**: [[business/_index|Business]], [[tech/_index|Technology]]  
 **Tags**: #AI #AgenticWorkflow #Productivity

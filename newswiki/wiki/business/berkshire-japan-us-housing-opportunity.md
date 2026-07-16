@@ -35,6 +35,11 @@ topics:
 - 行业利润率受挤压，技术创新（如模块化建造）是提高利润率和应对低生产率的关键杠杆。
 - 市场供应短缺是结构性问题，但效率提升是未来竞争的决定性因素。
 
+## 相关文章
+
+- [[business/ai-giants-office-ai-application|一览AI巨头如何在自家办公室应用AI]]
+- [[tech/ai-digital-doubles-workforce-20260602|工作太多？讓你的AI替身來代勞吧]]
+
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  
 **Tags**: #Berkshire Hathaway #HousingMarket #Productivity

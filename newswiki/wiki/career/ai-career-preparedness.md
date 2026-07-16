@@ -34,6 +34,13 @@ topics:
 - RAISE US aims to unify public and private stakeholders to develop scalable, evidence-based transition strategies.
 - Policy reforms—such as adjusting unemployment benefits for AI-affected workers—are being explored to support entrepreneurship and job mobility.
 
+## Related Articles
+
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
+- [[career/llm-burnout-impact|I Think I Have LLM Burnout]]
+- [[career/how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]]
+
 ---
 **Topics**: [[career/ai-career-preparedness|AI and Career Preparedness]]  
 **Tags**: #career #ai-impact #workforce-transition

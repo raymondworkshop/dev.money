@@ -113,9 +113,9 @@ Use these when interpreting business material:
 
 ### sync-wiki: raw -> wiki
 
-**Intent**: transform source markdown into curated wiki memory.
+**Intent**: transform source markdown into curated wiki memory, then densify cross-links.
 
-**Use**: `scripts/sync_wiki.py` or the `sync-wiki` skill.
+**Use**: `scripts/sync_wiki.py` / `make sync` (runs densify after sync; `DENSIFY=0` to skip).
 
 **LLM does**
 
@@ -127,7 +127,10 @@ Use these when interpreting business material:
 - Distill source-grounded sections and `key_takeaways`.
 - Preserve front matter metadata when present.
 - Add useful semantic `[[wiki links]]`.
+- Prefer resolvable article-to-article links (`[[topic/existing-slug|Title]]`) and hub links (`[[hubs/spacex|SpaceX]]`) over bare unresolved names.
+- In bullets and takeaways, include at least 2–4 `[[wiki links]]` to related companies, people, sectors, or existing wiki articles when the source supports them.
 - Set `article.slug` to lowercase ASCII only (`a-z`, `0-9`, hyphens). For Chinese titles, derive an English slug from the source URL path or article topic — never use CJK characters in slugs.
+- Set `article.path` to exactly `<wiki-prefix>/<primary-topic>/<article.slug>.md`. Do not invent nested subfolders under a topic (no `tech/ai-infrastructure/...`).
 
 **Harness does**
 

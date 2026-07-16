@@ -15,17 +15,17 @@ topics:
 
 ## 核心观点
 - [[Gavin Baker]] 等专业投资者已将航天产业视为长期成长机会
-- [[SpaceX]] IPO 前景正在改变风险投资与公开市场对航天产业的认知
+- [[hubs/spacex|SpaceX]] IPO 前景正在改变风险投资与公开市场对航天产业的认知
 - 早期进入者将获得显著的价值创造机会
 
 ## 投资者背景
 
 ### [[Gavin Baker]] - Fidelity Select Equity Fund
 - **投资风格**：聚焦长期成长与颠覆性技术
-- **早期投资**：在 [[SpaceX]] 火箭着陆成功 **之前** 就建立重仓
+- **早期投资**：在 [[hubs/spacex|SpaceX]] 火箭着陆成功 **之前** 就建立重仓
 - **投资理由**：相信航天产业正处于指数增长前夜
 
-## [[SpaceX]] 的投资案例
+## [[hubs/spacex|SpaceX]] 的投资案例
 
 ### 商业航天的转折点
 - **火箭可重复使用**：成本显著下降
@@ -60,7 +60,7 @@ topics:
 ## 对标公司与行业格局
 
 ### 航天产业链
-- **火箭发射**：[[SpaceX]], Blue Origin, Relativity Space
+- **火箭发射**：[[hubs/spacex|SpaceX]], Blue Origin, Relativity Space
 - **卫星制造**：Maxar, Planet Labs, Axiom Space
 - **地面基础设施**：Atlas Space Operations
 - **航天服务**：Axiom, Sierra Space, Axiom
@@ -86,10 +86,17 @@ topics:
 - 技术验证的重要性
 
 ## Key Takeaways
-- [[SpaceX]] 的成功已打破传统航天业的成本与效率瓶颈，开启新时代
+- [[hubs/spacex|SpaceX]] 的成功已打破传统航天业的成本与效率瓶颈，开启新时代
 - 商业航天从 "小众投资" 演进为 "主流增长故事"，吸引机构资本
 - 进入门槛与成本曲线的突破为投资者带来了更长的增长跑道
 - 长期投资者已于关键时点布局，等待市场认知转变与 IPO 收益
+
+## 相关文章
+
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[finance/spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]]
+- [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]]
+- [[finance/ai-funding-warning-sign|巨额资金涌入AI，这是一个巨大的危险信号]]
 
 ---
 **Topics**: [[finance/_index|Finance]], [[business/_index|Business]]  

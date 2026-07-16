@@ -114,6 +114,13 @@ topics:
 - 美国需要系统性的教育、再培训、与社会政策创新来应对这一转变
 - 投资者应关注 AI 带来的经济结构调整与长期社会风险
 
+## 相关文章
+
+- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
+- [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
+- [[tech/ai-drug-discovery-2026|AI能否研发出更佳药物？华尔街等不了那么久]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Topic**: [[career/_index|Career]]  

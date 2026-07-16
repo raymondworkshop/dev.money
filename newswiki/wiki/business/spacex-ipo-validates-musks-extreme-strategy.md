@@ -36,6 +36,13 @@ topics:
 - SpaceX and Tesla's "firsts" and "bests" have not only driven business success but also inspired a new wave of hard-tech innovation and investment.
 - Despite controversies and challenges, Musk's relentless pursuit of seemingly impossible goals has fostered a culture of ambition and possibility for future generations.
 
+## 相关文章
+
+- [[business/musk-confidant-gracias-set-for-spacex-windfall|马斯克密友格拉西亚斯有望因SpaceX斩获680亿美元收益]]
+- [[finance/spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]]
+- [[business/starlink-ground-market-challenge|星链已称霸卫星互联网，它能否在地面市场颠覆AT&T和Verizon？]]
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+
 ---
 **Topics**: [[business/_index|Business]], [[tech/_index|Tech]]  
 **Tags**: #SpaceX #ElonMusk #IPO #BusinessStrategy #SpaceExploration #Tesla #Innovation

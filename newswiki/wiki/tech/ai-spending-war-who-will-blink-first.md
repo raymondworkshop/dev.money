@@ -45,6 +45,13 @@ topics:
 - AI支出的放缓或调整将对整个科技硬件供应链产生重大影响。
 - 尽管存在潜在的支出降温迹象，但主要科技巨头在AI领域的长期投入和野心依然巨大。
 
+## 相关文章
+
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]]
+
 ---
 **Topics**: [[tech/_index|Tech]], [[business/_index|Business]]  
 **Tags**: #AI #科技巨头 #资本支出 #云计算

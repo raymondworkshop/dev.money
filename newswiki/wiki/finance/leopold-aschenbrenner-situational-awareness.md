@@ -34,6 +34,13 @@ topics:
 - Jane Street等顶级机构的参与，佐证了SA在量化投资领域的专业度和吸引力。
 - AI时代的成功投资者需要将前沿技术洞察力与成熟的金融执行力相结合。
 
+## 相关文章
+
+- [[finance/jane-street-ai-spotlight|神秘华尔街巨头Jane Street步入AI聚光灯下]]
+- [[business/ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]]
+- [[business/doerr-ai-tsunami|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]]
+- [[finance/2025-global-ultra-high-net-worth-surge|2025年全球超级富豪人数激增]]
+
 ---
 **Topics**: [[finance/_index|Finance]], [[tech/_index|Tech]], [[business/_index|Business]]  
 **Topic**: [[finance/_index|Finance]]  

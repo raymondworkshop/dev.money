@@ -25,6 +25,11 @@ topics:
 - 破除阻碍内部流动的行政壁垒（如Qualtrics推行的调岗免经理批准制），能大幅释放人才创造力和降低人才流失风险。
 - [AI Synthesis] 对个人投资者而言，组织能持续自主培养接班人而非完全依赖外部空降，是评估一家大型企业组织护城河（Institutional Moat）的极其重要定性指标。
 
+## 相关文章
+
+- [[career/2026-04-30-highest-earning-women-lessons|与美国最高收入女性交谈带来的意外启示]]
+- [[career/2026-05-21-first-job-career-guidelines|首份工作到手，你该如何避免开局就“翻车”]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Topic**: [[career/_index|Career]]  

@@ -21,6 +21,10 @@ def _build_parser() -> argparse.ArgumentParser:
     subparsers.add_parser("rebuild-indexes", help="Rebuild topic _index.md from article front matter.")
     subparsers.add_parser("backfill-sources", help="Repair wiki articles with truncated source URLs.")
     subparsers.add_parser("backfill-titles", help="Link wiki H1 titles to source URLs.")
+    subparsers.add_parser(
+        "densify-links",
+        help="Add related-article cross-links and entity hubs for denser backlinks.",
+    )
 
     return parser
 
@@ -107,6 +111,11 @@ def main(argv: list[str] | None = None) -> int:
         for rel_path in updated:
             print(f"[wiki] backfilled title: {rel_path}")
         return 0
+
+    if command == "densify-links":
+        from wiki.densify import main as densify_main
+
+        return densify_main(rest)
 
     print(f"Unknown command: {command}", file=sys.stderr)
     return 1

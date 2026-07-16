@@ -33,6 +33,13 @@ topics:
 - 教师的角色正从知识传授者转变为引导者，需确保课堂成为学生进行‘艰难思考’的阵地。
 - 大规模研究尚在进行中，但早期迹象表明，AI可能加剧或缓解认知能力上的差距。
 
+## 相关文章
+
+- [[business/ai-giants-office-ai-application|一览AI巨头如何在自家办公室应用AI]]
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+- [[tech/ai-digital-doubles-workforce-20260602|工作太多？讓你的AI替身來代勞吧]]
+- [[business/ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]]
+
 ---
 **Topics**: [[tech/_index|Tech]], [[lifestyle/_index|Lifestyle Trends]]  
 **Tags**: #AI #教育技术 #认知科学
