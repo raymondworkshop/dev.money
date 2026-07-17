@@ -54,6 +54,13 @@ topics:
 - 人脉推荐和精准定位目标职位能显著提高求职效率。
 - 即使在职也应维护好领英形象，以应对潜在机会或突发情况。
 
+## 相关文章
+
+- [[career/how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]]
+- [[career/how-to-improve-job-search-success-by-refining-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]]
+- [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Tags**: #LinkedIn #求职 #职业发展

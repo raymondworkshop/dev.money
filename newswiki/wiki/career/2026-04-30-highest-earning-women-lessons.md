@@ -25,6 +25,11 @@ topics:
 - 适度的自我怀疑（不安全感）能促使精英高管不敢松懈、不断自证价值，进而防止自满。
 - [AI Synthesis] 现代人力资源开发和领导力评估应重新审视焦虑和敏感的积极面，不追求完美的‘钝感力’，而应侧重于对负面能量的升华与行动转化率。
 
+## 相关文章
+
+- [[career/2026-05-21-first-job-career-guidelines|首份工作到手，你该如何避免开局就“翻车”]]
+- [[career/2026-03-25-how-top-companies-develop-talent|这些公司更能成就人才，它们是这样做的]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Topic**: [[career/_index|Career]]  

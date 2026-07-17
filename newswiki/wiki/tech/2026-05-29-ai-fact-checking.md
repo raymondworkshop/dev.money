@@ -26,6 +26,13 @@ topics:
 - 使用Claude Code等工具将复杂任务拆解并分配给虚拟多助手协作，正成为企业提高白领效率的标准配置。
 - [AI Synthesis] 随着知识工作流被AI重构，未来的竞争力不再是简单的资料检索，而是多智能体系统的配置、引导及人类对最终关键信息的鉴别力。
 
+## 相关文章
+
+- [[tech/2026-05-28-cheap-humanoid-robots|下一波中国冲击：比二手车还便宜的人形机器人]]
+- [[career/linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]]
+- [[career/2026-05-29-ai-era-soft-skills|AI时代的软技能：“科技男”开始上礼仪课了]]
+- [[career/ai-employment-impact|AI会导致就业末日吗？三位经济学家各抒己见]]
+
 ---
 **Topics**: [[tech/_index|Tech]], [[career/_index|Career]]  
 **Tags**: #ai-employment #ai-workflow #productivity #multi-agent #claude-code

@@ -1,7 +1,8 @@
 #### notes on money  
 
 * ideas  
-    - some applications on finance
+    - some applications on finance  
+    - Artifipedia style?   
      
 * use gpt-5.5 to design, composer-2.5 to implement
     - stocks 

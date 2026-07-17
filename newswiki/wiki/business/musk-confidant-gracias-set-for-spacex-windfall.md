@@ -56,6 +56,13 @@ topics:
 - Valor Equity Partners已发展成为管理590亿美元资产的私募股权公司，投资组合涵盖马斯克旗下及其他知名科技公司。
 - 格拉西亚斯与马斯克之间存在深厚的商业和个人友谊，这种关系贯穿了他们多年的合作历程。
 
+## 相关文章
+
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[finance/spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]]
+- [[business/starlink-ground-market-challenge|星链已称霸卫星互联网，它能否在地面市场颠覆AT&T和Verizon？]]
+- [[business/spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]]
+
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  
 **Tags**: #SpaceX #ElonMusk #VentureCapital #IPO #AntonioGracias

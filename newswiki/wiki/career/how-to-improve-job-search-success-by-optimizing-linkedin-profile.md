@@ -55,6 +55,13 @@ topics:
 - 保持耐心和毅力，即使在求职困难的行业，一个精心维护的领英主页也能在机会来临时发挥重要作用。
 - 警惕网络上的虚假服务，选择可靠的渠道进行领英优化和求职指导。
 
+## 相关文章
+
+- [[career/how-to-improve-job-search-success-by-refining-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]]
+- [[career/how-to-improve-job-search-success-by-optimizing-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]]
+- [[career/how-to-improve-job-success-rate-with-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]]
+- [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Tags**: #linkedin #jobsearch #careerdevelopment

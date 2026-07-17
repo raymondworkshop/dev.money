@@ -9,6 +9,13 @@ AI 对就业的冲击、职业发展、招聘背调、软技能与组织人才�
 - **投资视角**: 人力资本、生产率、行业变迁
 
 ## 相关文章
+- [[career/linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]] (2026-04-13) - AI misuse, soft skills, and hiring trends
+- [[career/how-to-improve-job-success-rate-with-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18) - Practical strategies for optimizing LinkedIn profiles in job search.
+- [[career/how-i-use-llms-as-a-staff-engineer-in-2026|How I use LLMs as a staff engineer in 2026]] (2026-07-16) - Staff engineer's practical guide to AI use in daily development workflows
+- [[career/founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]] (2026-07-14) - Founder market fit as a cultural and personal alignment factor in startup success
+- [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]] (2026-03-03) - Analysis of career tradeoffs in engineering management amid AI and organizational change.
+- [[career/ai-knows-your-online-activity|AI知道你在网上做过什么，现在你的雇主也知道了]] (2026-07-16) - 雇主如何利用AI挖掘员工网络足迹，数字身份管理风险上升。
+- [[lifestyle/amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16) - Prime Video通过粉丝文化与青春剧集联动，打造情感共鸣内容。
 - [[67-age-entrepreneurship|我67岁开始创业，这比退休好太多了]] (2026-06-02) - 探讨了高龄创业的驱动力、优势以及从中获得的经验。
 - [[2026-05-28-cheap-humanoid-robots|下一波中国冲击：比二手车还便宜的人形机器人]] (2026-05-28) - 如果中国制造商能把机器人的价格降得足够低，实用性提得足够高，并实现大规模量产，中国制造业的崛起或将迈入新阶段，整个中国制造体系的成本底线也将被进一步拉低。
 - [[2026-05-29-ai-fact-checking|AI会犯错，但AI也能揪出错误]] (2026-05-20) - 由于聊天机器人会产生“幻觉”并编造事实，一个有效且便捷的方法是用第二个专门挑错的AI来审核结果并纠错。

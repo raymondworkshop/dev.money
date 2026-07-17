@@ -1,10 +1,10 @@
-# dev.business automation
+# dev.business — wiki sync, site, and automation
 
 PYTHON = $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 PYTHONPATH := $(CURDIR)/scripts
 export PYTHONPATH
 
-LLM_PROVIDER ?= mlx
+# Paths
 SOURCE ?= newswiki/raw
 WIKI ?= newswiki/wiki
 ARCHIVE ?= $(SOURCE)/archive
@@ -16,6 +16,9 @@ SITE_PORT ?= 8080
 PAGES_PROJECT ?= news-wiki
 PAGES_BRANCH ?= master
 PAGES_URL ?= https://news-wiki.pages.dev/
+
+# Options
+LLM_PROVIDER ?= mlx
 DRY_RUN ?=
 ALL ?=
 REVIEW ?=
@@ -24,59 +27,38 @@ FILE ?=
 QUESTION ?=
 TICKER ?=
 DEPLOY ?=
+SERVE ?=
 ACTION ?= install
+DENSIFY ?= 1
 
 RUN = $(PYTHON) scripts
-PATH_FLAGS = --source "$(SOURCE)" --wiki "$(WIKI)"
-SYNC_FLAGS = $(PATH_FLAGS) --archive "$(ARCHIVE)"
-QUERY_FLAGS = $(PATH_FLAGS) --outputs "$(OUTPUTS)"
-AUDIT_FLAGS = $(PATH_FLAGS) --outputs "$(OUTPUTS)"
-SYNC_EXTRA = $(if $(DRY_RUN),--dry-run) $(if $(ALL),--all) $(if $(REVIEW),--include-review) $(if $(NO_ARCHIVE),--no-archive) $(if $(FILE),--file "$(FILE)") --provider "$(LLM_PROVIDER)"
-LLM_EXTRA = $(if $(DRY_RUN),--dry-run) --provider "$(LLM_PROVIDER)"
+WIKI_FLAGS = --source "$(SOURCE)" --wiki "$(WIKI)"
+SYNC_FLAGS = $(WIKI_FLAGS) --archive "$(ARCHIVE)" \
+	$(if $(DRY_RUN),--dry-run) $(if $(ALL),--all) $(if $(REVIEW),--include-review) \
+	$(if $(NO_ARCHIVE),--no-archive) $(if $(FILE),--file "$(FILE)") \
+	--provider "$(LLM_PROVIDER)"
+LLM_FLAGS = $(if $(DRY_RUN),--dry-run) --provider "$(LLM_PROVIDER)"
+DENSIFY_FLAGS = --wiki "$(WIKI)" $(if $(DRY_RUN),--dry-run)
 
 .DEFAULT_GOAL := help
-.PHONY: help test venv sync query audit analyze publish \
+.PHONY: help test venv sync densify query audit analyze publish \
 	site site-prepare site-install site-build site-serve site-deploy \
 	rebuild-indexes repair-index-labels backfill-sources backfill-titles launchd
 
 help:
 	@echo "dev.business"
 	@echo ""
-	@echo "Core:"
-	@echo "  make test"
-	@echo "  make sync              raw -> wiki"
+	@echo "  make sync                 raw → wiki → densify (backlinks/hubs)"
 	@echo "  make query QUESTION=\"...\""
 	@echo "  make audit"
 	@echo "  make analyze TICKER=MSFT"
-	@echo "  make publish           sync + build + deploy (MLX)"
-	@echo "  make site              build Quartz site"
+	@echo "  make site                 build Quartz (SERVE=1 | DEPLOY=1)"
+	@echo "  make publish              sync + site deploy"
+	@echo "  make test | make venv | make launchd"
 	@echo ""
-	@echo "Wiki maintenance:"
-	@echo "  make rebuild-indexes   rebuild topic _index.md from article front matter"
-	@echo "  make repair-index-labels  fix INDEX/_index wiki-link display labels"
-	@echo "  make backfill-sources  repair truncated wiki source URLs"
-	@echo "  make backfill-titles   link wiki H1 titles to source URLs"
-	@echo ""
-	@echo "Automation:"
-	@echo "  make launchd           install weekly publish LaunchAgent"
-	@echo "  make venv              create .venv and install requirements"
-	@echo ""
-	@echo "Options (append to sync/query/audit/publish):"
-	@echo "  DRY_RUN=1              validate without writing"
-	@echo "  ALL=1                  include cached sync files"
-	@echo "  REVIEW=1               re-process raw files labeled needs_review"
-	@echo "  NO_ARCHIVE=1           sync without archiving raw"
-	@echo "  FILE=name.md           sync one raw file"
-	@echo "  LLM_PROVIDER=gemini    cloud LLM (falls back to MLX on failure)"
-	@echo "  LLM_PROVIDER=openai    cloud LLM instead of local MLX"
-	@echo ""
-	@echo "Site options:"
-	@echo "  SERVE=1                local preview on SITE_PORT"
-	@echo "  DEPLOY=1               build + deploy to Cloudflare"
-	@echo "  DEPLOY=0               publish: sync only, skip deploy"
-	@echo ""
-	@echo "LaunchAgent: ACTION=unload|test"
-	@echo "Paths: SOURCE= WIKI= ARCHIVE= OUTPUTS= SITE_DIR="
+	@echo "Options: LLM_PROVIDER=mlx|gemini|openai  DRY_RUN=1  ALL=1  REVIEW=1"
+	@echo "         FILE=name.md  NO_ARCHIVE=1  DENSIFY=0  DEPLOY=0|1  SERVE=1"
+	@echo "Maint:   rebuild-indexes  backfill-sources  backfill-titles  densify"
 
 test:
 	$(RUN)/test_suite.py
@@ -85,17 +67,30 @@ venv:
 	@test -x .venv/bin/python || python3 -m venv .venv
 	.venv/bin/pip install -r requirements.txt
 
+# raw → wiki, then densify related links + entity hubs (DENSIFY=0 to skip)
 sync:
 	@mkdir -p logs
 	@echo "=== sync $$(date -Iseconds) LLM_PROVIDER=$(LLM_PROVIDER) ===" | tee -a logs/sync.log
-	@$(RUN)/wiki.py sync $(SYNC_FLAGS) $(SYNC_EXTRA) 2>&1 | tee -a logs/sync.log; exit $${PIPESTATUS[0]}
+	@$(RUN)/wiki.py sync $(SYNC_FLAGS) 2>&1 | tee -a logs/sync.log; \
+		status=$${PIPESTATUS[0]}; \
+		if [ "$(DENSIFY)" != "0" ]; then \
+			echo "=== densify $$(date -Iseconds) ===" | tee -a logs/sync.log; \
+			$(RUN)/wiki.py densify-links $(DENSIFY_FLAGS) 2>&1 | tee -a logs/sync.log; \
+			densify_status=$${PIPESTATUS[0]}; \
+			[ $$status -eq 0 ] || exit $$status; \
+			exit $$densify_status; \
+		fi; \
+		exit $$status
+
+densify densify-links:
+	$(RUN)/wiki.py densify-links $(DENSIFY_FLAGS)
 
 query:
 	@test -n "$(QUESTION)" || (echo 'Usage: make query QUESTION="..."'; exit 1)
-	$(RUN)/wiki.py query $(QUERY_FLAGS) --question "$(QUESTION)" $(LLM_EXTRA)
+	$(RUN)/wiki.py query $(WIKI_FLAGS) --outputs "$(OUTPUTS)" --question "$(QUESTION)" $(LLM_FLAGS)
 
 audit:
-	$(RUN)/wiki.py audit $(AUDIT_FLAGS) $(LLM_EXTRA)
+	$(RUN)/wiki.py audit $(WIKI_FLAGS) --outputs "$(OUTPUTS)" $(LLM_FLAGS)
 
 analyze:
 	@test -n "$(TICKER)" || (echo "Usage: make analyze TICKER=MSFT"; exit 1)
@@ -108,10 +103,10 @@ repair-index-labels:
 	$(RUN)/wiki.py rebuild-indexes --wiki "$(WIKI)" --repair-index-labels
 
 backfill-sources:
-	$(RUN)/wiki.py backfill-sources $(SYNC_FLAGS)
+	$(RUN)/wiki.py backfill-sources $(WIKI_FLAGS) --archive "$(ARCHIVE)"
 
 backfill-titles:
-	$(RUN)/wiki.py backfill-titles $(SYNC_FLAGS)
+	$(RUN)/wiki.py backfill-titles $(WIKI_FLAGS) --archive "$(ARCHIVE)"
 
 publish:
 	DEPLOY="$(DEPLOY)" DRY_RUN="$(DRY_RUN)" LLM_PROVIDER="$(LLM_PROVIDER)" scripts/publish.sh

@@ -37,6 +37,13 @@ topics:
 - Apple's hardware advantage and ecosystem lock-in remain key competitive barriers, but its AI product pipeline lacks independent innovation.
 - OpenAI's move to develop non-smartphone AI devices signals a shift toward device agnosticism, challenging Apple's smartphone dominance.
 
+## 相关文章
+
+- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[tech/coding-agent-harness|Coding Agent Harness]]
+- [[tech/ai-warfare-evolution|Warfare Mode is Changing: Is It Gradual Evolution or a Total Revolution?]]
+- [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
+
 ---
 **Topics**: [[tech/_index|AI 算力、模型、机器人与教育科技]]  
 **Tags**: #ai #openai #apple #siri #ai-competition

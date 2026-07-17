@@ -26,6 +26,11 @@ topics:
 - 多元化配置（如黄金、对冲基金）是应对不确定性的关键。
 - 市场对重大事件的反应滞后，投资者应建立动态监控机制。
 
+## 相关文章
+
+- [[finance/berkshire-and-japanese-builders-see-opportunity-in-us-housing|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]]
+- [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]]
+
 ---
 **Topics**: [[finance/_index|Finance]]  
 **Tags**: #investment #global-crises #risk-management

@@ -43,6 +43,13 @@ topics:
 - Partnerships with major automakers like Stellantis and Nissan signal strong industry confidence in the technology's reliability and safety.
 - The absence of lidar and reliance on visual sensors may reduce deployment barriers for traditional OEMs seeking to enter the autonomous driving market.
 
+## Related Articles
+
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[design/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]]
+- [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]]
+
 ---
 **Topics**: [[tech/ai-autonomous-driving|AI and Autonomous Driving]]  
 **Tags**: #ai #autonomous-driving #wayve #self-driving-cars #end-to-end-ai

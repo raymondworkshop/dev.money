@@ -25,6 +25,11 @@ topics:
 - 职业社交的黑箱暗调（Backchannel reference check）无处不在，第一任期中的为人处世和乐观皮实能为你种下受益十年的口碑种子。
 - [AI Synthesis] 选择第一份工作的本质是买入‘经验期权’。凡是能赋予你端到端全业务流掌控力、以及严厉且务实推荐人背书的机会，都是能让该期权在未来十年大幅行权并获利的高杠杆资产。
 
+## 相关文章
+
+- [[career/2026-04-30-highest-earning-women-lessons|与美国最高收入女性交谈带来的意外启示]]
+- [[career/2026-03-25-how-top-companies-develop-talent|这些公司更能成就人才，它们是这样做的]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Topic**: [[career/_index|Career]]  

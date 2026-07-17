@@ -21,6 +21,11 @@ topics:
 - The lack of stylistic or contextual control in LLMs contributes to user frustration, particularly when the same errors recur across multiple interactions.
 - This raises concerns about the human-AI work interface and the need for better personalization, oversight, and output quality controls in AI-assisted workflows.
 
+## Related Articles
+
+- [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]]
+- [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Tags**: #career #ai-impact #workplace-ai

@@ -80,6 +80,10 @@ topics:
 - 投资者应警惕稳定币集中风险，需等待监管框架完善
 - 政策制定者需在创新支持与风险防控间寻求平衡
 
+## 相关文章
+
+- [[business/founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison|经营硅谷“处方药坊”的中国籍商人在美被判六年监禁]]
+
 ---
 **Topics**: [[finance/_index|Finance]]  
 **Topic**: [[finance/_index|Finance]]  

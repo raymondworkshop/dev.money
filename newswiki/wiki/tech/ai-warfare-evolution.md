@@ -37,6 +37,13 @@ topics:
 - Future military effectiveness depends on agility, decentralized decision-making, and real-time data integration.
 - The future of warfare will likely be defined by the ability to rapidly deploy, update, and adapt autonomous systems in response to evolving threats.
 
+## Related Articles
+
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[business/starlink-ground-market-challenge|星链已称霸卫星互联网，它能否在地面市场颠覆AT&T和Verizon？]]
+- [[tech/coding-agent-harness|Coding Agent Harness]]
+- [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
+
 ---
 **Topics**: [[tech/ai|AI and Autonomous Systems]], [[tech/robotics|Military Robotics]]  
 **Tags**: #ai #autonomous-warfare #drone-operations #military-automation

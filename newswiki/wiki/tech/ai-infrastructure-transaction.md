@@ -28,6 +28,13 @@ topics:
 - 黑石、贝莱德等巨头已通过收购动作进入该领域，显示市场对AI基础设施的长期兴趣。
 - 社区反对和邻避主义成为重大风险，影响项目落地与交易可行性。
 
+## 相关文章
+
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+
 ---
 **Topics**: [[tech/ai-infrastructure-transaction|AI算力基础设施交易]]  
 **Tags**: #ai-infrastructure #data-center #ai-cash-flow #private-equity

@@ -31,6 +31,10 @@ topics:
 - 创业的价值不应仅被经济收益衡量，对于高龄创业者而言，过程本身就是最大的收获。
 - 年龄并非创业的障碍，而是可以被转化为独特的视角和优势的资源。
 
+## 相关文章
+
+- [[career/retirement-reentry-experiences|In America, What Is the Experience of Retiring and Starting a Business Later in Life?]]
+
 ---
 **Topics**: [[business/_index|Business]], [[career/_index|Career]]  
 **Tags**: #retirement #entrepreneurship #aging

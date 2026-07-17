@@ -53,6 +53,10 @@ topics:
 - Work-life balance and time management are critical, with many working 15-40 hours per week.
 - A clear exit strategy and financial contingency are essential for long-term sustainability.
 
+## Related Articles
+
+- [[business/67-age-entrepreneurship|我67岁开始创业，这比退休好太多了]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Tags**: #career #lifestyle #aging #workforce

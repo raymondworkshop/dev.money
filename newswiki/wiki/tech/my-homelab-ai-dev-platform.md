@@ -57,6 +57,13 @@ topics:
 - Leveraging GitOps for streamlined deployments and easier infrastructure management.
 - Identifying limitations in CI feedback integration with Forgejo.
 
+## Related Articles
+
+- [[business/ai-giants-office-ai-application|一览AI巨头如何在自家办公室应用AI]]
+- [[finance/2025-global-ultra-high-net-worth-surge|2025年全球超级富豪人数激增]]
+- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+- [[tech/estonia-ai-education-experiment|如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT]]
+
 ---
 **Topics**: [[tech/_index|Tech]], [[design/_index|Design]]  
 **Tags**: #AI #Homelab #GitOps #OpenCode #DevPlatform

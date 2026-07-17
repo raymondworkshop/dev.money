@@ -9,6 +9,9 @@
 - **投资视角**: 用户粘性、设计护城河、工具链
 
 ## 相关文章
+- [[design/memex-index|Index]] (2026-07-16) - A personal index of digital and creative tools, emphasizing self-expression, privacy, and iterative knowledge curation.
+- [[design/how-to-read-more-books|How to read more books]] (2026-07-12) - A practical guide to building a reading habit through design thinking and daily routines.
+- [[design/5-days-pronunciation-day-5|5 days to improve your pronunciation / Day 5 - You've earned your certificate]] (2026-07-16) - Final day of a 5-day pronunciation challenge with interactive learning and self-assessment.
 - [[my-homelab-ai-dev-platform|My Homelab AI Dev Platform]] (2026-06-14) - Self-hosting OpenCode Web for GitOps style homelab changes.
 - [[Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]] (2026-07-10) - Every Ello session is built around your child — their level, their interests, their pace. See how Ello personalizes reading and math.
 - [[nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] (2026-06-01) - 英伟达将与戴尔、联想和惠普等制造商合作生产这些笔记本电脑，这些电脑专为支持智能体计算而设计。

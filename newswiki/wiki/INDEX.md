@@ -7,25 +7,68 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[tech/_index|Tech]]: AI 算力、模型、机器人与教育科技。
 - [[design/_index|Design]]: 产品设计、科學傳播與體驗設計、人機交互。
 - [[business/_index|Business]]: 公司战略、创业风投、产业政策与商业航天。
-- [[finance/_index|Finance]]: 投资、房地产与财富管理。
+- [[finance/_index|Finance]]: 投资与量化、股票与債券、财富管理与公司估值。
+
 - [[career/_index|Career]]: 职业发展与人事实践。
 - [[lifestyle/_index|Lifestyle]]: 健康、家庭、教育、文化体育趋势、生活方式。
 
 ## Recent Articles
 
+<<<<<<< HEAD
 - [[business/retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14)
 
 - [[lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment|他们千辛万苦从美国移居挪威，如今又要搬回去]] (2026-07-13)
+=======
+- [[lifestyle/panic-pouch-contents|他们说随身带着这些东西可缓解焦虑]] (2026-07-17)
+
+- [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]] (2026-07-17)
+
+- [[finance/paul-regan-fraud-case|骗术大师的自白：我如何骗走投资者5,000万美元]] (2026-06-29)
+
+- [[career/linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]] (2026-04-13)
+
+- [[career/how-to-improve-job-success-rate-with-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18)
+
+- [[finance/interview-fernando-de-leon-10w-to-100m|专访投资大亨费尔南多·德莱昂：如何将10万美元变成10亿美元？]] (2026-06-01)
+
+- [[tech/why-write-code-in-2026|Why write code in 2026]] (2026-07-16)
+
+- [[business/seeing-and-being-seen|Seeing and Being Seen]] (2026-07-02)
+
+- [[design/memex-index|Index]] (2026-07-16)
+
+- [[design/how-to-read-more-books|How to read more books]] (2026-07-12)
+
+- [[career/how-i-use-llms-as-a-staff-engineer-in-2026|How I use LLMs as a staff engineer in 2026]] (2026-07-16)
+
+- [[career/founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]] (2026-07-14)
+
+- [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]] (2026-03-03)
+
+- [[business/doing-something-never-done-before|Doing Something That’s Never Been Done Before]] (2025-11-14)
+
+- [[career/ai-knows-your-online-activity|AI知道你在网上做过什么，现在你的雇主也知道了]] (2026-07-16)
+
+- [[design/5-days-pronunciation-day-5|5 days to improve your pronunciation / Day 5 - You've earned your certificate]] (2026-07-16)
+
+- [[lifestyle/amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16)
+
+- [[business/spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]] (2026-07-16)
+>>>>>>> 4d14bbe303255726952a074822c498544059bb8e
 
 - [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]] (2026-07-14)
 - [[lifestyle/costco-american-consensus|美国人唯一能达成共识的事物？开市客]] (2026-07-14)
 - [[finance/investment-global-crises|如何在全球危机不断的环境下投资]] (2026-07-13)
 - [[tech/ai-drug-discovery-2026|AI能否研发出更佳药物？华尔街等不了那么久]] (2026-07-13)
 - [[design/Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]] (2026-07-10)
-- [[tech/ai-multimodal-ai/ai-food-metadata|Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI]] (2026-07-03)
+
+- [[tech/ai-food-metadata|Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI]] (2026-07-03)
+
 - [[tech/apple-thermonuclear-response-to-openai|Apple's 'Thermocore' Response to OpenAI Threat]] (2026-07-13)
 - [[lifestyle/europe-travel-tips-2026|炎热、拥挤且物价高昂，欧洲之旅如何玩得尽兴？]] (2026-07-13)
-- [[tech/education-tech/science-of-reading-and-evidence-based-math|Science of Reading & Evidence-Based Math]] (2026-07-13)
+
+- [[tech/science-of-reading-and-evidence-based-math|Science of Reading & Evidence-Based Math]] (2026-07-13)
+
 - [[tech/coding-agent-harness|Coding Agent Harness]] (2026-06-30)
 - [[finance/momentum-trading-risk-prevention|How Momentum Traders Can Prevent 'Crashes']](2026-07-10)
 - [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]] (2026-07-10)
@@ -34,7 +77,9 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[career/employee-retention-and-workplace-culture|How a $33/Hour Costco Cashier Built a Million-Dollar Retirement]] (2026-07-09)
 - [[tech/a-road-to-lisp-why-lisp|A road to Lisp: Why Lisp]] (2026-07-09)
 - [[career/llm-burnout-impact|I Think I Have LLM Burnout]] (2026-07-09)
-- [[tech/ai-infrastructure/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]] (2026-07-08)
+
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]] (2026-07-08)
+
 - [[business/founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison|经营硅谷“处方药坊”的中国籍商人在美被判六年监禁]] (2026-07-08)
 - [[career/how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-07-08)
 - [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]] (2026-07-07)
@@ -60,7 +105,9 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[tech/anthropic-accuses-alibaba-of-claude-distillation-attack|Anthropic Accuses Alibaba of Large-Scale Distillation Attack on Claude]] (2026-06-25)
 - [[lifestyle/passive-income-new-american-dream|Forget Working: Passive Income Is the New American Dream]] (2026-06-25)
 - [[finance/gold-silver-bitcoin-plunge-warsh|黄金、白银和比特币大跌]] (2026-06-25)
-- [[tech/AI_in_education/estonia-ai-education-cognitive-decline|AI教育实验：爱沙尼亚的ChatGPT实践]] (2026-06-02)
+
+- [[tech/estonia-ai-education-experiment|AI教育实验：爱沙尼亚的ChatGPT实践]] (2026-06-02)
+
 - [[business/ai-giants-office-ai-application|AI Giants Apply AI in Their Own Offices]] (2026-06-25)
 - [[lifestyle/principles-for-living-operating-system-for-life|Principles For Living: An Operating System for Life]] (2026-06-25)
 - [[finance/ai-funding-warning-sign|巨额资金涌入AI，这是一个巨大的危险信号]] (2026-06-24)
@@ -73,7 +120,11 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[lifestyle/readers-on-having-kids-after-40|关于40岁以后要孩子，读者们怎么说]] (2026-06-23)
 - [[Tech/residential-proxy-attack-2026|美国家庭网络如何沦为黑客隐身衣？]] (2026-06-22)
 - [[Jane Street: 从神秘交易巨头到AI时代的资本力量|Jane Street AI Spotlight]] (2026-06-22)
-- [[tech/ai-llm-fine-tuning/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]] (2026-06-22)
+
+
+
+- [[tech/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]] (2026-06-22)
+
 - [[lifestyle/us-late-parenthood-financial-reality|US Late Parenthood Financial Realities]] (2026-06-16)
 - [[lifestyle/life-philosophy-collection|Life]] (2026-06-13)
 - [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]] (2026-06-18)
@@ -117,28 +168,8 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[finance/2026-05-27-stablecoin-risks|稳定币为何会给经济带来风险]] (2026-05-27)
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] (2026-05-27)
 - [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]] (2026-05-21)
-- [[business/us-biotech-boosts-secrity-to-fight-china-pharma-competition|为防范中国药企跟风，美国生物技术公司加强保密]] (2026-07-10)
-- [[tech/best-books-for-software-engineers|The Best Books I ever read: Suggestions for a software engineer.]] (2026-07-12)
-- [[lifestyle/Tech-Workout-Exercise-Keep|哑铃平板卧推_Keep]] (2026-07-07)
-- [[career/career-life-balance|How to Plan Your Life Successfully]] (2026-06-05)
-- [[business/how-to-earn-a-billion-dollars|How to Earn a Billion Dollars]] (2026-07-07)
-- [[tech/best-simple-system-for-now|Best Simple System for Now]] (2025-02-03)
-- [[business/korean-oil-tanker-magnate-irans-war-profit|Korean Oil Tanker Magnate Makes a Fortune from Iran War]] (2026-07-04)
-- [[business/bezos-trump-blue-origin-contract-surge|How Bezos Learned to Win Over Trump and Secured a Surge of Contracts for Blue Origin]] (2026-07-04)
-- [[lifestyle/NIL-graduation-balls-lifestyle-trend|Elite College Football Players Host Lavish High School Graduation Balls Amid NIL Boom]] (2026-06-29)
-- [[career/xi-jinping-political-control-strategy|Xi Jinping's Use of Stalin and Mao's Strategies to Suppress Dissent]] (2026-07-06)
-- [[design/upper-body-dumbbell-bench-press|Upper Body Dumbbell Bench Press: Step-by-Step Guide for Proper Form]] (2026-07-05)
-- [[tech/ai-gov-escalation/anthropic-5th-ai-gov-escalation|邮件揭秘：Anthropic与五角大楼的关系是如何破裂的]] (2026-07-03)
-- [[business/industrial-defense-legacy|美国工业与国防的联系可追溯至建国之初]] (2026-06-30)
-- [[tech/2026-highest-performing-stocks|盘点2026年上半年标普500指数表现最好的20只股票]] (2026-07-01)
-- [[tech/ai-privacy-protection|如何在AI時代保護我們的私隱？]] (2026-06-24)
-- [[tech/ai-cost-control|Token使用量激增，企业如何控制AI成本？]] (2026-07-01)
-- [[tech/ai-ml-engineering/LangGraph Build Stateful AI Agents in Python]] (2026-06-25)
-- [[Lynas: 从濒临崩盘到西方稀土支柱|Lynas CEO Amanda Lacaze 如何撼动中国主导地位]] (2026-06-19)
-- [[lifestyle/utah-ai-doctor-pilot|犹他州试点“AI医生”，真人医生们坐不住了]] (2026-06-19)
+
+## Philosophy & Framework
 - [[moats|护城河理论]]: 竞争优势的本质与评估方法
 - [[valuation-metrics|估值指标]]: 核心财务指标与估值框架
 - [[risk-analysis|风险分析]]: 系统性与个体风险识别
-## Philosophy & Framework
-
-## Philosophy & Framework

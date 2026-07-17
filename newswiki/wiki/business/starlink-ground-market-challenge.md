@@ -49,6 +49,13 @@ topics:
 - While Starlink has succeeded in satellite broadband, entering the competitive mobile market with its own infrastructure presents significant challenges.
 - SpaceX's history of disrupting industries suggests a serious ambition to transform telecommunications.
 
+## 相关文章
+
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[business/musk-confidant-gracias-set-for-spacex-windfall|马斯克密友格拉西亚斯有望因SpaceX斩获680亿美元收益]]
+- [[finance/spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]]
+- [[tech/ai-warfare-evolution|Warfare Mode is Changing: Is It Gradual Evolution or a Total Revolution?]]
+
 ---
 **Topics**: [[business/_index|Business]], [[tech/_index|Tech]]  
 **Tags**: #Starlink #SpaceX #telecom #satelliteinternet #AT&T #Verizon #T-Mobile

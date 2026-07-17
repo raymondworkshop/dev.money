@@ -1,6 +1,7 @@
 # Archive Status
 
 **Last Updated:** 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
+**Last Updated:** 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -35,7 +36,7 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-06-22-美国家庭网络如何沦为黑客隐身衣？.md                                           | Tech                                                | `newswiki/wiki/Tech/residential-proxy-attack-2026.md`                                         | Archived   |
 | 2026-06-22-神秘华尔街巨头Jane Street步入AI聚光灯下.md                                 | Jane Street: 从神秘交易巨头到AI时代的资本力量                      | `newswiki/wiki/finance/jane-street-ai-spotlight.md`                                           | Archived   |
 | 2026-06-22-哪些事AI做不到，也不该做？.md                                             | AI时代的职业边界：哪些事情AI不该做？                                | `newswiki/wiki/Career/AI时代的职业边界：哪些事情AI不该做？.md`                                                | Archived   |
-| 2026-06-22-Fine Tuning a Local LLM to Categorize Questions.md            | AI/ML Model Fine-Tuning for Question Categorization | `newswiki/wiki/tech/ai-llm-fine-tuning/local-llm-question-categorization.md`                  | Archived   |
+| 2026-06-22-Fine Tuning a Local LLM to Categorize Questions.md            | AI/ML Model Fine-Tuning for Question Categorization | `newswiki/wiki/tech/local-llm-question-categorization.md`                  | Archived   |
 | 2026-06-16-在美国，40岁以后生孩子面临怎样的财务现实？.md                                     | lifestyle                                           | `newswiki/wiki/lifestyle/us-late-parenthood-financial-reality.md`                             | Archived   |
 | 2026-06-13-Life.md                                                       | lifestyle                                           | `newswiki/wiki/lifestyle/life-philosophy-collection.md`                                       | Archived   |
 | 2026-06-18-霍尔木兹危机带给全球经济的五大启示.md                                          | Business                                            | `newswiki/wiki/business/hormuz-crisis-economic-lessons.md`                                    | Archived   |
@@ -103,17 +104,39 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+<<<<<<< HEAD
 | 2026-07-14-9.99美元，如何成为零售业最具魔力的定价？.md | 零售业定价策略 | `newswiki/wiki/business/retail-999-pricing-strategy.md` | Archived |
 | 2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去.md | Lifestyle Trends | `newswiki/wiki/lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment.md` | Archived |
+=======
+| 2026-07-17-他们说随身带着这些东西可缓解焦虑.md | Lifestyle Trends | `newswiki/wiki/lifestyle/panic-pouch-contents.md` | Archived |
+| 2026-07-17-美光科技已成“市场上最重要的股票”，现在该担心了吗？.md | Business | `newswiki/wiki/business/micron-tech-market-importance.md` | Archived |
+| 2026-07-16-骗术大师的自白：我如何骗走投资者5,000万美元.md | Finance | `newswiki/wiki/finance/paul-regan-fraud-case.md` | Archived |
+| 2026-07-16-领英高管揭示职场AI应用的最大误区.md | Career | `newswiki/wiki/career/linkedin-ai-employment-irrationality.md` | Archived |
+| 2026-07-16-如何提升求职成功率？或许你需要精修领英档案.md | Career | `newswiki/wiki/career/how-to-improve-job-success-rate-with-linkedin-profile.md` | Archived |
+| 2026-07-16-专访投资大亨费尔南多·德莱昂：如何将10万美元变成10亿美元？.md | Finance | `newswiki/wiki/finance/interview-fernando-de-leon-10w-to-100m.md` | Archived |
+| 2026-07-16-Why write code in 2026.md | Why write code in 2026 | `newswiki/wiki/tech/why-write-code-in-2026.md` | Archived |
+| 2026-07-16-Seeing and Being Seen.md | Seeing and Being Seen | `newswiki/wiki/business/seeing-and-being-seen.md` | Archived |
+| 2026-07-16-Index.md | Design | `newswiki/wiki/design/memex-index.md` | Archived |
+| 2026-07-16-How to read more books.md | Design: Product Design & Self-Hosted Experiences | `newswiki/wiki/design/how-to-read-more-books.md` | Archived |
+| 2026-07-16-How I use LLMs as a staff engineer in 2026.md | Career: AI in Staff Engineering | `newswiki/wiki/career/how-i-use-llms-as-a-staff-engineer-in-2026.md` | Archived |
+| 2026-07-16-Founders Guide Success may not matter if you aren't doing what you love.md | Career: Founder Market Fit and Long-Term Commitment | `newswiki/wiki/career/founder-market-fit.md` | Archived |
+| 2026-07-16-Don't become an Engineering Manager.md | Career: AI and Engineering Management | `newswiki/wiki/career/dont-become-an-engineering-manager.md` | Archived |
+| 2026-07-16-Doing Something That’s Never Been Done Before.md | Business: Innovation Strategy and First-Mover Advantage | `newswiki/wiki/business/doing-something-never-done-before.md` | Archived |
+| 2026-07-16-AI知道你在网上做过什么，现在你的雇主也知道了.md | AI对就业的冲击与职场数字足迹 | `newswiki/wiki/career/ai-knows-your-online-activity.md` | Archived |
+| 2026-07-16-A road to Lisp Why Lisp.md | Tech: AI and Programming Languages | `newswiki/wiki/tech/a-road-to-lisp-why-lisp.md` | Archived |
+| 2026-07-16-5 days to improve your pronunciation  Day 5 - You've earned your certificate.md | Design | `newswiki/wiki/design/5-days-pronunciation-day-5.md` | Archived |
+| 2026-07-16-亚马逊如何打造《校园之外》等爆款青春剧集.md | Lifestyle Trends | `newswiki/wiki/lifestyle/amazon-off-campus-romance-series.md` | Archived |
+| 2026-07-16-SpaceX股价首次跌破IPO发行价.md | Business | `newswiki/wiki/business/spacex-stocks-below-ipo-price.md` | Archived |
+>>>>>>> 4d14bbe303255726952a074822c498544059bb8e
 | 2026-07-14-美国数据中心开发商计划出售价值数百亿美元的股权.md | AI算力基础设施投资与数据中心股权出售 | `newswiki/wiki/tech/ai-infrastructure-transaction.md` | Archived |
 | 2026-07-14-美国人唯一能达成共识的事物？开市客.md | lifestyle | `newswiki/wiki/lifestyle/costco-american-consensus.md` | Archived |
 | 2026-07-14-如何在全球危机不断的环境下投资.md | Investment in a World of Increasing Global Crises | `newswiki/wiki/finance/investment-global-crises.md` | Archived |
 | 2026-07-13-AI能否研发出更佳药物？华尔街等不了那么久.md | tech | `newswiki/wiki/tech/ai-drug-discovery-2026.md` | Archived |
 | 2026-07-10-Ello Listens, Adapts & Responds in Real Time.md | Product Design | `newswiki/wiki/design/Product-Design-Ello-Real-Time-Response.md` | Archived |
-| 2026-07-14-Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI.md | AI and Multimodal Systems | `newswiki/wiki/tech/ai-multimodal-ai/ai-food-metadata.md` | Archived |
+| 2026-07-14-Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI.md | AI and Multimodal Systems | `newswiki/wiki/tech/ai-food-metadata.md` | Archived |
 | 2026-07-13-苹果祭出“热核”反击，迎战OpenAI威胁.md | AI 算力、模型、机器人与教育科技 | `newswiki/wiki/tech/apple-thermonuclear-response-to-openai.md` | Archived |
 | 2026-07-13-炎热、拥挤且物价高昂，欧洲之旅如何玩得尽兴？.md | lifestyle | `newswiki/wiki/lifestyle/europe-travel-tips-2026.md` | Archived |
-| 2026-07-13-Science of Reading & Evidence-Based Math.md | Education Technology | `newswiki/wiki/tech/education-tech/science-of-reading-and-evidence-based-math.md` | Archived |
+| 2026-07-13-Science of Reading & Evidence-Based Math.md | Education Technology | `newswiki/wiki/tech/science-of-reading-and-evidence-based-math.md` | Archived |
 | 2026-07-11-Coding Agent Harness.md | Coding Agent Harness | `newswiki/wiki/tech/coding-agent-harness.md` | Archived |
 | 2026-07-10-动量交易如何防“崩盘”：盘点10只可买入与10只应避开的股票.md | Investment Strategy and Risk Management | `newswiki/wiki/finance/momentum-trading-risk-prevention.md` | Archived |
 | 2026-07-10-伊朗战争中出现了一位大赢家：非洲首富.md | Business | `newswiki/wiki/business/iran-war-winner-african-billionaire.md` | Archived |
@@ -122,7 +145,7 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-07-09-时薪33美元的开市客收银员，如何攒出百万身家？.md | Career: Employee Retention and Workplace Culture | `newswiki/wiki/career/employee-retention-case-study.md` | Archived |
 | 2026-07-10-A road to Lisp Why Lisp.md | AI 算力、模型、机器人与教育科技 | `newswiki/wiki/tech/a-road-to-lisp-why-lisp.md` | Archived |
 | 2026-07-09-I Think I Have LLM Burnout.md | Career: AI and Workforce Impact | `newswiki/wiki/career/llm-burnout-impact.md` | Archived |
-| 2026-07-08-诺基亚的新篇章：成为AI数据中心的供应商.md | AI Infrastructure and Data Center Solutions | `newswiki/wiki/tech/ai-infrastructure/nokia-ai-datacenter-infrastructure.md` | Archived |
+| 2026-07-08-诺基亚的新篇章：成为AI数据中心的供应商.md | AI Infrastructure and Data Center Solutions | `newswiki/wiki/tech/nokia-ai-datacenter-infrastructure.md` | Archived |
 | 2026-07-08-经营硅谷“处方药坊”的中国籍商人在美被判六年监禁.md | Business | `newswiki/wiki/business/founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison.md` | Archived |
 | 2026-07-08-如何提升求职成功率？或许你需要精修领英档案.md | Career | `newswiki/wiki/Career/how-to-improve-job-search-success-by-optimizing-linkedin-profile.md` | Archived |
 | 2026-07-08-人工智能领域的支出大战，最终会有人让步吗？.md | Tech | `newswiki/wiki/tech/ai-spending-war-who-will-blink-first.md` | Archived |
@@ -149,7 +172,7 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-06-26-Anthropic指控阿里巴巴对Claude进行了大规模蒸馏攻击.md | AI Model Security and Distillation Attacks | `newswiki/wiki/tech/anthropic-accuses-alibaba-of-claude-distillation-attack.md` | Archived |
 | 2026-06-25-忘掉打工吧，被动收入才是新的美国梦.md | Lifestyle Trends | `newswiki/wiki/lifestyle/passive-income-new-american-dream.md` | Archived |
 | 2026-06-25-黄金、白银和比特币大跌，愤怒投资者可以怪罪凯文·沃什.md | Finance | `newswiki/wiki/finance/gold-silver-bitcoin-plunge-warsh.md` | Archived |
-| 2026-06-02-如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT.md | AI在教育中的应用与挑战 | `newswiki/wiki/tech/AI_in_education/estonia-ai-education-cognitive-decline.md` | Archived |
+| 2026-06-02-如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT.md | AI在教育中的应用与挑战 | `newswiki/wiki/tech/estonia-ai-education-experiment.md` | Archived |
 | 2026-06-25-一览AI巨头如何在自家办公室应用AI.md | Business | `newswiki/wiki/Business/ai-giants-office-ai-application.md` | Archived |
 | 2026-06-25-Principles For Living An Operating System for Life.md | lifestyle | `newswiki/wiki/lifestyle/principles-for-living-operating-system-for-life.md` | Archived |
 | 2026-06-24-巨额资金涌入AI，这是一个巨大的危险信号.md | Finance | `newswiki/wiki/finance/ai-funding-warning-sign.md` | Archived |

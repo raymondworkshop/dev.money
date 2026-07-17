@@ -25,6 +25,13 @@ topics:
 - 夸张的对外宣传估值有助于快速确立市场领导者地位并吸引顶尖人才，但也增加了企业日后通过IPO等主流通道变现的行权及财务退出壁垒。
 - [AI Synthesis] 评估AI初创公司的真实护城河，不能依赖对外吹嘘的投融资估值，而应将目光锁定在其实际的营业利润、客户流失率和真实的经常性收入（ARR）乘数上。
 
+## 相关文章
+
+- [[business/2026-03-11-aaru-ai-simulates-human-behavior|靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后]]
+- [[tech/2026-05-29-ai-film-cannes-compute-costs|AI长片在戛纳首映：50万美元制作成本，算力支出占40万]]
+- [[career/2026-05-29-ai-era-soft-skills|AI时代的软技能：“科技男”开始上礼仪课了]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  
 **Tags**: #ai-infrastructure #venture-capital #startup-valuation #serval #aaru #sequoia

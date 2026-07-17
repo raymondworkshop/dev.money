@@ -25,6 +25,10 @@ topics:
 - 清晰的方向是达成目标的关键，无论过程多缓慢。
 - 拥抱变化，保持学习的心态，并为自己的选择负责。
 
+## 相关文章
+
+- [[lifestyle/principles-for-living-operating-system-for-life|Principles For Living: An Operating System for Life]]
+
 ---
 **Topics**: [[lifestyle/_index|Lifestyle Trends]]  
 **Tags**: #philosophy #existence #mindfulness

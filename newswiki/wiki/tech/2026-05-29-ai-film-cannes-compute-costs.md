@@ -18,13 +18,20 @@ topics:
 - 由于AI底层生成模型的预测难度大且物理交互多有瑕疵，要制作画风和逻辑连贯的长片，需要极长、极其复杂的结构化提示词（平均每段提示词长达3000字，利用Higgsfield自身的自动化提示词工具生成）。
 - 仅本片前25分钟就进行了16,181次初步视频生成，最终筛选出253个成片镜头，每次生成15秒，经历海量废弃与反复微调。
 - Higgsfield不研发底层视频模型（依赖谷歌的[[Veo 3]]等现有工具），而是研发并销售确保视觉连贯的工具套件，其营收年化预估值在2026年5月突破4亿美元，估值达13亿美元。
-- 为了降低海量生成的算力开支，Higgsfield选择与[[Nebius]]和[[CoreWeave]]等‘新型云’（neocloud）服务提供商合作，绕过了昂贵的超大规模云厂商（Hyperscalers）。
+- 为了降低海量生成的算力开支，Higgsfield选择与[[hubs/nebius|Nebius]]和[[hubs/coreweave|CoreWeave]]等‘新型云’（neocloud）服务提供商合作，绕过了昂贵的超大规模云厂商（Hyperscalers）。
 - [AI Synthesis] 视频生成应用爆发导致了计算需求的几何级数增加，算力开销成为极度依赖生成质量的数字创意产业的绝对成本大头。这极大地充实了第三方基础设施（Neoclouds）的市场机会，并在算力端构建了实质壁垒。
 
 ## Key Takeaways
 - 《Hell Grind》标志着AI长片电影进入工业化量产前夜，算力成本取代传统人力和设备，占总制片成本的80%。
 - AI影视制作仍然高度依赖镜头构图、切换、物理阴影掌控等高水平的人类导演与专业电影技术底蕴。
 - [AI Synthesis] 新型GPU云服务商（Neocloud）在满足高算力弹性需求且性价比高于传统云巨头方面，正在构建极其稳固的垂直算力供应链护城河。
+
+## 相关文章
+
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[finance/jane-street-ai-spotlight|神秘华尔街巨头Jane Street步入AI聚光灯下]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]]
 
 ---
 **Topics**: [[tech/_index|Tech]]  

@@ -35,6 +35,10 @@ topics:
 - The design emphasizes emotional engagement, effort-based motivation, and pedagogical rigor.
 - It combines AI personalization with human-like teaching behaviors to improve learning outcomes and retention.
 
+## Related Articles
+
+- [[design/how-to-read-more-books|How to read more books]]
+
 ---
 **Topics**: [[design/_index|Product Design]]  
 **Tags**: #product-design #ai-education #child-learning

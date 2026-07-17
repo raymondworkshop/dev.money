@@ -34,6 +34,12 @@ topics:
 - The project demonstrates long-term capital allocation and risk mitigation through diversification and local supply chain development.
 - Despite supply constraints, the refinery's success highlights the potential for African infrastructure to become a global energy hub.
 
+## Related Articles
+
+- [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
+- [[finance/berkshire-and-japanese-builders-see-opportunity-in-us-housing|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]]
+- [[finance/investment-global-crises|如何在全球危机不断的环境下投资]]
+
 ---
 **Topics**: [[business/_index|Business]]  
 **Tags**: #business #energy #africa #investment

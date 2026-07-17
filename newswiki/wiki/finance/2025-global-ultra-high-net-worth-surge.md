@@ -31,6 +31,13 @@ topics:
 - Wealth is increasingly concentrating at the top, with billionaires and the top 0.001% seeing disproportionately high wealth growth.
 - The US leads in UHNW population, followed by China and Germany, with New York City as the top metropolitan hub.
 
+## 相关文章
+
+- [[business/ai-giants-office-ai-application|一览AI巨头如何在自家办公室应用AI]]
+- [[finance/leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]]
+- [[finance/jane-street-ai-spotlight|神秘华尔街巨头Jane Street步入AI聚光灯下]]
+- [[tech/my-homelab-ai-dev-platform|My Homelab AI Dev Platform]]
+
 ---
 **Topics**: [[finance/_index|Finance]], [[business/_index|Business]]  
 **Tags**: #wealth #investing #AI #inequality

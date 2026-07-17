@@ -55,6 +55,13 @@ topics:
 - The AI boom has provided a significant economic boost, particularly for Asian tech exporters, counteracting the negative effects of the energy crisis.
 - Countries with high exposure to the Hormuz Strait, like China and other Asian economies, have shown remarkable resilience.
 
+## 相关文章
+
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[business/2026-05-28-drone-investment|特朗普政府正就注资国内无人机公司进行谈判]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]]
+
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  
 **Tags**: #energy #geopolitics #economics #technology #supplychain

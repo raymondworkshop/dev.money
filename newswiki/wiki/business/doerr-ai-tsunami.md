@@ -33,6 +33,13 @@ topics:
 - 成功的创业需要独特的愿景、强大的执行团队和早期信念的坚持。
 - 风投的成功在于早期识别并押注于人力资本的潜力。
 
+## 相关文章
+
+- [[business/ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]]
+- [[finance/jane-street-ai-spotlight|神秘华尔街巨头Jane Street步入AI聚光灯下]]
+- [[finance/leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]]
+- [[business/ai-giants-office-ai-application|一览AI巨头如何在自家办公室应用AI]]
+
 ---
 **Topics**: [[business/_index|Business]], [[tech/_index|Tech]]  
 **Tags**: #AI #VentureCapital #Disruption

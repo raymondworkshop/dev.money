@@ -30,6 +30,13 @@ topics:
 - 13,500美元（约合二手车价格）的极低售价是推动商业化普及的颠覆性临界点。
 - [AI Synthesis] 制造型企业的投资决策应紧密跟踪人形机器人核心零部件供应链（执行器、减速器、传感器等），这些领域的价值捕获将先于整机品牌爆发。
 
+## 相关文章
+
+- [[tech/2026-05-29-ai-fact-checking|AI会犯错，但AI也能揪出错误]]
+- [[career/2026-04-03-ai-created-new-jobs|诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？]]
+- [[business/2026-03-11-aaru-ai-simulates-human-behavior|靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后]]
+- [[career/2026-05-29-ai-era-soft-skills|AI时代的软技能：“科技男”开始上礼仪课了]]
+
 ---
 **Topics**: [[tech/_index|Tech]], [[career/_index|Career]]  
 **Tags**: #ai-employment #humanoid-robots #manufacturing #china #supply-chain

@@ -30,6 +30,13 @@ topics:
 - 成功的创业需要技术、团队和愿景的完美结合。
 - 风投的本质是押注于人力资本的潜力。
 
+## 相关文章
+
+- [[business/doerr-ai-tsunami|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]]
+- [[finance/jane-street-ai-spotlight|神秘华尔街巨头Jane Street步入AI聚光灯下]]
+- [[finance/leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]]
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+
 ---
 **Topics**: [[business/_index|Business]], [[tech/_index|Technology]]  
 **Tags**: #AI #VentureCapital #Innovation
