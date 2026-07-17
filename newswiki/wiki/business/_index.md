@@ -9,6 +9,7 @@
 - **投资视角**: 护城河、市占、资本效率
 
 ## 相关文章
+- [[retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14) - 探讨零售企业如何通过心理定价策略吸引消费者，涉及包装优化、成本控制与市场定位。
 - [[us-biotech-boosts-secrity-to-fight-china-pharma-competition|为防范中国药企跟风，美国生物技术公司加强保密]] (2026-07-10) - U.S. biotech firms are implementing stricter confidentiality to counter Chinese drug development replication.
 - [[2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]] (2026-02-23) - 对热门AI初创公司的投资争夺战已导致投资者之间的交易条款出现差异，从而引发了外界对这些公司真实价值的质疑。
 - [[2026-03-11-aaru-ai-simulates-human-behavior|靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后]] (2026-03-11) - Aaru背后的团队正吸引包括麦当劳和安永在内的品牌客户，该公司押注AI机器人能够比人类更准确地预测人类行为。

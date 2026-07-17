@@ -18,15 +18,13 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
+- [[business/retail-999-pricing-strategy|9.99美元，如何成爲零售業最具魔力的定價？]] (2026-07-14)
+- [[lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment|他們千辛萬苦從美國移居挪威，如今又要搬回去]] (2026-07-13)
 - [[tech/ai-infrastructure-transaction|美國數據中心開發商計劃出售價值數百億美元的股權]] (2026-07-14)
 - [[lifestyle/costco-american-consensus|美國人唯一能達成共識的事物？開市客]] (2026-07-14)
 - [[finance/investment-global-crises|如何在全球危機不斷的環境下投資]] (2026-07-13)
-- [[tech/ai-drug-discovery-2026|AI能否研發出更佳藥物？華爾街等不了那麼久]] (2026-07-13)
-- [[design/Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]] (2026-07-10)
 - [[articles|More]]
 
 ## Philosophy & Framework
 
-- [[moats|護城河理論]]: 競爭優勢的本質與評估方法
-- [[valuation-metrics|估值指標]]: 核心財務指標與估值框架
-- [[risk-analysis|風險分析]]: 系統性與個體風險識別
+## Philosophy & Framework
