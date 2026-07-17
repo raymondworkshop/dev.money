@@ -14,6 +14,38 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
+- [[lifestyle/panic-pouch-contents|他们说随身带着这些东西可缓解焦虑]] (2026-07-17)
+
+- [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]] (2026-07-17)
+
+- [[finance/paul-regan-fraud-case|骗术大师的自白：我如何骗走投资者5,000万美元]] (2026-06-29)
+
+- [[career/linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]] (2026-04-13)
+
+- [[career/how-to-improve-job-success-rate-with-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18)
+
+- [[finance/interview-fernando-de-leon-10w-to-100m|专访投资大亨费尔南多·德莱昂：如何将10万美元变成10亿美元？]] (2026-06-01)
+
+- [[tech/why-write-code-in-2026|Why write code in 2026]] (2026-07-16)
+
+- [[business/seeing-and-being-seen|Seeing and Being Seen]] (2026-07-02)
+
+- [[design/memex-index|Index]] (2026-07-16)
+
+- [[design/how-to-read-more-books|How to read more books]] (2026-07-12)
+
+- [[career/how-i-use-llms-as-a-staff-engineer-in-2026|How I use LLMs as a staff engineer in 2026]] (2026-07-16)
+
+- [[career/founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]] (2026-07-14)
+
+- [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]] (2026-03-03)
+
+- [[business/doing-something-never-done-before|Doing Something That’s Never Been Done Before]] (2025-11-14)
+
+- [[career/ai-knows-your-online-activity|AI知道你在网上做过什么，现在你的雇主也知道了]] (2026-07-16)
+
+- [[design/5-days-pronunciation-day-5|5 days to improve your pronunciation / Day 5 - You've earned your certificate]] (2026-07-16)
+
 - [[lifestyle/amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16)
 
 - [[business/spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]] (2026-07-16)
@@ -135,6 +167,3 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[moats|护城河理论]]: 竞争优势的本质与评估方法
 - [[valuation-metrics|估值指标]]: 核心财务指标与估值框架
 - [[risk-analysis|风险分析]]: 系统性与个体风险识别
-## Philosophy & Framework
-
-## Philosophy & Framework

@@ -241,13 +241,10 @@ Canonical topics (pick exactly one as primary; add canonical secondaries only wh
 Do not invent new topic slugs. If none fit well, return action "needs_review" with rationale.
 
 article.slug must be lowercase ASCII only (a-z, 0-9, hyphens). For Chinese titles, derive an English slug from the source URL path or article topic — never use CJK characters in slugs.
-<<<<<<< HEAD
-article.path must be exactly `{wiki}/{primary-topic}/{article.slug}.md` — flat under one canonical topic. Do not invent nested folders like tech/ai-infrastructure/....
+article.path must be exactly `{WIKI_PREFIX}/{{primary-topic}}/{{article.slug}}.md` — flat under one canonical topic. Do not invent nested folders like tech/ai-infrastructure/....
 
 Linking: include at least 2-4 resolvable [[wiki links]] in bullets/takeaways when grounded in the source. Prefer [[topic/existing-article-slug|Title]] or [[hubs/entity|Name]] over bare unresolved names.
-=======
 Preserve the source article language throughout: article.title, front_matter, section headings, bullets, and key_takeaways must match the raw language. Do not translate or rename titles.
->>>>>>> b020561d1835ba9679a98313380684ae22d4fea3
 
 {language_hint}
 

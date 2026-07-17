@@ -1,10 +1,6 @@
 # Archive Status
 
-<<<<<<< HEAD
-**Last Updated:** 2026-07-16 2026-07-16 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-09 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-07 2026-07-02 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-30 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-25 2026-06-24 2026-06-24 2026-06-24 2026-06-24 2026-06-23 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-22 2026-06-14 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-12 2026-06-09 2026-06-09 2026-06-09 2026-06-09 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-30 2026-05-28
-=======
-**Last Updated:** 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
->>>>>>> b020561d1835ba9679a98313380684ae22d4fea3
+**Last Updated:** 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -107,6 +103,23 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-07-17-他们说随身带着这些东西可缓解焦虑.md | Lifestyle Trends | `newswiki/wiki/lifestyle/panic-pouch-contents.md` | Archived |
+| 2026-07-17-美光科技已成“市场上最重要的股票”，现在该担心了吗？.md | Business | `newswiki/wiki/business/micron-tech-market-importance.md` | Archived |
+| 2026-07-16-骗术大师的自白：我如何骗走投资者5,000万美元.md | Finance | `newswiki/wiki/finance/paul-regan-fraud-case.md` | Archived |
+| 2026-07-16-领英高管揭示职场AI应用的最大误区.md | Career | `newswiki/wiki/career/linkedin-ai-employment-irrationality.md` | Archived |
+| 2026-07-16-如何提升求职成功率？或许你需要精修领英档案.md | Career | `newswiki/wiki/career/how-to-improve-job-success-rate-with-linkedin-profile.md` | Archived |
+| 2026-07-16-专访投资大亨费尔南多·德莱昂：如何将10万美元变成10亿美元？.md | Finance | `newswiki/wiki/finance/interview-fernando-de-leon-10w-to-100m.md` | Archived |
+| 2026-07-16-Why write code in 2026.md | Why write code in 2026 | `newswiki/wiki/tech/why-write-code-in-2026.md` | Archived |
+| 2026-07-16-Seeing and Being Seen.md | Seeing and Being Seen | `newswiki/wiki/business/seeing-and-being-seen.md` | Archived |
+| 2026-07-16-Index.md | Design | `newswiki/wiki/design/memex-index.md` | Archived |
+| 2026-07-16-How to read more books.md | Design: Product Design & Self-Hosted Experiences | `newswiki/wiki/design/how-to-read-more-books.md` | Archived |
+| 2026-07-16-How I use LLMs as a staff engineer in 2026.md | Career: AI in Staff Engineering | `newswiki/wiki/career/how-i-use-llms-as-a-staff-engineer-in-2026.md` | Archived |
+| 2026-07-16-Founders Guide Success may not matter if you aren't doing what you love.md | Career: Founder Market Fit and Long-Term Commitment | `newswiki/wiki/career/founder-market-fit.md` | Archived |
+| 2026-07-16-Don't become an Engineering Manager.md | Career: AI and Engineering Management | `newswiki/wiki/career/dont-become-an-engineering-manager.md` | Archived |
+| 2026-07-16-Doing Something That’s Never Been Done Before.md | Business: Innovation Strategy and First-Mover Advantage | `newswiki/wiki/business/doing-something-never-done-before.md` | Archived |
+| 2026-07-16-AI知道你在网上做过什么，现在你的雇主也知道了.md | AI对就业的冲击与职场数字足迹 | `newswiki/wiki/career/ai-knows-your-online-activity.md` | Archived |
+| 2026-07-16-A road to Lisp Why Lisp.md | Tech: AI and Programming Languages | `newswiki/wiki/tech/a-road-to-lisp-why-lisp.md` | Archived |
+| 2026-07-16-5 days to improve your pronunciation  Day 5 - You've earned your certificate.md | Design | `newswiki/wiki/design/5-days-pronunciation-day-5.md` | Archived |
 | 2026-07-16-亚马逊如何打造《校园之外》等爆款青春剧集.md | Lifestyle Trends | `newswiki/wiki/lifestyle/amazon-off-campus-romance-series.md` | Archived |
 | 2026-07-16-SpaceX股价首次跌破IPO发行价.md | Business | `newswiki/wiki/business/spacex-stocks-below-ipo-price.md` | Archived |
 | 2026-07-14-美国数据中心开发商计划出售价值数百亿美元的股权.md | AI算力基础设施投资与数据中心股权出售 | `newswiki/wiki/tech/ai-infrastructure-transaction.md` | Archived |

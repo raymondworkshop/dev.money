@@ -29,9 +29,9 @@ topics:
 ## 相关文章
 
 - [[tech/2026-05-28-cheap-humanoid-robots|下一波中国冲击：比二手车还便宜的人形机器人]]
+- [[career/linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]]
 - [[career/2026-05-29-ai-era-soft-skills|AI时代的软技能：“科技男”开始上礼仪课了]]
 - [[career/ai-employment-impact|AI会导致就业末日吗？三位经济学家各抒己见]]
-- [[career/2026-04-03-ai-created-new-jobs|诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？]]
 
 ---
 **Topics**: [[tech/_index|Tech]], [[career/_index|Career]]  

@@ -9,6 +9,7 @@
 - **投资视角**: 长期主题、品牌与生活方式赛道
 
 ## 相关文章
+- [[lifestyle/panic-pouch-contents|他们说随身带着这些东西可缓解焦虑]] (2026-07-17) - Personal anxiety coping strategies and cultural trends in self-care items.
 - [[lifestyle/amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16) - Prime Video通过粉丝文化与青春剧集联动，打造情感共鸣内容。
 - [[costco-american-consensus|美国人唯一能达成共识的事物？开市客]] (2026-07-14) - A shared cultural ritual at Costco reflects a deeper American value in practicality and community bonding.
 - [[estonia-ai-education-experiment|如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT]] (2026-06-02) - 爱沙尼亚向近两万名学生免费提供ChatGPT，观察AI在教育中大规模引入对学生推理能力、记忆能力和自信心产生的影响。

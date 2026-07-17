@@ -46,9 +46,9 @@ topics:
 ## 相关文章
 
 - [[career/2026-05-29-ai-era-soft-skills|AI时代的软技能：“科技男”开始上礼仪课了]]
+- [[career/linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]]
 - [[career/2026-04-03-ai-created-new-jobs|诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？]]
 - [[business/2026-03-11-aaru-ai-simulates-human-behavior|靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后]]
-- [[tech/2026-05-29-ai-fact-checking|AI会犯错，但AI也能揪出错误]]
 
 ---
 **Topics**: [[career/ai-employment-impact|AI对就业的冲击]]  

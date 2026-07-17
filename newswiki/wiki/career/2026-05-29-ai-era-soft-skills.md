@@ -27,10 +27,10 @@ topics:
 
 ## 相关文章
 
+- [[career/linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]]
 - [[career/ai-employment-impact|AI会导致就业末日吗？三位经济学家各抒己见]]
 - [[career/2026-04-03-ai-created-new-jobs|诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？]]
 - [[business/2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]]
-- [[tech/2026-05-29-ai-fact-checking|AI会犯错，但AI也能揪出错误]]
 
 ---
 **Topics**: [[career/_index|Career]]  

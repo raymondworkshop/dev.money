@@ -9,6 +9,8 @@
 - **投资视角**: 现金流、杠杆、风险回报
 
 ## 相关文章
+- [[finance/paul-regan-fraud-case|骗术大师的自白：我如何骗走投资者5,000万美元]] (2026-06-29) - A detailed case of financial fraud involving psychological manipulation and false insurance claims.
+- [[finance/interview-fernando-de-leon-10w-to-100m|专访投资大亨费尔南多·德莱昂：如何将10万美元变成10亿美元？]] (2026-06-01) - Investment strategy and wealth accumulation during market downturns
 - [[investment-global-crises|如何在全球危机不断的环境下投资]] (2026-07-13) - Investment strategies in a high-risk, volatile global environment.
 - [[2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]] (2026-02-23) - 对热门AI初创公司的投资争夺战已导致投资者之间的交易条款出现差异，从而引发了外界对这些公司真实价值的质疑。
 - [[45-million-donation-larry-ellison-trump-inner-circle|一笔4,500万美元的捐款如何让拉里·埃里森深入特朗普核心圈？]] (2026-06-24) - 这位亿万富豪与特朗普的私人友谊，为甲骨文公司的业务及其子的媒体集团带来了助力。

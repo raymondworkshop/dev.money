@@ -23,6 +23,7 @@ topics:
 
 ## Related Articles
 
+- [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]]
 - [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]]
 
 ---

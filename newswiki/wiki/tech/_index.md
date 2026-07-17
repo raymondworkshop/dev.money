@@ -9,6 +9,8 @@ AI 基础设施、算力云、模型技术、机器人、教育科技与生产�
 - **投资视角**: 算力需求、技术迭代、供应链
 
 ## 相关文章
+- [[tech/why-write-code-in-2026|Why write code in 2026]] (2026-07-16) - A human-centered argument for direct code writing in AI-driven software development.
+- [[tech/a-road-to-lisp-why-lisp|A road to Lisp: Why Lisp]] (2026-07-09) - A deep dive into Lisp's extensibility, REPL, and live code development.
 - [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]] (2026-07-14) - AI算力基础设施资本化趋势与社区风险
 - [[tech/ai-drug-discovery-2026|AI能否研发出更佳药物？华尔街等不了那么久]] (2026-07-13) - AI已进入药物实验室，但华尔街仍在等待成药成功率与回报证据。
 - [[2026-03-11-aaru-ai-simulates-human-behavior|靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后]] (2026-03-11) - Aaru背后的团队正吸引包括麦当劳和安永在内的品牌客户，该公司押注AI机器人能够比人类更准确地预测人类行为。

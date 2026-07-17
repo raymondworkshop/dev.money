@@ -37,9 +37,9 @@ topics:
 ## 相关文章
 
 - [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]]
 - [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
 - [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
-- [[finance/warsh-ai-renaissance-diagnosis|新任美联储主席沃什的首场大考：如何判读AI繁荣？]]
 
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  

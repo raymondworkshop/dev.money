@@ -9,6 +9,9 @@
 - **投资视角**: 护城河、市占、资本效率
 
 ## 相关文章
+- [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]] (2026-07-17) - 讨论美光科技在AI供应链中的市场地位与估值压力
+- [[business/seeing-and-being-seen|Seeing and Being Seen]] (2026-07-02) - A personal reflection on the nature of attention in digital society, its economic and psychological impacts, and the risks of unregulated visibility.
+- [[business/doing-something-never-done-before|Doing Something That’s Never Been Done Before]] (2025-11-14) - Strategy for achieving first-mover advantage through obscurity, time, and complexity.
 - [[spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]] (2026-07-16) - 股价跌破发行价，市场热情降温，绿鞋期权已行使。
 - [[2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]] (2026-02-23) - 对热门AI初创公司的投资争夺战已导致投资者之间的交易条款出现差异，从而引发了外界对这些公司真实价值的质疑。
 - [[2026-03-11-aaru-ai-simulates-human-behavior|靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后]] (2026-03-11) - Aaru背后的团队正吸引包括麦当劳和安永在内的品牌客户，该公司押注AI机器人能够比人类更准确地预测人类行为。

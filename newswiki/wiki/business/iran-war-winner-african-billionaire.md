@@ -37,7 +37,6 @@ topics:
 ## Related Articles
 
 - [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
-- [[finance/paul-regan-fraud-case|Paul Regan's Fraud Case: How He Deceived Investors of $5 Million]]
 - [[finance/berkshire-and-japanese-builders-see-opportunity-in-us-housing|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]]
 - [[finance/investment-global-crises|如何在全球危机不断的环境下投资]]
 
