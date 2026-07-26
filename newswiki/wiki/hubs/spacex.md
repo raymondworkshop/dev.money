@@ -11,6 +11,7 @@ Curated hub for articles related to SpaceX.
 
 ## 相关文章
 
+- [[business/blue-origin-trump-contract-surge|How Bezos Learned to Win Over Trump and Secured a Surge of Contracts for Blue Origin]] · #business
 - [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]] · #business
 - [[finance/spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]] · #finance
 - [[business/spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]] · #business

@@ -33,3 +33,7 @@ topics:
 ---
 **主题**: [[business/retail-pricing|零售业定价策略]]  
 **标签**: #retail #pricing #consumer-behavior #psychology
+
+## 相关文章
+
+- [[business/2026-03-11-aaru-ai-simulates-human-behavior|靠“预测人类”估值10亿：这家新晋AI独角兽背后是一群00后]]

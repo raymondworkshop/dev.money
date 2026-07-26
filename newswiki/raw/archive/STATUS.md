@@ -1,6 +1,6 @@
 # Archive Status
 
-**Last Updated:** 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
+**Last Updated:** 2026-07-20 2026-07-20 2026-07-20 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
 **Last Updated:** 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
 
 ## Compilation Batch: 2026-05-27 (5 articles)
@@ -104,6 +104,9 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来.md | Lifestyle Trends | `newswiki/wiki/lifestyle/in-the-weight-loss-wars-novos-obesity-pill-is-pulling-way-ahead-of-lillys-a867d7a7.md` | Archived |
+| 2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演.md | Design | `newswiki/wiki/design/christopher-nolan-how-became-hollywoods-top-grossing-director.md` | Archived |
+| 2026-07-15-他道出中国经济真相，却在沉默中走完余生.md | Business | `newswiki/wiki/business/high-shanwen-economic-truth.md` | Archived |
 <<<<<<< HEAD
 | 2026-07-14-9.99美元，如何成为零售业最具魔力的定价？.md | 零售业定价策略 | `newswiki/wiki/business/retail-999-pricing-strategy.md` | Archived |
 | 2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去.md | Lifestyle Trends | `newswiki/wiki/lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment.md` | Archived |

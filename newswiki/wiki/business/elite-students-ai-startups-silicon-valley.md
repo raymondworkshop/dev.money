@@ -38,10 +38,10 @@ topics:
 
 ## Related Articles
 
+- [[business/how-to-earn-a-billion-dollars|How to Earn a Billion Dollars]]
 - [[tech/coding-agent-harness|Coding Agent Harness]]
 - [[tech/ai-warfare-evolution|Warfare Mode is Changing: Is It Gradual Evolution or a Total Revolution?]]
 - [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
-- [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
 
 ---
 **Topics**: [[business/_index|Business]], [[tech/_index|Tech]]  

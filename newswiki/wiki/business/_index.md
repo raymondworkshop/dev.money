@@ -9,6 +9,7 @@
 - **投资视角**: 护城河、市占、资本效率
 
 ## 相关文章
+- [[high-shanwen-economic-truth|他道出中国经济真相，却在沉默中走完余生]] (2026-07-15) - A rare economist challenges official GDP data, revealing systemic data manipulation and state control over economic discourse.
 <<<<<<< HEAD
 - [[retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14) - 探讨零售企业如何通过心理定价策略吸引消费者，涉及包装优化、成本控制与市场定位。
 - [[us-biotech-boosts-secrity-to-fight-china-pharma-competition|为防范中国药企跟风，美国生物技术公司加强保密]] (2026-07-10) - U.S. biotech firms are implementing stricter confidentiality to counter Chinese drug development replication.

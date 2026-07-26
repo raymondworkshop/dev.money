@@ -14,6 +14,12 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
+- [[lifestyle/in-the-weight-loss-wars-novos-obesity-pill-is-pulling-way-ahead-of-lillys-a867d7a7|减肥药大战：诺和诺德口服药遥遥领先礼来]] (2026-07-15)
+
+- [[design/christopher-nolan-how-became-hollywoods-top-grossing-director|克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演]] (2026-07-15)
+
+- [[business/high-shanwen-economic-truth|他道出中国经济真相，却在沉默中走完余生]] (2026-07-15)
+
 <<<<<<< HEAD
 - [[business/retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14)
 

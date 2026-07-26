@@ -1,24 +1,16 @@
 {
   "main": {
-    "id": "c59b3c18d7c85acb",
+    "id": "dcfddd3e6afbf3ac",
     "type": "split",
     "children": [
       {
-        "id": "2a7988d8c71dd1cc",
+        "id": "752e53e9b90b3739",
         "type": "tabs",
         "children": [
           {
-            "id": "fda55432e539fdc7",
+            "id": "6da458f3638760be",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来"
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
@@ -31,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ab0a1a06906ab48d",
+    "id": "f0114ca4ca2c6df5",
     "type": "split",
     "children": [
       {
-        "id": "de173c3598fa916a",
+        "id": "f54957deaac5e521",
         "type": "tabs",
         "children": [
           {
-            "id": "2032d86a993e05f9",
+            "id": "38b204bf121f1f04",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -52,7 +44,7 @@
             }
           },
           {
-            "id": "5654fcfb41e15e36",
+            "id": "9de7ba9288ccee22",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -69,7 +61,7 @@
             }
           },
           {
-            "id": "c9f343ad18a790ed",
+            "id": "073202db684105ff",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -82,18 +74,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 467.5
+    "width": 300
   },
   "right": {
-    "id": "39f5aa2c8bb1adf8",
+    "id": "474215a51ead698b",
     "type": "split",
     "children": [
       {
-        "id": "8052f935d3ff3018",
+        "id": "c78c21da7e6a3480",
         "type": "tabs",
         "children": [
           {
-            "id": "3f84f4679bf327c0",
+            "id": "218f0199330e4438",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -111,7 +103,7 @@
             }
           },
           {
-            "id": "3d2f8099c4f1fb79",
+            "id": "01ee35b8fae25a28",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -124,7 +116,7 @@
             }
           },
           {
-            "id": "cc29a0b7fad4870a",
+            "id": "2b10a68e9110fc75",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -139,7 +131,7 @@
             }
           },
           {
-            "id": "ca30daeb79badfed",
+            "id": "d2ac3e025a5291f8",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -153,7 +145,7 @@
             }
           },
           {
-            "id": "2db3ddff82186a7a",
+            "id": "e01238ec98824b85",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -185,99 +177,6 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "fda55432e539fdc7",
-  "lastOpenFiles": [
-    "_resources/2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来/110b5cd8e8428c9e0d1b8faf61f0abae_MD5.jpg",
-    "_resources/2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来/c94a5ffab649a3e65658d6cde583c757_MD5.jpg",
-    "_resources/2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来",
-    "raw/2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演.md",
-    "raw/2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来.md",
-    "_resources/2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演/f08a92ff0b0eb9eed83bc2a3db0c1b4e_MD5.jpg",
-    "_resources/2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演/25965afb430c6b3d1f82b2cca6de39af_MD5.jpg",
-    "_resources/2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演/3f6dfecf4e0605a8d3a99ae40fdc001b_MD5.jpg",
-    "_resources/2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演/f8036cdc4bb831a47d6752993da35d5b_MD5.jpg",
-    "_resources/2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演/d7f5471acebaca199e06de5c53762647_MD5.jpg",
-    "_resources/2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演/4a54e5663660765234cf698dec9701e9_MD5.jpg",
-    "_resources/2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演/4da6aa3cb1d5322c0bd8afa33866d39a_MD5.jpg",
-    "_resources/2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演",
-    "raw/2026-07-15-他道出中国经济真相，却在沉默中走完余生.md",
-    "_resources/2026-07-15-他道出中国经济真相，却在沉默中走完余生/a1953d0f2294b0f79d11b218b43c04cb_MD5.jpg",
-    "_resources/2026-07-15-他道出中国经济真相，却在沉默中走完余生",
-    "raw/archive/2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去.md",
-    "wiki/lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment.md",
-    "wiki/tech/residential-proxy-attack-2026.md",
-    "wiki/tech/my-homelab-ai-dev-platform.md",
-    "wiki/tech/how-to-start-a-ruby-meetup.md",
-    "wiki/tech/education-tech/science-of-reading-and-evidence-based-math.md",
-    "wiki/tech/education-tech",
-    "wiki/tech/coding-agent-harness.md",
-    "wiki/tech/apple-thermonuclear-response-to-openai.md",
-    "wiki/tech/anthropic-accuses-alibaba-of-claude-distillation-attack.md",
-    "wiki/tech/ai-warfare-evolution.md",
-    "wiki/tech/ai-spending-war-who-will-blink-first.md",
-    "wiki/tech/ai-multimodal-ai/ai-food-metadata.md",
-    "wiki/tech/ai-multimodal-ai",
-    "wiki/tech/ai-llm-fine-tuning/local-llm-question-categorization.md",
-    "wiki/tech/ai-llm-fine-tuning",
-    "wiki/tech/ai-infrastructure/nokia-ai-datacenter-infrastructure.md",
-    "wiki/tech/ai-infrastructure",
-    "wiki/tech/ai-infrastructure-transaction.md",
-    "wiki/tech/ai-drug-discovery-2026.md",
-    "wiki/tech/ai-calculation-competition.md",
-    "wiki/tech/ai-autonomous-driving.md",
-    "wiki/tech/a-road-to-lisp-why-lisp.md",
-    "wiki/tech/AI_in_education/estonia-ai-education-cognitive-decline.md",
-    "wiki/tech/AI_in_education",
-    "wiki/lifestyle/us-late-parenthood-financial-reality.md",
-    "wiki/lifestyle/readers-on-having-kids-after-40.md",
-    "_resources/2026-07-14-9.99美元，如何成为零售业最具魔力的定价？/58ac619b17a7a080c42d53bf4689d0e1_MD5.jpg",
-    "_resources/2026-07-14-9.99美元，如何成为零售业最具魔力的定价？",
-    "_resources/2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去"
-    "raw/2026-07-17-他们说随身带着这些东西可缓解焦虑.md",
-    "raw/archive/2026-07-17-他们说随身带着这些东西可缓解焦虑.md",
-    "wiki/lifestyle/panic-pouch-contents.md",
-    "_resources/2026-07-17-他们说随身带着这些东西可缓解焦虑/e31d87b38db0034e16a3a7476f4bbd2a_MD5.jpg",
-    "_resources/2026-07-17-他们说随身带着这些东西可缓解焦虑/25b2932d1312886a10cb3b7dd1adcd0f_MD5.jpg",
-    "_resources/2026-07-17-他们说随身带着这些东西可缓解焦虑/d3746dccd235a32f203f59f42455cc21_MD5.jpg",
-    "_resources/2026-07-17-他们说随身带着这些东西可缓解焦虑/63410e3932fe6b0e17c2100d534dafa4_MD5.jpg",
-    "_resources/2026-07-17-他们说随身带着这些东西可缓解焦虑/78b74298ee3018ca7100c1d1d9d94fb2_MD5.jpg",
-    "_resources/2026-07-17-他们说随身带着这些东西可缓解焦虑/869a633f50d552296e00ae30c12d3294_MD5.jpg",
-    "_resources/2026-07-17-他们说随身带着这些东西可缓解焦虑/30f7561894b8abfe9d466b07baa6c359_MD5.jpg",
-    "_resources/2026-07-17-他们说随身带着这些东西可缓解焦虑",
-    "raw/2026-07-17-美光科技已成“市场上最重要的股票”，现在该担心了吗？.md",
-    "raw/archive/2026-07-17-美光科技已成“市场上最重要的股票”，现在该担心了吗？.md",
-    "wiki/business/micron-tech-market-importance.md",
-    "raw/archive/2026-07-16-骗术大师的自白：我如何骗走投资者5,000万美元.md",
-    "raw/archive/2026-07-16-领英高管揭示职场AI应用的最大误区.md",
-    "wiki/career/linkedin-ai-employment-irrationality.md",
-    "raw/archive/2026-07-16-如何提升求职成功率？或许你需要精修领英档案.md",
-    "wiki/career/how-to-improve-job-success-rate-with-linkedin-profile.md",
-    "raw/archive/2026-07-16-专访投资大亨费尔南多·德莱昂：如何将10万美元变成10亿美元？.md",
-    "wiki/finance/interview-fernando-de-leon-10w-to-100m.md",
-    "raw/archive/2026-07-16-Why write code in 2026.md",
-    "wiki/tech/why-write-code-in-2026.md",
-    "raw/archive/2026-07-16-Seeing and Being Seen.md",
-    "wiki/business/seeing-and-being-seen.md",
-    "raw/archive/2026-07-16-Index.md",
-    "wiki/design/memex-index.md",
-    "raw/archive/2026-07-16-How to read more books.md",
-    "wiki/design/how-to-read-more-books.md",
-    "raw/archive/2026-07-16-How I use LLMs as a staff engineer in 2026.md",
-    "wiki/career/how-i-use-llms-as-a-staff-engineer-in-2026.md",
-    "raw/archive/2026-07-16-Founders Guide Success may not matter if you aren't doing what you love.md",
-    "wiki/career/founder-market-fit.md",
-    "raw/archive/2026-07-16-Don't become an Engineering Manager.md",
-    "_resources/2026-07-17-美光科技已成“市场上最重要的股票”，现在该担心了吗？/894b73a34e0513e93c73516ecc755203_MD5.jpg",
-    "_resources/2026-07-17-美光科技已成“市场上最重要的股票”，现在该担心了吗？",
-    "_resources/2026-07-16-Founders Guide Success may not matter if you aren't doing what you love/87c919c2114df96a3771538a17a3eea0_MD5.webp",
-    "_resources/2026-07-16-Founders Guide Success may not matter if you aren't doing what you love",
-    "_resources/2026-07-16-How to read more books",
-    "_resources/2026-07-16-Why write code in 2026/7711c58f3baea8f6a4151ebc6e37e7b6_MD5.png",
-    "_resources/2026-07-16-Why write code in 2026",
-    "_resources/2026-07-16-Don't become an Engineering Manager",
-    "_resources/2026-07-16-5 days to improve your pronunciation  Day 5 - You've earned your certificate",
-    "_resources/2026-07-16-领英高管揭示职场AI应用的最大误区",
-    "_resources/2026-07-16-如何提升求职成功率？或许你需要精修领英档案",
-    "_resources/2026-07-16-Seeing and Being Seen"
-  ]
+  "active": "6da458f3638760be",
+  "lastOpenFiles": []
 }

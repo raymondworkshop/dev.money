@@ -35,6 +35,12 @@ topics:
 - 该案例揭示了航运市场在地缘政治影响下的脆弱性与机会，也凸显了单一参与者对市场控制力的潜在风险。
 - 油轮运费与市场供需关系高度敏感，其价格波动可作为宏观经济与地缘政治的晴雨表。
 
+## 相关文章
+
+- [[finance/korean-shipping-magnate-iranian-war-profit|韩国油轮大亨借伊朗战争大赚一笔]]
+- [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
+- [[business/2026-05-28-drone-investment|特朗普政府正就注资国内无人机公司进行谈判]]
+
 ---
 **Topics**: [[business/_index|Business]]  
 **Tags**: #business #shipping #geopolitics #oil-trade #market-impact

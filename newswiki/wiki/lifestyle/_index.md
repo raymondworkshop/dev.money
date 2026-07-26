@@ -9,6 +9,7 @@
 - **投资视角**: 长期主题、品牌与生活方式赛道
 
 ## 相关文章
+- [[lifestyle/in-the-weight-loss-wars-novos-obesity-pill-is-pulling-way-ahead-of-lillys-a867d7a7|减肥药大战：诺和诺德口服药遥遥领先礼来]] (2026-07-15) - 诺和诺德口服药在减肥药市场中以更优疗效和处方量领先礼来
 <<<<<<< HEAD
 - [[lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment|他们千辛万苦从美国移居挪威，如今又要搬回去]] (2026-07-13) - A couple's personal journey of relocating to Norway and returning due to cultural and practical challenges.
 =======

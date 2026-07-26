@@ -9,6 +9,7 @@
 - **投资视角**: 用户粘性、设计护城河、工具链
 
 ## 相关文章
+- [[design/christopher-nolan-how-became-hollywoods-top-grossing-director|克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演]] (2026-07-15) - A design analysis of Christopher Nolan's cinematic language and audience engagement.
 - [[design/memex-index|Index]] (2026-07-16) - A personal index of digital and creative tools, emphasizing self-expression, privacy, and iterative knowledge curation.
 - [[design/how-to-read-more-books|How to read more books]] (2026-07-12) - A practical guide to building a reading habit through design thinking and daily routines.
 - [[design/5-days-pronunciation-day-5|5 days to improve your pronunciation / Day 5 - You've earned your certificate]] (2026-07-16) - Final day of a 5-day pronunciation challenge with interactive learning and self-assessment.

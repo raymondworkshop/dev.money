@@ -117,9 +117,9 @@ topics:
 ## 相关文章
 
 - [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[tech/ai-cost-control|Token使用量激增，企业如何控制AI成本？]]
 - [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
 - [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
-- [[tech/ai-drug-discovery-2026|AI能否研发出更佳药物？华尔街等不了那么久]]
 
 ---
 **Topics**: [[career/_index|Career]]  

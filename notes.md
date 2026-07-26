@@ -1,15 +1,15 @@
 #### notes on money  
 
 * ideas  
-    - some applications on finance  
+    - some applications on finance   
     - Artifipedia style?   
      
-* use gpt-5.5 to design, composer-2.5 to implement
-    - stocks 
+* use gpt-5.5 to design, composer-2.5 to implement  
+    - stocks  
     > python3 scripts/analyze.py MSFT  
 
 #### use  
-* Thin Harness, Fat Skills      
+* Thin Harness, Fat Skills    
     - LLM supplies judgment: interpret question, choose evidence, synthesize answer  
     - Harness supplies deterministic execution: load indexes/files, collect citations, save outputs, avoid path guessing  
 

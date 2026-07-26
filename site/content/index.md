@@ -18,21 +18,11 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
+- [[lifestyle/in-the-weight-loss-wars-novos-obesity-pill-is-pulling-way-ahead-of-lillys-a867d7a7|減肥藥大戰：諾和諾德口服藥遙遙領先禮來]] (2026-07-15)
+- [[design/christopher-nolan-how-became-hollywoods-top-grossing-director|克里斯托弗·諾蘭如何成爲好萊塢最具票房號召力的導演]] (2026-07-15)
+- [[business/high-shanwen-economic-truth|他道出中國經濟真相，卻在沉默中走完餘生]] (2026-07-15)
 - [[business/retail-999-pricing-strategy|9.99美元，如何成爲零售業最具魔力的定價？]] (2026-07-14)
 - [[lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment|他們千辛萬苦從美國移居挪威，如今又要搬回去]] (2026-07-13)
-- [[tech/ai-infrastructure-transaction|美國數據中心開發商計劃出售價值數百億美元的股權]] (2026-07-14)
-- [[lifestyle/costco-american-consensus|美國人唯一能達成共識的事物？開市客]] (2026-07-14)
-- [[finance/investment-global-crises|如何在全球危機不斷的環境下投資]] (2026-07-13)
-- [[articles|More]]
-
-## Philosophy & Framework
-
-## Philosophy & Framework
-- [[lifestyle/panic-pouch-contents|他們說隨身帶着這些東西可緩解焦慮]] (2026-07-17)
-- [[business/micron-tech-market-importance|美光科技已成“市場上最重要的股票”，現在該擔心了嗎？]] (2026-07-17)
-- [[finance/paul-regan-fraud-case|騙術大師的自白：我如何騙走投資者5,000萬美元]] (2026-06-29)
-- [[career/linkedin-ai-employment-irrationality|領英高管揭示職場AI應用的最大誤區]] (2026-04-13)
-- [[career/how-to-improve-job-success-rate-with-linkedin-profile|如何提升求職成功率？或許你需要精修領英檔案]] (2026-06-18)
 - [[articles|More]]
 
 ## Philosophy & Framework

@@ -52,9 +52,9 @@ topics:
 ## 相关文章
 
 - [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
+- [[tech/ai-cost-control|Token使用量激增，企业如何控制AI成本？]]
 - [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
-- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
-- [[tech/ai-warfare-evolution|Warfare Mode is Changing: Is It Gradual Evolution or a Total Revolution?]]
+- [[tech/ai-gov-escalation|邮件揭秘：Anthropic与五角大楼的关系是如何破裂的]]
 
 ---
 **Topics**: [[tech/_index|Tech]]  

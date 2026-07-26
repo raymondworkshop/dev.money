@@ -40,6 +40,7 @@ topics:
 
 ## 相关文章
 
+- [[business/korean-oil-tanker-magnate-irans-war-profit|Korean Oil Tanker Magnate Makes a Fortune from Iran War]]
 - [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
 - [[business/2026-05-28-drone-investment|特朗普政府正就注资国内无人机公司进行谈判]]
 

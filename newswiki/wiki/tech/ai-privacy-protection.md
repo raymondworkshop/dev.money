@@ -34,6 +34,13 @@ topics:
 - AI技术的泛化分析能力要求法律必须建立可执行的问责机制。
 - 数据最小化、删除权和‘暗黑模式’限制是实现有效隐私保护的关键措施。
 
+## 相关文章
+
+- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[tech/ai-drug-discovery-2026|AI能否研发出更佳药物？华尔街等不了那么久]]
+- [[tech/ai-cost-control|Token使用量激增，企业如何控制AI成本？]]
+- [[tech/ai-warfare-evolution|Warfare Mode is Changing: Is It Gradual Evolution or a Total Revolution?]]
+
 ---
 **Topics**: [[tech/_index|Tech]]  
 **Tags**: #ai #privacy #data-governance #ethical-ai

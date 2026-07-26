@@ -19,6 +19,7 @@ Curated hub for articles related to 数据中心.
 - [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]] · #tech
 - [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]] · #finance
 - [[finance/warsh-ai-renaissance-diagnosis|新任美联储主席沃什的首场大考：如何判读AI繁荣？]] · #finance
+- [[tech/2026-highest-performing-stocks|盘点2026年上半年标普500指数表现最好的20只股票]] · #tech
 - [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]] · #business
 - [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]] · #tech
 - [[design/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] · #design

@@ -32,6 +32,6 @@ topics:
 ## 相关文章
 
 - [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[tech/2026-highest-performing-stocks|盘点2026年上半年标普500指数表现最好的20只股票]]
 - [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
 - [[business/45-million-donation-larry-ellison-trump-inner-circle|一笔4,500万美元的捐款如何让拉里·埃里森深入特朗普核心圈？]]
-- [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]

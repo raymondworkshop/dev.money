@@ -31,7 +31,7 @@ topics:
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
 - [[finance/jane-street-ai-spotlight|神秘华尔街巨头Jane Street步入AI聚光灯下]]
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
-- [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]]
+- [[tech/2026-highest-performing-stocks|盘点2026年上半年标普500指数表现最好的20只股票]]
 
 ---
 **Topics**: [[tech/_index|Tech]]  
