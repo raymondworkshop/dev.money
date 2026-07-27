@@ -193,7 +193,7 @@ def markdown_external_link(label: str, url: str) -> str:
 
 # --- cli ---
 
-LLM_PROVIDER_CHOICES = ("mlx", "gemini", "openai", "fixture")
+LLM_PROVIDER_CHOICES = ("mlx", "local-gateway", "gemini", "openai", "fixture")
 
 
 def add_llm_provider_arg(parser: argparse.ArgumentParser) -> None:
@@ -201,7 +201,7 @@ def add_llm_provider_arg(parser: argparse.ArgumentParser) -> None:
         "--provider",
         default=None,
         choices=LLM_PROVIDER_CHOICES,
-        help="LLM provider backend (default: LLM_PROVIDER from .env, usually mlx).",
+        help="LLM provider backend (default: LLM_PROVIDER from .env, usually local-gateway).",
     )
 
 

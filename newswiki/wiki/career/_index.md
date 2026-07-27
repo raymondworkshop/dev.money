@@ -9,6 +9,9 @@ AI 对就业的冲击、职业发展、招聘背调、软技能与组织人才�
 - **投资视角**: 人力资本、生产率、行业变迁
 
 ## 相关文章
+- [[llm-critics-right-use-anyway|The LLM Critics Are Right. I Use LLMs Anyway.]] (2026-07-15) - Analysis of the dissonance between LLM criticism and practical utility in engineering.
+- [[how-to-choose-a-subproblem|How To Choose A Subproblem]] (2026-07-20) - Strategies for decomposing complex research problems into manageable sub-tasks.
+- [[fake-job-interview-git-hook-malware|Appaji - Software Engineer]] (2001-07-23) - Analysis of a fake job interview malware campaign using Git hooks.
 - [[career/linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]] (2026-04-13) - AI misuse, soft skills, and hiring trends
 - [[career/how-to-improve-job-success-rate-with-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18) - Practical strategies for optimizing LinkedIn profiles in job search.
 - [[career/how-i-use-llms-as-a-staff-engineer-in-2026|How I use LLMs as a staff engineer in 2026]] (2026-07-16) - Staff engineer's practical guide to AI use in daily development workflows

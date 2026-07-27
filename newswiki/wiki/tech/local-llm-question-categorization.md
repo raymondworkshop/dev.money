@@ -37,6 +37,7 @@ topics:
 ## Related Articles
 
 - [[tech/ai-food-metadata|Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI]]
+- [[tech/llm-critics-right-use-anyway|The LLM Critics Are Right. I Use LLMs Anyway.]]
 
 ---
 **Topics**: [[tech/_index|Tech]]  

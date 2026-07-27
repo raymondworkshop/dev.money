@@ -28,7 +28,7 @@ JSON_RETRY_PROMPT = (
     "No markdown fences, no commentary."
 )
 PLACEHOLDER_MODELS = {"", "mlx-model", "local-model"}
-VALID_PROVIDERS = frozenset({"mlx", "gemini", "openai", "fixture"})
+VALID_PROVIDERS = frozenset({"mlx", "local-gateway", "gemini", "openai", "fixture"})
 
 
 def load_env(env_path: Path | None = None) -> None:
@@ -51,13 +51,17 @@ def normalize_provider(name: str) -> str:
 
 def default_provider() -> str:
     load_env()
-    return normalize_provider(os.environ.get("LLM_PROVIDER", "mlx"))
+    return normalize_provider(os.environ.get("LLM_PROVIDER", "local-gateway"))
 
 
 def is_provider_configured(provider: str) -> bool:
     load_env()
     name = normalize_provider(provider)
     if name == "mlx":
+        return True
+    if name == "local-gateway":
+        # Local OpenAI-compatible gateway; configuration is typically via LLM_URL + LLM_MODEL in .env.
+        # Treat as configured as long as the URL is reachable/usable at runtime.
         return True
     if name == "gemini":
         return bool(os.environ.get("GEMINI_API_KEY", "").strip())
@@ -419,7 +423,7 @@ class FallbackProvider:
 def _single_provider(name: str) -> LLMProvider:
     if name == "gemini":
         return GeminiProvider()
-    if name in {"mlx", "openai"}:
+    if name in {"mlx", "openai", "local-gateway"}:
         return OpenAICompatibleProvider(provider=name)
     raise ValueError(f"Unknown LLM provider: {name}")
 
@@ -461,6 +465,33 @@ def build_provider(name: str | None = None, *, fixture: str | dict[str, Any] | N
 
     provider_name = normalize_provider(raw_name)
     chain = fallback_provider_chain(provider_name)
+
+    # Optional "model-only" fallback for OpenAI-compatible providers:
+    # try `LLM_MODEL` first, then retry the *same provider* using models from `LLM_FALLBACK_MODELS`.
+    fallback_models_raw = os.environ.get("LLM_FALLBACK_MODELS", "").strip()
+    if (
+        len(chain) == 1
+        and fallback_models_raw
+        and fallback_enabled()
+        and provider_name in {"mlx", "openai", "local-gateway"}
+    ):
+        load_env()
+        primary_model = resolve_model(provider_name)
+        models: list[str] = [primary_model]
+        for part in fallback_models_raw.split(","):
+            m = part.strip()
+            if not m or m in models:
+                continue
+            models.append(m)
+
+        providers = [
+            OpenAICompatibleProvider(provider=provider_name, model=model_id) for model_id in models
+        ]
+        names = [f"{provider_name}:{model_id}" for model_id in models]
+        if len(providers) == 1:
+            return providers[0]
+        return FallbackProvider(providers, names)
+
     providers = [_single_provider(item) for item in chain]
     if len(providers) == 1:
         return providers[0]

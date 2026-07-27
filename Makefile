@@ -18,7 +18,7 @@ PAGES_BRANCH ?= master
 PAGES_URL ?= https://news-wiki.pages.dev/
 
 # Options
-LLM_PROVIDER ?= mlx
+LLM_PROVIDER ?= local-gateway
 DRY_RUN ?=
 ALL ?=
 REVIEW ?=
@@ -56,7 +56,7 @@ help:
 	@echo "  make publish              sync + site deploy"
 	@echo "  make test | make venv | make launchd"
 	@echo ""
-	@echo "Options: LLM_PROVIDER=mlx|gemini|openai  DRY_RUN=1  ALL=1  REVIEW=1"
+	@echo "Options: LLM_PROVIDER=mlx|local-gateway|gemini|openai  DRY_RUN=1  ALL=1  REVIEW=1"
 	@echo "         FILE=name.md  NO_ARCHIVE=1  DENSIFY=0  DEPLOY=0|1  SERVE=1"
 	@echo "Maint:   rebuild-indexes  backfill-sources  backfill-titles  densify"
 

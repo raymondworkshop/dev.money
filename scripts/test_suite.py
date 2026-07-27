@@ -1092,7 +1092,9 @@ class LLMProviderTests(unittest.TestCase):
         self.assertIn(provider.provider, {"gemini", "mlx"})
 
     def test_default_provider_prefers_mlx(self) -> None:
-        self.assertEqual(default_provider(), "mlx")
+        # Load tests must remain deterministic even when a developer .env exists.
+        with patch.dict("os.environ", {"LLM_PROVIDER": "mlx"}, clear=False):
+            self.assertEqual(default_provider(), "mlx")
 
     def test_resolve_model_uses_gemini_env(self) -> None:
         with patch.dict(

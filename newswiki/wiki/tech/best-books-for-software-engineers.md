@@ -26,6 +26,10 @@ topics:
 - Software engineering success is influenced by a combination of technical skill, passion, and serendipitous luck.
 - A strong foundation in low-level systems is essential for developers working in network, graphics, or embedded systems.
 
+## Related Articles
+
+- [[tech/llm-critics-right-use-anyway|The LLM Critics Are Right. I Use LLMs Anyway.]]
+
 ---
 **Topics**: [[tech/_index|Tech]]  
 **Tags**: #tech #software-engineering #programming

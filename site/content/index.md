@@ -18,11 +18,11 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
-- [[tech/china-ai-chip-advancement-2026|揭祕中國全力追趕美國AI芯片的攻堅內幕]] (2026-07-24)
-- [[lifestyle/running-climbing-fitness-trend|跑步、攀巖等運動風靡中國，帶火高端運動服飾]] (2026-07-24)
-- [[business/ibm-stock-crash-why-not-worried|股價單日暴跌25%，IBM首席執行官爲何不擔心?]] (2026-07-24)
-- [[business/reality-impact-musk-tesla-spacex|現實衝擊馬斯克及特斯拉、SpaceX的擁躉]] (2026-07-24)
-- [[tech/openai-ai-hack-hugging-face|極具未來色彩的黑客攻擊：OpenAI失控模型入侵事件始末]] (2026-07-24)
+- [[tech/openai-rogue-model-hack|極具未來色彩的黑客攻擊：OpenAI失控模型入侵事件始末]] (2026-07-24)
+- [[finance/ira-startup-insiders-tax-wealth|初創公司內部人士如何利用退休賬戶避稅囤積鉅額財富]] (2026-07-22)
+- [[tech/llm-critics-right-use-anyway|The LLM Critics Are Right. I Use LLMs Anyway.]] (2026-07-15)
+- [[tech/kimi-k3-pelican-benchmark|Kimi K3, and what we can still learn from the pelican benchmark]] (2026-07-25)
+- [[career/how-to-choose-a-subproblem|How To Choose A Subproblem]] (2026-07-20)
 - [[articles|More]]
 
 ## Philosophy & Framework

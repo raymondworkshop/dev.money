@@ -13,6 +13,20 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
+- [[tech/openai-rogue-model-hack|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]] (2026-07-24)
+
+- [[finance/ira-startup-insiders-tax-wealth|初创公司内部人士如何利用退休账户避税囤积巨额财富]] (2026-07-22)
+
+- [[tech/llm-critics-right-use-anyway|The LLM Critics Are Right. I Use LLMs Anyway.]] (2026-07-15)
+
+- [[tech/kimi-k3-pelican-benchmark|Kimi K3, and what we can still learn from the pelican benchmark]] (2026-07-25)
+
+- [[career/how-to-choose-a-subproblem|How To Choose A Subproblem]] (2026-07-20)
+
+- [[business/hardware-is-not-so-hard|Hardware is not so hard]] (2026-07-19)
+
+- [[career/fake-job-interview-git-hook-malware|Appaji - Software Engineer]] (2001-07-23)
+
 - [[tech/china-ai-chip-advancement-2026|揭秘中国全力追赶美国AI芯片的攻坚内幕]] (2026-07-24)
 
 - [[lifestyle/running-climbing-fitness-trend|跑步、攀岩等运动风靡中国，带火高端运动服饰]] (2026-07-24)
@@ -45,6 +59,7 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 - [[business/high-shanwen-economic-truth|他道出中国经济真相，却在沉默中走完余生]] (2026-07-15)
 
+<<<<<<< HEAD
 - [[business/venture-capital-new-strategy-silicon-valley|风投界新势力凭借新策略在硅谷制胜]] (2026-07-20)
 
 - [[design/christopher-nolan-trojan-horse-design|克里斯托弗·诺兰解析《奥德赛》核心史诗级场景]] (2026-07-21)
@@ -54,6 +69,10 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[tech/lisp-dialects-comparison|A Road to Lisp: Which Lisp]] (2026-07-17)
 
 - [[tech/ai-password-handover-experiment|把密码交给AI是一种什么体验？我做了一次实测]] (2026-07-17)
+=======
+<<<<<<< HEAD
+- [[business/retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14)
+>>>>>>> ccc11027917d6e81dc5a19e5f7b880bbec31cef7
 
 - [[lifestyle/panic-pouch-contents|他们说随身带着这些东西可缓解焦虑]] (2026-07-17)
 

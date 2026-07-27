@@ -40,6 +40,7 @@ topics:
 ## Related Articles
 
 - [[tech/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]]
+- [[tech/llm-critics-right-use-anyway|The LLM Critics Are Right. I Use LLMs Anyway.]]
 
 ---
 **Topics**: [[tech/_index|Tech]]  

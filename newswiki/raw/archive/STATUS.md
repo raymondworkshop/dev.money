@@ -1,7 +1,12 @@
 # Archive Status
 
-**Last Updated:** 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
+<<<<<<< HEAD
+**Last Updated:** 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
 **Last Updated:** 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
+=======
+**Last Updated:** 2026-07-20 2026-07-20 2026-07-20 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
+**Last Updated:** 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
+>>>>>>> ccc11027917d6e81dc5a19e5f7b880bbec31cef7
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -104,6 +109,14 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-07-25-极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末.md | Tech | `newswiki/wiki/tech/openai-rogue-model-hack.md` | Archived |
+| 2026-07-25-初创公司内部人士如何利用退休账户避税囤积巨额财富.md | Finance | `newswiki/wiki/finance/ira-startup-insiders-tax-wealth.md` | Archived |
+| 2026-07-25-The LLM Critics Are Right. I Use LLMs Anyway.md | Tech | `newswiki/wiki/tech/llm-critics-right-use-anyway.md` | Archived |
+| 2026-07-25-Kimi K3, and what we can still learn from the pelican benchmark.md | Tech | `newswiki/wiki/tech/kimi-k3-pelican-benchmark.md` | Archived |
+| 2026-07-25-How To Choose A Subproblem.md | Career | `newswiki/wiki/career/how-to-choose-a-subproblem.md` | Archived |
+| 2026-07-25-Hardware is not so hard.md | Business | `newswiki/wiki/business/hardware-is-not-so-hard.md` | Archived |
+| 2026-07-25-Appaji - Software Engineer.md | Career | `newswiki/wiki/career/fake-job-interview-git-hook-malware.md` | Archived |
+<<<<<<< HEAD
 | 2026-07-24-揭秘中国全力追赶美国AI芯片的攻坚内幕.md | AI 算力 | `newswiki/wiki/tech/china-ai-chip-advancement-2026.md` | Archived |
 | 2026-07-24-跑步、攀岩等运动风靡中国，带火高端运动服饰.md | Lifestyle Trends | `newswiki/wiki/lifestyle/running-climbing-fitness-trend.md` | Archived |
 | 2026-07-24-股价单日暴跌25%，IBM首席执行官为何不担心.md | Business | `newswiki/wiki/business/ibm-stock-crash-why-not-worried.md` | Archived |
@@ -125,6 +138,15 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-07-21-AI原生公司：员工很少，老板更少.md | AI 算力与企业组织形态 | `newswiki/wiki/tech/ai-native-companies-few-employees.md` | Archived |
 | 2026-07-18-A Road to Lisp Which Lisp.md | Lisp Dialects Comparison | `newswiki/wiki/tech/lisp-dialects-comparison.md` | Archived |
 | 2026-07-17-把密码交给AI是一种什么体验？我做了一次实测.md | AI与密码管理 | `newswiki/wiki/tech/ai-password-handover-experiment.md` | Archived |
+=======
+| 2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来.md | Lifestyle Trends | `newswiki/wiki/lifestyle/in-the-weight-loss-wars-novos-obesity-pill-is-pulling-way-ahead-of-lillys-a867d7a7.md` | Archived |
+| 2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演.md | Design | `newswiki/wiki/design/christopher-nolan-how-became-hollywoods-top-grossing-director.md` | Archived |
+| 2026-07-15-他道出中国经济真相，却在沉默中走完余生.md | Business | `newswiki/wiki/business/high-shanwen-economic-truth.md` | Archived |
+<<<<<<< HEAD
+| 2026-07-14-9.99美元，如何成为零售业最具魔力的定价？.md | 零售业定价策略 | `newswiki/wiki/business/retail-999-pricing-strategy.md` | Archived |
+| 2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去.md | Lifestyle Trends | `newswiki/wiki/lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment.md` | Archived |
+=======
+>>>>>>> ccc11027917d6e81dc5a19e5f7b880bbec31cef7
 | 2026-07-17-他们说随身带着这些东西可缓解焦虑.md | Lifestyle Trends | `newswiki/wiki/lifestyle/panic-pouch-contents.md` | Archived |
 | 2026-07-17-美光科技已成“市场上最重要的股票”，现在该担心了吗？.md | Business | `newswiki/wiki/business/micron-tech-market-importance.md` | Archived |
 | 2026-07-16-骗术大师的自白：我如何骗走投资者5,000万美元.md | Finance | `newswiki/wiki/finance/paul-regan-fraud-case.md` | Archived |

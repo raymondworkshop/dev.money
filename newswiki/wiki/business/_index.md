@@ -9,6 +9,8 @@
 - **投资视角**: 护城河、市占、资本效率
 
 ## 相关文章
+- [[hardware-is-not-so-hard|Hardware is not so hard]] (2026-07-19) - Lessons on hardware simplicity, software bottlenecks, and 70%+ margin targets from the Jamcorder project.
+<<<<<<< HEAD
 - [[business/ibm-stock-crash-why-not-worried|股价单日暴跌25%，IBM首席执行官为何不担心?]] (2026-07-24) - IBM的大型机是金融基础设施核心，量子计算为长期增长引擎。
 - [[business/reality-impact-musk-tesla-spacex|现实冲击马斯克及特斯拉、SpaceX的拥趸]] (2026-07-24) - Tesla and SpaceX face market pressure amid disappointing Q2 results and delayed launches.
 - [[business/taco-bell-cyclospora-crisis|拦下货车、深夜会议：塔可钟如何极限阻击环孢子虫疫情]] (2026-07-23) - 塔可钟应对食品安全危机的全过程与供应链影响
@@ -16,6 +18,10 @@
 - [[business/nike-reshapes-china-business-model|耐克重塑中国业务，终止与经销商的线上合作]] (2026-07-22) - Nike's strategic shift to consolidate online sales and improve brand consistency in China.
 - [[high-shanwen-economic-truth|他道出中国经济真相，却在沉默中走完余生]] (2026-07-15) - A rare economist challenges official GDP data, revealing systemic data manipulation and state control over economic discourse.
 - [[business/venture-capital-new-strategy-silicon-valley|风投界新势力凭借新策略在硅谷制胜]] (2026-07-20) - 新兴风投模式与AI领域投资趋势分析
+=======
+- [[high-shanwen-economic-truth|他道出中国经济真相，却在沉默中走完余生]] (2026-07-15) - A rare economist challenges official GDP data, revealing systemic data manipulation and state control over economic discourse.
+<<<<<<< HEAD
+>>>>>>> ccc11027917d6e81dc5a19e5f7b880bbec31cef7
 - [[retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14) - 探讨零售企业如何通过心理定价策略吸引消费者，涉及包装优化、成本控制与市场定位。
 - [[us-biotech-boosts-secrity-to-fight-china-pharma-competition|为防范中国药企跟风，美国生物技术公司加强保密]] (2026-07-10) - U.S. biotech firms are implementing stricter confidentiality to counter Chinese drug development replication.
 - [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]] (2026-07-17) - 讨论美光科技在AI供应链中的市场地位与估值压力

@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "c59b3c18d7c85acb",
+    "id": "89bea2ecc8a24398",
     "type": "split",
     "children": [
       {
-        "id": "2a7988d8c71dd1cc",
+        "id": "405a6b6c4a3db555",
         "type": "tabs",
         "children": [
           {
-            "id": "fda55432e539fdc7",
+            "id": "b86fc864577a0914",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/2026-07-25-The LLM Critics Are Right. I Use LLMs Anyway.md",
+                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-25-The LLM Critics Are Right. I Use LLMs Anyway"
+              "title": "2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "ab0a1a06906ab48d",
+    "id": "2fc41bc977d0b00c",
     "type": "split",
     "children": [
       {
-        "id": "de173c3598fa916a",
+        "id": "1dec7ac5a37e597e",
         "type": "tabs",
         "children": [
           {
-            "id": "2032d86a993e05f9",
+            "id": "01d39f0933a05241",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "5654fcfb41e15e36",
+            "id": "e4a6adc49a08547f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "c9f343ad18a790ed",
+            "id": "cb5af596cfdb4e7f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,22 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 467.5
+    "width": 300
   },
   "right": {
-    "id": "39f5aa2c8bb1adf8",
+    "id": "464531e2be6bc3ae",
     "type": "split",
     "children": [
       {
-        "id": "8052f935d3ff3018",
+        "id": "4d35c722f56b959a",
         "type": "tabs",
         "children": [
           {
-            "id": "3f84f4679bf327c0",
+            "id": "edd4209d825ab126",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
             }
           },
           {
-            "id": "3d2f8099c4f1fb79",
+            "id": "4a5254114be59658",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
             }
           },
           {
-            "id": "cc29a0b7fad4870a",
+            "id": "63cdca8c10fee340",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -135,7 +137,7 @@
             }
           },
           {
-            "id": "ca30daeb79badfed",
+            "id": "82242a9d4a732769",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -149,17 +151,18 @@
             }
           },
           {
-            "id": "2db3ddff82186a7a",
+            "id": "228ce92b9daeeb6c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
             }
           }
         ]
@@ -181,53 +184,11 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "fda55432e539fdc7",
+  "active": "b86fc864577a0914",
   "lastOpenFiles": [
-    "_resources/2026-07-25-The LLM Critics Are Right. I Use LLMs Anyway/e913953142df6af02254a529d00260a5_MD5.png",
-    "_resources/2026-07-25-The LLM Critics Are Right. I Use LLMs Anyway/7d60d5bf0e08b23a7510d52f2bbfa24d_MD5.png",
-    "_resources/2026-07-25-The LLM Critics Are Right. I Use LLMs Anyway/ff8bb9d745e4328137602b4d33e0a0a4_MD5.png",
-    "_resources/2026-07-25-The LLM Critics Are Right. I Use LLMs Anyway",
-    "raw/2026-07-25-Kimi K3, and what we can still learn from the pelican benchmark.md",
-    "raw/2026-07-25-The LLM Critics Are Right. I Use LLMs Anyway.md",
-    "raw/2026-07-25-Hardware is not so hard.md",
-    "_resources/2026-07-25-Hardware is not so hard/468f015dd5cd477581dc5049835192d4_MD5.jpg",
-    "_resources/2026-07-25-Hardware is not so hard/3ff0a33fc6ec2cd019af92c19e856a63_MD5.jpg",
-    "_resources/2026-07-25-Hardware is not so hard/37f9889d4bccc045865d3f320ae398ec_MD5.png",
-    "_resources/2026-07-25-Hardware is not so hard/fa6f6c18c7c8750ada198935ca1e0202_MD5.jpg",
-    "_resources/2026-07-25-Hardware is not so hard/3e489032144ada8e68942d14e827fea0_MD5.jpg",
-    "_resources/2026-07-25-Hardware is not so hard",
-    "raw/2026-07-25-How To Choose A Subproblem.md",
-    "_resources/2026-07-25-How To Choose A Subproblem/8a11a7afe668ff5426b08d090bab3852_MD5.webp",
-    "_resources/2026-07-25-How To Choose A Subproblem/7734fbdeb28970f3747a1857876a2eb8_MD5.webp",
-    "_resources/2026-07-25-How To Choose A Subproblem/35def6051355b97002f0f0f8cca5b198_MD5.webp",
-    "_resources/2026-07-25-How To Choose A Subproblem",
-    "raw/2026-07-25-Appaji - Software Engineer.md",
-    "_resources/2026-07-25-Appaji - Software Engineer",
-    "raw/2026-07-25-初创公司内部人士如何利用退休账户避税囤积巨额财富.md",
-    "_resources/2026-07-25-初创公司内部人士如何利用退休账户避税囤积巨额财富",
-    "raw/2026-07-25-极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末.md",
-    "_resources/2026-07-25-极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末",
-    "raw/archive/2026-07-24-跑步、攀岩等运动风靡中国，带火高端运动服饰.md",
-    "wiki/lifestyle/running-climbing-fitness-trend.md",
-    "raw/archive/2026-07-24-股价单日暴跌25%，IBM首席执行官为何不担心.md",
-    "wiki/business/ibm-stock-crash-why-not-worried.md",
-    "raw/archive/2026-07-24-现实冲击马斯克及特斯拉、SpaceX的拥趸.md",
-    "wiki/business/reality-impact-musk-tesla-spacex.md",
-    "raw/archive/2026-07-24-极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末.md",
-    "wiki/tech/openai-ai-hack-hugging-face.md",
-    "raw/archive/2026-07-24-拦下货车、深夜会议：塔可钟如何极限阻击环孢子虫疫情.md",
-    "wiki/business/taco-bell-cyclospora-crisis.md",
-    "raw/archive/2026-07-24-SLY lexer and parser - Playing with code.md",
-    "wiki/tech/sly-lexer-parser.md",
-    "raw/archive/2026-07-23-韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分.md",
-    "wiki/business/korean-chip-leader-s-century-divorce-ai-boom.md",
-    "raw/archive/2026-07-23-谷歌云业务收入增长82%，但巨额AI支出致股价大跌.md",
-    "wiki/tech/google-cloud-revenue-growth-82-ai-spending-impact.md",
-    "raw/archive/2026-07-23-耐克重塑中国业务，终止与经销商的线上合作.md",
-    "wiki/business/nike-reshapes-china-business-model.md",
-    "_resources/2026-07-24-揭秘中国全力追赶美国AI芯片的攻坚内幕",
-    "wiki/tech/ai-ml-engineering",
-    "wiki/business/lynas-revival",
-    "_resources/2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来"
+    "_resources/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌/d3977375159de33aaccdbc4bf7736c43_MD5.jpg",
+    "_resources/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌/608de5e055df396dc5dc0e8946353a9e_MD5.jpg",
+    "_resources/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌",
+    "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md"
   ]
 }

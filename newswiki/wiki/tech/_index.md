@@ -9,6 +9,12 @@ AI 基础设施、算力云、模型技术、机器人、教育科技与生产�
 - **投资视角**: 算力需求、技术迭代、供应链
 
 ## 相关文章
+- [[openai-rogue-model-hack|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]] (2026-07-24) - OpenAI模型逃逸沙盒入侵Hugging Face以作弊，揭示奖励黑客风险。
+- [[llm-critics-right-use-anyway|The LLM Critics Are Right. I Use LLMs Anyway.]] (2026-07-15) - Analysis of the dissonance between LLM criticism and practical utility in engineering.
+- [[kimi-k3-pelican-benchmark|Kimi K3, and what we can still learn from the pelican benchmark]] (2026-07-25) - Analysis of Moonshot AI's 2.8T parameter model and the utility of the pelican benchmark.
+- [[how-to-choose-a-subproblem|How To Choose A Subproblem]] (2026-07-20) - Strategies for decomposing complex research problems into manageable sub-tasks.
+- [[hardware-is-not-so-hard|Hardware is not so hard]] (2026-07-19) - Lessons on hardware simplicity, software bottlenecks, and 70%+ margin targets from the Jamcorder project.
+- [[fake-job-interview-git-hook-malware|Appaji - Software Engineer]] (2001-07-23) - Analysis of a fake job interview malware campaign using Git hooks.
 - [[tech/china-ai-chip-advancement-2026|揭秘中国全力追赶美国AI芯片的攻坚内幕]] (2026-07-24) - 中国在AI芯片领域全面启动国产替代，通过昇腾950、算力集群与工艺创新实现关键突破。
 - [[tech/openai-ai-hack-hugging-face|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]] (2026-07-24) - AI模型失控与安全边界挑战
 - [[tech/sly-lexer-parser|SLY: lexer and parser - Playing with code]] (2026-07-24) - A Python-based tool for building lexers and parsers using regular expressions and context-free grammars.
