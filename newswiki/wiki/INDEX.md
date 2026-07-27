@@ -1,24 +1,60 @@
-# AI-powered News Wiki: Connected Stories
+# News Wiki
 
-A warm, professional guide to business & finance, tech & design, career & lifestyle trends.  
+A warm, professional guide to business & finance, tech & design, career & lifestyle trends.
 
 ## Topics
 
 - [[tech/_index|Tech]]: AI 算力、模型、机器人与教育科技。
-- [[design/_index|Design]]: 产品设计、科學傳播與體驗設計、人機交互。
+- [[design/_index|Design]]: 产品设计、科学传播与体验设计、人机交互。
 - [[business/_index|Business]]: 公司战略、创业风投、产业政策与商业航天。
-- [[finance/_index|Finance]]: 投资与量化、股票与債券、财富管理与公司估值。
-
+- [[finance/_index|Finance]]: 投资与量化、股票与债券、财富管理与公司估值。
 - [[career/_index|Career]]: 职业发展与人事实践。
 - [[lifestyle/_index|Lifestyle]]: 健康、家庭、教育、文化体育趋势、生活方式。
 
 ## Recent Articles
 
-<<<<<<< HEAD
-- [[business/retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14)
+- [[tech/china-ai-chip-advancement-2026|揭秘中国全力追赶美国AI芯片的攻坚内幕]] (2026-07-24)
 
-- [[lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment|他们千辛万苦从美国移居挪威，如今又要搬回去]] (2026-07-13)
-=======
+- [[lifestyle/running-climbing-fitness-trend|跑步、攀岩等运动风靡中国，带火高端运动服饰]] (2026-07-24)
+
+- [[business/ibm-stock-crash-why-not-worried|股价单日暴跌25%，IBM首席执行官为何不担心?]] (2026-07-24)
+
+- [[business/reality-impact-musk-tesla-spacex|现实冲击马斯克及特斯拉、SpaceX的拥趸]] (2026-07-24)
+
+- [[tech/openai-ai-hack-hugging-face|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]] (2026-07-24)
+
+- [[business/taco-bell-cyclospora-crisis|拦下货车、深夜会议：塔可钟如何极限阻击环孢子虫疫情]] (2026-07-23)
+
+- [[tech/sly-lexer-parser|SLY: lexer and parser - Playing with code]] (2026-07-24)
+
+- [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]] (2026-07-23)
+
+- [[tech/google-cloud-revenue-growth-82-ai-spending-impact|谷歌云业务收入增长82%，但巨额AI支出致股价大跌]] (2026-07-23)
+
+- [[business/nike-reshapes-china-business-model|耐克重塑中国业务，终止与经销商的线上合作]] (2026-07-22)
+
+- [[finance/us-treasury-yield-surge-impact|美债收益率飙升，对消费者和市场意味着什么？]] (2026-07-23)
+
+- [[design/on-making|On Making]] (2026-07-23)
+
+- [[lifestyle/us-heart-association-coffee-safe-5-cups|美国心脏协会：每天喝五杯咖啡对大多数成年人而言没问题]] (2026-07-21)
+
+- [[lifestyle/in-the-weight-loss-wars-novos-obesity-pill-is-pulling-way-ahead-of-lillys-a867d7a7|减肥药大战：诺和诺德口服药遥遥领先礼来]] (2026-07-15)
+
+- [[design/christopher-nolan-how-became-hollywoods-top-grossing-director|克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演]] (2026-07-15)
+
+- [[business/high-shanwen-economic-truth|他道出中国经济真相，却在沉默中走完余生]] (2026-07-15)
+
+- [[business/venture-capital-new-strategy-silicon-valley|风投界新势力凭借新策略在硅谷制胜]] (2026-07-20)
+
+- [[design/christopher-nolan-trojan-horse-design|克里斯托弗·诺兰解析《奥德赛》核心史诗级场景]] (2026-07-21)
+
+- [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]] (2026-07-20)
+
+- [[tech/lisp-dialects-comparison|A Road to Lisp: Which Lisp]] (2026-07-17)
+
+- [[tech/ai-password-handover-experiment|把密码交给AI是一种什么体验？我做了一次实测]] (2026-07-17)
+
 - [[lifestyle/panic-pouch-contents|他们说随身带着这些东西可缓解焦虑]] (2026-07-17)
 
 - [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]] (2026-07-17)
@@ -54,7 +90,11 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[lifestyle/amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16)
 
 - [[business/spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]] (2026-07-16)
->>>>>>> 4d14bbe303255726952a074822c498544059bb8e
+
+- [[business/retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14)
+
+- [[lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment|他们千辛万苦从美国移居挪威，如今又要搬回去]] (2026-07-13)
+
 
 - [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]] (2026-07-14)
 - [[lifestyle/costco-american-consensus|美国人唯一能达成共识的事物？开市客]] (2026-07-14)

@@ -1,6 +1,29 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Bilingual stack: SF Mono for Latin, PingFang SC for CJK (SF Mono has no CJK glyphs).
+$font-stack: "SF Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "PingFang SC",
+  "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+
+body {
+  // Win over Quartz :root font injection — Latin → SF Mono, CJK → PingFang SC
+  --titleFont: #{$font-stack};
+  --headerFont: #{$font-stack};
+  --bodyFont: #{$font-stack};
+  --codeFont: #{$font-stack};
+
+  background-image: radial-gradient(
+    ellipse 120% 80% at 50% -20%,
+    color-mix(in srgb, var(--secondary) 6%, transparent),
+    transparent 55%
+  );
+}
+
+:root {
+  --titleFont: #{$font-stack};
+  --headerFont: #{$font-stack};
+  --bodyFont: #{$font-stack};
+  --codeFont: #{$font-stack};
+}
 
 html {
   font-size: 17px;
@@ -16,6 +39,31 @@ html {
   margin-right: auto;
 }
 
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+
+  a {
+    text-decoration: none;
+    color: var(--dark);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--secondary);
+      background-color: transparent;
+    }
+  }
+}
+
+.left.sidebar {
+  border-right: 1px solid color-mix(in srgb, var(--lightgray) 80%, transparent);
+}
+
+.right.sidebar {
+  border-left: 1px solid color-mix(in srgb, var(--lightgray) 80%, transparent);
+}
+
 p,
 li,
 td {
@@ -29,9 +77,9 @@ p + p {
 a,
 a.internal {
   text-decoration: underline;
-  text-underline-offset: 0.12em;
-  text-decoration-thickness: 0.06em;
-  text-decoration-color: color-mix(in srgb, var(--secondary) 70%, transparent);
+  text-underline-offset: 0.14em;
+  text-decoration-thickness: 0.05em;
+  text-decoration-color: color-mix(in srgb, var(--secondary) 45%, transparent);
   color: var(--secondary);
   background-color: transparent;
   border-radius: 3px;
@@ -39,6 +87,22 @@ a.internal {
     color 0.2s ease,
     background-color 0.2s ease,
     text-decoration-color 0.2s ease;
+}
+
+.sidebar a,
+.explorer a,
+.toc a,
+.backlinks a,
+.page-title a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.sidebar a:hover,
+.explorer a:hover,
+.toc a:hover,
+.backlinks a:hover {
+  background-color: var(--highlight);
 }
 
 a:hover,
@@ -57,35 +121,146 @@ a:focus-visible {
 }
 
 blockquote {
-  border-left-color: var(--gray);
+  border-left-color: color-mix(in srgb, var(--secondary) 55%, var(--gray));
 }
 
 h1,
 h2,
 h3 {
   font-weight: 600;
-  color: color-mix(in srgb, var(--dark) 84%, var(--secondary));
+  color: color-mix(in srgb, var(--dark) 90%, var(--secondary));
+  letter-spacing: -0.01em;
 }
 
 article > h1 > a[role="anchor"],
 article > h2 > a[role="anchor"],
 article > h3 > a[role="anchor"] {
-  color: color-mix(in srgb, var(--secondary) 65%, var(--gray));
+  color: color-mix(in srgb, var(--secondary) 55%, var(--gray));
 }
 
 h1 {
-  margin-top: 2.6rem;
+  margin-top: 2.4rem;
 }
 
 h2 {
-  margin-top: 2.2rem;
+  margin-top: 2.1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 90%, transparent);
 }
 
 h3 {
-  margin-top: 1.9rem;
+  margin-top: 1.8rem;
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--gray) 35%, transparent);
+  background: color-mix(in srgb, var(--secondary) 28%, transparent);
   color: var(--dark);
+}
+
+footer {
+  opacity: 0.55;
+  font-size: 0.9em;
+}
+
+// Homepage: clearer Topics cards + Recent Articles list
+body[data-slug="index"] {
+  article > h1:first-of-type {
+    margin-top: 0.5rem;
+    font-size: 2.35rem;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+  }
+
+  article > h1:first-of-type + p {
+    font-size: 1.05rem;
+    color: color-mix(in srgb, var(--darkgray) 88%, var(--gray));
+    margin-bottom: 2rem;
+    max-width: 36rem;
+  }
+
+  // Topics: first ul after ## Topics heading
+  article > h2#topics + ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+
+    @media all and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+
+    > li {
+      margin: 0;
+      padding: 0.95rem 1.05rem;
+      border: 1px solid color-mix(in srgb, var(--lightgray) 95%, var(--secondary));
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--light) 92%, var(--secondary));
+      line-height: 1.55;
+      transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+
+      &:hover {
+        border-color: color-mix(in srgb, var(--secondary) 45%, var(--lightgray));
+        background: color-mix(in srgb, var(--light) 85%, var(--highlight));
+      }
+
+      > a.internal {
+        display: inline;
+        font-weight: 600;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+      }
+    }
+  }
+
+  // Recent Articles
+  article > h2#recent-articles + ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 2rem;
+
+    > li {
+      margin: 0;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 85%, transparent);
+      line-height: 1.55;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      > a.internal {
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+      }
+    }
+  }
+
+  // Philosophy quieter (Quartz slugifies & → --)
+  article > h2#philosophy--framework {
+    margin-top: 2.75rem;
+    opacity: 0.85;
+    border-bottom-color: transparent;
+  }
+
+  article > h2#philosophy--framework + ul {
+    list-style: none;
+    padding: 0;
+    opacity: 0.85;
+
+    > li {
+      padding: 0.35rem 0;
+
+      > a.internal {
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+      }
+    }
+  }
 }

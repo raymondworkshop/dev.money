@@ -43,8 +43,8 @@ topics:
 
 - [[tech/ai-digital-doubles-workforce-20260602|工作太多？讓你的AI替身來代勞吧]]
 - [[finance/2025-global-ultra-high-net-worth-surge|2025年全球超级富豪人数激增]]
+- [[tech/ai-ml-engineering/langgraph-stateful-ai-agents|LangGraph: Build Stateful AI Agents in Python]]
 - [[tech/my-homelab-ai-dev-platform|My Homelab AI Dev Platform]]
-- [[tech/estonia-ai-education-experiment|如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT]]
 
 ---
 **Topics**: [[business/_index|Business]], [[tech/_index|Technology]]  

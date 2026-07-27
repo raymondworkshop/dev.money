@@ -1,7 +1,7 @@
 # Archive Status
 
+**Last Updated:** 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
 **Last Updated:** 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
-**Last Updated:** 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -104,10 +104,27 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
-<<<<<<< HEAD
-| 2026-07-14-9.99美元，如何成为零售业最具魔力的定价？.md | 零售业定价策略 | `newswiki/wiki/business/retail-999-pricing-strategy.md` | Archived |
-| 2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去.md | Lifestyle Trends | `newswiki/wiki/lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment.md` | Archived |
-=======
+| 2026-07-24-揭秘中国全力追赶美国AI芯片的攻坚内幕.md | AI 算力 | `newswiki/wiki/tech/china-ai-chip-advancement-2026.md` | Archived |
+| 2026-07-24-跑步、攀岩等运动风靡中国，带火高端运动服饰.md | Lifestyle Trends | `newswiki/wiki/lifestyle/running-climbing-fitness-trend.md` | Archived |
+| 2026-07-24-股价单日暴跌25%，IBM首席执行官为何不担心.md | Business | `newswiki/wiki/business/ibm-stock-crash-why-not-worried.md` | Archived |
+| 2026-07-24-现实冲击马斯克及特斯拉、SpaceX的拥趸.md | Business | `newswiki/wiki/business/reality-impact-musk-tesla-spacex.md` | Archived |
+| 2026-07-24-极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末.md | AI安全与模型失控风险 | `newswiki/wiki/tech/openai-ai-hack-hugging-face.md` | Archived |
+| 2026-07-24-拦下货车、深夜会议：塔可钟如何极限阻击环孢子虫疫情.md | Business | `newswiki/wiki/business/taco-bell-cyclospora-crisis.md` | Archived |
+| 2026-07-24-SLY lexer and parser - Playing with code.md | Tech: AI and Programming Tools | `newswiki/wiki/tech/sly-lexer-parser.md` | Archived |
+| 2026-07-23-韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分.md | Business | `newswiki/wiki/business/korean-chip-leader-s-century-divorce-ai-boom.md` | Archived |
+| 2026-07-23-谷歌云业务收入增长82%，但巨额AI支出致股价大跌.md | AI算力与模型竞争 | `newswiki/wiki/tech/google-cloud-revenue-growth-82-ai-spending-impact.md` | Archived |
+| 2026-07-23-耐克重塑中国业务，终止与经销商的线上合作.md | Business | `newswiki/wiki/business/nike-reshapes-china-business-model.md` | Archived |
+| 2026-07-23-美债收益率飙升，对消费者和市场意味着什么？.md | Finance | `newswiki/wiki/finance/us-treasury-yield-surge-impact.md` | Archived |
+| 2026-07-23-On Making.md | Design | `newswiki/wiki/design/on-making.md` | Archived |
+| 2026-07-21-美国心脏协会：每天喝五杯咖啡对大多数成年人而言没问题.md | Lifestyle Trends | `newswiki/wiki/lifestyle/us-heart-association-coffee-safe-5-cups.md` | Archived |
+| 2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来.md | Lifestyle Trends | `newswiki/wiki/lifestyle/in-the-weight-loss-wars-novos-obesity-pill-is-pulling-way-ahead-of-lillys-a867d7a7.md` | Archived |
+| 2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演.md | Design | `newswiki/wiki/design/christopher-nolan-how-became-hollywoods-top-grossing-director.md` | Archived |
+| 2026-07-15-他道出中国经济真相，却在沉默中走完余生.md | Business | `newswiki/wiki/business/high-shanwen-economic-truth.md` | Archived |
+| 2026-07-21-风投界新势力凭借新策略在硅谷制胜.md | Business | `newswiki/wiki/business/venture-capital-new-strategy-silicon-valley.md` | Archived |
+| 2026-07-21-克里斯托弗·诺兰解析《奥德赛》核心史诗级场景.md | Design | `newswiki/wiki/design/christopher-nolan-trojan-horse-design.md` | Archived |
+| 2026-07-21-AI原生公司：员工很少，老板更少.md | AI 算力与企业组织形态 | `newswiki/wiki/tech/ai-native-companies-few-employees.md` | Archived |
+| 2026-07-18-A Road to Lisp Which Lisp.md | Lisp Dialects Comparison | `newswiki/wiki/tech/lisp-dialects-comparison.md` | Archived |
+| 2026-07-17-把密码交给AI是一种什么体验？我做了一次实测.md | AI与密码管理 | `newswiki/wiki/tech/ai-password-handover-experiment.md` | Archived |
 | 2026-07-17-他们说随身带着这些东西可缓解焦虑.md | Lifestyle Trends | `newswiki/wiki/lifestyle/panic-pouch-contents.md` | Archived |
 | 2026-07-17-美光科技已成“市场上最重要的股票”，现在该担心了吗？.md | Business | `newswiki/wiki/business/micron-tech-market-importance.md` | Archived |
 | 2026-07-16-骗术大师的自白：我如何骗走投资者5,000万美元.md | Finance | `newswiki/wiki/finance/paul-regan-fraud-case.md` | Archived |
@@ -127,7 +144,8 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-07-16-5 days to improve your pronunciation  Day 5 - You've earned your certificate.md | Design | `newswiki/wiki/design/5-days-pronunciation-day-5.md` | Archived |
 | 2026-07-16-亚马逊如何打造《校园之外》等爆款青春剧集.md | Lifestyle Trends | `newswiki/wiki/lifestyle/amazon-off-campus-romance-series.md` | Archived |
 | 2026-07-16-SpaceX股价首次跌破IPO发行价.md | Business | `newswiki/wiki/business/spacex-stocks-below-ipo-price.md` | Archived |
->>>>>>> 4d14bbe303255726952a074822c498544059bb8e
+| 2026-07-14-9.99美元，如何成为零售业最具魔力的定价？.md | 零售业定价策略 | `newswiki/wiki/business/retail-999-pricing-strategy.md` | Archived |
+| 2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去.md | Lifestyle Trends | `newswiki/wiki/lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment.md` | Archived |
 | 2026-07-14-美国数据中心开发商计划出售价值数百亿美元的股权.md | AI算力基础设施投资与数据中心股权出售 | `newswiki/wiki/tech/ai-infrastructure-transaction.md` | Archived |
 | 2026-07-14-美国人唯一能达成共识的事物？开市客.md | lifestyle | `newswiki/wiki/lifestyle/costco-american-consensus.md` | Archived |
 | 2026-07-14-如何在全球危机不断的环境下投资.md | Investment in a World of Increasing Global Crises | `newswiki/wiki/finance/investment-global-crises.md` | Archived |

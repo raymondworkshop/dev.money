@@ -27,10 +27,10 @@ topics:
 
 ## 相关文章
 
+- [[tech/2026-highest-performing-stocks|盘点2026年上半年标普500指数表现最好的20只股票]]
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
 - [[business/45-million-donation-larry-ellison-trump-inner-circle|一笔4,500万美元的捐款如何让拉里·埃里森深入特朗普核心圈？]]
-- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
-- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[business/ibm-stock-crash-why-not-worried|股价单日暴跌25%，IBM首席执行官为何不担心?]]
 
 ---
 **Topics**: [[career/_index|Career]]  

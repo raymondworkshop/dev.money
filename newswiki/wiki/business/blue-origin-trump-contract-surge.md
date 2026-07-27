@@ -46,6 +46,13 @@ topics:
 - The company's growth reflects a broader trend in government contracting toward diversification and competition in the commercial space sector.
 - Despite SpaceX's overall dominance in launch frequency (161 launches in 2024 vs. 11 for Blue Origin), Blue Origin achieved a 177% increase in annual contract value, indicating strong strategic and financial returns.
 
+## Related Articles
+
+- [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[business/starlink-ground-market-challenge|星链已称霸卫星互联网，它能否在地面市场颠覆AT&T和Verizon？]]
+- [[business/venture-capital-new-strategy-silicon-valley|风投界新势力凭借新策略在硅谷制胜]]
+- [[business/reality-impact-musk-tesla-spacex|现实冲击马斯克及特斯拉、SpaceX的拥趸]]
+
 ---
 **Topics**: [[business/_index|Business]], [[commercial-space/_index|Commercial Space]]  
 **Tags**: #blue-origin #trump-administration #space-contracts #bezos #government-technology

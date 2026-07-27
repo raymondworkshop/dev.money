@@ -30,8 +30,8 @@ topics:
 
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
 - [[finance/jane-street-ai-spotlight|神秘华尔街巨头Jane Street步入AI聚光灯下]]
+- [[tech/google-cloud-revenue-growth-82-ai-spending-impact|谷歌云业务收入增长82%，但巨额AI支出致股价大跌]]
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
-- [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]]
 
 ---
 **Topics**: [[tech/_index|Tech]]  

@@ -11,6 +11,7 @@ Curated hub for articles related to Microsoft.
 
 ## 相关文章
 
+- [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]] · #tech
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] · #tech
 - [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]] · #career
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]] · #tech

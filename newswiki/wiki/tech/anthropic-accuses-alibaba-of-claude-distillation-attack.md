@@ -32,6 +32,12 @@ topics:
 - The attack targets high-value AI functions such as agent reasoning and long-term planning, indicating a strategic effort to replicate advanced AI behaviors.
 - This incident underscores the need for stronger AI model access controls, international cooperation, and legal frameworks to prevent unauthorized model distillation.
 
+## Related Articles
+
+- [[tech/ai-password-handover-experiment|把密码交给AI是一种什么体验？我做了一次实测]]
+- [[tech/ai-gov-escalation|邮件揭秘：Anthropic与五角大楼的关系是如何破裂的]]
+- [[tech/openai-ai-hack-hugging-face|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]]
+
 ---
 **Topics**: [[tech/_index|Tech]]  
 **Tags**: #ai-security #model-distillation #claude #alibaba

@@ -37,9 +37,9 @@ topics:
 ## 相关文章
 
 - [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]]
 - [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]]
-- [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
-- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[business/ibm-stock-crash-why-not-worried|股价单日暴跌25%，IBM首席执行官为何不担心?]]
 
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  

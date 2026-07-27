@@ -61,7 +61,7 @@ topics:
 - [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
 - [[finance/spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]]
 - [[business/starlink-ground-market-challenge|星链已称霸卫星互联网，它能否在地面市场颠覆AT&T和Verizon？]]
-- [[business/spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]]
+- [[business/reality-impact-musk-tesla-spacex|现实冲击马斯克及特斯拉、SpaceX的拥趸]]
 
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  

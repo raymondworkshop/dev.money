@@ -49,6 +49,10 @@ topics:
 - Pricing and content diversification—especially in short-form and live content—are key strategies to improve retention and revenue.
 - Live and ad-supported content could significantly boost revenue, but may also risk alienating core subscribers who value the current no-ad model.
 
+## Related Articles
+
+- [[business/us-biotech-boosts-secrity-to-fight-china-pharma-competition|为防范中国药企跟风，美国生物技术公司加强保密]]
+
 ---
 **Topics**: [[business/_index|Business]]  
 **Tags**: #business #streaming #engagement #competition

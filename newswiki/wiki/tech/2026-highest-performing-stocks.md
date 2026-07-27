@@ -42,6 +42,13 @@ topics:
 - 高增长与高估值并存，但部分公司（如闪迪）的市盈率下降，反映市场对收益预期的修正。
 - 地缘政治与AI基础设施需求是核心驱动力，未来需持续关注技术落地与资本回报的匹配性。
 
+## 相关文章
+
+- [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]]
+
 ---
 **Topics**: [[tech/_index|Tech]]  
 **Tags**: #semiconductor #ai-infrastructure #data-center #stock-performance

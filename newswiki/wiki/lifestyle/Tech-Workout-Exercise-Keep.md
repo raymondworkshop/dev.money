@@ -29,3 +29,7 @@ topics:
 ---
 **主题**: [[lifestyle/_index|Lifestyle Trends]]  
 **标签**: #lifestyle #fitness #workout
+
+## 相关文章
+
+- [[lifestyle/running-climbing-fitness-trend|跑步、攀岩等运动风靡中国，带火高端运动服饰]]

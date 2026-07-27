@@ -38,6 +38,10 @@ topics:
 - 接班人选拔过程体现组织对‘跨领域经验’和‘团队支持’的重视，而非单纯依赖单一高管。
 - 尽管戴蒙已明确退休时间表，但其影响力仍通过董事会与顾问持续影响最终决策。
 
+## 相关文章
+
+- [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]]
+
 ---
 **Topics**: [[business/_index|Business]]  
 **Tags**: #business #corporate-governance #executive-succession #jpmorgan-chase

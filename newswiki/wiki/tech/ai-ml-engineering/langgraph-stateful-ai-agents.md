@@ -32,6 +32,11 @@ topics:
 - LangGraph provides a powerful, visualizable framework (StateGraph) for modeling complex, real-world LLM applications that require memory, decision-making, and iteration.
 - The combination of nodes (actions), edges (flow), and state (memory) allows for the construction of robust, production-grade AI agents.
 
+## Related Articles
+
+- [[tech/llm-mechanics-walkthrough|How LLMs Actually Work]]
+- [[business/ai-giants-office-ai-application|一览AI巨头如何在自家办公室应用AI]]
+
 ---
 **Topics**: [[tech/ai-ml-engineering/LangGraph Build Stateful AI Agents in Python]]  
 **Tags**: #LangGraph #LLM #AgenticWorkflow

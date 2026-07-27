@@ -42,6 +42,12 @@ topics:
 - User empathy and product-market fit are more important than market size in early stages.
 - Startups do not require cheating to grow exponentially—only consistent, high-quality user experience.
 
+## Related Articles
+
+- [[business/elite-students-ai-startups-silicon-valley|Elite Students Abandon Wall Street to Chase AI Startup Dreams]]
+- [[business/founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison|经营硅谷“处方药坊”的中国籍商人在美被判六年监禁]]
+- [[business/67-age-entrepreneurship|我67岁开始创业，这比退休好太多了]]
+
 ---
 **Topics**: [[business/_index|Business]], [[startup/_index|Startup]]  
 **Tags**: #business #startup #entrepreneurship #exponential-growth #user-empowerment

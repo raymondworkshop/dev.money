@@ -38,7 +38,7 @@ topics:
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
 - [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
-- [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
+- [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]]
 
 ---
 **Topics**: [[tech/_index|技术基础设施]], [[business/_index|企业安全风险]], [[lifestyle Trends/_index|物联网安全]]  

@@ -26,6 +26,10 @@ topics:
 - A balanced life with multiple areas operating at 80% is more sustainable and resilient than extreme focus in one domain.
 - Long-term happiness correlates with having a diverse, interconnected life rather than exceptional success in a single area.
 
+## Related Articles
+
+- [[lifestyle/passive-income-new-american-dream|Forget Working: Passive Income Is the New American Dream]]
+
 ---
 **Topics**: [[career/_index|Career]]  
 **Tags**: #career #work-life-balance #personal-development #jordanbpeterson

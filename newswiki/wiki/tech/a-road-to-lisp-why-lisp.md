@@ -47,6 +47,7 @@ topics:
 
 ## Related Articles
 
+- [[tech/lisp-dialects-comparison|A Road to Lisp: Which Lisp]]
 - [[tech/why-write-code-in-2026|Why write code in 2026]]
 
 ---

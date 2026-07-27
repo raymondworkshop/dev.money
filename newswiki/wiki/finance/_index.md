@@ -9,6 +9,7 @@
 - **投资视角**: 现金流、杠杆、风险回报
 
 ## 相关文章
+- [[finance/us-treasury-yield-surge-impact|美债收益率飙升，对消费者和市场意味着什么？]] (2026-07-23) - 收益率飙升影响借贷成本、通胀预期与股市表现
 - [[finance/paul-regan-fraud-case|骗术大师的自白：我如何骗走投资者5,000万美元]] (2026-06-29) - A detailed case of financial fraud involving psychological manipulation and false insurance claims.
 - [[finance/interview-fernando-de-leon-10w-to-100m|专访投资大亨费尔南多·德莱昂：如何将10万美元变成10亿美元？]] (2026-06-01) - Investment strategy and wealth accumulation during market downturns
 - [[investment-global-crises|如何在全球危机不断的环境下投资]] (2026-07-13) - Investment strategies in a high-risk, volatile global environment.

@@ -41,6 +41,13 @@ topics:
 - 小型化、本地化和任务定制化模型是降低AI成本的有效路径。
 - AI成本与业务价值之间的关系是评估其长期投资的关键维度。
 
+## 相关文章
+
+- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
+- [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
+- [[tech/ai-gov-escalation|邮件揭秘：Anthropic与五角大楼的关系是如何破裂的]]
+- [[tech/ai-drug-discovery-2026|AI能否研发出更佳药物？华尔街等不了那么久]]
+
 ---
 **Topics**: [[tech/ai-cost-control|AI成本控制]]  
 **Tags**: #ai #token-cost #ai-agent #finops

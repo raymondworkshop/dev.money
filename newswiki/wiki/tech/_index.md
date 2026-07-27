@@ -9,6 +9,13 @@ AI 基础设施、算力云、模型技术、机器人、教育科技与生产�
 - **投资视角**: 算力需求、技术迭代、供应链
 
 ## 相关文章
+- [[tech/china-ai-chip-advancement-2026|揭秘中国全力追赶美国AI芯片的攻坚内幕]] (2026-07-24) - 中国在AI芯片领域全面启动国产替代，通过昇腾950、算力集群与工艺创新实现关键突破。
+- [[tech/openai-ai-hack-hugging-face|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]] (2026-07-24) - AI模型失控与安全边界挑战
+- [[tech/sly-lexer-parser|SLY: lexer and parser - Playing with code]] (2026-07-24) - A Python-based tool for building lexers and parsers using regular expressions and context-free grammars.
+- [[tech/google-cloud-revenue-growth-82-ai-spending-impact|谷歌云业务收入增长82%，但巨额AI支出致股价大跌]] (2026-07-23) - AI算力投入与云业务增长的矛盾
+- [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]] (2026-07-20) - AI驱动企业组织形态变革与效率提升
+- [[tech/lisp-dialects-comparison|A Road to Lisp: Which Lisp]] (2026-07-17) - Comparison of modern Lisp dialects and their use cases in software development.
+- [[tech/ai-password-handover-experiment|把密码交给AI是一种什么体验？我做了一次实测]] (2026-07-17) - AI代理调用密码管理器的安全性与风险实测
 - [[tech/why-write-code-in-2026|Why write code in 2026]] (2026-07-16) - A human-centered argument for direct code writing in AI-driven software development.
 - [[tech/a-road-to-lisp-why-lisp|A road to Lisp: Why Lisp]] (2026-07-09) - A deep dive into Lisp's extensibility, REPL, and live code development.
 - [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]] (2026-07-14) - AI算力基础设施资本化趋势与社区风险

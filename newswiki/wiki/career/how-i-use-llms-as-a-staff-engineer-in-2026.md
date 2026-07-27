@@ -35,6 +35,10 @@ topics:
 - Testing and local setup tasks are now efficiently delegated to agents, reducing time spent on trivial debugging.
 - The core balance is shifting toward AI automation, but human judgment and oversight are still required for quality and trust.
 
+## Related Articles
+
+- [[tech/ai-password-handover-experiment|把密码交给AI是一种什么体验？我做了一次实测]]
+
 ---
 **Topics**: [[career/ai-impact|AI and Employment Trends]], [[career/ai-in-the-workplace|AI in Professional Practice]], [[tech/ai-agent-tools|AI Agents and Development Tools]]  
 **Tags**: #ai-in-career #staff-engineering #ai-automation

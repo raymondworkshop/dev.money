@@ -30,3 +30,7 @@ topics:
 ---
 **主题**: [[business/_index|Business]]  
 **标签**: #business #pharma #biotech #competition #intellectual-property
+
+## 相关文章
+
+- [[business/Netflix-Strategy-Engagement-2026|Netflix Exploring Live TV and Bundled Services as User Engagement Declines]]
