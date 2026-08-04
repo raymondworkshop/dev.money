@@ -1,6 +1,7 @@
 #### notes on money  
 
 * ideas  
+    - subscribe function  
     - some applications on finance   
     - Artifipedia style?   
      
