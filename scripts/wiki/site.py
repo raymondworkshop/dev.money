@@ -250,7 +250,8 @@ def _render_topic_group(group_lines: list[str], *, limit: int = RECENT_ARTICLES_
     entries = _collect_list_entries(body_lines)
     rendered = [heading, ""] if heading.startswith("### ") else []
     if entries:
-        rendered.append(_render_trimmed_entries(entries, limit=limit))
+        # Homepage Topics: trim if needed, but never append [[articles|More]].
+        rendered.append("\n".join(entries[:limit]))
     rendered.append("")
     return rendered
 

@@ -14,8 +14,7 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[business|Business]]: 公司戰略、創業風投、產業政策與商業機會
 - [[finance|Finance]]: 投資與量化、股票與債券、財富管理與公司估值
 - [[career|Career]]: 職業發展、軟技能與人才建設
-- [[tech|Tech]]: AI 基礎設施、機器人、教育科技與效率工具
-- [[articles|More]]
+- [[lifestyle|Lifestyle]]: 健康生活、家庭、教育與文化體育
 
 ## Recent Articles
 

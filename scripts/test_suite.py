@@ -1220,7 +1220,7 @@ class PrepareQuartzContentTests(unittest.TestCase):
         group_section = trimmed.split("### Tech & Infrastructure", 1)[1].split("## Recent Articles", 1)[0]
         visible_entries = prepare_module._collect_list_entries(group_section.splitlines())
         self.assertEqual(len(visible_entries), prepare_module.TOPICS_DISPLAY_LIMIT)
-        self.assertIn("[[articles|More]]", group_section)
+        self.assertNotIn("[[articles|More]]", group_section)
 
     def test_trim_related_articles_for_site_limits_topic_index(self) -> None:
         entries = [
