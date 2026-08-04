@@ -1,5 +1,7 @@
 footer {
-  margin: 2rem 0 2.75rem;
+  width: min(100%, 44rem);
+  min-width: 0;
+  margin: 2rem auto 2.75rem;
   padding: 0;
   border: none;
   text-align: left;
@@ -8,11 +10,12 @@ footer {
 
   .footer-copy {
     margin: 0;
-    font-size: 0.75rem;
-    font-weight: 450;
-    letter-spacing: 0.015em;
-    color: color-mix(in srgb, var(--dark) 42%, var(--lightgray));
-    line-height: 1.4;
+    font-size: 0.76rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    font-variant-caps: all-small-caps;
+    color: color-mix(in srgb, var(--dark) 50%, var(--lightgray));
+    line-height: 1.45;
   }
 
   & ul {
