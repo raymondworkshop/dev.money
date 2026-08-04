@@ -13,6 +13,16 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 ## Recent Articles
 
+- [[business/jetzero-bwb-aircraft|JetZero翼身融合飞机设计能否挑战波音霸主地位？]] (2026-07-30)
+
+- [[tech/ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]] (2026-07-30)
+
+- [[lifestyle/upper-body-dumbbell-workout|為什麼你練上半身沒線條？一副啞鈴就能完成的4個訓練動作]] (2026-03-26)
+
+- [[tech/washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27)
+
+- [[lifestyle/developing-countries-aging-crisis|发展中国家正迅速老龄化，无力承担养老之重]] (2026-07-27)
+
 - [[tech/openai-rogue-model-hack|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]] (2026-07-24)
 
 - [[finance/ira-startup-insiders-tax-wealth|初创公司内部人士如何利用退休账户避税囤积巨额财富]] (2026-07-22)

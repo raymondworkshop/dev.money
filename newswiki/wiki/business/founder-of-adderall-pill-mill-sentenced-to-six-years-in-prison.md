@@ -36,6 +36,7 @@ topics:
 
 - [[business/elite-students-ai-startups-silicon-valley|Elite Students Abandon Wall Street to Chase AI Startup Dreams]]
 - [[business/how-to-earn-a-billion-dollars|How to Earn a Billion Dollars]]
+- [[tech/washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]]
 - [[finance/2026-05-27-stablecoin-risks|稳定币为何会给经济带来风险]]
 
 ---

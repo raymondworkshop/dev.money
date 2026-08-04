@@ -9,6 +9,9 @@
 - **投资视角**: 护城河、市占、资本效率
 
 ## 相关文章
+- [[jetzero-bwb-aircraft|JetZero翼身融合飞机设计能否挑战波音霸主地位？]] (2026-07-30) - 探讨 JetZero 如何通过 BWB 设计挑战波音垄断及美国政府的支持。
+- [[ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]] (2026-07-30) - IBM展示可验证的量子优势，旨在将其打造为未来增长引擎。
+- [[washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27) - 探讨华盛顿AI安全恐慌、巨头监管之争及“终止开关”法案。
 - [[hardware-is-not-so-hard|Hardware is not so hard]] (2026-07-19) - Lessons on hardware simplicity, software bottlenecks, and 70%+ margin targets from the Jamcorder project.
 <<<<<<< HEAD
 - [[business/ibm-stock-crash-why-not-worried|股价单日暴跌25%，IBM首席执行官为何不担心?]] (2026-07-24) - IBM的大型机是金融基础设施核心，量子计算为长期增长引擎。
