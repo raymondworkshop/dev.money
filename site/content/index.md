@@ -18,12 +18,12 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 
 ## Recent Articles
 
-- <span class="recent-date">2026-07-21</span> [[finance/ai-financial-advice-quality|AI financial advice is surprisingly good — especially if you ask the right questions]]
-- <span class="recent-date">2026-07-30</span> [[business/jetzero-bwb-aircraft|JetZero翼身融合飛機設計能否挑戰波音霸主地位？]]
-- <span class="recent-date">2026-07-30</span> [[tech/ibm-quantum-advantage-era|IBM宣稱“量子優勢”進入新時代]]
-- <span class="recent-date">2026-03-26</span> [[lifestyle/upper-body-dumbbell-workout|為什麼你練上半身沒線條？一副啞鈴就能完成的4個訓練動作]]
-- <span class="recent-date">2026-07-27</span> [[tech/washington-ai-safety-panic|失控模型與中國威脅：華盛頓陷入AI安全大恐慌]]
-- <span class="recent-date">2026-07-27</span> [[lifestyle/developing-countries-aging-crisis|發展中國家正迅速老齡化，無力承擔養老之重]]
+- <span class="recent-date">2026-08-04</span> [[business/whirlpool-north-america-struggle|退守本土後，惠而浦爲何仍難逃“寒冬”？]]
+- <span class="recent-date">2026-08-04</span> [[business/balaji-network-school-malaysia|硅谷大佬試圖在亞洲“建國”，卻遭當地政府強制叫停]]
+- <span class="recent-date">2026-08-04</span> [[career/llms-reward-expertise|LLMs reward expertise]]
+- <span class="recent-date">2026-08-04</span> [[lifestyle/ai-dating-chatbots|AI時代的愛情：聊天機器人接管線上約會]]
+- <span class="recent-date">2026-08-04</span> [[finance/bessent-fed-yen-support|貝森特爲何指望美聯儲幫助支撐日圓匯率]]
+- <span class="recent-date">2026-08-04</span> [[business/fashion-resale-trend|時尚巨頭試水新潮流：銷售二手服裝]]
 - [[articles|More]]
 
 ## Philosophy

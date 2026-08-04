@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import copy
 import json
+import re
 import tempfile
 import unittest
 from contextlib import contextmanager
@@ -1179,6 +1180,13 @@ class PrepareQuartzContentTests(unittest.TestCase):
         visible_entries = prepare_module._collect_recent_article_entries(trimmed)
         self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
         self.assertIn("[[articles|More]]", trimmed)
+        visible_dates = re.findall(r'class="recent-date">(\d{4}-\d{2}-\d{2})<', trimmed)
+        self.assertEqual(visible_dates[0], "2026-06-07")
+        self.assertEqual(visible_dates, [f"2026-06-{n:02d}" for n in range(7, 1, -1)])
+        self.assertEqual(
+            [prepare_module._entry_sort_date(e) for e in all_entries[:3]],
+            ["2026-06-07", "2026-06-06", "2026-06-05"],
+        )
 
     def test_prepare_content_writes_articles_page(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -1230,9 +1238,13 @@ class PrepareQuartzContentTests(unittest.TestCase):
         topic_index = "# Topic\n\n## 相关文章\n\n" + "\n".join(entries) + "\n\n## 相关主题\n"
         trimmed = trim_related_articles_for_site(topic_index)
         related_section = trimmed.split("## 相关文章", 1)[1].split("## 相关主题", 1)[0]
-        visible_entries = prepare_module._collect_list_entries(related_section.splitlines())
-        self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
+        visible_dates = re.findall(r'class="recent-date">(\d{4}-\d{2}-\d{2})<', related_section)
+        self.assertEqual(len(visible_dates), prepare_module.RECENT_ARTICLES_LIMIT)
         self.assertIn("[[articles|More]]", related_section)
+        # Newest dated rows should surface first after the limit trim.
+        self.assertEqual(visible_dates[0], "2026-06-07")
+        self.assertEqual(visible_dates, [f"2026-06-{n:02d}" for n in range(7, 1, -1)])
+        self.assertNotIn("2026-06-01", related_section)
 
     def test_prepare_content_trims_topic_index_articles(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -1255,8 +1267,9 @@ class PrepareQuartzContentTests(unittest.TestCase):
 
             site_topic_index = (content_dir / "ai-employment" / "index.md").read_text(encoding="utf-8")
             related_section = site_topic_index.split("## 相關文章", 1)[1]
-            visible_entries = prepare_module._collect_list_entries(related_section.splitlines())
-            self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
+            visible_dates = re.findall(r'class="recent-date">(\d{4}-\d{2}-\d{2})<', related_section)
+            self.assertEqual(len(visible_dates), prepare_module.RECENT_ARTICLES_LIMIT)
+            self.assertEqual(visible_dates[0], "2026-06-07")
             self.assertIn("[[articles|More]]", related_section)
 
 

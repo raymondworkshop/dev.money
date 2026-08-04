@@ -258,9 +258,12 @@ a {
         width: 100%;
         flex-direction: row;
         padding: 0;
+        margin-bottom: 0.5rem;
         & > * {
           flex: 1;
           max-height: 24rem;
+          overflow-y: auto;
+          min-width: 0;
         }
         & > .toc {
           display: none;

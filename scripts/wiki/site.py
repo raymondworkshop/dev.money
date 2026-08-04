@@ -269,8 +269,26 @@ def trim_recent_articles_for_site(content: str) -> tuple[str, list[str]]:
             break
 
     entries = _collect_article_entries_from_text("\n".join(after_lines[:rest_start]))
+    entries = sorted(entries, key=_entry_sort_date, reverse=True)
     block = _render_recent_display_entries(entries, limit=RECENT_ARTICLES_LIMIT)
     return _replace_section_block(content, RECENT_ARTICLES_MARKER, block), entries
+
+
+def _entry_sort_date(entry: str) -> str:
+    stripped = entry.strip()
+    related = RELATED_PARTS_RE.match(stripped)
+    if related:
+        return related.group(2)
+    article = ARTICLE_PARTS_RE.match(stripped)
+    if article:
+        return article.group(2)
+    display = DISPLAY_ARTICLE_ENTRY_RE.match(stripped)
+    if display:
+        return display.group(1)
+    stem = re.search(r"\[\[(?:[^|\]]+/)?(\d{4}-\d{2}-\d{2})[^|\]]*\|", stripped)
+    if stem:
+        return stem.group(1)
+    return "0000-00-00"
 
 
 def trim_related_articles_for_site(content: str) -> str:
@@ -289,6 +307,7 @@ def trim_related_articles_for_site(content: str) -> str:
     # Prefer dated article rows when present; fall back to plain wiki links.
     dated = [e for e in entries if RELATED_PARTS_RE.match(e.strip())]
     source_entries = dated if dated else entries
+    source_entries = sorted(source_entries, key=_entry_sort_date, reverse=True)
     block = _render_related_display_entries(source_entries, limit=RECENT_ARTICLES_LIMIT)
     return _replace_section_block(content, RELATED_ARTICLES_MARKER, block)
 

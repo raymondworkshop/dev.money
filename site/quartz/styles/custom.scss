@@ -224,6 +224,26 @@ footer {
   max-width: 44rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+// When the right sidebar stacks above the footer (< desktop), keep the
+// colophon below it and on top of any aside overflow.
+@media all and (max-width: 899px) {
+  .page > #quartz-body {
+    > .sidebar.right {
+      margin-bottom: 1.25rem;
+    }
+
+    > footer {
+      margin-top: 1.75rem;
+      padding-top: 0.35rem;
+      padding-bottom: 1.5rem;
+      // Match page wash so sticky/overflow content can't visually paint over copy.
+      background: color-mix(in srgb, var(--light) 92%, transparent);
+    }
+  }
 }
 
 // Legacy safety: hide orphan content-column rule when page-footer is empty

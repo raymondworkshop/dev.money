@@ -32,6 +32,19 @@ def article_topics_from_file(path: Path) -> list[str]:
     return article_topics_for_path(path.name, path.parent.name)
 
 
+def article_sort_date(path: Path) -> str:
+    """Return YYYY-MM-DD for sorting; undated articles sort last when reverse=True."""
+    text = path.read_text(encoding="utf-8")
+    front_matter, _ = parse_raw_front_matter(text)
+    published = str(front_matter.get("published", front_matter.get("created", ""))).strip()
+    if re.match(r"^\d{4}-\d{2}-\d{2}", published):
+        return published[:10]
+    stem_date = re.match(r"^(\d{4}-\d{2}-\d{2})", path.stem)
+    if stem_date:
+        return stem_date.group(1)
+    return "0000-00-00"
+
+
 def topic_index_line(path: Path) -> str:
     text = path.read_text(encoding="utf-8")
     front_matter, body = parse_raw_front_matter(text)
@@ -162,8 +175,48 @@ def repair_recent_articles(root_index: Path, wiki_dir: Path) -> int:
     return repaired
 
 
+RECENT_ENTRY_RE = re.compile(
+    r"^- \[\[[^\]]+\|[^\]]+\]\] \((\d{4}-\d{2}-\d{2})\)(?:\s+.*)?$"
+)
+
+
+def sort_recent_articles(root_index: Path) -> int:
+    """Sort INDEX.md Recent Articles by date descending (newest first)."""
+    if not root_index.exists():
+        return 0
+
+    marker = "## Recent Articles"
+    content = root_index.read_text(encoding="utf-8")
+    if marker not in content:
+        return 0
+
+    before, after = content.split(marker, 1)
+    section, tail = (after.split("\n## ", 1) + [""])[:2]
+    entries: list[str] = []
+    for line in section.splitlines():
+        stripped = line.strip()
+        if RECENT_ENTRY_RE.match(stripped):
+            entries.append(stripped)
+
+    if not entries:
+        return 0
+
+    sorted_entries = sorted(
+        entries,
+        key=lambda line: RECENT_ENTRY_RE.match(line).group(1),  # type: ignore[union-attr]
+        reverse=True,
+    )
+    if sorted_entries == entries:
+        return 0
+
+    new_section = "\n" + "\n".join(sorted_entries) + "\n"
+    new_tail = f"\n## {tail}" if tail else ""
+    root_index.write_text(before.rstrip() + f"\n\n{marker}" + new_section + new_tail, encoding="utf-8")
+    return len(sorted_entries)
+
+
 def rebuild_indexes(wiki_dir: Path) -> None:
-    by_topic: dict[str, list[str]] = defaultdict(list)
+    by_topic: dict[str, list[tuple[str, str]]] = defaultdict(list)
     seen_line: dict[str, set[str]] = defaultdict(set)
 
     for topic in CANONICAL_TOPICS:
@@ -174,17 +227,19 @@ def rebuild_indexes(wiki_dir: Path) -> None:
             if path.name == "_index.md":
                 continue
             line = topic_index_line(path)
+            sort_date = article_sort_date(path)
             for slug in article_topics_from_file(path):
                 if line not in seen_line[slug]:
                     seen_line[slug].add(line)
-                    by_topic[slug].append(line)
+                    by_topic[slug].append((sort_date, line))
 
     for topic in CANONICAL_TOPICS:
         index_path = wiki_dir / topic / "_index.md"
         if not index_path.exists():
             continue
         content = index_path.read_text(encoding="utf-8")
-        content = replace_section(content, "相关文章", by_topic.get(topic, []))
+        dated_lines = sorted(by_topic.get(topic, []), key=lambda item: item[0], reverse=True)
+        content = replace_section(content, "相关文章", [line for _, line in dated_lines])
         related = [slug for slug in CANONICAL_TOPICS if slug != topic]
         related_links = [topic_link(slug) for slug in related]
         content = replace_section(content, "相关主题", [f"- {link}" for link in related_links])
@@ -553,6 +608,9 @@ def main() -> None:
         annotate_article_topics(wiki_dir)
     rebuild_indexes(wiki_dir)
     print(f"Rebuilt topic indexes under {wiki_dir}")
+    sorted_count = sort_recent_articles(wiki_dir / "INDEX.md")
+    if sorted_count:
+        print(f"Sorted {sorted_count} recent article(s) in INDEX.md (newest first)")
     if args.backfill_companies:
         updated = backfill_key_companies(
             wiki_dir,
