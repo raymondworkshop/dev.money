@@ -28,6 +28,6 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[articles|More]]
 
 ## Philosophy
-- [[connected-stories|連綴敘事]]: 以主題線串聯離散報道
-- [[verifiable-sources|來源核實]]: 論點可回溯
-- [[cross-domain-reporting|多角度報道]]: 同一事件，分看商業、科技、設計與生活的不同面向
+- [[connected-stories|連綴敘事與來源核實]]: 以主題線串聯離散報道，論點可回溯
+- [[cross-domain-reporting|多角度報道]]: 同一事件，不同面向
+- [[valuation-and-risk|估值與風險]]: 核心財務指標、估值框架與風險識別
