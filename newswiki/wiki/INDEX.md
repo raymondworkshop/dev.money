@@ -286,7 +286,7 @@ Connected Stories — a warm, professional wiki to business & finance, tech & de
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] (2026-05-27)
 - [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]] (2026-05-21)
 
-## Philosophy & Framework
-- [[moats|护城河理论]]: 竞争优势的本质与评估方法
-- [[valuation-metrics|估值指标]]: 核心财务指标与估值框架
-- [[risk-analysis|风险分析]]: 系统性与个体风险识别
+## Philosophy
+- [[connected-stories|连缀叙事]]: 以主题线串联离散报道
+- [[verifiable-sources|来源核实]]: 论点可回溯
+- [[cross-domain-reporting|多角报道]]: 同一事件，分看商业、科技、设计与生活

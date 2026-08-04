@@ -26,7 +26,7 @@ Connected Stories — a warm, professional wiki to business & finance, tech & de
 - <span class="recent-date">2026-08-03</span> [[business/china-economic-dynamism-paradox|先放手發展，後落地監管：中國經濟活力的悖論]]
 - [[articles|More]]
 
-## Philosophy & Framework
-- [[moats|護城河理論]]: 競爭優勢的本質與評估方法
-- [[valuation-metrics|估值指標]]: 核心財務指標與估值框架
-- [[risk-analysis|風險分析]]: 系統性與個體風險識別
+## Philosophy
+- [[connected-stories|連綴敘事]]: 以主題線串聯離散報道
+- [[verifiable-sources|來源覈實]]: 論點可回溯
+- [[cross-domain-reporting|多角報道]]: 同一事件，分看商業、科技、設計與生活

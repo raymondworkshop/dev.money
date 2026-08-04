@@ -21,6 +21,7 @@ Curated hub for articles related to NVIDIA.
 - [[tech/us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]] · #tech
 - [[tech/us-alternative-to-cheap-chinese-ai|美国公司加紧打造中国低成本AI的替代品]] · #tech
 - [[design/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] · #design
+- [[connected-stories|连缀叙事]] · #wiki
 - [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]] · #business
 
 ---
