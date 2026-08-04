@@ -44,6 +44,10 @@ topics:
 - 私营企业通过参与国防项目获得技术突破与市场扩张，形成‘军民融合’的正向循环。
 - 当前国防部门正主动引入商业AI与数字系统，体现从‘军方主导’向‘商业优先’的治理范式转变。
 
+## 相关文章
+
+- [[business/chinas-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]]
+
 ---
 **Topics**: [[business/_index|Business]], [[tech/_index|Tech]]  
 **Tags**: #business #industrial-policy #defense-technology #civil-military-collaboration

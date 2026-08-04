@@ -41,6 +41,6 @@ topics:
 ## 相关文章
 
 - [[tech/ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]]
+- [[business/china-ai-autonomy-market-reality|中国追求AI自主，股市却呈现另一种现实]]
 - [[tech/washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]]
-- [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]]
-- [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]]
+- [[tech/us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]]

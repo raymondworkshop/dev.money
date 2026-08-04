@@ -34,7 +34,7 @@ topics:
 
 ## 相关文章
 
+- [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]]
+- [[finance/us-stock-market-bubbles|美股擅长制造泡沫，也能从容化解]]
 - [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]]
 - [[business/ibm-stock-crash-why-not-worried|股价单日暴跌25%，IBM首席执行官为何不担心?]]
-- [[tech/china-ai-chip-advancement-2026|揭秘中国全力追赶美国AI芯片的攻坚内幕]]
-- [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]]

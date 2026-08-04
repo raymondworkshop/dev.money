@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "dev.news-wiki",
+    pageTitle: "Stories",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -21,20 +21,20 @@ const config: QuartzConfig = {
       fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "SF Mono",
-        body: "SF Mono",
+        header: "SF Pro Display",
+        body: "SF Pro Text",
         code: "SF Mono",
       },
       colors: {
         lightMode: {
-          light: "#f5f6f4",
-          lightgray: "#e2e5e0",
-          gray: "#8a9188",
+          light: "#fcfbf7",
+          lightgray: "#e8e4dc",
+          gray: "#8a8680",
           darkgray: "#3a4340",
-          dark: "#1a2428",
-          secondary: "#3d6b5a",
-          tertiary: "#5a8a76",
-          highlight: "rgba(61, 107, 90, 0.12)",
+          dark: "#1a2421",
+          secondary: "#4a675d",
+          tertiary: "#5f7f74",
+          highlight: "rgba(74, 103, 93, 0.10)",
           textHighlight: "#d4e8a8aa",
         },
         darkMode: {

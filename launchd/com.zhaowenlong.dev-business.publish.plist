@@ -19,21 +19,37 @@
     <key>PATH</key>
     <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
     <key>LLM_PROVIDER</key>
+    <string>local-gateway</string>
+    <key>LLM_MODEL</key>
+    <string>gemma4</string>
+    <key>LLM_FALLBACK_MODELS</key>
     <string>mlx</string>
+    <key>LLM_FALLBACK_ENABLED</key>
+    <string>1</string>
     <key>DEPLOY</key>
     <string>1</string>
   </dict>
 
-  <!-- Sunday 24:00 = Monday 00:00 -->
+  <!-- Mon 00:00 and Wed 00:00 -->
   <key>StartCalendarInterval</key>
-  <dict>
-    <key>Weekday</key>
-    <integer>1</integer>
-    <key>Hour</key>
-    <integer>0</integer>
-    <key>Minute</key>
-    <integer>0</integer>
-  </dict>
+  <array>
+    <dict>
+      <key>Weekday</key>
+      <integer>1</integer>
+      <key>Hour</key>
+      <integer>0</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+    <dict>
+      <key>Weekday</key>
+      <integer>3</integer>
+      <key>Hour</key>
+      <integer>0</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+  </array>
 
   <key>StandardOutPath</key>
   <string>/Users/zhaowenlong/workspace/dev.business/logs/launchd-publish.out.log</string>

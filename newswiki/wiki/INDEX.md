@@ -1,17 +1,19 @@
 # News Wiki
 
-A warm, professional guide to business & finance, tech & design, career & lifestyle trends.
+Connected Stories — a warm, professional wiki to business & finance, tech & design, career & lifestyle trends.
 
 ## Topics
 
-- [[tech/_index|Tech]]: AI 算力、模型、机器人与教育科技。
-- [[design/_index|Design]]: 产品设计、科学传播与体验设计、人机交互。
-- [[business/_index|Business]]: 公司战略、创业风投、产业政策与商业航天。
-- [[finance/_index|Finance]]: 投资与量化、股票与债券、财富管理与公司估值。
-- [[career/_index|Career]]: 职业发展与人事实践。
-- [[lifestyle/_index|Lifestyle]]: 健康、家庭、教育、文化体育趋势、生活方式。
+- [[tech/_index|Tech]]: AI 基礎設施、機器人、教育科技與生產力工具  
+- [[design/_index|Design]]: 产品设计、科学与体验设计、人机交互  
+- [[business/_index|Business]]: 公司战略、创业风投、产业政策与商业機會  
+- [[finance/_index|Finance]]: 投资与量化、股票与债券、财富管理与公司估值  
+- [[career/_index|Career]]: 職業發展、軟技能與人才建設  
+- [[lifestyle/_index|Lifestyle]]: 健康生活、家庭、教育与文化体育
 
 ## Recent Articles
+
+- [[finance/ai-financial-advice-quality|AI financial advice is surprisingly good — especially if you ask the right questions]] (2026-07-21)
 
 - [[business/jetzero-bwb-aircraft|JetZero翼身融合飞机设计能否挑战波音霸主地位？]] (2026-07-30)
 
@@ -22,6 +24,64 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[tech/washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27)
 
 - [[lifestyle/developing-countries-aging-crisis|发展中国家正迅速老龄化，无力承担养老之重]] (2026-07-27)
+
+- [[finance/bessent-fed-yen-support|贝森特为何指望美联储帮助支撑日圆汇率]] (2026-08-04)
+
+- [[business/fashion-resale-trend|时尚巨头试水新潮流：销售二手服装]] (2026-08-04)
+
+- [[business/chinas-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03)
+
+- [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]] (2026-08-04)
+
+- [[business/base-power-energy-storage|戴尔之子进军储能业，欲将电池装进你家后院]] (2026-08-04)
+
+- [[business/china-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03)
+
+- [[business/palantir-revenue-growth-2026|Palantir股价飙升，收入近乎翻倍，公司上调业绩展望]] (2026-08-04)
+
+- [[business/openai-lost-ai-crown|OpenAI如何失去AI王冠——又欲如何重新夺回]] (2026-08-03)
+
+- [[finance/us-stock-market-bubbles|美股擅长制造泡沫，也能从容化解]] (2026-08-03)
+
+- [[tech/us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03)
+
+- [[tech/us-alternative-to-cheap-chinese-ai|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03)
+
+- [[lifestyle/fauci-pandemic-star-to-silent-witness|福奇如何从抗疫明星变为沉默证人]] (2026-07-31)
+
+- [[tech/ai-autonomous-cyberattacks|失控AI发动黑客攻击，预示网络混乱新时代到来]] (2026-08-03)
+
+- [[business/tesla-china-divestiture-spacex-merger|特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路]] (2026-07-31)
+
+- [[finance/situational-awareness-citadel-acquisition|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] (2026-07-31)
+
+- [[business/microsoft-azure-revenue-milestone|微软利润激增31%，Azure云业务财年收入首破千亿美元大关]] (2026-07-30)
+
+- [[business/pentagon-missile-submarine-contracts|五角大楼划拨1,200亿美元，加速生产爱国者导弹和潜艇]] (2026-07-30)
+
+- [[business/meta-q2-earnings-ai-spending-drop|Meta股价大跌10%，因AI支出增加且展望不及预期]] (2026-07-30)
+
+- [[business/ai-powered-solopreneurship|AI助力“一人公司”崛起：单枪匹马也可年入百万美元]] (2026-07-30)
+
+- [[business/trump-space-environmental-review-exemption|特朗普政府拟豁免航天公司的环境评估]] (2026-07-29)
+
+- [[business/china-ai-autonomy-market-reality|中国追求AI自主，股市却呈现另一种现实]] (2026-07-29)
+
+- [[design/starter-kit-ai-design-apps|Starter kit for AI design apps]] (2026-07-29)
+
+- [[business/apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]] (2026-07-27)
+
+- [[design/pentaton-lp|Pentaton LP • Pentaton]] (2026-07-28)
+
+- [[tech/us-companies-ai-cost-shift|美国企业观念突变，不再为AI大肆烧钱]] (2026-07-27)
+
+- [[lifestyle/ai-social-proxy|年轻人正让AI替他们说话，甚至在面对面交流时]] (2026-07-27)
+
+- [[tech/ai-safety-panic-washington-china-threat|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27)
+
+- [[career/big-companies-resume-hiring-ai-employment|大企业重新开始招聘，打破“AI将消灭就业”的预测]] (2026-07-27)
+
+- [[finance/china-offshore-wealth-crackdown|中国富豪借离岸架构积累财富的时代正在终结]] (2026-07-27)
 
 - [[tech/openai-rogue-model-hack|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]] (2026-07-24)
 
@@ -69,75 +129,41 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 
 - [[business/high-shanwen-economic-truth|他道出中国经济真相，却在沉默中走完余生]] (2026-07-15)
 
-<<<<<<< HEAD
 - [[business/venture-capital-new-strategy-silicon-valley|风投界新势力凭借新策略在硅谷制胜]] (2026-07-20)
 
 - [[design/christopher-nolan-trojan-horse-design|克里斯托弗·诺兰解析《奥德赛》核心史诗级场景]] (2026-07-21)
-
 - [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]] (2026-07-20)
-
 - [[tech/lisp-dialects-comparison|A Road to Lisp: Which Lisp]] (2026-07-17)
-
 - [[tech/ai-password-handover-experiment|把密码交给AI是一种什么体验？我做了一次实测]] (2026-07-17)
-=======
-<<<<<<< HEAD
 - [[business/retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14)
->>>>>>> ccc11027917d6e81dc5a19e5f7b880bbec31cef7
-
 - [[lifestyle/panic-pouch-contents|他们说随身带着这些东西可缓解焦虑]] (2026-07-17)
-
 - [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]] (2026-07-17)
-
 - [[finance/paul-regan-fraud-case|骗术大师的自白：我如何骗走投资者5,000万美元]] (2026-06-29)
-
 - [[career/linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]] (2026-04-13)
-
 - [[career/how-to-improve-job-success-rate-with-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18)
-
 - [[finance/interview-fernando-de-leon-10w-to-100m|专访投资大亨费尔南多·德莱昂：如何将10万美元变成10亿美元？]] (2026-06-01)
-
 - [[tech/why-write-code-in-2026|Why write code in 2026]] (2026-07-16)
-
 - [[business/seeing-and-being-seen|Seeing and Being Seen]] (2026-07-02)
-
 - [[design/memex-index|Index]] (2026-07-16)
-
 - [[design/how-to-read-more-books|How to read more books]] (2026-07-12)
-
 - [[career/how-i-use-llms-as-a-staff-engineer-in-2026|How I use LLMs as a staff engineer in 2026]] (2026-07-16)
-
 - [[career/founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]] (2026-07-14)
-
 - [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]] (2026-03-03)
-
 - [[business/doing-something-never-done-before|Doing Something That’s Never Been Done Before]] (2025-11-14)
-
 - [[career/ai-knows-your-online-activity|AI知道你在网上做过什么，现在你的雇主也知道了]] (2026-07-16)
-
 - [[design/5-days-pronunciation-day-5|5 days to improve your pronunciation / Day 5 - You've earned your certificate]] (2026-07-16)
-
 - [[lifestyle/amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16)
-
 - [[business/spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]] (2026-07-16)
-
-- [[business/retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14)
-
 - [[lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment|他们千辛万苦从美国移居挪威，如今又要搬回去]] (2026-07-13)
-
-
 - [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]] (2026-07-14)
 - [[lifestyle/costco-american-consensus|美国人唯一能达成共识的事物？开市客]] (2026-07-14)
 - [[finance/investment-global-crises|如何在全球危机不断的环境下投资]] (2026-07-13)
 - [[tech/ai-drug-discovery-2026|AI能否研发出更佳药物？华尔街等不了那么久]] (2026-07-13)
 - [[design/Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]] (2026-07-10)
-
 - [[tech/ai-food-metadata|Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI]] (2026-07-03)
-
 - [[tech/apple-thermonuclear-response-to-openai|Apple's 'Thermocore' Response to OpenAI Threat]] (2026-07-13)
 - [[lifestyle/europe-travel-tips-2026|炎热、拥挤且物价高昂，欧洲之旅如何玩得尽兴？]] (2026-07-13)
-
 - [[tech/science-of-reading-and-evidence-based-math|Science of Reading & Evidence-Based Math]] (2026-07-13)
-
 - [[tech/coding-agent-harness|Coding Agent Harness]] (2026-06-30)
 - [[finance/momentum-trading-risk-prevention|How Momentum Traders Can Prevent 'Crashes']](2026-07-10)
 - [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]] (2026-07-10)
@@ -146,9 +172,7 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[career/employee-retention-and-workplace-culture|How a $33/Hour Costco Cashier Built a Million-Dollar Retirement]] (2026-07-09)
 - [[tech/a-road-to-lisp-why-lisp|A road to Lisp: Why Lisp]] (2026-07-09)
 - [[career/llm-burnout-impact|I Think I Have LLM Burnout]] (2026-07-09)
-
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]] (2026-07-08)
-
 - [[business/founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison|经营硅谷“处方药坊”的中国籍商人在美被判六年监禁]] (2026-07-08)
 - [[career/how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-07-08)
 - [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]] (2026-07-07)
@@ -164,7 +188,6 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[business/elite-students-ai-startups-silicon-valley|Elite Students Abandon Wall Street to Chase AI Startup Dreams]] (2026-07-06)
 - [[career/ask-for-help-from-strangers|How to Ask for Help from People Who Don't Know You]] (2026-06-30)
 - [[finance/korean-shipping-magnate-iranian-war-profit|韩国油轮大亨借伊朗战争大赚一笔]] (2026-07-03)
-- [[finance/paul-regan-fraud-case|Paul Regan's Fraud Case]] (2026-06-29)
 - [[finance/sea-legal-action-against-insider-traders-china-brokerage-crackdown|Sea Files Lawsuit Against 100 Anonymous Short Sellers]] (2026-07-01)
 - [[tech/ai-autonomous-driving/wayve-ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
 - [[career/ai-employment-impact|AI会导致就业末日吗？三位经济学家各抒己见]] (2026-06-29)
@@ -174,9 +197,7 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[tech/anthropic-accuses-alibaba-of-claude-distillation-attack|Anthropic Accuses Alibaba of Large-Scale Distillation Attack on Claude]] (2026-06-25)
 - [[lifestyle/passive-income-new-american-dream|Forget Working: Passive Income Is the New American Dream]] (2026-06-25)
 - [[finance/gold-silver-bitcoin-plunge-warsh|黄金、白银和比特币大跌]] (2026-06-25)
-
 - [[tech/estonia-ai-education-experiment|AI教育实验：爱沙尼亚的ChatGPT实践]] (2026-06-02)
-
 - [[business/ai-giants-office-ai-application|AI Giants Apply AI in Their Own Offices]] (2026-06-25)
 - [[lifestyle/principles-for-living-operating-system-for-life|Principles For Living: An Operating System for Life]] (2026-06-25)
 - [[finance/ai-funding-warning-sign|巨额资金涌入AI，这是一个巨大的危险信号]] (2026-06-24)
@@ -189,11 +210,7 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[lifestyle/readers-on-having-kids-after-40|关于40岁以后要孩子，读者们怎么说]] (2026-06-23)
 - [[Tech/residential-proxy-attack-2026|美国家庭网络如何沦为黑客隐身衣？]] (2026-06-22)
 - [[Jane Street: 从神秘交易巨头到AI时代的资本力量|Jane Street AI Spotlight]] (2026-06-22)
-
-
-
 - [[tech/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]] (2026-06-22)
-
 - [[lifestyle/us-late-parenthood-financial-reality|US Late Parenthood Financial Realities]] (2026-06-16)
 - [[lifestyle/life-philosophy-collection|Life]] (2026-06-13)
 - [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]] (2026-06-18)
@@ -215,7 +232,6 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[lifestyle/us-elderly-generosity-support|美国老年人的慷慨：财富的涓滴效应]] (2026-06-05)
 - [[business/67-age-entrepreneurship|67岁开始创业，这比退休好太多了]] (2026-06-03)
 - [[career/us-whitecollar-midcareer-stagnation-20260602|四分之一的美国白领遭遇职业中期停滞]] (2026-06-02)
-- [[tech/estonia-ai-education-experiment|爱沙尼亚的AI教育实验]] (2026-06-02)
 - [[tech/llm-mechanics-walkthrough|LLM Mechanics]] (2026-06-07)
 - [[tech/ai-digital-doubles-workforce-20260602|工作太多？讓你的AI替身來代勞吧]] (2026-06-02)
 - [[design/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] (2026-06-02)
@@ -237,8 +253,7 @@ A warm, professional guide to business & finance, tech & design, career & lifest
 - [[finance/2026-05-27-stablecoin-risks|稳定币为何会给经济带来风险]] (2026-05-27)
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] (2026-05-27)
 - [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]] (2026-05-21)
-
-## Philosophy & Framework
-- [[moats|护城河理论]]: 竞争优势的本质与评估方法
-- [[valuation-metrics|估值指标]]: 核心财务指标与估值框架
-- [[risk-analysis|风险分析]]: 系统性与个体风险识别
+## Philosophy
+- [[connected-stories|连缀叙事]]: 以主题线串联离散报道
+- [[verifiable-sources|来源核实]]: 论点可回溯
+- [[cross-domain-reporting|多角报道]]: 同一事件，分看商业、科技、设计与生活

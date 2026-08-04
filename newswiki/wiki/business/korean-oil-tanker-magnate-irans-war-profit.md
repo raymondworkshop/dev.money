@@ -39,6 +39,7 @@ topics:
 
 - [[finance/korean-shipping-magnate-iranian-war-profit|韩国油轮大亨借伊朗战争大赚一笔]]
 - [[business/hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]]
+- [[business/tesla-china-divestiture-spacex-merger|特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路]]
 - [[business/2026-05-28-drone-investment|特朗普政府正就注资国内无人机公司进行谈判]]
 
 ---

@@ -1,12 +1,7 @@
 # Archive Status
 
-<<<<<<< HEAD
-**Last Updated:** 2026-07-30 2026-07-30 2026-07-29 2026-07-29 2026-07-29 2026-07-29 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
-**Last Updated:** 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
-=======
-**Last Updated:** 2026-07-20 2026-07-20 2026-07-20 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
-**Last Updated:** 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
->>>>>>> ccc11027917d6e81dc5a19e5f7b880bbec31cef7
+**Last Updated:** 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-28 2026-07-28 2026-07-28 2026-07-28 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
+
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -109,11 +104,42 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions.md | Finance | `newswiki/wiki/finance/ai-financial-advice-quality.md` | Archived |
+| 2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率.md | Finance | `newswiki/wiki/finance/bessent-fed-yen-support.md` | Archived |
+| 2026-08-04-时尚巨头试水新潮流：销售二手服装.md | Business | `newswiki/wiki/business/fashion-resale-trend.md` | Archived |
+| 2026-08-04-先放手发展，后落地监管：中国经济活力的悖论.md | Business | `newswiki/wiki/business/chinas-economic-dynamism-paradox.md` | Archived |
+| 2026-08-04-AI热潮正重塑美国经济，深刻程度超乎认知.md | Business | `newswiki/wiki/business/ai-boom-reshaping-us-economy.md` | Archived |
+| 2026-08-04-戴尔之子进军储能业，欲将电池装进你家后院.md | Business | `newswiki/wiki/business/base-power-energy-storage.md` | Archived |
+| 2026-08-04-Palantir股价飙升，收入近乎翻倍，公司上调业绩展望.md | Business | `newswiki/wiki/business/palantir-revenue-growth-2026.md` | Archived |
+| 2026-08-04-OpenAI如何失去AI王冠——又欲如何重新夺回.md | Business | `newswiki/wiki/business/openai-lost-ai-crown.md` | Archived |
+| 2026-08-03-美股擅长制造泡沫，也能从容化解.md | Finance | `newswiki/wiki/finance/us-stock-market-bubbles.md` | Archived |
+| 2026-08-03-美股擅长制造泡沫，也能从容化解 1.md | Finance | `newswiki/wiki/finance/us-stock-market-bubbles.md` | Archived |
+| 2026-08-03-美国公司加紧打造中国低成本AI的替代品.md | Tech | `newswiki/wiki/tech/us-ai-open-weight-china-alternative.md` | Archived |
+| 2026-08-03-美国公司加紧打造中国低成本AI的替代品 1.md | Tech | `newswiki/wiki/tech/us-alternative-to-cheap-chinese-ai.md` | Archived |
+| 2026-08-03-福奇如何从抗疫明星变为沉默证人.md | Lifestyle Trends | `newswiki/wiki/lifestyle/fauci-pandemic-star-to-silent-witness.md` | Archived |
+| 2026-08-03-失控AI发动黑客攻击，预示网络混乱新时代到来.md | Tech | `newswiki/wiki/tech/ai-autonomous-cyberattacks.md` | Archived |
+| 2026-07-31-特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路.md | Business | `newswiki/wiki/business/tesla-china-divestiture-spacex-merger.md` | Archived |
+| 2026-07-31-前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合.md | Finance | `newswiki/wiki/finance/situational-awareness-citadel-acquisition.md` | Archived |
+| 2026-07-30-微软利润激增31%，Azure云业务财年收入首破千亿美元大关.md | Business | `newswiki/wiki/business/microsoft-azure-revenue-milestone.md` | Archived |
+| 2026-07-30-五角大楼划拨1,200亿美元，加速生产爱国者导弹和潜艇.md | Business | `newswiki/wiki/business/pentagon-missile-submarine-contracts.md` | Archived |
+| 2026-07-30-Meta股价大跌10%，因AI支出增加且展望不及预期.md | Business | `newswiki/wiki/business/meta-q2-earnings-ai-spending-drop.md` | Archived |
+| 2026-07-30-AI助力“一人公司”崛起：单枪匹马也可年入百万美元.md | Business | `newswiki/wiki/business/ai-powered-solopreneurship.md` | Archived |
+| 2026-07-29-特朗普政府拟豁免航天公司的环境评估.md | Business | `newswiki/wiki/business/trump-space-environmental-review-exemption.md` | Archived |
+| 2026-07-29-中国追求AI自主，股市却呈现另一种现实.md | Business | `newswiki/wiki/business/china-ai-autonomy-market-reality.md` | Archived |
+| 2026-07-29-Starter kit for AI design apps.md | Design | `newswiki/wiki/design/starter-kit-ai-design-apps.md` | Archived |
+| 2026-07-28-苹果与美光掀起中国芯片游说战，特朗普陷入两难.md | Business | `newswiki/wiki/business/apple-micron-china-chip-lobbying.md` | Archived |
+| 2026-07-28-苹果与美光掀起中国芯片游说战，特朗普陷入两难 1.md | Business | `newswiki/wiki/business/apple-micron-china-chip-lobbying.md` | Archived |
+| 2026-07-28-大企业重新开始招聘，打破“AI将消灭就业”的预测.md | Career | `newswiki/wiki/career/big-companies-resume-hiring-ai-employment.md` | Archived |
+| 2026-07-28-Pentaton LP • Pentaton.md | Design | `newswiki/wiki/design/pentaton-lp.md` | Archived |
+| 2026-07-27-美国企业观念突变，不再为AI大肆烧钱.md | Tech | `newswiki/wiki/tech/us-companies-ai-cost-shift.md` | Archived |
+| 2026-07-27-年轻人正让AI替他们说话，甚至在面对面交流时.md | Lifestyle Trends | `newswiki/wiki/lifestyle/ai-social-proxy.md` | Archived |
+| 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md | Tech | `newswiki/wiki/tech/ai-safety-panic-washington-china-threat.md` | Archived |
+| 2026-07-27-大企业重新开始招聘，打破“AI将消灭就业”的预测.md | Career | `newswiki/wiki/career/big-companies-resume-hiring-ai-employment.md` | Archived |
+| 2026-07-27-中国富豪借离岸架构积累财富的时代正在终结.md | Finance | `newswiki/wiki/finance/china-offshore-wealth-crackdown.md` | Archived |
 | 2026-07-30-JetZero翼身融合飞机设计能否挑战波音霸主地位？.md | Business | `newswiki/wiki/business/jetzero-bwb-aircraft.md` | Archived |
 | 2026-07-30-IBM宣称“量子优势”进入新时代.md | Tech | `newswiki/wiki/tech/ibm-quantum-advantage-era.md` | Archived |
 | 2026-07-29-為什麼你練上半身沒線條？一副啞鈴就能完成的4個訓練動作.md | Lifestyle Trends | `newswiki/wiki/lifestyle/upper-body-dumbbell-workout.md` | Archived |
 | 2026-07-28-為什麼你練上半身沒線條？一副啞鈴就能完成的4個訓練動作.md | Lifestyle Trends | `newswiki/wiki/lifestyle/upper-body-dumbbell-workout.md` | Archived |
-| 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md | Tech | `newswiki/wiki/tech/washington-ai-safety-panic.md` | Archived |
 | 2026-07-27-发展中国家正迅速老龄化，无力承担养老之重.md | Lifestyle Trends | `newswiki/wiki/lifestyle/developing-countries-aging-crisis.md` | Archived |
 | 2026-07-25-极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末.md | Tech | `newswiki/wiki/tech/openai-rogue-model-hack.md` | Archived |
 | 2026-07-25-初创公司内部人士如何利用退休账户避税囤积巨额财富.md | Finance | `newswiki/wiki/finance/ira-startup-insiders-tax-wealth.md` | Archived |
@@ -122,7 +148,6 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-07-25-How To Choose A Subproblem.md | Career | `newswiki/wiki/career/how-to-choose-a-subproblem.md` | Archived |
 | 2026-07-25-Hardware is not so hard.md | Business | `newswiki/wiki/business/hardware-is-not-so-hard.md` | Archived |
 | 2026-07-25-Appaji - Software Engineer.md | Career | `newswiki/wiki/career/fake-job-interview-git-hook-malware.md` | Archived |
-<<<<<<< HEAD
 | 2026-07-24-揭秘中国全力追赶美国AI芯片的攻坚内幕.md | AI 算力 | `newswiki/wiki/tech/china-ai-chip-advancement-2026.md` | Archived |
 | 2026-07-24-跑步、攀岩等运动风靡中国，带火高端运动服饰.md | Lifestyle Trends | `newswiki/wiki/lifestyle/running-climbing-fitness-trend.md` | Archived |
 | 2026-07-24-股价单日暴跌25%，IBM首席执行官为何不担心.md | Business | `newswiki/wiki/business/ibm-stock-crash-why-not-worried.md` | Archived |
@@ -144,15 +169,8 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-07-21-AI原生公司：员工很少，老板更少.md | AI 算力与企业组织形态 | `newswiki/wiki/tech/ai-native-companies-few-employees.md` | Archived |
 | 2026-07-18-A Road to Lisp Which Lisp.md | Lisp Dialects Comparison | `newswiki/wiki/tech/lisp-dialects-comparison.md` | Archived |
 | 2026-07-17-把密码交给AI是一种什么体验？我做了一次实测.md | AI与密码管理 | `newswiki/wiki/tech/ai-password-handover-experiment.md` | Archived |
-=======
-| 2026-07-15-减肥药大战：诺和诺德口服药遥遥领先礼来.md | Lifestyle Trends | `newswiki/wiki/lifestyle/in-the-weight-loss-wars-novos-obesity-pill-is-pulling-way-ahead-of-lillys-a867d7a7.md` | Archived |
-| 2026-07-15-克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演.md | Design | `newswiki/wiki/design/christopher-nolan-how-became-hollywoods-top-grossing-director.md` | Archived |
-| 2026-07-15-他道出中国经济真相，却在沉默中走完余生.md | Business | `newswiki/wiki/business/high-shanwen-economic-truth.md` | Archived |
-<<<<<<< HEAD
 | 2026-07-14-9.99美元，如何成为零售业最具魔力的定价？.md | 零售业定价策略 | `newswiki/wiki/business/retail-999-pricing-strategy.md` | Archived |
 | 2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去.md | Lifestyle Trends | `newswiki/wiki/lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment.md` | Archived |
-=======
->>>>>>> ccc11027917d6e81dc5a19e5f7b880bbec31cef7
 | 2026-07-17-他们说随身带着这些东西可缓解焦虑.md | Lifestyle Trends | `newswiki/wiki/lifestyle/panic-pouch-contents.md` | Archived |
 | 2026-07-17-美光科技已成“市场上最重要的股票”，现在该担心了吗？.md | Business | `newswiki/wiki/business/micron-tech-market-importance.md` | Archived |
 | 2026-07-16-骗术大师的自白：我如何骗走投资者5,000万美元.md | Finance | `newswiki/wiki/finance/paul-regan-fraud-case.md` | Archived |
@@ -172,8 +190,6 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-07-16-5 days to improve your pronunciation  Day 5 - You've earned your certificate.md | Design | `newswiki/wiki/design/5-days-pronunciation-day-5.md` | Archived |
 | 2026-07-16-亚马逊如何打造《校园之外》等爆款青春剧集.md | Lifestyle Trends | `newswiki/wiki/lifestyle/amazon-off-campus-romance-series.md` | Archived |
 | 2026-07-16-SpaceX股价首次跌破IPO发行价.md | Business | `newswiki/wiki/business/spacex-stocks-below-ipo-price.md` | Archived |
-| 2026-07-14-9.99美元，如何成为零售业最具魔力的定价？.md | 零售业定价策略 | `newswiki/wiki/business/retail-999-pricing-strategy.md` | Archived |
-| 2026-07-13-他们千辛万苦从美国移居挪威，如今又要搬回去.md | Lifestyle Trends | `newswiki/wiki/lifestyle/american-couples-move-back-from-norway-after-remote-living-experiment.md` | Archived |
 | 2026-07-14-美国数据中心开发商计划出售价值数百亿美元的股权.md | AI算力基础设施投资与数据中心股权出售 | `newswiki/wiki/tech/ai-infrastructure-transaction.md` | Archived |
 | 2026-07-14-美国人唯一能达成共识的事物？开市客.md | lifestyle | `newswiki/wiki/lifestyle/costco-american-consensus.md` | Archived |
 | 2026-07-14-如何在全球危机不断的环境下投资.md | Investment in a World of Increasing Global Crises | `newswiki/wiki/finance/investment-global-crises.md` | Archived |
