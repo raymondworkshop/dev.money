@@ -1,6 +1,6 @@
-#### AI-powered News Wiki: Connected Stories   
+#### Stories — AI-powered News Wiki
 
-A warm, professional guide to business & finance, tech & design, career & lifestyle trends.  
+Connected Stories — a warm, professional guide to business & finance, tech & design, career & lifestyle trends.
 
 See the website: [news-wiki](https://news-wiki.pages.dev/)
 

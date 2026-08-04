@@ -1,28 +1,40 @@
 @use "./base.scss";
 
-// Bilingual stack: SF Mono for Latin, PingFang SC for CJK (SF Mono has no CJK glyphs).
-$font-stack: "SF Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "PingFang SC",
-  "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+// English → San Francisco; Chinese → PingFang SC. Mono only for code.
+$font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+  "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+$code-stack: "SF Mono", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+
+@mixin topic-icon($paths...) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234a675d' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E#{$paths}%3C/svg%3E");
+}
 
 body {
-  // Win over Quartz :root font injection — Latin → SF Mono, CJK → PingFang SC
   --titleFont: #{$font-stack};
   --headerFont: #{$font-stack};
   --bodyFont: #{$font-stack};
-  --codeFont: #{$font-stack};
+  --codeFont: #{$code-stack};
 
-  background-image: radial-gradient(
-    ellipse 120% 80% at 50% -20%,
-    color-mix(in srgb, var(--secondary) 6%, transparent),
-    transparent 55%
-  );
+  // Soft paper wash + faint topographic rings (mockup)
+  background-color: var(--light);
+  background-image:
+    radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--secondary) 7%, transparent) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 88% 8%, transparent 40px, color-mix(in srgb, var(--secondary) 5%, transparent) 41px, transparent 42px),
+    radial-gradient(circle at 88% 8%, transparent 70px, color-mix(in srgb, var(--secondary) 4%, transparent) 71px, transparent 72px),
+    radial-gradient(circle at 88% 8%, transparent 100px, color-mix(in srgb, var(--secondary) 3%, transparent) 101px, transparent 102px),
+    radial-gradient(
+      ellipse 110% 70% at 50% -25%,
+      color-mix(in srgb, var(--secondary) 6%, transparent),
+      transparent 55%
+    );
+  background-repeat: no-repeat;
 }
 
 :root {
   --titleFont: #{$font-stack};
   --headerFont: #{$font-stack};
   --bodyFont: #{$font-stack};
-  --codeFont: #{$font-stack};
+  --codeFont: #{$code-stack};
 }
 
 html {
@@ -34,15 +46,17 @@ html {
 }
 
 .page > #quartz-body .center > article {
-  max-width: 42rem;
+  max-width: 44rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .page-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin-bottom: 0.85rem;
 
   a {
     text-decoration: none;
@@ -57,29 +71,62 @@ html {
 }
 
 .left.sidebar {
-  border-right: 1px solid color-mix(in srgb, var(--lightgray) 80%, transparent);
+  border-right: 1px solid color-mix(in srgb, var(--lightgray) 70%, transparent);
+  padding-right: 0.5rem;
 }
 
 .right.sidebar {
-  border-left: 1px solid color-mix(in srgb, var(--lightgray) 80%, transparent);
+  border-left: 1px solid color-mix(in srgb, var(--lightgray) 70%, transparent);
+  padding-left: 0.75rem;
+}
+
+// Search: full-width rounded field like mockup
+.left.sidebar .search {
+  max-width: none;
+  width: 100%;
+  margin-bottom: 0.65rem;
+
+  > .search-button {
+    width: 100%;
+    height: 2.35rem;
+    border-radius: 10px;
+    border-color: color-mix(in srgb, var(--lightgray) 90%, transparent);
+    background: color-mix(in srgb, var(--lightgray) 35%, var(--light));
+    padding-left: 0;
+
+    > p {
+      color: var(--gray);
+    }
+  }
+}
+
+.left.sidebar .darkmode {
+  margin: 0.15rem 0 0.35rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 p,
 li,
 td {
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
 p + p {
-  margin-top: 0.75em;
+  margin-top: 0.8em;
+}
+
+code,
+pre {
+  font-family: var(--codeFont);
 }
 
 a,
 a.internal {
   text-decoration: underline;
-  text-underline-offset: 0.14em;
+  text-underline-offset: 0.16em;
   text-decoration-thickness: 0.05em;
-  text-decoration-color: color-mix(in srgb, var(--secondary) 45%, transparent);
+  text-decoration-color: color-mix(in srgb, var(--secondary) 40%, transparent);
   color: var(--secondary);
   background-color: transparent;
   border-radius: 3px;
@@ -93,13 +140,14 @@ a.internal {
 .explorer a,
 .toc a,
 .backlinks a,
-.page-title a {
+.page-title a,
+.topic-nav a,
+.home-aside a {
   text-decoration: none;
   background-color: transparent;
 }
 
 .sidebar a:hover,
-.explorer a:hover,
 .toc a:hover,
 .backlinks a:hover {
   background-color: var(--highlight);
@@ -122,145 +170,541 @@ a:focus-visible {
 
 blockquote {
   border-left-color: color-mix(in srgb, var(--secondary) 55%, var(--gray));
+  border-left-width: 3px;
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 600;
-  color: color-mix(in srgb, var(--dark) 90%, var(--secondary));
-  letter-spacing: -0.01em;
+  font-family: var(--headerFont);
+  font-weight: 650;
+  color: color-mix(in srgb, var(--dark) 94%, var(--secondary));
+  letter-spacing: -0.02em;
+  line-height: 1.28;
 }
 
 article > h1 > a[role="anchor"],
 article > h2 > a[role="anchor"],
 article > h3 > a[role="anchor"] {
-  color: color-mix(in srgb, var(--secondary) 55%, var(--gray));
+  color: color-mix(in srgb, var(--secondary) 45%, var(--gray));
 }
 
 h1 {
-  margin-top: 2.4rem;
+  margin-top: 2.2rem;
+  font-size: 1.85rem;
 }
 
 h2 {
-  margin-top: 2.1rem;
+  margin-top: 2rem;
   padding-bottom: 0.35rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 90%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 80%, transparent);
+  font-size: 1.28rem;
+  font-weight: 650;
 }
 
 h3 {
-  margin-top: 1.8rem;
+  margin-top: 1.65rem;
+  font-size: 1.1rem;
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--secondary) 28%, transparent);
+  background: color-mix(in srgb, var(--secondary) 24%, transparent);
   color: var(--dark);
 }
 
 footer {
-  opacity: 0.55;
-  font-size: 0.9em;
+  // Quiet colophon — no box, no second rule
+  opacity: 1;
 }
 
-// Homepage: clearer Topics cards + Recent Articles list
-body[data-slug="index"] {
+// Legacy safety: hide orphan content-column rule when page-footer is empty
+.page > #quartz-body .center > hr:has(+ .page-footer:empty),
+.page > #quartz-body .center > .page-footer:empty {
+  display: none;
+}
+
+@mixin editorial-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+
+  > li {
+    margin: 0;
+    padding: 0.78rem 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 75%, transparent);
+    line-height: 1.5;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    > a.internal {
+      text-decoration: none;
+      background: transparent;
+      padding: 0;
+      font-weight: 550;
+      color: var(--dark);
+
+      &:hover,
+      &:focus-visible {
+        color: var(--secondary);
+        background: transparent;
+      }
+    }
+  }
+}
+
+body[data-slug$="/index"]:not([data-slug="index"]),
+body[data-slug="articles"] {
+  .page > #quartz-body .center > article {
+    max-width: 46rem;
+  }
+
+  // Quiet breadcrumbs only (title/meta hidden in layout)
+  .page-header {
+    margin-bottom: 0.35rem;
+
+    .article-title,
+    .content-meta {
+      display: none;
+    }
+
+    .breadcrumb-container {
+      opacity: 0.72;
+      font-size: 0.88rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+
   article > h1:first-of-type {
-    margin-top: 0.5rem;
+    margin-top: 0.15rem;
     font-size: 2.35rem;
-    letter-spacing: -0.03em;
-    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.15;
+    color: var(--dark);
+    border-bottom: none;
+  }
+
+  // 概述 lead
+  article > h2[id="概述"],
+  article > h2[id="overview"] {
+    margin-top: 1.35rem;
+    margin-bottom: 0.45rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 0.78rem;
+    font-weight: 650;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--darkgray) 70%, var(--secondary));
+  }
+
+  article > h2[id="概述"] + p,
+  article > h2[id="overview"] + p {
+    margin: 0 0 1.75rem;
+    max-width: 38rem;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    color: color-mix(in srgb, var(--darkgray) 88%, var(--gray));
+  }
+
+  // 核心指标 as soft chips/cards
+  article > h2[id="核心指標"],
+  article > h2[id="core-metrics"],
+  article > h2[id="key-metrics"] {
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 0.78rem;
+    font-weight: 650;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--darkgray) 70%, var(--secondary));
+  }
+
+  article > h2[id="核心指標"] + ul,
+  article > h2[id="core-metrics"] + ul,
+  article > h2[id="key-metrics"] + ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    display: grid;
+    gap: 0.55rem;
+
+    > li {
+      margin: 0;
+      padding: 0.8rem 0.95rem;
+      border: 1px solid color-mix(in srgb, var(--lightgray) 88%, transparent);
+      border-radius: 10px;
+      background: color-mix(in srgb, var(--light) 94%, var(--secondary));
+      line-height: 1.55;
+      color: color-mix(in srgb, var(--darkgray) 90%, var(--gray));
+
+      strong {
+        color: var(--dark);
+        font-weight: 650;
+      }
+
+      a.internal {
+        text-decoration: none;
+        background: transparent;
+        color: var(--secondary);
+        font-weight: 550;
+
+        &:hover,
+        &:focus-visible {
+          color: var(--tertiary);
+          background: transparent;
+          text-decoration: underline;
+          text-underline-offset: 0.14em;
+        }
+      }
+    }
+  }
+
+  // 相关文章 / 相關文章 — dated editorial rows
+  article > h2[id="相关文章"],
+  article > h2[id="相關文章"],
+  article > h2[id="related-articles"] {
+    margin-top: 0.75rem;
+    margin-bottom: 0.35rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--dark);
+  }
+
+  article > h2[id="相关文章"] + ul,
+  article > h2[id="相關文章"] + ul,
+  article > h2[id="related-articles"] + ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.35rem 0 2rem;
+
+    > li {
+      position: relative;
+      display: grid;
+      grid-template-columns: 6.75rem minmax(0, 1fr) 1.15rem;
+      align-items: start;
+      gap: 0.65rem 0.75rem;
+      margin: 0;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 75%, transparent);
+      line-height: 1.45;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .recent-date {
+        grid-row: 1;
+        font-size: 0.82rem;
+        color: var(--gray);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+        padding-top: 0.12rem;
+      }
+
+      > a.internal {
+        grid-column: 2;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-weight: 650;
+        color: var(--dark);
+        font-size: 1.02rem;
+
+        &:hover,
+        &:focus-visible {
+          color: var(--secondary);
+          background: transparent;
+        }
+      }
+
+      .topic-blurb {
+        grid-column: 2;
+        display: block;
+        margin-top: 0.2rem;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.55;
+        color: color-mix(in srgb, var(--darkgray) 72%, var(--gray));
+      }
+
+      &::after {
+        content: "›";
+        grid-column: 3;
+        grid-row: 1;
+        color: var(--gray);
+        font-size: 1.15rem;
+        justify-self: end;
+        line-height: 1;
+        padding-top: 0.1rem;
+      }
+
+      &:has(a[href$="/articles"]),
+      &:has(a[href$="/articles/"]),
+      &:has(a[href="articles"]),
+      &:has(a[href="../articles"]),
+      &:has(a[href="./articles"]) {
+        display: block;
+        padding-top: 1rem;
+
+        &::after {
+          content: none;
+        }
+
+        > a.internal {
+          font-weight: 500;
+          color: var(--secondary);
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+
+  // 相关主题 quieter
+  article > h2[id="相关主题"],
+  article > h2[id="相關主題"] {
+    margin-top: 2rem;
+    opacity: 0.8;
+    border-bottom-color: transparent;
+    font-size: 0.95rem;
+  }
+
+  article > h2[id="相关主题"] + ul,
+  article > h2[id="相關主題"] + ul {
+    @include editorial-list;
+    opacity: 0.85;
+  }
+}
+
+body[data-slug="articles"] {
+  article > ul {
+    @include editorial-list;
+  }
+}
+
+// Homepage — match editorial demo mockup
+body[data-slug="index"] {
+  .page > #quartz-body .center > article {
+    max-width: 48rem;
+  }
+
+  article > h1:first-of-type {
+    margin-top: 0.2rem;
+    font-size: 2.65rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    color: var(--dark);
+    border-bottom: none;
   }
 
   article > h1:first-of-type + p {
     font-size: 1.05rem;
-    color: color-mix(in srgb, var(--darkgray) 88%, var(--gray));
-    margin-bottom: 2rem;
+    color: color-mix(in srgb, var(--darkgray) 78%, var(--gray));
+    margin: 0.85rem 0 2.35rem;
     max-width: 36rem;
+    line-height: 1.65;
   }
 
-  // Topics: first ul after ## Topics heading
+  article > h2#topics {
+    margin-top: 0.25rem;
+    margin-bottom: 0.85rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    text-transform: none;
+    color: var(--dark);
+  }
+
   article > h2#topics + ul {
     list-style: none;
     padding: 0;
-    margin: 1.25rem 0 2rem;
+    margin: 0 0 2.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
+    gap: 0.85rem;
 
     @media all and (max-width: 800px) {
       grid-template-columns: 1fr;
     }
 
     > li {
+      position: relative;
       margin: 0;
-      padding: 0.95rem 1.05rem;
-      border: 1px solid color-mix(in srgb, var(--lightgray) 95%, var(--secondary));
-      border-radius: 8px;
-      background: color-mix(in srgb, var(--light) 92%, var(--secondary));
-      line-height: 1.55;
+      padding: 1.05rem 1.1rem 1.05rem 3.35rem;
+      min-height: 4.75rem;
+      border: 1px solid color-mix(in srgb, var(--lightgray) 88%, transparent);
+      border-radius: 10px;
+      background: color-mix(in srgb, var(--light) 96%, white);
+      line-height: 1.5;
+      color: color-mix(in srgb, var(--darkgray) 85%, var(--gray));
       transition:
-        border-color 0.2s ease,
-        background-color 0.2s ease;
+        border-color 0.18s ease,
+        background-color 0.18s ease,
+        box-shadow 0.18s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 1rem;
+        top: 1.15rem;
+        width: 1.55rem;
+        height: 1.55rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.92;
+      }
+
+      &:nth-child(1)::before {
+        @include topic-icon(
+          "%3Crect x='3' y='4' width='18' height='12' rx='1.5'/%3E%3Cpath d='M8 20h8M12 16v4'/%3E"
+        );
+      }
+
+      &:nth-child(2)::before {
+        @include topic-icon("%3Cpath d='M4 16l8-12 3 5 5 1-8 12-3-5-5-1z'/%3E");
+      }
+
+      &:nth-child(3)::before {
+        @include topic-icon(
+          "%3Crect x='3' y='7' width='18' height='13' rx='1.5'/%3E%3Cpath d='M8 7V5.5A1.5 1.5 0 019.5 4h5A1.5 1.5 0 0116 5.5V7'/%3E"
+        );
+      }
+
+      &:nth-child(4)::before {
+        @include topic-icon("%3Cpath d='M4 19V10M10 19V5M16 19v-7M22 19H2'/%3E");
+      }
+
+      &:nth-child(5)::before {
+        @include topic-icon(
+          "%3Ccircle cx='12' cy='8' r='3.25'/%3E%3Cpath d='M5 19c1.5-3.5 4-5 7-5s5.5 1.5 7 5'/%3E"
+        );
+      }
+
+      &:nth-child(6)::before {
+        @include topic-icon(
+          "%3Cpath d='M12 21s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 11c0 5.5-7 10-7 10z'/%3E"
+        );
+      }
 
       &:hover {
-        border-color: color-mix(in srgb, var(--secondary) 45%, var(--lightgray));
-        background: color-mix(in srgb, var(--light) 85%, var(--highlight));
+        border-color: color-mix(in srgb, var(--secondary) 35%, var(--lightgray));
+        background: color-mix(in srgb, var(--light) 88%, var(--highlight));
+        box-shadow: 0 1px 0 color-mix(in srgb, var(--secondary) 10%, transparent);
       }
 
       > a.internal {
         display: inline;
-        font-weight: 600;
+        font-weight: 700;
+        font-size: 1.02rem;
         text-decoration: none;
         background: transparent;
         padding: 0;
+        color: var(--dark);
+
+        &:hover,
+        &:focus-visible {
+          color: var(--secondary);
+          background: transparent;
+        }
       }
     }
   }
 
-  // Recent Articles
+  article > h2#recent-articles {
+    margin-bottom: 0.35rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    text-transform: none;
+    color: var(--dark);
+  }
+
   article > h2#recent-articles + ul {
     list-style: none;
     padding: 0;
-    margin: 1rem 0 2rem;
+    margin: 0.35rem 0 2rem;
 
     > li {
+      position: relative;
+      display: grid;
+      grid-template-columns: 6.75rem minmax(0, 1fr) 1.25rem;
+      align-items: baseline;
+      gap: 0.75rem;
       margin: 0;
-      padding: 0.7rem 0;
-      border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 85%, transparent);
-      line-height: 1.55;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 75%, transparent);
+      line-height: 1.45;
 
       &:last-child {
         border-bottom: none;
       }
 
+      .recent-date {
+        font-size: 0.82rem;
+        color: var(--gray);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+
       > a.internal {
         text-decoration: none;
         background: transparent;
         padding: 0;
+        font-weight: 600;
+        color: var(--dark);
+
+        &:hover,
+        &:focus-visible {
+          color: var(--secondary);
+          background: transparent;
+        }
+      }
+
+      &::after {
+        content: "›";
+        color: var(--gray);
+        font-size: 1.15rem;
+        justify-self: end;
+        line-height: 1;
+      }
+
+      // "More" link — quieter, no date/chevron layout
+      &:has(a[href$="/articles"]),
+      &:has(a[href$="/articles/"]),
+      &:has(a[href="articles"]),
+      &:has(a[href="./articles"]) {
+        display: block;
+        padding-top: 1rem;
+
+        &::after {
+          content: none;
+        }
+
+        > a.internal {
+          font-weight: 500;
+          color: var(--secondary);
+          font-size: 0.95rem;
+        }
       }
     }
   }
 
-  // Philosophy quieter (Quartz slugifies & → --)
-  article > h2#philosophy--framework {
-    margin-top: 2.75rem;
-    opacity: 0.85;
-    border-bottom-color: transparent;
-  }
-
+  // Mockup has no Philosophy block on the first screen
+  article > h2#philosophy--framework,
   article > h2#philosophy--framework + ul {
-    list-style: none;
-    padding: 0;
-    opacity: 0.85;
-
-    > li {
-      padding: 0.35rem 0;
-
-      > a.internal {
-        text-decoration: none;
-        background: transparent;
-        padding: 0;
-      }
-    }
+    display: none;
   }
 }

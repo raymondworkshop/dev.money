@@ -23,6 +23,7 @@ The harness supplies deterministic execution:
 - archive status
 - cache/idempotency
 - densify (related-article links + entity hubs) after a successful sync write path
+- backfill empty topic `关键公司` from company/hub links (`BACKFILL_COMPANIES=0` to skip)
 
 ## Default Paths
 

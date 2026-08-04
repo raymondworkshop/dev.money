@@ -60,7 +60,7 @@ topics:
 - [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
 - [[business/2026-05-28-drone-investment|特朗普政府正就注资国内无人机公司进行谈判]]
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
-- [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]]
+- [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]]
 
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  

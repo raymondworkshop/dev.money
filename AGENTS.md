@@ -2,149 +2,71 @@
 
 ## Purpose
 
-The wiki is the context window. Scripts are the executor. Raw files are provenance.
-
-This repository turns useful business articles into an LLM-native knowledge base:
+Wiki = context. Scripts = executor. Raw = provenance.
 
 ```text
-raw evidence -> curated wiki memory -> reasoning outputs
+raw evidence → curated wiki memory → reasoning outputs
 ```
 
-Every generated page should help future agents retrieve context, reason from evidence, and emit machine-checkable JSON.
+**Thin harness, fat skills**: judgment lives here; scripts validate JSON, render files, update indexes. LLM output must be **strict JSON**. Mark latent inference with `[AI Synthesis]`.
 
-## Core Principle: Thin Harness, Fat Skills
+**Roles**: Financial Analyst (value, growth, moats, FCF, leverage, risk) · Librarian (compact, linked, sourced) · Operator (do not hand-edit what scripts own).
 
-- **Skills/AGENTS.md** encode judgment, process, and domain knowledge.
-- **Scripts** load files, validate JSON, render markdown, update indexes, archive files, and save outputs.
-- **LLM output to scripts must be strict JSON**. Do not explain file operations outside JSON fields.
-- **Deterministic space is where trust lives**. Anything inferred in latent space must be marked.
+## Paths
 
-## Roles
+| Role | Default |
+|------|---------|
+| Source | `newswiki/raw` |
+| Archive | `<source>/archive` |
+| Wiki | `newswiki/wiki` |
+| Outputs | `newswiki/outputs` |
 
-- **Financial Analyst**: evaluate value + growth, moats, cash flow, leverage, and risk.
-- **Librarian**: keep the wiki compact, linked, and source-grounded.
-- **Operator**: respect harness boundaries; do not mutate files by hand when a script owns the operation.
+Override via Makefile / CLI. Commands: `make sync` · `make query` · `make audit` · `make publish` · `make analyze TICKER=…`.
 
-## Path Configuration
+## Providers
 
-Default layout:
+Set in `.env`: `LLM_PROVIDER=mlx|local-gateway|gemini|openai` (plus matching API keys / `LLM_URL` / model vars). Harnesses load this file as system prompt. Override: `make sync LLM_PROVIDER=gemini`. MLX must be running for local sync.
 
-- Source: `newswiki/raw`
-- Archive: `<source>/archive`
-- Wiki: `newswiki/wiki`
-- Outputs: `newswiki/outputs`
+## Evidence
 
-All sync/query/audit harnesses accept path overrides through Makefile variables or CLI flags.
+- **Raw** — provenance (not curated knowledge)
+- **Wiki** — primary memory for query/audit
+- **Outputs** — saved answers, audits, analyses
+- **External** — `front_matter.source` URLs
 
-## LLM Providers
+Links: `[[topic/slug|Title]]` · `[[hubs/spacex|SpaceX]]` · `[[../raw/archive/file.md|original]]` · repo paths in JSON `path` fields.
 
-Default provider is local **MLX** (OpenAI-compatible server on Apple Silicon).
+## Rules
 
-Configure in `.env`:
-
-- `LLM_PROVIDER=mlx` — local default; no API key
-- `LLM_URL=http://127.0.0.1:8080/v1/chat/completions`
-- `LLM_MODEL=mlx-community/gemma-4-e4b-it-4bit`
-- `LLM_PROVIDER=local-gateway` — local OpenAI-compatible gateway; typically `LLM_MODEL=gemma4`
-- `LLM_PROVIDER=gemini` — cloud; requires `GEMINI_API_KEY`; falls back to MLX on failure
-- `GEMINI_MODEL=gemini-2.5-flash-lite`
-- `LLM_PROVIDER=openai` — cloud; requires `OPENAI_API_KEY`
-
-Harnesses (`sync_wiki.py`, `query_wiki.py`, `audit_wiki.py`) load `AGENTS.md` as the system prompt and call the configured provider. Override per run:
-
-```bash
-make sync LLM_PROVIDER=mlx
-make sync LLM_PROVIDER=gemini
-make query LLM_PROVIDER=openai QUESTION="..."
-```
-
-MLX must be running before sync (for example `com.user.mlxserver` LaunchAgent).
-
-## Publish (sync -> site)
-
-After wiki sync, the Quartz site can be built and deployed automatically:
-
-```bash
-make publish              # sync (MLX) + site-build + Cloudflare Pages deploy
-make publish DEPLOY=0     # sync only
-make publish DRY_RUN=1    # validate sync plan, no deploy
-```
-
-Scheduled macOS automation: install `launchd/com.zhaowenlong.dev-business.publish.plist` into `~/Library/LaunchAgents/`, ensure MLX and Wrangler auth are configured, then:
-
-```bash
-launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.zhaowenlong.dev-business.publish.plist
-```
-
-## Evidence Hierarchy
-
-- **Raw**: original evidence and provenance. Usually private; do not treat as curated knowledge.
-- **Wiki**: distilled memory. Primary layer for query and audit reasoning.
-- **Outputs**: reasoning snapshots such as query answers, audits, and analysis reports.
-- **External URLs**: original publication links from front matter.
-
-Clickable links are semantic edges for humans and retrieval:
-
-- Wiki link: `[[topic/article-slug|Title]]`
-- Raw link: `[[../raw/archive/file.md|original source]]`
-- Repo-root path: use in JSON fields such as `path`.
-
-## Global Rules
-
-- Preserve source/user language unless asked to translate. Chinese sources stay Chinese; English sources stay English.
+- Keep source language (zh stays zh; en stays en) unless asked to translate.
 - Never invent facts, figures, dates, companies, quotes, or sources.
-- Use concise bullets; every sentence should earn context-window space.
-- Use `[[wiki links]]` for companies, people, sectors, technologies, and topics.
-- Separate fact from interpretation. Any unstated inference, causal explanation, or cross-article pattern must start with `[AI Synthesis]`.
-- Cite wiki first, raw for verification, external URLs when useful.
-- Do not manually duplicate harness behavior.
+- Concise bullets; use `[[wiki links]]` for entities and topics.
+- Inferences / cross-article patterns → prefix `[AI Synthesis]`.
+- Cite wiki first, then raw, then external. Do not reimplement harness file ops.
 
 ## Investment Lens
 
-Use these when interpreting business material:
+Margin · FCF (OCF − capex) · Debt/Equity · PEG (attractive below 1 when quality holds) · Moats (brand, switching costs, network, scale, data, distribution) · Risks (MD&A, hidden liabilities, concentration, recognition, regulatory/financing).
 
-- **Operating Margin**: margin quality, R&D intensity, revenue growth.
-- **Free Cash Flow**: operating cash flow minus capital expenditure.
-- **Debt-to-Equity**: leverage, cash reserves, refinancing risk.
-- **PEG Ratio**: growth at a reasonable price; PEG below 1 is attractive when quality holds.
-- **Moat Analysis**: brand, switching costs, network effects, scale, data, distribution.
-- **Risk Detection**: MD&A, notes, hidden liabilities, customer concentration, aggressive recognition, regulatory/financing risk.
+---
 
-## Workflows
+## sync-wiki: raw → wiki
 
-### sync-wiki: raw -> wiki
+`make sync` — densify hubs/links, then fill empty topic `关键公司` (`DENSIFY=0` / `BACKFILL_COMPANIES=0` to skip).
 
-**Intent**: transform source markdown into curated wiki memory, then densify cross-links.
+**LLM**
 
-**Use**: `scripts/sync_wiki.py` / `make sync` (runs densify after sync; `DENSIFY=0` to skip).
+- Primary topic ∈ `business|tech|design|finance|career|lifestyle` only. Else `action: needs_review`.
+- Optional secondaries in `article.topics` (primary first); one file path under primary.
+- Respect raw `topics` hint; see `newswiki/raw/REVIEW.md` for harness review labels.
+- Distill grounded sections + `key_takeaways`; keep source front matter.
+- Prefer resolvable links: `[[topic/existing-slug|Title]]`, `[[hubs/…|…]]`. Aim for 2–4 wiki links in bullets/takeaways when supported.
+- `article.slug`: lowercase ASCII (`a-z0-9-`); Chinese titles → English slug from URL/topic (no CJK).
+- `article.path`: `<wiki-prefix>/<primary>/<slug>.md` — no nested topic subfolders.
 
-**LLM does**
+**Harness**: scan → validate JSON → render (`[Title](source)` when source set) → indexes → archive stub → delete inbox + `_resources/` on success → `STATUS.md` + `.sync_cache.json`.
 
-- Map source to one **canonical** primary topic slug: `business`, `tech`, `design`, `finance`, `career`, or `lifestyle`.
-- Do not invent new topic slugs. If none fit, return `action: needs_review` with rationale.
-- Harness labels raw inbox files with `sync_status: needs_review`, `review_labels`, and `review_notes`; see `newswiki/raw/REVIEW.md`.
-- When an article clearly spans multiple editorial fields, set `article.topics` with the canonical primary slug first and optional canonical secondaries; the harness lists it under every topic index but stores one canonical file path.
-- Respect `topics` in raw front matter as an operator hint when present.
-- Distill source-grounded sections and `key_takeaways`.
-- Preserve front matter metadata when present.
-- Add useful semantic `[[wiki links]]`.
-- Prefer resolvable article-to-article links (`[[topic/existing-slug|Title]]`) and hub links (`[[hubs/spacex|SpaceX]]`) over bare unresolved names.
-- In bullets and takeaways, include at least 2–4 `[[wiki links]]` to related companies, people, sectors, or existing wiki articles when the source supports them.
-- Set `article.slug` to lowercase ASCII only (`a-z`, `0-9`, hyphens). For Chinese titles, derive an English slug from the source URL path or article topic — never use CJK characters in slugs.
-- Set `article.path` to exactly `<wiki-prefix>/<primary-topic>/<article.slug>.md`. Do not invent nested subfolders under a topic (no `tech/ai-infrastructure/...`).
-
-**Harness does**
-
-- Scan source files.
-- Validate proposal JSON.
-- Render wiki markdown with the H1 title as `[Title](source)` when `front_matter.source` is set.
-- Update topic/root indexes.
-- Archive provenance stubs (source URL + metadata only, not full raw text).
-- Delete the processed raw inbox file and its related `_resources/` folders after a successful `create_article`.
-- Append `STATUS.md` rows with `article.path` as Wiki Location.
-- Maintain `<archive>/.sync_cache.json`.
-
-**Output JSON**
+**Actions**: `create_article` | `skip_duplicate` | `needs_review`. Section heading: `核心观点` (zh) / `Core View` (en).
 
 ```json
 {
@@ -189,38 +111,16 @@ Use these when interpreting business material:
     "topic_index_entry": "- [[article-slug|Title]] (YYYY-MM-DD) - Summary",
     "root_recent_entry": "- [[primary-topic-slug/article-slug|Title]] (YYYY-MM-DD)"
   },
-  "archive": {
-    "should_archive": true
-  },
+  "archive": { "should_archive": true },
   "review_notes": []
 }
 ```
 
-Allowed `action`: `create_article`, `skip_duplicate`, `needs_review`.
-For Chinese articles use `核心观点`; for English articles use `Core View`.
+## query-wiki: wiki → answer
 
-### query-wiki: wiki -> answer
+`make query QUESTION="…"` — answer from wiki with citations; note risks/gaps.
 
-**Intent**: answer questions from curated wiki memory with clickable evidence.
-
-**Use**: `scripts/query_wiki.py` or the `query-wiki` skill.
-
-**LLM does**
-
-- Interpret the question.
-- Select relevant wiki evidence.
-- Synthesize a concise answer.
-- Add raw/external provenance when useful.
-- Identify risks, gaps, and unknowns.
-
-**Harness does**
-
-- Load `INDEX.md` and topic `_index.md` context.
-- Validate query JSON.
-- Render markdown.
-- Save to `<outputs>` when requested.
-
-**Output JSON**
+**Citation `type`**: `wiki` | `raw` | `external` (`external` uses `url`, not `path`/`link`).
 
 ```json
 {
@@ -242,39 +142,17 @@ For Chinese articles use `核心观点`; for English articles use `Core View`.
       "note": "Why this supports the answer."
     }
   ],
-  "output": {
-    "should_save": true,
-    "filename_slug": "query-result"
-  },
+  "output": { "should_save": true, "filename_slug": "query-result" },
   "review_notes": []
 }
 ```
 
-Allowed citation `type`: `wiki`, `raw`, `external`. For `external`, use `url` instead of `path`/`link`.
+## audit-wiki: wiki → quality report
 
-### audit-wiki: wiki -> quality report
+`make audit` — read-only health check (broken links, gaps, thin/unsupported claims). Recommend fixes; do not edit files.
 
-**Intent**: inspect wiki health without changing source or wiki files.
-
-**Use**: `scripts/audit_wiki.py` or the `audit-wiki` skill.
-
-**LLM does**
-
-- Review deterministic findings from the harness.
-- Prioritize quality issues.
-- Flag missing links, thin coverage, unsupported claims, stale data, and weak synthesis.
-- Recommend fixes without modifying files.
-
-**Harness does**
-
-- Scan wiki markdown for `[[links]]`.
-- Resolve link targets.
-- Detect broken links and index gaps.
-- Build file inventory.
-- Validate audit JSON.
-- Render/save report.
-
-**Output JSON**
+**severity**: `critical` | `warning` | `info`.  
+**category**: `broken_link` | `missing_reference` | `coverage_gap` | `quality` | `other`.
 
 ```json
 {
@@ -303,24 +181,11 @@ Allowed citation `type`: `wiki`, `raw`, `external`. For `external`, use `url` in
       "suggested_action": "What to add or review."
     }
   ],
-  "output": {
-    "should_save": true,
-    "filename_slug": "wiki-audit"
-  },
+  "output": { "should_save": true, "filename_slug": "wiki-audit" },
   "review_notes": []
 }
 ```
 
-Allowed `severity`: `critical`, `warning`, `info`.
-Allowed `category`: `broken_link`, `missing_reference`, `coverage_gap`, `quality`, `other`.
-Audit is read-only by default.
+## analyze: ticker → report
 
-### analyze: ticker -> report
-
-**Intent**: produce a value + growth analysis for one ticker.
-
-**Use**: `python3 scripts/analyze.py <ticker>`.
-
-**Output**: `newswiki/outputs/<ticker>_analysis.md`.
-
-Apply the investment lens: margin, FCF, leverage, PEG, moats, and risks.
+`python3 scripts/analyze.py <ticker>` → `newswiki/outputs/<ticker>_analysis.md`. Apply the investment lens.

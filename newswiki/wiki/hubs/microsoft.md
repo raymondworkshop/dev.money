@@ -2,7 +2,7 @@
 title: "Microsoft"
 description: "Hub page aggregating wiki articles related to Microsoft."
 topics:
-  - career
+  - business
 ---
 
 # Microsoft
@@ -12,6 +12,7 @@ Curated hub for articles related to Microsoft.
 ## 相关文章
 
 - [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]] · #tech
+- [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]] · #business
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] · #tech
 - [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]] · #career
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]] · #tech
@@ -20,9 +21,10 @@ Curated hub for articles related to Microsoft.
 - [[career/how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] · #career
 - [[career/how-to-improve-job-search-success-by-optimizing-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] · #career
 - [[career/how-to-improve-job-search-success-by-refining-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] · #career
+- [[business/microsoft-azure-revenue-milestone|微软利润激增31%，Azure云业务财年收入首破千亿美元大关]] · #business
 - [[tech/residential-proxy-attack-2026|美国家庭网络如何沦为黑客隐身衣？]] · #tech
 - [[design/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] · #design
 
 ---
-**Topics**: [[career/_index|Career]]  
+**Topics**: [[business/_index|Business]]  
 **Tags**: #microsoft #hub

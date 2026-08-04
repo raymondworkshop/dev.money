@@ -1,17 +1,75 @@
 # News Wiki
 
-A warm, professional guide to business & finance, tech & design, career & lifestyle trends.
+Connected Stories — a warm, professional wiki to business & finance, tech & design, career & lifestyle trends.
 
 ## Topics
 
-- [[tech/_index|Tech]]: AI 算力、模型、机器人与教育科技。
-- [[design/_index|Design]]: 产品设计、科学传播与体验设计、人机交互。
-- [[business/_index|Business]]: 公司战略、创业风投、产业政策与商业航天。
-- [[finance/_index|Finance]]: 投资与量化、股票与债券、财富管理与公司估值。
-- [[career/_index|Career]]: 职业发展与人事实践。
-- [[lifestyle/_index|Lifestyle]]: 健康、家庭、教育、文化体育趋势、生活方式。
+- [[tech/_index|Tech]]: AI 基礎設施、機器人、教育科技與生產力工具  
+- [[design/_index|Design]]: 产品设计、科学与体验设计、人机交互  
+- [[business/_index|Business]]: 公司战略、创业风投、产业政策与商业機會  
+- [[finance/_index|Finance]]: 投资与量化、股票与债券、财富管理与公司估值  
+- [[career/_index|Career]]: 職業發展、軟技能與人才建設  
+- [[lifestyle/_index|Lifestyle]]: 健康生活、家庭、教育与文化体育  
 
 ## Recent Articles
+
+- [[finance/bessent-fed-yen-support|贝森特为何指望美联储帮助支撑日圆汇率]] (2026-08-04)
+
+- [[business/fashion-resale-trend|时尚巨头试水新潮流：销售二手服装]] (2026-08-04)
+
+- [[business/chinas-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03)
+
+- [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]] (2026-08-04)
+
+- [[business/base-power-energy-storage|戴尔之子进军储能业，欲将电池装进你家后院]] (2026-08-04)
+
+- [[business/china-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03)
+
+- [[business/palantir-revenue-growth-2026|Palantir股价飙升，收入近乎翻倍，公司上调业绩展望]] (2026-08-04)
+
+- [[business/openai-lost-ai-crown|OpenAI如何失去AI王冠——又欲如何重新夺回]] (2026-08-03)
+
+- [[finance/us-stock-market-bubbles|美股擅长制造泡沫，也能从容化解]] (2026-08-03)
+
+- [[tech/us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03)
+
+- [[tech/us-alternative-to-cheap-chinese-ai|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03)
+
+- [[lifestyle/fauci-pandemic-star-to-silent-witness|福奇如何从抗疫明星变为沉默证人]] (2026-07-31)
+
+- [[tech/ai-autonomous-cyberattacks|失控AI发动黑客攻击，预示网络混乱新时代到来]] (2026-08-03)
+
+- [[business/tesla-china-divestiture-spacex-merger|特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路]] (2026-07-31)
+
+- [[finance/situational-awareness-citadel-acquisition|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] (2026-07-31)
+
+- [[business/microsoft-azure-revenue-milestone|微软利润激增31%，Azure云业务财年收入首破千亿美元大关]] (2026-07-30)
+
+- [[business/pentagon-missile-submarine-contracts|五角大楼划拨1,200亿美元，加速生产爱国者导弹和潜艇]] (2026-07-30)
+
+- [[business/meta-q2-earnings-ai-spending-drop|Meta股价大跌10%，因AI支出增加且展望不及预期]] (2026-07-30)
+
+- [[business/ai-powered-solopreneurship|AI助力“一人公司”崛起：单枪匹马也可年入百万美元]] (2026-07-30)
+
+- [[business/trump-space-environmental-review-exemption|特朗普政府拟豁免航天公司的环境评估]] (2026-07-29)
+
+- [[business/china-ai-autonomy-market-reality|中国追求AI自主，股市却呈现另一种现实]] (2026-07-29)
+
+- [[design/starter-kit-ai-design-apps|Starter kit for AI design apps]] (2026-07-29)
+
+- [[business/apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]] (2026-07-27)
+
+- [[design/pentaton-lp|Pentaton LP • Pentaton]] (2026-07-28)
+
+- [[tech/us-companies-ai-cost-shift|美国企业观念突变，不再为AI大肆烧钱]] (2026-07-27)
+
+- [[lifestyle/ai-social-proxy|年轻人正让AI替他们说话，甚至在面对面交流时]] (2026-07-27)
+
+- [[tech/ai-safety-panic-washington-china-threat|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27)
+
+- [[career/big-companies-resume-hiring-ai-employment|大企业重新开始招聘，打破“AI将消灭就业”的预测]] (2026-07-27)
+
+- [[finance/china-offshore-wealth-crackdown|中国富豪借离岸架构积累财富的时代正在终结]] (2026-07-27)
 
 - [[tech/openai-rogue-model-hack|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]] (2026-07-24)
 

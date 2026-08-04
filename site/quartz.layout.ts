@@ -1,13 +1,23 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { QuartzComponentProps } from "./quartz/components/types"
 
-/** Hide helper folders from Explorer; hubs stay linkable via wiki links / graph. */
-const explorerFilter = (node: { slugSegment: string }) =>
-  node.slugSegment !== "tags" && node.slugSegment !== "hubs"
+const isHome = (page: QuartzComponentProps) => page.fileData.slug === "index"
 
-const explorer = Component.Explorer({
-  filterFn: explorerFilter,
-})
+const isTopicIndex = (page: QuartzComponentProps) => {
+  const slug = page.fileData.slug ?? ""
+  return slug !== "index" && /\/index$/.test(slug)
+}
+
+const isArticlePage = (page: QuartzComponentProps) => !isHome(page) && !isTopicIndex(page)
+
+const leftChrome = [
+  Component.PageTitle(),
+  Component.MobileOnly(Component.Spacer()),
+  Component.Search(),
+  Component.Darkmode(),
+  Component.TopicNav(),
+]
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -24,56 +34,66 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
       component: Component.Breadcrumbs(),
-      condition: (page) => page.fileData.slug !== "index",
+      condition: (page) => !isHome(page),
     }),
     Component.ConditionalRender({
       component: Component.ArticleTitle(),
-      condition: (page) => page.fileData.slug !== "index",
+      condition: (page) => {
+        const slug = page.fileData.slug ?? ""
+        return slug !== "index" && !/\/index$/.test(slug)
+      },
     }),
     Component.ConditionalRender({
       component: Component.ContentMeta(),
-      condition: (page) => page.fileData.slug !== "index",
+      condition: (page) => {
+        const slug = page.fileData.slug ?? ""
+        return slug !== "index" && !/\/index$/.test(slug)
+      },
     }),
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
+    ...leftChrome,
+    Component.ConditionalRender({
+      component: Component.ReaderMode(),
+      condition: isArticlePage,
     }),
-    explorer,
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
-    Component.Backlinks(),
+    Component.ConditionalRender({
+      component: Component.HomeAside(),
+      condition: isHome,
+    }),
+    Component.ConditionalRender({
+      component: Component.DesktopOnly(Component.TableOfContents()),
+      condition: isArticlePage,
+    }),
+    Component.ConditionalRender({
+      component: Component.Backlinks(),
+      condition: isArticlePage,
+    }),
   ],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-      ],
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ConditionalRender({
+      component: Component.ArticleTitle(),
+      condition: (page) => {
+        const slug = page.fileData.slug ?? ""
+        return !/\/index$/.test(slug) && slug !== "index"
+      },
     }),
-    explorer,
+    Component.ConditionalRender({
+      component: Component.ContentMeta(),
+      condition: (page) => {
+        const slug = page.fileData.slug ?? ""
+        return !/\/index$/.test(slug) && slug !== "index"
+      },
+    }),
   ],
+  left: leftChrome,
   right: [],
 }

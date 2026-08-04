@@ -2,7 +2,7 @@
 title: "Nebius"
 description: "Hub page aggregating wiki articles related to Nebius."
 topics:
-  - tech
+  - finance
 ---
 
 # Nebius
@@ -13,7 +13,8 @@ Curated hub for articles related to Nebius.
 
 - [[tech/2026-05-29-ai-film-cannes-compute-costs|AI长片在戛纳首映：50万美元制作成本，算力支出占40万]] · #tech
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] · #tech
+- [[finance/situational-awareness-citadel-acquisition|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] · #finance
 
 ---
-**Topics**: [[tech/_index|Tech]]  
+**Topics**: [[finance/_index|Finance]]  
 **Tags**: #nebius #hub

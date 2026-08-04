@@ -35,8 +35,8 @@ topics:
 
 - [[tech/ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]]
 - [[finance/us-treasury-yield-surge-impact|美债收益率飙升，对消费者和市场意味着什么？]]
+- [[finance/us-stock-market-bubbles|美股擅长制造泡沫，也能从容化解]]
 - [[business/45-million-donation-larry-ellison-trump-inner-circle|一笔4,500万美元的捐款如何让拉里·埃里森深入特朗普核心圈？]]
-- [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]]
 
 ---
 **Topics**: [[finance/_index|Finance]]  

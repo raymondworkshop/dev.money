@@ -31,7 +31,7 @@ topics:
 
 ## 相关文章
 
-- [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]]
-- [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]]
-- [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]]
-- [[finance/us-treasury-yield-surge-impact|美债收益率飙升，对消费者和市场意味着什么？]]
+- [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]]
+- [[business/meta-q2-earnings-ai-spending-drop|Meta股价大跌10%，因AI支出增加且展望不及预期]]
+- [[business/microsoft-azure-revenue-milestone|微软利润激增31%，Azure云业务财年收入首破千亿美元大关]]
+- [[business/apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]]

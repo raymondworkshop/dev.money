@@ -1,22 +1,82 @@
 .darkmode {
+  // Mockup: ☀ Light  [●────]  Dark ☾ — compact, left-aligned
   cursor: pointer;
-  padding: 0;
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  width: auto;
+  max-width: 100%;
+  margin: 0.35rem 0 0.75rem;
+  padding: 0.15rem 0;
   background: none;
   border: none;
-  width: 20px;
-  height: 32px;
-  margin: 0;
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1;
+  color: var(--dark);
   text-align: inherit;
   flex-shrink: 0;
 
-  & svg {
+  &:hover,
+  &:focus-visible {
+    background: transparent;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--tertiary);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+
+  .darkmode-side {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.28rem;
+    color: var(--dark);
+  }
+
+  .darkmode-label {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: inherit;
+  }
+
+  .darkmode-sun,
+  .darkmode-moon {
+    position: static;
+    width: 0.9rem;
+    height: 0.9rem;
+    flex-shrink: 0;
+    fill: none;
+    color: inherit;
+    stroke: currentColor;
+  }
+
+  // Solid forest-green pill + white knob (as in demo)
+  .darkmode-track {
+    position: relative;
+    flex: 0 0 2.2rem;
+    width: 2.2rem;
+    height: 1.15rem;
+    margin: 0 0.1rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--secondary) 42%, var(--dark));
+    border: none;
+    transition: background-color 0.18s ease;
+  }
+
+  .darkmode-thumb {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: calc(50% - 10px);
-    fill: var(--darkgray);
-    transition: opacity 0.1s ease;
+    top: 50%;
+    left: 0.14rem;
+    width: 0.88rem;
+    height: 0.88rem;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 1px 2px color-mix(in srgb, var(--dark) 22%, transparent);
+    transform: translateY(-50%);
+    transition: left 0.18s ease;
   }
 }
 
@@ -28,20 +88,21 @@
   color-scheme: light;
 }
 
-:root[saved-theme="dark"] .darkmode {
-  & > .dayIcon {
-    display: none;
-  }
-  & > .nightIcon {
-    display: inline;
+// Light → knob left; Dark → knob right. Labels stay ink-colored like the mockup.
+:root[saved-theme="light"] .darkmode,
+:root:not([saved-theme]) .darkmode {
+  .darkmode-thumb {
+    left: 0.14rem;
   }
 }
 
-:root .darkmode {
-  & > .dayIcon {
-    display: inline;
+:root[saved-theme="dark"] .darkmode {
+  .darkmode-thumb {
+    left: calc(100% - 1.02rem);
+    background: #ffffff;
   }
-  & > .nightIcon {
-    display: none;
+
+  .darkmode-track {
+    background: color-mix(in srgb, var(--secondary) 55%, var(--dark));
   }
 }

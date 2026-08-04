@@ -280,12 +280,16 @@ export function renderPage(
                 </div>
               </div>
               <Content {...componentData} />
-              <hr />
-              <div class="page-footer">
-                {afterBody.map((BodyComponent) => (
-                  <BodyComponent {...componentData} />
-                ))}
-              </div>
+              {afterBody.length > 0 && (
+                <>
+                  <hr />
+                  <div class="page-footer">
+                    {afterBody.map((BodyComponent) => (
+                      <BodyComponent {...componentData} />
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
             {RightComponent}
             <Footer {...componentData} />

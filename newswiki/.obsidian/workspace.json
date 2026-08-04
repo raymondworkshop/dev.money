@@ -11,14 +11,10 @@
             "id": "b86fc864577a0914",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
+              "title": "Outgoing links"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
+              "title": "Outline"
             }
           }
         ]
@@ -186,9 +179,51 @@
   },
   "active": "b86fc864577a0914",
   "lastOpenFiles": [
-    "_resources/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌/d3977375159de33aaccdbc4bf7736c43_MD5.jpg",
-    "_resources/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌/608de5e055df396dc5dc0e8946353a9e_MD5.jpg",
-    "_resources/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌",
-    "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md"
+    "raw/2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率.md",
+    "raw/archive/2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率.md",
+    "wiki/finance/bessent-fed-yen-support.md",
+    "raw/archive/2026-08-04-时尚巨头试水新潮流：销售二手服装.md",
+    "wiki/business/fashion-resale-trend.md",
+    "wiki/business/chinas-economic-dynamism-paradox.md",
+    "raw/archive/2026-08-04-AI热潮正重塑美国经济，深刻程度超乎认知.md",
+    "wiki/business/ai-boom-reshaping-us-economy.md",
+    "_resources/2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率/d80db77d49523fe2dd31d05e3f036161_MD5.jpg",
+    "_resources/2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率/a6b86e5008241606a6bd168f4030e910_MD5.jpg",
+    "_resources/2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率",
+    "raw/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论.md",
+    "_resources/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论/37abb923bfd542d660ab8fb2163ed364_MD5.jpg",
+    "_resources/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论/2b7b8dadef85963d25fa7743516fb9d9_MD5.jpg",
+    "_resources/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论/4494725d9c827914a0bf220ea1b8df37_MD5.jpg",
+    "_resources/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论/81ca6ebe1706d617207dc6a41aeaed33_MD5.jpg",
+    "_resources/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论/e4cccd1a1f72cc3e0af077fac7caae1f_MD5.jpg",
+    "_resources/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论/7cda3239fc0587b2657dda94560a0dcd_MD5.jpg",
+    "_resources/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论/1421593302a90e0be3bd3741a91d2ae5_MD5.jpg",
+    "_resources/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论",
+    "raw/2026-08-04-时尚巨头试水新潮流：销售二手服装.md",
+    "_resources/2026-08-04-时尚巨头试水新潮流：销售二手服装/30bb21097318dcd34c951b782f8bd646_MD5.jpg",
+    "raw/archive/2026-08-04-戴尔之子进军储能业，欲将电池装进你家后院.md",
+    "wiki/business/base-power-energy-storage.md",
+    "_resources/2026-08-04-时尚巨头试水新潮流：销售二手服装",
+    "raw/2026-08-04-AI热潮正重塑美国经济，深刻程度超乎认知.md",
+    "raw/archive/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论.md",
+    "wiki/business/china-economic-dynamism-paradox.md",
+    "raw/archive/2026-08-04-Palantir股价飙升，收入近乎翻倍，公司上调业绩展望.md",
+    "wiki/business/palantir-revenue-growth-2026.md",
+    "raw/archive/2026-08-04-OpenAI如何失去AI王冠——又欲如何重新夺回.md",
+    "wiki/business/openai-lost-ai-crown.md",
+    "raw/2026-08-04-Palantir股价飙升，收入近乎翻倍，公司上调业绩展望.md",
+    "_resources/2026-08-04-Palantir股价飙升，收入近乎翻倍，公司上调业绩展望",
+    "raw/2026-08-04-戴尔之子进军储能业，欲将电池装进你家后院.md",
+    "_resources/2026-08-04-戴尔之子进军储能业，欲将电池装进你家后院",
+    "raw/2026-08-04-OpenAI如何失去AI王冠——又欲如何重新夺回.md",
+    "_resources/2026-08-04-OpenAI如何失去AI王冠——又欲如何重新夺回",
+    "raw/archive/2026-08-03-美股擅长制造泡沫，也能从容化解.md",
+    "raw/2026-08-03-美股擅长制造泡沫，也能从容化解 1.md",
+    "raw/archive/2026-08-03-美股擅长制造泡沫，也能从容化解 1.md",
+    "wiki/finance/us-stock-market-bubbles.md",
+    "_resources/2026-08-03-失控AI发动黑客攻击，预示网络混乱新时代到来",
+    "_resources/2026-08-03-美股擅长制造泡沫，也能从容化解 1",
+    "_resources/2026-08-03-福奇如何从抗疫明星变为沉默证人",
+    "_resources/2026-08-03-美股擅长制造泡沫，也能从容化解"
   ]
 }

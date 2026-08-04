@@ -6,21 +6,21 @@ interface Options {
 }
 
 export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
-    const links = opts?.links ?? []
+    const links = Object.entries(opts?.links ?? {})
     return (
       <footer class={`${displayClass ?? ""}`}>
-        <p>
-          Copyright © {year} Bean Workshop Ltd.
-        </p>
-        <ul>
-          {Object.entries(links).map(([text, link]) => (
-            <li>
-              <a href={link}>{text}</a>
-            </li>
-          ))}
-        </ul>
+        <p class="footer-copy">© {year} Bean Workshop Ltd.</p>
+        {links.length > 0 && (
+          <ul>
+            {links.map(([text, link]) => (
+              <li>
+                <a href={link}>{text}</a>
+              </li>
+            ))}
+          </ul>
+        )}
       </footer>
     )
   }
