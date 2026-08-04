@@ -16,6 +16,7 @@
 - [[2026-05-11-divorce-financial-infidelity|婚姻破裂的关键导火索：“财务出轨”]] (2026-05-11) - 如今，对伴侣隐瞒财产或支出已是再简单不过的事情，但“财务不忠”不仅会酿成离婚的结局，还会给个人带来严重的财务后果。
 - [[NIL-graduation-balls-lifestyle-trend|Elite College Football Players Host Lavish High School Graduation Balls Amid NIL Boom]] (2026-06-29) - As college football athletes begin earning substantial NIL income, they are transforming traditional high school graduation ceremonies into personalized, high-end events — blending personal branding with cultural expression.
 - [[Tech-Workout-Exercise-Keep|哑铃平板卧推_Keep]] (2026-07-07) - 步骤 | 双脚踩实地面，臀部收紧，绷紧腹部，肩胛骨后缩下沉使上背平贴凳子，小臂垂直地面举起哑铃在身体两侧胸部发力，使上臂向身体中间靠拢；在最高点肘关节微弯，稍作停留，肩膀始终后缩下沉缓慢下落，小臂始终垂直地面，下落至哑铃下沿与胸部在同一高度，稍作停顿呼吸 | 下放吸气，上推呼气动作感觉 | 推起时，
+- [[ai-dating-chatbots|AI时代的爱情：聊天机器人接管线上约会]] (2026-08-04) - 一些厌倦了“左滑右滑”的单身人士，正将目光投向AI红娘。
 - [[ai-social-proxy|年轻人正让AI替他们说话，甚至在面对面交流时]] (2026-07-27) - 有一项任务比做家庭作业更令人头疼，那就是与人打交道。如今，越来越多的年轻人正开始依赖AI来处理这件事。
 - [[amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16) - Prime Video掘金青春浪漫小说领域，专门迎合庞大的女性和女孩群体，满足她们想要沉浸到爱情故事里避世放松的需求。
 - [[american-couples-move-back-from-norway-after-remote-living-experiment|他们千辛万苦从美国移居挪威，如今又要搬回去]] (2026-07-13) - 一对为追寻梦想而搬到挪威偏远群岛的美国夫妇在遭遇了文化冲击和生活难题后决定返回美国，并将挪威的农舍挂牌出售。

@@ -89,6 +89,8 @@ AI 基础设施、算力云、模型技术、机器人、教育科技与生产�
 - [[big-companies-resume-hiring-ai-employment|大企业重新开始招聘，打破“AI将消灭就业”的预测]] (2026-07-27) - 在控制招聘一年后，从科技、运输到国防等领域，一些大公司如今表示，它们需要更多员工来协同AI开展工作。
 - [[fake-job-interview-git-hook-malware|Appaji - Software Engineer]] (2001-07-23) - Appaji, a Computer Science graduate from IIT Patna and former intern at Arista Networks, is a Software Engineer at Infinite Reality. Passionate about building innovative web experiences, with a strong interest in sustainable and customer-focused startups.
 - [[how-to-choose-a-subproblem|How To Choose A Subproblem]] (2026-07-20) - And why the best subproblem is always 'make a picture'
+- [[llms-reward-expertise|LLMs reward expertise]] (2026-08-04) - An analysis of why domain expertise remains the critical bottleneck and the most valuable skill for steering LLMs toward high-quality outputs.
+- [[ai-dating-chatbots|AI时代的爱情：聊天机器人接管线上约会]] (2026-08-04) - 一些厌倦了“左滑右滑”的单身人士，正将目光投向AI红娘。
 - [[ai-social-proxy|年轻人正让AI替他们说话，甚至在面对面交流时]] (2026-07-27) - 有一项任务比做家庭作业更令人头疼，那就是与人打交道。如今，越来越多的年轻人正开始依赖AI来处理这件事。
 - [[utah-ai-doctor-pilot|犹他州试点“AI医生”，真人医生们坐不住了]] (2026-06-19) - 围绕AI医生的交锋已经展开，而犹他州正处于这场争议的最前线。该州的任何成年人都可以登录Doctronic公司的AI系统，续开降胆固醇药物或抗抑郁药等处方。
 

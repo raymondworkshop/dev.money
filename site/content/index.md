@@ -5,7 +5,7 @@ created: "2026-05-30"
 
 # News Wiki
 
-Connected Stories — a warm, professional wiki to business & finance, tech & design, career & lifestyle trends.
+Connected Stories — a warm, professional wiki on business & finance, tech & design, and career & lifestyle trends.
 
 ## Topics
 
@@ -14,7 +14,8 @@ Connected Stories — a warm, professional wiki to business & finance, tech & de
 - [[business|Business]]: 公司戰略、創業風投、產業政策與商業機會
 - [[finance|Finance]]: 投資與量化、股票與債券、財富管理與公司估值
 - [[career|Career]]: 職業發展、軟技能與人才建設
-- [[lifestyle|Lifestyle]]: 健康生活、家庭、教育與文化體育
+- [[tech|Tech]]: AI 基礎設施、機器人、教育科技與效率工具
+- [[articles|More]]
 
 ## Recent Articles
 
@@ -28,5 +29,5 @@ Connected Stories — a warm, professional wiki to business & finance, tech & de
 
 ## Philosophy
 - [[connected-stories|連綴敘事]]: 以主題線串聯離散報道
-- [[verifiable-sources|來源覈實]]: 論點可回溯
-- [[cross-domain-reporting|多角報道]]: 同一事件，分看商業、科技、設計與生活
+- [[verifiable-sources|來源核實]]: 論點可回溯
+- [[cross-domain-reporting|多角度報道]]: 同一事件，分看商業、科技、設計與生活的不同面向

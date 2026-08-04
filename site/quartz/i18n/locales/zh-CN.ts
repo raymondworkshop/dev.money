@@ -50,8 +50,8 @@ export default {
       linkToOriginal: "指向原始笔记的链接",
     },
     search: {
-      title: "search wiki",
-      searchBarPlaceholder: "搜索些什么",
+      title: "Search",
+      searchBarPlaceholder: "Search wiki...",
     },
     tableOfContents: {
       title: "目录",

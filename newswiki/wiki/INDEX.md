@@ -1,18 +1,27 @@
 # News Wiki
 
-Connected Stories — a warm, professional wiki to business & finance, tech & design, career & lifestyle trends.
+Connected Stories — a warm, professional wiki on business & finance, tech & design, and career & lifestyle trends.
 
 ## Topics
 
+<<<<<<< HEAD
 - [[tech/_index|Tech]]: AI 基礎設施、機器人、教育科技與生產力工具  
 - [[design/_index|Design]]: 产品设计、科学与体验设计、人机交互  
 - [[business/_index|Business]]: 公司战略、创业风投、产业政策与商业機會  
 - [[finance/_index|Finance]]: 投资与量化、股票与债券、财富管理与公司估值  
 - [[career/_index|Career]]: 職業發展、軟技能與人才建設  
+=======
+- [[tech/_index|Tech]]: AI 基礎設施、機器人、教育科技與效率工具  
+- [[design/_index|Design]]: 體驗設計、產品策略、人機互動與視覺敘事  
+- [[business/_index|Business]]: 企業策略、創業風投、產業政策與商業機會  
+- [[finance/_index|Finance]]: 投資與量化、股票與債券、財富管理與估值框架  
+- [[career/_index|Career]]: 職涯發展、軟技能、組織與人才建設  
+>>>>>>> 838cff0f7bd752229857d3adb5055d09129d50e2
 - [[lifestyle/_index|Lifestyle]]: 健康生活、家庭、教育与文化体育
 
 ## Recent Articles
 
+<<<<<<< HEAD
 - [[finance/ai-financial-advice-quality|AI financial advice is surprisingly good — especially if you ask the right questions]] (2026-07-21)
 
 - [[business/jetzero-bwb-aircraft|JetZero翼身融合飞机设计能否挑战波音霸主地位？]] (2026-07-30)
@@ -24,6 +33,17 @@ Connected Stories — a warm, professional wiki to business & finance, tech & de
 - [[tech/washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27)
 
 - [[lifestyle/developing-countries-aging-crisis|发展中国家正迅速老龄化，无力承担养老之重]] (2026-07-27)
+=======
+- [[business/whirlpool-north-america-struggle|退守本土后，惠而浦为何仍难逃“寒冬”？]] (2026-08-04)
+
+- [[business/balaji-network-school-malaysia|硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停]] (2026-08-04)
+
+- [[business/china-manufacturing-summer-blues|中国制造业遭遇“苦夏”]] (2026-08-03)
+
+- [[career/llms-reward-expertise|LLMs reward expertise]] (2026-08-04)
+
+- [[lifestyle/ai-dating-chatbots|AI时代的爱情：聊天机器人接管线上约会]] (2026-08-04)
+>>>>>>> 838cff0f7bd752229857d3adb5055d09129d50e2
 
 - [[finance/bessent-fed-yen-support|贝森特为何指望美联储帮助支撑日圆汇率]] (2026-08-04)
 
@@ -254,6 +274,6 @@ Connected Stories — a warm, professional wiki to business & finance, tech & de
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] (2026-05-27)
 - [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]] (2026-05-21)
 ## Philosophy
-- [[connected-stories|连缀叙事]]: 以主题线串联离散报道
-- [[verifiable-sources|来源核实]]: 论点可回溯
-- [[cross-domain-reporting|多角报道]]: 同一事件，分看商业、科技、设计与生活
+- [[connected-stories|連綴敘事]]: 以主題線串聯離散報道
+- [[verifiable-sources|來源核實]]: 論點可回溯
+- [[cross-domain-reporting|多角度報道]]: 同一事件，分看商業、科技、設計與生活的不同面向

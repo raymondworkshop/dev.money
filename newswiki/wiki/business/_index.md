@@ -20,12 +20,14 @@
 - [[ai-powered-solopreneurship|AI助力“一人公司”崛起：单枪匹马也可年入百万美元]] (2026-07-30) - AI工具让创始人更容易单枪匹马地创业，而且许多人在公司发展壮大后依然保持这种单干状态。
 - [[ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-05-25) - 凯鹏华盈董事长约翰·杜尔曾精准押注谷歌，在他看来，AI革命非但没有过度炒作，反而被低估了。
 - [[apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]] (2026-07-27) - 降低美国消费物价和提高国内半导体产量，这两项美国总统特朗普的优先事项相互冲突。
+- [[balaji-network-school-malaysia|硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停]] (2026-08-04) - 科技大亨巴拉吉·斯里尼瓦桑离开硅谷，在亚洲一座鬼城试水“网络建国孵化器”，随后该项目遭当地政府勒令关闭。
 - [[base-power-energy-storage|戴尔之子进军储能业，欲将电池装进你家后院]] (2026-08-04) - 随着电力需求和电池储能激增，由扎克·戴尔联合创立的Base Power获得130亿美元估值。
 - [[berkshire-japan-us-housing-opportunity|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]] (2026-06-04) - 伯克希尔哈撒韦公司在美国住宅建筑商身上看到了什么公开市场投资者没有注意到的东西？或许与关注该行业的日本企业所见略同。
 - [[blue-origin-trump-contract-surge|How Bezos Learned to Win Over Trump and Secured a Surge of Contracts for Blue Origin]] (2026-07-03) - Bezos transitioned from being a political adversary of Trump to a key ally, with Blue Origin securing a dramatic increase in federal contracts during Trump's second term.
 - [[china-ai-autonomy-market-reality|中国追求AI自主，股市却呈现另一种现实]] (2026-07-29) - 中国希望世界能像看待美国AI产业那样，来看待中国的AI产业。但就目前而言，中国市场依然在看外围的脸色。
 - [[china-all-encompassing-policy|中国“全方位产业政策”令世界其他地区望尘莫及]] (2026-05-15) - 从传统行业到新兴领域，从商品到服务，从微观干预到宏观调控，中国政府的支持无处不在。
 - [[china-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03) - 在美国，监管往往会保护守成者，却压抑了创业热情。中国则先给初创企业留足成长空间，随后再对创始人出手整顿。
+- [[china-manufacturing-summer-blues|中国制造业遭遇“苦夏”]] (2026-08-03) - 尽管经济增长势头放缓，但中国政府几乎没有表现出采取大规模刺激措施的意愿。
 - [[chinas-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03) - 在美国，监管往往会保护守成者，却压抑了创业热情。中国则先给初创企业留足成长空间，随后再对创始人出手整顿。
 - [[doerr-ai-tsunami|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-05-25) - 凯鹏华盈董事长约翰·杜尔曾精准押注谷歌，在他看来，AI革命非但没有过度炒作，反而被低估了。
 - [[doing-something-never-done-before|Doing Something That’s Never Been Done Before]] (2025-11-14) - I’ve found recently that I’ve been a bit hesitant to take on new projects, especially of the interesting variety, largely out of a fear that I’m doing something unoriginal. As anyone who has spent any substantial amount of time in the markets will tell you, being second to an idea isn’t necessarily terrible, but being 50th generally is, and I’d really rather avoid being 50th whenever possible. How do you guarantee, or at least maximize the odds, that whatever you’re doing, you’re the first?
@@ -64,6 +66,7 @@
 - [[us-biotech-boosts-secrity-to-fight-china-pharma-competition|为防范中国药企跟风，美国生物技术公司加强保密]] (2026-07-10) - 面对海外堪称极致高效的制药研发管线，西方生物技术公司被迫实施更严格的保密管控来确保自身领先优势。
 - [[venture-capital-new-strategy-silicon-valley|风投界新势力凭借新策略在硅谷制胜]] (2026-07-20) - 随着企业保持非上市状态的时间越来越长，风投界正经历一场历史性的洗牌，一种新的投资方式也应运而生：花高价入股最热门的初创公司。
 - [[western-automakers-losing-grip-on-chinese-market|Western Automakers Are Losing Their Grip on the Chinese Auto Market]] (2026-07-01) - With faster, more technology-focused approaches, Chinese EVs have nearly driven foreign brands out of the market.
+- [[whirlpool-north-america-struggle|退守本土后，惠而浦为何仍难逃“寒冬”？]] (2026-08-04) - 这家家电巨头将重心收缩至北美，却也将其命运与持续低迷的美国房地产市场紧密捆绑。
 - [[white-house-intervention-against-fifa-red-card|White House Intervenes Behind the Scenes to Overturn FIFA Red Card Decision]] (2026-07-06) - The U.S. government, led by President Trump, pressured FIFA to overturn a red card issued to American forward Folarin Balogun during the World Cup, citing unfairness and invoking administrative review under FIFA's Article 27.
 - [[ai-safety-panic-washington-china-threat|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27) - 华盛顿要求约束AI的呼声愈演愈烈，科技行业内部则在为“谁来握紧缰绳”争夺主导权。
 - [[ai-spending-war-who-will-blink-first|人工智能领域的支出大战，最终会有人让步吗？]] (2026-07-07) - 如果Meta真的开始出租闲置算力，这恐怕将成为一个危险信号，预示着大型科技巨头已经陷入了基础设施建设过剩的泥潭。

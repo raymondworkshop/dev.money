@@ -40,6 +40,7 @@ AI 对就业的冲击、职业发展、软技能与组织人才建设。
 - [[how-to-improve-job-success-rate-with-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18) - 无论你眼下是否在找工作，及时更新领英运营策略都至关重要。
 - [[linkedin-ai-employment-irrationality|领英高管揭示职场AI应用的最大误区]] (2026-04-13) - “如果对AI过度依赖，那意味着在整个工作流程中，你丧失了作为人类的独特价值。”
 - [[llm-burnout-impact|I Think I Have LLM Burnout]] (2026-07-09) - The author describes growing fatigue from daily exposure to LLM-generated content, particularly due to repetitive patterns like hallucinations, excessive emojis, and staccato fragments.
+- [[llms-reward-expertise|LLMs reward expertise]] (2026-08-04) - An analysis of why domain expertise remains the critical bottleneck and the most valuable skill for steering LLMs toward high-quality outputs.
 - [[new-grad-career-advice-2026|给应届毕业生的五点具体职场建议]] (2026-06-09) - 大学里的“娇生惯养”不会延续到现实社会中。
 - [[retirement-reentry-experiences|In America, What Is the Experience of Retiring and Starting a Business Later in Life?]] (2026-07-06) - A look at how individuals in their 50s and 60s are redefining retirement by launching new ventures, discussing financial implications, work-life balance, and personal motivations.
 - [[us-whitecollar-midcareer-stagnation-20260602|四分之一的美国白领遭遇职业中期停滞]] (2026-06-01) - 一项新研究发现，大约四分之一的美国职场人士经历过职业中期停滞，即至少五年没有获得实质性的加薪或晋升，一道无形的障碍正阻碍许多人向上发展。

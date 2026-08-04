@@ -217,6 +217,15 @@ footer {
   opacity: 1;
 }
 
+// Align footer block with article column (override base footer margin-left: 0).
+.page > #quartz-body > footer {
+  width: min(100%, 44rem);
+  min-width: 0;
+  max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // Legacy safety: hide orphan content-column rule when page-footer is empty
 .page > #quartz-body .center > hr:has(+ .page-footer:empty),
 .page > #quartz-body .center > .page-footer:empty {
@@ -492,6 +501,12 @@ body[data-slug="articles"] {
 // Homepage — match editorial demo mockup
 body[data-slug="index"] {
   .page > #quartz-body .center > article {
+    max-width: 48rem;
+  }
+
+  // Keep footer left edge aligned with homepage article column.
+  .page > #quartz-body > footer {
+    width: min(100%, 48rem);
     max-width: 48rem;
   }
 
