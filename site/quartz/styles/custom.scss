@@ -80,6 +80,43 @@ html {
   padding-left: 0.75rem;
 }
 
+// Phone + tablet: never show the right rail (Backlinks move under the article).
+@media all and (max-width: 899px) {
+  .page > #quartz-body > .sidebar.right {
+    display: none;
+  }
+}
+
+// Home + topic indexes: two-column desktop (no empty right rail).
+body[data-slug="index"] .page > #quartz-body,
+body[data-slug$="/index"] .page > #quartz-body {
+  @media all and (min-width: 900px) {
+    grid-template-columns: 260px auto;
+    grid-template-areas:
+      "grid-sidebar-left grid-header"
+      "grid-sidebar-left grid-center"
+      "grid-sidebar-left grid-footer";
+
+    > .sidebar.right {
+      display: none;
+    }
+  }
+}
+
+// Article backlinks under the body on phone/tablet (before Stay Updated / ©).
+.page > #quartz-body .center > .page-footer .backlinks {
+  margin: 0.5rem 0 0.25rem;
+  max-width: 44rem;
+}
+
+// Desktop: afterBody only hosts the phone/tablet Backlinks copy — hide the empty rule.
+@media all and (min-width: 900px) {
+  .page > #quartz-body .center > hr:has(+ .page-footer:has(.below-desktop)),
+  .page > #quartz-body .center > .page-footer:has(.below-desktop) {
+    display: none;
+  }
+}
+
 // Search: full-width rounded field like mockup
 .left.sidebar .search {
   max-width: none;
@@ -102,8 +139,38 @@ html {
 
 .left.sidebar .darkmode {
   margin: 0.15rem 0 0.35rem;
-  width: 2rem;
-  height: 2rem;
+  width: auto;
+  height: auto;
+}
+
+// Mobile: Quartz defaults left chrome to a horizontal row (Explorer hamburger era).
+// TopicNav is a tall list — keep it stacked so it cannot cover title/search/article.
+@media all and (max-width: 800px) {
+  .page > #quartz-body > .sidebar.left {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.55rem;
+    padding: 1rem 0 0.85rem;
+    border-right: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 75%, transparent);
+    background: color-mix(in srgb, var(--light) 94%, transparent);
+
+    > .spacer {
+      display: none;
+    }
+
+    > .page-title {
+      margin-bottom: 0;
+    }
+
+    > .search {
+      margin-bottom: 0;
+    }
+
+    > .darkmode {
+      margin: 0;
+    }
+  }
 }
 
 p,
@@ -582,6 +649,7 @@ body[data-slug="index"] {
       background: color-mix(in srgb, var(--light) 96%, white);
       line-height: 1.5;
       color: color-mix(in srgb, var(--darkgray) 85%, var(--gray));
+      cursor: pointer;
       transition:
         border-color 0.18s ease,
         background-color 0.18s ease,
@@ -647,10 +715,24 @@ body[data-slug="index"] {
         padding: 0;
         color: var(--dark);
 
+        // Stretch the topic link across the whole card.
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: inherit;
+          z-index: 1;
+        }
+
         &:hover,
         &:focus-visible {
           color: var(--secondary);
           background: transparent;
+        }
+
+        &:focus-visible::after {
+          outline: 2px solid var(--tertiary);
+          outline-offset: 2px;
         }
       }
     }

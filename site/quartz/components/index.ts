@@ -25,6 +25,9 @@ import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import TopicNav from "./TopicNav"
 import HomeAside from "./HomeAside"
+import StayUpdated from "./StayUpdated"
+import DesktopUp from "./DesktopUp"
+import BelowDesktop from "./BelowDesktop"
 
 export {
   ArticleTitle,
@@ -46,6 +49,8 @@ export {
   Footer,
   DesktopOnly,
   MobileOnly,
+  DesktopUp,
+  BelowDesktop,
   RecentNotes,
   NotFound,
   Breadcrumbs,
@@ -54,4 +59,5 @@ export {
   ConditionalRender,
   TopicNav,
   HomeAside,
+  StayUpdated,
 }

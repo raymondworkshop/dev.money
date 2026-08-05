@@ -146,6 +146,34 @@ a {
   }
 }
 
+// ≥ desktop breakpoint (900px)
+.desktop-up {
+  display: initial;
+  &.flex-component {
+    display: flex;
+  }
+  @media all and not ($desktop) {
+    &.flex-component {
+      display: none;
+    }
+    display: none;
+  }
+}
+
+// phone + tablet (<900px)
+.below-desktop {
+  display: none;
+  &.flex-component {
+    display: none;
+  }
+  @media all and not ($desktop) {
+    &.flex-component {
+      display: flex;
+    }
+    display: initial;
+  }
+}
+
 .mobile-only {
   display: none;
   &.flex-component {
@@ -233,14 +261,15 @@ a {
       grid-area: grid-sidebar-left;
       flex-direction: column;
       @media all and ($mobile) {
-        gap: 0;
-        align-items: center;
+        // Stack chrome + TopicNav (do not use Explorer-era horizontal row).
+        gap: 0.55rem;
+        align-items: stretch;
         position: initial;
         display: flex;
         height: unset;
-        flex-direction: row;
+        flex-direction: column;
         padding: 0;
-        padding-top: 2rem;
+        padding-top: 1rem;
       }
     }
 
