@@ -15,19 +15,9 @@ body {
   --bodyFont: #{$font-stack};
   --codeFont: #{$code-stack};
 
-  // Soft paper wash + faint topographic rings (mockup)
+  // Use theme token so Dark mode can switch (--light is #fff / #121816).
   background-color: var(--light);
-  background-image:
-    radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--secondary) 7%, transparent) 0 1px, transparent 1.5px),
-    radial-gradient(circle at 88% 8%, transparent 40px, color-mix(in srgb, var(--secondary) 5%, transparent) 41px, transparent 42px),
-    radial-gradient(circle at 88% 8%, transparent 70px, color-mix(in srgb, var(--secondary) 4%, transparent) 71px, transparent 72px),
-    radial-gradient(circle at 88% 8%, transparent 100px, color-mix(in srgb, var(--secondary) 3%, transparent) 101px, transparent 102px),
-    radial-gradient(
-      ellipse 110% 70% at 50% -25%,
-      color-mix(in srgb, var(--secondary) 6%, transparent),
-      transparent 55%
-    );
-  background-repeat: no-repeat;
+  background-image: none;
 }
 
 :root {
@@ -49,6 +39,7 @@ html {
   max-width: 44rem;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 }
 
 .page-title {
@@ -80,10 +71,95 @@ html {
   padding-left: 0.75rem;
 }
 
-// Phone + tablet: never show the right rail (Backlinks move under the article).
-@media all and (max-width: 899px) {
+// Article right rail: graph needs usable width.
+@media all and (min-width: 900px) {
   .page > #quartz-body > .sidebar.right {
-    display: none;
+    padding-left: 0.85rem;
+    padding-right: 1rem;
+    min-width: 0;
+
+    .graph {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+}
+
+// Phone + tablet (<900px): single column, readable measure.
+// Quartz's narrow "tablet" band (800–900) kept a 260px left rail and let
+// article text span the rest of an iPad — lines felt too wide / unadjusted.
+@media all and (max-width: 899px) {
+  .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    column-gap: 0;
+    row-gap: 0.35rem;
+    grid-template-areas:
+      "grid-sidebar-left"
+      "grid-header"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer";
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    box-sizing: border-box;
+
+    > .sidebar.right {
+      display: none;
+    }
+
+    > .center,
+    > footer {
+      min-width: 0;
+      max-width: 36rem;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box;
+    }
+
+    > .sidebar.left {
+      position: initial;
+      height: unset;
+      width: 100%;
+      max-width: 36rem;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.55rem;
+      padding: 1rem 0 0.85rem;
+      border-right: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 75%, transparent);
+      background: color-mix(in srgb, var(--light) 94%, transparent);
+      box-sizing: border-box;
+
+      > .spacer {
+        display: none;
+      }
+
+      > .page-title {
+        margin-bottom: 0;
+      }
+
+      > .search {
+        margin-bottom: 0;
+      }
+
+      > .darkmode {
+        margin: 0;
+      }
+    }
+
+    .center > article {
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .center > .page-footer .backlinks {
+      max-width: 100%;
+    }
   }
 }
 
@@ -103,18 +179,10 @@ body[data-slug$="/index"] .page > #quartz-body {
   }
 }
 
-// Article backlinks under the body on phone/tablet (before Stay Updated / ©).
+// Backlinks after article body (all viewports), above Stay Updated / ©.
 .page > #quartz-body .center > .page-footer .backlinks {
-  margin: 0.5rem 0 0.25rem;
+  margin: 0.75rem 0 0.35rem;
   max-width: 44rem;
-}
-
-// Desktop: afterBody only hosts the phone/tablet Backlinks copy — hide the empty rule.
-@media all and (min-width: 900px) {
-  .page > #quartz-body .center > hr:has(+ .page-footer:has(.below-desktop)),
-  .page > #quartz-body .center > .page-footer:has(.below-desktop) {
-    display: none;
-  }
 }
 
 // Search: full-width rounded field like mockup
@@ -143,35 +211,7 @@ body[data-slug$="/index"] .page > #quartz-body {
   height: auto;
 }
 
-// Mobile: Quartz defaults left chrome to a horizontal row (Explorer hamburger era).
-// TopicNav is a tall list — keep it stacked so it cannot cover title/search/article.
-@media all and (max-width: 800px) {
-  .page > #quartz-body > .sidebar.left {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.55rem;
-    padding: 1rem 0 0.85rem;
-    border-right: none;
-    border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 75%, transparent);
-    background: color-mix(in srgb, var(--light) 94%, transparent);
-
-    > .spacer {
-      display: none;
-    }
-
-    > .page-title {
-      margin-bottom: 0;
-    }
-
-    > .search {
-      margin-bottom: 0;
-    }
-
-    > .darkmode {
-      margin: 0;
-    }
-  }
-}
+// Left chrome stack for phone/tablet is handled in the <900px block above.
 
 p,
 li,

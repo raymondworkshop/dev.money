@@ -1,7 +1,7 @@
 # Finance
 
 ## 概述
-投资与量化、股票与債券、财富管理与公司估值  
+资本如何定价与配置——市场、估值与风险   
 
 ## 核心指标
 - **关键公司**:[[hubs/spacex|SpaceX]], [[DeepSeek]], [[hubs/nvidia|Nvidia]], [[Leon Capital Group]], [[OpenAI]]

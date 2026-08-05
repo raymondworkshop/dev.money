@@ -9,12 +9,12 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 
 ## Topics
 
-- [[tech|Tech]]: AI 基礎設施、機器人、教育科技與生產力工具
-- [[design|Design]]: 產品設計、科學與體驗設計、人機交互
-- [[business|Business]]: 公司戰略、創業風投、產業政策與商業機會
-- [[finance|Finance]]: 投資與量化、股票與債券、財富管理與公司估值
-- [[career|Career]]: 職業發展、軟技能與人才建設
-- [[lifestyle|Lifestyle]]: 健康生活、家庭、教育與文化體育
+- [[tech|Tech]]: AI、機器人與工具如何改變基礎設施與生產力
+- [[design|Design]]: 產品如何被設計、被感知、被使用
+- [[business|Business]]: 企業如何決策、擴張與應對政策——從戰略到機會
+- [[finance|Finance]]: 資本如何定價與配置——市場、估值與風險
+- [[career|Career]]: 技能、職場與組織如何共同塑造職業路徑
+- [[lifestyle|Lifestyle]]: 健康、家庭與文化如何定義當下的生活方式
 
 ## Recent Articles
 

@@ -1,7 +1,7 @@
 # Career
 
 ## 概述
-AI 对就业的冲击、职业发展、软技能与组织人才建设。
+技能、职场与组织如何共同塑造职业路径  
 
 ## 核心指标
 - **关键公司**:[[Anthropic]], [[Ferretly]], [[RefAssured]], [[LinkedIn]], [[Stripe]]

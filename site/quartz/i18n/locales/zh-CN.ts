@@ -22,8 +22,8 @@ export default {
       quote: "引用",
     },
     backlinks: {
-      title: "反向链接",
-      noBacklinksFound: "无法找到反向链接",
+      title: "提到本文",
+      noBacklinksFound: "暂无其他文章提到本文",
     },
     themeToggle: {
       lightMode: "亮色模式",

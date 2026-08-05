@@ -59,21 +59,17 @@ export const defaultContentPageLayout: PageLayout = {
       condition: isArticlePage,
     }),
   ],
-  // Desktop articles only: TOC + Backlinks in the right rail.
+  // Desktop articles only: local graph in the right rail.
   right: [
     Component.ConditionalRender({
-      component: Component.DesktopUp(Component.TableOfContents()),
-      condition: isArticlePage,
-    }),
-    Component.ConditionalRender({
-      component: Component.DesktopUp(Component.Backlinks()),
+      component: Component.DesktopUp(Component.Graph()),
       condition: isArticlePage,
     }),
   ],
-  // Phone + tablet articles: Backlinks after the body, above Stay Updated / ©.
+  // All viewports: Backlinks after the body, above Stay Updated / ©.
   afterBody: [
     Component.ConditionalRender({
-      component: Component.BelowDesktop(Component.Backlinks()),
+      component: Component.Backlinks(),
       condition: isArticlePage,
     }),
   ],

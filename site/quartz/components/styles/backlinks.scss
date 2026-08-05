@@ -1,24 +1,131 @@
 @use "../../styles/variables.scss" as *;
 
+// Match topic-page「相關文章」dated editorial rows.
 .backlinks {
-  flex-direction: column;
-
-  & > h3 {
-    font-size: 1rem;
-    margin: 0;
+  > h3 {
+    margin: 0 0 0.35rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: var(--dark);
   }
 
-  & > ul.overflow {
+  .backlinks-list {
     list-style: none;
     padding: 0;
-    margin: 0.5rem 0;
-    max-height: calc(100% - 2rem);
-    overscroll-behavior: contain;
+    margin: 0.35rem 0 0;
 
-    & > li {
-      & > a {
-        background-color: transparent;
+    > li {
+      position: relative;
+      display: grid;
+      grid-template-columns: 6.75rem minmax(0, 1fr) 1.15rem;
+      align-items: start;
+      gap: 0.65rem 0.75rem;
+      margin: 0;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 75%, transparent);
+      line-height: 1.45;
+
+      &:last-child {
+        border-bottom: none;
       }
+
+      .recent-date {
+        grid-row: 1;
+        font-size: 0.82rem;
+        color: var(--gray);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+        padding-top: 0.12rem;
+      }
+
+      > a.internal {
+        grid-column: 2;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-weight: 650;
+        color: var(--dark);
+        font-size: 1.02rem;
+
+        &:hover,
+        &:focus-visible {
+          color: var(--secondary);
+          background: transparent;
+        }
+      }
+
+      .topic-blurb {
+        grid-column: 2;
+        display: block;
+        margin-top: 0.2rem;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.55;
+        color: color-mix(in srgb, var(--darkgray) 72%, var(--gray));
+      }
+
+      &::after {
+        content: "›";
+        grid-column: 3;
+        grid-row: 1;
+        color: var(--gray);
+        font-size: 1.15rem;
+        justify-self: end;
+        line-height: 1;
+        padding-top: 0.1rem;
+      }
+    }
+
+    &.backlinks-list-empty > li {
+      display: block;
+      border-bottom: none;
+      padding: 0.35rem 0;
+      color: var(--gray);
+      font-size: 0.92rem;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  .backlinks-more {
+    margin: 0.15rem 0 0;
+    padding-top: 0.35rem;
+
+    > summary {
+      cursor: pointer;
+      list-style: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--secondary);
+      user-select: none;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:hover,
+      &:focus-visible {
+        color: var(--tertiary);
+        text-decoration: underline;
+        text-underline-offset: 0.14em;
+      }
+    }
+
+    .backlinks-more-count {
+      color: var(--gray);
+      font-weight: 400;
+    }
+
+    > .backlinks-list {
+      margin-top: 0.15rem;
     }
   }
 }

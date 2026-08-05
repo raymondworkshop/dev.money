@@ -1,7 +1,7 @@
 # Business
 
 ## 概述
-公司战略、创业与风投、产业政策、国防与航天商业、并购与融资。
+企业如何决策、扩张与应对政策——从战略到机会  
 
 ## 核心指标
 - **关键公司**:[[hubs/spacex|SpaceX]], [[Anthropic]], [[DeepSeek]], [[hubs/nvidia|Nvidia]], [[Apple]]

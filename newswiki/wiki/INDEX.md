@@ -4,12 +4,12 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 
 ## Topics
 
-- [[tech/_index|Tech]]: AI 基礎設施、機器人、教育科技與生產力工具
-- [[design/_index|Design]]: 產品設計、科學與體驗設計、人機交互
-- [[business/_index|Business]]: 公司戰略、創業風投、產業政策與商業機會
-- [[finance/_index|Finance]]: 投資與量化、股票與債券、財富管理與公司估值
-- [[career/_index|Career]]: 職業發展、軟技能與人才建設
-- [[lifestyle/_index|Lifestyle]]: 健康生活、家庭、教育與文化體育
+- [[tech/_index|Tech]]: AI、机器人与工具如何改变基础设施与生产力
+- [[design/_index|Design]]: 产品如何被设计、被感知、被使用
+- [[business/_index|Business]]: 企业如何决策、扩张与应对政策——从战略到机会
+- [[finance/_index|Finance]]: 资本如何定价与配置——市场、估值与风险
+- [[career/_index|Career]]: 技能、职场与组织如何共同塑造职业路径
+- [[lifestyle/_index|Lifestyle]]: 健康、家庭与文化如何定义当下的生活方式
 
 ## Recent Articles
 - [[business/whirlpool-north-america-struggle|退守本土后，惠而浦为何仍难逃“寒冬”？]] (2026-08-04)
