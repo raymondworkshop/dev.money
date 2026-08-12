@@ -13,6 +13,7 @@ Curated hub for articles related to Microsoft.
 
 - [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]] · #tech
 - [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]] · #business
+- [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] · #tech
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] · #tech
 - [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]] · #career
 - [[tech/ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]] · #tech

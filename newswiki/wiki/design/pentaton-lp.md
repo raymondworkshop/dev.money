@@ -1,25 +1,31 @@
 ---
 title: "Pentaton LP • Pentaton"
 source: "https://pentaton.app/lp/"
-created: "2026-07-28"
-description: "A vinyl-sleeve-sized music streamer with a high-resolution display for cover art."
+created: "2026-08-11"
+description: "A vinyl-sleeve-sized music streamer designed to make digital music feel analog again through a high-resolution display for cover art."
 topics:
   - design
-  - tech
+  - lifestyle
 ---
 
 # [Pentaton LP • Pentaton](https://pentaton.app/lp/)
 
 ## Core View
-- The Pentaton LP is a hardware streamer designed to make digital music feel analog by adopting a vinyl-sleeve form factor.
-- Features a high-density 4-megapixel display (1920 × 1920 pixels) specifically to showcase album cover art in a 305 mm square format, bridging the gap between [[design/_index|Design]] and digital consumption.
-- Technical integration includes a USB-C DAC for audio playback, Gigabit Ethernet, and a 12V trigger output to automate the power state of connected HiFi amplifiers.
-- Utilizes Apple AirPlay 1 for streaming, with a dedicated iOS app recommended to ensure maximum cover art resolution, leveraging the [[tech/_index|Tech]] ecosystem for seamless delivery.
+- Pentaton LP is a music streamer designed with a vinyl-sleeve form factor to recreate the tactile and visual experience of analog music.
+- Features a 305 mm × 305 mm square display with 1920 × 1920 pixel resolution (4 megapixels) specifically for high-fidelity cover art display.
+- Connectivity includes Gigabit Ethernet, 802.11ac WiFi, and a 12V trigger output to automate the power state of connected pre-amplifiers or amplifiers.
+- Audio playback is achieved via an external USB-C DAC; the device supports Apple AirPlay 1 for streaming.
 
 ## Key Takeaways
-- A specialized hardware approach to restoring the tactile and visual ritual of music listening in a streaming era.
-- Prioritizes visual fidelity (160 PPI) as a primary component of the auditory experience.
+- Combines modern streaming convenience with a physical [[design/_index|Design]] aesthetic inspired by vinyl records.
+- Focuses on the visual component of music consumption as a core part of the 'multi-sensory experience'.
+- Integrates with traditional HiFi setups via standard network protocols and hardware triggers, appealing to [[lifestyle/_index|Lifestyle Trends]] in high-end audio.
+
+## Related Articles
+
+- [[design/how-to-read-more-books|How to read more books]]
+- [[design/Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]]
 
 ---
-**Topics**: [[design/_index|Design]], [[tech/_index|Tech]]  
-**Tags**: #design
+**Topics**: [[design/_index|Design]], [[lifestyle/_index|Lifestyle Trends]]  
+**Tags**: #pentaton #product-design #hifi

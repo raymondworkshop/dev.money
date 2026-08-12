@@ -30,6 +30,7 @@ topics:
 
 - [[finance/berkshire-and-japanese-builders-see-opportunity-in-us-housing|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]]
 - [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]]
+- [[business/dont-start-startup-to-get-acquired|Don't start a startup with the goal of getting acquired.]]
 
 ---
 **Topics**: [[finance/_index|Finance]]  

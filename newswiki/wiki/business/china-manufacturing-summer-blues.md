@@ -31,4 +31,5 @@ topics:
 
 ## 相关文章
 
+- [[finance/xi-strong-yuan-economic-drag|习近平想要强势人民币，中国经济却在拖后腿]]
 - [[tech/2026-05-28-cheap-humanoid-robots|下一波中国冲击：比二手车还便宜的人形机器人]]

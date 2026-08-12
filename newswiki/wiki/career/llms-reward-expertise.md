@@ -1,8 +1,8 @@
 ---
 title: "LLMs reward expertise"
 source: "https://www.seangoedecke.com/llms-reward-expertise/"
-created: "2026-08-04"
-description: "An analysis of why domain expertise remains the critical bottleneck and the most valuable skill for steering LLMs toward high-quality outputs."
+created: "2026-08-06"
+description: "An analysis of why domain expertise remains the most critical skill for effective LLM prompting and high-value output."
 author:
   - "[[Sean Goedecke]]"
 topics:
@@ -13,18 +13,21 @@ topics:
 # [LLMs reward expertise](https://www.seangoedecke.com/llms-reward-expertise/)
 
 ## Core View
-- While LLMs make everyone a generalist by lowering the floor for basic tasks (e.g., writing CSS), the ceiling for high-quality output is determined by the user's domain expertise.
-- Expertise allows users to signal a professional 'mode' to the model, shifting it from 'explaining-to-amateurs' to 'talking-to-experts,' which results in more concise and accurate responses.
-- Effective prompting is not about generic 'tips' but about the ability to identify errors, suggest alternate formulations, and make conceptual leaps based on deep knowledge.
-- In technical contexts, familiarity with specific codebase details is more valuable than a general understanding of software systems when steering [[tech/llms|LLMs]].
-- [AI Synthesis] The role of the professional is shifting from a 'creator of first drafts' to a 'high-fidelity steer-man' and 'verifier' of AI-generated content.
-- The human remains the bottleneck in the AI workflow because the difficulty lies in communicating the exact desired solution to the model.
+- While LLMs make everyone a generalist by lowering the floor for basic tasks (e.g., writing CSS), the ceiling for quality is determined by the user's domain expertise.
+- Expertise allows users to steer models more effectively, such as [[hubs/terence-tao|Terence Tao]] shunting ChatGPT into a 'talking-to-mathematicians' mode rather than an 'explaining-to-amateurs' mode.
+- The primary value of domain knowledge in prompting is the ability to identify what 'looks weird,' suggest alternate formulations, and ask specific questions about concrete details rather than generic principles.
+- In many high-complexity tasks, the human is the bottleneck, not the model; the difficulty lies in communicating the exact desired solution to the AI.
+- [AI Synthesis] The economic value of labor is shifting from the ability to execute (production) to the ability to steer and validate (curation), reinforcing the moat of deep domain expertise.
 
 ## Key Takeaways
-- Domain knowledge is the most important skill in prompting; it allows users to wring maximum value out of the same model.
-- Human expertise will remain useful as models strengthen because the ability to pull specific, complex solutions out of a model requires a smart human operator.
-- The value of expertise is demonstrated by the ability to push back on model errors and steer the direction of the inquiry.
+- Domain knowledge is the most important skill in prompting, enabling users to wring far more value out of the same model.
+- Human expertise remains critical because the ability to extract high-level solutions from a model requires a sophisticated understanding of the subject matter.
+- Familiarity with specific systems (e.g., a codebase) is often more valuable than a general understanding of broad principles when working with AI agents.
+
+## Related Articles
+
+- [[career/2026-04-03-ai-created-new-jobs|诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？]]
 
 ---
 **Topics**: [[career/_index|Career]], [[tech/_index|Tech]]  
-**Tags**: #llms-reward-expertise #prompt-engineering #domain-expertise
+**Tags**: #llm-prompting #domain-expertise #human-ai-collaboration

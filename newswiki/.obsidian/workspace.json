@@ -1,26 +1,24 @@
 {
   "main": {
-    "id": "89bea2ecc8a24398",
+    "id": "97fdaea82006ba91",
     "type": "split",
     "children": [
       {
-        "id": "405a6b6c4a3db555",
+        "id": "fd9e9fbb43d91a2c",
         "type": "tabs",
         "children": [
           {
-            "id": "b86fc864577a0914",
+            "id": "86d3fd3741fa274f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions.md",
-                "file": "raw/2026-08-04-中国制造业遭遇“苦夏”.md",
+                "file": "raw/2026-08-12-CoreWeave股价大涨，收入同比增长一倍.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions"
-              "title": "2026-08-04-中国制造业遭遇“苦夏”"
+              "title": "2026-08-12-CoreWeave股价大涨，收入同比增长一倍"
             }
           }
         ]
@@ -29,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "2fc41bc977d0b00c",
+    "id": "3571e8f421187be6",
     "type": "split",
     "children": [
       {
-        "id": "1dec7ac5a37e597e",
+        "id": "e716a626d240cde0",
         "type": "tabs",
         "children": [
           {
-            "id": "01d39f0933a05241",
+            "id": "b134796f4942cbbe",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -50,7 +48,7 @@
             }
           },
           {
-            "id": "e4a6adc49a08547f",
+            "id": "756588fd25fa960e",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,7 +65,7 @@
             }
           },
           {
-            "id": "cb5af596cfdb4e7f",
+            "id": "d7c1bfeb35ef3f83",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -83,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "464531e2be6bc3ae",
+    "id": "97495d3ca8fc9b45",
     "type": "split",
     "children": [
       {
-        "id": "4d35c722f56b959a",
+        "id": "7bfd4be472f25ee7",
         "type": "tabs",
         "children": [
           {
-            "id": "edd4209d825ab126",
+            "id": "09295be66a10e11f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
+                "file": "raw/2026-08-05-芯片公司利润飙升，投资者为何仍不满意？.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
+              "title": "Backlinks for 2026-08-05-芯片公司利润飙升，投资者为何仍不满意？"
             }
           },
           {
-            "id": "4a5254114be59658",
+            "id": "d7202b4c44a88959",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
+                "file": "raw/2026-08-05-芯片公司利润飙升，投资者为何仍不满意？.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
+              "title": "Outgoing links from 2026-08-05-芯片公司利润飙升，投资者为何仍不满意？"
             }
           },
           {
-            "id": "63cdca8c10fee340",
+            "id": "e56b3e5cba852fb6",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -139,7 +137,7 @@
             }
           },
           {
-            "id": "82242a9d4a732769",
+            "id": "996cb7c9b88b17cd",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -153,18 +151,18 @@
             }
           },
           {
-            "id": "228ce92b9daeeb6c",
+            "id": "998929b79e588748",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
+                "file": "raw/2026-08-05-芯片公司利润飙升，投资者为何仍不满意？.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
+              "title": "Outline of 2026-08-05-芯片公司利润飙升，投资者为何仍不满意？"
             }
           }
         ]
@@ -186,82 +184,53 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "b86fc864577a0914",
+  "active": "86d3fd3741fa274f",
   "lastOpenFiles": [
-    "_resources/2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions/b01bb152406ed9cbcb93731a1a8142ca_MD5.webp",
-    "_resources/2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions/f637439b3b4baca92bc351a01855d13b_MD5.webp",
-    "_resources/2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions/b6481f05cafe854f1ea10c6c603d179f_MD5.webp",
-    "_resources/2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions",
-    "raw/2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions.md",
-    "raw/2026-07-30-JetZero翼身融合飞机设计能否挑战波音霸主地位？.md",
-    "raw/archive/2026-07-30-JetZero翼身融合飞机设计能否挑战波音霸主地位？.md",
-    "wiki/business/jetzero-bwb-aircraft.md",
-    "raw/2026-07-30-IBM宣称“量子优势”进入新时代.md",
-    "raw/archive/2026-07-30-IBM宣称“量子优势”进入新时代.md",
-    "wiki/tech/ibm-quantum-advantage-era.md",
-    "_resources/2026-07-30-IBM宣称“量子优势”进入新时代/187f71fafd4fe66d4617a552e1e83d38_MD5.jpg",
-    "_resources/2026-07-30-IBM宣称“量子优势”进入新时代/e5c0474dd3c2972d3f323a8ef1c91dc6_MD5.jpg",
-    "_resources/2026-07-30-IBM宣称“量子优势”进入新时代",
-    "_resources/2026-07-30-JetZero翼身融合飞机设计能否挑战波音霸主地位？/9575b7e65e27874bb44ecadd921efc74_MD5.jpg",
-    "_resources/2026-07-30-JetZero翼身融合飞机设计能否挑战波音霸主地位？/fcceedf1921ef1fa10869ce36c36cfbf_MD5.jpg",
-    "_resources/2026-07-30-JetZero翼身融合飞机设计能否挑战波音霸主地位？/a97c5fac0c6859a814dd8d9265926f56_MD5.jpg",
-    "_resources/2026-07-30-JetZero翼身融合飞机设计能否挑战波音霸主地位？",
-    "_resources/2026-07-29-為什麼你練上半身沒線條？一副啞鈴就能完成的4個訓練動作",
-    "raw/2026-07-28-為什麼你練上半身沒線條？一副啞鈴就能完成的4個訓練動作.md",
-    "raw/2026-07-29-為什麼你練上半身沒線條？一副啞鈴就能完成的4個訓練動作.md",
-    "_resources/2026-07-28-為什麼你練上半身沒線條？一副啞鈴就能完成的4個訓練動作",
-    "raw/2026-07-27-发展中国家正迅速老龄化，无力承担养老之重.md",
-    "_resources/2026-07-27-发展中国家正迅速老龄化，无力承担养老之重/dc0e5ee19d46ddf7d7848a8596cd3efb_MD5.jpg",
-    "_resources/2026-07-27-发展中国家正迅速老龄化，无力承担养老之重/de4290c00e2731c149a3d3c1d4cef43a_MD5.jpg",
-    "_resources/2026-07-27-发展中国家正迅速老龄化，无力承担养老之重/26b0d12762b6e7257792517ab0d804f5_MD5.jpg",
-    "_resources/2026-07-27-发展中国家正迅速老龄化，无力承担养老之重",
-    "raw/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌.md",
-    "_resources/2026-07-27-失控模型与中国威胁：华盛顿陷入AI安全大恐慌"
-    "raw/2026-08-04-AI时代的爱情：聊天机器人接管线上约会.md",
-    "raw/archive/2026-08-04-AI时代的爱情：聊天机器人接管线上约会.md",
-    "wiki/lifestyle/ai-dating-chatbots.md",
-    "_resources/2026-08-04-AI时代的爱情：聊天机器人接管线上约会/aafe009dd82cd92969f7d4512176b7e1_MD5.jpg",
-    "_resources/2026-08-04-AI时代的爱情：聊天机器人接管线上约会/466cb905b5459a6bb561db6514792548_MD5.jpg",
-    "_resources/2026-08-04-AI时代的爱情：聊天机器人接管线上约会",
-    "raw/2026-08-04-中国制造业遭遇“苦夏”.md",
-    "_resources/2026-08-04-中国制造业遭遇“苦夏”/a24057fd1f59f3f710d8443b90438115_MD5.jpg",
-    "_resources/2026-08-04-中国制造业遭遇“苦夏”",
-    "raw/2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停.md",
-    "_resources/2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停/532528e9379ac42a65ebd6e39b7aaeca_MD5.jpg",
-    "_resources/2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停/ba9169b54e88643ed69434dd9e185f8e_MD5.jpg",
-    "_resources/2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停/ee3ac86ab90d37aa3f4e5c9fc335932b_MD5.jpg",
-    "_resources/2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停/bb31082189eb159610cdbedaf0b592ef_MD5.jpg",
-    "_resources/2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停/71c1304e368e56874951a44925a51e7f_MD5.jpg",
-    "_resources/2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停/715da12b9e951a876b00a2c408976839_MD5.jpg",
-    "_resources/2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停/61a8290f072b878a53702f94fa5b42bf_MD5.jpg",
-    "_resources/2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停",
-    "raw/2026-08-04-退守本土后，惠而浦为何仍难逃“寒冬”？.md",
-    "_resources/2026-08-04-退守本土后，惠而浦为何仍难逃“寒冬”？",
-    "raw/2026-08-04-LLMs reward expertise.md",
-    "raw/2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率.md",
-    "raw/archive/2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率.md",
-    "wiki/finance/bessent-fed-yen-support.md",
-    "raw/archive/2026-08-04-时尚巨头试水新潮流：销售二手服装.md",
-    "wiki/business/fashion-resale-trend.md",
-    "wiki/business/chinas-economic-dynamism-paradox.md",
-    "raw/archive/2026-08-04-AI热潮正重塑美国经济，深刻程度超乎认知.md",
-    "wiki/business/ai-boom-reshaping-us-economy.md",
-    "_resources/2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率",
-    "raw/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论.md",
-    "_resources/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论",
-    "raw/2026-08-04-时尚巨头试水新潮流：销售二手服装.md",
-    "raw/archive/2026-08-04-戴尔之子进军储能业，欲将电池装进你家后院.md",
-    "wiki/business/base-power-energy-storage.md",
-    "_resources/2026-08-04-时尚巨头试水新潮流：销售二手服装",
-    "raw/2026-08-04-AI热潮正重塑美国经济，深刻程度超乎认知.md",
-    "raw/archive/2026-08-04-先放手发展，后落地监管：中国经济活力的悖论.md",
-    "wiki/business/china-economic-dynamism-paradox.md",
-    "raw/archive/2026-08-04-Palantir股价飙升，收入近乎翻倍，公司上调业绩展望.md",
-    "wiki/business/palantir-revenue-growth-2026.md",
-    "raw/archive/2026-08-04-OpenAI如何失去AI王冠——又欲如何重新夺回.md",
-    "wiki/business/openai-lost-ai-crown.md",
-    "_resources/2026-08-04-Palantir股价飙升，收入近乎翻倍，公司上调业绩展望",
-    "_resources/2026-08-04-戴尔之子进军储能业，欲将电池装进你家后院",
-    "_resources/2026-08-04-OpenAI如何失去AI王冠——又欲如何重新夺回"
+    "raw/archive/2026-08-11-安全漏洞致使全美30年来的DNA证据面临黑客攻击风险.md",
+    "wiki/tech/dna-evidence-security-flaw.md",
+    "raw/archive/2026-08-11-前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合.md",
+    "wiki/finance/citadel-buys-situational-awareness-portfolio.md",
+    "raw/archive/2026-08-11-六神磊磊的红楼宇宙-押沙龙的财新博客-财新网.md",
+    "wiki/lifestyle/liu-shen-lei-lei-honglou-universe.md",
+    "raw/archive/2026-08-11-my server is a phone now.md",
+    "wiki/tech/my-server-is-a-phone-now.md",
+    "raw/archive/2026-08-11-Pentaton LP • Pentaton.md",
+    "raw/archive/2026-08-11-Founders Guide Success may not matter if you aren't doing what you love.md",
+    "wiki/business/founders-guide-founder-market-fit.md",
+    "raw/archive/2026-08-11-2x, not 10x coding with LLMs in 2026.md",
+    "wiki/tech/2x-not-10x-coding-llms-2026.md",
+    "_resources/2026-08-12-CoreWeave股价大涨，收入同比增长一倍/8dfa2db51008f9c26ae3be62381bf064_MD5.jpg",
+    "_resources/2026-08-12-CoreWeave股价大涨，收入同比增长一倍",
+    "raw/2026-08-12-宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头.md",
+    "raw/2026-08-12-CoreWeave股价大涨，收入同比增长一倍.md",
+    "_resources/2026-08-12-宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头/46034a3fa8b0d864328a654855bebea5_MD5.jpg",
+    "_resources/2026-08-12-宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头",
+    "raw/2026-08-11-my server is a phone now.md",
+    "raw/archive/2026-08-11-顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网.md",
+    "wiki/career/hidden-skills-of-top-talent.md",
+    "raw/archive/2026-08-11-美国人正周游世界，势不可挡.md",
+    "wiki/lifestyle/rise-of-american-tourists.md",
+    "raw/archive/2026-08-11-私募信贷基金的流动性如何？这取决于你如何定义“流动性”.md",
+    "wiki/finance/private-credit-fund-liquidity-definitions.md",
+    "raw/archive/2026-08-11-关于扎克伯格AI长文，你需要了解的五个要点.md",
+    "wiki/tech/zuckerberg-ai-essay-key-points.md",
+    "raw/archive/2026-08-11-三星堆失落文明谜团重重，正重塑对中华文明起源的认知.md",
+    "wiki/lifestyle/sanxingdui-lost-civilization.md",
+    "_resources/2026-08-11-六神磊磊的红楼宇宙-押沙龙的财新博客-财新网/ff9a2695f865e8ec38de13b16786be99_MD5.jpg",
+    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/c704389eeb82c9770c5a4ed223b38591_MD5.jpg",
+    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/2714eb4fa50dbe368a81493c4ce2e032_MD5.jpg",
+    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/362676cad111e32ad6ddc7c5074bcdc4_MD5.jpg",
+    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/059baac053c5f8b3a1716d0673c06bb3_MD5.jpg",
+    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/cfe4eb0fad023997f7e14dbdfeb7906d_MD5.jpg",
+    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/a2d6dde3336215eefeceb36a1be25f30_MD5.jpg",
+    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/04d9f14c4ea082ee3a1816fbf3a62516_MD5.jpg",
+    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate",
+    "_resources/2026-08-11-Founders Guide Success may not matter if you aren't doing what you love",
+    "_resources/2026-08-11-安全漏洞致使全美30年来的DNA证据面临黑客攻击风险",
+    "_resources/2026-08-11-前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合",
+    "_resources/2026-08-11-Pentaton LP • Pentaton",
+    "_resources/2026-08-11-六神磊磊的红楼宇宙-押沙龙的财新博客-财新网",
+    "_resources/2026-08-11-顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网",
+    "_resources/2026-08-11-How I use LLMs to learn complex topics"
   ]
 }

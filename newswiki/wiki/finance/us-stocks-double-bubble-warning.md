@@ -32,6 +32,10 @@ topics:
 - The Shiller CAPE ratio at 41x is near the peak of the 2000 internet bubble, suggesting extreme overvaluation.
 - Risk of a market correction is significant, especially in tech and semiconductor sectors, with potential for a 30-50% drop if the bubble bursts.
 
+## Related Articles
+
+- [[finance/chip-profits-investor-dissatisfaction|芯片公司利润飙升，投资者为何仍不满意？]]
+
 ---
 **Topics**: [[finance/_index|Finance]]  
 **Tags**: #stock-market #valuation #bubble-risk #earnings-growth #tech-sector

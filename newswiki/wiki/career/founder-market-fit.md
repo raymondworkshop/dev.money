@@ -36,6 +36,10 @@ topics:
 - The startup journey is akin to a long-term relationship: without emotional and cultural compatibility, even product-market fit may not lead to success.
 - Founders should evaluate tradeoffs — e.g., NYC vs. Bay for AI startups — and prioritize environments where personal and professional values align.
 
+## Related Articles
+
+- [[business/founders-guide-founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]]
+
 ---
 **Topics**: [[career/long-term-commitment|Long-Term Commitment]], [[career/ai-agents|AI Agents]], [[career/mental-health|Mental Health & Introspection]]  
 **Tags**: #career #founder-market-fit #startup-mentality

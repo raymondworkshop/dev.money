@@ -4,14 +4,47 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 
 ## Topics
 
-- [[tech/_index|Tech]]: AI、机器人与工具如何改变基础设施与生产力
-- [[design/_index|Design]]: 产品如何被设计、被感知、被使用
-- [[business/_index|Business]]: 企业如何决策、扩张与应对政策——从战略到机会
-- [[finance/_index|Finance]]: 资本如何定价与配置——市场、估值与风险
-- [[career/_index|Career]]: 技能、职场与组织如何共同塑造职业路径
-- [[lifestyle/_index|Lifestyle]]: 健康、家庭与文化如何定义当下的生活方式
+- [[tech/_index|Tech]]: AI模型、機械人與智能體如何重塑基建與生產力
+- [[design/_index|Design]]: 產品如何被設計、被感受、被使用
+- [[business/_index|Business]]: 企業如何決策、尋找發展與機遇
+- [[finance/_index|Finance]]: 資本如何定價與配置——市場、流動性與風險
+- [[career/_index|Career]]: 技能、就業與組織如何在AI時代重塑事業發展
+- [[lifestyle/_index|Lifestyle]]: 健康、人際與文化如何界定現今生活方式
 
 ## Recent Articles
+- [[tech/unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12)
+- [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12)
+- [[design/pentaton-lp|Pentaton LP • Pentaton]] (2026-08-11)
+- [[tech/2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]] (2026-08-11)
+- [[tech/zuckerberg-ai-essay-key-points|关于扎克伯格AI长文，你需要了解的五个要点]] (2026-08-11)
+- [[tech/local-models-will-not-win|No, local models will not win]] (2026-08-11)
+- [[lifestyle/liu-shen-lei-lei-honglou-universe|六神磊磊的红楼宇宙-押沙龙的财新博客-财新网]] (2026-08-10)
+- [[lifestyle/rise-of-american-tourists|美国人正周游世界，势不可挡]] (2026-08-10)
+- [[finance/private-credit-fund-liquidity-definitions|私募信贷基金的流动性如何？这取决于你如何定义“流动性”]] (2026-08-10)
+- [[lifestyle/sanxingdui-lost-civilization|三星堆失落文明谜团重重，正重塑对中华文明起源的认知]] (2026-08-10)
+- [[career/hidden-skills-of-top-talent|顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网]] (2026-08-09)
+- [[tech/how-i-use-llms-to-learn|How I use LLMs to learn complex topics]] (2026-08-09)
+- [[business/chinas-new-export-engine|中国的新出口引擎：为全球工厂供货]] (2026-08-07)
+- [[tech/rogue-ai-agents-guide|失控AI机器人世界的用户指南]] (2026-08-07)
+- [[lifestyle/ai-medical-report-interpretation|医生反感患者用AI解读化验单，但根本拦不住]] (2026-08-07)
+- [[tech/ai-generates-new-virus|AI最新的骇人里程碑：生成新病毒]] (2026-08-07)
+- [[finance/best-ai-crm-for-real-estate-agents|Best AI CRM for Real Estate Agents]] (2026-08-06)
+- [[career/llms-reward-expertise|LLMs reward expertise]] (2026-08-06)
+- [[finance/spacex-ipo-spv-fraud|这些散户“持有”的SpaceX股票为何在套现前不翼而飞？]] (2026-08-06)
+- [[tech/pringles-ai-production-line|探秘品客生产线：AI如何让每一片薯片都完美]] (2026-08-06)
+- [[tech/meta-muse-code-coding-agent|Meta发布编程智能体，剑指OpenAI和Anthropic]] (2026-08-06)
+- [[lifestyle/american-dialogues-loneliness-movement|排解孤独的个人试验如何演变成一场社会运动？]] (2026-08-05)
+- [[finance/chip-profits-investor-dissatisfaction|芯片公司利润飙升，投资者为何仍不满意？]] (2026-08-05)
+- [[finance/xi-strong-yuan-economic-drag|习近平想要强势人民币，中国经济却在拖后腿]] (2026-08-05)
+- [[business/airline-basic-economy-restrictions|航空公司真的不想让你买最便宜的机票]] (2026-08-05)
+- [[tech/caltech-admissions-fraud-squad|如果你在入学申请中造假，这支“打假小分队”定会揪出你]] (2026-08-05)
+- [[business/whatnot-live-shopping-app|在这款直播购物应用里，有人一路竞拍直至倾家荡产]] (2026-08-05)
+- [[tech/ai-rogue-deception-2026|AI在测试中再次失控，这次还学会了欺骗]] (2026-08-05)
+- [[tech/us-marine-corps-fpv-drones|美国海军陆战队正加紧部署数千架攻击型无人机]] (2026-08-05)
+- [[finance/us-japan-yen-intervention-2026|图解美日联手提振日圆的五大原因]] (2026-08-05)
+- [[tech/ai-rogue-deception-tests|AI在测试中再次失控，这次还学会了欺骗]] (2026-08-05)
+- [[tech/my-server-is-a-phone-now|my server is a phone now]] (2026-08-04)
+- [[tech/pi-minimal-performant|Pi, Minimal and Performant]] (2026-08-04)
 - [[business/whirlpool-north-america-struggle|退守本土后，惠而浦为何仍难逃“寒冬”？]] (2026-08-04)
 - [[business/balaji-network-school-malaysia|硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停]] (2026-08-04)
 - [[career/llms-reward-expertise|LLMs reward expertise]] (2026-08-04)
@@ -21,6 +54,8 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]] (2026-08-04)
 - [[business/base-power-energy-storage|戴尔之子进军储能业，欲将电池装进你家后院]] (2026-08-04)
 - [[business/palantir-revenue-growth-2026|Palantir股价飙升，收入近乎翻倍，公司上调业绩展望]] (2026-08-04)
+- [[tech/dna-evidence-security-flaw|安全漏洞致使全美30年来的DNA证据面临黑客攻击风险]] (2026-08-03)
+- [[tech/stripe-kai-deep-agents|How Stripe Built Kai on Deep Agents in 1 Week]] (2026-08-03)
 - [[business/china-manufacturing-summer-blues|中国制造业遭遇“苦夏”]] (2026-08-03)
 - [[business/chinas-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03)
 - [[business/china-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03)
@@ -29,6 +64,7 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[tech/us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03)
 - [[tech/us-alternative-to-cheap-chinese-ai|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03)
 - [[tech/ai-autonomous-cyberattacks|失控AI发动黑客攻击，预示网络混乱新时代到来]] (2026-08-03)
+- [[finance/citadel-buys-situational-awareness-portfolio|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] (2026-07-31)
 - [[lifestyle/fauci-pandemic-star-to-silent-witness|福奇如何从抗疫明星变为沉默证人]] (2026-07-31)
 - [[business/tesla-china-divestiture-spacex-merger|特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路]] (2026-07-31)
 - [[finance/situational-awareness-citadel-acquisition|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] (2026-07-31)
@@ -42,6 +78,7 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[business/china-ai-autonomy-market-reality|中国追求AI自主，股市却呈现另一种现实]] (2026-07-29)
 - [[design/starter-kit-ai-design-apps|Starter kit for AI design apps]] (2026-07-29)
 - [[design/pentaton-lp|Pentaton LP • Pentaton]] (2026-07-28)
+- [[business/dont-start-startup-to-get-acquired|Don't start a startup with the goal of getting acquired.]] (2026-07-27)
 - [[tech/washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27)
 - [[lifestyle/developing-countries-aging-crisis|发展中国家正迅速老龄化，无力承担养老之重]] (2026-07-27)
 - [[business/apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]] (2026-07-27)
@@ -76,6 +113,7 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[tech/ai-password-handover-experiment|把密码交给AI是一种什么体验？我做了一次实测]] (2026-07-17)
 - [[lifestyle/panic-pouch-contents|他们说随身带着这些东西可缓解焦虑]] (2026-07-17)
 - [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]] (2026-07-17)
+- [[career/improve-pronunciation-day-5|5 days to improve your pronunciation / Day 5 - You've earned your certificate]] (2026-07-16)
 - [[tech/why-write-code-in-2026|Why write code in 2026]] (2026-07-16)
 - [[design/memex-index|Index]] (2026-07-16)
 - [[career/how-i-use-llms-as-a-staff-engineer-in-2026|How I use LLMs as a staff engineer in 2026]] (2026-07-16)
@@ -87,6 +125,7 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[lifestyle/in-the-weight-loss-wars-novos-obesity-pill-is-pulling-way-ahead-of-lillys-a867d7a7|减肥药大战：诺和诺德口服药遥遥领先礼来]] (2026-07-15)
 - [[design/christopher-nolan-how-became-hollywoods-top-grossing-director|克里斯托弗·诺兰如何成为好莱坞最具票房号召力的导演]] (2026-07-15)
 - [[business/high-shanwen-economic-truth|他道出中国经济真相，却在沉默中走完余生]] (2026-07-15)
+- [[business/founders-guide-founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]] (2026-07-14)
 - [[business/retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14)
 - [[career/founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]] (2026-07-14)
 - [[tech/ai-infrastructure-transaction|美国数据中心开发商计划出售价值数百亿美元的股权]] (2026-07-14)
@@ -151,6 +190,7 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[career/how-to-improve-job-search-success-by-refining-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] (2026-06-18)
 - [[Finance/berkshire-and-japanese-builders-see-opportunity-in-us-housing|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]] (2026-06-18)
 - [[tech/my-homelab-ai-dev-platform|My Homelab AI Dev Platform]] (2026-06-18)
+- [[business/ai-software-company-moats|How does AI affect software company moats?]] (2026-06-16)
 - [[lifestyle/us-late-parenthood-financial-reality|US Late Parenthood Financial Realities]] (2026-06-16)
 - [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]] (2026-06-15)
 - [[ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]] (2026-06-14)
@@ -198,6 +238,6 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[career/fake-job-interview-git-hook-malware|Appaji - Software Engineer]] (2001-07-23)
 
 ## Philosophy
-- [[connected-stories|連綴敘事與來源核實]]: 以主題線串聯離散報道，論點可回溯
+- [[connected-stories|串連敘事與核實來源]]: 以主題線貫串零散報道，論點有據可依
 - [[cross-domain-reporting|多角度報道]]: 同一事件，不同面向
-- [[valuation-and-risk|估值與風險]]: 核心財務指標、估值框架與風險識別
+- [[valuation-and-risk|估值與風險]]: 核心財務指標、估值框架與風險辨識

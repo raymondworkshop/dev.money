@@ -36,6 +36,7 @@ topics:
 ## Related Articles
 
 - [[design/Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]]
+- [[design/pentaton-lp|Pentaton LP • Pentaton]]
 
 ---
 **Topics**: [[design/_index|Design]]  

@@ -1,7 +1,7 @@
 # Design
 
 ## 概述
-产品如何被设计、被感知、被使用  
+产品如何被设计，被感知，被使用  
 
 ## 核心指标
 - **关键公司**:[[BBC Learning English]], [[IMAX]], [[Anthropic]]
@@ -9,9 +9,12 @@
 - **投资视角**: 用户粘性、设计护城河、工具链
 
 ## 相关文章
+- [[pentaton-lp|Pentaton LP • Pentaton]] (2026-08-11) - A vinyl-sleeve-sized music streamer designed to make digital music feel analog again through a high-resolution display for cover art.
+- [[how-i-use-llms-to-learn|How I use LLMs to learn complex topics]] (2026-08-09) - LLMs are used for any things. Learning new things is one of the top use cases.
+- [[whatnot-live-shopping-app|在这款直播购物应用里，有人一路竞拍直至倾家荡产]] (2026-08-05) - 直播购物应用Whatnot凭借极速竞拍和狂热的“拆卡”模式快速吸引用户，拍品涵盖稀有体育卡牌、时尚服饰、工具及食品等各类商品。
+- [[my-server-is-a-phone-now|my server is a phone now]] (2026-08-04) - rooting a CMF Phone 1 to run my personal infrastructure at home.
 - [[fauci-pandemic-star-to-silent-witness|福奇如何从抗疫明星变为沉默证人]] (2026-07-31) - 作为美国新冠疫情期间最著名的医学专家，福奇正面临着对其个人声誉的最大挑战。
 - [[starter-kit-ai-design-apps|Starter kit for AI design apps]] (2026-07-29) - Toolcraft is an open-source starter kit and UI library for building custom design apps with AI.
-- [[pentaton-lp|Pentaton LP • Pentaton]] (2026-07-28) - A vinyl-sleeve-sized music streamer with a high-resolution display for cover art.
 - [[on-making|On Making]] (2026-07-23)
 - [[christopher-nolan-trojan-horse-design|克里斯托弗·诺兰解析《奥德赛》核心史诗级场景]] (2026-07-21) - 诺兰的IMAX版《奥德赛》重塑了文学史上最著名的情节桥段，完全使用IMAX胶片摄影机拍摄并运用老派的好莱坞技法，营造出特洛伊木马强烈的戏剧张力。
 - [[5-days-pronunciation-day-5|5 days to improve your pronunciation / Day 5 - You've earned your certificate]] (2026-07-16) - Day five of Tim's 5-day guide to better pronunciation.

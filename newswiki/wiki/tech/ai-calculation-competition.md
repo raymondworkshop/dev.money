@@ -39,10 +39,10 @@ topics:
 
 ## 相关文章
 
+- [[tech/ai-rogue-deception-2026|AI在测试中再次失控，这次还学会了欺骗]]
+- [[tech/ai-rogue-deception-tests|AI在测试中再次失控，这次还学会了欺骗]]
 - [[business/micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]]
 - [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
-- [[tech/ai-gov-escalation|邮件揭秘：Anthropic与五角大楼的关系是如何破裂的]]
-- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
 
 ---
 **Topics**: [[tech/ai-calculation-competition|AI算力竞争与初创企业市场争夺]]  

@@ -22,6 +22,10 @@ topics:
 - 使用无杠杆或低杠杆的长期合伙人股本金（Equity）是在资产重组长周期中抵御债务挤兑与波动风险的关键基石。
 - [AI Synthesis] 房地产转换项目极其考验工程技术改造可行性（如管道、窗户、通风、采光设计）与地方政府的税收和区划（Zoning）准入支持。投资此类资产重组应侧重评估其单平方改造成本与重估溢价。
 
+## 相关文章
+
+- [[finance/best-ai-crm-for-real-estate-agents|Best AI CRM for Real Estate Agents]]
+
 ---
 **Topics**: [[finance/_index|Finance]]  
 **Topic**: [[finance/_index|Finance]]  

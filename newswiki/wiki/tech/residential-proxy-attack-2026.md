@@ -35,10 +35,10 @@ topics:
 
 ## 相关文章
 
+- [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
 - [[tech/ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]]
-- [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
 
 ---
 **Topics**: [[tech/_index|技术基础设施]], [[business/_index|企业安全风险]], [[lifestyle Trends/_index|物联网安全]]  

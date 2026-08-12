@@ -43,7 +43,7 @@ topics:
 - [[finance/leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]]
 - [[business/ai-tsunami-john-doerr|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]]
 - [[business/doerr-ai-tsunami|专访风投家约翰·杜尔：AI是史上最大的科技“海啸”]]
-- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
 
 ---
 **Topics**: [[finance/jane-street-ai-spotlight_index|Jane Street 专题]], [[tech/ai-investment_landscape_index|AI 投资格局]]  

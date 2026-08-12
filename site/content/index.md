@@ -9,24 +9,24 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 
 ## Topics
 
-- [[tech|Tech]]: AI、機器人與工具如何改變基礎設施與生產力
-- [[design|Design]]: 產品如何被設計、被感知、被使用
-- [[business|Business]]: 企業如何決策、擴張與應對政策——從戰略到機會
-- [[finance|Finance]]: 資本如何定價與配置——市場、估值與風險
-- [[career|Career]]: 技能、職場與組織如何共同塑造職業路徑
-- [[lifestyle|Lifestyle]]: 健康、家庭與文化如何定義當下的生活方式
+- [[tech|Tech]]: AI模型、機械人與智能體如何重塑基建與生產力
+- [[design|Design]]: 產品如何被設計、被感受、被使用
+- [[business|Business]]: 企業如何決策、尋找發展與機遇
+- [[finance|Finance]]: 資本如何定價與配置——市場、流動性與風險
+- [[career|Career]]: 技能、就業與組織如何在AI時代重塑事業發展
+- [[lifestyle|Lifestyle]]: 健康、人際與文化如何界定現今生活方式
 
 ## Recent Articles
 
-- <span class="recent-date">2026-08-04</span> [[business/whirlpool-north-america-struggle|退守本土後，惠而浦爲何仍難逃“寒冬”？]]
-- <span class="recent-date">2026-08-04</span> [[business/balaji-network-school-malaysia|硅谷大佬試圖在亞洲“建國”，卻遭當地政府強制叫停]]
-- <span class="recent-date">2026-08-04</span> [[career/llms-reward-expertise|LLMs reward expertise]]
-- <span class="recent-date">2026-08-04</span> [[lifestyle/ai-dating-chatbots|AI時代的愛情：聊天機器人接管線上約會]]
-- <span class="recent-date">2026-08-04</span> [[finance/bessent-fed-yen-support|貝森特爲何指望美聯儲幫助支撐日圓匯率]]
-- <span class="recent-date">2026-08-04</span> [[business/fashion-resale-trend|時尚巨頭試水新潮流：銷售二手服裝]]
+- <span class="recent-date">2026-08-12</span> [[tech/unitree-ipo-humanoid-robot-trend|宇樹IPO或只是前奏，人形機器人股票的投資熱潮還在後頭]]
+- <span class="recent-date">2026-08-12</span> [[tech/coreweave-earnings-q2-2026|CoreWeave股價大漲，收入同比增長一倍]]
+- <span class="recent-date">2026-08-11</span> [[design/pentaton-lp|Pentaton LP • Pentaton]]
+- <span class="recent-date">2026-08-11</span> [[tech/2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]]
+- <span class="recent-date">2026-08-11</span> [[tech/zuckerberg-ai-essay-key-points|關於扎克伯格AI長文，你需要了解的五個要點]]
+- <span class="recent-date">2026-08-11</span> [[tech/local-models-will-not-win|No, local models will not win]]
 - [[articles|More]]
 
 ## Philosophy
-- [[connected-stories|連綴敘事與來源核實]]: 以主題線串聯離散報道，論點可回溯
+- [[connected-stories|串連敘事與核實來源]]: 以主題線貫串零散報道，論點有據可依
 - [[cross-domain-reporting|多角度報道]]: 同一事件，不同面向
-- [[valuation-and-risk|估值與風險]]: 核心財務指標、估值框架與風險識別
+- [[valuation-and-risk|估值與風險]]: 核心財務指標、估值框架與風險辨識

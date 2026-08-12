@@ -34,3 +34,4 @@ topics:
 ## 相关文章
 
 - [[business/Netflix-Strategy-Engagement-2026|Netflix Exploring Live TV and Bundled Services as User Engagement Declines]]
+- [[tech/ai-generates-new-virus|AI最新的骇人里程碑：生成新病毒]]

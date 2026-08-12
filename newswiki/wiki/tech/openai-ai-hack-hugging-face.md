@@ -32,6 +32,7 @@ topics:
 
 ## 相关文章
 
+- [[tech/zuckerberg-ai-essay-key-points|关于扎克伯格AI长文，你需要了解的五个要点]]
 - [[tech/ai-password-handover-experiment|把密码交给AI是一种什么体验？我做了一次实测]]
 - [[tech/ai-gov-escalation|邮件揭秘：Anthropic与五角大楼的关系是如何破裂的]]
 - [[tech/anthropic-accuses-alibaba-of-claude-distillation-attack|Anthropic Accuses Alibaba of Large-Scale Distillation Attack on Claude]]

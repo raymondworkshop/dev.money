@@ -45,6 +45,7 @@ topics:
 ## Related Articles
 
 - [[business/elite-students-ai-startups-silicon-valley|Elite Students Abandon Wall Street to Chase AI Startup Dreams]]
+- [[business/founders-guide-founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]]
 - [[business/founder-of-adderall-pill-mill-sentenced-to-six-years-in-prison|经营硅谷“处方药坊”的中国籍商人在美被判六年监禁]]
 - [[business/67-age-entrepreneurship|我67岁开始创业，这比退休好太多了]]
 

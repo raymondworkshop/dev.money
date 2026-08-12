@@ -21,7 +21,7 @@ description: 以主题线串联离散报道，形成可延续的编辑线索。
 
 ## 相关文章
 
+- [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
 - [[business/china-ai-autonomy-market-reality|中国追求AI自主，股市却呈现另一种现实]]
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
-- [[tech/ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]]

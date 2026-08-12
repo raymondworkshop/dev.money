@@ -1,7 +1,7 @@
 # Business
 
 ## 概述
-企业如何决策、扩张与应对政策——从战略到机会  
+企业如何決策，發展與機會  
 
 ## 核心指标
 - **关键公司**:[[hubs/spacex|SpaceX]], [[Anthropic]], [[DeepSeek]], [[hubs/nvidia|Nvidia]], [[Apple]]
@@ -9,12 +9,24 @@
 - **投资视角**: 护城河、市占、资本效率
 
 ## 相关文章
+- [[unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12) - 宇树科技即将成为中国内地首家人形机器人上市公司，并正乘着机器人热潮的东风，准备在资本市场大举融资。
+- [[zuckerberg-ai-essay-key-points|关于扎克伯格AI长文，你需要了解的五个要点]] (2026-08-11) - 扎克伯格发表了一篇6,500字的长文，阐述了该公司对AI竞赛的思考及其对社会的意义，并探讨了美国政府应如何监管和促进这项技术。本文梳理了关键要点。
+- [[rise-of-american-tourists|美国人正周游世界，势不可挡]] (2026-08-10) - 在强劲经济推动下，曾经喜欢宅家的美国人正转变为充满热情的国际旅行者，富裕银发一族和追求社交媒体热潮的新世代还在迅速涌入那些鲜为人知的目的地。
+- [[chinas-new-export-engine|中国的新出口引擎：为全球工厂供货]] (2026-08-07) - 中国不再仅仅是廉价消费品的生产国，如今正出口更多支撑全球制造业的高附加值产品。
+- [[meta-muse-code-coding-agent|Meta发布编程智能体，剑指OpenAI和Anthropic]] (2026-08-06) - 该公司表示，Muse Code的定价将低于热门竞品。投资者一直向Meta施压，要求其证明在AI人才和算力方面的巨额投入能够带来回报。
+- [[pringles-ai-production-line|探秘品客生产线：AI如何让每一片薯片都完美]] (2026-08-06) - 薯片品牌品客的欧洲制造商Kellanova表示，一个新的AI项目可能是提升这款经典薯片生产工艺的关键。
+- [[spacex-ipo-spv-fraud|这些散户“持有”的SpaceX股票为何在套现前不翼而飞？]] (2026-08-06) - SPV基金宣称能提供这家火箭公司IPO前的投资“敞口”。但投资者后来被告知，股票在挂牌交易前就已抛售，其预期收益大打折扣。
+- [[airline-basic-economy-restrictions|航空公司真的不想让你买最便宜的机票]] (2026-08-05) - 没有任何附加服务的基础经济舱一直都有诸多限制，如今规矩更是越来越多。
+- [[whatnot-live-shopping-app|在这款直播购物应用里，有人一路竞拍直至倾家荡产]] (2026-08-05) - 直播购物应用Whatnot凭借极速竞拍和狂热的“拆卡”模式快速吸引用户，拍品涵盖稀有体育卡牌、时尚服饰、工具及食品等各类商品。
+- [[ai-rogue-deception-2026|AI在测试中再次失控，这次还学会了欺骗]] (2026-08-05) - 在英国政府背景研究机构的测试中，OpenAI与Anthropic旗下系统擅自越权且展现出欺骗行为。
+- [[ai-rogue-deception-tests|AI在测试中再次失控，这次还学会了欺骗]] (2026-08-05) - 在英国政府背景研究机构的测试中，OpenAI与Anthropic旗下系统擅自越权且展现出欺骗行为。
 - [[ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]] (2026-08-04) - 美国经济正把越来越多的鸡蛋放进人工智能这个篮子里。AI影响着从资本投资到购买一部iPhone所需花费的方方面面。
 - [[balaji-network-school-malaysia|硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停]] (2026-08-04) - 科技大亨巴拉吉·斯里尼瓦桑离开硅谷，在亚洲一座鬼城试水“网络建国孵化器”，随后该项目遭当地政府勒令关闭。
 - [[base-power-energy-storage|戴尔之子进军储能业，欲将电池装进你家后院]] (2026-08-04) - 随着电力需求和电池储能激增，由扎克·戴尔联合创立的Base Power获得130亿美元估值。
 - [[fashion-resale-trend|时尚巨头试水新潮流：销售二手服装]] (2026-08-04) - 在时尚界面临降低环境影响的压力之际，整个行业对二手服装的兴趣正日益浓厚。
 - [[palantir-revenue-growth-2026|Palantir股价飙升，收入近乎翻倍，公司上调业绩展望]] (2026-08-04) - Palantir在盘后交易中上涨逾13%，此前该公司上调了全年业绩展望。CEO卡普将第二财季业绩形容为“超乎寻常”，称“对AI主权的需求如今已经释放出来”。
 - [[whirlpool-north-america-struggle|退守本土后，惠而浦为何仍难逃“寒冬”？]] (2026-08-04) - 这家家电巨头将重心收缩至北美，却也将其命运与持续低迷的美国房地产市场紧密捆绑。
+- [[pi-minimal-performant|Pi, Minimal and Performant]] (2026-08-04) - How Pi's minimal harness improves coding-agent cost and performance, with examples from Databricks and Shopify's pi-autoresearch extension.
 - [[bessent-fed-yen-support|贝森特为何指望美联储帮助支撑日圆汇率]] (2026-08-04) - 美联储为应对2020年美元短缺而建立的一项工具使东京方面能够获得美元以阻止日圆下跌，而无需通过出售美国国债筹集干预资金。
 - [[china-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03) - 在美国，监管往往会保护守成者，却压抑了创业热情。中国则先给初创企业留足成长空间，随后再对创始人出手整顿。
 - [[china-manufacturing-summer-blues|中国制造业遭遇“苦夏”]] (2026-08-03) - 尽管经济增长势头放缓，但中国政府几乎没有表现出采取大规模刺激措施的意愿。
@@ -23,6 +35,7 @@
 - [[us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03) - 硅谷的一些初创公司正在建立开放AI模型，但由于风投兴趣寥寥，它们的预算捉襟见肘。
 - [[us-alternative-to-cheap-chinese-ai|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03) - 硅谷的一些初创公司正在建立开放AI模型，但由于风投兴趣寥寥，它们的预算捉襟见肘。
 - [[tesla-china-divestiture-spacex-merger|特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路]] (2026-07-31) - 知情人士称，一些特斯拉高管已接到指示，要求在潜在的合并动作前夕，为剥离中国业务做好准备，特斯拉的顾问们已经讨论了剥离的可行方案，包括分拆、出售或关闭。
+- [[citadel-buys-situational-awareness-portfolio|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] (2026-07-31) - 前OpenAI员工阿申布伦纳的Situational Awareness专注AI领域，曾一度风头无两。此次收购标志其运势急转直下。
 - [[ai-powered-solopreneurship|AI助力“一人公司”崛起：单枪匹马也可年入百万美元]] (2026-07-30) - AI工具让创始人更容易单枪匹马地创业，而且许多人在公司发展壮大后依然保持这种单干状态。
 - [[jetzero-bwb-aircraft|JetZero翼身融合飞机设计能否挑战波音霸主地位？]] (2026-07-30) - 美国初创公司JetZero正研发翼身融合客机Z4，试图打破波音在美国的垄断地位，并已获得美国进出口银行30亿美元的贷款支持。
 - [[meta-q2-earnings-ai-spending-drop|Meta股价大跌10%，因AI支出增加且展望不及预期]] (2026-07-30) - 尽管Meta公布了创纪录的第二财季收入，但该公司提高了今年的AI支出下限，自由现金流缩水至不足10亿美元，当前财季的收入展望也未达预期。
@@ -32,6 +45,7 @@
 - [[china-ai-autonomy-market-reality|中国追求AI自主，股市却呈现另一种现实]] (2026-07-29) - 中国希望世界能像看待美国AI产业那样，来看待中国的AI产业。但就目前而言，中国市场依然在看外围的脸色。
 - [[trump-space-environmental-review-exemption|特朗普政府拟豁免航天公司的环境评估]] (2026-07-29) - 特朗普政府正提议为SpaceX等航天公司提供一种免于环境评估的途径。航天器的发射和重返会产生巨大噪音，改变野生动物栖息地。
 - [[apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]] (2026-07-27) - 降低美国消费物价和提高国内半导体产量，这两项美国总统特朗普的优先事项相互冲突。
+- [[dont-start-startup-to-get-acquired|Don't start a startup with the goal of getting acquired.]] (2026-07-27) - If your goal is to cash out at $5 million as quickly and reliably as possible, becoming a founder is a very strange way to do it.
 - [[ai-safety-panic-washington-china-threat|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27) - 华盛顿要求约束AI的呼声愈演愈烈，科技行业内部则在为“谁来握紧缰绳”争夺主导权。
 - [[us-companies-ai-cost-shift|美国企业观念突变，不再为AI大肆烧钱]] (2026-07-27) - 美国企业界掀起模型“混搭”潮，AI行业经济模式与竞争格局迎来重构。
 - [[washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27) - 华盛顿要求约束AI的呼声愈演愈烈，科技行业内部则在为“谁来握紧缰绳”争夺主导权。
@@ -46,6 +60,7 @@
 - [[micron-tech-market-importance|美光科技已成“市场上最重要的股票”，现在该担心了吗？]] (2026-07-17) - 近期该股承压，部分原因在于市场担心其定价能力何时会减弱。鉴于美光科技的市场重要性，投资者是否应该担忧？其股价目前低于850美元，意味着估值倍数更低。
 - [[spacex-stocks-below-ipo-price|SpaceX股价首次跌破IPO发行价]] (2026-07-16) - 周三，SpaceX股价首次跌破135美元的IPO发行价，这表明市场对这桩史上规模最大上市交易的热情正在降温。
 - [[high-shanwen-economic-truth|他道出中国经济真相，却在沉默中走完余生]] (2026-07-15) - 2019年，我给高善文打了一通电话，想了解让市场在中国经济中发挥“决定性作用”的改革为何迟迟没有到来。他给出的答案让我至今难忘。几年后，他在沉默中病逝，让人唏嘘不已。
+- [[founders-guide-founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]] (2026-07-14) - Founder market fit is a necessary but insufficient condition for finding success in the startup world
 - [[retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]] (2026-07-14) - 企业正通过重新设计包装和大幅削减营销预算，来守住这一重要的心理价位。
 - [[Netflix-Strategy-Engagement-2026|Netflix Exploring Live TV and Bundled Services as User Engagement Declines]] (2026-07-10) - Netflix is discussing adding live TV channels and potential bundled streaming services, indicating a shift from its early focus on simplicity and on-demand content.
 - [[iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]] (2026-07-10) - Nigerian entrepreneur Aliko Dangote's refinery has seen a surge in output amid the Iran conflict, boosting his wealth and positioning him as a key beneficiary of regional energy disruptions.
@@ -69,6 +84,7 @@
 - [[AI时代的职业边界：哪些事情AI不该做？|哪些事AI做不到，也不该做？]] (2026-06-22) - 随着企业加速拥抱AI，一些领域的过度应用可能弊大于利。
 - [[hormuz-crisis-economic-lessons|霍尔木兹危机带给全球经济的五大启示]] (2026-06-18) - 中东最关键的能源通道关闭了数月之久，但全球经济为何并未遭到更严重的冲击？
 - [[residential-proxy-attack-2026|美国家庭网络如何沦为黑客隐身衣？]] (2026-06-18) - 具有国家背景的网络攻击者正日益频繁地利用住宅代理网络来隐藏其网络流量，将日常电子设备变成了巨大的全球性威胁。
+- [[ai-software-company-moats|How does AI affect software company moats?]] (2026-06-16) - A thought experiment on which software company moats weaken or strengthen as coding costs fall and software users become agents.
 - [[spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]] (2026-06-15) - SpaceX或许永远无法兑现对投资者的所有承诺，但它已经实现了最初的目标：重燃人类对太空探索的兴趣。
 - [[musk-confidant-gracias-set-for-spacex-windfall|马斯克密友格拉西亚斯有望因SpaceX斩获680亿美元收益]] (2026-06-12) - 当SpaceX于周五上市时，格拉西亚斯及其公司Valor Equity Partners将持有其6.7%的A类股票，折合股份价值达680亿美元。这将使格拉西亚斯成为仅次于马斯克的SpaceX第二大股东。
 - [[spacex-ipo-wealth-management|SpaceX员工紧急恶补：暴富后应如何理财]] (2026-06-10) - 面对足以改变命运的巨额财富，SpaceX员工们需要盘算是否该卖出股票、何时套现，并权衡其他理财策略。

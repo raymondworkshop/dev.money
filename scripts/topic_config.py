@@ -24,12 +24,12 @@ TOPIC_LABELS: dict[str, str] = {
 
 # Short blurbs for the grouped root INDEX Topics section.
 TOPIC_BLURBS: dict[str, str] = {
-    "tech": "AI 算力、模型、机器人与教育科技。",
-    "design": "产品设计、自托管体验与科学传播。",
-    "finance": "投资、加密资产、房地产与财富管理。",
-    "business": "公司战略、创业风投、产业政策与商业航天。",
-    "career": "AI 对就业的冲击、职业发展与人事实践。",
-    "lifestyle": "健康、育儿、文化趋势与生活方式。",
+    "tech": "AI 算力、模型、機械人與教育科技。",
+    "design": "產品設計、自託管體驗與科學傳播。",
+    "finance": "投資、加密資產、房地產與財富管理。",
+    "business": "公司策略、創業風投、產業政策與商業航天。",
+    "career": "AI 對就業的衝擊、事業發展與人事實務。",
+    "lifestyle": "健康、育兒、文化趨勢與生活方式。",
 }
 
 # Grouped homepage Topics nav (### headings + topic lines).

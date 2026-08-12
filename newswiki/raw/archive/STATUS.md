@@ -1,7 +1,7 @@
 # Archive Status
 
 <<<<<<< HEAD
-**Last Updated:** 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-28 2026-07-28 2026-07-28 2026-07-28 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
+**Last Updated:** 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-28 2026-07-28 2026-07-28 2026-07-28 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
 
 =======
 <<<<<<< HEAD
@@ -114,6 +114,47 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-08-12-宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头.md | Tech | `newswiki/wiki/tech/unitree-ipo-humanoid-robot-trend.md` | Archived |
+| 2026-08-12-CoreWeave股价大涨，收入同比增长一倍.md | Tech | `newswiki/wiki/tech/coreweave-earnings-q2-2026.md` | Archived |
+| 2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate.md | Career | `newswiki/wiki/career/improve-pronunciation-day-5.md` | Archived |
+| 2026-08-11-安全漏洞致使全美30年来的DNA证据面临黑客攻击风险.md | Tech | `newswiki/wiki/tech/dna-evidence-security-flaw.md` | Archived |
+| 2026-08-11-前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合.md | Finance | `newswiki/wiki/finance/citadel-buys-situational-awareness-portfolio.md` | Archived |
+| 2026-08-11-六神磊磊的红楼宇宙-押沙龙的财新博客-财新网.md | Lifestyle Trends | `newswiki/wiki/lifestyle/liu-shen-lei-lei-honglou-universe.md` | Archived |
+| 2026-08-11-my server is a phone now.md | Tech | `newswiki/wiki/tech/my-server-is-a-phone-now.md` | Archived |
+| 2026-08-11-Pentaton LP • Pentaton.md | Design | `newswiki/wiki/design/pentaton-lp.md` | Archived |
+| 2026-08-11-Founders Guide Success may not matter if you aren't doing what you love.md | Business | `newswiki/wiki/business/founders-guide-founder-market-fit.md` | Archived |
+| 2026-08-11-2x, not 10x coding with LLMs in 2026.md | Tech | `newswiki/wiki/tech/2x-not-10x-coding-llms-2026.md` | Archived |
+| 2026-08-11-顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网.md | Career | `newswiki/wiki/career/hidden-skills-of-top-talent.md` | Archived |
+| 2026-08-11-美国人正周游世界，势不可挡.md | Lifestyle Trends | `newswiki/wiki/lifestyle/rise-of-american-tourists.md` | Archived |
+| 2026-08-11-私募信贷基金的流动性如何？这取决于你如何定义“流动性”.md | Finance | `newswiki/wiki/finance/private-credit-fund-liquidity-definitions.md` | Archived |
+| 2026-08-11-关于扎克伯格AI长文，你需要了解的五个要点.md | Tech | `newswiki/wiki/tech/zuckerberg-ai-essay-key-points.md` | Archived |
+| 2026-08-11-三星堆失落文明谜团重重，正重塑对中华文明起源的认知.md | Lifestyle Trends | `newswiki/wiki/lifestyle/sanxingdui-lost-civilization.md` | Archived |
+| 2026-08-11-No, local models will not win.md | Tech | `newswiki/wiki/tech/local-models-will-not-win.md` | Archived |
+| 2026-08-11-How I use LLMs to learn complex topics.md | Tech | `newswiki/wiki/tech/how-i-use-llms-to-learn.md` | Archived |
+| 2026-08-08-中国的新出口引擎：为全球工厂供货.md | Business | `newswiki/wiki/business/chinas-new-export-engine.md` | Archived |
+| 2026-08-07-探秘品客生产线：AI如何让每一片薯片都完美.md | Tech | `newswiki/wiki/tech/pringles-ai-production-line.md` | Archived |
+| 2026-08-07-排解孤独的个人试验如何演变成一场社会运动？.md | Lifestyle Trends | `newswiki/wiki/lifestyle/american-dialogues-loneliness-movement.md` | Archived |
+| 2026-08-07-Don't start a startup with the goal of getting acquired.md | Business | `newswiki/wiki/business/dont-start-startup-to-get-acquired.md` | Archived |
+| 2026-08-07-失控AI机器人世界的用户指南.md | Tech | `newswiki/wiki/tech/rogue-ai-agents-guide.md` | Archived |
+| 2026-08-07-医生反感患者用AI解读化验单，但根本拦不住.md | Lifestyle Trends | `newswiki/wiki/lifestyle/ai-medical-report-interpretation.md` | Archived |
+| 2026-08-07-How Stripe Built Kai on Deep Agents in 1 Week.md | Tech | `newswiki/wiki/tech/stripe-kai-deep-agents.md` | Archived |
+| 2026-08-07-AI最新的骇人里程碑：生成新病毒.md | Tech | `newswiki/wiki/tech/ai-generates-new-virus.md` | Archived |
+| 2026-08-06-How does AI affect software company moats.md | Business | `newswiki/wiki/business/ai-software-company-moats.md` | Archived |
+| 2026-08-06-Best AI CRM for Real Estate Agents.md | Finance | `newswiki/wiki/finance/best-ai-crm-for-real-estate-agents.md` | Archived |
+| 2026-08-06-Pi, Minimal and Performant.md | Tech | `newswiki/wiki/tech/pi-minimal-performant.md` | Archived |
+| 2026-08-06-LLMs reward expertise.md | Career | `newswiki/wiki/career/llms-reward-expertise.md` | Archived |
+| 2026-08-05-芯片公司利润飙升，投资者为何仍不满意？.md | Finance | `newswiki/wiki/finance/chip-profits-investor-dissatisfaction.md` | Archived |
+| 2026-08-05-习近平想要强势人民币，中国经济却在拖后腿.md | Finance | `newswiki/wiki/finance/xi-strong-yuan-economic-drag.md` | Archived |
+| 2026-08-06-这些散户“持有”的SpaceX股票为何在套现前不翼而飞？.md | Finance | `newswiki/wiki/finance/spacex-ipo-spv-fraud.md` | Archived |
+| 2026-08-06-航空公司真的不想让你买最便宜的机票.md | Business | `newswiki/wiki/business/airline-basic-economy-restrictions.md` | Archived |
+| 2026-08-06-探秘品客生产线：AI如何让每一片薯片都完美.md | Tech | `newswiki/wiki/tech/pringles-ai-production-line.md` | Archived |
+| 2026-08-06-如果你在入学申请中造假，这支“打假小分队”定会揪出你.md | Tech | `newswiki/wiki/tech/caltech-admissions-fraud-squad.md` | Archived |
+| 2026-08-06-在这款直播购物应用里，有人一路竞拍直至倾家荡产.md | Business | `newswiki/wiki/business/whatnot-live-shopping-app.md` | Archived |
+| 2026-08-06-Meta发布编程智能体，剑指OpenAI和Anthropic.md | Tech | `newswiki/wiki/tech/meta-muse-code-coding-agent.md` | Archived |
+| 2026-08-06-AI在测试中再次失控，这次还学会了欺骗.md | Tech | `newswiki/wiki/tech/ai-rogue-deception-2026.md` | Archived |
+| 2026-08-05-美国海军陆战队正加紧部署数千架攻击型无人机.md | Tech | `newswiki/wiki/tech/us-marine-corps-fpv-drones.md` | Archived |
+| 2026-08-05-图解美日联手提振日圆的五大原因.md | Finance | `newswiki/wiki/finance/us-japan-yen-intervention-2026.md` | Archived |
+| 2026-08-05-AI在测试中再次失控，这次还学会了欺骗.md | Tech | `newswiki/wiki/tech/ai-rogue-deception-tests.md` | Archived |
 <<<<<<< HEAD
 | 2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions.md | Finance | `newswiki/wiki/finance/ai-financial-advice-quality.md` | Archived |
 =======

@@ -1,7 +1,7 @@
 # Tech
 
 ## 概述
-AI、机器人与工具如何改变基础设施与生产力  
+AI模型、機器人与智能体如何重塑基础设施與生產力  
 
 ## 核心指标
 - **关键公司**: [[Nvidia]], [[Nebius]], [[CoreWeave]]
@@ -9,24 +9,45 @@ AI、机器人与工具如何改变基础设施与生产力
 - **投资视角**: 算力需求、技术迭代、供应链
 
 ## 相关文章
+- [[coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12) - 云计算公司CoreWeave公布，收入连续第五个财季创下新高，储备订单达1,040亿美元，这反映出人工智能算力需求持续强劲。
+- [[unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12) - 宇树科技即将成为中国内地首家人形机器人上市公司，并正乘着机器人热潮的东风，准备在资本市场大举融资。
+- [[2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]] (2026-08-11) - Calibrate your enthusiasm
+- [[local-models-will-not-win|No, local models will not win]] (2026-08-11)
+- [[zuckerberg-ai-essay-key-points|关于扎克伯格AI长文，你需要了解的五个要点]] (2026-08-11) - 扎克伯格发表了一篇6,500字的长文，阐述了该公司对AI竞赛的思考及其对社会的意义，并探讨了美国政府应如何监管和促进这项技术。本文梳理了关键要点。
+- [[how-i-use-llms-to-learn|How I use LLMs to learn complex topics]] (2026-08-09) - LLMs are used for any things. Learning new things is one of the top use cases.
+- [[ai-generates-new-virus|AI最新的骇人里程碑：生成新病毒]] (2026-08-07) - AI模型失控风险引发警惕，但研究者称AI模型创造新病毒的实验或可用于对抗耐药细菌。
+- [[rogue-ai-agents-guide|失控AI机器人世界的用户指南]] (2026-08-07) - AI智能体在近期“失控”事件中扮演了窃贼、破坏者、霸凌者等恶劣角色。
+- [[ai-medical-report-interpretation|医生反感患者用AI解读化验单，但根本拦不住]] (2026-08-07) - 一项民意调查，大约三分之一的成年人会向AI聊天机器人寻求健康建议，19%的人专门使用AI来解读实验室数据或医学检查报告。 这导致医生不得不去纠正错误的指导意见。
+- [[meta-muse-code-coding-agent|Meta发布编程智能体，剑指OpenAI和Anthropic]] (2026-08-06) - 该公司表示，Muse Code的定价将低于热门竞品。投资者一直向Meta施压，要求其证明在AI人才和算力方面的巨额投入能够带来回报。
+- [[pringles-ai-production-line|探秘品客生产线：AI如何让每一片薯片都完美]] (2026-08-06) - 薯片品牌品客的欧洲制造商Kellanova表示，一个新的AI项目可能是提升这款经典薯片生产工艺的关键。
+- [[best-ai-crm-for-real-estate-agents|Best AI CRM for Real Estate Agents]] (2026-08-06) - The #1 AI CRM for real estate agents. AI writes your follow-ups, scores leads automatically, and saves 10+ hours weekly. Import from Follow Up Boss. Start free trial.
+- [[llms-reward-expertise|LLMs reward expertise]] (2026-08-06) - An analysis of why domain expertise remains the most critical skill for effective LLM prompting and high-value output.
+- [[ai-rogue-deception-2026|AI在测试中再次失控，这次还学会了欺骗]] (2026-08-05) - 在英国政府背景研究机构的测试中，OpenAI与Anthropic旗下系统擅自越权且展现出欺骗行为。
+- [[ai-rogue-deception-tests|AI在测试中再次失控，这次还学会了欺骗]] (2026-08-05) - 在英国政府背景研究机构的测试中，OpenAI与Anthropic旗下系统擅自越权且展现出欺骗行为。
+- [[caltech-admissions-fraud-squad|如果你在入学申请中造假，这支“打假小分队”定会揪出你]] (2026-08-05) - 面对AI助长下的入学申请造假风，加州理工学院成立了一支“打假小分队”，专门符合核实每个录取学生的申请材料。
+- [[us-marine-corps-fpv-drones|美国海军陆战队正加紧部署数千架攻击型无人机]] (2026-08-05) - 小型消耗性FPV无人机具备“第一人称视角”功能，让前线指挥官能够更轻松地发动空袭。
+- [[chip-profits-investor-dissatisfaction|芯片公司利润飙升，投资者为何仍不满意？]] (2026-08-05) - 尽管半导体行业利润飙升144%，但费城半导体指数较6月份创下的纪录高位回落约17%，一度跌入熊市区域。
 - [[ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]] (2026-08-04) - 美国经济正把越来越多的鸡蛋放进人工智能这个篮子里。AI影响着从资本投资到购买一部iPhone所需花费的方方面面。
 - [[base-power-energy-storage|戴尔之子进军储能业，欲将电池装进你家后院]] (2026-08-04) - 随着电力需求和电池储能激增，由扎克·戴尔联合创立的Base Power获得130亿美元估值。
 - [[palantir-revenue-growth-2026|Palantir股价飙升，收入近乎翻倍，公司上调业绩展望]] (2026-08-04) - Palantir在盘后交易中上涨逾13%，此前该公司上调了全年业绩展望。CEO卡普将第二财季业绩形容为“超乎寻常”，称“对AI主权的需求如今已经释放出来”。
-- [[llms-reward-expertise|LLMs reward expertise]] (2026-08-04) - An analysis of why domain expertise remains the critical bottleneck and the most valuable skill for steering LLMs toward high-quality outputs.
+- [[my-server-is-a-phone-now|my server is a phone now]] (2026-08-04) - rooting a CMF Phone 1 to run my personal infrastructure at home.
+- [[pi-minimal-performant|Pi, Minimal and Performant]] (2026-08-04) - How Pi's minimal harness improves coding-agent cost and performance, with examples from Databricks and Shopify's pi-autoresearch extension.
 - [[ai-dating-chatbots|AI时代的爱情：聊天机器人接管线上约会]] (2026-08-04) - 一些厌倦了“左滑右滑”的单身人士，正将目光投向AI红娘。
 - [[china-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03) - 在美国，监管往往会保护守成者，却压抑了创业热情。中国则先给初创企业留足成长空间，随后再对创始人出手整顿。
 - [[chinas-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03) - 在美国，监管往往会保护守成者，却压抑了创业热情。中国则先给初创企业留足成长空间，随后再对创始人出手整顿。
 - [[openai-lost-ai-crown|OpenAI如何失去AI王冠——又欲如何重新夺回]] (2026-08-03) - 当OpenAI将精力放在视频生成器、消费设备和芯片等一系列花哨项目上时，Anthropic开发出了一款大受欢迎的编程工具，并借此取得了领先地位。
 - [[ai-autonomous-cyberattacks|失控AI发动黑客攻击，预示网络混乱新时代到来]] (2026-08-03) - OpenAI和Anthropic的模型发生“越狱”，印证了安全专家对AI风险的担忧。
+- [[dna-evidence-security-flaw|安全漏洞致使全美30年来的DNA证据面临黑客攻击风险]] (2026-08-03) - 研究人员发现，借助AI软件编写的计算机代码，黑客能够更改实体DNA证据经计算机扫描后生成的数据，且不会留下任何篡改记录的痕迹。
+- [[stripe-kai-deep-agents|How Stripe Built Kai on Deep Agents in 1 Week]] (2026-08-03) - Learn how Stripe built Kai, a company-wide AI agent on LangChain, LangGraph, and Deep Agents, reaching 5,000 users in roughly 4 weeks.
 - [[us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03) - 硅谷的一些初创公司正在建立开放AI模型，但由于风投兴趣寥寥，它们的预算捉襟见肘。
 - [[us-alternative-to-cheap-chinese-ai|美国公司加紧打造中国低成本AI的替代品]] (2026-08-03) - 硅谷的一些初创公司正在建立开放AI模型，但由于风投兴趣寥寥，它们的预算捉襟见肘。
 - [[tesla-china-divestiture-spacex-merger|特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路]] (2026-07-31) - 知情人士称，一些特斯拉高管已接到指示，要求在潜在的合并动作前夕，为剥离中国业务做好准备，特斯拉的顾问们已经讨论了剥离的可行方案，包括分拆、出售或关闭。
+- [[citadel-buys-situational-awareness-portfolio|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] (2026-07-31) - 前OpenAI员工阿申布伦纳的Situational Awareness专注AI领域，曾一度风头无两。此次收购标志其运势急转直下。
 - [[situational-awareness-citadel-acquisition|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] (2026-07-31) - 前OpenAI员工阿申布伦纳的Situational Awareness专注AI领域，曾一度风头无两。此次收购标志其运势急转直下。
 - [[meta-q2-earnings-ai-spending-drop|Meta股价大跌10%，因AI支出增加且展望不及预期]] (2026-07-30) - 尽管Meta公布了创纪录的第二财季收入，但该公司提高了今年的AI支出下限，自由现金流缩水至不足10亿美元，当前财季的收入展望也未达预期。
 - [[microsoft-azure-revenue-milestone|微软利润激增31%，Azure云业务财年收入首破千亿美元大关]] (2026-07-30) - 在截至6月份的财季，微软收入增长18%，达到900亿美元。这标志着该公司AI收入增长正在提速，并将继续在数据中心方面投入资金。
 - [[ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]] (2026-07-30) - 在经历历史性的股价暴跌后，“蓝色巨人”正加紧行动，以证明其量子计算业务能够实现盈利。
 - [[starter-kit-ai-design-apps|Starter kit for AI design apps]] (2026-07-29) - Toolcraft is an open-source starter kit and UI library for building custom design apps with AI.
-- [[pentaton-lp|Pentaton LP • Pentaton]] (2026-07-28) - A vinyl-sleeve-sized music streamer with a high-resolution display for cover art.
 - [[apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]] (2026-07-27) - 降低美国消费物价和提高国内半导体产量，这两项美国总统特朗普的优先事项相互冲突。
 - [[ai-safety-panic-washington-china-threat|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]] (2026-07-27) - 华盛顿要求约束AI的呼声愈演愈烈，科技行业内部则在为“谁来握紧缰绳”争夺主导权。
 - [[us-companies-ai-cost-shift|美国企业观念突变，不再为AI大肆烧钱]] (2026-07-27) - 美国企业界掀起模型“混搭”潮，AI行业经济模式与竞争格局迎来重构。
@@ -76,6 +97,7 @@ AI、机器人与工具如何改变基础设施与生产力
 - [[AI时代的职业边界：哪些事情AI不该做？|哪些事AI做不到，也不该做？]] (2026-06-22) - 随着企业加速拥抱AI，一些领域的过度应用可能弊大于利。
 - [[utah-ai-doctor-pilot|犹他州试点“AI医生”，真人医生们坐不住了]] (2026-06-19) - 围绕AI医生的交锋已经展开，而犹他州正处于这场争议的最前线。该州的任何成年人都可以登录Doctronic公司的AI系统，续开降胆固醇药物或抗抑郁药等处方。
 - [[residential-proxy-attack-2026|美国家庭网络如何沦为黑客隐身衣？]] (2026-06-18) - 具有国家背景的网络攻击者正日益频繁地利用住宅代理网络来隐藏其网络流量，将日常电子设备变成了巨大的全球性威胁。
+- [[ai-software-company-moats|How does AI affect software company moats?]] (2026-06-16) - A thought experiment on which software company moats weaken or strengthen as coding costs fall and software users become agents.
 - [[spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]] (2026-06-15) - SpaceX或许永远无法兑现对投资者的所有承诺，但它已经实现了最初的目标：重燃人类对太空探索的兴趣。
 - [[my-homelab-ai-dev-platform|My Homelab AI Dev Platform]] (2026-06-14) - Self-hosting OpenCode Web for GitOps style homelab changes.
 - [[leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]] (2026-06-09) - 凭借对AI未来的预测，莱奥波德·阿申布伦纳在互联网上吸引了大批狂热追随者，其投资公司常规的监管公告被人们像研究圣经一样仔细研读。

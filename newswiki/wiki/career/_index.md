@@ -1,7 +1,7 @@
 # Career
 
 ## 概述
-技能、职场与组织如何共同塑造职业路径  
+技能、就业与组织如何在AI时代重塑职业路径  
 
 ## 核心指标
 - **关键公司**:[[Anthropic]], [[Ferretly]], [[RefAssured]], [[LinkedIn]], [[Stripe]]
@@ -9,14 +9,19 @@
 - **投资视角**: 人力资本、生产率、行业变迁
 
 ## 相关文章
-- [[llms-reward-expertise|LLMs reward expertise]] (2026-08-04) - An analysis of why domain expertise remains the critical bottleneck and the most valuable skill for steering LLMs toward high-quality outputs.
+- [[2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]] (2026-08-11) - Calibrate your enthusiasm
+- [[hidden-skills-of-top-talent|顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网]] (2026-08-09) - 探讨“无所事事”与玩耍对大脑默认网络（DMN）的激活作用，以及过度工作对前额叶皮质和心理健康的损害。
+- [[llms-reward-expertise|LLMs reward expertise]] (2026-08-06) - An analysis of why domain expertise remains the most critical skill for effective LLM prompting and high-value output.
 - [[ai-powered-solopreneurship|AI助力“一人公司”崛起：单枪匹马也可年入百万美元]] (2026-07-30) - AI工具让创始人更容易单枪匹马地创业，而且许多人在公司发展壮大后依然保持这种单干状态。
+- [[dont-start-startup-to-get-acquired|Don't start a startup with the goal of getting acquired.]] (2026-07-27) - If your goal is to cash out at $5 million as quickly and reliably as possible, becoming a founder is a very strange way to do it.
 - [[big-companies-resume-hiring-ai-employment|大企业重新开始招聘，打破“AI将消灭就业”的预测]] (2026-07-27) - 在控制招聘一年后，从科技、运输到国防等领域，一些大公司如今表示，它们需要更多员工来协同AI开展工作。
 - [[how-to-choose-a-subproblem|How To Choose A Subproblem]] (2026-07-20) - And why the best subproblem is always 'make a picture'
 - [[ai-knows-your-online-activity|AI知道你在网上做过什么，现在你的雇主也知道了]] (2026-07-16) - 企业正利用AI工具越来越深入地调查员工的网络历史和足迹，无论是聘用前还是聘用后。
 - [[how-i-use-llms-as-a-staff-engineer-in-2026|How I use LLMs as a staff engineer in 2026]] (2026-07-16)
+- [[improve-pronunciation-day-5|5 days to improve your pronunciation / Day 5 - You've earned your certificate]] (2026-07-16) - Day five of Tim's 5-day guide to better pronunciation.
 - [[amazon-off-campus-romance-series|亚马逊如何打造《校园之外》等爆款青春剧集]] (2026-07-16) - Prime Video掘金青春浪漫小说领域，专门迎合庞大的女性和女孩群体，满足她们想要沉浸到爱情故事里避世放松的需求。
 - [[llm-critics-right-use-anyway|The LLM Critics Are Right. I Use LLMs Anyway.]] (2026-07-15) - I almost agree with all of the LLM critics, yet I still use LLMs a lot. I know this sounds like I am delusional, but I don't think I am alone with it.
+- [[founders-guide-founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]] (2026-07-14) - Founder market fit is a necessary but insufficient condition for finding success in the startup world
 - [[founder-market-fit|Founders Guide: Success may not matter if you aren't doing what you love]] (2026-07-14) - Founder market fit is a necessary but insufficient condition for finding success in the startup world
 - [[employee-retention-case-study|How a $33/Hour Costco Cashier Built a Million-Dollar Retirement: A Case Study in Employee Retention and Well-being]] (2026-07-09) - A detailed look at Tony Barzar, a 40-year veteran Costco cashier, who earned over $100,000 in retirement savings through the company's generous 401(k) plan, comprehensive healthcare, and retention strategy that values experienced employees as cultural assets.
 - [[llm-burnout-impact|I Think I Have LLM Burnout]] (2026-07-09) - The author describes growing fatigue from daily exposure to LLM-generated content, particularly due to repetitive patterns like hallucinations, excessive emojis, and staccato fragments.

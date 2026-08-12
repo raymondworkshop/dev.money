@@ -34,9 +34,10 @@ topics:
 
 ## Related Articles
 
+- [[tech/2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]]
 - [[tech/ai-food-metadata|Building Food Metadata with LLM Juries, Context Optimization & Multimodal AI]]
 - [[tech/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]]
-- [[tech/best-books-for-software-engineers|The Best Books I ever read: Suggestions for a software engineer.]]
+- [[tech/how-i-use-llms-to-learn|How I use LLMs to learn complex topics]]
 
 ---
 **Topics**: [[tech/_index|Tech]], [[career/_index|Career]], [[design/_index|Design]]  

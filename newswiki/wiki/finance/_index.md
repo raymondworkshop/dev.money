@@ -1,7 +1,7 @@
 # Finance
 
 ## 概述
-资本如何定价与配置——市场、估值与风险   
+资本如何定价与配置——市場、流动性与风险   
 
 ## 核心指标
 - **关键公司**:[[hubs/spacex|SpaceX]], [[DeepSeek]], [[hubs/nvidia|Nvidia]], [[Leon Capital Group]], [[OpenAI]]
@@ -9,6 +9,15 @@
 - **投资视角**: 现金流、杠杆、风险回报
 
 ## 相关文章
+- [[coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12) - 云计算公司CoreWeave公布，收入连续第五个财季创下新高，储备订单达1,040亿美元，这反映出人工智能算力需求持续强劲。
+- [[unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12) - 宇树科技即将成为中国内地首家人形机器人上市公司，并正乘着机器人热潮的东风，准备在资本市场大举融资。
+- [[private-credit-fund-liquidity-definitions|私募信贷基金的流动性如何？这取决于你如何定义“流动性”]] (2026-08-10) - 私营信贷基金经理对该指标的报告方式各异，部分人甚至通过激进的计算手法来对外展示实力。
+- [[rise-of-american-tourists|美国人正周游世界，势不可挡]] (2026-08-10) - 在强劲经济推动下，曾经喜欢宅家的美国人正转变为充满热情的国际旅行者，富裕银发一族和追求社交媒体热潮的新世代还在迅速涌入那些鲜为人知的目的地。
+- [[best-ai-crm-for-real-estate-agents|Best AI CRM for Real Estate Agents]] (2026-08-06) - The #1 AI CRM for real estate agents. AI writes your follow-ups, scores leads automatically, and saves 10+ hours weekly. Import from Follow Up Boss. Start free trial.
+- [[spacex-ipo-spv-fraud|这些散户“持有”的SpaceX股票为何在套现前不翼而飞？]] (2026-08-06) - SPV基金宣称能提供这家火箭公司IPO前的投资“敞口”。但投资者后来被告知，股票在挂牌交易前就已抛售，其预期收益大打折扣。
+- [[chip-profits-investor-dissatisfaction|芯片公司利润飙升，投资者为何仍不满意？]] (2026-08-05) - 尽管半导体行业利润飙升144%，但费城半导体指数较6月份创下的纪录高位回落约17%，一度跌入熊市区域。
+- [[us-japan-yen-intervention-2026|图解美日联手提振日圆的五大原因]] (2026-08-05) - 日本担忧通胀，而美国不希望东京方面抛售美国国债。这是外汇市场一次历史性的干预行动。
+- [[xi-strong-yuan-economic-drag|习近平想要强势人民币，中国经济却在拖后腿]] (2026-08-05) - 习近平不喜欢疲软的人民币，但单凭领导人的个人偏好，还不足以改变人民币汇率较其真实价值被低估的现状——这并非中国增长模式中的系统漏洞，而是其固有特性。
 - [[ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]] (2026-08-04) - 美国经济正把越来越多的鸡蛋放进人工智能这个篮子里。AI影响着从资本投资到购买一部iPhone所需花费的方方面面。
 - [[balaji-network-school-malaysia|硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停]] (2026-08-04) - 科技大亨巴拉吉·斯里尼瓦桑离开硅谷，在亚洲一座鬼城试水“网络建国孵化器”，随后该项目遭当地政府勒令关闭。
 - [[whirlpool-north-america-struggle|退守本土后，惠而浦为何仍难逃“寒冬”？]] (2026-08-04) - 这家家电巨头将重心收缩至北美，却也将其命运与持续低迷的美国房地产市场紧密捆绑。
@@ -16,6 +25,7 @@
 - [[china-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]] (2026-08-03) - 在美国，监管往往会保护守成者，却压抑了创业热情。中国则先给初创企业留足成长空间，随后再对创始人出手整顿。
 - [[china-manufacturing-summer-blues|中国制造业遭遇“苦夏”]] (2026-08-03) - 尽管经济增长势头放缓，但中国政府几乎没有表现出采取大规模刺激措施的意愿。
 - [[us-stock-market-bubbles|美股擅长制造泡沫，也能从容化解]] (2026-08-03) - 总有一天，会出现一场大规模的泡沫破裂，并拖累整个市场。但至少就目前而言，AI相关股票的回调影响，已几乎被其他领域的上涨完全抵消。
+- [[citadel-buys-situational-awareness-portfolio|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] (2026-07-31) - 前OpenAI员工阿申布伦纳的Situational Awareness专注AI领域，曾一度风头无两。此次收购标志其运势急转直下。
 - [[situational-awareness-citadel-acquisition|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] (2026-07-31) - 前OpenAI员工阿申布伦纳的Situational Awareness专注AI领域，曾一度风头无两。此次收购标志其运势急转直下。
 - [[china-ai-autonomy-market-reality|中国追求AI自主，股市却呈现另一种现实]] (2026-07-29) - 中国希望世界能像看待美国AI产业那样，来看待中国的AI产业。但就目前而言，中国市场依然在看外围的脸色。
 - [[china-offshore-wealth-crackdown|中国富豪借离岸架构积累财富的时代正在终结]] (2026-07-27) - 中国正在重塑针对超级富豪的监管规则，以加强对其海外投资方式的管控。

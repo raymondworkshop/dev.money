@@ -29,6 +29,10 @@ topics:
 - Visual storytelling (Reels, images) is central to user engagement, indicating a shift toward experiential content over text-based interaction.
 - The platform supports both personal and commercial use cases, with clear potential for lifestyle and community-based business models.
 
+## Related Articles
+
+- [[lifestyle/american-dialogues-loneliness-movement|排解孤独的个人试验如何演变成一场社会运动？]]
+
 ---
 **Topics**: [[lifestyle-trends/_index|Lifestyle Trends]]  
 **Tags**: #lifestyle #digital-identity #social-connection

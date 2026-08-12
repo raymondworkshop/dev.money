@@ -25,6 +25,10 @@ topics:
 - Improve clarity by speaking slowly and clearly, not necessarily achieving native-level fluency.
 - Engage with interactive content such as the Inspector Stone mystery to build listening and comprehension skills.
 
+## Related Articles
+
+- [[career/improve-pronunciation-day-5|5 days to improve your pronunciation / Day 5 - You've earned your certificate]]
+
 ---
 **Topics**: [[design/_index|Design]], [[design/5-days-pronunciation-day-1|Day 1 - What's Tim's tip?]], [[design/5-days-pronunciation-day-2|Day 2 - The most important sound]], [[design/5-days-pronunciation-day-3|Day 3 - When sounds collide]], [[design/5-days-pronunciation-day-4|Day 4 - Happy Badge Day]]  
 **Tags**: #pronunciation #learning-design #interactive-education

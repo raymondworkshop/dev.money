@@ -39,7 +39,9 @@ topics:
 
 ## Related Articles
 
+- [[tech/2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]]
 - [[tech/local-llm-question-categorization|Fine Tuning a Local LLM to Categorize Questions]]
+- [[tech/how-i-use-llms-to-learn|How I use LLMs to learn complex topics]]
 - [[tech/llm-critics-right-use-anyway|The LLM Critics Are Right. I Use LLMs Anyway.]]
 
 ---

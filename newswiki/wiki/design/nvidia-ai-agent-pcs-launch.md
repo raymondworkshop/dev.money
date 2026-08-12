@@ -34,10 +34,10 @@ topics:
 
 ## 相关文章
 
+- [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
 - [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]]
-- [[tech/ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]]
 
 ---
 **Topics**: [[design/_index|Design]], [[tech/_index|Tech]]  

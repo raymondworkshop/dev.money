@@ -38,6 +38,7 @@ topics:
 ## Related Articles
 
 - [[design/how-to-read-more-books|How to read more books]]
+- [[design/pentaton-lp|Pentaton LP • Pentaton]]
 
 ---
 **Topics**: [[design/_index|Product Design]]  
