@@ -12,6 +12,36 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[lifestyle/_index|Lifestyle]]: 健康、人際與文化如何界定現今生活方式
 
 ## Recent Articles
+
+- [[finance/tiktok-financial-advice-analysis|盘点TikTok上满天飞的理财“秘籍”]] (2026-08-17)
+
+- [[lifestyle/us-seniors-global-travel-boom|有钱有闲能折腾：美国老年人正推动全球旅游热潮]] (2026-08-18)
+
+- [[tech/open-weight-ai-compute-demand|开放权重AI不会削弱算力基础设施需求]] (2026-08-17)
+
+- [[finance/situational-awareness-crisis|华尔街如何嗅到了Situational Awareness危机爆发的气息]] (2026-08-18)
+
+- [[tech/warehouse-robotics-adoption|仓库正越来越多地使用机器人]] (2026-08-18)
+
+- [[finance/mark-walter-federal-investigation|一张隐秘交易网如何将道奇队老板卷入联邦调查]] (2026-08-18)
+
+- [[career/jobless-boom-era|“无就业”繁荣时代已经到来]] (2026-08-13)
+
+- [[business/ukraine-fire-point-ceo-iryna-terekh|重创俄军的乌克兰无人机出自一位90后家具设计师之手]] (2026-08-17)
+
+- [[business/big-tech-ai-spending-off-balance-sheet|科技巨头的AI支出或比表面看起来还要高出3万亿美元]] (2026-08-17)
+
+- [[tech/big-tech-ai-spending-off-balance-sheet|科技巨头的AI支出或比表面看起来还要高出3万亿美元]] (2026-08-17)
+
+- [[tech/ai-rare-disease-diagnosis|AI正助力罕见病患者破解医学谜团]] (2026-08-17)
+- [[finance/central-bank-crisis-cycle|央行陷入周而复始的危机循环]] (2026-08-17)
+- [[lifestyle/seven-books-i-keep-close|Seven books I keep close because I love them]] (2026-08-17)
+- [[business/cami-clark-anthropic-influence|连Claude都知之甚少：Anthropic CEO的神秘妻子及其幕后影响力]] (2026-08-14)
+- [[business/trump-musk-reconciliation|特朗普与马斯克如何修复了曾看似无可挽回的关系]] (2026-08-14)
+- [[finance/wealth-management-cash-problem|财富管理行业面临3万亿美元难题：投资者持有太多现金]] (2026-08-13)
+- [[career/interns-running-the-show|告别端茶倒水，实习生今夏开始挑大梁]] (2026-08-13)
+- [[finance/us-market-strong-window|策略师：美股即将迎来历史上表现强劲的行情窗口期]] (2026-08-12)
+- [[lifestyle/ai-health-data-geeks|把日常健康数据喂给AI的“数据极客”]] (2026-08-12)
 - [[tech/unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12)
 - [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12)
 - [[design/pentaton-lp|Pentaton LP • Pentaton]] (2026-08-11)

@@ -18,12 +18,12 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 
 ## Recent Articles
 
-- <span class="recent-date">2026-08-12</span> [[tech/unitree-ipo-humanoid-robot-trend|宇樹IPO或只是前奏，人形機器人股票的投資熱潮還在後頭]]
-- <span class="recent-date">2026-08-12</span> [[tech/coreweave-earnings-q2-2026|CoreWeave股價大漲，收入同比增長一倍]]
-- <span class="recent-date">2026-08-11</span> [[design/pentaton-lp|Pentaton LP • Pentaton]]
-- <span class="recent-date">2026-08-11</span> [[tech/2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]]
-- <span class="recent-date">2026-08-11</span> [[tech/zuckerberg-ai-essay-key-points|關於扎克伯格AI長文，你需要了解的五個要點]]
-- <span class="recent-date">2026-08-11</span> [[tech/local-models-will-not-win|No, local models will not win]]
+- <span class="recent-date">2026-08-18</span> [[lifestyle/us-seniors-global-travel-boom|有錢有閒能折騰：美國老年人正推動全球旅遊熱潮]]
+- <span class="recent-date">2026-08-18</span> [[finance/situational-awareness-crisis|華爾街如何嗅到了Situational Awareness危機爆發的氣息]]
+- <span class="recent-date">2026-08-18</span> [[tech/warehouse-robotics-adoption|倉庫正越來越多地使用機器人]]
+- <span class="recent-date">2026-08-18</span> [[finance/mark-walter-federal-investigation|一張隱祕交易網如何將道奇隊老闆捲入聯邦調查]]
+- <span class="recent-date">2026-08-17</span> [[finance/tiktok-financial-advice-analysis|盤點TikTok上滿天飛的理財“祕籍”]]
+- <span class="recent-date">2026-08-17</span> [[tech/open-weight-ai-compute-demand|開放權重AI不會削弱算力基礎設施需求]]
 - [[articles|More]]
 
 ## Philosophy

@@ -9,8 +9,17 @@
 - **投资视角**: 现金流、杠杆、风险回报
 
 ## 相关文章
+- [[tiktok-financial-advice-analysis|盘点TikTok上满天飞的理财“秘籍”]] (2026-08-17) - 分析TikTok理财博主的四类典型模式及其对Z世代的影响
+- [[situational-awareness-crisis|华尔街如何嗅到了Situational Awareness危机爆发的气息]] (2026-08-18) - 探讨 Situational Awareness 基金因高杠杆和 AI 股票暴跌引发的流动性危机及 Citadel 的收购。
+- [[mark-walter-federal-investigation|一张隐秘交易网如何将道奇队老板卷入联邦调查]] (2026-08-18) - 探讨马克·沃尔特利用保险资金进行关联投资引发的联邦调查及资产抛售。
+- [[jobless-boom-era|“无就业”繁荣时代已经到来]] (2026-08-13) - 分析美国股市繁荣与就业萎缩脱节的“无就业繁荣”现象
+- [[big-tech-ai-spending-off-balance-sheet|科技巨头的AI支出或比表面看起来还要高出3万亿美元]] (2026-08-17) - 揭露科技巨头 3 万亿美元的表外 AI 支出承诺及其潜在财务风险
+- [[big-tech-ai-spending-off-balance-sheet|科技巨头的AI支出或比表面看起来还要高出3万亿美元]] (2026-08-17) - 分析科技巨头通过表外承诺隐藏的 3 万亿 AI 基础设施支出风险
+- [[central-bank-crisis-cycle|央行陷入周而复始的危机循环]] (2026-08-17) - 决策者充当起“最后做市商”，却也在不断放大杠杆与风险。
+- [[wealth-management-cash-problem|财富管理行业面临3万亿美元难题：投资者持有太多现金]] (2026-08-13) - 顾问们正在推销债券和其他投资，但许多人更愿意将现金留在货币市场基金中。
 - [[coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12) - 云计算公司CoreWeave公布，收入连续第五个财季创下新高，储备订单达1,040亿美元，这反映出人工智能算力需求持续强劲。
 - [[unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12) - 宇树科技即将成为中国内地首家人形机器人上市公司，并正乘着机器人热潮的东风，准备在资本市场大举融资。
+- [[us-market-strong-window|策略师：美股即将迎来历史上表现强劲的行情窗口期]] (2026-08-12) - 部分投资者担忧这轮由AI驱动的牛市可能已成强弩之末，但在一位技术策略师看来，下一轮为期18个月的强劲行情才刚刚开始。
 - [[private-credit-fund-liquidity-definitions|私募信贷基金的流动性如何？这取决于你如何定义“流动性”]] (2026-08-10) - 私营信贷基金经理对该指标的报告方式各异，部分人甚至通过激进的计算手法来对外展示实力。
 - [[rise-of-american-tourists|美国人正周游世界，势不可挡]] (2026-08-10) - 在强劲经济推动下，曾经喜欢宅家的美国人正转变为充满热情的国际旅行者，富裕银发一族和追求社交媒体热潮的新世代还在迅速涌入那些鲜为人知的目的地。
 - [[best-ai-crm-for-real-estate-agents|Best AI CRM for Real Estate Agents]] (2026-08-06) - The #1 AI CRM for real estate agents. AI writes your follow-ups, scores leads automatically, and saves 10+ hours weekly. Import from Follow Up Boss. Start free trial.

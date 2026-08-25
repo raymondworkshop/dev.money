@@ -1,7 +1,7 @@
 # Archive Status
 
 <<<<<<< HEAD
-**Last Updated:** 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-28 2026-07-28 2026-07-28 2026-07-28 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
+**Last Updated:** 2026-08-18 2026-08-18 2026-08-18 2026-08-18 2026-08-18 2026-08-18 2026-08-18 2026-08-18 2026-08-18 2026-08-18 2026-08-18 2026-08-17 2026-08-17 2026-08-17 2026-08-17 2026-08-17 2026-08-17 2026-08-17 2026-08-17 2026-08-17 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-28 2026-07-28 2026-07-28 2026-07-28 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
 
 =======
 <<<<<<< HEAD
@@ -114,6 +114,26 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-08-18-盘点TikTok上满天飞的理财“秘籍”.md | Finance | `newswiki/wiki/finance/tiktok-financial-advice-analysis.md` | Archived |
+| 2026-08-18-有钱有闲能折腾：美国老年人正推动全球旅游热潮.md | Lifestyle Trends | `newswiki/wiki/lifestyle/us-seniors-global-travel-boom.md` | Archived |
+| 2026-08-18-把日常健康数据喂给AI的“数据极客”.md | Lifestyle Trends | `newswiki/wiki/lifestyle/ai-health-data-geeks.md` | Archived |
+| 2026-08-18-开放权重AI不会削弱算力基础设施需求.md | Tech | `newswiki/wiki/tech/open-weight-ai-compute-demand.md` | Archived |
+| 2026-08-18-华尔街如何嗅到了Situational Awareness危机爆发的气息.md | Finance | `newswiki/wiki/finance/situational-awareness-crisis.md` | Archived |
+| 2026-08-18-仓库正越来越多地使用机器人.md | Tech | `newswiki/wiki/tech/warehouse-robotics-adoption.md` | Archived |
+| 2026-08-18-一张隐秘交易网如何将道奇队老板卷入联邦调查.md | Finance | `newswiki/wiki/finance/mark-walter-federal-investigation.md` | Archived |
+| 2026-08-18-“无就业”繁荣时代已经到来.md | Career | `newswiki/wiki/career/jobless-boom-era.md` | Archived |
+| 2026-08-17-重创俄军的乌克兰无人机出自一位90后家具设计师之手.md | Business | `newswiki/wiki/business/ukraine-fire-point-ceo-iryna-terekh.md` | Archived |
+| 2026-08-17-科技巨头的AI支出或比表面看起来还要高出3万亿美元.md | Business | `newswiki/wiki/business/big-tech-ai-spending-off-balance-sheet.md` | Archived |
+| 2026-08-17-科技巨头的AI支出或比表面看起来还要高出3万亿美元 1.md | Tech | `newswiki/wiki/tech/big-tech-ai-spending-off-balance-sheet.md` | Archived |
+| 2026-08-17-AI正助力罕见病患者破解医学谜团.md | Tech | `newswiki/wiki/tech/ai-rare-disease-diagnosis.md` | Archived |
+| 2026-08-17-央行陷入周而复始的危机循环.md | Finance | `newswiki/wiki/finance/central-bank-crisis-cycle.md` | Archived |
+| 2026-08-17-Seven books I keep close because I love them.md | Lifestyle Trends | `newswiki/wiki/lifestyle/seven-books-i-keep-close.md` | Archived |
+| 2026-08-14-连Claude都知之甚少：Anthropic CEO的神秘妻子及其幕后影响力.md | Business | `newswiki/wiki/business/cami-clark-anthropic-influence.md` | Archived |
+| 2026-08-14-特朗普与马斯克如何修复了曾看似无可挽回的关系.md | Business | `newswiki/wiki/business/trump-musk-reconciliation.md` | Archived |
+| 2026-08-13-财富管理行业面临3万亿美元难题：投资者持有太多现金.md | Finance | `newswiki/wiki/finance/wealth-management-cash-problem.md` | Archived |
+| 2026-08-13-策略师：美股即将迎来历史上表现强劲的行情窗口期.md | Finance | `newswiki/wiki/finance/us-market-strong-window.md` | Archived |
+| 2026-08-13-把日常健康数据喂给AI的“数据极客”.md | Lifestyle Trends | `newswiki/wiki/lifestyle/ai-health-data-geeks.md` | Archived |
+| 2026-08-13-告别端茶倒水，实习生今夏开始挑大梁.md | Career | `newswiki/wiki/career/interns-running-the-show.md` | Archived |
 | 2026-08-12-宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头.md | Tech | `newswiki/wiki/tech/unitree-ipo-humanoid-robot-trend.md` | Archived |
 | 2026-08-12-CoreWeave股价大涨，收入同比增长一倍.md | Tech | `newswiki/wiki/tech/coreweave-earnings-q2-2026.md` | Archived |
 | 2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate.md | Career | `newswiki/wiki/career/improve-pronunciation-day-5.md` | Archived |

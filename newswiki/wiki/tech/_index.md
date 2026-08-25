@@ -9,8 +9,19 @@ AI模型、機器人与智能体如何重塑基础设施與生產力
 - **投资视角**: 算力需求、技术迭代、供应链
 
 ## 相关文章
+- [[ai-health-data-geeks|把日常健康数据喂给AI的“数据极客”]] (2026-08-12) - 探讨数据极客如何利用AI构建个性化健康教练。
+- [[open-weight-ai-compute-demand|开放权重AI不会削弱算力基础设施需求]] (2026-08-17) - 分析开放权重模型如何通过杰文斯悖论反而增加算力需求
+- [[situational-awareness-crisis|华尔街如何嗅到了Situational Awareness危机爆发的气息]] (2026-08-18) - 探讨 Situational Awareness 基金因高杠杆和 AI 股票暴跌引发的流动性危机及 Citadel 的收购。
+- [[warehouse-robotics-adoption|仓库正越来越多地使用机器人]] (2026-08-18) - 劳动力成本上升驱动仓储自动化投资增长
+- [[big-tech-ai-spending-off-balance-sheet|科技巨头的AI支出或比表面看起来还要高出3万亿美元]] (2026-08-17) - 揭露科技巨头 3 万亿美元的表外 AI 支出承诺及其潜在财务风险
+- [[big-tech-ai-spending-off-balance-sheet|科技巨头的AI支出或比表面看起来还要高出3万亿美元]] (2026-08-17) - 分析科技巨头通过表外承诺隐藏的 3 万亿 AI 基础设施支出风险
+- [[ai-rare-disease-diagnosis|AI正助力罕见病患者破解医学谜团]] (2026-08-17) - 面对罕见病和疑难杂症，患者与医护人员正借助AI技术以寻根究底。
+- [[seven-books-i-keep-close|Seven books I keep close because I love them]] (2026-08-17) - From the highly eclectic blog of Mark Dominus
+- [[cami-clark-anthropic-influence|连Claude都知之甚少：Anthropic CEO的神秘妻子及其幕后影响力]] (2026-08-14) - 卡米·克拉克曾创办自称“革命性”的色情公司并向爱泼斯坦寻求投资，如今她虽保持低调，却是Anthropic首席执行官达里奥·阿莫迪的关键顾问。
+- [[interns-running-the-show|告别端茶倒水，实习生今夏开始挑大梁]] (2026-08-13) - 随着AI接管琐碎任务，实习生们正肩负起牵头项目等更大责任。
 - [[coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12) - 云计算公司CoreWeave公布，收入连续第五个财季创下新高，储备订单达1,040亿美元，这反映出人工智能算力需求持续强劲。
 - [[unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12) - 宇树科技即将成为中国内地首家人形机器人上市公司，并正乘着机器人热潮的东风，准备在资本市场大举融资。
+- [[ai-health-data-geeks|把日常健康数据喂给AI的“数据极客”]] (2026-08-12) - 从备战马拉松到排解职场焦虑，健康狂热者正将个人数据接入聊天机器人，打造极致个性化的专属教练。
 - [[2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]] (2026-08-11) - Calibrate your enthusiasm
 - [[local-models-will-not-win|No, local models will not win]] (2026-08-11)
 - [[zuckerberg-ai-essay-key-points|关于扎克伯格AI长文，你需要了解的五个要点]] (2026-08-11) - 扎克伯格发表了一篇6,500字的长文，阐述了该公司对AI竞赛的思考及其对社会的意义，并探讨了美国政府应如何监管和促进这项技术。本文梳理了关键要点。
