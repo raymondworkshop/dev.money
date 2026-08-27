@@ -1,4 +1,4 @@
-# Lifestyle Trends
+# 生活
 
 ## 概述
 健康、关系与文化如何定义当下生活方式  
@@ -51,8 +51,8 @@
 - [[principles-for-living-operating-system-for-life|Principles For Living: An Operating System for Life]] (2018-06-05) - All that we write about, think about, and strive for at Farnam Street draws inspiration from one of these five principles: Direction Over Speed, Live Deliberately, Thoughtful Opinions Held Loosely, Principles Outlive Tactics, and Own Your Actions.
 
 ## 相关主题
-- [[business/_index|Business]]
-- [[tech/_index|Tech]]
-- [[design/_index|Design]]
-- [[finance/_index|Finance]]
-- [[career/_index|Career]]
+- [[business/_index|商业/]]
+- [[tech/_index|科技/]]
+- [[design/_index|设计/]]
+- [[finance/_index|金融/]]
+- [[career/_index|职场/]]

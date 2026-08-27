@@ -35,6 +35,16 @@ const defaultOptions: BreadcrumbOptions = {
   showCurrentPage: true,
 }
 
+const FOLDER_LABELS: Record<string, string> = {
+  tech: "科技/",
+  design: "設計/",
+  business: "商業/",
+  finance: "金融/",
+  career: "職場/",
+  lifestyle: "生活/",
+  articles: "所有文章",
+}
+
 function formatCrumb(displayName: string, baseSlug: FullSlug, currentSlug: SimpleSlug): CrumbData {
   return {
     displayName: displayName.replaceAll("-", " "),
@@ -62,6 +72,8 @@ export default ((opts?: Partial<BreadcrumbOptions>) => {
       const crumb = formatCrumb(node.displayName, fileData.slug!, simplifySlug(node.slug))
       if (idx === 0) {
         crumb.displayName = options.rootName
+      } else if (FOLDER_LABELS[node.slugSegment]) {
+        crumb.displayName = FOLDER_LABELS[node.slugSegment]
       }
 
       // For last node (current page), set empty path

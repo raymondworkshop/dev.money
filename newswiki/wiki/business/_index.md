@@ -1,4 +1,4 @@
-# Business
+# 商业
 
 ## 概述
 企业如何決策，發展與機會  
@@ -9,6 +9,7 @@
 - **投资视角**: 护城河、市占、资本效率
 
 ## 相关文章
+- [[ai-world-models-robotics|AI的下一次重大飞跃：走进现实]] (2026-08-22) - 工程师与投资者正竞相涌入“世界模型”赛道，期望在机器人领域复刻ChatGPT在写作与编程界引发的革命。
 - [[unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12) - 宇树科技即将成为中国内地首家人形机器人上市公司，并正乘着机器人热潮的东风，准备在资本市场大举融资。
 - [[zuckerberg-ai-essay-key-points|关于扎克伯格AI长文，你需要了解的五个要点]] (2026-08-11) - 扎克伯格发表了一篇6,500字的长文，阐述了该公司对AI竞赛的思考及其对社会的意义，并探讨了美国政府应如何监管和促进这项技术。本文梳理了关键要点。
 - [[rise-of-american-tourists|美国人正周游世界，势不可挡]] (2026-08-10) - 在强劲经济推动下，曾经喜欢宅家的美国人正转变为充满热情的国际旅行者，富裕银发一族和追求社交媒体热潮的新世代还在迅速涌入那些鲜为人知的目的地。
@@ -102,8 +103,8 @@
 - [[doing-something-never-done-before|Doing Something That’s Never Been Done Before]] (2025-11-14) - I’ve found recently that I’ve been a bit hesitant to take on new projects, especially of the interesting variety, largely out of a fear that I’m doing something unoriginal. As anyone who has spent any substantial amount of time in the markets will tell you, being second to an idea isn’t necessarily terrible, but being 50th generally is, and I’d really rather avoid being 50th whenever possible. How do you guarantee, or at least maximize the odds, that whatever you’re doing, you’re the first?
 
 ## 相关主题
-- [[tech/_index|Tech]]
-- [[design/_index|Design]]
-- [[finance/_index|Finance]]
-- [[career/_index|Career]]
-- [[lifestyle/_index|Lifestyle Trends]]
+- [[tech/_index|科技/]]
+- [[design/_index|设计/]]
+- [[finance/_index|金融/]]
+- [[career/_index|职场/]]
+- [[lifestyle/_index|生活/]]

@@ -1,4 +1,4 @@
-# Career
+# 职场
 
 ## 概述
 技能、就业与组织如何在AI时代重塑职业路径  
@@ -9,6 +9,7 @@
 - **投资视角**: 人力资本、生产率、行业变迁
 
 ## 相关文章
+- [[codex-vs-claude-impressions|Quick impressions: A week of using Codex more than Claude]] (2026-08-21) - Claude goes above and beyond what is asked and guesses what you might want. Codex does what you tell it and stops at the first sign that it might be done. Ten impressions from a week of using Codex more.
 - [[2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]] (2026-08-11) - Calibrate your enthusiasm
 - [[hidden-skills-of-top-talent|顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网]] (2026-08-09) - 探讨“无所事事”与玩耍对大脑默认网络（DMN）的激活作用，以及过度工作对前额叶皮质和心理健康的损害。
 - [[llms-reward-expertise|LLMs reward expertise]] (2026-08-06) - An analysis of why domain expertise remains the most critical skill for effective LLM prompting and high-value output.
@@ -56,8 +57,8 @@
 - [[fake-job-interview-git-hook-malware|Appaji - Software Engineer]] (2001-07-23) - Appaji, a Computer Science graduate from IIT Patna and former intern at Arista Networks, is a Software Engineer at Infinite Reality. Passionate about building innovative web experiences, with a strong interest in sustainable and customer-focused startups.
 
 ## 相关主题
-- [[business/_index|Business]]
-- [[tech/_index|Tech]]
-- [[design/_index|Design]]
-- [[finance/_index|Finance]]
-- [[lifestyle/_index|Lifestyle Trends]]
+- [[business/_index|商业/]]
+- [[tech/_index|科技/]]
+- [[design/_index|设计/]]
+- [[finance/_index|金融/]]
+- [[lifestyle/_index|生活/]]

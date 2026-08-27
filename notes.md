@@ -27,6 +27,8 @@
 * site  
     - make site-deploy 
     > https://news-wiki.pages.dev/
+    - subscribe: Buttondown embed (`site/quartz/util/subscribe.ts` → `BUTTONDOWN_USERNAME`)
+      发新文时在 Buttondown 后台写一封信群发；表单只负责收集订阅者
 
     
 #### references

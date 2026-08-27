@@ -2,8 +2,8 @@ import { Translation } from "./definition"
 
 export default {
   propertyDefaults: {
-    title: "無題",
-    description: "無描述",
+    title: "未有標題",
+    description: "未有描述",
   },
   components: {
     callout: {
@@ -22,64 +22,64 @@ export default {
       quote: "引用",
     },
     backlinks: {
-      title: "反向連結",
-      noBacklinksFound: "無法找到反向連結",
+      title: "提到呢篇",
+      noBacklinksFound: "暫時未有其他文章提到呢篇",
     },
     themeToggle: {
-      lightMode: "亮色模式",
-      darkMode: "暗色模式",
+      lightMode: "淺色",
+      darkMode: "深色",
     },
     readerMode: {
       title: "閱讀模式",
     },
     explorer: {
-      title: "探索",
+      title: "瀏覽",
     },
     footer: {
       createdWith: "Created with",
     },
     graph: {
-      title: "關係圖譜",
+      title: "關係圖",
     },
     recentNotes: {
-      title: "最近的筆記",
-      seeRemainingMore: ({ remaining }) => `查看更多 ${remaining} 篇筆記 →`,
+      title: "近排筆記",
+      seeRemainingMore: ({ remaining }) => `再睇多 ${remaining} 篇 →`,
     },
     transcludes: {
       transcludeOf: ({ targetSlug }) => `包含 ${targetSlug}`,
-      linkToOriginal: "指向原始筆記的連結",
+      linkToOriginal: "去原文",
     },
     search: {
-      title: "搜尋",
-      searchBarPlaceholder: "搜尋些什麼",
+      title: "搵",
+      searchBarPlaceholder: "搵文章…",
     },
     tableOfContents: {
       title: "目錄",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `閱讀時間約 ${minutes} 分鐘`,
+      readingTime: ({ minutes }) => `大概要睇 ${minutes} 分鐘`,
     },
   },
   pages: {
     rss: {
-      recentNotes: "最近的筆記",
-      lastFewNotes: ({ count }) => `最近的 ${count} 條筆記`,
+      recentNotes: "近排筆記",
+      lastFewNotes: ({ count }) => `近排 ${count} 篇`,
     },
     error: {
-      title: "無法找到",
-      notFound: "私人筆記或筆記不存在。",
-      home: "返回首頁",
+      title: "搵唔到",
+      notFound: "呢篇係私人筆記，或者已經唔存在。",
+      home: "返主頁",
     },
     folderContent: {
       folder: "資料夾",
-      itemsUnderFolder: ({ count }) => `此資料夾下有 ${count} 條筆記。`,
+      itemsUnderFolder: ({ count }) => `呢個資料夾有 ${count} 篇文章。`,
     },
     tagContent: {
       tag: "標籤",
-      tagIndex: "標籤索引",
-      itemsUnderTag: ({ count }) => `此標籤下有 ${count} 條筆記。`,
-      showingFirst: ({ count }) => `顯示前 ${count} 個標籤。`,
-      totalTags: ({ count }) => `總共有 ${count} 個標籤。`,
+      tagIndex: "標籤一覽",
+      itemsUnderTag: ({ count }) => `呢個標籤有 ${count} 篇文章。`,
+      showingFirst: ({ count }) => `顯示頭 ${count} 個標籤。`,
+      totalTags: ({ count }) => `合共 ${count} 個標籤。`,
     },
   },
 } as const satisfies Translation

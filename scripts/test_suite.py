@@ -1179,7 +1179,7 @@ class PrepareQuartzContentTests(unittest.TestCase):
         self.assertEqual(len(all_entries), 7)
         visible_entries = prepare_module._collect_recent_article_entries(trimmed)
         self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
-        self.assertIn("[[articles|More]]", trimmed)
+        self.assertIn("[[articles|再睇多啲]]", trimmed)
         visible_dates = re.findall(r'class="recent-date">(\d{4}-\d{2}-\d{2})<', trimmed)
         self.assertEqual(visible_dates[0], "2026-06-07")
         self.assertEqual(visible_dates, [f"2026-06-{n:02d}" for n in range(7, 1, -1)])
@@ -1208,7 +1208,7 @@ class PrepareQuartzContentTests(unittest.TestCase):
             site_index = (content_dir / "index.md").read_text(encoding="utf-8")
             visible_entries = prepare_module._collect_recent_article_entries(site_index)
             self.assertEqual(len(visible_entries), prepare_module.RECENT_ARTICLES_LIMIT)
-            self.assertIn("[[articles|More]]", site_index)
+            self.assertIn("[[articles|再睇多啲]]", site_index)
 
             all_articles = (content_dir / "articles.md").read_text(encoding="utf-8")
             self.assertEqual(len(prepare_module._collect_article_entries_from_text(all_articles)), 7)
@@ -1228,7 +1228,7 @@ class PrepareQuartzContentTests(unittest.TestCase):
         group_section = trimmed.split("### Tech & Infrastructure", 1)[1].split("## Recent Articles", 1)[0]
         visible_entries = prepare_module._collect_list_entries(group_section.splitlines())
         self.assertEqual(len(visible_entries), prepare_module.TOPICS_DISPLAY_LIMIT)
-        self.assertNotIn("[[articles|More]]", group_section)
+        self.assertNotIn("[[articles|再睇多啲]]", group_section)
 
     def test_trim_related_articles_for_site_limits_topic_index(self) -> None:
         entries = [
@@ -1240,7 +1240,7 @@ class PrepareQuartzContentTests(unittest.TestCase):
         related_section = trimmed.split("## 相关文章", 1)[1].split("## 相关主题", 1)[0]
         visible_dates = re.findall(r'class="recent-date">(\d{4}-\d{2}-\d{2})<', related_section)
         self.assertEqual(len(visible_dates), prepare_module.RECENT_ARTICLES_LIMIT)
-        self.assertIn("[[articles|More]]", related_section)
+        self.assertIn("[[articles|再睇多啲]]", related_section)
         # Newest dated rows should surface first after the limit trim.
         self.assertEqual(visible_dates[0], "2026-06-07")
         self.assertEqual(visible_dates, [f"2026-06-{n:02d}" for n in range(7, 1, -1)])
@@ -1270,7 +1270,7 @@ class PrepareQuartzContentTests(unittest.TestCase):
             visible_dates = re.findall(r'class="recent-date">(\d{4}-\d{2}-\d{2})<', related_section)
             self.assertEqual(len(visible_dates), prepare_module.RECENT_ARTICLES_LIMIT)
             self.assertEqual(visible_dates[0], "2026-06-07")
-            self.assertIn("[[articles|More]]", related_section)
+            self.assertIn("[[articles|再睇多啲]]", related_section)
 
 
 class DensifyWikiTests(unittest.TestCase):

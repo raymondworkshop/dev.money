@@ -14,12 +14,12 @@ CANONICAL_TOPICS: tuple[str, ...] = (
 )
 
 TOPIC_LABELS: dict[str, str] = {
-    "business": "Business",
-    "tech": "Tech",
-    "design": "Design",
-    "finance": "Finance",
-    "career": "Career",
-    "lifestyle": "Lifestyle Trends",
+    "business": "商业/",
+    "tech": "科技/",
+    "design": "设计/",
+    "finance": "金融/",
+    "career": "职场/",
+    "lifestyle": "生活/",
 }
 
 # Short blurbs for the grouped root INDEX Topics section.

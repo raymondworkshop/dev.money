@@ -27,7 +27,8 @@ RELATED_PARTS_RE = re.compile(
 DISPLAY_ARTICLE_ENTRY_RE = re.compile(
     r'^- <span class="recent-date">(\d{4}-\d{2}-\d{2})</span> (\[\[[^\]]+\|[^\]]+\]\])'
 )
-MORE_ARTICLES_ENTRY = "- [[articles|More]]"
+MORE_ARTICLES_ENTRY = "- [[articles|再睇多啲]]"
+RECENT_ARTICLES_HEADINGS = ("## Recent Articles", "## 近期文章", "## 近排文章")
 
 
 def has_front_matter(content: str) -> bool:
@@ -129,10 +130,49 @@ def _collect_article_entries_from_text(content: str) -> list[str]:
     return entries
 
 
+def _recent_articles_heading(content: str) -> str | None:
+    for heading in RECENT_ARTICLES_HEADINGS:
+        if heading in content:
+            return heading
+    return None
+
+
+def drop_topics_section(content: str) -> str:
+    if TOPICS_MARKER not in content:
+        return content
+    before, after = content.split(TOPICS_MARKER, 1)
+    after_lines = after.splitlines()
+    rest_start = len(after_lines)
+    for index, line in enumerate(after_lines):
+        if line.strip().startswith("## ") and not line.startswith("### "):
+            rest_start = index
+            break
+    rest = "\n".join(after_lines[rest_start:]).lstrip("\n")
+    return before.rstrip() + ("\n\n" + rest if rest else "\n")
+
+
+def localize_homepage_for_site(content: str) -> str:
+    content = drop_topics_section(content)
+    content = re.sub(r"^# (?:News Wiki|The Storyline)\s*$", "", content, count=1, flags=re.M)
+    content = re.sub(
+        r"^串連商業、科技與生活方式的報導與筆記，論點可回查來源。\s*$",
+        "",
+        content,
+        count=1,
+        flags=re.M,
+    )
+    content = re.sub(r"\n{3,}", "\n\n", content)
+    content = content.replace("## Recent Articles", "## 近排文章", 1)
+    content = content.replace("## 近期文章", "## 近排文章", 1)
+    content = content.replace("## Philosophy", "## 理念", 1)
+    return content.lstrip()
+
+
 def _collect_recent_article_entries(content: str) -> list[str]:
-    if RECENT_ARTICLES_MARKER not in content:
+    heading = _recent_articles_heading(content)
+    if not heading:
         return []
-    _, after = content.split(RECENT_ARTICLES_MARKER, 1)
+    _, after = content.split(heading, 1)
     section_lines: list[str] = []
     for line in after.splitlines():
         if line.strip().startswith("## "):
@@ -257,10 +297,11 @@ def _render_topic_group(group_lines: list[str], *, limit: int = RECENT_ARTICLES_
 
 
 def trim_recent_articles_for_site(content: str) -> tuple[str, list[str]]:
-    if RECENT_ARTICLES_MARKER not in content:
+    heading = _recent_articles_heading(content)
+    if not heading:
         return content, []
 
-    _, after = content.split(RECENT_ARTICLES_MARKER, 1)
+    _, after = content.split(heading, 1)
     after_lines = after.splitlines()
     rest_start = len(after_lines)
     for index, line in enumerate(after_lines):
@@ -271,7 +312,7 @@ def trim_recent_articles_for_site(content: str) -> tuple[str, list[str]]:
     entries = _collect_article_entries_from_text("\n".join(after_lines[:rest_start]))
     entries = sorted(entries, key=_entry_sort_date, reverse=True)
     block = _render_recent_display_entries(entries, limit=RECENT_ARTICLES_LIMIT)
-    return _replace_section_block(content, RECENT_ARTICLES_MARKER, block), entries
+    return _replace_section_block(content, heading, block), entries
 
 
 def _entry_sort_date(entry: str) -> str:
@@ -317,7 +358,7 @@ def write_all_articles_page(content_dir: Path, entries: list[str]) -> None:
         return
     page_path = content_dir / "articles.md"
     body = "\n".join(entries)
-    page_path.write_text(f"# All Articles\n\n{body}\n", encoding="utf-8")
+    page_path.write_text(f"# 所有文章\n\n{body}\n", encoding="utf-8")
 
 
 def resolve_path(value: str) -> Path:
@@ -468,10 +509,11 @@ def prepare_content(
                 if source.name == "INDEX.md":
                     content = trim_topics_groups_for_site(content)
                     content, all_article_entries = trim_recent_articles_for_site(content)
+                    content = localize_homepage_for_site(content)
                     content = add_front_matter(
                         content,
                         {
-                            "title": "News Wiki",
+                            "title": "The Storyline",
                             "created": "2026-05-30",
                         },
                     )

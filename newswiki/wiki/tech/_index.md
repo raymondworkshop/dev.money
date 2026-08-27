@@ -1,4 +1,4 @@
-# Tech
+# 科技
 
 ## 概述
 AI模型、機器人与智能体如何重塑基础设施與生產力  
@@ -9,6 +9,9 @@ AI模型、機器人与智能体如何重塑基础设施與生產力
 - **投资视角**: 算力需求、技术迭代、供应链
 
 ## 相关文章
+- [[ai-world-models-robotics|AI的下一次重大飞跃：走进现实]] (2026-08-22) - 工程师与投资者正竞相涌入“世界模型”赛道，期望在机器人领域复刻ChatGPT在写作与编程界引发的革命。
+- [[ai-hardware-stocks-analysis|分析师盘点年内值得持有的六只AI硬件股]] (2026-08-22) - 今年以来，Western Digital的股价已飙升近170%。一位分析师预计，存储设备制造商、网络设备提供商以及苹果公司将迎来强劲增长。
+- [[codex-vs-claude-impressions|Quick impressions: A week of using Codex more than Claude]] (2026-08-21) - Claude goes above and beyond what is asked and guesses what you might want. Codex does what you tell it and stops at the first sign that it might be done. Ten impressions from a week of using Codex more.
 - [[coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12) - 云计算公司CoreWeave公布，收入连续第五个财季创下新高，储备订单达1,040亿美元，这反映出人工智能算力需求持续强劲。
 - [[unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12) - 宇树科技即将成为中国内地首家人形机器人上市公司，并正乘着机器人热潮的东风，准备在资本市场大举融资。
 - [[2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]] (2026-08-11) - Calibrate your enthusiasm
@@ -117,8 +120,8 @@ AI模型、機器人与智能体如何重塑基础设施與生產力
 - [[fake-job-interview-git-hook-malware|Appaji - Software Engineer]] (2001-07-23) - Appaji, a Computer Science graduate from IIT Patna and former intern at Arista Networks, is a Software Engineer at Infinite Reality. Passionate about building innovative web experiences, with a strong interest in sustainable and customer-focused startups.
 
 ## 相关主题
-- [[business/_index|Business]]
-- [[design/_index|Design]]
-- [[finance/_index|Finance]]
-- [[career/_index|Career]]
-- [[lifestyle/_index|Lifestyle Trends]]
+- [[business/_index|商业/]]
+- [[design/_index|设计/]]
+- [[finance/_index|金融/]]
+- [[career/_index|职场/]]
+- [[lifestyle/_index|生活/]]

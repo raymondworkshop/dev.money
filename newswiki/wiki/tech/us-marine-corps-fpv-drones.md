@@ -27,3 +27,7 @@ topics:
 ---
 **主题**: [[tech/_index|Tech]]  
 **标签**: #tech #robotics #military-tech
+
+## 相关文章
+
+- [[tech/ai-world-models-robotics|AI的下一次重大飞跃：走进现实]]

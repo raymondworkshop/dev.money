@@ -33,10 +33,10 @@ topics:
 
 ## 相关文章
 
+- [[finance/ai-hardware-stocks-analysis|分析师盘点年内值得持有的六只AI硬件股]]
 - [[finance/investment-global-crises|如何在全球危机不断的环境下投资]]
 - [[finance/2026-05-27-spacex-investment|这位明星选股人在SpaceX实现火箭着陆之前就大举押注]]
 - [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]]
-- [[business/doing-something-never-done-before|Doing Something That’s Never Been Done Before]]
 
 ---
 **Topics**: [[finance/_index|Finance]], [[business/_index|Business]]  

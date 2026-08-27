@@ -34,6 +34,7 @@ topics:
 
 ## Related Articles
 
+- [[tech/codex-vs-claude-impressions|Quick impressions: A week of using Codex more than Claude]]
 - [[tech/ai-password-handover-experiment|把密码交给AI是一种什么体验？我做了一次实测]]
 - [[tech/ai-gov-escalation|邮件揭秘：Anthropic与五角大楼的关系是如何破裂的]]
 - [[tech/openai-ai-hack-hugging-face|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]]

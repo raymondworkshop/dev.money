@@ -1,4 +1,4 @@
-# Design
+# 设计
 
 ## 概述
 产品如何被设计，被感知，被使用  
@@ -30,8 +30,8 @@
 - [[nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] (2026-06-01) - 英伟达将与戴尔、联想和惠普等制造商合作生产这些笔记本电脑，这些电脑专为支持智能体计算而设计。
 
 ## 相关主题
-- [[business/_index|Business]]
-- [[tech/_index|Tech]]
-- [[finance/_index|Finance]]
-- [[career/_index|Career]]
-- [[lifestyle/_index|Lifestyle Trends]]
+- [[business/_index|商业/]]
+- [[tech/_index|科技/]]
+- [[finance/_index|金融/]]
+- [[career/_index|职场/]]
+- [[lifestyle/_index|生活/]]

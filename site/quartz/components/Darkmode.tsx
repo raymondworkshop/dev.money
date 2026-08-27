@@ -27,7 +27,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
             stroke-linecap="round"
           />
         </svg>
-        <span class="darkmode-label">Light</span>
+        <span class="darkmode-label">{lightLabel}</span>
       </span>
 
       <span class="darkmode-track" aria-hidden="true">
@@ -35,7 +35,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
       </span>
 
       <span class="darkmode-side darkmode-dark">
-        <span class="darkmode-label">Dark</span>
+        <span class="darkmode-label">{darkLabel}</span>
         <svg class="darkmode-moon" viewBox="0 0 24 24" aria-hidden="true">
           <path
             d="M18.5 14.2A7.2 7.2 0 019.8 5.5 7.5 7.5 0 1018.5 14.2z"

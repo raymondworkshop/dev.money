@@ -508,8 +508,8 @@ body[data-slug="articles"] {
     margin-bottom: 0.35rem;
     border-bottom: none;
     padding-bottom: 0;
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-size: 1.05rem;
+    font-weight: 650;
     letter-spacing: -0.015em;
     color: var(--dark);
   }
@@ -637,22 +637,8 @@ body[data-slug="index"] {
     max-width: 48rem;
   }
 
-  article > h1:first-of-type {
-    margin-top: 0.2rem;
-    font-size: 2.65rem;
-    font-weight: 700;
-    letter-spacing: -0.04em;
-    line-height: 1.1;
-    color: var(--dark);
-    border-bottom: none;
-  }
-
-  article > h1:first-of-type + p {
-    font-size: 1.05rem;
-    color: color-mix(in srgb, var(--darkgray) 78%, var(--gray));
-    margin: 0.85rem 0 2.35rem;
-    max-width: 36rem;
-    line-height: 1.65;
+  article a[role="anchor"] {
+    display: none;
   }
 
   article > h2#topics {
@@ -660,8 +646,8 @@ body[data-slug="index"] {
     margin-bottom: 0.85rem;
     border-bottom: none;
     padding-bottom: 0;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.05rem;
+    font-weight: 650;
     letter-spacing: -0.015em;
     text-transform: none;
     color: var(--dark);
@@ -778,18 +764,23 @@ body[data-slug="index"] {
     }
   }
 
-  article > h2#recent-articles {
+  article > h2#recent-articles,
+  article > h2#近期文章,
+  article > h2#近排文章 {
+    margin-top: 0.2rem;
     margin-bottom: 0.35rem;
     border-bottom: none;
     padding-bottom: 0;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.05rem;
+    font-weight: 650;
     letter-spacing: -0.015em;
     text-transform: none;
     color: var(--dark);
   }
 
-  article > h2#recent-articles + ul {
+  article > h2#recent-articles + ul,
+  article > h2#近期文章 + ul,
+  article > h2#近排文章 + ul {
     list-style: none;
     padding: 0;
     margin: 0.35rem 0 2rem;
@@ -859,20 +850,22 @@ body[data-slug="index"] {
     }
   }
 
-  // Philosophy — directly after Recent Articles
-  article > h2#philosophy {
+  // 編輯方針 — directly after Recent Articles
+  article > h2#philosophy,
+  article > h2#編輯方針 {
     margin-top: 0.5rem;
     margin-bottom: 0.85rem;
     border-bottom: none;
     padding-bottom: 0;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.05rem;
+    font-weight: 650;
     letter-spacing: -0.015em;
     text-transform: none;
     color: var(--dark);
   }
 
-  article > h2#philosophy + ul {
+  article > h2#philosophy + ul,
+  article > h2#編輯方針 + ul {
     list-style: none;
     padding: 0;
     margin: 0 0 2rem;

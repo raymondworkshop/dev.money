@@ -1,17 +1,9 @@
-# News Wiki
 
-Connected Stories — a warm, professional wiki on business & finance, tech & design, and career & lifestyle trends.
-
-## Topics
-
-- [[tech/_index|Tech]]: AI模型、機械人與智能體如何重塑基建與生產力
-- [[design/_index|Design]]: 產品如何被設計、被感受、被使用
-- [[business/_index|Business]]: 企業如何決策、尋找發展與機遇
-- [[finance/_index|Finance]]: 資本如何定價與配置——市場、流動性與風險
-- [[career/_index|Career]]: 技能、就業與組織如何在AI時代重塑事業發展
-- [[lifestyle/_index|Lifestyle]]: 健康、人際與文化如何界定現今生活方式
 
 ## Recent Articles
+- [[finance/ai-hardware-stocks-analysis|分析师盘点年内值得持有的六只AI硬件股]] (2026-08-22)
+- [[tech/ai-world-models-robotics|AI的下一次重大飞跃：走进现实]] (2026-08-22)
+- [[tech/codex-vs-claude-impressions|Quick impressions: A week of using Codex more than Claude]] (2026-08-21)
 - [[tech/unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12)
 - [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12)
 - [[design/pentaton-lp|Pentaton LP • Pentaton]] (2026-08-11)
@@ -237,7 +229,7 @@ Connected Stories — a warm, professional wiki on business & finance, tech & de
 - [[business/doing-something-never-done-before|Doing Something That’s Never Been Done Before]] (2025-11-14)
 - [[career/fake-job-interview-git-hook-malware|Appaji - Software Engineer]] (2001-07-23)
 
-## Philosophy
-- [[connected-stories|串連敘事與核實來源]]: 以主題線貫串零散報道，論點有據可依
-- [[cross-domain-reporting|多角度報道]]: 同一事件，不同面向
-- [[valuation-and-risk|估值與風險]]: 核心財務指標、估值框架與風險辨識
+## 編輯方針
+- [[connected-stories|串連敘事同核實來源]]: 用主題線串起零散報道，論點有據可依
+- [[cross-domain-reporting|多角度報道]]: 同一件事，唔同面向
+- [[valuation-and-risk|估值同風險]]: 核心財務指標、估值框架同風險辨識

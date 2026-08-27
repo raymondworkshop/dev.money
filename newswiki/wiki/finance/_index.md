@@ -1,4 +1,4 @@
-# Finance
+# 金融
 
 ## 概述
 资本如何定价与配置——市場、流动性与风险   
@@ -9,6 +9,7 @@
 - **投资视角**: 现金流、杠杆、风险回报
 
 ## 相关文章
+- [[ai-hardware-stocks-analysis|分析师盘点年内值得持有的六只AI硬件股]] (2026-08-22) - 今年以来，Western Digital的股价已飙升近170%。一位分析师预计，存储设备制造商、网络设备提供商以及苹果公司将迎来强劲增长。
 - [[coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12) - 云计算公司CoreWeave公布，收入连续第五个财季创下新高，储备订单达1,040亿美元，这反映出人工智能算力需求持续强劲。
 - [[unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]] (2026-08-12) - 宇树科技即将成为中国内地首家人形机器人上市公司，并正乘着机器人热潮的东风，准备在资本市场大举融资。
 - [[private-credit-fund-liquidity-definitions|私募信贷基金的流动性如何？这取决于你如何定义“流动性”]] (2026-08-10) - 私营信贷基金经理对该指标的报告方式各异，部分人甚至通过激进的计算手法来对外展示实力。
@@ -63,8 +64,8 @@
 - [[2026-02-23-ai-valuation-back-to-back-financing|揭秘让AI初创公司一夜变身“独角兽”的融资策略]] (2026-02-23) - 对热门AI初创公司的投资争夺战已导致投资者之间的交易条款出现差异，从而引发了外界对这些公司真实价值的质疑。
 
 ## 相关主题
-- [[business/_index|Business]]
-- [[tech/_index|Tech]]
-- [[design/_index|Design]]
-- [[career/_index|Career]]
-- [[lifestyle/_index|Lifestyle Trends]]
+- [[business/_index|商业/]]
+- [[tech/_index|科技/]]
+- [[design/_index|设计/]]
+- [[career/_index|职场/]]
+- [[lifestyle/_index|生活/]]

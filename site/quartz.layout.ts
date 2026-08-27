@@ -33,7 +33,7 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
-      component: Component.Breadcrumbs(),
+      component: Component.Breadcrumbs({ rootName: "主頁" }),
       condition: (page) => !isHome(page),
     }),
     Component.ConditionalRender({
@@ -78,7 +78,7 @@ export const defaultContentPageLayout: PageLayout = {
 // components for pages that display lists of pages  (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs(),
+    Component.Breadcrumbs({ rootName: "主頁" }),
     Component.ConditionalRender({
       component: Component.ArticleTitle(),
       condition: (page) => {

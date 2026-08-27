@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "97fdaea82006ba91",
+    "id": "0abf4361c9939f6e",
     "type": "split",
     "children": [
       {
-        "id": "fd9e9fbb43d91a2c",
+        "id": "49908a2445462212",
         "type": "tabs",
         "children": [
           {
-            "id": "86d3fd3741fa274f",
+            "id": "9f699cabfbadb047",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/2026-08-12-CoreWeave股价大涨，收入同比增长一倍.md",
+                "file": "raw/2026-08-23-Quick impressions A week of using Codex more than Claude.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-08-12-CoreWeave股价大涨，收入同比增长一倍"
+              "title": "2026-08-23-Quick impressions A week of using Codex more than Claude"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "3571e8f421187be6",
+    "id": "29990e172e6a97c3",
     "type": "split",
     "children": [
       {
-        "id": "e716a626d240cde0",
+        "id": "701df5254397fa4a",
         "type": "tabs",
         "children": [
           {
-            "id": "b134796f4942cbbe",
+            "id": "cd555a77fb9b2a6f",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "756588fd25fa960e",
+            "id": "c3a8d98169ed0981",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "d7c1bfeb35ef3f83",
+            "id": "7b5e573db39cf425",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "97495d3ca8fc9b45",
+    "id": "7fb8974b30562ab4",
     "type": "split",
     "children": [
       {
-        "id": "7bfd4be472f25ee7",
+        "id": "4428bc490546087b",
         "type": "tabs",
         "children": [
           {
-            "id": "09295be66a10e11f",
+            "id": "dbd74c0637ede2b0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "raw/2026-08-05-芯片公司利润飙升，投资者为何仍不满意？.md",
+                "file": "raw/2026-08-22-AI的下一次重大飞跃：走进现实.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-08-05-芯片公司利润飙升，投资者为何仍不满意？"
+              "title": "Backlinks for 2026-08-22-AI的下一次重大飞跃：走进现实"
             }
           },
           {
-            "id": "d7202b4c44a88959",
+            "id": "a695d9e4edbd7a84",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "raw/2026-08-05-芯片公司利润飙升，投资者为何仍不满意？.md",
+                "file": "raw/2026-08-22-AI的下一次重大飞跃：走进现实.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-08-05-芯片公司利润飙升，投资者为何仍不满意？"
+              "title": "Outgoing links from 2026-08-22-AI的下一次重大飞跃：走进现实"
             }
           },
           {
-            "id": "e56b3e5cba852fb6",
+            "id": "9c5440b9e075d55e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +137,7 @@
             }
           },
           {
-            "id": "996cb7c9b88b17cd",
+            "id": "98a0e05a7e9137d0",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,18 +151,18 @@
             }
           },
           {
-            "id": "998929b79e588748",
+            "id": "314a5ad0fe744ecb",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "raw/2026-08-05-芯片公司利润飙升，投资者为何仍不满意？.md",
+                "file": "raw/2026-08-22-AI的下一次重大飞跃：走进现实.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-08-05-芯片公司利润飙升，投资者为何仍不满意？"
+              "title": "Outline of 2026-08-22-AI的下一次重大飞跃：走进现实"
             }
           }
         ]
@@ -184,53 +184,41 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "86d3fd3741fa274f",
+  "active": "9f699cabfbadb047",
   "lastOpenFiles": [
-    "raw/archive/2026-08-11-安全漏洞致使全美30年来的DNA证据面临黑客攻击风险.md",
-    "wiki/tech/dna-evidence-security-flaw.md",
-    "raw/archive/2026-08-11-前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合.md",
-    "wiki/finance/citadel-buys-situational-awareness-portfolio.md",
-    "raw/archive/2026-08-11-六神磊磊的红楼宇宙-押沙龙的财新博客-财新网.md",
-    "wiki/lifestyle/liu-shen-lei-lei-honglou-universe.md",
-    "raw/archive/2026-08-11-my server is a phone now.md",
-    "wiki/tech/my-server-is-a-phone-now.md",
-    "raw/archive/2026-08-11-Pentaton LP • Pentaton.md",
-    "raw/archive/2026-08-11-Founders Guide Success may not matter if you aren't doing what you love.md",
-    "wiki/business/founders-guide-founder-market-fit.md",
-    "raw/archive/2026-08-11-2x, not 10x coding with LLMs in 2026.md",
-    "wiki/tech/2x-not-10x-coding-llms-2026.md",
-    "_resources/2026-08-12-CoreWeave股价大涨，收入同比增长一倍/8dfa2db51008f9c26ae3be62381bf064_MD5.jpg",
-    "_resources/2026-08-12-CoreWeave股价大涨，收入同比增长一倍",
-    "raw/2026-08-12-宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头.md",
-    "raw/2026-08-12-CoreWeave股价大涨，收入同比增长一倍.md",
-    "_resources/2026-08-12-宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头/46034a3fa8b0d864328a654855bebea5_MD5.jpg",
-    "_resources/2026-08-12-宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头",
-    "raw/2026-08-11-my server is a phone now.md",
-    "raw/archive/2026-08-11-顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网.md",
-    "wiki/career/hidden-skills-of-top-talent.md",
-    "raw/archive/2026-08-11-美国人正周游世界，势不可挡.md",
-    "wiki/lifestyle/rise-of-american-tourists.md",
-    "raw/archive/2026-08-11-私募信贷基金的流动性如何？这取决于你如何定义“流动性”.md",
-    "wiki/finance/private-credit-fund-liquidity-definitions.md",
-    "raw/archive/2026-08-11-关于扎克伯格AI长文，你需要了解的五个要点.md",
+    "raw/2026-08-23-Quick impressions A week of using Codex more than Claude.md",
     "wiki/tech/zuckerberg-ai-essay-key-points.md",
-    "raw/archive/2026-08-11-三星堆失落文明谜团重重，正重塑对中华文明起源的认知.md",
+    "wiki/tech/us-marine-corps-fpv-drones.md",
+    "wiki/tech/unitree-ipo-humanoid-robot-trend.md",
+    "wiki/tech/stripe-kai-deep-agents.md",
+    "wiki/tech/rogue-ai-agents-guide.md",
+    "wiki/tech/pringles-ai-production-line.md",
+    "wiki/tech/pi-minimal-performant.md",
+    "wiki/tech/my-server-is-a-phone-now.md",
+    "wiki/tech/meta-muse-code-coding-agent.md",
+    "wiki/tech/local-models-will-not-win.md",
+    "wiki/tech/how-i-use-llms-to-learn.md",
+    "wiki/tech/dna-evidence-security-flaw.md",
+    "wiki/tech/coreweave-earnings-q2-2026.md",
+    "wiki/tech/caltech-admissions-fraud-squad.md",
+    "wiki/tech/ai-rogue-deception-tests.md",
+    "wiki/tech/ai-rogue-deception-2026.md",
+    "wiki/tech/ai-generates-new-virus.md",
+    "wiki/tech/2x-not-10x-coding-llms-2026.md",
     "wiki/lifestyle/sanxingdui-lost-civilization.md",
-    "_resources/2026-08-11-六神磊磊的红楼宇宙-押沙龙的财新博客-财新网/ff9a2695f865e8ec38de13b16786be99_MD5.jpg",
-    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/c704389eeb82c9770c5a4ed223b38591_MD5.jpg",
-    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/2714eb4fa50dbe368a81493c4ce2e032_MD5.jpg",
-    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/362676cad111e32ad6ddc7c5074bcdc4_MD5.jpg",
-    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/059baac053c5f8b3a1716d0673c06bb3_MD5.jpg",
-    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/cfe4eb0fad023997f7e14dbdfeb7906d_MD5.jpg",
-    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/a2d6dde3336215eefeceb36a1be25f30_MD5.jpg",
-    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate/04d9f14c4ea082ee3a1816fbf3a62516_MD5.jpg",
-    "_resources/2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate",
-    "_resources/2026-08-11-Founders Guide Success may not matter if you aren't doing what you love",
-    "_resources/2026-08-11-安全漏洞致使全美30年来的DNA证据面临黑客攻击风险",
-    "_resources/2026-08-11-前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合",
-    "_resources/2026-08-11-Pentaton LP • Pentaton",
-    "_resources/2026-08-11-六神磊磊的红楼宇宙-押沙龙的财新博客-财新网",
-    "_resources/2026-08-11-顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网",
-    "_resources/2026-08-11-How I use LLMs to learn complex topics"
+    "wiki/lifestyle/rise-of-american-tourists.md",
+    "wiki/lifestyle/liu-shen-lei-lei-honglou-universe.md",
+    "wiki/lifestyle/american-dialogues-loneliness-movement.md",
+    "wiki/lifestyle/ai-medical-report-interpretation.md",
+    "wiki/finance/xi-strong-yuan-economic-drag.md",
+    "wiki/finance/us-japan-yen-intervention-2026.md",
+    "wealth/Screenshot 2026-08-05 at 14.52.52.png",
+    "wealth",
+    "_resources/2026-08-07-医生反感患者用AI解读化验单，但根本拦不住 1/dd7b3c792e4575fffd193690aa4ccdc2_MD5.jpg",
+    "_resources/2026-08-07-医生反感患者用AI解读化验单，但根本拦不住 1",
+    "_resources/2026-08-22-AI的下一次重大飞跃：走进现实/ec20fe673c6bf576aa74eefa11a81cc0_MD5.jpg",
+    "_resources/2026-08-22-AI的下一次重大飞跃：走进现实",
+    "_resources/2026-08-22-分析师盘点年内值得持有的六只AI硬件股/f98a96a06277dad248a072c212c080c3_MD5.jpg",
+    "_resources/2026-08-22-分析师盘点年内值得持有的六只AI硬件股"
   ]
 }
