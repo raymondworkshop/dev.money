@@ -40,4 +40,4 @@ topics:
 - [[business/reality-impact-musk-tesla-spacex|现实冲击马斯克及特斯拉、SpaceX的拥趸]]
 - [[finance/2026-05-27-spacex-investment|这位明星选股人在SpaceX实现火箭着陆之前就大举押注]]
 - [[business/tesla-china-divestiture-spacex-merger|特斯拉考虑出售中国业务，为与SpaceX的潜在合并铺路]]
-- [[business/venture-capital-new-strategy-silicon-valley|风投界新势力凭借新策略在硅谷制胜]]
+- [[business/trump-musk-reconciliation|特朗普与马斯克如何修复了曾看似无可挽回的关系]]

@@ -8,9 +8,9 @@ created: "2026-05-30"
 - <span class="recent-date">2026-08-22</span> [[finance/ai-hardware-stocks-analysis|分析師盤點年內值得持有的六隻AI硬件股]]
 - <span class="recent-date">2026-08-22</span> [[tech/ai-world-models-robotics|AI的下一次重大飛躍：走進現實]]
 - <span class="recent-date">2026-08-21</span> [[tech/codex-vs-claude-impressions|Quick impressions: A week of using Codex more than Claude]]
-- <span class="recent-date">2026-08-12</span> [[tech/unitree-ipo-humanoid-robot-trend|宇樹IPO或只是前奏，人形機器人股票的投資熱潮還在後頭]]
-- <span class="recent-date">2026-08-12</span> [[tech/coreweave-earnings-q2-2026|CoreWeave股價大漲，收入同比增長一倍]]
-- <span class="recent-date">2026-08-11</span> [[design/pentaton-lp|Pentaton LP • Pentaton]]
+- <span class="recent-date">2026-08-18</span> [[lifestyle/us-seniors-global-travel-boom|有錢有閒能折騰：美國老年人正推動全球旅遊熱潮]]
+- <span class="recent-date">2026-08-18</span> [[finance/situational-awareness-crisis|華爾街如何嗅到了Situational Awareness危機爆發的氣息]]
+- <span class="recent-date">2026-08-18</span> [[tech/warehouse-robotics-adoption|倉庫正越來越多地使用機器人]]
 - [[articles|再睇多啲]]
 
 ## 編輯方針

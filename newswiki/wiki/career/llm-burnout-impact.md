@@ -25,6 +25,7 @@ topics:
 
 - [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]]
 - [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]]
+- [[career/interns-running-the-show|告别端茶倒水，实习生今夏开始挑大梁]]
 - [[tech/caltech-admissions-fraud-squad|如果你在入学申请中造假，这支“打假小分队”定会揪出你]]
 
 ---

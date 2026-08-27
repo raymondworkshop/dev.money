@@ -1,17 +1,6 @@
 # Archive Status
 
-<<<<<<< HEAD
 **Last Updated:** 2026-08-24 2026-08-22 2026-08-22 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-28 2026-07-28 2026-07-28 2026-07-28 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
-
-=======
-<<<<<<< HEAD
-**Last Updated:** 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-28 2026-07-28 2026-07-28 2026-07-28 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
-**Last Updated:** 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
-=======
-**Last Updated:** 2026-07-20 2026-07-20 2026-07-20 2026-07-14 2026-07-14 2026-07-14 2026-07-13 2026-07-12 2026-07-09 2026-07-07 2026-07-05 2026-07-04 2026-07-02 2026-07-01 2026-06-30 2026-06-25 2026-06-24 2026-06-23 2026-06-22 2026-06-20 2026-06-19 2026-06-14 2026-06-12 2026-06-09 2026-05-30 2026-05-28
-**Last Updated:** 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
->>>>>>> ccc11027917d6e81dc5a19e5f7b880bbec31cef7
->>>>>>> 838cff0f7bd752229857d3adb5055d09129d50e2
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -117,6 +106,26 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-08-23-Quick impressions A week of using Codex more than Claude.md | 科技 | `newswiki/wiki/tech/codex-vs-claude-impressions.md` | Archived |
 | 2026-08-22-分析师盘点年内值得持有的六只AI硬件股.md | Finance | `newswiki/wiki/finance/ai-hardware-stocks-analysis.md` | Archived |
 | 2026-08-22-AI的下一次重大飞跃：走进现实.md | Tech | `newswiki/wiki/tech/ai-world-models-robotics.md` | Archived |
+| 2026-08-18-盘点TikTok上满天飞的理财“秘籍”.md | Finance | `newswiki/wiki/finance/tiktok-financial-advice-analysis.md` | Archived |
+| 2026-08-18-有钱有闲能折腾：美国老年人正推动全球旅游热潮.md | Lifestyle Trends | `newswiki/wiki/lifestyle/us-seniors-global-travel-boom.md` | Archived |
+| 2026-08-18-把日常健康数据喂给AI的“数据极客”.md | Lifestyle Trends | `newswiki/wiki/lifestyle/ai-health-data-geeks.md` | Archived |
+| 2026-08-18-开放权重AI不会削弱算力基础设施需求.md | Tech | `newswiki/wiki/tech/open-weight-ai-compute-demand.md` | Archived |
+| 2026-08-18-华尔街如何嗅到了Situational Awareness危机爆发的气息.md | Finance | `newswiki/wiki/finance/situational-awareness-crisis.md` | Archived |
+| 2026-08-18-仓库正越来越多地使用机器人.md | Tech | `newswiki/wiki/tech/warehouse-robotics-adoption.md` | Archived |
+| 2026-08-18-一张隐秘交易网如何将道奇队老板卷入联邦调查.md | Finance | `newswiki/wiki/finance/mark-walter-federal-investigation.md` | Archived |
+| 2026-08-18-“无就业”繁荣时代已经到来.md | Career | `newswiki/wiki/career/jobless-boom-era.md` | Archived |
+| 2026-08-17-重创俄军的乌克兰无人机出自一位90后家具设计师之手.md | Business | `newswiki/wiki/business/ukraine-fire-point-ceo-iryna-terekh.md` | Archived |
+| 2026-08-17-科技巨头的AI支出或比表面看起来还要高出3万亿美元.md | Business | `newswiki/wiki/business/big-tech-ai-spending-off-balance-sheet.md` | Archived |
+| 2026-08-17-科技巨头的AI支出或比表面看起来还要高出3万亿美元 1.md | Tech | `newswiki/wiki/tech/big-tech-ai-spending-off-balance-sheet.md` | Archived |
+| 2026-08-17-AI正助力罕见病患者破解医学谜团.md | Tech | `newswiki/wiki/tech/ai-rare-disease-diagnosis.md` | Archived |
+| 2026-08-17-央行陷入周而复始的危机循环.md | Finance | `newswiki/wiki/finance/central-bank-crisis-cycle.md` | Archived |
+| 2026-08-17-Seven books I keep close because I love them.md | Lifestyle Trends | `newswiki/wiki/lifestyle/seven-books-i-keep-close.md` | Archived |
+| 2026-08-14-连Claude都知之甚少：Anthropic CEO的神秘妻子及其幕后影响力.md | Business | `newswiki/wiki/business/cami-clark-anthropic-influence.md` | Archived |
+| 2026-08-14-特朗普与马斯克如何修复了曾看似无可挽回的关系.md | Business | `newswiki/wiki/business/trump-musk-reconciliation.md` | Archived |
+| 2026-08-13-财富管理行业面临3万亿美元难题：投资者持有太多现金.md | Finance | `newswiki/wiki/finance/wealth-management-cash-problem.md` | Archived |
+| 2026-08-13-策略师：美股即将迎来历史上表现强劲的行情窗口期.md | Finance | `newswiki/wiki/finance/us-market-strong-window.md` | Archived |
+| 2026-08-13-把日常健康数据喂给AI的“数据极客”.md | Lifestyle Trends | `newswiki/wiki/lifestyle/ai-health-data-geeks.md` | Archived |
+| 2026-08-13-告别端茶倒水，实习生今夏开始挑大梁.md | Career | `newswiki/wiki/career/interns-running-the-show.md` | Archived |
 | 2026-08-12-宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头.md | Tech | `newswiki/wiki/tech/unitree-ipo-humanoid-robot-trend.md` | Archived |
 | 2026-08-12-CoreWeave股价大涨，收入同比增长一倍.md | Tech | `newswiki/wiki/tech/coreweave-earnings-q2-2026.md` | Archived |
 | 2026-08-11-5 days to improve your pronunciation  Day 5 - You've earned your certificate.md | Career | `newswiki/wiki/career/improve-pronunciation-day-5.md` | Archived |
@@ -158,15 +167,12 @@ All files compiled from raw/ to wiki/ and then archived here.
 | 2026-08-05-美国海军陆战队正加紧部署数千架攻击型无人机.md | Tech | `newswiki/wiki/tech/us-marine-corps-fpv-drones.md` | Archived |
 | 2026-08-05-图解美日联手提振日圆的五大原因.md | Finance | `newswiki/wiki/finance/us-japan-yen-intervention-2026.md` | Archived |
 | 2026-08-05-AI在测试中再次失控，这次还学会了欺骗.md | Tech | `newswiki/wiki/tech/ai-rogue-deception-tests.md` | Archived |
-<<<<<<< HEAD
 | 2026-08-02-AI financial advice is surprisingly good — especially if you ask the right questions.md | Finance | `newswiki/wiki/finance/ai-financial-advice-quality.md` | Archived |
-=======
 | 2026-08-04-退守本土后，惠而浦为何仍难逃“寒冬”？.md | Business | `newswiki/wiki/business/whirlpool-north-america-struggle.md` | Archived |
 | 2026-08-04-硅谷大佬试图在亚洲“建国”，却遭当地政府强制叫停.md | Business | `newswiki/wiki/business/balaji-network-school-malaysia.md` | Archived |
 | 2026-08-04-中国制造业遭遇“苦夏”.md | Business | `newswiki/wiki/business/china-manufacturing-summer-blues.md` | Archived |
 | 2026-08-04-LLMs reward expertise.md | Career | `newswiki/wiki/career/llms-reward-expertise.md` | Archived |
 | 2026-08-04-AI时代的爱情：聊天机器人接管线上约会.md | Lifestyle Trends | `newswiki/wiki/lifestyle/ai-dating-chatbots.md` | Archived |
->>>>>>> 838cff0f7bd752229857d3adb5055d09129d50e2
 | 2026-08-04-贝森特为何指望美联储帮助支撑日圆汇率.md | Finance | `newswiki/wiki/finance/bessent-fed-yen-support.md` | Archived |
 | 2026-08-04-时尚巨头试水新潮流：销售二手服装.md | Business | `newswiki/wiki/business/fashion-resale-trend.md` | Archived |
 | 2026-08-04-先放手发展，后落地监管：中国经济活力的悖论.md | Business | `newswiki/wiki/business/chinas-economic-dynamism-paradox.md` | Archived |

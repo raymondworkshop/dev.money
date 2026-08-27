@@ -34,6 +34,6 @@ topics:
 ## 相关文章
 
 - [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]]
+- [[business/trump-musk-reconciliation|特朗普与马斯克如何修复了曾看似无可挽回的关系]]
 - [[business/trump-space-environmental-review-exemption|特朗普政府拟豁免航天公司的环境评估]]
 - [[business/reality-impact-musk-tesla-spacex|现实冲击马斯克及特斯拉、SpaceX的拥趸]]
-- [[business/blue-origin-trump-contract-surge|How Bezos Learned to Win Over Trump and Secured a Surge of Contracts for Blue Origin]]

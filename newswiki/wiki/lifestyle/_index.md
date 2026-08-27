@@ -9,6 +9,12 @@
 - **投资视角**: 长期主题、品牌与生活方式赛道
 
 ## 相关文章
+- [[tiktok-financial-advice-analysis|盘点TikTok上满天飞的理财“秘籍”]] (2026-08-17) - 分析TikTok理财博主的四类典型模式及其对Z世代的影响
+- [[us-seniors-global-travel-boom|有钱有闲能折腾：美国老年人正推动全球旅游热潮]] (2026-08-18) - 探讨婴儿潮一代如何通过高消费驱动全球旅游业升级
+- [[ai-health-data-geeks|把日常健康数据喂给AI的“数据极客”]] (2026-08-12) - 探讨数据极客如何利用AI构建个性化健康教练。
+- [[ai-rare-disease-diagnosis|AI正助力罕见病患者破解医学谜团]] (2026-08-17) - 面对罕见病和疑难杂症，患者与医护人员正借助AI技术以寻根究底。
+- [[seven-books-i-keep-close|Seven books I keep close because I love them]] (2026-08-17) - From the highly eclectic blog of Mark Dominus
+- [[ai-health-data-geeks|把日常健康数据喂给AI的“数据极客”]] (2026-08-12) - 从备战马拉松到排解职场焦虑，健康狂热者正将个人数据接入聊天机器人，打造极致个性化的专属教练。
 - [[pentaton-lp|Pentaton LP • Pentaton]] (2026-08-11) - A vinyl-sleeve-sized music streamer designed to make digital music feel analog again through a high-resolution display for cover art.
 - [[liu-shen-lei-lei-honglou-universe|六神磊磊的红楼宇宙-押沙龙的财新博客-财新网]] (2026-08-10) - 评析六神磊磊的《读红楼》，探讨阅读《红楼梦》应回归直觉、情感与慈悲，而非陷入索隐派的解密。
 - [[rise-of-american-tourists|美国人正周游世界，势不可挡]] (2026-08-10) - 在强劲经济推动下，曾经喜欢宅家的美国人正转变为充满热情的国际旅行者，富裕银发一族和追求社交媒体热潮的新世代还在迅速涌入那些鲜为人知的目的地。

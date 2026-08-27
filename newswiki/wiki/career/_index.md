@@ -10,6 +10,10 @@
 
 ## 相关文章
 - [[codex-vs-claude-impressions|Quick impressions: A week of using Codex more than Claude]] (2026-08-21) - Claude goes above and beyond what is asked and guesses what you might want. Codex does what you tell it and stops at the first sign that it might be done. Ten impressions from a week of using Codex more.
+- [[warehouse-robotics-adoption|仓库正越来越多地使用机器人]] (2026-08-18) - 劳动力成本上升驱动仓储自动化投资增长
+- [[ukraine-fire-point-ceo-iryna-terekh|重创俄军的乌克兰无人机出自一位90后家具设计师之手]] (2026-08-17) - 探讨 Fire Point 如何通过设计优化实现无人机量产。
+- [[jobless-boom-era|“无就业”繁荣时代已经到来]] (2026-08-13) - 分析美国股市繁荣与就业萎缩脱节的“无就业繁荣”现象
+- [[interns-running-the-show|告别端茶倒水，实习生今夏开始挑大梁]] (2026-08-13) - 随着AI接管琐碎任务，实习生们正肩负起牵头项目等更大责任。
 - [[2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]] (2026-08-11) - Calibrate your enthusiasm
 - [[hidden-skills-of-top-talent|顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网]] (2026-08-09) - 探讨“无所事事”与玩耍对大脑默认网络（DMN）的激活作用，以及过度工作对前额叶皮质和心理健康的损害。
 - [[llms-reward-expertise|LLMs reward expertise]] (2026-08-06) - An analysis of why domain expertise remains the most critical skill for effective LLM prompting and high-value output.

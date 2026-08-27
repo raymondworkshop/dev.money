@@ -28,6 +28,7 @@ topics:
 
 ## 相关文章
 
+- [[career/interns-running-the-show|告别端茶倒水，实习生今夏开始挑大梁]]
 - [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]]
 - [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]]
 - [[career/llm-burnout-impact|I Think I Have LLM Burnout]]
