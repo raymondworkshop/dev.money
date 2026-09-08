@@ -38,8 +38,8 @@ topics:
 
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
 - [[tech/ai-autonomous-driving|Wayve's AI Car Drives London Streets, Challenging Tesla and Waymo]]
+- [[career/ai-removing-middle-class-software-engineering|AI is removing the middle class of software engineering]]
 - [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]]
-- [[career/llm-burnout-impact|I Think I Have LLM Burnout]]
 
 ---
 **Topics**: [[career/ai-career-preparedness|AI and Career Preparedness]]  

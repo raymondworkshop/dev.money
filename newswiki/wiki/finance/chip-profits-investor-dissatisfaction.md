@@ -30,7 +30,7 @@ topics:
 
 ## 相关文章
 
+- [[tech/amd-data-center-cpu-market|AMD为何有望在数据中心CPU市场击败英特尔和英伟达]]
 - [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
-- [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]]
-- [[finance/2026-05-21-nvda-undervalued|即使市值高达5万亿美元，英伟达依然被低估]]
-- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[tech/etched-ai-chip-startup|估值210亿美元的“芯片小子”初创公司大举挖角英伟达人才]]
+- [[tech/etched-nvidia-talent-poaching|估值210亿美元的“芯片小子”初创公司大举挖角英伟达人才]]

@@ -32,6 +32,6 @@ topics:
 ## 相关文章
 
 - [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]]
+- [[business/data-center-insurance-opportunity|数据中心领域的下一个重大机遇：保险业务]]
 - [[business/meta-q2-earnings-ai-spending-drop|Meta股价大跌10%，因AI支出增加且展望不及预期]]
-- [[business/microsoft-azure-revenue-milestone|微软利润激增31%，Azure云业务财年收入首破千亿美元大关]]
-- [[business/apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]]
+- [[business/us-nuclear-reactor-construction-oklo|揭秘美国一代人以来首座核反应堆的建设攻关]]

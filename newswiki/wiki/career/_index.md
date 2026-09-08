@@ -9,12 +9,23 @@
 - **投资视角**: 人力资本、生产率、行业变迁
 
 ## 相关文章
+- [[americans-without-college-degrees-best-job-market|无大学学历的美国人正迎来多年来最好的就业市场之一]] (2026-09-07) - 未上过大学的美国年轻劳动力失业率降至近几十年来的罕见低点，而大学毕业生的处境却截然相反。
+- [[bill-gates-ai-warning-no-plan|比尔·盖茨发表5784字AI警告：全球“没有应对计划”]] (2026-08-26) - 这位亿万富豪兼慈善家呼吁实施监管与全球协调，以应对AI可能给就业、安全及人类福祉带来的危害。
+- [[startup-founders-24-hour-work-ai-agents|初创公司创始人恨不得24小时工作，以跟上自家AI智能体]] (2026-08-24) - AI智能体日益强大的能力，赋予了“拼命工作”全新的含义。AI智能体干的活越多，创始人们发现自己要干的活也越多。
 - [[codex-vs-claude-impressions|Quick impressions: A week of using Codex more than Claude]] (2026-08-21) - Claude goes above and beyond what is asked and guesses what you might want. Codex does what you tell it and stops at the first sign that it might be done. Ten impressions from a week of using Codex more.
-- [[warehouse-robotics-adoption|仓库正越来越多地使用机器人]] (2026-08-18) - 劳动力成本上升驱动仓储自动化投资增长
-- [[ukraine-fire-point-ceo-iryna-terekh|重创俄军的乌克兰无人机出自一位90后家具设计师之手]] (2026-08-17) - 探讨 Fire Point 如何通过设计优化实现无人机量产。
-- [[jobless-boom-era|“无就业”繁荣时代已经到来]] (2026-08-13) - 分析美国股市繁荣与就业萎缩脱节的“无就业繁荣”现象
+- [[66-year-old-job-search|打破年龄魔咒：66岁老人重返职场之路]] (2026-08-21) - “我会告诉所有比我年轻的人，一定要存钱，以防遇到我这样的事，”将于12月迎来67岁生日的Lee说。“而如果你和我年纪一样大，那就千万别放弃。”
+- [[older-worker-reentry-success|打破年龄魔咒：66岁老人重返职场之路]] (2026-08-21) - “我会告诉所有比我年轻的人，一定要存钱，以防遇到我这样的事，”将于12月迎来67岁生日的Lee说。“而如果你和我年纪一样大，那就千万别放弃。”
+- [[theres-no-such-thing-as-a-small-software-team|There's no such thing as a small software team anymore]] (2026-08-20) - Uber infamously runs thousands of microservices. They ended up with so many services because hundreds of engineers wanted to deploy on their own schedule, with clear ownership of their code, instead of waiting in one giant merge queue.For decades a small team with 5 or 10 people writing code at the same time didn’t even need to consider doing this. On a busy day a small team might generate 50 commits/20 pushes/10 PRs. A small team today, running 20-100 agents in parallel, might generate 500 commits/200 pushes/100 PRs.
+- [[outsmart-ai-workday-tracking|当AI监控你的日常工作时，该如何智胜它？]] (2026-08-20) - 眼下有什么比做一名好员工更重要？那就是在越来越多管理者正使用的AI生产力追踪系统眼中，看起来像一名好员工。
+- [[linkedin-dating-trend|不顾“禁爱令”，领英意外成为约会神器]] (2026-08-20) - 凭借清晰的头像和详尽的个人履历，这个职场社交平台正成为单身人士寻觅伴侣的首选工具。
+- [[ai-chaos-book-publishing|AI让图书出版业陷入一片混乱]] (2026-08-18) - 几笔重磅图书合约因疑似使用AI而告吹，这迫使整个行业重新审视创造力、信任的基石，以及出版业的未来。
+- [[warehouse-robotics-adoption|仓库正越来越多地使用机器人]] (2026-08-18) - 劳动力成本上升和快速送货需求正促使企业推进订单履行自动化。
+- [[e6-88-91-e4-b8-ba-e4-bd-95-e8-a6-81-e6-b1-82-e8-81-8a-e5-a4-|我为何要求聊天机器人别再对我过度谄媚]] (2026-08-18) - AI回答问题总是过于迎合、过于热情，而这在一定程度上是我们自己造成的。
+- [[ukraine-fire-point-ceo-iryna-terekh|重创俄军的乌克兰无人机出自一位90后家具设计师之手]] (2026-08-17) - 34岁的伊琳娜·捷列赫曾是一位长椅设计师，如今则是乌克兰最大私营防务公司Fire Point的首席执行官。
 - [[interns-running-the-show|告别端茶倒水，实习生今夏开始挑大梁]] (2026-08-13) - 随着AI接管琐碎任务，实习生们正肩负起牵头项目等更大责任。
+- [[jobless-boom-era|“无就业”繁荣时代已经到来]] (2026-08-13) - 股市认为美国经济正在加速，但招聘活动并未跟上。
 - [[2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]] (2026-08-11) - Calibrate your enthusiasm
+- [[ai-removing-middle-class-software-engineering|AI is removing the middle class of software engineering]] (2026-08-11) - AI makes projects with weak engineering culture fail much faster.
 - [[hidden-skills-of-top-talent|顶尖人才的隐藏技能：把玩耍和“不作为”当作必修课-返朴的财新博客-财新网]] (2026-08-09) - 探讨“无所事事”与玩耍对大脑默认网络（DMN）的激活作用，以及过度工作对前额叶皮质和心理健康的损害。
 - [[llms-reward-expertise|LLMs reward expertise]] (2026-08-06) - An analysis of why domain expertise remains the most critical skill for effective LLM prompting and high-value output.
 - [[ai-powered-solopreneurship|AI助力“一人公司”崛起：单枪匹马也可年入百万美元]] (2026-07-30) - AI工具让创始人更容易单枪匹马地创业，而且许多人在公司发展壮大后依然保持这种单干状态。

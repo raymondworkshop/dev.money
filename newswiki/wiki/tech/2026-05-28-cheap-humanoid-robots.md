@@ -34,8 +34,8 @@ topics:
 
 - [[tech/unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]]
 - [[tech/2026-05-29-ai-fact-checking|AI会犯错，但AI也能揪出错误]]
+- [[tech/warehouse-robotics-adoption|仓库正越来越多地使用机器人]]
 - [[business/china-manufacturing-summer-blues|中国制造业遭遇“苦夏”]]
-- [[career/2026-04-03-ai-created-new-jobs|诚聘“人类AI解决方案主管”：人工智能催生了哪些新职位？]]
 
 ---
 **Topics**: [[tech/_index|Tech]], [[career/_index|Career]]  

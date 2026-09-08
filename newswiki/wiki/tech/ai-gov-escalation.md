@@ -45,7 +45,7 @@ topics:
 - [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
 - [[tech/anthropic-accuses-alibaba-of-claude-distillation-attack|Anthropic Accuses Alibaba of Large-Scale Distillation Attack on Claude]]
 - [[tech/ai-cost-control|Token使用量激增，企业如何控制AI成本？]]
-- [[tech/openai-ai-hack-hugging-face|极具未来色彩的黑客攻击：OpenAI失控模型入侵事件始末]]
+- [[tech/china-ai-brains-leap|推动中国AI实现惊人飞跃的幕后智囊]]
 
 ---
 **Topics**: [[tech/ai-gov-escalation|AI与政府关系：Anthropic与五角大楼的AI护栏争端]]  

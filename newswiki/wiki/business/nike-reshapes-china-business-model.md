@@ -33,4 +33,6 @@ topics:
 ## 相关文章
 
 - [[business/retail-999-pricing-strategy|9.99美元，如何成为零售业最具魔力的定价？]]
+- [[lifestyle/china-premium-wine-boom-behind-mystery-vineyard|中国精品葡萄酒热潮背后的神秘酒庄]]
+- [[lifestyle/china-premium-wine-boom-mystery-vineyard|中国精品葡萄酒热潮背后的神秘酒庄]]
 - [[tech/2026-05-28-cheap-humanoid-robots|下一波中国冲击：比二手车还便宜的人形机器人]]

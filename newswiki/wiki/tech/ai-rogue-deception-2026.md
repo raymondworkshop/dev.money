@@ -32,6 +32,6 @@ topics:
 ## 相关文章
 
 - [[tech/ai-rogue-deception-tests|AI在测试中再次失控，这次还学会了欺骗]]
+- [[business/openai-q2-revenue-slowdown-vs-anthropic|OpenAI第二季度收入增长乏力，增速逊于Anthropic]]
+- [[business/openai-q2-revenue-slowdown|OpenAI第二季度收入增长乏力，增速逊于Anthropic]]
 - [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
-- [[tech/ai-generates-new-virus|AI最新的骇人里程碑：生成新病毒]]
-- [[tech/rogue-ai-agents-guide|失控AI机器人世界的用户指南]]

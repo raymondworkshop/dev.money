@@ -28,3 +28,7 @@ topics:
 ---
 **主题**: [[business/_index|Business]], [[finance/_index|Finance]]  
 **标签**: #business #whirlpool #corporate-strategy
+
+## 相关文章
+
+- [[business/corporate-quantum-investment|企业正在量子技术上投入巨资]]

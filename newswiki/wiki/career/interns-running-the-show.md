@@ -36,5 +36,5 @@ ightarrow$ 实习生。
 
 - [[tech/caltech-admissions-fraud-squad|如果你在入学申请中造假，这支“打假小分队”定会揪出你]]
 - [[career/ai-career-preparedness|Facing AI-Driven Job Disruption: A New Initiative Aims to Prepare Millions of Americans]]
+- [[career/ai-removing-middle-class-software-engineering|AI is removing the middle class of software engineering]]
 - [[career/dont-become-an-engineering-manager|Don't become an Engineering Manager]]
-- [[career/llm-burnout-impact|I Think I Have LLM Burnout]]

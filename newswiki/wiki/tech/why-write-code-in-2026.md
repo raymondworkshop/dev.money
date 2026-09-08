@@ -32,10 +32,10 @@ topics:
 
 ## Related Articles
 
+- [[tech/no-small-software-teams|There's no such thing as a small software team anymore]]
 - [[tech/a-road-to-lisp-why-lisp|A road to Lisp: Why Lisp]]
 - [[tech/stripe-kai-deep-agents|How Stripe Built Kai on Deep Agents in 1 Week]]
 - [[business/ai-software-company-moats|How does AI affect software company moats?]]
-- [[tech/rogue-ai-agents-guide|失控AI机器人世界的用户指南]]
 
 ---
 **Topics**: [[tech/ai-agents|AI Agents]], [[tech/software-architecture|Software Architecture]], [[tech/ai-development|AI Development]]  

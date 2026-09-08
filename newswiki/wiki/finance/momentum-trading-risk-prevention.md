@@ -31,6 +31,10 @@ topics:
 - Low-momentum stocks (e.g., SLM, Disney) show minimal growth and may represent safe-harbor or defensive holdings.
 - Investors should assess the underlying fundamentals and sentiment behind peak price movements before acting on momentum signals.
 
+## Related Articles
+
+- [[finance/2026-08-31-wall-street-momentum-trading-fails|华尔街动能交易突然遭遇溃败]]
+
 ---
 **Topics**: [[finance/momentum-trading-risk-prevention|Finance: Momentum Trading Risk Prevention]]  
 **Tags**: #momentum-trading #investment-risk #crash-prevention #stock-selection

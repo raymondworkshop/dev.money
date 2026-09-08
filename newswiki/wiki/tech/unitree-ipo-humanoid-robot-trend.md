@@ -40,7 +40,7 @@ topics:
 
 ## 相关文章
 
+- [[tech/amd-data-center-cpu-market|AMD为何有望在数据中心CPU市场击败英特尔和英伟达]]
 - [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
-- [[tech/us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]]
-- [[tech/us-alternative-to-cheap-chinese-ai|美国公司加紧打造中国低成本AI的替代品]]
-- [[tech/ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]]
+- [[tech/etched-ai-chip-startup|估值210亿美元的“芯片小子”初创公司大举挖角英伟达人才]]
+- [[tech/etched-nvidia-talent-poaching|估值210亿美元的“芯片小子”初创公司大举挖角英伟达人才]]

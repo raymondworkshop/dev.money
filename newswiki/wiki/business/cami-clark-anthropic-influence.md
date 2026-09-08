@@ -37,7 +37,7 @@ topics:
 
 ## 相关文章
 
+- [[business/openai-q2-revenue-slowdown-vs-anthropic|OpenAI第二季度收入增长乏力，增速逊于Anthropic]]
+- [[business/openai-q2-revenue-slowdown|OpenAI第二季度收入增长乏力，增速逊于Anthropic]]
 - [[business/venture-capital-new-strategy-silicon-valley|风投界新势力凭借新策略在硅谷制胜]]
 - [[tech/ai-rogue-deception-2026|AI在测试中再次失控，这次还学会了欺骗]]
-- [[tech/ai-rogue-deception-tests|AI在测试中再次失控，这次还学会了欺骗]]
-- [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]

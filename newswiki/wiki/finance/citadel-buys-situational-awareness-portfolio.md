@@ -34,7 +34,7 @@ topics:
 
 ## 相关文章
 
+- [[finance/situational-awareness-crisis|华尔街如何嗅到了Situational Awareness危机爆发的气息]]
 - [[finance/situational-awareness-citadel-acquisition|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]]
-- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
-- [[tech/2026-05-29-ai-film-cannes-compute-costs|AI长片在戛纳首映：50万美元制作成本，算力支出占40万]]
-- [[business/venture-capital-new-strategy-silicon-valley|风投界新势力凭借新策略在硅谷制胜]]
+- [[finance/leopold-aschenbrenner-ai-prophet|从早慧少年到跌落神坛的“AI先知”：起底阿申布伦纳背后的人脉网]]
+- [[finance/wall-street-ai-anxiety-camp-kotok|探访华尔街精英荒野营：人人皆对AI热潮心生寒意]]

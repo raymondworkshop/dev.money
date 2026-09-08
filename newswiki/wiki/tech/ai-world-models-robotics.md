@@ -30,7 +30,7 @@ topics:
 
 ## 相关文章
 
+- [[tech/world-models-robotics-next-ai-leap|AI的下一次重大飞跃：走进现实世界]]
+- [[tech/amd-data-center-cpu-market|AMD为何有望在数据中心CPU市场击败英特尔和英伟达]]
 - [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
-- [[tech/google-cloud-revenue-growth-82-ai-spending-impact|谷歌云业务收入增长82%，但巨额AI支出致股价大跌]]
-- [[tech/us-marine-corps-fpv-drones|美国海军陆战队正加紧部署数千架攻击型无人机]]
-- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[tech/us-smr-nuclear-revival|揭秘美国一代人以来首座核反应堆的建设攻关]]

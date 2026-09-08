@@ -34,6 +34,7 @@ topics:
 
 ## Related Articles
 
+- [[finance/why-it-pays-to-stay-invested-no-amount-of-bad-news-could-stop-the-stock-markets-strongest-run-in-more-than-25-years-27654da1|坚持投资终有回报：坏消息再多，也挡不住美股创下逾25年来最强劲涨势]]
 - [[finance/chip-profits-investor-dissatisfaction|芯片公司利润飙升，投资者为何仍不满意？]]
 
 ---

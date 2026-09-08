@@ -31,7 +31,7 @@ topics:
 
 ## 相关文章
 
+- [[business/openai-q2-revenue-slowdown-vs-anthropic|OpenAI第二季度收入增长乏力，增速逊于Anthropic]]
 - [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]]
 - [[tech/unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]]
-- [[tech/us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]]
-- [[tech/us-alternative-to-cheap-chinese-ai|美国公司加紧打造中国低成本AI的替代品]]
+- [[finance/wall-street-ai-anxiety-camp-kotok|探访华尔街精英荒野营：人人皆对AI热潮心生寒意]]

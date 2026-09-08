@@ -19,7 +19,7 @@ raw evidence → curated wiki memory → reasoning outputs
 | Wiki | `newswiki/wiki` |
 | Outputs | `newswiki/outputs` |
 
-Override via Makefile/CLI: `make sync` · `make query` · `make audit` · `make publish` · `make analyze TICKER=…`.
+Override via Makefile/CLI: `make sync` · `make query` · `make audit` · `make publish` · `make analyze TICKER=…` · `make flow TICKER=…`.
 
 **Providers** (`.env`): `LLM_PROVIDER=mlx|local-gateway|gemini|openai` (+ keys / `LLM_URL` / model). Override: `make sync LLM_PROVIDER=gemini`. MLX must be running for local sync. Harnesses load this file as system prompt.
 
@@ -132,4 +132,8 @@ Read-only health check (broken links, gaps, thin/unsupported claims). Recommend 
 
 ## analyze
 
-`python3 scripts/analyze.py <ticker>` → `newswiki/outputs/<ticker>_analysis.md`. Apply the investment lens.
+`python3 scripts/analyze.py <ticker>` → `outputs/<ticker>_analysis.md`. Apply the investment lens.
+
+## flow
+
+`python3 scripts/flow.py <ticker>` → `outputs/<ticker>_flow.md`. Price/volume accumulation vs distribution heuristics (up/down volume ratio, weekly high/low closes with volume, distribution days). Complementary to `analyze`; not investment advice.

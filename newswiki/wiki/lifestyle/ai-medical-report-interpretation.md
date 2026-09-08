@@ -28,3 +28,7 @@ topics:
 ---
 **主题**: [[lifestyle/_index|Lifestyle Trends]], [[tech/_index|Tech]]  
 **标签**: #ai-health #medical-privacy #patient-behavior
+
+## 相关文章
+
+- [[lifestyle/ai-health-data-geeks|把日常健康数据喂给AI的“数据极客”]]

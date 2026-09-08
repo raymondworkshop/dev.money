@@ -35,5 +35,5 @@ topics:
 
 - [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
 - [[tech/washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]]
+- [[tech/open-weight-ai-compute-demand|开放权重AI不会削弱算力基础设施需求]]
 - [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
-- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]

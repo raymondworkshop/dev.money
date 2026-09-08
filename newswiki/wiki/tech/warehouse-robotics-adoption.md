@@ -31,3 +31,8 @@ topics:
 ---
 **主题**: [[tech/_index|Tech]], [[business/_index|Business]], [[career/_index|Career]]  
 **标签**: #warehouse-robotics #automation #supply-chain
+
+## 相关文章
+
+- [[tech/2026-05-28-cheap-humanoid-robots|下一波中国冲击：比二手车还便宜的人形机器人]]
+- [[finance/best-ai-crm-for-real-estate-agents|Best AI CRM for Real Estate Agents]]

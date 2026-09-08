@@ -15,6 +15,7 @@ Curated hub for articles related to Nebius.
 - [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]] · #tech
 - [[finance/citadel-buys-situational-awareness-portfolio|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] · #finance
 - [[finance/situational-awareness-citadel-acquisition|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]] · #finance
+- [[finance/situational-awareness-crisis|华尔街如何嗅到了Situational Awareness危机爆发的气息]] · #finance
 
 ---
 **Topics**: [[finance/_index|Finance]]  

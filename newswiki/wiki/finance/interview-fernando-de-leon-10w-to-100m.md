@@ -26,3 +26,7 @@ topics:
 ---
 **主题**: [[finance/_index|Finance]], [[hubs/leon-capital|Leon Capital Group]]  
 **标签**: #finance #investment-strategy #wealth-growth
+
+## 相关文章
+
+- [[finance/why-it-pays-to-stay-invested|坚持投资终有回报：坏消息再多，也挡不住美股创下逾25年来最强劲涨势]]

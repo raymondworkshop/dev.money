@@ -32,7 +32,7 @@ topics:
 
 ## 相关文章
 
+- [[tech/etched-nvidia-talent-poaching|估值210亿美元的“芯片小子”初创公司大举挖角英伟达人才]]
+- [[tech/us-smr-nuclear-revival|揭秘美国一代人以来首座核反应堆的建设攻关]]
+- [[tech/us-nuclear-reactor-construction-smr|揭秘美国一代人以来首座核反应堆的建设攻关]]
 - [[business/meta-q2-earnings-ai-spending-drop|Meta股价大跌10%，因AI支出增加且展望不及预期]]
-- [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]]
-- [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
-- [[tech/china-ai-chip-advancement-2026|揭秘中国全力追赶美国AI芯片的攻坚内幕]]

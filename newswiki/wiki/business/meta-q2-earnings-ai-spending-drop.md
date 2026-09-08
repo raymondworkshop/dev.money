@@ -34,7 +34,7 @@ topics:
 
 ## 相关文章
 
+- [[business/us-nuclear-reactor-construction-oklo|揭秘美国一代人以来首座核反应堆的建设攻关]]
 - [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]]
 - [[business/microsoft-azure-revenue-milestone|微软利润激增31%，Azure云业务财年收入首破千亿美元大关]]
-- [[business/ibm-stock-crash-why-not-worried|股价单日暴跌25%，IBM首席执行官为何不担心?]]
-- [[business/apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]]
+- [[business/data-center-insurance-opportunity|数据中心领域的下一个重大机遇：保险业务]]

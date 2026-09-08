@@ -33,10 +33,10 @@ topics:
 
 ## 相关文章
 
+- [[finance/why-it-pays-to-stay-invested-no-amount-of-bad-news-could-stop-the-stock-markets-strongest-run-in-more-than-25-years-27654da1|坚持投资终有回报：坏消息再多，也挡不住美股创下逾25年来最强劲涨势]]
 - [[finance/ai-hardware-stocks-analysis|分析师盘点年内值得持有的六只AI硬件股]]
 - [[finance/investment-global-crises|如何在全球危机不断的环境下投资]]
 - [[finance/2026-05-27-spacex-investment|这位明星选股人在SpaceX实现火箭着陆之前就大举押注]]
-- [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]]
 
 ---
 **Topics**: [[finance/_index|Finance]], [[business/_index|Business]]  

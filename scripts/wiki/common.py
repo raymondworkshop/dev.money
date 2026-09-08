@@ -14,6 +14,12 @@ from urllib.parse import urlparse
 # --- constants ---
 
 AI_SYNTHESIS_PREFIX = "[AI Synthesis]"
+# Leading label variants LLMs often emit instead of the exact prefix.
+_SYNTHESIS_LEAD_RE = re.compile(
+    r"^(?:[*_`]+)?(?:【\s*AI\s*Synthesis\s*】|\[\s*AI\s*Synthesis\s*\]|AI\s*Synthesis)"
+    r"(?:[*_`]+)?\s*[:：\-]?\s*",
+    re.IGNORECASE,
+)
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 WIKI_LINK_RE = re.compile(r"\[\[([^\]|]+)(?:\|[^\]]+)?\]\]")
 WIKI_LINK_LABEL_RE = re.compile(r"\[\[([^\]|]+)\|([^\]]+)\]\]")
@@ -64,6 +70,19 @@ def require_mapping(payload: dict[str, Any], key: str, *, label: str = "") -> di
 def validate_slug(slug: str, label: str) -> None:
     if not SLUG_RE.fullmatch(slug):
         raise ValueError(f"{label} slug is invalid: {slug}")
+
+
+def normalize_synthesis_text(text: str) -> str:
+    """Repair common leading `[AI Synthesis]` variants; leave other text unchanged."""
+
+    stripped = text.strip()
+    if not stripped or stripped.startswith(AI_SYNTHESIS_PREFIX):
+        return stripped
+    match = _SYNTHESIS_LEAD_RE.match(stripped)
+    if not match:
+        return stripped
+    rest = stripped[match.end() :].lstrip()
+    return f"{AI_SYNTHESIS_PREFIX} {rest}" if rest else AI_SYNTHESIS_PREFIX
 
 
 def validate_synthesis_labels(items: list[str], label: str) -> None:

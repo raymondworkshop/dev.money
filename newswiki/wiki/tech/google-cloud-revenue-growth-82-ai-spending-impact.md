@@ -33,6 +33,6 @@ topics:
 ## 相关文章
 
 - [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
-- [[tech/ai-world-models-robotics|AI的下一次重大飞跃：走进现实]]
-- [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]]
-- [[tech/2026-05-29-ai-film-cannes-compute-costs|AI长片在戛纳首映：50万美元制作成本，算力支出占40万]]
+- [[tech/open-weight-ai-compute-demand|开放权重AI不会削弱算力基础设施需求]]
+- [[tech/us-nuclear-reactor-construction-smr|揭秘美国一代人以来首座核反应堆的建设攻关]]
+- [[tech/us-smr-nuclear-revival|揭秘美国一代人以来首座核反应堆的建设攻关]]

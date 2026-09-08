@@ -37,9 +37,9 @@ topics:
 ## 相关文章
 
 - [[business/spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]]
+- [[business/us-nuclear-reactor-construction-oklo|揭秘美国一代人以来首座核反应堆的建设攻关]]
+- [[business/data-center-insurance-opportunity|数据中心领域的下一个重大机遇：保险业务]]
 - [[business/apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]]
-- [[business/korean-chip-leader-s-century-divorce-ai-boom|韩国芯片掌门人的“世纪离婚”：AI狂潮中身家暴涨，前妻要求平分]]
-- [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]]
 
 ---
 **Topics**: [[business/_index|Business]], [[finance/_index|Finance]]  

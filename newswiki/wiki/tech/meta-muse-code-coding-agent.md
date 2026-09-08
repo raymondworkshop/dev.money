@@ -32,5 +32,6 @@ topics:
 ## 相关文章
 
 - [[tech/zuckerberg-ai-essay-key-points|关于扎克伯格AI长文，你需要了解的五个要点]]
+- [[business/openai-q2-revenue-slowdown-vs-anthropic|OpenAI第二季度收入增长乏力，增速逊于Anthropic]]
 - [[tech/apple-thermonuclear-response-to-openai|苹果祭出“热核”反击，迎战OpenAI威胁]]
 - [[tech/coding-agent-harness|Coding Agent Harness]]

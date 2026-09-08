@@ -39,6 +39,11 @@ topics:
 - Regulatory actions in one country can have immediate and substantial impacts on global financial markets.
 - The use of short-dated options to time profits suggests a high level of insider knowledge and operational precision.
 
+## Related Articles
+
+- [[finance/mark-walter-federal-investigation|一张隐秘交易网如何将道奇队老板卷入联邦调查]]
+- [[finance/2026-08-28-us-servicemember-kpmg-employee-are-targets-of-prediction-markets-crackdown|一美军人员与一毕马威员工成为预测市场整治行动的目标]]
+
 ---
 **Topics**: [[finance/_index|Finance]], [[finance/regulatory-risk/_index|Regulatory Risk]]  
 **Tags**: #insider-trading #regulatory-risk #cross-border-markets #market-integrity

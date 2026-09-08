@@ -27,6 +27,7 @@ topics:
 
 ## Related Articles
 
+- [[tech/no-small-software-teams|There's no such thing as a small software team anymore]]
 - [[tech/why-write-code-in-2026|Why write code in 2026]]
 - [[business/ai-software-company-moats|How does AI affect software company moats?]]
 - [[tech/rogue-ai-agents-guide|失控AI机器人世界的用户指南]]

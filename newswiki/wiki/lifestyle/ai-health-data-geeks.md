@@ -29,3 +29,7 @@ topics:
 ---
 **主题**: [[lifestyle/_index|Lifestyle Trends]], [[tech/_index|Tech]]  
 **标签**: #lifestyle #ai-health #quantified-self
+
+## 相关文章
+
+- [[lifestyle/ai-medical-report-interpretation|医生反感患者用AI解读化验单，但根本拦不住]]

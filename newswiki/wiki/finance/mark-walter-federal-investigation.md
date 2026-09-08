@@ -26,3 +26,8 @@ topics:
 ---
 **主题**: [[finance/_index|Finance]], [[business/_index|Business]]  
 **标签**: #mark-walter #private-credit #regulatory-risk
+
+## 相关文章
+
+- [[finance/private-credit-fund-liquidity-definitions|私募信贷基金的流动性如何？这取决于你如何定义“流动性”]]
+- [[finance/sea-legal-action-against-insider-traders-china-brokerage-crackdown|Sea Files Lawsuit Against 100 Anonymous Short Sellers Alleging $100M Profits from China Brokerage Crackdown Insiders]]

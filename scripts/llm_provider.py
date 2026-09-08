@@ -287,11 +287,11 @@ class OpenAICompatibleProvider:
                     data = json.loads(response.read().decode("utf-8"))
                 return str(data["choices"][0]["message"]["content"])
             except urllib.error.HTTPError as exc:
-                body = exc.read().decode("utf-8", errors="replace").strip()
-                detail = body
+                error_text = exc.read().decode("utf-8", errors="replace").strip()
+                detail = error_text
                 try:
-                    payload = json.loads(body)
-                    detail = payload.get("error", body)
+                    error_payload = json.loads(error_text)
+                    detail = error_payload.get("error", error_text)
                     if isinstance(detail, dict):
                         detail = detail.get("message", json.dumps(detail, ensure_ascii=False))
                 except json.JSONDecodeError:

@@ -45,7 +45,7 @@ DENSIFY_FLAGS = --wiki "$(WIKI)" $(if $(DRY_RUN),--dry-run)
 QUARTZ_OUT = --output "$(abspath $(SITE_OUTPUT))"
 
 .DEFAULT_GOAL := help
-.PHONY: help test venv sync densify densify-links query audit analyze publish \
+.PHONY: help test venv sync densify densify-links query audit analyze flow publish \
 	site site-prepare site-install site-build site-serve site-deploy \
 	rebuild-indexes repair-index-labels backfill-companies backfill-sources \
 	backfill-titles launchd
@@ -53,11 +53,12 @@ QUARTZ_OUT = --output "$(abspath $(SITE_OUTPUT))"
 help:
 	@echo "dev.business"
 	@echo ""
-	@echo "  make sync                              raw → wiki → densify → 关键公司"
+	@echo "  make sync                              raw → wiki → densify → 关联公司"
 	@echo "  make sync LLM_PROVIDER=gemini DRY_RUN=1"
 	@echo "  make query QUESTION=\"What is Nvidia's moat?\""
 	@echo "  make audit"
 	@echo "  make analyze TICKER=MSFT"
+	@echo "  make flow TICKER=SPY                   价量买卖痕迹提示"
 	@echo "  make site                              build Quartz"
 	@echo "  make site SERVE=1 SITE_PORT=8081       local preview"
 	@echo "  make site DEPLOY=1                     build + Cloudflare Pages"
@@ -104,6 +105,10 @@ audit: ; $(RUN)/wiki.py audit $(WIKI_FLAGS) --outputs "$(OUTPUTS)" $(LLM_FLAGS)
 analyze:
 	@test -n "$(TICKER)" || (echo "Usage: make analyze TICKER=MSFT"; exit 1)
 	$(RUN)/analyze.py "$(TICKER)"
+
+flow:
+	@test -n "$(TICKER)" || (echo "Usage: make flow TICKER=SPY"; exit 1)
+	$(RUN)/flow.py "$(TICKER)"
 
 rebuild-indexes: ; $(RUN)/wiki.py rebuild-indexes --wiki "$(WIKI)"
 repair-index-labels: ; $(RUN)/wiki.py rebuild-indexes --wiki "$(WIKI)" --repair-index-labels

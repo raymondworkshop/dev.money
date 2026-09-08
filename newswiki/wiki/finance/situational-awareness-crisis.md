@@ -30,3 +30,10 @@ topics:
 ---
 **主题**: [[finance/_index|Finance]], [[tech/_index|Tech]]  
 **标签**: #situational-awareness #hedge-fund #leverage-risk #ai-bubble
+
+## 相关文章
+
+- [[finance/leopold-aschenbrenner-ai-prophet|从早慧少年到跌落神坛的“AI先知”：起底阿申布伦纳背后的人脉网]]
+- [[finance/citadel-buys-situational-awareness-portfolio|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]]
+- [[finance/situational-awareness-citadel-acquisition|前OpenAI员工执掌的对冲基金陷入巨亏，Citadel出手收购其股票投资组合]]
+- [[tech/2026-05-29-ai-film-cannes-compute-costs|AI长片在戛纳首映：50万美元制作成本，算力支出占40万]]

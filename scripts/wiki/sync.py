@@ -26,6 +26,7 @@ from wiki.common import (
     load_agents_contract,
     markdown_external_link,
     normalize_path_punctuation,
+    normalize_synthesis_text,
     parse_raw_front_matter,
     relative_prefix,
     reject_fixture_provider,
@@ -352,6 +353,48 @@ def validate_proposal(proposal: dict[str, Any], raw_path: Path) -> None:
         raise ValueError("article.front_matter.source is required for create_article.")
 
 
+def normalize_proposal_synthesis_labels(proposal: dict[str, Any]) -> list[str]:
+    """Repair leading AI Synthesis label variants before strict validation."""
+
+    if proposal.get("action") != "create_article":
+        return []
+
+    article = proposal.get("article")
+    if not isinstance(article, dict):
+        return []
+
+    notes: list[str] = []
+    sections = article.get("sections")
+    if isinstance(sections, list):
+        for section in sections:
+            if not isinstance(section, dict):
+                continue
+            bullets = section.get("bullets")
+            if not isinstance(bullets, list):
+                continue
+            fixed: list[str] = []
+            for bullet in bullets:
+                original = str(bullet)
+                repaired = normalize_synthesis_text(original)
+                if repaired != original.strip():
+                    notes.append(f"Normalized synthesis label on section bullet: {original!r}")
+                fixed.append(repaired)
+            section["bullets"] = fixed
+
+    takeaways = article.get("key_takeaways")
+    if isinstance(takeaways, list):
+        fixed_takeaways: list[str] = []
+        for item in takeaways:
+            original = str(item)
+            repaired = normalize_synthesis_text(original)
+            if repaired != original.strip():
+                notes.append(f"Normalized synthesis label on key takeaway: {original!r}")
+            fixed_takeaways.append(repaired)
+        article["key_takeaways"] = fixed_takeaways
+
+    return notes
+
+
 def normalize_proposal_language(proposal: dict[str, Any], raw_path: Path) -> list[str]:
     if proposal.get("action") != "create_article":
         return []
@@ -516,13 +559,15 @@ def apply_proposal(
     normalize_proposal_slugs(proposal, raw_path)
     normalize_proposal_paths(proposal)
     normalize_proposal_source_file(proposal, raw_path)
+    synthesis_notes = normalize_proposal_synthesis_labels(proposal)
     validate_proposal(proposal, raw_path)
     action = str(proposal["action"])
     result = CompileResult(
         source_file=raw_path.name,
         action=action,
         dry_run=dry_run,
-        review_notes=[str(n) for n in proposal.get("review_notes", []) or []],
+        review_notes=[str(n) for n in proposal.get("review_notes", []) or []]
+        + synthesis_notes,
     )
 
     if action in {"skip_duplicate", "needs_review"}:

@@ -5,12 +5,12 @@ created: "2026-05-30"
 
 ## 近排文章
 
-- <span class="recent-date">2026-08-22</span> [[finance/ai-hardware-stocks-analysis|分析師盤點年內值得持有的六隻AI硬件股]]
-- <span class="recent-date">2026-08-22</span> [[tech/ai-world-models-robotics|AI的下一次重大飛躍：走進現實]]
-- <span class="recent-date">2026-08-21</span> [[tech/codex-vs-claude-impressions|Quick impressions: A week of using Codex more than Claude]]
-- <span class="recent-date">2026-08-18</span> [[lifestyle/us-seniors-global-travel-boom|有錢有閒能折騰：美國老年人正推動全球旅遊熱潮]]
-- <span class="recent-date">2026-08-18</span> [[finance/situational-awareness-crisis|華爾街如何嗅到了Situational Awareness危機爆發的氣息]]
-- <span class="recent-date">2026-08-18</span> [[tech/warehouse-robotics-adoption|倉庫正越來越多地使用機器人]]
+- <span class="recent-date">2026-09-07</span> [[finance/us-retail-investors-ai-agents-portfolio-management|美國散戶把投資組合交由AI智能體管理，甚至給它們起了名字]]
+- <span class="recent-date">2026-09-07</span> [[lifestyle/taiwan-temples-religious-life-china-contrast|漫步於臺灣廟宇，我窺見中國另一種可能的模樣]]
+- <span class="recent-date">2026-09-07</span> [[career/americans-without-college-degrees-best-job-market|無大學學歷的美國人正迎來多年來最好的就業市場之一]]
+- <span class="recent-date">2026-09-07</span> [[business/data-center-insurance-opportunity|數據中心領域的下一個重大機遇：保險業務]]
+- <span class="recent-date">2026-09-07</span> [[business/moonshot-ai-yang-zhilin-profile|將“硅谷範兒”帶回北京的33歲AI風雲人物]]
+- <span class="recent-date">2026-09-04</span> [[business/nvidia-acquires-hugging-face-13b|英偉達重磅收購Hugging Face背後：“硬核極客”創始人的開源AI之路]]
 - [[articles|再睇多啲]]
 
 ## 編輯方針

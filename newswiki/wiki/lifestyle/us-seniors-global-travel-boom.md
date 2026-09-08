@@ -28,3 +28,9 @@ topics:
 ---
 **主题**: [[lifestyle/_index|Lifestyle Trends]], [[business/_index|Business]]  
 **标签**: #baby-boomers #travel-industry #wealth-management #consumption-trends
+
+## 相关文章
+
+- [[finance/tiktok-financial-advice-analysis|盘点TikTok上满天飞的理财“秘籍”]]
+- [[finance/wealth-management-cash-problem|财富管理行业面临3万亿美元难题：投资者持有太多现金]]
+- [[finance/john-overdeck-divorce|一位对冲基金巨头的离婚案曝光华尔街惊人财富]]

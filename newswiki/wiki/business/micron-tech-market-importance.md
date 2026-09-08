@@ -31,7 +31,7 @@ topics:
 
 ## 相关文章
 
+- [[finance/semiconductor-stocks-correction|芯片股涨势遇阻，但一些分析师认为有理由保持乐观]]
+- [[finance/chip-stocks-rally-hit-wall-optimism|芯片股涨势遇阻，但一些分析师认为有理由保持乐观]]
 - [[finance/chip-profits-investor-dissatisfaction|芯片公司利润飙升，投资者为何仍不满意？]]
 - [[tech/ai-calculation-competition|AI巨头派发大量免费算力，争夺初创公司市场份额]]
-- [[business/meta-q2-earnings-ai-spending-drop|Meta股价大跌10%，因AI支出增加且展望不及预期]]
-- [[business/apple-micron-china-chip-lobbying|苹果与美光掀起中国芯片游说战，特朗普陷入两难]]

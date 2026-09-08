@@ -31,6 +31,7 @@ topics:
 
 ## 相关文章
 
+- [[finance/why-it-pays-to-stay-invested-no-amount-of-bad-news-could-stop-the-stock-markets-strongest-run-in-more-than-25-years-27654da1|坚持投资终有回报：坏消息再多，也挡不住美股创下逾25年来最强劲涨势]]
 - [[finance/berkshire-and-japanese-builders-see-opportunity-in-us-housing|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]]
 - [[finance/investment-global-crises|如何在全球危机不断的环境下投资]]
 - [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]]

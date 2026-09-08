@@ -1,6 +1,6 @@
 # Archive Status
 
-**Last Updated:** 2026-08-24 2026-08-22 2026-08-22 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-28 2026-07-28 2026-07-28 2026-07-28 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
+**Last Updated:** 2026-09-07 2026-09-07 2026-09-07 2026-09-07 2026-09-07 2026-09-07 2026-09-07 2026-09-07 2026-09-07 2026-09-07 2026-09-03 2026-09-03 2026-09-03 2026-09-03 2026-09-03 2026-09-03 2026-09-03 2026-09-03 2026-09-03 2026-09-03 2026-09-03 2026-08-31 2026-08-31 2026-08-31 2026-08-31 2026-08-31 2026-08-31 2026-08-31 2026-08-31 2026-08-31 2026-08-31 2026-08-31 2026-08-31 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-27 2026-08-24 2026-08-22 2026-08-22 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-12 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-11 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-07 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-06 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-04 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-08-03 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-31 2026-07-28 2026-07-28 2026-07-28 2026-07-28 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-27 2026-07-25 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-24 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-21 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17 2026-07-17
 
 ## Compilation Batch: 2026-05-27 (5 articles)
 
@@ -103,6 +103,64 @@ All files compiled from raw/ to wiki/ and then archived here.
 
 | File | Topic | Wiki Location | Status |
 |------|-------|---------------|--------|
+| 2026-09-07-英伟达重磅收购Hugging Face背后：“硬核极客”创始人的开源AI之路.md | 商业 | `newswiki/wiki/business/nvidia-acquires-hugging-face-13b.md` | Archived |
+| 2026-09-07-美国散户把投资组合交由AI智能体管理，甚至给它们起了名字.md | 金融 | `newswiki/wiki/finance/us-retail-investors-ai-agents-portfolio-management.md` | Archived |
+| 2026-09-07-漫步于台湾庙宇，我窥见中国另一种可能的模样.md | 生活 | `newswiki/wiki/lifestyle/taiwan-temples-religious-life-china-contrast.md` | Archived |
+| 2026-09-07-无大学学历的美国人正迎来多年来最好的就业市场之一.md | 职场 | `newswiki/wiki/career/americans-without-college-degrees-best-job-market.md` | Archived |
+| 2026-09-07-数据中心领域的下一个重大机遇：保险业务.md | 商业 | `newswiki/wiki/business/data-center-insurance-opportunity.md` | Archived |
+| 2026-09-07-将“硅谷范儿”带回北京的33岁AI风云人物.md | 商业 | `newswiki/wiki/business/moonshot-ai-yang-zhilin-profile.md` | Archived |
+| 2026-09-04-探访华尔街精英荒野营：人人皆对AI热潮心生寒意.md | 金融 | `newswiki/wiki/finance/wall-street-ai-anxiety-camp-kotok.md` | Archived |
+| 2026-09-04-初创公司创始人恨不得24小时工作，以跟上自家AI智能体.md | 商业 | `newswiki/wiki/business/startup-founders-24-hour-work-ai-agents.md` | Archived |
+| 2026-09-04-AI的下一次重大飞跃：走进现实世界.md | 科技 | `newswiki/wiki/tech/world-models-robotics-next-ai-leap.md` | Archived |
+| 2026-08-21-There's no such thing as a small software team anymore.md | 科技 | `newswiki/wiki/tech/theres-no-such-thing-as-a-small-software-team.md` | Archived |
+| 2026-09-03-“抗AI”资产有哪些？投资人目光投向体育、赌场和旅游业.md | 金融 | `newswiki/wiki/finance/ai-proof-assets-investors-turn-to-sports-casinos-and-tourism.md` | Archived |
+| 2026-09-02-海岛度假天堂如何成为俄罗斯躲避制裁的隐秘枢纽.md | 商业 | `newswiki/wiki/business/theisland-paradise-that-is-a-secret-hub-for-russian-sanctions-evasion-e440a594.md` | Archived |
+| 2026-09-02-债券市场给全球领导人打出不及格分数.md | 金融 | `newswiki/wiki/finance/2026-09-02-bond-market-fails-global-leaders.md` | Archived |
+| 2026-09-02-你的财商有多高？来跟美国高中生比一比.md | 金融 | `newswiki/wiki/finance/2026-09-02-your-financial-quotient-how-high.md` | Archived |
+| 2026-09-02-中国精品葡萄酒热潮背后的神秘酒庄.md | 生活 | `newswiki/wiki/lifestyle/china-premium-wine-boom-mystery-vineyard.md` | Archived |
+| 2026-09-02-一位对冲基金巨头的离婚案曝光华尔街惊人财富.md | 金融 | `newswiki/wiki/finance/john-overdeck-divorce.md` | Archived |
+| 2026-09-02-“林肯号”航母高强度部署告一段落，泰国芭提雅准备迎接船员.md | 生活 | `newswiki/wiki/lifestyle/lincoln-class-ship-deployment-pattaya.md` | Archived |
+| 2026-09-01-How I Turned My Security Cameras Into an Automatic Bird Identification System with BirdNet-Go.md | 科技 | `newswiki/wiki/tech/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go.md` | Archived |
+| 2026-09-01-How I Turned My Security Cameras Into an Automatic Bird Identification System with BirdNet-Go 1.md | 科技 | `newswiki/wiki/tech/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go.md` | Archived |
+| 2026-08-31-美国企业利润大幅增长，预计未来景气持续.md | 商业 | `newswiki/wiki/business/corporate-profit-america-589e4848.md` | Archived |
+| 2026-08-31-How Credit Card Rewards Became a $9.2 Billion Wealth Transfer.md | 金融 | `newswiki/wiki/finance/how-credit-card-rewards-became-a-9-2-billion-wealth-transfer.md` | Archived |
+| 2026-08-31-闯入我们家庭假期的不速之客：老妈的AI聊天机器人.md | 生活 | `newswiki/wiki/lifestyle/e9-97-af-e5-85-a5-e6-88-91-e4-bb-ac-e5-ae-b6-e5-ba-ad-e5-81-.md` | Archived |
+| 2026-08-31-英伟达瞄准全球机器人赛道，中国市场需求强劲.md | 科技 | `newswiki/wiki/tech/nvidia-targets-global-robotics-china-demand-strong.md` | Archived |
+| 2026-08-31-美国新关税大棒之下，加拿大中小企业首当其冲.md | 商业 | `newswiki/wiki/business/e7-be-8e-e5-9b-bd-e6-96-b0-e5-85-b3-e7-a8-8e-e5-a4-a7-e6-a3-.md` | Archived |
+| 2026-08-31-美债今夏境况堪忧？海外债市更加惨淡.md | 金融 | `newswiki/wiki/finance/think-treasurys-are-having-a-rough-summer-its-even-uglier-abroad-0c41b967.md` | Archived |
+| 2026-08-31-华尔街动能交易突然遭遇溃败.md | 金融 | `newswiki/wiki/finance/2026-08-31-wall-street-momentum-trading-fails.md` | Archived |
+| 2026-08-31-中国精品葡萄酒热潮背后的神秘酒庄.md | 生活 | `newswiki/wiki/lifestyle/china-premium-wine-boom-behind-mystery-vineyard.md` | Archived |
+| 2026-08-31-中国放宽房地产信贷融资以期提振该行业.md | 金融 | `newswiki/wiki/finance/china-eases-property-financing-to-boost-sector.md` | Archived |
+| 2026-08-28-一美军人员与一毕马威员工成为预测市场整治行动的目标.md | 金融 | `newswiki/wiki/finance/2026-08-28-us-servicemember-kpmg-employee-are-targets-of-prediction-markets-crackdown.md` | Archived |
+| 2026-08-28-AI选股能力真的提升了吗？.md | 金融 | `newswiki/wiki/finance/ai-guaxuan-nengli-zhen-deng-ti-shi-di-le-ma.md` | Archived |
+| 2026-08-20-菲律宾为何对美国的亚洲战略至关重要？.md | 商业 | `newswiki/wiki/business/philippines-central-to-us-asia-strategy.md` | Archived |
+| 2026-08-20-我为何要求聊天机器人别再对我过度谄媚.md | 职场 | `newswiki/wiki/career/e6-88-91-e4-b8-ba-e4-bd-95-e8-a6-81-e6-b1-82-e8-81-8a-e5-a4-.md` | Archived |
+| 2026-08-18-坚持投资终有回报：坏消息再多，也挡不住美股创下逾25年来最强劲涨势.md | 金融 | `newswiki/wiki/finance/why-it-pays-to-stay-invested-no-amount-of-bad-news-could-stop-the-stock-markets-strongest-run-in-more-than-25-years-27654da1.md` | Archived |
+| 2026-08-27-AI选股能力真的提升了吗？.md | 金融 | `newswiki/wiki/finance/ai-stock-picking-performance.md` | Archived |
+| 2026-08-21-芯片股涨势遇阻，但一些分析师认为有理由保持乐观.md | 金融 | `newswiki/wiki/finance/semiconductor-stocks-correction.md` | Archived |
+| 2026-08-21-旅游业停滞不前，夏威夷追逐创业浪潮.md | 商业 | `newswiki/wiki/business/hawaii-startup-wave.md` | Archived |
+| 2026-08-21-推动中国AI实现惊人飞跃的幕后智囊.md | 科技 | `newswiki/wiki/tech/china-ai-leap-brains.md` | Archived |
+| 2026-08-21-打破年龄魔咒：66岁老人重返职场之路.md | 职场 | `newswiki/wiki/career/66-year-old-job-search.md` | Archived |
+| 2026-08-21-小特朗普曾力挺的MAGA电商平台崩盘内幕.md | 商业 | `newswiki/wiki/business/publicsquare-collapse.md` | Archived |
+| 2026-08-21-哈里与梅根的美国梦终结.md | 生活 | `newswiki/wiki/lifestyle/harry-meghan-american-dream-end.md` | Archived |
+| 2026-08-21-There's no such thing as a small software team anymore 1.md | 科技 | `newswiki/wiki/tech/no-small-software-teams.md` | Archived |
+| 2026-08-20-贝森特为何在美债市场做文章.md | 金融 | `newswiki/wiki/finance/bessent-bond-market-analysis.md` | Archived |
+| 2026-08-20-当AI监控你的日常工作时，该如何智胜它？.md | 职场 | `newswiki/wiki/career/outsmart-ai-workday-tracking.md` | Archived |
+| 2026-08-20-哈里王子与梅根将搬回英国.md | 生活 | `newswiki/wiki/lifestyle/prince-harry-meghan-return-to-uk.md` | Archived |
+| 2026-08-20-企业正在量子技术上投入巨资.md | 商业 | `newswiki/wiki/business/corporate-quantum-investment.md` | Archived |
+| 2026-08-20-不顾“禁爱令”，领英意外成为约会神器.md | 生活 | `newswiki/wiki/lifestyle/linkedin-dating-trend.md` | Archived |
+| 2026-08-20-AI is removing the middle class of software engineering.md | 职场 | `newswiki/wiki/career/ai-removing-middle-class-software-engineering.md` | Archived |
+| 2026-08-19-这家庞大的中国炼油厂如何成为伊朗资金生命线.md | 商业 | `newswiki/wiki/business/hengli-group-iran-oil-lifeline.md` | Archived |
+| 2026-08-19-美国银行CEO与华尔街玩儿的秘密文字游戏.md | 金融 | `newswiki/wiki/finance/bank-of-america-ceo-vocabulary-game.md` | Archived |
+| 2026-08-19-新一轮拨款动荡逼近，美国科学家争相寻求私人资本.md | 商业 | `newswiki/wiki/business/us-science-funding-private-capital.md` | Archived |
+| 2026-08-19-揭秘美国一代人以来首座核反应堆的建设攻关.md | 科技 | `newswiki/wiki/tech/us-smr-nuclear-revival.md` | Archived |
+| 2026-08-19-揭秘美国一代人以来首座核反应堆的建设攻关 1.md | 商业 | `newswiki/wiki/business/us-nuclear-reactor-construction-oklo.md` | Archived |
+| 2026-08-19-估值210亿美元的“芯片小子”初创公司大举挖角英伟达人才.md | 科技 | `newswiki/wiki/tech/etched-nvidia-talent-poaching.md` | Archived |
+| 2026-08-19-企业正在量子技术上投入巨资.md | 科技 | `newswiki/wiki/tech/corporate-quantum-investment.md` | Archived |
+| 2026-08-19-“无就业”繁荣时代已经到来.md | 职场 | `newswiki/wiki/career/jobless-boom-era.md` | Archived |
+| 2026-08-19-OpenAI第二季度收入增长乏力，增速逊于Anthropic.md | 商业 | `newswiki/wiki/business/openai-q2-revenue-slowdown.md` | Archived |
+| 2026-08-19-AI让图书出版业陷入一片混乱.md | 商业 | `newswiki/wiki/business/ai-chaos-book-publishing.md` | Archived |
+| 2026-08-19-AI is removing the middle class of software engineering.md | 职场 | `newswiki/wiki/career/ai-removing-middle-class-software-engineering.md` | Archived |
 | 2026-08-23-Quick impressions A week of using Codex more than Claude.md | 科技 | `newswiki/wiki/tech/codex-vs-claude-impressions.md` | Archived |
 | 2026-08-22-分析师盘点年内值得持有的六只AI硬件股.md | Finance | `newswiki/wiki/finance/ai-hardware-stocks-analysis.md` | Archived |
 | 2026-08-22-AI的下一次重大飞跃：走进现实.md | Tech | `newswiki/wiki/tech/ai-world-models-robotics.md` | Archived |

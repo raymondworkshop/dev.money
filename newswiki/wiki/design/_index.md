@@ -9,9 +9,8 @@
 - **投资视角**: 用户粘性、设计护城河、工具链
 
 ## 相关文章
-- [[ukraine-fire-point-ceo-iryna-terekh|重创俄军的乌克兰无人机出自一位90后家具设计师之手]] (2026-08-17) - 探讨 Fire Point 如何通过设计优化实现无人机量产。
+- [[ukraine-fire-point-ceo-iryna-terekh|重创俄军的乌克兰无人机出自一位90后家具设计师之手]] (2026-08-17) - 34岁的伊琳娜·捷列赫曾是一位长椅设计师，如今则是乌克兰最大私营防务公司Fire Point的首席执行官。
 - [[seven-books-i-keep-close|Seven books I keep close because I love them]] (2026-08-17) - From the highly eclectic blog of Mark Dominus
-- [[ai-health-data-geeks|把日常健康数据喂给AI的“数据极客”]] (2026-08-12) - 从备战马拉松到排解职场焦虑，健康狂热者正将个人数据接入聊天机器人，打造极致个性化的专属教练。
 - [[pentaton-lp|Pentaton LP • Pentaton]] (2026-08-11) - A vinyl-sleeve-sized music streamer designed to make digital music feel analog again through a high-resolution display for cover art.
 - [[how-i-use-llms-to-learn|How I use LLMs to learn complex topics]] (2026-08-09) - LLMs are used for any things. Learning new things is one of the top use cases.
 - [[whatnot-live-shopping-app|在这款直播购物应用里，有人一路竞拍直至倾家荡产]] (2026-08-05) - 直播购物应用Whatnot凭借极速竞拍和狂热的“拆卡”模式快速吸引用户，拍品涵盖稀有体育卡牌、时尚服饰、工具及食品等各类商品。
@@ -29,6 +28,7 @@
 - [[Product-Design-Ello-Real-Time-Response|Ello Listens, Adapts & Responds in Real Time]] (2026-07-10) - Every Ello session is built around your child — their level, their interests, their pace. See how Ello personalizes reading and math.
 - [[upper-body-dumbbell-bench-press|Upper Body Dumbbell Bench Press: Step-by-Step Guide for Proper Form]] (2026-07-05) - A detailed guide to performing the upper body dumbbell bench press with proper form, including video demonstration and key movement cues to prevent injury and maximize effectiveness.
 - [[my-homelab-ai-dev-platform|My Homelab AI Dev Platform]] (2026-06-14) - Self-hosting OpenCode Web for GitOps style homelab changes.
+- [[how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go|How I Turned My Security Cameras Into an Automatic Bird Identification System with BirdNet-Go]] (2026-06-05) - I turned three security cameras into an automatic bird identification system using BirdNet-Go. Now my wife and I can track every bird species that visits our yard in real-time.
 - [[science-communication-actor-method|科学公信力断崖式下跌，一位演员给出了解法]] (2026-06-05) - 出演过《陆军野战医院》的艾伦·阿尔达发起了一个帮助研究人员克服沟通障碍的项目，如今已吸引了数万人参与。我们旁听了一堂课。
 - [[nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] (2026-06-01) - 英伟达将与戴尔、联想和惠普等制造商合作生产这些笔记本电脑，这些电脑专为支持智能体计算而设计。
 

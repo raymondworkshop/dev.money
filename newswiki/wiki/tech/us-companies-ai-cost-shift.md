@@ -41,3 +41,7 @@ topics:
 ---
 **主题**: [[tech/_index|Tech]], [[business/_index|Business]]  
 **标签**: #tech #ai-economics #model-mixing
+
+## 相关文章
+
+- [[business/openai-q2-revenue-slowdown|OpenAI第二季度收入增长乏力，增速逊于Anthropic]]

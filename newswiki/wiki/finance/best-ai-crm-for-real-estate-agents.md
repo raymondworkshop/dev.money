@@ -24,6 +24,7 @@ topics:
 ## Related Articles
 
 - [[finance/2026-05-26-office-residential-conversion-denver|抄底全美最空荡市中心：他能说服人们住进写字楼吗？]]
+- [[tech/warehouse-robotics-adoption|仓库正越来越多地使用机器人]]
 
 ---
 **Topics**: [[finance/_index|Finance]], [[tech/_index|Tech]]  

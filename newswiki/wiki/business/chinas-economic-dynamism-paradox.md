@@ -44,4 +44,5 @@ ightarrow$ 产生行业冠军但缺乏长期制度承诺。
 ## 相关文章
 
 - [[business/china-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]]
+- [[business/us-science-funding-private-capital|新一轮拨款动荡逼近，美国科学家争相寻求私人资本]]
 - [[business/industrial-defense-legacy|美国工业与国防的联系可追溯至建国之初]]

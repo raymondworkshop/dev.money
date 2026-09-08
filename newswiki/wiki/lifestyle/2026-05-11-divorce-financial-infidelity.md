@@ -25,6 +25,10 @@ topics:
 - 个人应保持对家庭财务的适度主动权和财务知情度，不应将财务决策权完全让渡给伴侣。
 - [AI Synthesis] 现代理财规划中，需要把家庭组织视为一个具有有限合伙性质的治理实体。在防范单边隐性财务杠杆和成瘾消费（如线上博彩、高风险杠杆炒作）的同时，应通过制度性共享共享账单维护治理平稳。
 
+## 相关文章
+
+- [[finance/2026-09-02-your-financial-quotient-how-high|你的财商有多高？来跟美国高中生比一比]]
+
 ---
 **Topics**: [[lifestyle/_index|Lifestyle Trends]], [[finance/_index|Finance]]  
 **Tags**: #personal-finance #divorce-economics #household-governance #legal-risk

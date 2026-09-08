@@ -27,3 +27,8 @@ topics:
 ---
 **主题**: [[finance/_index|Finance]]  
 **标签**: #yen #forex-intervention #us-treasury
+
+## 相关文章
+
+- [[finance/bessent-bond-market-analysis|贝森特为何在美债市场做文章]]
+- [[finance/bessent-us-treasury-bond-market|贝森特为何在美债市场做文章]]

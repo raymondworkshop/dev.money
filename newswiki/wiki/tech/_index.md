@@ -9,14 +9,57 @@ AI模型、機器人与智能体如何重塑基础设施與生產力
 - **投资视角**: 算力需求、技术迭代、供应链
 
 ## 相关文章
+- [[data-center-insurance-opportunity|数据中心领域的下一个重大机遇：保险业务]] (2026-09-07) - AI超大规模数据中心在建设和运营过程中面临纷繁复杂的潜在威胁。这为保险公司创造了一个巨大的新商机。
+- [[moonshot-ai-yang-zhilin-profile|将“硅谷范儿”带回北京的33岁AI风云人物]] (2026-09-07) - 杨植麟放弃了在美国发展事业的机会，回国创立了月之暗面，其推出的开放权重模型令全球市场为之一震。
+- [[us-retail-investors-ai-agents-portfolio-management|美国散户把投资组合交由AI智能体管理，甚至给它们起了名字]] (2026-09-07) - 美国人正通过“氛围编程”构建交易算法，并将自己的股票投资组合交由AI智能体打理，运营掌握量化交易策略的“迷你对冲基金”。
+- [[nvidia-acquires-hugging-face-13b|英伟达重磅收购Hugging Face背后：“硬核极客”创始人的开源AI之路]] (2026-09-04) - 这家初创公司起初只是一款以emoji命名的青少年应用，如今成了开源AI领域的先锋。
+- [[2026-09-02-bond-market-fails-global-leaders|债券市场给全球领导人打出不及格分数]] (2026-09-02) - 从本周的G20峰会来看，丝毫没有迹象表明当前困扰投资者的赤字、通胀和地缘政治问题将告一段落。
+- [[corporate-profit-america-589e4848|美国企业利润大幅增长，预计未来景气持续]] (2026-08-31) - 美国最大型企业的利润正强劲增长，这些企业的掌舵人表示，这种势头短期内料将延续。
+- [[nvidia-targets-global-robotics-china-demand-strong|英伟达瞄准全球机器人赛道，中国市场需求强劲]] (2026-08-31) - 英伟达的物理AI业务不断增长，与此同时，中国机器人制造商正依赖美国芯片和软件工具来训练和操作设备。
+- [[2026-08-31-wall-street-momentum-trading-fails|华尔街动能交易突然遭遇溃败]] (2026-08-31) - 押注大涨赢家的“动能交易”骤然沦为输家，让此前依赖其成功的投资者措手不及。
+- [[2026-08-28-us-servicemember-kpmg-employee-are-targets-of-prediction-markets-crackdown|一美军人员与一毕马威员工成为预测市场整治行动的目标]] (2026-08-28) - 知情人士称，这两宗案件可能会在今年秋季提出指控。
+- [[think-treasurys-are-having-a-rough-summer-its-even-uglier-abroad-0c41b967|美债今夏境况堪忧？海外债市更加惨淡]] (2026-08-28) - 包括法国、意大利、英国和日本在内的债务负担沉重的国家，近几个月来面临着巨大压力。
+- [[e9-97-af-e5-85-a5-e6-88-91-e4-bb-ac-e5-ae-b6-e5-ba-ad-e5-81-|闯入我们家庭假期的不速之客：老妈的AI聊天机器人]] (2026-08-28) - 作为一个对AI心存怀疑和恐惧的千禧一代，当我发现年逾七旬的父母竟然迷上了Claude时，那份错愕可想而知。
+- [[ai-guaxuan-nengli-zhen-deng-ti-shi-di-le-ma|AI选股能力真的提升了吗？]] (2026-08-27) - 哪怕有AI加持，想要跑赢大盘依然困难重重。这让华尔街的许多人感到惊讶。
+- [[ai-stock-picking-performance|AI选股能力真的提升了吗？]] (2026-08-27) - 哪怕有AI加持，想要跑赢大盘依然困难重重。这让华尔街的许多人感到惊讶。
+- [[amd-data-center-cpu-market|AMD为何有望在数据中心CPU市场击败英特尔和英伟达]] (2026-08-26) - 周二，AMD股价上涨。此前一位分析师上调了该股评级，并强调在蓬勃发展的服务器中央处理器市场中，该公司相比竞争对手更具优势。
+- [[leopold-aschenbrenner-ai-prophet|从早慧少年到跌落神坛的“AI先知”：起底阿申布伦纳背后的人脉网]] (2026-08-26) - 这位24岁的投资者曾被誉为远见卓识的奇才，吸引了数以十亿美元计的资金，最终却沦为华尔街最新的反面教材。
+- [[bill-gates-ai-warning-no-plan|比尔·盖茨发表5784字AI警告：全球“没有应对计划”]] (2026-08-26) - 这位亿万富豪兼慈善家呼吁实施监管与全球协调，以应对AI可能给就业、安全及人类福祉带来的危害。
+- [[wall-street-ai-anxiety-camp-kotok|探访华尔街精英荒野营：人人皆对AI热潮心生寒意]] (2026-08-25) - 在垂钓和打牌的间隙，资深金融从业者们吐露了对AI交易的担忧。
+- [[startup-founders-24-hour-work-ai-agents|初创公司创始人恨不得24小时工作，以跟上自家AI智能体]] (2026-08-24) - AI智能体日益强大的能力，赋予了“拼命工作”全新的含义。AI智能体干的活越多，创始人们发现自己要干的活也越多。
 - [[ai-world-models-robotics|AI的下一次重大飞跃：走进现实]] (2026-08-22) - 工程师与投资者正竞相涌入“世界模型”赛道，期望在机器人领域复刻ChatGPT在写作与编程界引发的革命。
+- [[world-models-robotics-next-ai-leap|AI的下一次重大飞跃：走进现实世界]] (2026-08-22) - 工程师与投资者正竞相涌入“世界模型”赛道，期望在机器人领域复刻ChatGPT在写作与编程界引发的革命。
 - [[ai-hardware-stocks-analysis|分析师盘点年内值得持有的六只AI硬件股]] (2026-08-22) - 今年以来，Western Digital的股价已飙升近170%。一位分析师预计，存储设备制造商、网络设备提供商以及苹果公司将迎来强劲增长。
+- [[china-ai-brains-leap|推动中国AI实现惊人飞跃的幕后智囊]] (2026-08-21) - 凭借创新与模仿，中国高校实验室走出的计算机科学家正紧追Anthropic和OpenAI的步伐；他们“很懂怎么把研究成果变现”。
+- [[china-ai-leap-brains|推动中国AI实现惊人飞跃的幕后智囊]] (2026-08-21) - 凭借创新与模仿，中国高校实验室走出的计算机科学家正紧追Anthropic和OpenAI的步伐；他们“很懂怎么把研究成果变现”。
 - [[codex-vs-claude-impressions|Quick impressions: A week of using Codex more than Claude]] (2026-08-21) - Claude goes above and beyond what is asked and guesses what you might want. Codex does what you tell it and stops at the first sign that it might be done. Ten impressions from a week of using Codex more.
-- [[situational-awareness-crisis|华尔街如何嗅到了Situational Awareness危机爆发的气息]] (2026-08-18) - 探讨 Situational Awareness 基金因高杠杆和 AI 股票暴跌引发的流动性危机及 Citadel 的收购。
-- [[warehouse-robotics-adoption|仓库正越来越多地使用机器人]] (2026-08-18) - 劳动力成本上升驱动仓储自动化投资增长
-- [[open-weight-ai-compute-demand|开放权重AI不会削弱算力基础设施需求]] (2026-08-17) - 分析开放权重模型如何通过杰文斯悖论反而增加算力需求
-- [[big-tech-ai-spending-off-balance-sheet|科技巨头的AI支出或比表面看起来还要高出3万亿美元]] (2026-08-17) - 揭露科技巨头 3 万亿美元的表外 AI 支出承诺及其潜在财务风险
+- [[hawaii-startup-wave|旅游业停滞不前，夏威夷追逐创业浪潮]] (2026-08-20) - 夏威夷州政府官员认为，只需培育少数高科技企业，就能孕育出全新的产业，从而阻止技术人才流失至美国本土。
+- [[philippines-central-to-us-asia-strategy|菲律宾为何对美国的亚洲战略至关重要？]] (2026-08-20) - 美军正通过举行日益复杂的军事演习、部署导弹和新建基础设施，不断加强在菲律宾这个前殖民地的军事存在，以应对来自中国的军事威胁。
+- [[no-small-software-teams|There's no such thing as a small software team anymore]] (2026-08-20) - Uber infamously runs thousands of microservices. They ended up with so many services because hundreds of engineers wanted to deploy on their own schedule, with clear ownership of their code, instead of waiting in one giant merge queue.For decades a small team with 5 or 10 people writing code at the same time didn’t even need to consider doing this. On a busy day a small team might generate 50 commits/20 pushes/10 PRs. A small team today, running 20-100 agents in parallel, might generate 500 commits/200 pushes/100 PRs.
+- [[theres-no-such-thing-as-a-small-software-team|There's no such thing as a small software team anymore]] (2026-08-20) - Uber infamously runs thousands of microservices. They ended up with so many services because hundreds of engineers wanted to deploy on their own schedule, with clear ownership of their code, instead of waiting in one giant merge queue.For decades a small team with 5 or 10 people writing code at the same time didn’t even need to consider doing this. On a busy day a small team might generate 50 commits/20 pushes/10 PRs. A small team today, running 20-100 agents in parallel, might generate 500 commits/200 pushes/100 PRs.
+- [[bessent-bond-market-analysis|贝森特为何在美债市场做文章]] (2026-08-20) - 简单的解释是，世界正步入一个资本需求的新时代，数据中心、军工领域以及支持制造业回流都需要资金。
+- [[bessent-us-treasury-bond-market|贝森特为何在美债市场做文章]] (2026-08-20) - 简单的解释是，世界正步入一个资本需求的新时代，数据中心、军工领域以及支持制造业回流都需要资金。
+- [[chip-stocks-rally-hit-wall-optimism|芯片股涨势遇阻，但一些分析师认为有理由保持乐观]] (2026-08-20) - 随着AI交易热度有所消退，加之投资者将资金转投市场其他领域，半导体类股周三再次承压。
+- [[semiconductor-stocks-correction|芯片股涨势遇阻，但一些分析师认为有理由保持乐观]] (2026-08-20) - 随着AI交易热度有所消退，加之投资者将资金转投市场其他领域，半导体类股周三再次承压。
+- [[outsmart-ai-workday-tracking|当AI监控你的日常工作时，该如何智胜它？]] (2026-08-20) - 眼下有什么比做一名好员工更重要？那就是在越来越多管理者正使用的AI生产力追踪系统眼中，看起来像一名好员工。
+- [[corporate-quantum-investment|企业正在量子技术上投入巨资]] (2026-08-19) - 2025年企业用户在量子技术上的总支出达到3亿美元，首次超过研究实验室和政府的合计相关支出，这标志着商业领域对该技术的兴趣迎来了拐点。
+- [[openai-q2-revenue-slowdown-vs-anthropic|OpenAI第二季度收入增长乏力，增速逊于Anthropic]] (2026-08-19) - OpenAI收入较第一季度增长18%至67亿美元，亏损进一步扩大。而Anthropic同期收入增长逾一倍，达到116亿美元，还实现小幅营业利润。
+- [[openai-q2-revenue-slowdown|OpenAI第二季度收入增长乏力，增速逊于Anthropic]] (2026-08-19) - OpenAI收入较第一季度增长18%至67亿美元，亏损进一步扩大。而Anthropic同期收入增长逾一倍，达到116亿美元，还实现小幅营业利润。
+- [[us-nuclear-reactor-construction-oklo|揭秘美国一代人以来首座核反应堆的建设攻关]] (2026-08-19) - 在爱达荷国家实验室，再度兴起的原子能热正与AI狂热碰撞出火花。Oklo等公司希望推动一场AI革命与核能复兴，为未来几十年的美国经济提供动力。
+- [[us-science-funding-private-capital|新一轮拨款动荡逼近，美国科学家争相寻求私人资本]] (2026-08-19) - 华盛顿正在酝酿的新政策有可能再次颠覆大学等研究机构的拨款机制。许多科学家正转而争取基金会和私营公司的支持，或者缩减团队规模。
+- [[etched-ai-chip-startup|估值210亿美元的“芯片小子”初创公司大举挖角英伟达人才]] (2026-08-19) - Etched由三位20岁出头的哈佛大学辍学生共同创立，凭借一款四个月前还只是个构想的产品，迅速筹集了近20亿美元资金，还获得Jane Street青睐。
+- [[etched-nvidia-talent-poaching|估值210亿美元的“芯片小子”初创公司大举挖角英伟达人才]] (2026-08-19) - Etched由三位20岁出头的哈佛大学辍学生共同创立，凭借一款四个月前还只是个构想的产品，迅速筹集了近20亿美元资金，还获得Jane Street青睐。
+- [[us-nuclear-reactor-construction-smr|揭秘美国一代人以来首座核反应堆的建设攻关]] (2026-08-19) - 在爱达荷国家实验室，再度兴起的原子能热正与AI狂热碰撞出火花。Oklo等公司希望推动一场AI革命与核能复兴，为未来几十年的美国经济提供动力。
+- [[us-smr-nuclear-revival|揭秘美国一代人以来首座核反应堆的建设攻关]] (2026-08-19) - 在爱达荷国家实验室，再度兴起的原子能热正与AI狂热碰撞出火花。Oklo等公司希望推动一场AI革命与核能复兴，为未来几十年的美国经济提供动力。
+- [[ai-chaos-book-publishing|AI让图书出版业陷入一片混乱]] (2026-08-18) - 几笔重磅图书合约因疑似使用AI而告吹，这迫使整个行业重新审视创造力、信任的基石，以及出版业的未来。
+- [[ai-chatbot-sycophancy|我为何要求聊天机器人别再对我过度谄媚]] (2026-08-18) - AI回答问题总是过于迎合、过于热情，而这在一定程度上是我们自己造成的。
+- [[warehouse-robotics-adoption|仓库正越来越多地使用机器人]] (2026-08-18) - 劳动力成本上升和快速送货需求正促使企业推进订单履行自动化。
+- [[situational-awareness-crisis|华尔街如何嗅到了Situational Awareness危机爆发的气息]] (2026-08-18) - 从Anthropic股份出售传闻，到异常的期权动向，交易人士察觉到了麻烦并迅速采取行动。
+- [[e6-88-91-e4-b8-ba-e4-bd-95-e8-a6-81-e6-b1-82-e8-81-8a-e5-a4-|我为何要求聊天机器人别再对我过度谄媚]] (2026-08-18) - AI回答问题总是过于迎合、过于热情，而这在一定程度上是我们自己造成的。
+- [[big-tech-ai-spending-off-balance-sheet|科技巨头的AI支出或比表面看起来还要高出3万亿美元]] (2026-08-17) - 大型科技公司披露的AI基础设施巨额资本支出不足以反映已承诺的未来支出的全部规模，因为这些公司即将面临的大量财务义务并未反映在资产负债表上。
 - [[ai-rare-disease-diagnosis|AI正助力罕见病患者破解医学谜团]] (2026-08-17) - 面对罕见病和疑难杂症，患者与医护人员正借助AI技术以寻根究底。
+- [[open-weight-ai-compute-demand|开放权重AI不会削弱算力基础设施需求]] (2026-08-17) - 开放权重模型将持续对OpenAI和Anthropic等封闭模型构成挤压，但对硬件、云服务及整体AI生态而言，低成本模型的普及反而将进一步打通下游应用落地，驱动算力需求二次爆发。
+- [[seven-books-i-keep-close|Seven books I keep close because I love them]] (2026-08-17) - From the highly eclectic blog of Mark Dominus
 - [[cami-clark-anthropic-influence|连Claude都知之甚少：Anthropic CEO的神秘妻子及其幕后影响力]] (2026-08-14) - 卡米·克拉克曾创办自称“革命性”的色情公司并向爱泼斯坦寻求投资，如今她虽保持低调，却是Anthropic首席执行官达里奥·阿莫迪的关键顾问。
 - [[interns-running-the-show|告别端茶倒水，实习生今夏开始挑大梁]] (2026-08-13) - 随着AI接管琐碎任务，实习生们正肩负起牵头项目等更大责任。
 - [[coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]] (2026-08-12) - 云计算公司CoreWeave公布，收入连续第五个财季创下新高，储备订单达1,040亿美元，这反映出人工智能算力需求持续强劲。
@@ -25,6 +68,7 @@ AI模型、機器人与智能体如何重塑基础设施與生產力
 - [[2x-not-10x-coding-llms-2026|2x, not 10x: coding with LLMs in 2026]] (2026-08-11) - Calibrate your enthusiasm
 - [[local-models-will-not-win|No, local models will not win]] (2026-08-11)
 - [[zuckerberg-ai-essay-key-points|关于扎克伯格AI长文，你需要了解的五个要点]] (2026-08-11) - 扎克伯格发表了一篇6,500字的长文，阐述了该公司对AI竞赛的思考及其对社会的意义，并探讨了美国政府应如何监管和促进这项技术。本文梳理了关键要点。
+- [[ai-removing-middle-class-software-engineering|AI is removing the middle class of software engineering]] (2026-08-11) - AI makes projects with weak engineering culture fail much faster.
 - [[how-i-use-llms-to-learn|How I use LLMs to learn complex topics]] (2026-08-09) - LLMs are used for any things. Learning new things is one of the top use cases.
 - [[ai-generates-new-virus|AI最新的骇人里程碑：生成新病毒]] (2026-08-07) - AI模型失控风险引发警惕，但研究者称AI模型创造新病毒的实验或可用于对抗耐药细菌。
 - [[rogue-ai-agents-guide|失控AI机器人世界的用户指南]] (2026-08-07) - AI智能体在近期“失控”事件中扮演了窃贼、破坏者、霸凌者等恶劣角色。
@@ -112,6 +156,7 @@ AI模型、機器人与智能体如何重塑基础设施與生產力
 - [[spacex-ipo-validates-musks-extreme-strategy|SpaceX上市印证了马斯克“极致”战略的威力]] (2026-06-15) - SpaceX或许永远无法兑现对投资者的所有承诺，但它已经实现了最初的目标：重燃人类对太空探索的兴趣。
 - [[my-homelab-ai-dev-platform|My Homelab AI Dev Platform]] (2026-06-14) - Self-hosting OpenCode Web for GitOps style homelab changes.
 - [[leopold-aschenbrenner-situational-awareness|将Jane Street纳为投资人的24岁AI奇才]] (2026-06-09) - 凭借对AI未来的预测，莱奥波德·阿申布伦纳在互联网上吸引了大批狂热追随者，其投资公司常规的监管公告被人们像研究圣经一样仔细研读。
+- [[how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go|How I Turned My Security Cameras Into an Automatic Bird Identification System with BirdNet-Go]] (2026-06-05) - I turned three security cameras into an automatic bird identification system using BirdNet-Go. Now my wife and I can track every bird species that visits our yard in real-time.
 - [[estonia-ai-education-experiment|如何应对AI导致的学生思维退化？这个国家给学生提供免费定制版ChatGPT]] (2026-06-02) - 爱沙尼亚向近两万名学生免费提供ChatGPT，观察AI在教育中大规模引入对学生推理能力、记忆能力和自信心产生的影响。
 - [[llm-mechanics-walkthrough|How LLMs Actually Work]] (2026-06-01) - A from-the-ground-up walkthrough of how modern LLMs work, from tokens to transformer blocks to the next-token loop
 - [[nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] (2026-06-01) - 英伟达将与戴尔、联想和惠普等制造商合作生产这些笔记本电脑，这些电脑专为支持智能体计算而设计。

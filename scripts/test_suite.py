@@ -3,13 +3,15 @@
 from __future__ import annotations
 
 import copy
+import io
 import json
 import re
 import tempfile
 import unittest
+import urllib.error
 from contextlib import contextmanager
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 from analyze_lib import (
     build_markdown,
@@ -37,6 +39,7 @@ from wiki.sync import (
     normalize_proposal_paths,
     normalize_proposal_slugs,
     normalize_proposal_source_file,
+    normalize_proposal_synthesis_labels,
     normalize_wiki_path,
     parse_raw_front_matter,
     remove_raw_source,
@@ -49,7 +52,12 @@ from wiki.sync import (
     update_indexes,
     validate_proposal,
 )
-from wiki.common import article_language, slug_fallback_from_raw, takeaways_heading
+from wiki.common import (
+    article_language,
+    normalize_synthesis_text,
+    slug_fallback_from_raw,
+    takeaways_heading,
+)
 from llm_provider import (
     JSON_RETRY_PROMPT,
     FallbackProvider,
@@ -379,6 +387,38 @@ class SyncWikiTests(unittest.TestCase):
         normalize_proposal_source_file(proposal, raw_path)
         validate_proposal(proposal, raw_path)
         self.assertEqual(proposal["source_file"], f"newswiki/raw/{raw_name}")
+
+    def test_normalize_synthesis_text_repairs_leading_variants(self) -> None:
+        cases = [
+            ("AI Synthesis: Team size is a myth.", "[AI Synthesis] Team size is a myth."),
+            ("AI Synthesis Team size is a myth.", "[AI Synthesis] Team size is a myth."),
+            ("[AI synthesis] Team size is a myth.", "[AI Synthesis] Team size is a myth."),
+            ("【AI Synthesis】Team size is a myth.", "[AI Synthesis] Team size is a myth."),
+            ("**AI Synthesis** Team size is a myth.", "[AI Synthesis] Team size is a myth."),
+            ("[AI Synthesis] Already good.", "[AI Synthesis] Already good."),
+            ("Grounded fact only.", "Grounded fact only."),
+        ]
+        for raw, expected in cases:
+            self.assertEqual(normalize_synthesis_text(raw), expected)
+
+    def test_normalize_proposal_synthesis_labels_before_validate(self) -> None:
+        proposal = copy.deepcopy(self.sample_proposal)
+        proposal["article"]["sections"][0]["bullets"] = [
+            "AI Synthesis: Software teams no longer scale linearly.",
+            "Source-grounded point about AI coding agents.",
+        ]
+        proposal["article"]["key_takeaways"] = [
+            "[ai synthesis] Small teams can ship more with agents.",
+        ]
+        notes = normalize_proposal_synthesis_labels(proposal)
+        validate_proposal(proposal, Path("2026-05-30-sample.md"))
+        self.assertTrue(notes)
+        self.assertTrue(
+            proposal["article"]["sections"][0]["bullets"][0].startswith("[AI Synthesis]")
+        )
+        self.assertTrue(
+            proposal["article"]["key_takeaways"][0].startswith("[AI Synthesis]")
+        )
 
     def test_validate_rejects_nested_article_path(self) -> None:
         proposal = copy.deepcopy(self.sample_proposal)
@@ -1077,6 +1117,70 @@ class LLMProviderTests(unittest.TestCase):
         self.assertEqual(provider.max_tokens, resolve_max_tokens())
         self.assertEqual(resolve_temperature(), 0.0)
         self.assertEqual(resolve_max_tokens(), 4096)
+
+    def test_openai_compatible_provider_retries_after_http_error(self) -> None:
+        """HTTPError must not overwrite request body bytes (regression)."""
+        error_fp = io.BytesIO(b'{"error": {"message": "temporarily unavailable"}}')
+        http_error = urllib.error.HTTPError(
+            url="http://example.test/v1/chat/completions",
+            code=503,
+            msg="Service Unavailable",
+            hdrs=None,
+            fp=error_fp,
+        )
+        success_payload = {
+            "choices": [{"message": {"content": "ok-after-retry"}}],
+        }
+        success_response = MagicMock()
+        success_response.read.return_value = json.dumps(success_payload).encode("utf-8")
+        success_response.__enter__.return_value = success_response
+        success_response.__exit__.return_value = False
+
+        with patch.dict(
+            "os.environ",
+            {"LLM_RETRY_ATTEMPTS": "2", "LLM_RETRY_BACKOFF_SECONDS": "0"},
+            clear=False,
+        ):
+            provider = OpenAICompatibleProvider(provider="mlx", model="test-model")
+            with patch(
+                "urllib.request.urlopen",
+                side_effect=[http_error, success_response],
+            ) as mocked:
+                result = provider.complete(LLMRequest(system="", prompt="hi"))
+
+        self.assertEqual(result, "ok-after-retry")
+        self.assertEqual(mocked.call_count, 2)
+        second_request = mocked.call_args_list[1].args[0]
+        self.assertIsInstance(second_request.data, bytes)
+
+    def test_openai_compatible_provider_preserves_http_error_on_retry_exhaustion(self) -> None:
+        """Exhausted HTTP retries should surface the HTTP detail, not a bytes TypeError."""
+        def make_http_error() -> urllib.error.HTTPError:
+            return urllib.error.HTTPError(
+                url="http://example.test/v1/chat/completions",
+                code=429,
+                msg="Too Many Requests",
+                hdrs=None,
+                fp=io.BytesIO(b'{"error": {"message": "rate limited"}}'),
+            )
+
+        with patch.dict(
+            "os.environ",
+            {"LLM_RETRY_ATTEMPTS": "2", "LLM_RETRY_BACKOFF_SECONDS": "0"},
+            clear=False,
+        ):
+            provider = OpenAICompatibleProvider(provider="mlx", model="test-model")
+            with patch(
+                "urllib.request.urlopen",
+                side_effect=[make_http_error(), make_http_error()],
+            ):
+                with self.assertRaises(RuntimeError) as ctx:
+                    provider.complete(LLMRequest(system="", prompt="hi"))
+
+        message = str(ctx.exception)
+        self.assertIn("HTTP 429", message)
+        self.assertIn("rate limited", message)
+        self.assertNotIn("POST data should be bytes", message)
 
     def test_extract_json_object_accepts_fenced_json(self) -> None:
         payload = extract_json_object(

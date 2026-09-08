@@ -35,5 +35,5 @@ topics:
 
 - [[tech/washington-ai-safety-panic|失控模型与中国威胁：华盛顿陷入AI安全大恐慌]]
 - [[tech/unitree-ipo-humanoid-robot-trend|宇树IPO或只是前奏，人形机器人股票的投资热潮还在后头]]
+- [[tech/open-weight-ai-compute-demand|开放权重AI不会削弱算力基础设施需求]]
 - [[tech/us-ai-open-weight-china-alternative|美国公司加紧打造中国低成本AI的替代品]]
-- [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]

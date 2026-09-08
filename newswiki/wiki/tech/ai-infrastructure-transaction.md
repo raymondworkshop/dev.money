@@ -31,9 +31,9 @@ topics:
 ## 相关文章
 
 - [[tech/2026-highest-performing-stocks|盘点2026年上半年标普500指数表现最好的20只股票]]
+- [[tech/amd-data-center-cpu-market|AMD为何有望在数据中心CPU市场击败英特尔和英伟达]]
+- [[tech/us-nuclear-reactor-construction-smr|揭秘美国一代人以来首座核反应堆的建设攻关]]
 - [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
-- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
-- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
 
 ---
 **Topics**: [[tech/ai-infrastructure-transaction|AI算力基础设施交易]]  

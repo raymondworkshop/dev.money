@@ -33,3 +33,7 @@ eq$ 实际可兑付现金：需警惕将信贷额度全额或二级资产计入�
 ---
 **主题**: [[finance/_index|Finance]]  
 **标签**: #private-credit #liquidity-risk #BDC
+
+## 相关文章
+
+- [[finance/mark-walter-federal-investigation|一张隐秘交易网如何将道奇队老板卷入联邦调查]]

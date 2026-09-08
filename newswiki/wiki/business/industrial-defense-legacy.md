@@ -47,6 +47,7 @@ topics:
 ## 相关文章
 
 - [[business/chinas-economic-dynamism-paradox|先放手发展，后落地监管：中国经济活力的悖论]]
+- [[business/us-science-funding-private-capital|新一轮拨款动荡逼近，美国科学家争相寻求私人资本]]
 
 ---
 **Topics**: [[business/_index|Business]], [[tech/_index|Tech]]  

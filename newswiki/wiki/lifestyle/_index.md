@@ -9,10 +9,21 @@
 - **投资视角**: 长期主题、品牌与生活方式赛道
 
 ## 相关文章
-- [[tiktok-financial-advice-analysis|盘点TikTok上满天飞的理财“秘籍”]] (2026-08-17) - 分析TikTok理财博主的四类典型模式及其对Z世代的影响
-- [[us-seniors-global-travel-boom|有钱有闲能折腾：美国老年人正推动全球旅游热潮]] (2026-08-18) - 探讨婴儿潮一代如何通过高消费驱动全球旅游业升级
-- [[ai-health-data-geeks|把日常健康数据喂给AI的“数据极客”]] (2026-08-12) - 探讨数据极客如何利用AI构建个性化健康教练。
+- [[taiwan-temples-religious-life-china-contrast|漫步于台湾庙宇，我窥见中国另一种可能的模样]] (2026-09-07) - 两岸分离七十余载，塑造了两地民众截然不同的宗教生活。在台北挤满信众的庙宇中，出生于中国的本报记者见证了中国大陆失去了什么。
+- [[lincoln-class-ship-deployment-pattaya|“林肯号”航母高强度部署告一段落，泰国芭提雅准备迎接船员]] (2026-09-02) - 大约5,000名手头阔绰、急需休整放松的水兵即将涌入泰国海滨度假胜地芭堤雅。
+- [[china-premium-wine-boom-behind-mystery-vineyard|中国精品葡萄酒热潮背后的神秘酒庄]] (2026-08-31) - 今年前六个月中国葡萄酒出口额达到7,500万美元，是去年同期的三倍。本文探寻这场葡萄酒热潮背后的宁夏酒庄。
+- [[china-premium-wine-boom-mystery-vineyard|中国精品葡萄酒热潮背后的神秘酒庄]] (2026-08-31) - 今年前六个月中国葡萄酒出口额达到7,500万美元，是去年同期的三倍。本文探寻这场葡萄酒热潮背后的宁夏酒庄。
+- [[e9-97-af-e5-85-a5-e6-88-91-e4-bb-ac-e5-ae-b6-e5-ba-ad-e5-81-|闯入我们家庭假期的不速之客：老妈的AI聊天机器人]] (2026-08-28) - 作为一个对AI心存怀疑和恐惧的千禧一代，当我发现年逾七旬的父母竟然迷上了Claude时，那份错愕可想而知。
+- [[older-worker-reentry-success|打破年龄魔咒：66岁老人重返职场之路]] (2026-08-21) - “我会告诉所有比我年轻的人，一定要存钱，以防遇到我这样的事，”将于12月迎来67岁生日的Lee说。“而如果你和我年纪一样大，那就千万别放弃。”
+- [[harry-meghan-american-dream-end|哈里与梅根的美国梦终结]] (2026-08-21) - 在经历了Netflix合约、制作果酱等商业试水，以及种种争议之后，这对王室夫妇长达六年的留美生活告一段落，如今正重返英国。
+- [[harry-meghan-american-dream-ends|哈里与梅根的美国梦终结]] (2026-08-21) - 在经历了Netflix合约、制作果酱等商业试水，以及种种争议之后，这对王室夫妇长达六年的留美生活告一段落，如今正重返英国。
+- [[linkedin-dating-trend|不顾“禁爱令”，领英意外成为约会神器]] (2026-08-20) - 凭借清晰的头像和详尽的个人履历，这个职场社交平台正成为单身人士寻觅伴侣的首选工具。
+- [[prince-harry-meghan-return-to-uk|哈里王子与梅根将搬回英国]] (2026-08-20) - 据知情人士透露，在哈里夫妇卸下王室职责并移居美国西海岸六年之后，他们正计划于本月晚些时候搬回英国。
+- [[prince-harry-meghan-return-uk|哈里王子与梅根将搬回英国]] (2026-08-20) - 据知情人士透露，在哈里夫妇卸下王室职责并移居美国西海岸六年之后，他们正计划于本月晚些时候搬回英国。
+- [[ai-chatbot-sycophancy|我为何要求聊天机器人别再对我过度谄媚]] (2026-08-18) - AI回答问题总是过于迎合、过于热情，而这在一定程度上是我们自己造成的。
+- [[us-seniors-global-travel-boom|有钱有闲能折腾：美国老年人正推动全球旅游热潮]] (2026-08-18) - 随着“婴儿潮”一代纷纷踏上旅途，旅游业也随之调整，推出更优质的住宿、更轻松的徒步路线和行李寄送服务。
 - [[ai-rare-disease-diagnosis|AI正助力罕见病患者破解医学谜团]] (2026-08-17) - 面对罕见病和疑难杂症，患者与医护人员正借助AI技术以寻根究底。
+- [[tiktok-financial-advice-analysis|盘点TikTok上满天飞的理财“秘籍”]] (2026-08-17) - 我们查看了212个提供理财建议的账号，累计观看内容近50个小时。梳理出了几类典型账号。
 - [[seven-books-i-keep-close|Seven books I keep close because I love them]] (2026-08-17) - From the highly eclectic blog of Mark Dominus
 - [[ai-health-data-geeks|把日常健康数据喂给AI的“数据极客”]] (2026-08-12) - 从备战马拉松到排解职场焦虑，健康狂热者正将个人数据接入聊天机器人，打造极致个性化的专属教练。
 - [[pentaton-lp|Pentaton LP • Pentaton]] (2026-08-11) - A vinyl-sleeve-sized music streamer designed to make digital music feel analog again through a high-resolution display for cover art.

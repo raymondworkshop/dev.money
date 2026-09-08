@@ -34,7 +34,7 @@ topics:
 
 ## 相关文章
 
+- [[finance/bessent-bond-market-analysis|贝森特为何在美债市场做文章]]
+- [[finance/bessent-us-treasury-bond-market|贝森特为何在美债市场做文章]]
 - [[finance/chip-profits-investor-dissatisfaction|芯片公司利润飙升，投资者为何仍不满意？]]
-- [[business/ai-boom-reshaping-us-economy|AI热潮正重塑美国经济，深刻程度超乎认知]]
-- [[finance/us-stock-market-bubbles|美股擅长制造泡沫，也能从容化解]]
-- [[tech/ai-native-companies-few-employees|AI原生公司：员工很少，老板更少]]
+- [[finance/chip-stocks-rally-hit-wall-optimism|芯片股涨势遇阻，但一些分析师认为有理由保持乐观]]

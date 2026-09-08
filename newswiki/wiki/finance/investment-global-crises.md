@@ -30,8 +30,8 @@ topics:
 
 - [[finance/berkshire-and-japanese-builders-see-opportunity-in-us-housing|伯克希尔哈撒韦和日本建筑商都在美国住宅市场看到机遇]]
 - [[finance/ai-hardware-stocks-analysis|分析师盘点年内值得持有的六只AI硬件股]]
+- [[finance/why-it-pays-to-stay-invested-no-amount-of-bad-news-could-stop-the-stock-markets-strongest-run-in-more-than-25-years-27654da1|坚持投资终有回报：坏消息再多，也挡不住美股创下逾25年来最强劲涨势]]
 - [[business/iran-war-winner-african-billionaire|Iran War Brings a Surprise Winner: Africa's Richest Man]]
-- [[business/dont-start-startup-to-get-acquired|Don't start a startup with the goal of getting acquired.]]
 
 ---
 **Topics**: [[finance/_index|Finance]]  

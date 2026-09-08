@@ -16,7 +16,7 @@ topics:
 ## 核心观点
 - 开放权重模型（如月之暗面的 Kimi K3）通过降低成本和提高效率，对 [[tech/openai|OpenAI]] 和 Anthropic 等封闭模型开发者构成竞争压力。
 - 根据“杰文斯悖论”（Jevons paradox），AI 部署成本的降低反而会增加技术的普及率，从而导致整体算力需求的增加而非减少。
-- 芯片供应商（如 [[tech/nvidia|Nvidia]] 和 Cerebras Systems）以及云基础设施巨头（亚马逊、微软、谷歌）将从开放权重模型驱动的规模化应用中获益。
+- 芯片供应商（如 [[hubs/nvidia|Nvidia]] 和 Cerebras Systems）以及云基础设施巨头（亚马逊、微软、谷歌）将从开放权重模型驱动的规模化应用中获益。
 - 尽管中国模型在效率上有所突破，但其缺乏清晰的盈利模式，且面临西方市场的地缘政治限制。
 - [AI Synthesis] 开放权重模型实际上扮演了 AI 基础设施的“需求放大器”，通过降低进入门槛将算力需求从少数巨头扩展至更广泛的企业级应用场景。
 
@@ -28,3 +28,10 @@ topics:
 ---
 **主题**: [[tech/_index|Tech]], [[business/_index|Business]]  
 **标签**: #open-weight-models #ai-infrastructure #compute-demand
+
+## 相关文章
+
+- [[tech/coreweave-earnings-q2-2026|CoreWeave股价大涨，收入同比增长一倍]]
+- [[tech/2026-05-27-nebius-vs-coreweave|CoreWeave请让位，Nebius来了]]
+- [[tech/nokia-ai-datacenter-infrastructure|Nokia's New Chapter: Becoming a Supplier of AI Data Center Infrastructure]]
+- [[tech/ibm-quantum-advantage-era|IBM宣称“量子优势”进入新时代]]

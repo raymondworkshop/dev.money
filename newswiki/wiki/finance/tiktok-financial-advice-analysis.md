@@ -30,3 +30,9 @@ topics:
 ---
 **主题**: [[finance/_index|Finance]], [[lifestyle/_index|Lifestyle Trends]]  
 **标签**: #finance #tiktok #finfluencer #wealth-management
+
+## 相关文章
+
+- [[finance/wealth-management-cash-problem|财富管理行业面临3万亿美元难题：投资者持有太多现金]]
+- [[lifestyle/us-seniors-global-travel-boom|有钱有闲能折腾：美国老年人正推动全球旅游热潮]]
+- [[finance/john-overdeck-divorce|一位对冲基金巨头的离婚案曝光华尔街惊人财富]]

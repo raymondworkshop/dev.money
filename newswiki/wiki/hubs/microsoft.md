@@ -24,7 +24,11 @@ Curated hub for articles related to Microsoft.
 - [[career/how-to-improve-job-search-success-by-optimizing-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] · #career
 - [[career/how-to-improve-job-search-success-by-optimizing-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] · #career
 - [[career/how-to-improve-job-search-success-by-refining-your-linkedin-profile|如何提升求职成功率？或许你需要精修领英档案]] · #career
+- [[tech/open-weight-ai-compute-demand|开放权重AI不会削弱算力基础设施需求]] · #tech
 - [[business/microsoft-azure-revenue-milestone|微软利润激增31%，Azure云业务财年收入首破千亿美元大关]] · #business
+- [[tech/us-nuclear-reactor-construction-smr|揭秘美国一代人以来首座核反应堆的建设攻关]] · #tech
+- [[tech/us-smr-nuclear-revival|揭秘美国一代人以来首座核反应堆的建设攻关]] · #tech
+- [[business/big-tech-ai-spending-off-balance-sheet|科技巨头的AI支出或比表面看起来还要高出3万亿美元]] · #business
 - [[tech/residential-proxy-attack-2026|美国家庭网络如何沦为黑客隐身衣？]] · #tech
 - [[design/nvidia-ai-agent-pcs-launch|英伟达推出首批专为AI智能体设计的个人电脑]] · #design
 
